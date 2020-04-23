@@ -1,8 +1,7 @@
 package student_aleksey_kodin;
 
-public class HelloWorld {
+public class Book {
     public static void main(String[] args) {
-        System.out.println("Hello Java World!");
+        System.out.println("Hello, class Book ready.");
     }
-
 }
