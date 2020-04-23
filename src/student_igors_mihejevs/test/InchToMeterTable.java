@@ -1,4 +1,4 @@
-package student_igors_mihejevs.Test;
+package student_igors_mihejevs.test;
 
 /*
     My first program in Java
