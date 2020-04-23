@@ -1,3 +1,5 @@
+package student_pavels_popovs;
+
 public class hello {
 
      public static void main(String[] args) {
