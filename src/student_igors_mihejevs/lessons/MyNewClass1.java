@@ -1,4 +1,4 @@
-package student_igors_mihejevs.test;
+package student_igors_mihejevs.lessons;
 
 public class MyNewClass1 {
     public static void main(String[] args) {
