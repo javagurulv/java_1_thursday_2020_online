@@ -3,6 +3,7 @@ package student_diana_miranovica;
 public class The tasks {
     //Объяви переменные типа int и сразу объяви их значение.
     //Значения целые числа.
+
     public static void main(String[] args){
         int a = 4;
         int b = 17;
