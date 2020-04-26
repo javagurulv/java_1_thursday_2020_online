@@ -15,8 +15,7 @@ public class InchToMeterTable {
             counter = 0;
             for (inches = 1; inches <= feet * 12; inches++)  {
                 meters = inches * 39.37;
-                System.out.println(inches + " inches is " +
-                                   meters + " meters.");
+                System.out.println(inches + " inches is " + meters + " meters.");
                 counter++;
                 if (counter == 12) {
                 System.out.println();
