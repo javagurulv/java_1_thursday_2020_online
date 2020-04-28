@@ -36,6 +36,14 @@ public class Solution {
 
 
 
+
+            int l = 2;
+            int m = 3;
+            System.out.println((l + 4 * m) * (l - 3 * m) + l * l);
+
+
+
+            
         }
     }
 
