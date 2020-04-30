@@ -12,7 +12,7 @@ public class AddTwoNumber {
 
         // 2. get second number from user
         System.out.println("Enter second number: ");
-        int secondNumber = myInput.nextInt();3
+        int secondNumber = myInput.nextInt();
 
        // 3. first number + second number
         int result = firstNumber + secondNumber;
