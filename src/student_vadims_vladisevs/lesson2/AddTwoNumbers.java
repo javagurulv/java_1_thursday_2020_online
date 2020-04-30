@@ -11,6 +11,6 @@ public class AddTwoNumbers {
         int secondNumber = scr.nextInt();
         int result = firstNumber + secondNumber;
 
-        System.out.printf("Result = " + result);
+        System.out.println("Result = " + result);
     }
 }
