@@ -10,15 +10,13 @@ package student_igors_mihejevs.jbgn;
 
 import java.text.DecimalFormat;
 
-class InchToMeterTable {
+public class InchToMeterTable {
 
     private static DecimalFormat df = new DecimalFormat("0.00");
 
     public static void main (String[] args) {
-        double inches, meters, feet;
-        int counter, counter1;
-        inches = 1;
-        counter = 0;
+        double inches = 1, meters, feet;
+        int counter = 0, counter1;
 
         for (feet = 1; feet <= 12; feet++) {
             for (counter1 = 1; counter1 <= 12; counter1++) {
