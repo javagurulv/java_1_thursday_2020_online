@@ -7,10 +7,10 @@ public class ExampleDoubleValue {
     public static void main(String[] args) {
         try {
             System.out.println("Please enter first double value: ");
-            double dFirstValue = (new Scanner(System.in).nextDouble());
+            double dFirstValue = new Scanner(System.in).nextDouble();
 
             System.out.println("Please enter second double value: ");
-            double dSecondValue = (new Scanner(System.in).nextDouble());
+            double dSecondValue = new Scanner(System.in).nextDouble();
 
             System.out.println(dFirstValue + " + " + dSecondValue + " = " + (dFirstValue + dSecondValue));
             System.out.println(dFirstValue + " - " + dSecondValue + " = " + (dFirstValue - dSecondValue));
