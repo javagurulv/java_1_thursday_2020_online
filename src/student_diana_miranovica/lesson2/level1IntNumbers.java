@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson2;
 
 import java.util.Scanner;
 
-public class IntWholeNumbers {
+public class level1IntNumbers {
 
     public static void main(String[] args) {
         //Get first number from user
