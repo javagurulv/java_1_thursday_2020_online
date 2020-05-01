@@ -14,7 +14,7 @@ public class HomeWork1Level1 {
         System.out.print( "Enter second integer number: " );
         int secondNumber = myInput.nextInt();
 
-        // 3. first number + second number
+        // 3. first number +, -, *, / second number
         int result1 = firstNumber + secondNumber;
         int result2 = firstNumber - secondNumber;
         int result3 = firstNumber * secondNumber;
