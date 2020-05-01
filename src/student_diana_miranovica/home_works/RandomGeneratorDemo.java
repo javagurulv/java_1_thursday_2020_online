@@ -12,15 +12,15 @@ public class RandomGeneratorDemo {
 
         System.out.println(secondNumber);
 
-        int thirdNumber = (int) (Math.random() * 3);
+        int thirdNumber = (int) (Math.random() * 6);
 
         System.out.println(thirdNumber);
 
         Random randomGenerator = new Random();
-        int unboundRandom = randomGenerator.nextInt();
-        int boundRandom = randomGenerator.nextInt( 30);
-        System.out.println("unboundRandom = " + unboundRandom);
-        System.out.println("boundRandom = " + boundRandom);
+        int randomUnbound = randomGenerator.nextInt();
+        int randomBound = randomGenerator.nextInt( 30);
+        System.out.println("randomUnbound = " + randomUnbound);
+        System.out.println("randomBound = " + randomBound);
 
     }
 }
