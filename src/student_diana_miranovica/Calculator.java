@@ -1,19 +1,17 @@
-package student_igors_mihejevs.lesson2;
+package student_diana_miranovica;
 
 public class Calculator {
-
     public static void main(String[] args) {
-        int numberOne = 10;
+        int numberOne = 7;
         System.out.println(numberOne);
 
-        numberOne = numberOne + 5;
+        numberOne = numberOne + 2;
         System.out.println(numberOne);
 
-        int numberTwo = 2;
-
+        int numberTwo;
+        numberTwo = 4;
         int result = numberOne + numberTwo;
         System.out.println("Sum = " + result);
-
 
     }
 }

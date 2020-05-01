@@ -1,4 +1,6 @@
-package student_igors_mihejevs.lesson2;
+package student_aleksey_kodin;
+
+import java.util.Scanner;
 
 public class Calculator {
 
@@ -8,12 +10,9 @@ public class Calculator {
 
         numberOne = numberOne + 5;
         System.out.println(numberOne);
-
-        int numberTwo = 2;
-
-        int result = numberOne + numberTwo;
-        System.out.println("Sum = " + result);
-
+        Scanner clsScan = new Scanner(System.in);
+        System.out.print("1st: ");
+        int a= clsScan.nextInt();
 
     }
 }

@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson2;
+package student_arturs_ragausks;
 
 public class Calculator {
 
@@ -10,10 +10,9 @@ public class Calculator {
         System.out.println(numberOne);
 
         int numberTwo = 2;
-
         int result = numberOne + numberTwo;
-        System.out.println("Sum = " + result);
-
+        System.out.println("sum = " + result);
 
     }
+
 }
