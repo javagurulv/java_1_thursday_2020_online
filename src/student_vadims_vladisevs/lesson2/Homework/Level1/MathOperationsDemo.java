@@ -14,26 +14,28 @@ public class MathOperationsDemo {
         System.out.println("If you want subtraction enter - 2");
         System.out.println("If you want division enter - 3");
         System.out.println("If you want multiplication enter - 4");
-        int result = scr.nextInt();
-        if ( result == 1){
-            double addResult = firstNumber + secondNumber;
-            System.out.println("Addition result : " + addResult);
-        }
-        else if ( result == 2){
-            double subResult = firstNumber - secondNumber;
-            System.out.println("Subtraction result : " + subResult);
-        }
-        else if (result == 3){
-            double divResult = firstNumber / secondNumber;
-            System.out.println("Division result : " + divResult);
-        }
-        else if (result == 4){
-            double multiResult = firstNumber * secondNumber;
-            System.out.println("Multiplication result : " + multiResult);
-        }
-        else  {
-            System.out.println("Error! Entered number does not meet the conditions!!");
-        }
 
+        while (true) {
+            int result = scr.nextInt();
+            if (result == 1) {
+                double addResult = firstNumber + secondNumber;
+                System.out.println("Addition result : " + addResult);
+                break;
+            } else if (result == 2) {
+                double subResult = firstNumber - secondNumber;
+                System.out.println("Subtraction result : " + subResult);
+                break;
+            } else if (result == 3) {
+                double divResult = firstNumber / secondNumber;
+                System.out.println("Division result : " + divResult);
+                break;
+            } else if (result == 4) {
+                double multiResult = firstNumber * secondNumber;
+                System.out.println("Multiplication result : " + multiResult);
+                break;
+            } else {
+                System.out.println("Error! Entered number does not meet the conditions!!");
+            }
+        }
     }
 }
