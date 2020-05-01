@@ -8,7 +8,7 @@ public class MathOperationsDemo {
         int b = 13;
         int sum1 = a + b;
 
-        System.out.println( "1. Addition + " );
+        System.out.println( "1. Addition +" );
         System.out.print("a");
         System.out.print(" = " );
         System.out.print(a);
