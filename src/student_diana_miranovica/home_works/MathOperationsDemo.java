@@ -18,40 +18,48 @@ public class MathOperationsDemo {
 
         System.out.println( "a + b = "+ a + " + " + b + " = " + sum1 );
 
-        int sum2 = a - b;
+
+        long c = 89;
+        long d = 2;
+
+        long sum2 = c - d;
 
         System.out.println(" ");
         System.out.println( "2. Subtraction -" );
-        System.out.print("a");
+        System.out.print("c");
         System.out.print(" = " );
-        System.out.print(a);
+        System.out.print(c);
         System.out.print(", ");
-        System.out.println("b = " + b);
+        System.out.println("d = " + d);
 
-        System.out.println( "a - b = "+ a + " - " + b + " = " + sum2 );
+        System.out.println( "c - d = "+ c + " - " + d + " = " + sum2 );
 
-        int sum3 = a / b;
+        short e = 180;
+        short f = 90;
+
 
         System.out.println(" ");
         System.out.println( "3. Devision /" );
-        System.out.print("a");
+        System.out.print("e");
         System.out.print(" = " );
-        System.out.print(a);
+        System.out.print(e);
         System.out.print(", ");
-        System.out.println("b = " + b);
+        System.out.println("f = " + f);
 
-        System.out.println( "a / b = "+ a + " / " + b + " = " + sum3 );
+        System.out.println( "e / f = "+ e + " / " + f + " = " + (180/90) );
 
-        int sum4 = a * b;
+        double m = 2.5;
+        double n = 3.14;
+        double sum4 = m * n;
 
         System.out.println(" ");
         System.out.println( "4. Multiplication *" );
-        System.out.print("a");
+        System.out.print("m");
         System.out.print(" = " );
-        System.out.print(a);
+        System.out.print(m);
         System.out.print(", ");
-        System.out.println("b = " + b);
+        System.out.println("n = " + n);
 
-        System.out.println( "a * b = "+ a + " * " + b + " = " + sum4 );
+        System.out.println( "m * n = "+ m + " * " + n + " = " + sum4 );
     }
 }
