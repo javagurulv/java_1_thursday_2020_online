@@ -10,7 +10,7 @@ public class RandomGeneratorDemo {
 
         System.out.println(secondNumber);
 
-        int thirdNumber = (int) (Math.random() *3);
+        int thirdNumber = (int) (Math.random() * 3);
 
         System.out.println(thirdNumber);
     }
