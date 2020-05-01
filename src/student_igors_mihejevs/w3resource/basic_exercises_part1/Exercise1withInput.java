@@ -12,8 +12,7 @@ public class Exercise1withInput {
         String firstName = myInput.next();
         System.out.print("Input your second name: ");
         String secondName = myInput.next();
-        System.out.println("\nHello!\n\nPS");
-        System.out.println(firstName + " " + secondName);
-    }
 
+        System.out.println("\nHello!\n\nPS\n" + firstName + " " + secondName);
+    }
 }

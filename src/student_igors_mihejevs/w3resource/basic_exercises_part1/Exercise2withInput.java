@@ -12,8 +12,7 @@ public class Exercise2withInput {
         int firstNumber = myInput.nextInt();
         System.out.print("Input the second number : ");
         int secondNumber = myInput.nextInt();
-        int resultOfSum = firstNumber + secondNumber;
-        System.out.println("------------------------");
-        System.out.println("Sum: " + resultOfSum);
+        System.out.println("-------------------------");
+        System.out.println("Sum: " + (firstNumber + secondNumber));
     }
 }
