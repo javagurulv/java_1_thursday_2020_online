@@ -8,10 +8,10 @@ public class ExampleIntValue {
     public static void main(String[] args) {
         try {
             System.out.println("Please enter first int value: ");
-            int iFirstValue = (new Scanner(System.in).nextInt());
+            int iFirstValue = new Scanner(System.in).nextInt();
 
             System.out.println("Please enter second int value: ");
-            int iSecondValue = (new Scanner(System.in).nextInt());
+            int iSecondValue = new Scanner(System.in).nextInt();
 
             System.out.println(iFirstValue + " + " + iSecondValue + " = " + (iFirstValue + iSecondValue));
             System.out.println(iFirstValue + " - " + iSecondValue + " = " + (iFirstValue - iSecondValue));
