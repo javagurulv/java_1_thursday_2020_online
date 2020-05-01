@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns;
+package student_dmitrijs_visuns.introduction;
 
 public class Calculator {
 
