@@ -7,7 +7,7 @@ public class AddTwoNumbers {
     public static void main(String[] args) {
         // 1. get first number from user
         Scanner myInput = new Scanner( System.in);
-        System.out.printf("Enter first number");
+        System.out.println("Enter first number");
         int firstNumber = myInput.nextInt();
 
 
