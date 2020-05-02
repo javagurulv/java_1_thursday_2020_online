@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // Sum of two numbers with console inputs
 
-public class Exercise2withInput {
+public class Exercise2WithInput {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
 

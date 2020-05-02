@@ -1,9 +1,9 @@
-package student_igors_mihejevs.lesson2;
+package student_igors_mihejevs.lesson2.day1;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class HomeWork1Level2 {
+public class MathOperationsDemoDouble {
 
     private static DecimalFormat df = new DecimalFormat("0.00");
 
