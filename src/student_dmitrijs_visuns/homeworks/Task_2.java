@@ -1,8 +1,8 @@
-package student_dmitrijs_visuns.lesson2;
+package student_dmitrijs_visuns.homeworks;
 
 import java.util.Scanner;
 
-public class TaskLevel2 {
+public class Task_2 {
 
         public static void main(String[] args) {
 

@@ -1,16 +1,19 @@
-package student_oleg_ivanov;
+package teacher.lesson2.lesson_code;
 
-public class Calculator2 {
+public class Calculator {
+
     public static void main(String[] args) {
         int numberOne = 10;
         System.out.println(numberOne);
+
         numberOne = numberOne + 5;
         System.out.println(numberOne);
-        int numberTwo;
-        numberTwo = 2;
+
+        int numberTwo = 2;
+
         int result = numberOne + numberTwo;
         System.out.println("Sum = " + result);
 
-
     }
+
 }
