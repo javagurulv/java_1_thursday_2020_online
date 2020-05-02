@@ -10,11 +10,11 @@ public class HomeWork1Level2 {
     public static void main(String[] args) {
         // 1. get first number from user
         Scanner myInput = new Scanner(System.in);
-        System.out.print("Enter first fractional number  : ");
+        System.out.print("Enter first floating point number  : ");
         double firstNumber = myInput.nextDouble();
 
         // 2. get second number from user
-        System.out.print("Enter second fractional number : ");
+        System.out.print("Enter second floating point number : ");
         double secondNumber = myInput.nextDouble();
 
         // 3. first number +, -, *, / second number
@@ -25,7 +25,7 @@ public class HomeWork1Level2 {
 
         // 4. print results to console
         System.out.println("---------------------------------------------------------------------------------------");
-        System.out.println("Results of some math operations between the first and the second fractional numbers");
+        System.out.println("Results of some math operations between the first and the second floating point numbers");
         System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("Addition result       = " + df.format(resultAddition));
         System.out.println("Subtraction result    = " + df.format(resultSubtraction));
