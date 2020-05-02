@@ -7,10 +7,10 @@ public class TaskFridayLevel1 {
 
         Scanner myInput = new Scanner( System.in );
         System.out.println("Please enter Number A");
-        float a = myInput.nextInt();
+        int a = myInput.nextInt();
 
         System.out.println("Please enter Number B");
-        float b = myInput.nextInt();
+        int b = myInput.nextInt();
 
         System.out.println("A = " + a + ", B = " + b);
         System.out.println("A + B = " + a + "+" + b + " = " + (a + b));
