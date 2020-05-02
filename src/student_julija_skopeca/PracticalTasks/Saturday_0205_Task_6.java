@@ -12,6 +12,6 @@ public class Saturday_0205_Task_6 {
         
         String name = myInput.nextLine();
 
-        System.out.println("Hello " + name);
+        System.out.println("Hello, " + name);
     }
 }
