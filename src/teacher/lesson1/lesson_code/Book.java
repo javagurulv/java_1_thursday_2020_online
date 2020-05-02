@@ -1,4 +1,4 @@
-package teacher.lesson1;
+package teacher.lesson1.lesson_code;
 
 public class Book {
 
