@@ -1,0 +1,20 @@
+package student_julija_skopeca.HomeWorks;
+
+import java.util.Random;
+
+public class RandomGeneratorDemo {
+    public static void main(String[] args) {
+
+        Random randomGenerator = new Random();
+        int a = randomGenerator.nextInt(9);
+        int b = randomGenerator.nextInt(3);
+        int c = randomGenerator.nextInt();
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        System.out.println("a + " + "b + " + "c = " + a + " + " + b + " + "
+                + c + " = " + (a+b+c));
+
+    }
+}
