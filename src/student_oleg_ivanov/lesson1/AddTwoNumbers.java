@@ -1,4 +1,4 @@
-package student_oleg_ivanov;
+package student_oleg_ivanov.lesson1;
 
 import java.util.Scanner;
 
