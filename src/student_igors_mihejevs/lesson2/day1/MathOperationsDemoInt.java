@@ -1,8 +1,8 @@
-package student_igors_mihejevs.lesson2;
+package student_igors_mihejevs.lesson2.day1;
 
 import java.util.Scanner;
 
-public class HomeWork1Level1 {
+public class MathOperationsDemoInt {
 
     public static void main(String[] args) {
         // 1. get first number from user
