@@ -1,10 +1,10 @@
-package student_igors_mihejevs.w3resource.basic_exercises_part1;
+package student_igors_mihejevs.lesson2.day2;
 
 import java.util.Scanner;
 
 // testing \n inside of println with additional console inputs
 
-public class Exercise1withInput {
+public class NameInOut {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
 
@@ -13,6 +13,6 @@ public class Exercise1withInput {
         System.out.print("Input your second name: ");
         String secondName = myInput.next();
 
-        System.out.println("\nHello!\n\nPS\n" + firstName + " " + secondName);
+        System.out.println("\nHello " + firstName + " " + secondName + "!");
     }
 }
