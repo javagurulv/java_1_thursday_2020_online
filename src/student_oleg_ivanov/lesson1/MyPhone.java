@@ -1,4 +1,4 @@
-package student_oleg_ivanov;
+package student_oleg_ivanov.lesson1;
 
 public class MyPhone {
     public static void main(String[] args) {
