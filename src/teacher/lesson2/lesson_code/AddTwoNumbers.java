@@ -1,4 +1,4 @@
-package teacher.lesson2;
+package teacher.lesson2.lesson_code;
 
 import java.util.Scanner;
 
