@@ -1,4 +1,4 @@
-package student_julija_skopeca.PracticalTasks;
+package student_julija_skopeca.practical_tasks.day_2;
 
 //public class Saturday_0205_Task_1 {
 
