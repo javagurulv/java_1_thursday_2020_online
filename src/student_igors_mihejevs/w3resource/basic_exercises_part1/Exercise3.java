@@ -2,9 +2,9 @@ package student_igors_mihejevs.w3resource.basic_exercises_part1;
 
 import java.util.Scanner;
 
-// Sum of two numbers with console inputs
+// Division of two numbers with console inputs
 
-public class Exercise2WithInput {
+public class Exercise3 {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
 
@@ -13,6 +13,6 @@ public class Exercise2WithInput {
         System.out.print("Input the second number : ");
         int secondNumber = myInput.nextInt();
         System.out.println("-------------------------");
-        System.out.println("Sum: " + (firstNumber + secondNumber));
+        System.out.println("The division of two natural numbers = " + (firstNumber / secondNumber));
     }
 }
