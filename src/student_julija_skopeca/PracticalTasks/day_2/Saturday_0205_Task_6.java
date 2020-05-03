@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.day_2;
+package student_julija_skopeca.PracticalTasks.day_2;
 
 import java.util.Scanner;
 
