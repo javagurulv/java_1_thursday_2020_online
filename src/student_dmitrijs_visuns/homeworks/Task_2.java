@@ -6,11 +6,11 @@ public class Task_2 {
 
         public static void main(String[] args) {
 
-            System.out.println("Введите первое вещественное число");
+            System.out.println("Введите первое вещественное число: ");
             Scanner myFirstInput = new Scanner( System.in );
             double firstNumber = myFirstInput.nextDouble();
 
-            System.out.println("Введите второе вещественное число");
+            System.out.println("Введите второе вещественное число: ");
             Scanner mySecondInput = new Scanner( System.in );
             double secondNumber = mySecondInput.nextDouble();
 
