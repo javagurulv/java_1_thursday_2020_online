@@ -1,0 +1,50 @@
+javagurulv, [02.05.20 12:30]
+Задача 1 (level 1):
+Дан код, нужно исправить ошибку компиляции.
+
+class Book {
+}
+
+Задача 2 (level 1):
+Дан код, нужно исправить ошибку компиляции.
+
+class Phone{
+
+}
+
+
+Задача 3 (level 1):
+Дан код, нужно исправить ошибку компиляции.
+
+class BankAccount {
+
+  public static void main(String[] args) {
+  }
+
+}
+
+
+Задача 4 (level 1):
+Дан код, нужно исправить ошибку компиляции.
+
+class Turtle {
+
+  public static void main(String[] args) {
+
+  }
+
+
+}
+
+
+Задача 5 (level 2):
+Дан код, нужно сделать этот код запускаемым.
+
+class LoginService {
+
+  public void main(String[] args) {
+    System.out.println("You can login!");
+    }
+
+
+}

@@ -1,0 +1,46 @@
+Task_1 level_1
+Дан код, нужно исправить ошибку компиляции.
+
+class Book {
+<-- There don't have closing parenthesis
+
+Task_2 level_1
+Дан код, нужно исправить ошибку компиляции.
+
+class Phone <-- There don't have opening parenthesis
+
+}
+
+Task_3 level_1
+Дан код, нужно исправить ошибку компиляции.
+
+class BankAccount {
+
+	public static void main(String[] args) {
+
+    <-- There don't have closing parenthesis
+}
+
+
+Task_4 level_1
+Дан код, нужно исправить ошибку компиляции.
+
+class Turtle {
+
+	public static void main(String[] args) <-- There don't have opening parenthesis
+
+	}
+
+
+}
+ Task_5 level_1
+ Дан код, нужно сделать этот код запускаемым.
+
+ class LoginService {
+
+ 	public void main(String[] args) { <-- We are losing word "static"
+ 		System.out.println("You can login!");
+ 	}
+
+
+ }
