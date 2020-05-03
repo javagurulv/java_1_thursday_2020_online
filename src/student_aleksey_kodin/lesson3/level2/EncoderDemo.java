@@ -44,8 +44,5 @@ public class EncoderDemo {
             encoder.decode(text.charAt(0));
             strCode = encoder.getCode() + " ";
             return strCode + ConvertTextToCodeRecursion(encoder, text.substring(1,iTextLength),iTextLength - 1);
-
-
-
     }
 }
