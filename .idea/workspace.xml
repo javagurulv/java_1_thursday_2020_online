@@ -19,21 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f3af10-7b4d-4cbf-8928-3caf93c0de80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_3/AverageOfThreeNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_3/CircleParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_3/Multiplicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2020_11_09__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2020_11_09__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson1_23042020/homeworks/everyday_homeworks/Task_1_01052020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_1/Task_1_01052020.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson1_23042020/homeworks/everyday_homeworks/Task_2_01052020.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_1/Task_2_01052020.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_2/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_2/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/HelloUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_2/HelloUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_2/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_2/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/Turtle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_alexander_bogachenkov/lesson2_30042020/homeworks/everyday_homeworks/day_2/Turtle.java" afterDir="false" />
-    </list>
+    <list default="true" id="e7f3af10-7b4d-4cbf-8928-3caf93c0de80" name="Default Changelist" comment="" />
     <list id="b042b37d-7583-4f0e-842b-204177603254" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588493332013</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="lesson 2 Day_3 tasks added">
+      <created>1588513477164</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1588513477164</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +361,8 @@
     <MESSAGE value="New class RandomGeneratorDemo" />
     <MESSAGE value="Corrections" />
     <MESSAGE value="Day_3 task_9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day_3 task_9" />
+    <MESSAGE value="lesson 2 Day_3 tasks added" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 2 Day_3 tasks added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1100" y="233" key="#Auto_Import" timestamp="1587968271302">
@@ -391,29 +385,33 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1220" y="423" width="418" height="186" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588490846724" />
+    <state x="307" y="1" key="CommitChangelistDialog2" timestamp="1588513474518">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="307" y="1" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1588513474518" />
     <state x="-1403" y="121" width="1200" height="801" key="DiffContextDialog" timestamp="1587966763183">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1403" y="121" width="1200" height="801" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1587966763183" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1588513025387">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1588513449703">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588513025387" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588513449703" />
     <state width="1362" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588494956206" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1588513025386">
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1588513449702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588513025386" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588513449702" />
     <state width="1362" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588494956206" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1588513025386">
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1588513449702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588513025386" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588513449702" />
     <state width="1362" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588494956206" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1588513025386">
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1588513449702">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588513025386" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588513449702" />
     <state width="1362" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588494956206" />
     <state width="1362" height="329" key="GridCell.Tab.1.bottom" timestamp="1588417758651">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -435,9 +433,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1365" y="173" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588346357449" />
-    <state x="-1132" y="250" key="Vcs.Push.Dialog.v2" timestamp="1588493335413">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="630" y="208" key="Vcs.Push.Dialog.v2" timestamp="1588513480759">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="630" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1588513480759" />
     <state x="-1132" y="250" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588493335413" />
     <state x="-1159" y="131" width="585" height="795" key="find.popup" timestamp="1587932112705">
       <screen x="-1920" y="0" width="1920" height="1040" />
