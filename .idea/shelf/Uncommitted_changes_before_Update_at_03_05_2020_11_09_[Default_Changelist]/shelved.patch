@@ -1,0 +1,472 @@
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_6.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_6.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_6.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,11 +0,0 @@
+-Задача 4 (level 1):
+-Дан код, нужно исправить ошибку компиляции.
+-
+-class Turtle {
+-
+-	public static void main(String[] args)
+-
+-	}
+-
+-
+-}
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_10.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_10.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_10.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,8 +0,0 @@
+-Write a Java program to print the area and perimeter of a circle.
+-
+-Test Data:
+-Radius = 7.5
+-
+-Expected Output
+-Perimeter is = 47.12388980384689
+-Area is = 176.71458676442586
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_5/Task_15.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_5/Task_15.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_5/Task_15.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,3 +0,0 @@
+-Посмотреть видео:  У кого нет шансов? | Рекрутер из Google
+-
+-https://www.youtube.com/watch?v=VvRVf7_j5gQ
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson1/homeworks/day_1/Task_2.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson1/homeworks/day_1/Task_2.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson1/homeworks/day_1/Task_2.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,14 +0,0 @@
+-Write a Java program to print the sum of two numbers.
+-
+-Test Data:
+-74 + 36
+-Expected Output :
+-110
+-
+------------------------------------------------------------------
+-
+-Write a Java program to divide two numbers and print on the screen.
+-Test Data :
+-50/3
+-Expected Output :
+-16
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_1/Task_1.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_1/Task_1.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_1/Task_1.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,2 +0,0 @@
+-Написать консольную программу, которая запрашивает у пользователя два целых числа и
+-выводит на консоль результаты: сложения, вычитания, умножения и деления.
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson1/homeworks/day_1/Task_1.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson1/homeworks/day_1/Task_1.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson1/homeworks/day_1/Task_1.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,6 +0,0 @@
+-Write a Java program to print 'Hello'
+-on screen and then print your name on a separate line.
+-
+-Expected Output :
+-Hello
+-Alexandra Abramov
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_7.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_7.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_7.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,11 +0,0 @@
+-Задача 5 (level 2):
+-Дан код, нужно сделать этот код запускаемым.
+-
+-class LoginService {
+-
+-	public void main(String[] args) {
+-		System.out.println("You can login!");
+-	}
+-
+-
+-}
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_6/Task_16.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_6/Task_16.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_6/Task_16.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,5 +0,0 @@
+-Прочитать статьи:
+-
+-https://vc.ru/hr/98297-o-sobesedovanii-v-amazon-kakie-voprosy-budut-zadavat-na-intervyu-i-chto-nuzhno-znat-zaranee
+-
+-https://www.inc.com/peter-economy/the-14-amazon-leadership-principles-that-can-lead-you-your-business-to-tremendous-success.html
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_12.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_12.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_12.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,2 +0,0 @@
+-Найдите в интеренете ответ на вопрос:
+-Как узнать какая версия JDK установлена на вашем компьютере?
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_5.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_5.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_5.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,9 +0,0 @@
+-Задача 3 (level 1):
+-Дан код, нужно исправить ошибку компиляции.
+-
+-class BankAccount {
+-
+-	public static void main(String[] args) {
+-
+-
+-}
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_11.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_11.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_11.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,1 +0,0 @@
+-Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_8.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_8.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_8.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,4 +0,0 @@
+-Задача 6 (level 3) :
+-Написать консольную программу, которая запрашивает
+-имя пользователя и выводит на консоль текст:
+-Hello имя пользователя!
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_3.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_3.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_3.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,4 +0,0 @@
+-Задача 1 (level 1):
+-Дан код, нужно исправить ошибку компиляции.
+-
+-class Book {
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_4.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_4.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_2/Task_4.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,6 +0,0 @@
+-Задача 2 (level 1):
+-Дан код, нужно исправить ошибку компиляции.
+-
+-class Phone
+-
+-}
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_1/Task_2.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_1/Task_2.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_1/Task_2.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,4 +0,0 @@
+-Практическое задание на сегодня (level 2):
+-Написать консольную программу, которая запрашивает у пользователя два вещественных числа
+-(числа с запятой) и выводит на консоль результаты: сложения, вычитания, умножения и деления.
+-Вещественные числа можно запрашивать с консоли используя обьект Scanner. Найдите как это можно сделать!
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_14.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_14.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_14.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,3 +0,0 @@
+-Найти в интеренете ответ на вопрос:
+-Как запустить откомпилировнный код с помощью JDK и виртуальной
+-машины Java (JVM), без помощи среды разработки (из консоли)?
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_9.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_9.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_3/Task_9.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,12 +0,0 @@
+-Write a Java program that takes a number as input and prints its
+-multiplication table up to 10.
+-
+-Test Data:
+-Input a number: 8
+-
+-Expected Output :
+-8 x 1 = 8
+-8 x 2 = 16
+-8 x 3 = 24
+-...
+-8 x 10 = 80
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_13.txt
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_13.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
++++ out/production/java_1_thursday_2020_online/teacher/lesson2/homeworks/day_4/Task_13.txt	(revision a035ad67e911a60916516e5dc5d6846b289c7d03)
+@@ -1,3 +0,0 @@
+-Найти в интеренете ответ на вопрос:
+-Как откомпилировать код с помощью JDK компилятора javac,
+-без помощи среды разработки (из консоли)?
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_1/homeworks/day_1/Task_1.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_1/homeworks/day_1/Task_1.txt	(date 1588490671728)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_1/homeworks/day_1/Task_1.txt	(date 1588490671728)
+@@ -0,0 +1,6 @@
++Write a Java program to print 'Hello'
++on screen and then print your name on a separate line.
++
++Expected Output :
++Hello
++Alexandra Abramov
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_9.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_9.txt	(date 1588490671709)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_9.txt	(date 1588490671709)
+@@ -0,0 +1,12 @@
++Write a Java program that takes a number as input and prints its
++multiplication table up to 10.
++
++Test Data:
++Input a number: 8
++
++Expected Output :
++8 x 1 = 8
++8 x 2 = 16
++8 x 3 = 24
++...
++8 x 10 = 80
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_5/Task_15.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_5/Task_15.txt	(date 1588490671705)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_5/Task_15.txt	(date 1588490671705)
+@@ -0,0 +1,3 @@
++Посмотреть видео:  У кого нет шансов? | Рекрутер из Google
++
++https://www.youtube.com/watch?v=VvRVf7_j5gQ
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_3.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_3.txt	(date 1588490671720)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_3.txt	(date 1588490671720)
+@@ -0,0 +1,4 @@
++Задача 1 (level 1):
++Дан код, нужно исправить ошибку компиляции.
++
++class Book {
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_8.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_8.txt	(date 1588490671713)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_8.txt	(date 1588490671713)
+@@ -0,0 +1,4 @@
++Задача 6 (level 3) :
++Написать консольную программу, которая запрашивает
++имя пользователя и выводит на консоль текст:
++Hello имя пользователя!
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_10.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_10.txt	(date 1588490671712)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_10.txt	(date 1588490671712)
+@@ -0,0 +1,8 @@
++Write a Java program to print the area and perimeter of a circle.
++
++Test Data:
++Radius = 7.5
++
++Expected Output
++Perimeter is = 47.12388980384689
++Area is = 176.71458676442586
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_11.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_11.txt	(date 1588490671710)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_3/Task_11.txt	(date 1588490671710)
+@@ -0,0 +1,1 @@
++Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_1/homeworks/day_1/Task_2.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_1/homeworks/day_1/Task_2.txt	(date 1588490671727)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_1/homeworks/day_1/Task_2.txt	(date 1588490671727)
+@@ -0,0 +1,14 @@
++Write a Java program to print the sum of two numbers.
++
++Test Data:
++74 + 36
++Expected Output :
++110
++
++-----------------------------------------------------------------
++
++Write a Java program to divide two numbers and print on the screen.
++Test Data :
++50/3
++Expected Output :
++16
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_4.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_4.txt	(date 1588490671719)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_4.txt	(date 1588490671719)
+@@ -0,0 +1,6 @@
++Задача 2 (level 1):
++Дан код, нужно исправить ошибку компиляции.
++
++class Phone
++
++}
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_13.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_13.txt	(date 1588490671707)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_13.txt	(date 1588490671707)
+@@ -0,0 +1,3 @@
++Найти в интеренете ответ на вопрос:
++Как откомпилировать код с помощью JDK компилятора javac,
++без помощи среды разработки (из консоли)?
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_7.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_7.txt	(date 1588490671714)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_7.txt	(date 1588490671714)
+@@ -0,0 +1,11 @@
++Задача 5 (level 2):
++Дан код, нужно сделать этот код запускаемым.
++
++class LoginService {
++
++	public void main(String[] args) {
++		System.out.println("You can login!");
++	}
++
++
++}
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_1/Task_1.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_1/Task_1.txt	(date 1588490671722)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_1/Task_1.txt	(date 1588490671722)
+@@ -0,0 +1,2 @@
++Написать консольную программу, которая запрашивает у пользователя два целых числа и
++выводит на консоль результаты: сложения, вычитания, умножения и деления.
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_6/Task_16.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_6/Task_16.txt	(date 1588490671704)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_6/Task_16.txt	(date 1588490671704)
+@@ -0,0 +1,5 @@
++Прочитать статьи:
++
++https://vc.ru/hr/98297-o-sobesedovanii-v-amazon-kakie-voprosy-budut-zadavat-na-intervyu-i-chto-nuzhno-znat-zaranee
++
++https://www.inc.com/peter-economy/the-14-amazon-leadership-principles-that-can-lead-you-your-business-to-tremendous-success.html
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_14.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_14.txt	(date 1588490671706)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_14.txt	(date 1588490671706)
+@@ -0,0 +1,3 @@
++Найти в интеренете ответ на вопрос:
++Как запустить откомпилировнный код с помощью JDK и виртуальной
++машины Java (JVM), без помощи среды разработки (из консоли)?
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_12.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_12.txt	(date 1588490671708)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_4/Task_12.txt	(date 1588490671708)
+@@ -0,0 +1,2 @@
++Найдите в интеренете ответ на вопрос:
++Как узнать какая версия JDK установлена на вашем компьютере?
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_1/Task_2.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_1/Task_2.txt	(date 1588490671721)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_1/Task_2.txt	(date 1588490671721)
+@@ -0,0 +1,4 @@
++Практическое задание на сегодня (level 2):
++Написать консольную программу, которая запрашивает у пользователя два вещественных числа
++(числа с запятой) и выводит на консоль результаты: сложения, вычитания, умножения и деления.
++Вещественные числа можно запрашивать с консоли используя обьект Scanner. Найдите как это можно сделать!
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_5.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_5.txt	(date 1588490671718)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_5.txt	(date 1588490671718)
+@@ -0,0 +1,9 @@
++Задача 3 (level 1):
++Дан код, нужно исправить ошибку компиляции.
++
++class BankAccount {
++
++	public static void main(String[] args) {
++
++
++}
+\ No newline at end of file
+Index: out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_6.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_6.txt	(date 1588490671715)
++++ out/production/java_1_thursday_2020_online/teacher/lesson_2/homeworks/day_2/Task_6.txt	(date 1588490671715)
+@@ -0,0 +1,11 @@
++Задача 4 (level 1):
++Дан код, нужно исправить ошибку компиляции.
++
++class Turtle {
++
++	public static void main(String[] args)
++
++	}
++
++
++}
