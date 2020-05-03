@@ -1,4 +1,4 @@
-package student_vadims_vladisevs.lesson2.Homework.Level2;
+package student_vadims_vladisevs.lesson2.homework.level2;
 import java.util.*;
 
 public class FractionalNumbersSimpleMathOperations {

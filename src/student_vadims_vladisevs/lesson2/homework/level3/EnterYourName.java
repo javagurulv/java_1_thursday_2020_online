@@ -1,4 +1,4 @@
-package student_vadims_vladisevs.lesson2.Homework.Level3;
+package student_vadims_vladisevs.lesson2.homework.level3;
 import java.util.*;
 
 public class EnterYourName {

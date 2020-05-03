@@ -1,4 +1,4 @@
-package student_vadims_vladisevs.lesson2.Homework.Level1;
+package student_vadims_vladisevs.lesson2.homework.level1;
 import java.util.*;
 
 public class MathOperationsDemo {
