@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson2.inclass;
+package student_igors_mihejevs.lesson2.lesson_code;
 
 public class Calculator {
 

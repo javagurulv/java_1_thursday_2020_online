@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson2.day2;
+package student_igors_mihejevs.lesson2.homeworks.day_2;
 
 public class Phone {
 
