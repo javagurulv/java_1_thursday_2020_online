@@ -1,8 +1,9 @@
-package student_edgars_lukjanskis;
+package student_edgars_lukjanskis.lession2;
 
 import java.util.Scanner;
 
 public class AddTwoNumber {
+
     public static void main(String[] args) {
         // 1. get first number from user
         Scanner myInput = new Scanner( System.in );
