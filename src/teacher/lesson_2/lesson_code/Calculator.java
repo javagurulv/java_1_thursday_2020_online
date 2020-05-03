@@ -1,4 +1,4 @@
-package teacher.lesson2.lesson_code;
+package teacher.lesson_2.lesson_code;
 
 public class Calculator {
 
