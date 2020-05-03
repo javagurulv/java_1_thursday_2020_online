@@ -1,4 +1,4 @@
-package student_igors_mihejevs.w3resource.basic_exercises_part1;
+package student_igors_mihejevs.lesson2.homeworks.additional_exercises;
 
 public class Exercise4 {
     public static void main(String[] args) {
