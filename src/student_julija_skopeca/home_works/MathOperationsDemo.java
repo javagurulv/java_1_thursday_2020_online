@@ -1,4 +1,4 @@
-package student_julija_skopeca.HomeWorks;
+package student_julija_skopeca.home_works;
 
 public class MathOperationsDemo {
 
