@@ -19,27 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7f3af10-7b4d-4cbf-8928-3caf93c0de80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/src.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/day_3/Task_10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/day_3/Task_11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/day_3/Task_9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/day_4/Task_12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/day_4/Task_13_14" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2020_11_09__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2020_11_09__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_vadims_vladisevs/HellowWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/Homework/Level1/AttentionTasks" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/level1/AttentionTasks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/Homework/Level1/IntegerSimpleMathOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/level1/IntegerSimpleMathOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/Homework/Level1/MathOperationsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/level1/MathOperationsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/Homework/Level2/FractionalNumbersSimpleMathOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/level2/FractionalNumbersSimpleMathOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/Homework/Level2/RandomGeneratorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/level2/RandomGeneratorDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/Homework/Level3/EnterYourName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/homework/level3/EnterYourName.java" afterDir="false" />
+    <list default="true" id="c3354ea1-1f9f-4432-a9cf-8b3076466962" name="Default Changelist" comment="day 3 task 10">
+      <change beforePath="$PROJECT_DIR$/src/student_julija_skopeca/PracticalTasks/day_3_task_10_circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_julija_skopeca/PracticalTasks/Day_3/day_3_task_10_circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/student_julija_skopeca/PracticalTasks/day_3_task_9_multTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/student_julija_skopeca/PracticalTasks/Day_3/day_3_task_9_multTable.java" afterDir="false" />
     </list>
-    <list id="b042b37d-7583-4f0e-842b-204177603254" name="Ignore" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +40,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -157,6 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Multiplicator" />
+      <item itemvalue="Application.Task_10" />
+      <item itemvalue="Application.Task_11" />
+      <item itemvalue="Application.Task_9" />
+      <item itemvalue="Application.RandomGeneratorDemo" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Task_11" />
@@ -514,7 +505,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/student_vadims_vladisevs/lesson2/AddTwoNumbers.java</url>
           <line>5</line>
-          <properties class="student_vadims_vladisevs.lesson2.AddTwoNumbers" method="main">
+          <properties class="student_vadims_vladisevs.lesson2.AddTwoNumbers">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
