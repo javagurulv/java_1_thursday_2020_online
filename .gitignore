@@ -3,5 +3,7 @@
 *.iml
 
 #### IntelliJ IDEA dir config ####
-.idea
-out
+idea/
+
+#### IntelliJ IDEA out folder (compilation folder) ####
+out/

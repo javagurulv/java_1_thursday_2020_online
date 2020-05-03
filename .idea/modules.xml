@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaGuru.iml" filepath="$PROJECT_DIR$/JavaGuru.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java_1_thursday_2020_online.iml" filepath="$PROJECT_DIR$/java_1_thursday_2020_online.iml" />
+    </modules>
+  </component>
+</project>
