@@ -1,4 +1,4 @@
-package student_diana_miranovica.lesson2;
+package student_diana_miranovica.lesson2.day_1;
 
 import java.io.FileReader;
 import java.util.Scanner;
