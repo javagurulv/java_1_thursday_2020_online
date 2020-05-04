@@ -1,0 +1,4 @@
+Как узнать какая версия JDK установлена на вашем компьютере?
+keys: windows key + R
+enter command - cmd
+enter command - java -version
