@@ -7,7 +7,7 @@ import java.lang.Math;
 public class Task_10 {
     public static void main(String[] args) {
         try {
-            System.out.println("Please radius value: ");
+            System.out.println("Please enter  radius value: ");
             double dRadius = new Scanner(System.in).nextDouble();
 
             System.out.println("Perimeter is = " + 2 * Math.PI * dRadius);
