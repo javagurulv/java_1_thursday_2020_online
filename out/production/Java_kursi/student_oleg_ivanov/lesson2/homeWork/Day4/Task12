@@ -1,0 +1,7 @@
+1) Go to Control Panel-->Program and Features and check if Java /JDK is listed there.
+
+2) Open command prompt and type java -version. If you get the version info, Java is installed correctly and PATH is also set correctly.
+
+3) Go to start menu-->System-->Advanced-->Environment Variables. Check if both PATH and JAVA_HOME are set correctly. This can also be done by using the "set" command on the command prompt.
+
+4) If none of the above work, search you file system for javac.exe If you find it , set PATH (should point to the bin directory) and JAVA_HOME (should point to the parent directory of the bin directory) in environment variables mentioned in the above point.
