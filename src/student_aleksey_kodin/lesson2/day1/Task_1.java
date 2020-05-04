@@ -1,9 +1,9 @@
-package student_aleksey_kodin.lesson2;
+package student_aleksey_kodin.lesson2.day1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ExampleIntValue {
+public class Task_1 {
 
     public static void main(String[] args) {
         try {

@@ -1,8 +1,8 @@
-package student_aleksey_kodin.lesson2;
+package student_aleksey_kodin.lesson2.day2;
 
 import java.util.Scanner;
 
-public class NameToConsole {
+public class Task_8 {
 
     public static void main(String[] args) {
         System.out.println("Please enter Your name: ");

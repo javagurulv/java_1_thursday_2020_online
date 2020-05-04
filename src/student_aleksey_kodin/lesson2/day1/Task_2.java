@@ -1,9 +1,9 @@
-package student_aleksey_kodin.lesson2;
+package student_aleksey_kodin.lesson2.day1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ExampleDoubleValue {
+public class Task_2 {
     public static void main(String[] args) {
         try {
             System.out.println("Please enter first double value: ");
