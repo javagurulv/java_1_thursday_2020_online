@@ -1,0 +1,10 @@
+Найдите в интеренете ответ на вопрос:
+Как узнать какая версия JDK установлена на вашем компьютере?
+
+Answer:
+You can get the version number of Java installed on your computer if you type ‘java’
+in the Windows 10 search box and run the Java applet.
+ You can also find out the current version of Java in the
+ ‘Programs and Windows Components’ panel (Win + R -> appwiz.cpl).
+  You can display the current version of Java from the command line.
+  Run cmd.exe and run the command: java -version
