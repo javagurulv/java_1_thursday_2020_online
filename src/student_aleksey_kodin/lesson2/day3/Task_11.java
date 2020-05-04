@@ -12,7 +12,7 @@ public class Task_11 {
             System.out.println("Please enter second int value: ");
             int iSecondValue = new Scanner(System.in).nextInt();
 
-            System.out.println("Please enter second int value: ");
+            System.out.println("Please enter third int value: ");
             int iThirdValue = new Scanner(System.in).nextInt();
 
             System.out.println("Average is = "  + (iFirstValue * iSecondValue * iThirdValue / 3));
