@@ -6,11 +6,11 @@ public class Task_1 {
 
         public static void main(String[] args) {
 
-            System.out.println("Введите первое целое число");
+            System.out.println("Введите первое целое число: ");
             Scanner myFirstInput = new Scanner( System.in );
             int firstNumber = myFirstInput.nextInt();
 
-            System.out.println("Введите второе целое число");
+            System.out.println("Введите второе целое число: ");
             Scanner mySecondInput = new Scanner( System.in );
             int secondNumber = mySecondInput.nextInt();
 
