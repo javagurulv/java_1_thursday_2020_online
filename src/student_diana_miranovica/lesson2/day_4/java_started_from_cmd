@@ -1,0 +1,9 @@
+Найти в интеренете ответ на вопрос:
+Как запустить откомпилировнный код с помощью JDK и виртуальной
+машины Java (JVM), без помощи среды разработки (из консоли)?
+
+
+Answer:
+At the command line, specify the path of the folder with the compilation file->
+ cd C: path to the folder with the file,press enter.
+ After which we enter the command -> java (file name .java). File started
