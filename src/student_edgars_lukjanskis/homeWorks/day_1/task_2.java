@@ -1,8 +1,8 @@
-package student_edgars_lukjanskis.homeWorks.task1;
+package student_edgars_lukjanskis.homeWorks.day_1;
 
 import java.util.Scanner;
 
-public class task2Level2 {
+public class task_2 {
 
     public static void main(String[] args) {
         Scanner myInput = new Scanner( System.in );
