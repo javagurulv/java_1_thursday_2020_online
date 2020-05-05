@@ -1,4 +1,4 @@
-package teacher.lesson_1.lesson_code;
+package teacher.lesson_1.lessoncode;
 
 public class Phone {
 
