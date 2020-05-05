@@ -5,7 +5,7 @@ package student_igors_mihejevs.lesson2.homeworks.day_3;
 
 import java.util.Scanner;
 
-public class MultiplicationTable {
+public class Task_9 {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
         int secondNumber;
