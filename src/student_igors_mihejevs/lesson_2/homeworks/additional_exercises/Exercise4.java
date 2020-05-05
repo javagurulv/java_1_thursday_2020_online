@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson2.homeworks.additional_exercises;
+package student_igors_mihejevs.lesson_2.homeworks.additional_exercises;
 
 public class Exercise4 {
     public static void main(String[] args) {

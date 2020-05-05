@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson2.homeworks.day_3;
+package student_igors_mihejevs.lesson_2.homeworks.day_3;
 
 // It's a Java program that takes a number as input and prints its
 // multiplication table up to 10.

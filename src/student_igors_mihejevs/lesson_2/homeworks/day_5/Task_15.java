@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson2.homeworks.day_5;
+package student_igors_mihejevs.lesson_2.homeworks.day_5;
 
 // This is a Java program that takes three numbers as input
 // to calculate and print the average of the numbers

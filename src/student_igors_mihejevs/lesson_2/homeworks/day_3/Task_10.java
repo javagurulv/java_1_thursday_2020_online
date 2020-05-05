@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson2.homeworks.day_3;
+package student_igors_mihejevs.lesson_2.homeworks.day_3;
 
 // This is a Java program to print the area and perimeter of a circle
 // area = pi * radius * radius

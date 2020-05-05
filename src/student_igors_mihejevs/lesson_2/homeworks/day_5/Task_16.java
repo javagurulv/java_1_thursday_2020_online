@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson2.homeworks.day_5;
+package student_igors_mihejevs.lesson_2.homeworks.day_5;
 
 /* The new class, created with shortcuts keys only.
    Contest menu was caused by using Left Alt + Ins keys
