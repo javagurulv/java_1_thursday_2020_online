@@ -1,0 +1,12 @@
+Найдите в интеренете ответ на вопрос:
+Как узнать какая версия JDK установлена на вашем компьютере?
+
+Ответ:
+В командной строке зайти в папку, где установлена JDK и набрать команду java --version.
+
+C:\Java\jdk-14>java --version
+java version "14" 2020-03-17
+Java(TM) SE Runtime Environment (build 14+36-1461)
+Java HotSpot(TM) 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
+
+
