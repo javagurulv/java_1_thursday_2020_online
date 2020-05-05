@@ -1,0 +1,7 @@
+Найти в интеренете ответ на вопрос:
+Как откомпилировать код с помощью JDK компилятора javac,
+без помощи среды разработки (из консоли)?
+
+javac <path>\<filename>.java
+Пример:
+C:\Users\Aleksey>javac C:\Java\IntValue.java
