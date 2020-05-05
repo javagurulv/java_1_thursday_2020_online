@@ -7,7 +7,7 @@ public class frday0105level1 {
     public static void main(String[] args) {
         //1. get first number from user ''+''
 
-        Scanner myInput = new Scanner( System.in );
+        Scanner myInput = new Scanner(System.in);
         int firstNumber = myInput.nextInt();
 
         //2. get second number from user''+''
@@ -20,7 +20,7 @@ public class frday0105level1 {
         System.out.println("sum = " + result);
 
         //5. get fifth number from user''-''
-        Scanner myInput2 = new Scanner( System.in );
+        Scanner myInput2 = new Scanner(System.in);
         int fifthNumber = myInput.nextInt();
 
         //6.get sixth number from user ''-''
@@ -33,7 +33,7 @@ public class frday0105level1 {
         System.out.println("min = " + result2);
 
         //.9 get seventh number from user ''*''
-        Scanner myInput3 = new Scanner( System.in );
+        Scanner myInput3 = new Scanner(System.in);
         int seventhNumber = myInput.nextInt();
 
         //.10 get eight number from user ''*''
@@ -46,7 +46,7 @@ public class frday0105level1 {
         System.out.println("* = " + result3);
 
         //.13 get ninth number from user''/''
-        Scanner muInput4 = new Scanner( System.in );
+        Scanner muInput4 = new Scanner(System.in);
         int ninthNumber = myInput.nextInt();
 
         //.14 get tenth number from user''/''
