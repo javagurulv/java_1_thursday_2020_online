@@ -2,12 +2,12 @@
 Дан код, нужно исправить ошибку компиляции.
 
 class Book {
- <- нет скобки
+} <- нет скобки
 
 Задача 2 (level 1):
 Дан код, нужно исправить ошибку компиляции.
 
-class Phone <- нет скобки
+class Phone {<- нет скобки
 
 }
 
@@ -18,7 +18,7 @@ class Phone <- нет скобки
 class BankAccount {
 
   public static void main(String[] args) {
-   <- нет скобки
+  } <- нет скобки
 
 }
 
@@ -28,7 +28,7 @@ class BankAccount {
 
 class Turtle {
 
-  public static void main(String[] args)  <-нет скобки
+  public static void main(String[] args)  {<-нет скобки
 
   }
 
@@ -41,7 +41,7 @@ class Turtle {
 
 class LoginService {
 
-  public void main(String[] args) { <- отсутствует static
+  public static void main(String[] args) { <- отсутствует static
     System.out.println("You can login!");
   }
 

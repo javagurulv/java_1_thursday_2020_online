@@ -1,4 +1,4 @@
-package student_aleksey_kodin.HandWriting;
+package student_aleksey_kodin.handwriting;
 
 public class Main {
 

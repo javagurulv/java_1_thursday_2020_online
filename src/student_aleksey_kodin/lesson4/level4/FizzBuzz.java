@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson4;
+package student_aleksey_kodin.lesson4.level4;
 
 public class FizzBuzz {
 
