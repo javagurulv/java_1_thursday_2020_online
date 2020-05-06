@@ -19,5 +19,6 @@ public class RandomGeneratorDemo {
         System.out.println("Third random number - " + iRndValue3);
 
         System.out.println("The Sum is - " + iRndValue1 + " + " + iRndValue2 + " + " + iRndValue3 + " = " + iSum);
+
     }
 }

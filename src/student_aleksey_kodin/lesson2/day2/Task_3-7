@@ -1,0 +1,49 @@
+Задача 1 (level 1):
+Дан код, нужно исправить ошибку компиляции.
+
+class Book {
+} <- нет скобки
+
+Задача 2 (level 1):
+Дан код, нужно исправить ошибку компиляции.
+
+class Phone {<- нет скобки
+
+}
+
+
+Задача 3 (level 1):
+Дан код, нужно исправить ошибку компиляции.
+
+class BankAccount {
+
+  public static void main(String[] args) {
+  } <- нет скобки
+
+}
+
+
+Задача 4 (level 1):
+Дан код, нужно исправить ошибку компиляции.
+
+class Turtle {
+
+  public static void main(String[] args)  {<-нет скобки
+
+  }
+
+
+}
+
+
+Задача 5 (level 2):
+Дан код, нужно сделать этот код запускаемым.
+
+class LoginService {
+
+  public static void main(String[] args) { <- отсутствует static
+    System.out.println("You can login!");
+  }
+
+
+}
