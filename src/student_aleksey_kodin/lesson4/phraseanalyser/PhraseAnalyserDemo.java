@@ -8,7 +8,6 @@ public class PhraseAnalyserDemo {
         System.out.println("Enter string:");
         String strInput = new Scanner(System.in).nextLine();
 
-        String strReturn;
-        System.out.println(strReturn = new PhraseAnalyser().analyse(strInput));
+        System.out.println(new PhraseAnalyser().analyse(strInput));
     }
 }
