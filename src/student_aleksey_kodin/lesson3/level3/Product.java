@@ -4,7 +4,7 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 public class Product {
-    private String name;
+    private final String name;
     private double regularPrice = 0d;
     private double discount = 0d;
 
