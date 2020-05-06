@@ -1,4 +1,4 @@
-package student_alexander_bogachenkov.lesson2_30042020.homeworks.everyday_homeworks.day_3;
+package student_alexander_bogachenkov.lesson2_30042020.homeworks.day_3;
 
 import java.util.Scanner;
 
