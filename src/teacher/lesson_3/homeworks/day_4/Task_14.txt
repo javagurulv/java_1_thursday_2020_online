@@ -1,0 +1,26 @@
+Найти ошибку в коде.
+Исправить и запустить программу.
+
+public class Book {
+
+    private String title
+
+    public Book(String bookTitle) {
+        this.title = newTitle
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
+
+}
+
+public class BookDemo {
+
+    public static void main(String[] args) {
+        Book myBook = new Book("Principles");
+        String bookTitle = myBook.getTitle();
+        System.out.println("Book title = " + bookTitle);
+    }
+
+}
