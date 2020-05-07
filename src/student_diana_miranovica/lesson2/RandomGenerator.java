@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson2;
 
 import java.util.Random;
 
-public class RandomGeneratorDemo {
+public class RandomGenerator {
     public static void main(String[] args) {
         double firstNumber = Math.random() * 3;
 
