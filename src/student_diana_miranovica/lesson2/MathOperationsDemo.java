@@ -1,4 +1,4 @@
-package student_diana_miranovica.home_works.les_2;
+package student_diana_miranovica.lesson2;
 
 public class MathOperationsDemo {
     public static void main(String[] args) {
