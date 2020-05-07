@@ -1,4 +1,4 @@
-package student_diana_miranovica.lesson_3;
+package student_diana_miranovica.lesson3.lesson_code;
 
 public class BankAccount {
     private String owner;

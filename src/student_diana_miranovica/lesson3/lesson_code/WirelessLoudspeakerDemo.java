@@ -1,4 +1,6 @@
-package student_diana_miranovica.lesson_3;
+package student_diana_miranovica.lesson3.lesson_code;
+
+import student_diana_miranovica.lesson3.lesson_code.WirelessLoudspeaker;
 
 public class WirelessLoudspeakerDemo {
     public static void main(String[] args) {
