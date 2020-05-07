@@ -13,4 +13,8 @@ public class Robot {
     public void sayYourName() {
         System.out.println("My name is ROBO");
     }
+
+    public void sayYourAge() {
+        System.out.println("My age is 5 years");
+    }
 }
