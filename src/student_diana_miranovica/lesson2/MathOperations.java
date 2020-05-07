@@ -1,6 +1,6 @@
-package student_diana_miranovica.home_works.les_2;
+package student_diana_miranovica.lesson2;
 
-public class MathOperationsDemo {
+public class MathOperations {
     public static void main(String[] args) {
         System.out.println("Welcome to the Math");
 

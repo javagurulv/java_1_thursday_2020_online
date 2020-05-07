@@ -15,10 +15,6 @@ public class TestForTask10 {
         System.out.println(Integer.toHexString(System.identityHashCode(name)));
         System.out.println(Integer.toHexString(System.identityHashCode(nextName)));
         System.out.println(Integer.toHexString(System.identityHashCode(oneMoreName)));
-
-        System.out.println(Integer.toHexString(System.identityHashCode(name)));
-        System.out.println(Integer.toHexString(System.identityHashCode(nextName)));
-        System.out.println(Integer.toHexString(System.identityHashCode(oneMoreName)));
         System.out.println();
         System.out.println(name.equals(nextName));
         System.out.println(name.equals(oneMoreName));
