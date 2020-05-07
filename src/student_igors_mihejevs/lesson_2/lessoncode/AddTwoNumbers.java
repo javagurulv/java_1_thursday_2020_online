@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_2.lesson_code;
+package student_igors_mihejevs.lesson_2.lessoncode;
 
 import java.util.Scanner;
 

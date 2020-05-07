@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_3;
+package student_igors_mihejevs.lesson_3.day_1;
 
 public class Robot {
 
