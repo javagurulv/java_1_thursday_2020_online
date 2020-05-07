@@ -10,12 +10,14 @@ public class BankAccount {
         this.moneyAmount = 0;
     }
 
-    public void addMoney(int moneyToAdd) {
+    public int addMoney(int moneyToAdd) {
         this.moneyAmount = this.moneyAmount + moneyToAdd;
+        return this.moneyAmount;
     }
 
-    public void removeMoney(int moneyToRemove) {
+    public int removeMoney(int moneyToRemove) {
         this.moneyAmount = this.moneyAmount - moneyToRemove;
+        return this.moneyAmount;
     }
 
     public void printStatusToConsole() {
