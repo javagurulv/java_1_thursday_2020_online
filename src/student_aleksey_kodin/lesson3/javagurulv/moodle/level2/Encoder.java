@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson3.javagurulv.moodle.ddd.level2;
+package student_aleksey_kodin.lesson3.javagurulv.moodle.level2;
 
 public class Encoder {
 private char chSymbol;
