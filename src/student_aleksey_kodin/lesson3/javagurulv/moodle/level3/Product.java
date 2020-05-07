@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson3.javagurulv.moodle.ddd.level3;
+package student_aleksey_kodin.lesson3.javagurulv.moodle.level3;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
