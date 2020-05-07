@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson_3;
 
 public class BankAccountDemo {
     public static void main(String[] args) {
-        BankAccount bankAccount = new BankAccount("Diana");
+        BankAccount bankAccount = new BankAccount("Diana Mir");
         int money = bankAccount.addMoney(1000);
         System.out.println("Money = " + money);
 
