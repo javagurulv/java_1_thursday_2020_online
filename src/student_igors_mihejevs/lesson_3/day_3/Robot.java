@@ -2,14 +2,14 @@ package student_igors_mihejevs.lesson_3.day_3;
 
 public class Robot {
 
-    private String robot;
+    private String name;
 
     public Robot(String robotName) {
-        this.robot = robotName;
+        this.name = robotName;
     }
 
     public String sayYourName() {
-        return this.robot;
+        return this.name;
     }
 
 }
