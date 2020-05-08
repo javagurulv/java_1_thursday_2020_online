@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson3.day2;
+package student_diana_miranovica.lesson3.homeworks.day_2;
 
 public class Motorcycle {
     String model;
