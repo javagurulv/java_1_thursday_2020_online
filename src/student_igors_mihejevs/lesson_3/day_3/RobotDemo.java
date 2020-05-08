@@ -3,17 +3,14 @@ package student_igors_mihejevs.lesson_3.day_3;
 public class RobotDemo {
     public static void main(String[] args) {
 
-        Robot robotROBO = new Robot("ROBO");
-        String robot1 = robotROBO.sayYourName();
-        System.out.println("My name is " + robot1);
+        Robot robot1 = new Robot("Rider");
+        robot1.sayYourName();
 
-        Robot robotROBI = new Robot("ROBI");
-        String robot2 = robotROBI.sayYourName();
-        System.out.println("My name is " + robot2);
+        Robot robot2 = new Robot("ROBI");
+        robot2.sayYourName();
 
-        Robot robotROBIK = new Robot("ROBIK");
-        String robot3 = robotROBIK.sayYourName();
-        System.out.println("My name is " + robot3);
+        Robot robot3 = new Robot("ROBIK");
+        robot3.sayYourName();
 
     }
 }
