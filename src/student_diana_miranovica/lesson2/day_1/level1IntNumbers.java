@@ -2,6 +2,7 @@ package student_diana_miranovica.lesson2.day_1;
 
 import java.util.Scanner;
 
+// название класса с маленькой буквы! Все классы в Java принято называть с заглавной буквы.  Исправьте!
 public class level1IntNumbers {
 
     public static void main(String[] args) {
@@ -15,8 +16,8 @@ public class level1IntNumbers {
         int secondNumber = myInput.nextInt();
 
         //Result of operations with numbers
-        int result1 = firstNumber + secondNumber;
-        int result2 = firstNumber - secondNumber;
+        int result1 = firstNumber + secondNumber; // result1, result2 ... это название переменных не отображает суть того что в ней хранится!
+        int result2 = firstNumber - secondNumber; // sum, subtract, ....
         int result3 = firstNumber / secondNumber;
         int result4 = firstNumber * secondNumber;
 
