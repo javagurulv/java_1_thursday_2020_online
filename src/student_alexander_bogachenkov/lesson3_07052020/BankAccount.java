@@ -1,28 +1,25 @@
-package teacher.lesson_3.lessoncode;
+package student_alexander_bogachenkov.lesson3_07052020;
 
 public class BankAccount {
 
     private String owner;
     private int moneyAmount;
 
-    public BankAccount(String owner) {
+    public BankAccount (String owner) {
         this.owner = owner;
         this.moneyAmount = 0;
     }
 
-    public int addMoney(int moneyToAdd) {
+    public void addMoney(int moneyToAdd) {
         this.moneyAmount = this.moneyAmount + moneyToAdd;
-        return this.moneyAmount;
     }
 
-    public int removeMoney(int moneyToRemove) {
+    public void removeMoney(int moneyToRemove) {
         this.moneyAmount = this.moneyAmount - moneyToRemove;
-        return this.moneyAmount;
     }
 
     public void printStatusToConsole() {
         System.out.println("Owner = " + owner);
         System.out.println("Money = " + moneyAmount);
     }
-
 }

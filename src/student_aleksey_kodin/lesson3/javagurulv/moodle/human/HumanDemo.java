@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson3.javagurulv.moodle.ddd;
+package student_aleksey_kodin.lesson3.javagurulv.moodle.human;
 
 public class HumanDemo {
 

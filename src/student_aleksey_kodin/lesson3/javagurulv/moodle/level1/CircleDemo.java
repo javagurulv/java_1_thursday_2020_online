@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson3.javagurulv.moodle.ddd.level1;
+package student_aleksey_kodin.lesson3.javagurulv.moodle.level1;
 
 public class CircleDemo {
 

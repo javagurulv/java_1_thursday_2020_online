@@ -1,15 +1,14 @@
-package teacher.lesson_3.lessoncode;
+package student_diana_miranovica.lesson3.lesson_code;
 
 public class BankAccount {
-
     private String owner;
     private int moneyAmount;
 
     public BankAccount(String owner) {
         this.owner = owner;
         this.moneyAmount = 0;
-    }
 
+    }
     public int addMoney(int moneyToAdd) {
         this.moneyAmount = this.moneyAmount + moneyToAdd;
         return this.moneyAmount;
