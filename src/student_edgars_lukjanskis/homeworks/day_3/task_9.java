@@ -1,9 +1,11 @@
-package student_edgars_lukjanskis.homeWorks.day_3;
+package student_edgars_lukjanskis.homeworks.day_3;
 
 import java.util.Scanner;
 
 public class task_9 {
 
+    // ОТСТУПЫ!!! ОТСТУПЫ!!! ОТСТУПЫ!!! ОТСТУПЫ!!!
+    // Соблюдайте отступы, код в котором не соблюдаются отступы читать невозможно!
     public static void main(String[] args) {
         Scanner scr = new Scanner (System.in);
             System.out.println("Enter your number ");
