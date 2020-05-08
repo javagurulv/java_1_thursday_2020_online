@@ -1,4 +1,4 @@
-package student_edgars_lukjanskis.homeWorks.day_3;
+package student_edgars_lukjanskis.homeworks.day_3;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class task_11 {
            System.out.println("Average number "+ average);
 
 
-
+        // не оставляйте пустые строки в конце метода!
 
     }
 }

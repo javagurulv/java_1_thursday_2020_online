@@ -1,4 +1,4 @@
-package student_edgars_lukjanskis.homeWorks.day_1;
+package student_edgars_lukjanskis.homeworks.day_1;
 
 import java.util.Scanner;
 
