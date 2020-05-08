@@ -11,7 +11,7 @@ public class Task_1 {
             int firstNumber = myFirstInput.nextInt();
 
             System.out.println("Введите второе целое число: ");
-            Scanner mySecondInput = new Scanner( System.in );
+            Scanner mySecondInput = new Scanner( System.in ); // два раза создавать объект Scanner не имеет смысла, можно пользоваться первым
             int secondNumber = mySecondInput.nextInt();
 
             int sum = firstNumber + secondNumber;

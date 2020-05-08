@@ -2,7 +2,7 @@ package student_oleg_ivanov.lesson2.homeWork.day1;
 
 import java.util.Scanner;
 
-public class level1 {
+public class level1 { // название класса с заглавной буквы!
     public static void main(String[] args) {
         //1. get first number from user
         System.out.println("Enter first number");
@@ -14,8 +14,8 @@ public class level1 {
         int secondNumber = myInput.nextInt();
 
         //3. first number + second number
-        int result1 = firstNumber + secondNumber;
-        int result2 = firstNumber - secondNumber;
+        int result1 = firstNumber + secondNumber; // result1, result2 ... это название переменных не отображает суть того что в ней хранится!
+        int result2 = firstNumber - secondNumber; // sum, subtract, ....
         int result3 = firstNumber * secondNumber;
         int result4 = firstNumber / secondNumber;
 
