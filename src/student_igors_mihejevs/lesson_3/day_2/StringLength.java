@@ -6,7 +6,7 @@ public class StringLength {
 
         String stringToTest = "Let's count the length of this string";
         int lengthOfString = stringToTest.length();
-        System.out.println("String lenth is : " + lengthOfString);
+        System.out.println("String length is : " + lengthOfString);
 
     }
 
