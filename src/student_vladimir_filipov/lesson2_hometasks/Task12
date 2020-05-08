@@ -1,0 +1,7 @@
+student_vladimir_filipov.lesson2_hometasks;
+Найдите в интеренете ответ на вопрос:
+        Как узнать какая версия JDK установлена на вашем компьютере?
+        
+        Win + R -> cmd;
+    Run the command: java -version
+

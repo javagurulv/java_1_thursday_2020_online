@@ -12,3 +12,11 @@
 Кто разберётся и сможет обьяснить заслужит +1 к карме.
 
 и т.д.
+
+
+Ответы:
+
+1. См. файл Memory_Allotment_in_String.pdf.
+2. StringLength Class.
+3. StringCompare Class.
+4. Разобрался. Ответ в классе StringPool и в файле String_Pool.pdf

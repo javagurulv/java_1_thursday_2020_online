@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Task_9 {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
-        int secondNumber;
+        int secondNumber; // переменную объявляйте там где вы ее первый раз используете
 
         System.out.print("Input a number : ");
         int firstNumber = myInput.nextInt();
