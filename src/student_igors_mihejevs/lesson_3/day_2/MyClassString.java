@@ -8,7 +8,5 @@ public class MyClassString {
         myString = "Igors";
 
         System.out.println("Hi"+ myString + "!");
-
     }
-
 }
