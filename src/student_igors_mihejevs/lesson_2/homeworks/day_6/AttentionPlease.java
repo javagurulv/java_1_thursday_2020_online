@@ -4,6 +4,5 @@ public class AttentionPlease {
     public static void main(String[] args) {
 
     System.out.println("\nCode inside the method will compile!");
-
     }
 }
