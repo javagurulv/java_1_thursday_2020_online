@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.day_6;
+package student_julija_skopeca.practical_tasks.lesson_2.day_6;
 
 public class task_24 {
 
