@@ -23,6 +23,5 @@ public class Task_15 {
 
         System.out.println("-------------------------------");
         System.out.println("The average of the numbers = " + average);
-
     }
 }
