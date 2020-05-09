@@ -1,4 +1,4 @@
-package student_alexander_bogachenkov.lesson3_07052020;
+package student_alexander_bogachenkov.lesson3_07052020.lesson_code;
 
 public class WirelessSpeaker {
 

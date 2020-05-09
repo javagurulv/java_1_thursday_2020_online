@@ -30,13 +30,13 @@ public class PrimeNumbers {
         System.out.print(" count = " + primeCount);
         System.out.println();
         System.out.println("If use algorithm Freshet Eratosthenes");
-        System.out.println(PrimeNumbersFreshetEratosthenes(500));
+        System.out.println(PrimeNumbersFreshetEratosthenes());
     }
-    static String  PrimeNumbersFreshetEratosthenes(int range) {
+    static String  PrimeNumbersFreshetEratosthenes() {
         ArrayList<Integer> numberRange = new ArrayList<>();
         int primeCount = 1;
 
-        for (int count = 2; count <= range; count++) {
+        for (int count = 2; count <= 500; count++) {
             numberRange.add(count);
         }
         for (int element = 0; element < numberRange.size() - 1; element++) {
@@ -47,6 +47,7 @@ public class PrimeNumbers {
             }
             primeCount++;
         }
+        // Create output format
         int sum = 0;
         primeCount = 0;
         for (int count = 0; count < 52; count++) {
