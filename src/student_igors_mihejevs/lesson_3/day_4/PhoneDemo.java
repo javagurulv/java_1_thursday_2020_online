@@ -7,4 +7,5 @@ public class PhoneDemo {
         String phoneModel = myPhone.getModel();
         System.out.println("Phone model = " + phoneModel);
     }
+
 }

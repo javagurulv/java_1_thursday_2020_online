@@ -3,7 +3,6 @@ package student_igors_mihejevs.lesson_3.day_2;
 public class StringPool {
 
     public static void main(String[] args) {
-
         String str1 = "String test";
         String str2 = "String test";
         String str3 = "String test new";
@@ -34,8 +33,6 @@ public class StringPool {
         In general, we should use the String literal notation when possible.
         It is easier to read and it gives the compiler a chance to optimize our code.
          */
-
     }
-
 
 }
