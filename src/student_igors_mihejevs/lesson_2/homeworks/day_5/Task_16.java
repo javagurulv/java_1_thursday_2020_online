@@ -10,6 +10,5 @@ public class Task_16 {
     public static void main(String[] args) {
         System.out.print("\nThis class was created using shortcuts only.\n\n");
         System.out.println("But contest menu was caused by using\nLeft Alt + Ins keys");
-
     }
 }

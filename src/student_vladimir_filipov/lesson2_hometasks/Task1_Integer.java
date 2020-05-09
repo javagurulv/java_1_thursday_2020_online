@@ -12,7 +12,7 @@ public class Task1_Integer {
         int firstNumber = myFirstInput.nextInt();
 
         System.out.println("Enter the second integer");
-        Scanner mySecondInput = new Scanner( System.in );
+        Scanner mySecondInput = new Scanner( System.in );  // создавать второй Scanner не надо, можно пользоваться первыйм.
         int secondNumber = mySecondInput.nextInt();
 
         int sum = firstNumber + secondNumber;

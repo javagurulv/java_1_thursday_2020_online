@@ -6,7 +6,7 @@ public class MathOperations {
 
         int a = 26;
         int b = 13;
-        int sum1 = a + b;
+        int sum = a + b;
 
         System.out.println( "1. Addition +" );
         System.out.print("a");
@@ -16,13 +16,13 @@ public class MathOperations {
         System.out.println("b = " + b);
 
 
-        System.out.println( "a + b = "+ a + " + " + b + " = " + sum1 );
+        System.out.println( "a + b = "+ a + " + " + b + " = " + sum );
 
 
         long c = 89;
         long d = 2;
 
-        long sum2 = c - d;
+        long sub = c - d;
 
         System.out.println(" ");
         System.out.println( "2. Subtraction -" );
@@ -32,7 +32,7 @@ public class MathOperations {
         System.out.print(", ");
         System.out.println("d = " + d);
 
-        System.out.println( "c - d = "+ c + " - " + d + " = " + sum2 );
+        System.out.println( "c - d = "+ c + " - " + d + " = " + sub );
 
         short e = 180;
         short f = 90;
@@ -50,7 +50,7 @@ public class MathOperations {
 
         double m = 2.5;
         double n = 3.14;
-        double sum4 = m * n;
+        double multi = m * n;
 
         System.out.println(" ");
         System.out.println( "4. Multiplication *" );
@@ -60,6 +60,6 @@ public class MathOperations {
         System.out.print(", ");
         System.out.println("n = " + n);
 
-        System.out.println( "m * n = "+ m + " * " + n + " = " + sum4 );
+        System.out.println( "m * n = "+ m + " * " + n + " = " + multi );
     }
 }
