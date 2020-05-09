@@ -1,8 +1,8 @@
-package student_julija_skopeca.practical_tasks.day_2;
+package student_julija_skopeca.practical_tasks.lesson_2.day_2;
 
 import java.util.Scanner;
 
-public class Saturday_0205_Task_6 {
+public class task_6 {
 
     public static void main(String[] args) {
 
