@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.day_3;
 
 import java.util.Scanner;
 
-public class day_3_task_11_averagenum {
+public class task_11_averagenum {
 
     public static void main(String[] args) {
 

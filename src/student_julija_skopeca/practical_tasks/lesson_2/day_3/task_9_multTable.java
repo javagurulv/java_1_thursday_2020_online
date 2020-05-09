@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.Day_3;
 
 import java.util.Scanner;
 
-public class day_3_task_9_multTable {
+public class task_9_multTable {
 
     public static void main(String[] args) {
 
