@@ -1,0 +1,51 @@
+- Где хранятся обьекты класса String?
+В зависимости от объявления ссылочной переменной класса String, эта переменная может храниться или в области
+памяти Java Heap или в области памяти String Pool.
+
+String name = "name"; <- будет храниться в String Pool.
+String nextName = new String("name"); <- будет храниться в Java Heap.
+При сравнении name == nextName; результат будет false, так как переменные указывают на разные ссылки объектов.
+Для проверки напишем небольшой тест:
+public class TestForTask10 {
+    public static void main(String[] args) {
+        String name = "Ivan";
+        String nextName = "Ivan";
+        String oneMoreName = new String("Ivan");
+
+        System.out.println(name == nextName);
+        System.out.println(name == oneMoreName);
+        System.out.println(nextName == oneMoreName);
+        System.out.println();
+        System.out.println(Integer.toHexString(System.identityHashCode(name)));
+        System.out.println(Integer.toHexString(System.identityHashCode(nextName)));
+        System.out.println(Integer.toHexString(System.identityHashCode(oneMoreName)));
+        System.out.println();
+        System.out.println(name.equals(nextName));
+        System.out.println(name.equals(oneMoreName));
+        System.out.println(nextName.equals(oneMoreName));
+    }
+}
+Результат:
+true        <- обе переменные ссылаются на одну и туже строку, именно поэтому результат верен.
+false       <- здесь и строкой ниже сравнение двух переменных из разных областей, именно поэтому результат ложен.
+false
+
+3feba861    <- здесь и строкой ниже хеш-код переменных name и nextName. Они указывают на одну и туже строку в String
+3feba861       Pool и поэтому name == nextName истино.
+5b480cf9    <- хеш-код на переменную oneMoreName которая находится в памяти Java Heap.
+
+true        <- для сравнения строк нужно применять посимвольную конструкцию name.equals(nextName);
+true        <- name.equals(oneMoreName);
+true        <- nextName.equals(oneMoreName);
+
+Перевод строки в String Pool можно при помощи конструкции:
+        oneMoreName = oneMoreName.intern();
+При этом происходит проверка на наличие в Pool строки и если такая строка существует, то объект не создаётся, а
+получает ссылку на строку в String Pool.
+
+Длину строки можно узнать при помощи конструкции:
+
+int length = name.length();
+int length = nextName.length();
+int length = oneMoreName.length();
+результат будет - length = 4;

@@ -1,0 +1,17 @@
+Найти в интеренете ответ на вопрос:
+Как запустить откомпилировнный код с помощью JDK и виртуальной
+машины Java (JVM), без помощи среды разработки (из консоли)?
+
+java -cp <path> <filename>
+Пример:
+C:\Users\Aleksey>java -cp C:\Java IntValue
+Please enter first int value:
+10
+Please enter second int value:
+5
+10 + 5 = 15
+10 - 5 = 5
+10 * 5 = 50
+10 / 5 = 2
+
+C:\Users\Aleksey>

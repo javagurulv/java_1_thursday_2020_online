@@ -1,0 +1,7 @@
+Как запустить откомпилировнный код с помощью JDK и виртуальной
+машины Java (JVM), без помощи среды разработки (из консоли)?
+1. win key + r
+2. cd - to choose the appropriate folder
+3. javac filename.java
+4. created filename.class
+5. java filename.java

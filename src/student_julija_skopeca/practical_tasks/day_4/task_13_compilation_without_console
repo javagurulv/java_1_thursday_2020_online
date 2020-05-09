@@ -1,0 +1,6 @@
+Как откомпилировать код с помощью JDK компилятора javac,
+без помощи среды разработки (из консоли)?
+1. win key + r
+2. cd - to choose the appropriate folder
+3. javac filename.java
+4. enter
