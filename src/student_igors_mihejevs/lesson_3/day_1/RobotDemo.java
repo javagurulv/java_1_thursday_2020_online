@@ -17,6 +17,5 @@ public class RobotDemo {
         robot3.sayHello();
         robot3.sayYourName();
         robot3.sayYourAge();
-
     }
 }
