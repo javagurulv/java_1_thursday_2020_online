@@ -1,4 +1,4 @@
-package student_alexander_bogachenkov.lesson2_30042020;
+package student_alexander_bogachenkov.lesson2_30042020.lesson_code;
 
 import java.util.Random;
 import java.util.Scanner;
