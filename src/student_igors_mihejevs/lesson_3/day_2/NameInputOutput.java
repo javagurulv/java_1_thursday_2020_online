@@ -13,4 +13,5 @@ public class NameInputOutput {
 
         System.out.println("\nHello " + firstName + " " + secondName + "!");
     }
+
 }

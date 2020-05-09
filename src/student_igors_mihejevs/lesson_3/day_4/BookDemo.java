@@ -7,4 +7,5 @@ public class BookDemo {
         String bookTitle = myBook.getTitle();
         System.out.println("Book title = " + bookTitle);
     }
+
 }
