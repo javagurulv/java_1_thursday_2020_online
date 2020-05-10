@@ -2,9 +2,8 @@ package student_igors_mihejevs.lesson_3.day_5.task_21;
 
 public class Dog {
 
-    private String name;
+    private String name, color;
     private int age;
-    private String color;
 
     public void dogName(String dogName) {
         this.name = dogName;
