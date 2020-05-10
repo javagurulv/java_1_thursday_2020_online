@@ -5,12 +5,12 @@ public class Dog {
     private String name;
     private int age;
 
-    public void dogName() {
-        this.name = "Viking";
+    public void dogName(String dogName) {
+        this.name = dogName;
     }
 
-    public void dogAge() {
-        this.age = 5;
+    public void dogAge(int dogAge) {
+        this.age = dogAge;
     }
 
     public void voice() {

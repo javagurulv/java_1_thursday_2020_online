@@ -6,16 +6,16 @@ public class Dog {
     private int age;
     private String color;
 
-    public void dogName() {
-        this.name = "Viking";
+    public void dogName(String dogName) {
+        this.name = dogName;
     }
 
-    public void dogAge() {
-        this.age = 5;
+    public void dogAge(int dogAge) {
+        this.age = dogAge;
     }
 
-    public void dogColor() {
-        this.color = "Black";
+    public void dogColor(String dogColor) {
+        this.color = dogColor;
     }
 
     public void happyBirthday() {
