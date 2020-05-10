@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks;
+package student_dmitrijs_visuns.homeworks.lesson_2.day_3;
 // Write a Java program that takes a number as input and prints its multiplication table up to 10.
 
 import java.util.Scanner;
