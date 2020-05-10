@@ -1,0 +1,11 @@
+package student_oleg_ivanov.lesson3.homeworks.day4;
+
+public class PhoneDemo {
+
+    public static void main(String[] args) {
+        Phone myPhone = new Phone("Huawei");
+        String phoneModel = myPhone.getModel();
+        System.out.println("Phone model = " + phoneModel);
+    }
+
+}
