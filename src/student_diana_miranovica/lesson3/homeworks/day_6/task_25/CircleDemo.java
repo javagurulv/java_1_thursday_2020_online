@@ -7,7 +7,8 @@ public class CircleDemo {
     public static void main(String[] args) {
 
         Circle circle = new Circle(9);
-        circle.voice();
+        System.out.println("Radius " + circle.getRadius());
+        System.out.println("Area = "+ circle.getRadius() + " * " + circle.getRadius()+ " * " + Math.PI + " = " + circle.calculateAreaGet() + " cm2");
 
 
 

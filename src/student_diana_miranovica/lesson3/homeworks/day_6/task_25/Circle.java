@@ -2,24 +2,28 @@ package student_diana_miranovica.lesson3.homeworks.day_6.task_25;
 
 public class Circle {
     private double radius;
-    private double area;
 
-    public Circle( double radius){
+     Circle( double radius){
         this.radius = radius;
-        this.area = radius * radius * Math.PI;
 
     }
 
+    public void setRadius (double radius){
+        this.radius = radius;
 
-
-
-    public void voice(){
-        System.out.println("Circle area : " + radius + " * " + radius + " * " + Math.PI + " = " +  area);
     }
 
+    public double getRadius() {
+        return radius;
 
+    }
+    public double calculateAreaGet(){
+        return catculateArea();
 
+    }
+    private double catculateArea(){
+        return Math.PI * radius * radius;
 
-
+    }
 }
 
