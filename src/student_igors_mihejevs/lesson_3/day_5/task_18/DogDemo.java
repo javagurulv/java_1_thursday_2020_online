@@ -4,7 +4,7 @@ public class DogDemo {
 
     public static void main(String[] args) {
         Dog myDog = new Dog();
-        myDog.dogName();
+        myDog.dogName("Viking");
         myDog.voice();
     }
 

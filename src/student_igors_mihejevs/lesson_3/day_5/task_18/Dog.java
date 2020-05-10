@@ -4,8 +4,8 @@ public class Dog {
 
     private String name;
 
-    public void dogName() {
-        this.name = "Viking";
+    public void dogName(String dogName) {
+        this.name = dogName;
     }
 
     public void voice() {

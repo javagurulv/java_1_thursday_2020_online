@@ -2,20 +2,19 @@ package student_igors_mihejevs.lesson_3.day_5.task_22;
 
 public class Dog {
 
-    private String name;
+    private String name, color;
     private int age;
-    private String color;
 
-    public void dogName() {
-        this.name = "Viking";
+    public void dogName(String dogName) {
+        this.name = dogName;
     }
 
-    public void dogAge() {
-        this.age = 5;
+    public void dogAge(int dogAge) {
+        this.age = dogAge;
     }
 
-    public void dogColor() {
-        this.color = "Ginger";
+    public void dogColor(String dogColor) {
+        this.color = dogColor;
     }
 
     public void changeColor(String newColor) {
