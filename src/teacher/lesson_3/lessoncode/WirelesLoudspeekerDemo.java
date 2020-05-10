@@ -5,6 +5,7 @@ public class WirelesLoudspeekerDemo {
     public static void main(String[] args) {
         WirelesLoudspeeker ws1 = new WirelesLoudspeeker("Bose", false);
         ws1.switchOn();
+
         ws1.switchOff();
         String model1 = ws1.getModel();
         System.out.println("WS 1 model = " + model1);
