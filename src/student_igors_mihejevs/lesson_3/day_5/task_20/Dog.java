@@ -11,11 +11,11 @@ public class Dog {
     }
 
     public void voice() {
-        System.out.println("My name is " + this.name + " and I'm " + this.age + " years old");
+        System.out.println("My name is " + name + " and I'm " + age + " years old");
     }
 
     public void happyBirthday() {
-        this.age = this.age + 1;
+        age = age + 1;
     }
 
 }
