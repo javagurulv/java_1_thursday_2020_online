@@ -19,7 +19,7 @@ public class BankAccount {
     }
 
     public String getOwnerLastName() {
-        return this.ownerFirstName;
+        return this.ownerLastName;
     }
 
     public int getMoneyAmount() {
