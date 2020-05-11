@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class Task_11 {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
-        double average;
 
         System.out.print("Enter first Number  : ");
         double firstNumber = myInput.nextDouble();
@@ -17,10 +16,9 @@ public class Task_11 {
         System.out.print("Enter third Number  : ");
         double thirdNumber = myInput.nextDouble();
 
-        average = (firstNumber + secondNumber + thirdNumber) / 3;
+        double average = (firstNumber + secondNumber + thirdNumber) / 3;
 
         System.out.println("-------------------------------");
         System.out.println("The average of the numbers = " + average);
-
     }
 }

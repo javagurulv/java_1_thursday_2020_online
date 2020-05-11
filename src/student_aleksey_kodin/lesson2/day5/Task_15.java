@@ -1,7 +1,7 @@
 package student_aleksey_kodin.lesson2.day5;
 
 
-import java.util.Scanner;
+import java.util.Scanner;  // не оставляйте в коде не используемые импорты
 
 public class Task_15 {
 
