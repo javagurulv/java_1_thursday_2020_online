@@ -5,7 +5,7 @@ public class TableLamp {
     private String technology, color, colorOfLight;
     private boolean isOn;
 
-    public void tableLampChar(String technology, String color, String colorOfLight, boolean isSwitchedOn) {
+    public TableLamp(String technology, String color, String colorOfLight, boolean isSwitchedOn) {
         this.technology = technology;
         this.color = color;
         this.colorOfLight = colorOfLight;
@@ -15,9 +15,9 @@ public class TableLamp {
     public void printCharOfLamp() {
         System.out.println("The table lamp characteristics:");
         System.out.println("-------------------------------");
-        System.out.println("Technology - " + technology);
-        System.out.println("Color - " + color);
-        System.out.println("Color of light - " + colorOfLight);
+        System.out.println("Technology - " + this.technology);
+        System.out.println("Color - " + this.color);
+        System.out.println("Color of light - " + this.colorOfLight);
         System.out.println("Is switched on - " + isOn);
     }
 
@@ -28,12 +28,12 @@ public class TableLamp {
 
     public void switchedOn() {
         this.isOn = true;
-        System.out.println("\nThe lamp is switched on!\n");
+        System.out.println("\nThe lamp is switched on!");
     }
 
     public void switchedOff() {
         this.isOn = false;
-        System.out.println("\nThe lamp is switched off!\n");
+        System.out.println("\nThe lamp is switched off!");
     }
 
 }
