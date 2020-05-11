@@ -1,7 +1,7 @@
 package student_oleg_ivanov.lesson3;
 
 public class BankAccount {
-    private String owner; //владелец
+    private final String owner; //владелец
     private double moneyAmount; //сумма денег
 
     public BankAccount (String owner) {

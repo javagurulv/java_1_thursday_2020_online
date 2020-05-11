@@ -2,9 +2,9 @@ package student_julija_skopeca.practical_tasks.lesson_3.day_4.task_17;
 
 public class BankAccount {
 
-    private String firstName;
-    private String lastName;
-    private int moneyAmount;
+    private final String firstName;
+    private final String lastName;
+    private final int moneyAmount;
 
     public BankAccount(String ownerFirstName,
                        String ownerLastName,

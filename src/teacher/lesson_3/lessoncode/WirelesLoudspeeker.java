@@ -2,7 +2,7 @@ package teacher.lesson_3.lessoncode;
 
 public class WirelesLoudspeeker {
 
-    private String model;
+    private final String model;
 
     // on/off
     private boolean isOn;

@@ -2,7 +2,7 @@ package student_oleg_ivanov.lesson3;
 
 public class WirlesLoudSpeaker {
 
-    private String model;
+    private final String model;
 
     // on/off
     private boolean isOn;

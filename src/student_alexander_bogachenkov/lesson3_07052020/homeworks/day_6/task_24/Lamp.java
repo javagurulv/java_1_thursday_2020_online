@@ -3,12 +3,12 @@ package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_6.task_24;
 public class Lamp {
 
     //statement
-    private String color;
-    private int heightCentimeters;
+    private final String color;
+    private final int heightCentimeters;
 
     //behavior
-    private boolean isOn;
-    private boolean isWorkingCorrectly;
+    private final boolean isOn;
+    private final boolean isWorkingCorrectly;
 
     public Lamp (String lampColor, int heightCentimeters, boolean isOn, boolean isWorkingCorrectly) {
         this.color = lampColor;
