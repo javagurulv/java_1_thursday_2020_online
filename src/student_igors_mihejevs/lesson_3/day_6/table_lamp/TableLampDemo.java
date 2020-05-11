@@ -21,5 +21,9 @@ public class TableLampDemo {
         myTableLamp.changingColorOfLight("cold");
 
         myTableLamp.lampState();
+
+        // Switching off the lamp
+        myTableLamp.switchedOff();
     }
+
 }
