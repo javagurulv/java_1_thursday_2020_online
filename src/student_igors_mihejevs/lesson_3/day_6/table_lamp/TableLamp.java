@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_3.day_6;
+package student_igors_mihejevs.lesson_3.day_6.table_lamp;
 
 public class TableLamp {
 
@@ -12,13 +12,17 @@ public class TableLamp {
         this.isOn = isSwitchedOn;
     }
 
-    public void printCharOfLamp() {
-        System.out.println("The table lamp characteristics:");
-        System.out.println("-------------------------------");
-        System.out.println("Technology - " + this.technology);
-        System.out.println("Color - " + this.color);
-        System.out.println("Color of light - " + this.colorOfLight);
-        System.out.println("Is switched on - " + isOn);
+    public String getTechnology() {
+        return this.technology;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public void lampState() {
+        System.out.print("\nCurrent state of the lamp : ");
+        System.out.println("The lamp is on - " + this.isOn + ", color of light - " + this.colorOfLight);
     }
 
     public void changingColorOfLight(String newColorOfLight) {

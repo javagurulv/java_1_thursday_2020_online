@@ -2,16 +2,24 @@ package student_igors_mihejevs.lesson_3.day_5.task_22;
 
 public class DogDemo {
 
-    public static void main(String[] args) {
-        Dog myDog = new Dog("Viking", 5, "Ginger");
+    // Demo of two dogs
 
-        myDog.voice();
+    public static void main(String[] args) {
+        Dog myDog1 = new Dog("Viking", 5, "Ginger");
+        Dog myDog2 = new Dog("Roger", 2, "White");
+
+        myDog1.voice();
+        myDog2.voice();
         System.out.println("\nAfter one year :");
-        myDog.happyBirthday();
-        myDog.voice();
+        myDog1.happyBirthday();
+        myDog2.happyBirthday();
+        myDog1.voice();
+        myDog2.voice();
         System.out.println("\nAfter changing color :");
-        myDog.changeColor("Black");
-        myDog.voice();
+        myDog1.changeColor("Black");
+        myDog1.voice();
+        myDog2.changeColor("Red");
+        myDog2.voice();
     }
 
 }
