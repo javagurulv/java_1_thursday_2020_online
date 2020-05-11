@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_3.day_6.table_lamp;
+package student_igors_mihejevs.lesson_3.day_6.task_24.table_lamp;
 
 public class TableLamp {
 
