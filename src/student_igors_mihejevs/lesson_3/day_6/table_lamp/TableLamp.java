@@ -13,19 +13,19 @@ public class TableLamp {
     }
 
     public String getTechnology() {
-        return this.technology;
+        return technology;
     }
 
     public String getColor() {
-        return this.color;
+        return color;
     }
 
     public void lampState() {
         System.out.print("\nCurrent state of the lamp : ");
-        System.out.println("The lamp is on - " + this.isOn + ", color of light - " + this.colorOfLight);
+        System.out.println("The lamp is on - " + isOn + ", color of light - " + colorOfLight);
     }
 
-    public void changingColorOfLight(String newColorOfLight) {
+    public void setColorOfLight(String newColorOfLight) {
         this.colorOfLight = newColorOfLight;
         System.out.println("\nThe color of light changed to " + newColorOfLight);
     }
