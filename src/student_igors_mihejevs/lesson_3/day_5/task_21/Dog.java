@@ -5,24 +5,19 @@ public class Dog {
     private String name, color;
     private int age;
 
-    public void dogName(String dogName) {
+    public Dog(String dogName, int dogAge, String dogColor) {
         this.name = dogName;
-    }
-
-    public void dogAge(int dogAge) {
         this.age = dogAge;
+        this.color = dogColor;
     }
 
-    public void dogColor(String dogColor) {
-        this.color = dogColor;
+    public void voice() {
+        System.out.println("My name is " + this.name + ", my color is " + this.color +
+                           " and I'm " + this.age + " years old");
     }
 
     public void happyBirthday() {
         this.age = this.age + 1;
-    }
-
-    public void voice() {
-        System.out.println("Dog name - " + this.name + "\nDog age - " + this.age + " years" + "\ndog color - " + this.color);
     }
 
 }
