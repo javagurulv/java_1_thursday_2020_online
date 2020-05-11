@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_3.day_4;
+package student_dmitrijs_visuns.homeworks.lesson_3.day_4.task_17;
 
 public class BankAccount {
 
@@ -13,13 +13,12 @@ public class BankAccount {
         this.ownerLastName = ownerLastName;
         this.moneyAmount = moneyAmount;
     }
-
     public String getOwnerFirstName() {
         return this.ownerFirstName;
     }
 
     public String getOwnerLastName() {
-        return this.ownerLastName;
+        return this.ownerFirstName;
     }
 
     public int getMoneyAmount() {
