@@ -2,7 +2,7 @@ package student_alexander_bogachenkov.lesson2_30042020.homeworks.day_1;
 
 import java.util.Scanner;
 
-public class Task_2_01052020 {
+class Task_2_01052020 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое вещественное (дробное) число:");
