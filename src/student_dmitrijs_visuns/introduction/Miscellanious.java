@@ -1,6 +1,6 @@
 package student_dmitrijs_visuns.introduction;
 
-public class Miscellanious {
+class Miscellanious {
 
     public Miscellanious() {
 
