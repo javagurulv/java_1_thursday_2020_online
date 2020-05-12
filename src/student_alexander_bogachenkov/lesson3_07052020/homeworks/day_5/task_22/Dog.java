@@ -2,8 +2,8 @@ package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_5.task_22;
 
 public class Dog {
 
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
     private String color;
 
     public void voice() {

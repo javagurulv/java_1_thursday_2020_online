@@ -2,8 +2,8 @@ package student_vadims_vladisevs.lesson3.day_6.task_24;
 
 public class Human {
 
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
     private boolean isTired;
 
     public Human(String name, int age, boolean isTired){

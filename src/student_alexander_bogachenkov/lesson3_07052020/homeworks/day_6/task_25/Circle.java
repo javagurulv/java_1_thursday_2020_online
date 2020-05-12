@@ -2,7 +2,7 @@ package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_6.task_25;
 
 public class Circle {
 
-    private double radius;
+    private final double radius;
 
     public Circle(double circleRadius) {
         this.radius = circleRadius;

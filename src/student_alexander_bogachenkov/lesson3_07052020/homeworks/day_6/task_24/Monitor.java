@@ -3,13 +3,13 @@ package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_6.task_24;
 public class Monitor {
 
     //statements
-    private String monitorManufacturer;
-    private String screenTechnology;
-    private float screenDiagonal;
+    private final String monitorManufacturer;
+    private final String screenTechnology;
+    private final float screenDiagonal;
 
     //behavior
-    private boolean isOn;
-    private boolean isConnectedToWifi;
+    private final boolean isOn;
+    private final boolean isConnectedToWifi;
 
     public Monitor(String manufacturer, String screenTechnology,
                    float screenDiagonal, boolean isOn, boolean isConnectedToWifi) {

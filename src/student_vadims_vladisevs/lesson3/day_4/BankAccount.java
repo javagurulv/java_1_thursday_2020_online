@@ -2,9 +2,9 @@ package student_vadims_vladisevs.lesson3.day_4;
 
 public class BankAccount {
 
-    private String ownerFirstName;
-    private String ownerLastName;
-    private int moneyAmount;
+    private final String ownerFirstName;
+    private final String ownerLastName;
+    private final int moneyAmount;
 
     public BankAccount(String ownerFirstName,
                        String ownerLastName,    //не хватало "," ;
