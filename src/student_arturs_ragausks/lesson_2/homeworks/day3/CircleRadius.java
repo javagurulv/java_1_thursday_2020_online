@@ -2,7 +2,7 @@ package student_arturs_ragausks.lesson_2.homeworks.day3;
 
 import java.util.Scanner;
 
-public class CircleRadius {
+class CircleRadius {
 
     public static void main(String[] args){
 
