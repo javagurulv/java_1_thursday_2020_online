@@ -3,7 +3,7 @@ package student_aleksey_kodin.lesson4.day3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Task_9 {
+class Task_9 {
     public static void main(String[] args) {
         try {
             System.out.println("Please enter first int value: ");

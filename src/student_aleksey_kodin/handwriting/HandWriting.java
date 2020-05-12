@@ -1,6 +1,6 @@
 package student_aleksey_kodin.handwriting;
 
-public class HandWriting {
+class HandWriting {
 
     private final String[] arrHandWriting = {"nulle ","viens ","divi ","trīs ","četri ","pieci ","seši ",
                                              "septeņi ","astoņi ","deviņi "};

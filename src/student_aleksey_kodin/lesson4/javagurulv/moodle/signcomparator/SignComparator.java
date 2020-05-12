@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.javagurulv.moodle.signcomparator;
 
-public class SignComparator {
+class SignComparator {
 
     public String compare(int number) {
 

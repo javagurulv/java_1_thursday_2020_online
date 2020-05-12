@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.javagurulv.moodle.level1;
 
-public class LightColorDetector {
+class LightColorDetector {
 
         public String detect(int wavelength) {
 

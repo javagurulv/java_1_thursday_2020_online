@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson3.dayx.supertask2;
 
 import java.util.Random;
 
-public class GameDemo {
+class GameDemo {
     private final Game game = new Game();
     private final Random pinsCount = new Random();
     private int firstRollScore = 0;

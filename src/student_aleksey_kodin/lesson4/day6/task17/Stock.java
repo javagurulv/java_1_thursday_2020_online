@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.day6.task17;
 
-public class Stock {
+class Stock {
     private final String company;
     private int currentPrice;
     private int maxPrice;

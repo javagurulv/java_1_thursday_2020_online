@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.day4.task11;
 
-public class Calculator {
+class Calculator {
     public int sum(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
     }

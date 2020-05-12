@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson4.javagurulv.moodle.level3;
 
 import java.util.Scanner;
 
-public class UserLoginServiceDemo {
+class UserLoginServiceDemo {
 
     public static void main(String[] args) {
         String userPassword;

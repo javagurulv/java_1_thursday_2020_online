@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.dayx.supertask1;
 
-public class UserLoginService {
+class UserLoginService {
     boolean login(User user, String password) {
         if(!user.isUserBlock()) {
             if (password.equals(user.getPassword())) {
