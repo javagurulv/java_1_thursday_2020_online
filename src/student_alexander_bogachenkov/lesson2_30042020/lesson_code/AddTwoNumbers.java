@@ -2,7 +2,7 @@ package student_alexander_bogachenkov.lesson2_30042020.lesson_code;
 
 import java.util.Scanner;
 
-public class AddTwoNumbers {
+class AddTwoNumbers {
 
     public static void main(String[] args) {
 
