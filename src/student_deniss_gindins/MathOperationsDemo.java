@@ -1,6 +1,6 @@
 package student_deniss_gindins;
 
-public class MathOperationsDemo {
+class MathOperationsDemo {
     public static void main(String[] args) {
         System.out.println("Let's repeat Math Again");
 

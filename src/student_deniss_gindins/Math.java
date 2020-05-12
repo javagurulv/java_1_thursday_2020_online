@@ -1,7 +1,7 @@
 package student_deniss_gindins;
 import java.util.Random;
 
-public class Math {
+class Math {
     public static void main(String[] args){
         //1. Сгенерировать 3 случайных числа и вывести их на экран.
        // 2. Посчитать сумму этих чисел и вывести результат на экран.

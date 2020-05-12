@@ -1,6 +1,6 @@
 package student_deniss_gindins;
 
-public class calculator {
+class calculator {
 
     public static void main(String[] args) {
         int numberOne = 10;
