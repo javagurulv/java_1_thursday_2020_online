@@ -1,8 +1,8 @@
-package student_julija_skopeca.practical_tasks.day_3;
+package student_julija_skopeca.practical_tasks.lesson_2.day_3;
 
 import java.util.Scanner;
 
-public class task_11_averagenum {
+ class task_11_averagenum {
 
     public static void main(String[] args) {
 
