@@ -1,6 +1,6 @@
 package student_arturs_ragausks.lesson_2.homeworks;
 
-public class MathOperationsDemo {
+class MathOperationsDemo {
 
     public static void main(String[] args) {
         System.out.println("Welcome to the 'Math Operations'!");

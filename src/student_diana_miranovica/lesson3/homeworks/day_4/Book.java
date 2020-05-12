@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson3.homeworks.day_4;
 
-public class Book {
+ class Book {
     private final String title;
 
     public Book(String bookTitle) {

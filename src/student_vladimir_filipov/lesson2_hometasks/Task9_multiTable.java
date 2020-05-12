@@ -2,7 +2,7 @@ package student_vladimir_filipov.lesson2_hometasks;
 
 import java.util.Scanner;
 
-public class Task9_multiTable {
+class Task9_multiTable {
 
     public static void main(String[] args) {
 

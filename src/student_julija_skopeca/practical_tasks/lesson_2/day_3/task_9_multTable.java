@@ -1,8 +1,8 @@
-package student_julija_skopeca.practical_tasks.Day_3;
+package student_julija_skopeca.practical_tasks.lesson_2.day_3;
 
 import java.util.Scanner;
 
-public class task_9_multTable {
+ class task_9_multTable {
 
     public static void main(String[] args) {
 

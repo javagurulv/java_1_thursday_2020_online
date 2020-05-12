@@ -1,7 +1,7 @@
 package student_diana_miranovica.lesson3.homeworks.day_6.task_24;
 
 
-public class Car {
+class Car {
     private final String model;
     private final int maxSpeed;
     private final String color;

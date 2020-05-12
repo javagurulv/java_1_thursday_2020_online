@@ -1,6 +1,6 @@
 package student_oleg_ivanov.lesson3.homeworks.day1;
 
-public class RobotDemo {
+class RobotDemo {
     public static void main(String[] args){
         System.out.print("Terminator1 ");
         Robot terminator1 = new Robot();

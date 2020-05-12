@@ -3,7 +3,7 @@ package student_edgars_lukjanskis.homeworks.day_3;
 
 import java.util.Scanner;
 
-public class task_10 {
+class task_10 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.print("Circle radius ");

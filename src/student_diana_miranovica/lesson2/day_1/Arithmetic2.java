@@ -3,7 +3,7 @@ package student_diana_miranovica.lesson2.day_1;
 import java.io.FileReader;
 import java.util.Scanner;
 
-public class Arithmetic2 {
+ class Arithmetic2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter your first fractional number and press enter");

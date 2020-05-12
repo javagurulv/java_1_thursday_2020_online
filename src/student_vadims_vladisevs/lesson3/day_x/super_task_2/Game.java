@@ -2,7 +2,7 @@ package student_vadims_vladisevs.lesson3.day_x.super_task_2;
 
 import java.util.Random;
 
-public class Game {
+class Game {
 
     private int knockedPinsCount = 0;
     private int result = 0;

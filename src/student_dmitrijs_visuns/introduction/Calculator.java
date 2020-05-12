@@ -1,6 +1,6 @@
 package student_dmitrijs_visuns.introduction;
 
-public class Calculator {
+class Calculator {
 
     public static void main(String[] args) {
         int numberOne = 10;

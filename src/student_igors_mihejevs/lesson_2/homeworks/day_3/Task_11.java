@@ -5,7 +5,7 @@ package student_igors_mihejevs.lesson_2.homeworks.day_3;
 
 import java.util.Scanner;
 
-public class Task_11 {
+class Task_11 {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
 

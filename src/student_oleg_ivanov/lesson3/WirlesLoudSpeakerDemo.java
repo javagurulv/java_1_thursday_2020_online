@@ -2,7 +2,7 @@ package student_oleg_ivanov.lesson3;
 
 import teacher.lesson_3.lessoncode.WirelesLoudspeeker;
 
-public class WirlesLoudSpeakerDemo {
+class WirlesLoudSpeakerDemo {
 
     public static void main(String[] arg) {
         WirlesLoudSpeaker ws1 = new WirlesLoudSpeaker("Bose", false);

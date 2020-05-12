@@ -2,7 +2,7 @@ package student_edgars_lukjanskis.lession2;
 
 import java.util.Scanner;
 
-public class AddTwoNumber {
+class AddTwoNumber {
 
     public static void main(String[] args) {
         // 1. get first number from user

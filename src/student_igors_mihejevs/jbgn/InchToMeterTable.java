@@ -10,7 +10,7 @@ package student_igors_mihejevs.jbgn;
 
 import java.text.DecimalFormat;
 
-public class InchToMeterTable {
+class InchToMeterTable {
 
     private static final DecimalFormat df = new DecimalFormat("0.00");
 

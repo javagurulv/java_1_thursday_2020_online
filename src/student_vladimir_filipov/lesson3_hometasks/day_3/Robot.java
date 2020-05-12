@@ -1,6 +1,6 @@
 package student_vladimir_filipov.lesson3_hometasks.day_3;
 
-public class Robot {
+class Robot {
 
         private final String name;
 

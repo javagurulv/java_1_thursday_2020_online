@@ -1,6 +1,6 @@
 package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_4;
 
-public class Book {
+class Book {
 
     private final String title;
 

@@ -1,6 +1,6 @@
 package student_vladimir_filipov.lesson3_hometasks;
 
-public class RobotDemo {
+class RobotDemo {
 
     public static void main (String[] args) {
          Robot robotOne = new Robot ();

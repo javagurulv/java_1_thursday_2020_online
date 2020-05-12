@@ -1,7 +1,7 @@
 package student_vadims_vladisevs.lesson3.day_6.task_25;
 import java.lang.Math;
 
-public class Circle {
+class Circle {
 
     private final double radius;
 

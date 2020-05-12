@@ -1,6 +1,6 @@
 package student_vladimir_filipov;
 
-public class Variables {
+class Variables {
     public static void main(String[] args) {
         int first;
         int second = 10;

@@ -2,7 +2,7 @@ package student_arturs_ragausks.lesson_2.homeworks.day1;
 
 import java.util.Scanner;
 
-public class LVL2DoubleNum {
+class LVL2DoubleNum {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_x.super_task_1;
 
-public class UserLoginServiceDemo {
+class UserLoginServiceDemo {
 
     public static void main(String[] args) {
         UserLoginService service = new UserLoginService();

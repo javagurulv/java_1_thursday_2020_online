@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson3.lesson_code;
 
-public class BankAccountDemo {
+class BankAccountDemo {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Diana Mir");
         int money = bankAccount.addMoney(1000);

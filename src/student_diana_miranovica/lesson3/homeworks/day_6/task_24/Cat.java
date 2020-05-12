@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson3.homeworks.day_6.task_24;
 
-public class Cat {
+class Cat {
     private final String name;
     private final int age;
     private final String color;

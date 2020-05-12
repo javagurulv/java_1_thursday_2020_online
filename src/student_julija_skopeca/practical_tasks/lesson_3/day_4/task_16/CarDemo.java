@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_4.task_16;
 
-public class CarDemo {
+ class CarDemo {
 
     public static void main(String[] args) {
         Car myCar = new Car("Nissan");

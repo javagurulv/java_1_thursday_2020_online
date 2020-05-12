@@ -1,6 +1,6 @@
 package student_vladimir_filipov.lesson3_hometasks;
 
-public class WirelesLoudspeakerDemo {
+class WirelesLoudspeakerDemo {
 
     public static void main (String[] args) {
         WirelesLoudspeaker WS1 = new WirelesLoudspeaker ("Samsung",false);

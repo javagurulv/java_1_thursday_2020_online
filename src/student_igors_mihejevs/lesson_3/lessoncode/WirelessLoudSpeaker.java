@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.lessoncode;
 
-public class WirelessLoudSpeaker {
+class WirelessLoudSpeaker {
 
     private final String model;
 

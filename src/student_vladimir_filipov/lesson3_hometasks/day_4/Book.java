@@ -1,6 +1,6 @@
 package student_vladimir_filipov.lesson3_hometasks.day_4;
 
-public class Book {
+class Book {
     private String title;
 
     public Book(String bookTitle) {

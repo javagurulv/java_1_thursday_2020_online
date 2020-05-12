@@ -2,7 +2,7 @@ package student_vladimir_filipov.lesson2_hometasks;
 
 import java.util.Scanner;
 
-public class Task10_circleAreaPerimeters {
+class Task10_circleAreaPerimeters {
 
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);

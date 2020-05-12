@@ -1,8 +1,8 @@
 package student_dmitrijs_visuns.homeworks.lesson_3;
 
-public class Robot {  //Task_1
+class Robot {  //Task_1
 
-        private final String name; // Task_11
+        private String name; // Task_11
 
         public Robot(String robotName) {
             this.name = robotName; // Task_12
