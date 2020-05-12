@@ -6,11 +6,10 @@ public class Dog {
 
     private String dogName;
 
-    public String getDogName() {
+    public void getDogName() {
         Scanner getName = new Scanner(System.in);
         System.out.println("Как будут звать эту собаку? ");
         dogName = getName.nextLine();
-        return dogName;
     }
 
     public void voice() {
