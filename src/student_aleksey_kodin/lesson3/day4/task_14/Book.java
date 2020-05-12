@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson3.day4.task_14;
 /* Найти ошибку в коде.
    Исправить и запустить программу. */
 
-public class Book {
+class Book {
     private final String title;
 
     public Book(String bookTitle) {

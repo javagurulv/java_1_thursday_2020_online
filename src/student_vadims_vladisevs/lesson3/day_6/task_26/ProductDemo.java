@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_6.task_26;
 
-public class ProductDemo {
+class ProductDemo {
     public static void main(String[] args) {
 
         Product phone = new Product("Nokia");

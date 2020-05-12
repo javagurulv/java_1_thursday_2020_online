@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson2.homework.day_6;
 
-public class AttentionPlease {
+class AttentionPlease {
 
 
 

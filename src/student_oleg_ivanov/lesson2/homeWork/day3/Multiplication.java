@@ -2,7 +2,7 @@ package student_oleg_ivanov.lesson2.homeWork.day3;
 
 import java.util.Scanner;
 
-public class Multiplication {
+class Multiplication {
     public static void main(String[] args){
         //get number from user
         System.out.println("Please enter your number:");

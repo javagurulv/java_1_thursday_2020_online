@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_1;
 
-public class RobotDemo {
+class RobotDemo {
     public static void main(String[] args) {
         Robot firstRobot = new Robot();
         firstRobot.sayHello();

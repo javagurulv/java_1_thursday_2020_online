@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_4;
 
-public class CarDemo {
+class CarDemo {
 
     public static void main(String[] args) {
         Car myCar = new Car("Nissan");

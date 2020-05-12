@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_3;
 
-public class RobotDemo {
+class RobotDemo {
     public static void main(String[] args) {
 
         Robot robot1 = new Robot("Rider");

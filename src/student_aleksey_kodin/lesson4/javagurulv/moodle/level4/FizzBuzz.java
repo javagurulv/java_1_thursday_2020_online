@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.javagurulv.moodle.level4;
 
-public class FizzBuzz {
+class FizzBuzz {
 
     public static void main(String[] args) {
         byte byteFizzCount = 0;

@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_2;
 
-public class StringPool {
+class StringPool {
 
     public static void main(String[] args) {
         String str1 = "String test";

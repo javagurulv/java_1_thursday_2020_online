@@ -1,6 +1,6 @@
 package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_6.task_26;
 
-public class Product {
+class Product {
 
     private final String name;
     private double regularPrice;

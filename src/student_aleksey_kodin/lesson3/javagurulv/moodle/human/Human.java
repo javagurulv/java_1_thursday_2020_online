@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.javagurulv.moodle.human;
 
-public class Human {
+class Human {
     private final String name;
     private final int age;
 

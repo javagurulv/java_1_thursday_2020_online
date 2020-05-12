@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_4.task_17;
 
-public class BankAccount {
+ class BankAccount {
 
     private final String firstName;
     private final String lastName;

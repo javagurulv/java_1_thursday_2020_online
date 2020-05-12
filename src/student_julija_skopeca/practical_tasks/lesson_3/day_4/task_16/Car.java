@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_4.task_16;
 
-public class Car {
+ class Car {
 
     private final String model;
 

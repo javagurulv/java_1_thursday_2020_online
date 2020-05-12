@@ -1,6 +1,6 @@
 package teacher.lesson_3.lessoncode;
 
-public class BankAccount {
+class BankAccount {
 
     private final String owner;
     private int moneyAmount;

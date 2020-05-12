@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_1;
 
-public class MyNewClass1 {
+class MyNewClass1 {
     public static void main(String[] args) {
         System.out.println("It's my new class 1!");
     }

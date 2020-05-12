@@ -3,7 +3,7 @@ package student_vadims_vladisevs.lesson3.day_6.task_26;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
-public class Product {
+class Product {
 
     private final String name;
     private double regularPrice;

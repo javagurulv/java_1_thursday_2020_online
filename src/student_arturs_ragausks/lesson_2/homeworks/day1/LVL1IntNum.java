@@ -2,7 +2,7 @@ package student_arturs_ragausks.lesson_2.homeworks.day1;
 
 import java.util.Scanner;
 
-public class LVL1IntNum { // странное и не понятное название класса! Придумайте более лучшее название.
+class LVL1IntNum { // странное и не понятное название класса! Придумайте более лучшее название.
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

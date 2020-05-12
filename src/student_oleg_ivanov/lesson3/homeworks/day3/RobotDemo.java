@@ -1,6 +1,6 @@
 package student_oleg_ivanov.lesson3.homeworks.day3;
 
-public class RobotDemo {
+class RobotDemo {
     public static void main(String [] args) {
         Robot numberOne = new Robot("Aljosha");
         numberOne.sayHello();

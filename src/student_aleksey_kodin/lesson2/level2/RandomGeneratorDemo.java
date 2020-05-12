@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson2.level2;
 
 import java.util.Random;
 
-public class RandomGeneratorDemo {
+class RandomGeneratorDemo {
 
     public static void main(String[] args) {
 

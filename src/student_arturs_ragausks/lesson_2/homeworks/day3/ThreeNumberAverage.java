@@ -2,7 +2,7 @@ package student_arturs_ragausks.lesson_2.homeworks.day3;
 
 import java.util.Scanner;
 
-public class ThreeNumberAverage {
+class ThreeNumberAverage {
 
     public static void main(String[] args){
 

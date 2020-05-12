@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson4.javagurulv.moodle.phraseanalyser;
 
 import java.util.Scanner;
 
-public class PhraseAnalyserDemo {
+class PhraseAnalyserDemo {
     public static void main(String[] args) {
 
         System.out.println("Enter string:");

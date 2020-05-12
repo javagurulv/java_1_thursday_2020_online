@@ -1,6 +1,6 @@
 package student_dmitrijs_visuns.homeworks.lesson_3.day_4.task_16;
 
-public class Car {
+class Car {
 
     private String model;
 

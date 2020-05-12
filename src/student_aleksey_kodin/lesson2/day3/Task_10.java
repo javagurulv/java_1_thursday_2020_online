@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Task_10 {
+class Task_10 {
     public static void main(String[] args) {
         try {
             System.out.println("Please enter  radius value: ");

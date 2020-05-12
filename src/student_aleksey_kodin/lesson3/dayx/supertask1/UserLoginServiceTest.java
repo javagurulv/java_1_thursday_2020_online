@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.dayx.supertask1;
 
-public class UserLoginServiceTest {
+class UserLoginServiceTest {
     public static void main(String[] args) {
         UserLoginServiceTest userLoginServiceTest = new UserLoginServiceTest();
         userLoginServiceTest.testCorrectLogin();

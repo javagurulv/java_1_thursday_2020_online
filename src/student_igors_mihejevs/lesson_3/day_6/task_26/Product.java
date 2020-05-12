@@ -1,9 +1,9 @@
 package student_igors_mihejevs.lesson_3.day_6.task_26;
 
-public class Product {
+class Product {
 
-    String name;
-    double regularPrice, discount;
+    private String name;
+    private double regularPrice, discount;
 
     public Product(String name) {
         this.name = name;

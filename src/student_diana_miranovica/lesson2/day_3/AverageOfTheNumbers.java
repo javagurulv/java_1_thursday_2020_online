@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson2.day_3;
 
 import java.util.Scanner;
 
-public class AverageOfTheNumbers {
+ class AverageOfTheNumbers {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

@@ -2,7 +2,7 @@ package student_oleg_ivanov.lesson3.homeworks.day2;
 
 import java.util.Scanner;
 
-public class Task9 {
+class Task9 {
     public static void main(String[] arg) {
 
         System.out.println("What is the user name? ");

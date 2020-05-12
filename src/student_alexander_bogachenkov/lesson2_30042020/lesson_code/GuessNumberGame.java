@@ -3,7 +3,7 @@ package student_alexander_bogachenkov.lesson2_30042020.lesson_code;
 import java.util.Random;
 import java.util.Scanner;
 
-public class GuessNumberGame {
+class GuessNumberGame {
 
     public static void main(String[] args) {
         Random randomGenerator = new Random();

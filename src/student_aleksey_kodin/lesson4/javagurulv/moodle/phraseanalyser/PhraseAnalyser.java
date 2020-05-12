@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.javagurulv.moodle.phraseanalyser;
 
-public class PhraseAnalyser {
+class PhraseAnalyser {
 
     public String analyse(String text) {
         int iTextLength = text.length();

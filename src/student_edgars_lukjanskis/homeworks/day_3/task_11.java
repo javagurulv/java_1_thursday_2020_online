@@ -2,7 +2,7 @@ package student_edgars_lukjanskis.homeworks.day_3;
 
 import java.util.Scanner;
 
-public class task_11 {
+class task_11 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

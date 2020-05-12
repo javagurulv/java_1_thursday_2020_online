@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.javagurulv.moodle.human;
 
-public class HumanDemo {
+class HumanDemo {
 
     public static void main(String[] args) {
 

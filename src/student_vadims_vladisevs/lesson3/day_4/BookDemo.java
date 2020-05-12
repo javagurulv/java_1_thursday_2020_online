@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_4;
 
-public class BookDemo {
+class BookDemo {
 
     public static void main(String[] args) {
         Book myBook = new Book("Principles");

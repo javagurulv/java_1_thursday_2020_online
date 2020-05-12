@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson4.javagurulv.moodle.level1;
 
 import java.util.Random;
 
-public class LightColorDetectorDemo {
+class LightColorDetectorDemo {
 
     public static void main(String[] args) {
 

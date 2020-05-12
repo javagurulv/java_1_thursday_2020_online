@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.javagurulv.moodle.dog;
 
-public class Dog {
+class Dog {
     private int age;
     private String color;
     private String name;

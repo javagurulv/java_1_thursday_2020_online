@@ -1,6 +1,6 @@
 package student_oleg_ivanov.lesson3.homeworks.day4;
 
-public class BookDemo {
+class BookDemo {
 
     public static void main(String[] args) {
         Book myBook = new Book("Principles");

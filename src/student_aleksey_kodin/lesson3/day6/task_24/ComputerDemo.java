@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.day6.task_24;
 
-public class ComputerDemo {
+class ComputerDemo {
     public static void main(String[] args) {
         Computer computer = new Computer(false);
         GamingConsole gamingConsole = new GamingConsole(false);

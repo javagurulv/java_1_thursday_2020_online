@@ -5,7 +5,7 @@ package student_igors_mihejevs.lesson_2.homeworks.day_5;
    Also this class use both statements: System.out.print() and System.out.println()
  */
 
-public class Task_16 {
+class Task_16 {
 
     public static void main(String[] args) {
         System.out.print("\nThis class was created using shortcuts only.\n\n");

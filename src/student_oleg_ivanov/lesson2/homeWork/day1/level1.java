@@ -2,7 +2,7 @@ package student_oleg_ivanov.lesson2.homeWork.day1;
 
 import java.util.Scanner;
 
-public class level1 { // название класса с заглавной буквы!
+class level1 { // название класса с заглавной буквы!
     public static void main(String[] args) {
         //1. get first number from user
         System.out.println("Enter first number");

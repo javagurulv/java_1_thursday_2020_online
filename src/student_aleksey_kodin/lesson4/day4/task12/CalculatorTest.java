@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.day4.task12;
 
-public class CalculatorTest {
+class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();
         calculatorTest.sumTest();

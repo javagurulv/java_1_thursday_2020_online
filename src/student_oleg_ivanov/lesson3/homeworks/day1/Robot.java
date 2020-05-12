@@ -1,6 +1,6 @@
 package student_oleg_ivanov.lesson3.homeworks.day1;
 
-public class Robot {
+class Robot {
 
     public void sayHello() {
         System.out.println("Hello!");

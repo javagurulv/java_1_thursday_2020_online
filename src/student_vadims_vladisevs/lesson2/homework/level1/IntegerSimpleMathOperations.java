@@ -1,7 +1,7 @@
 package student_vadims_vladisevs.lesson2.homework.level1;
 import java.util.*;
 
-public class IntegerSimpleMathOperations {
+class IntegerSimpleMathOperations {
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
         System.out.println("Enter first number :");

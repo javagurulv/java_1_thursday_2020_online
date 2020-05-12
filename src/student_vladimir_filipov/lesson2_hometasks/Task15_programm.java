@@ -1,6 +1,6 @@
 package student_vladimir_filipov.lesson2_hometasks;
 
-public class Task15_programm {
+class Task15_programm {
 
     public static void main(String[] args) {
 

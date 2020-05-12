@@ -2,7 +2,7 @@ package student_alexander_bogachenkov.lesson2_30042020.homeworks.day_3;
 
 import java.util.Scanner;
 
-public class Multiplicator {
+class Multiplicator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input a number: ");

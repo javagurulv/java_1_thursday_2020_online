@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.dayx.supertask1;
 
-public class FizzBuzzTest {
+class FizzBuzzTest {
     public static void main(String[] args) {
         FizzBuzzTest fizzBuzzTest = new FizzBuzzTest();
 
