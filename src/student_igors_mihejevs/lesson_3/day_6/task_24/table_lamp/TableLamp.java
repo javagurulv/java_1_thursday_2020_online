@@ -2,7 +2,9 @@ package student_igors_mihejevs.lesson_3.day_6.task_24.table_lamp;
 
 public class TableLamp {
 
-    private String technology, color, colorOfLight;
+    private String technology;
+    private String color;
+    private String colorOfLight;
     private boolean isOn;
 
     public TableLamp(String technology, String color, String colorOfLight, boolean isSwitchedOn) {
