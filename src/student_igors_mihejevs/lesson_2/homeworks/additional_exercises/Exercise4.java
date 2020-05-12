@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_2.homeworks.additional_exercises;
 
-public class Exercise4 {
+class Exercise4 {
     public static void main(String[] args) {
         int result1 = -5 + 8 * 6;
         int result2 = (55 + 9) % 9;

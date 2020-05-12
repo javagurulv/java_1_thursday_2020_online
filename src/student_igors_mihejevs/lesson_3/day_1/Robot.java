@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_1;
 
-public class Robot {
+class Robot {
 
     public Robot() {
     // constructor without arguments
