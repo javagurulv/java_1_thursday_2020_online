@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_3;
 
-public class Robot {
+class Robot {
 
     private String name;
 

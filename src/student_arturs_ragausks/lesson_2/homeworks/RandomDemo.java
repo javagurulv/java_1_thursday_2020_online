@@ -2,7 +2,7 @@ package student_arturs_ragausks.lesson_2.homeworks;
 
 import java.util.Random;
 
-public class RandomDemo {
+class RandomDemo {
 
     public static void main(String[] args) {
 

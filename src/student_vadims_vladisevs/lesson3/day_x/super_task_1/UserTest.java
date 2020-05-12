@@ -2,7 +2,7 @@ package student_vadims_vladisevs.lesson3.day_x.super_task_1;
 
 import java.util.Scanner;
 
-public class UserTest {
+class UserTest {
     public static void main(String[] args) {
 
         Scanner scr = new Scanner(System.in);

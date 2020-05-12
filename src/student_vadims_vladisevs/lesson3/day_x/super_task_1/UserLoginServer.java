@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_x.super_task_1;
 
-public class UserLoginServer {
+class UserLoginServer {
 
     public boolean login(User user, String password){
 

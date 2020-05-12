@@ -1,7 +1,7 @@
 package student_vadims_vladisevs.lesson2.homework.level2;
 import java.util.*;
 
-public class FractionalNumbersSimpleMathOperations {
+class FractionalNumbersSimpleMathOperations {
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
         System.out.println("Enter first number : ");

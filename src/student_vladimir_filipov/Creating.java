@@ -2,7 +2,7 @@ package student_vladimir_filipov;
 
 import java.util.Scanner;
 
-public class Creating {
+class Creating {
     public static void main(String[] args) {
         // 1. get first number from user
         Scanner myInput = new Scanner( System.in );
