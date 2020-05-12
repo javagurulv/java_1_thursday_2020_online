@@ -5,6 +5,5 @@ public class Task_8 {
         String myName = "Aleksey";
         String greeting = "Hi " + myName + "!";
 
-        System.out.println(greeting);
     }
 }

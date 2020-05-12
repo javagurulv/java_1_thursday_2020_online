@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_3.day_4.task_14;
 
 public class Book {
 
-    private String title;
+    private final String title;
 
     public Book(String newTitle) { //bookTitle -> newTitle
         this.title = newTitle;

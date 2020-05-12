@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson3.lesson_code;
 
 public class WirelessLoudspeaker {
 
-    private  String model;
+    private final String model;
 
     // on/off
     private boolean isOn;

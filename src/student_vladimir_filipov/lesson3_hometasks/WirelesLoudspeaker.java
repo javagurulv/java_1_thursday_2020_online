@@ -1,23 +1,21 @@
-package student_vladimir_filipov.lesson3.hometasks;
+package student_vladimir_filipov.lesson3_hometasks;
 
 public class WirelesLoudspeaker {
 
-    public String getModel;
-
-       private String model;
+    private final String model;
 
     //  on-off
     private boolean isOn;
 
     public WirelesLoudspeaker(String wirelesModel,
-                              boolean isSwitchOn) {
+                              boolean isSwitchedOn) {
         this.model = wirelesModel;
-        this.isOn = isSwitchOn;
+        this.isOn = isSwitchedOn;
     }
 
     public String getModel () { return this.model;
     }
-        public void switchOn () {
+        public void switchedOn () {
         this.isOn = true;
         System.out.println("Switched ON!");
     }
@@ -27,6 +25,6 @@ public class WirelesLoudspeaker {
     }
 
 
-    public void switchON() {
+    public void switchedON() {
     }
 }

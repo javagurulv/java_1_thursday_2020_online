@@ -2,7 +2,7 @@ package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_3;
 
 public class Robot {
 
-    private String name;
+    private final String name;
 
     public Robot (String robotName) {
         this.name = robotName;

@@ -2,7 +2,7 @@ package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_6.task_26;
 
 public class Product {
 
-    private String name;
+    private final String name;
     private double regularPrice;
     private double discount;
 
