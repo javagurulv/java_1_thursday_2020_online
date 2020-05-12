@@ -3,9 +3,9 @@ package student_igors_mihejevs.lesson_2.homeworks.day_1;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
-public class MathOperationsDemoDouble {
+class MathOperationsDemoDouble {
 
-    private static DecimalFormat df = new DecimalFormat("0.00");
+    private static final DecimalFormat df = new DecimalFormat("0.00");
 
     public static void main(String[] args) {
         // 1. get first number from user

@@ -1,8 +1,8 @@
 package student_igors_mihejevs.lesson_3.day_5.task_18;
 
-public class Dog {
+class Dog {
 
-    private String name;
+    private final String name;
 
     public Dog(String dogName) {
         this.name = dogName;

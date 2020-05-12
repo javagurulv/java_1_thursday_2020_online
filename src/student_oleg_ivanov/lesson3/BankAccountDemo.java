@@ -13,7 +13,7 @@ public class BankAccountDemo {
         System.out.println("Money = " + money);
         money = bankAccount.addMoney(350);
         System.out.println("Money = " + money);
-        System.out.println("");
+        System.out.println();
 
         bankAccount.printStatusToConsole();
     }

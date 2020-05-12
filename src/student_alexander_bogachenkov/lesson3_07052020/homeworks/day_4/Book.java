@@ -2,7 +2,7 @@ package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_4;
 
 public class Book {
 
-    private String title;
+    private final String title;
 
     public Book(String bookTitle) {
         this.title = bookTitle;

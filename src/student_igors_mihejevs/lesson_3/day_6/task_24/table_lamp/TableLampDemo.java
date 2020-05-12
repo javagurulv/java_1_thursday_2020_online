@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_6.task_24.table_lamp;
 
-public class TableLampDemo {
+class TableLampDemo {
 
     public static void main(String[] args) {
         TableLamp myTableLamp = new TableLamp("LED", "black-grey", "warm", false);

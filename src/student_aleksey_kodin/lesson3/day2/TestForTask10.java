@@ -6,7 +6,7 @@ public class TestForTask10 {
 
         String name = "Ivan";
         String nextName = "Ivan";
-        String oneMoreName = new String("Ivan");
+        String oneMoreName = "Ivan";
 
         System.out.println(name == nextName);
         System.out.println(name == oneMoreName);

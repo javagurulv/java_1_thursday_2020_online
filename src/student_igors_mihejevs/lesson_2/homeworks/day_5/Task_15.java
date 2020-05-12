@@ -7,7 +7,7 @@ package student_igors_mihejevs.lesson_2.homeworks.day_5;
 
 import java.util.Scanner;
 
-public class Task_15 {
+class Task_15 {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
         double average; // переменную объявляйте там где вы ее первый раз используете

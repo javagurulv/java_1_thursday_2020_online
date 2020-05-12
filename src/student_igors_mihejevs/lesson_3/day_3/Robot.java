@@ -1,8 +1,8 @@
 package student_igors_mihejevs.lesson_3.day_3;
 
-public class Robot {
+class Robot {
 
-    private String name;
+    private final String name;
 
     public Robot(String robotName) {
         this.name = robotName;

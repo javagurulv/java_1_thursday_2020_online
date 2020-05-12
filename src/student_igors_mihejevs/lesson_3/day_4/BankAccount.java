@@ -1,10 +1,10 @@
 package student_igors_mihejevs.lesson_3.day_4;
 
-public class BankAccount {
+class BankAccount {
 
-    private String ownerFirstName;
-    private String ownerLastName;
-    private int moneyAmount;
+    private final String ownerFirstName;
+    private final String ownerLastName;
+    private final int moneyAmount;
 
     public BankAccount(String ownerFirstName,
                        String ownerLastName,

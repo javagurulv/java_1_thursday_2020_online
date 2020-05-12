@@ -2,7 +2,7 @@ package student_vadims_vladisevs.lesson3.day_5.task_20;
 
 public class Dog {
 
-    private String dogName;
+    private final String dogName;
     private int dogAge;
 
     public Dog(String dogName, int dogAge){

@@ -1,8 +1,8 @@
 package student_igors_mihejevs.lesson_3.day_5.task_20;
 
-public class Dog {
+class Dog {
 
-    private String name;
+    private final String name;
     private int age;
 
     public Dog(String dogName, int dogAge) {

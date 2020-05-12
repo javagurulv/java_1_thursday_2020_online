@@ -2,7 +2,7 @@ package student_dmitrijs_visuns.homeworks.lesson_3;
 
 import student_dmitrijs_visuns.homeworks.lesson_3.Robot;
 
-public class RobotDemo { //Task_2
+class RobotDemo { //Task_2
 
     public static void main(String[] args) {
         Robot robocop = new Robot("Charles"); //Task_3

@@ -1,8 +1,8 @@
 package student_igors_mihejevs.lesson_3.lessoncode;
 
-public class WirelessLoudSpeaker {
+class WirelessLoudSpeaker {
 
-    private String model;
+    private final String model;
 
     // on-off
     private boolean isOn;

@@ -4,17 +4,18 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task_1 {
-
     public static void main(String[] args) {
         try {
             System.out.println("Please enter int value: ");
-            int iFirstValue = new Scanner(System.in).nextInt();
+            int firstValue = new Scanner(System.in).nextInt();
 
-            if (iFirstValue % 2 == 0) {
-                System.out.println("This number is even.");
-            } else {
-                System.out.println("This number is odd.");
+             if (firstValue > 0) {
+                System.out.println(firstValue + " is positive value");
             }
+            else {
+                System.out.println(firstValue + " is negative value");
+            }
+
         } catch (InputMismatchException e) {
             System.out.println("Please enter Int value and try again");
             System.exit(-1);

@@ -12,7 +12,6 @@ public class PrimeNumbers {
     int primeCount = 1;
 
         for(int count = 3; count <= 500; count++) {
-
             for (int i:primeArray) {
                 if( count == 17 || count == 71) break;
                 if(count % i == 0)  break;
