@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_4.task_15;
 
-public class Phone {
+ class Phone {
 
     private final String model;
 
