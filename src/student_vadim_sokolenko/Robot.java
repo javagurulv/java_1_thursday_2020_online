@@ -1,6 +1,7 @@
 package student_vadim_sokolenko;
 
 public class Robot {
+
     private String name;
 
     public Robot(String robotName){
