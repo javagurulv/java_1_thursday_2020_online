@@ -3,7 +3,7 @@ package student_aleksey_kodin.lesson3.javagurulv.moodle.level2;
 import java.util.Random;
 import java.util.Scanner;
 
-public class EncoderDemo {
+class EncoderDemo {
 
     public static void main(String[] args) {
 

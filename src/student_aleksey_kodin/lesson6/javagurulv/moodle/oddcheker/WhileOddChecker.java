@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson6.javagurulv.moodle.oddcheker;
 
-public class WhileOddChecker {
+class WhileOddChecker {
 
     public static void main(String[] args) {
         byte count = 0;

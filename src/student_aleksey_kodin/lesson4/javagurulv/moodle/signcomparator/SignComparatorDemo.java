@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.javagurulv.moodle.signcomparator;
 
-public class SignComparatorDemo {
+class SignComparatorDemo {
 
     public static void main(String[] args) {
         SignComparator clsSignComparator = new SignComparator();

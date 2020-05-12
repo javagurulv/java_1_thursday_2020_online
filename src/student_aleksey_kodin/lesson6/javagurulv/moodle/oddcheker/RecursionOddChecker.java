@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson6.javagurulv.moodle.oddcheker;
 
-public class RecursionOddChecker {
+class RecursionOddChecker {
 
     public static void main(String[] args) {
 

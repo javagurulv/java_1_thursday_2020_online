@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.day1;
 
-public class Robot {
+class Robot {
 
     public Robot() {
 

@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson3.day4.task_17;
 /* Найти ошибку в коде.
    Исправить и запустить программу. */
 
-public class BankAccount {
+class BankAccount {
     private final String ownerFirstName;
     private final String ownerLastName;
     private final int moneyAmount;

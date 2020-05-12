@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.dayx.supertask2;
 
-public class LeapYearTest {
+class LeapYearTest {
     public static void main(String[] args) {
         LeapYearTest leapYearTest = new LeapYearTest();
         leapYearTest.TestLeapYear();

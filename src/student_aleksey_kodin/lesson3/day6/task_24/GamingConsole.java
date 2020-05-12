@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.day6.task_24;
 
-public class GamingConsole extends Computer{
+class GamingConsole extends Computer{
     boolean isOn;
 
     GamingConsole(boolean on) {

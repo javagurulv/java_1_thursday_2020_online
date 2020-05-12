@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson3.day4.task_16;
 /* Найти ошибку в коде.
    Исправить и запустить программу. */
 
-public class Car {
+class Car {
     private final String model;
 
     public Car(String newModel) {

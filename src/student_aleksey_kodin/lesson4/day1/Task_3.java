@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-public class Task_3 {
+class Task_3 {
     public static void main(String[] args) {
         try {
             System.out.println("Please enter number between 1 and 7 : ");

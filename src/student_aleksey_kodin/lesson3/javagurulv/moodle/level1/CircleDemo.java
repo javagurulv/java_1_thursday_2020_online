@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.javagurulv.moodle.level1;
 
-public class CircleDemo {
+class CircleDemo {
 
     public static void main(String[] args) {
 

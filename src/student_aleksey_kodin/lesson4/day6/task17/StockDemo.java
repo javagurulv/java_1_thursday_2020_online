@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.day6.task17;
 
-public class StockDemo {
+class StockDemo {
     public static void main(String[] args) {
         Stock amazon = new Stock("Amazon",10);
         amazon.printInformation();

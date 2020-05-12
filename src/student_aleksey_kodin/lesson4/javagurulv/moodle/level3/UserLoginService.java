@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.javagurulv.moodle.level3;
 
-public class UserLoginService {
+class UserLoginService {
     boolean login(User user, String password) {
         if(!user.isUserBlock()) {
             if (password.equals(user.getPassword())) {
