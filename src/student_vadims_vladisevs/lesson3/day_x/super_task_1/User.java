@@ -2,8 +2,8 @@ package student_vadims_vladisevs.lesson3.day_x.super_task_1;
 
 public class User {
 
-    private String userLogin;
-    private String userPassword;
+    private final String userLogin;
+    private final String userPassword;
     private boolean isUserBlocked;
     private int loginAttemptsCount;
 

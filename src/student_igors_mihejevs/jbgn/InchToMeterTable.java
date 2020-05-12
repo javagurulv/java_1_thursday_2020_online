@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 
 public class InchToMeterTable {
 
-    private static DecimalFormat df = new DecimalFormat("0.00");
+    private static final DecimalFormat df = new DecimalFormat("0.00");
 
     public static void main (String[] args) {
         double inches = 1, meters, feet;

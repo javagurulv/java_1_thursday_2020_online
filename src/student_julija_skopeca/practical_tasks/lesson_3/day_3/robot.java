@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_3.day_3;
 
 public class robot {
 
-    private String name;
+    private final String name;
 
     public robot(String robotName){
         this.name = robotName;

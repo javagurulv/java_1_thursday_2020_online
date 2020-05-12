@@ -3,7 +3,7 @@ import java.lang.Math;
 
 public class Circle {
 
-    private double radius;
+    private final double radius;
 
     public Circle(double radius){
         this.radius = radius;
