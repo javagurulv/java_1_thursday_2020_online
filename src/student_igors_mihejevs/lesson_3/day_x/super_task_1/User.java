@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_x.super_task_1;
 
-public class User {
+class User {
 
     private String loginName, password;
     private boolean isBlocked = false;

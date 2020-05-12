@@ -1,6 +1,6 @@
 package student_diana_miranovica;
 
-public class Solution {
+class Solution {
 
         //Объяви переменные типа int и сразу объяви их значение.
         //Значения целые числа.

@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson2.day_1;
 
 import java.util.Scanner;
 
-public class Arithmetic {
+ class Arithmetic {
 
     public static void main(String[] args) {
         //Get first number from user

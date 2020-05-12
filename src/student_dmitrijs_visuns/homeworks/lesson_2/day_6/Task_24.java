@@ -1,7 +1,7 @@
 package student_dmitrijs_visuns.homeworks.lesson_2.day_6;
 // Заставьте эту программу работать!
 
-public class Task_24 {
+class Task_24 {
 
     public static void main(String[] args) {
 

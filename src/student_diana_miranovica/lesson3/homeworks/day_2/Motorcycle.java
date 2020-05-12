@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson3.homeworks.day_2;
 
-public class Motorcycle {
+ class Motorcycle {
     String model;
     int maxSpeed;
 

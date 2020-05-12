@@ -1,6 +1,6 @@
 package student_dmitrijs_visuns.homeworks.lesson_3.day_4.task_14;
 
-public class Book {
+class Book {
 
         private String title;
 
