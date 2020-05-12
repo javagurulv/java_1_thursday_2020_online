@@ -1,7 +1,7 @@
 package student_dmitrijs_visuns.homeworks.lesson_2.day_3;
 // Write a Java program to print the area and perimeter of a circle.
 
-public class Task_10 {
+class Task_10 {
 
     public static void main(String[] args) {
 
