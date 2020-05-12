@@ -2,7 +2,7 @@ package student_igors_mihejevs.lesson_2.homeworks.day_1;
 
 import java.util.Scanner;
 
-public class MathOperationsDemoInt {
+class MathOperationsDemoInt {
 
     public static void main(String[] args) {
         // 1. get first number from user

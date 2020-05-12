@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_6.task_24.Plant;
 
-public class PlantDemo {
+class PlantDemo {
 
     public static void main(String[] args) {
         Plant myPlant = new Plant("tree", "oak", false);

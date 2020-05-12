@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_4;
 
-public class Phone {
+class Phone {
 
     private final String model;
 

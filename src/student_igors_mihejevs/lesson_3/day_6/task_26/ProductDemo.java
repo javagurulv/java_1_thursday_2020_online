@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_6.task_26;
 
-public class ProductDemo {
+class ProductDemo {
 
     public static void main(String[] args) {
         Product newProduct = new Product("TV 'SONY'");

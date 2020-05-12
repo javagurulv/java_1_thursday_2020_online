@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_6.task_24.Plant;
 
-public class Plant {
+class Plant {
 
     private final String species;
     private String name;

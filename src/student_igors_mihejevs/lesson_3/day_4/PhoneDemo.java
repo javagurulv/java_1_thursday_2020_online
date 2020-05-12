@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_4;
 
-public class PhoneDemo {
+class PhoneDemo {
 
     public static void main(String[] args) {
         Phone myPhone = new Phone("Huawei");

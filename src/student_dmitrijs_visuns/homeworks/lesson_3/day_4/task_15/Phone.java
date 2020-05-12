@@ -1,6 +1,6 @@
 package student_dmitrijs_visuns.homeworks.lesson_3.day_4.task_15;
 
-public class Phone {
+class Phone {
 
     private String model;
 

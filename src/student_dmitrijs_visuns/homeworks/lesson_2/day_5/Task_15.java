@@ -3,7 +3,7 @@ package student_dmitrijs_visuns.homeworks.lesson_2.day_5;
 //Написать программу, которая демонстрирует это.
 
 
-public class Task_15 {
+class Task_15 {
 
     public static void main(String[] args) {
 

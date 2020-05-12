@@ -4,7 +4,7 @@ package student_dmitrijs_visuns.homeworks.lesson_3.day_2;
 //типа String и присвойте ей в качестве начального значения
 //ваше имя. Выведете на консоль значение этой переменной.
 
-public class Task_7 {
+class Task_7 {
 
     public static void main(String[] args) {
 
