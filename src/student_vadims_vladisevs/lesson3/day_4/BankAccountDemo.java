@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_4;
 
-public class BankAccountDemo {
+class BankAccountDemo {
 
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Viktor", "Savonin", 100000);

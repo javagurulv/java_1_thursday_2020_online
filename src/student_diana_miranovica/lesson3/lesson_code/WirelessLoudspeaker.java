@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson3.lesson_code;
 
-public class WirelessLoudspeaker {
+class WirelessLoudspeaker {
 
     private final String model;
 

@@ -1,6 +1,6 @@
 package student_diana_miranovica;
 
-public class Calculator {
+ class Calculator {
     public static void main(String[] args) {
         int numberOne = 7;
         System.out.println(numberOne);

@@ -1,7 +1,7 @@
 package student_diana_miranovica.lesson3.lesson_code;
 
 
-public class WirelessLoudspeakerDemo {
+class WirelessLoudspeakerDemo {
     public static void main(String[] args) {
         WirelessLoudspeaker wireless1 = new WirelessLoudspeaker("Roadster ",false);
         wireless1.switchOn();
