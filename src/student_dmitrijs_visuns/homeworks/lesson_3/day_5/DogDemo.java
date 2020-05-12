@@ -7,6 +7,7 @@ public class DogDemo {
         Dog dogName = new Dog();
 
         dogName.getDogName();
+
         dogName.voice();
 
     }
