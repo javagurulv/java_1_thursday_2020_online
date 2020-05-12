@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson3.homeworks.day_3;
 
 
 
-public class RobotDemo {
+ class RobotDemo {
     public static void main(String[] args) {
         Robot robotic1 = new Robot("Rider");
         robotic1.sayHello();

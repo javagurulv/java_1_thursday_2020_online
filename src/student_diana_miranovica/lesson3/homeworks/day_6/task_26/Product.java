@@ -3,7 +3,7 @@ package student_diana_miranovica.lesson3.homeworks.day_6.task_26;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
-public class Product {
+class Product {
     private final String name;
     private double regularPrice;
     private double discount;
@@ -23,8 +23,7 @@ public class Product {
     }
 
     public double getActualPrice(){
-        final double getActualPrice = getActualPrice();
-        return getActualPrice;
+        return getActualPrice();
 
     }
     public void setRegularPrice(double regularPrice) {
