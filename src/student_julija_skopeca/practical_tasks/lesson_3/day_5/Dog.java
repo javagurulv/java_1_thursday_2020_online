@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_3.day_5;
 
 import java.util.Scanner;
 
-public class Dog {
+class Dog {
 
     private final String name;
 
