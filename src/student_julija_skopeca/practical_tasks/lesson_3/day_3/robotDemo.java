@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_3;
 
-public class robotDemo {
+ class robotDemo {
 
     public static void main(String[] args) {
 

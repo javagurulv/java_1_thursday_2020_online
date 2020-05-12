@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_4.task_14;
 
-public class Book {
+ class Book {
 
     private final String title;
 
