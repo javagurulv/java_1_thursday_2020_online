@@ -1,6 +1,6 @@
 package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_1;
 
-public class RobotDemo {
+class RobotDemo {
 
     public static void main(String[] args) {
         Robot robot1 = new Robot();

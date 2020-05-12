@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.day2;
 
-public class TestForTask10 {
+class TestForTask10 {
 
     public static void main(String[] args) {
 

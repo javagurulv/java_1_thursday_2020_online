@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.lessoncode;
 
-public class WirelessLoudSpeakerDemo {
+class WirelessLoudSpeakerDemo {
     public static void main(String[] args) {
         WirelessLoudSpeaker ws1 = new WirelessLoudSpeaker("Bose", true);
         ws1.switchOff();

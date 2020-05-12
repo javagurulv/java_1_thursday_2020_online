@@ -3,7 +3,7 @@ package student_arturs_ragausks.lesson_2.homeworks.day2;
 
 import java.util.Scanner;
 
-public class GreetingsUser {
+class GreetingsUser {
 
     public static void main(String[] args){
 

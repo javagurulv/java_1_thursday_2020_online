@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.javagurulv.moodle.level2;
 
-public class Encoder {
+class Encoder {
 private char chSymbol;
 private short shCode;
 

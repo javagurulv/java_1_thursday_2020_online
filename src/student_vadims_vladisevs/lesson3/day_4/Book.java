@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_4;
 
-public class Book {
+class Book {
 
     private final String title; //не хватало ";" в конце строки
 

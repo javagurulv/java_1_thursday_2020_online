@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.javagurulv.moodle.dog;
 
-public class DogDemo {
+class DogDemo {
         public static void main(String[] args) {
 
             Dog smallDog = new Dog(2,"Black","Fet");

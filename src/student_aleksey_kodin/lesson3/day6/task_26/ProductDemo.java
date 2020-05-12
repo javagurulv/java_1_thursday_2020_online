@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.day6.task_26;
 
-public class ProductDemo {
+class ProductDemo {
 
     public static void main(String[] args) {
 

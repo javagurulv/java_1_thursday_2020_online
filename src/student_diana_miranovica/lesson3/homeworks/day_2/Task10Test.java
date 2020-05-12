@@ -1,7 +1,7 @@
 package student_diana_miranovica.lesson3.homeworks.day_2;
 
 
-public class Task10Test {
+ class Task10Test {
     public static void main(String[] args) {
         String sentence = "Влюблена в Java";
         System.out.println(sentence.length());

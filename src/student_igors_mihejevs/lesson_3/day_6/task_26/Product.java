@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_6.task_26;
 
-public class Product {
+class Product {
 
     private String name;
     private double regularPrice, discount;

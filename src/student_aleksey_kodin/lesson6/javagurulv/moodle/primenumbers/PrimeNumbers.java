@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson6.javagurulv.moodle.primenumbers;
 
 import java.util.ArrayList;
 
-public class PrimeNumbers {
+class PrimeNumbers {
 
     public static void main(String[] args) {
     int[] primeArray = new int[100];

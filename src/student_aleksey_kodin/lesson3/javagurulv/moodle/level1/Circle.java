@@ -1,7 +1,7 @@
 package student_aleksey_kodin.lesson3.javagurulv.moodle.level1;
 import java.lang.Math;
 
-public class Circle {
+class Circle {
     private double radius;
 
     Circle(double radius) {

@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_x.super_task_1;
 
-public class UserTest {
+class UserTest {
 
     public static void main(String[] args) {
         test1();
@@ -10,6 +10,7 @@ public class UserTest {
     public static void test1() {
         User user = new User("User-login", "password");
         int counter;
+        user.cancelNumberOfAttempts();
         for(counter = 1; counter <= 3; counter++) {
             user.decreaseNumberOfAttempts();
         }

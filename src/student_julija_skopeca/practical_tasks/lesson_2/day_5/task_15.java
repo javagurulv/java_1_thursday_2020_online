@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_2.day_5;
 
-public class task_15 {
+ class task_15 {
 
     public static void main(String[] args){
 

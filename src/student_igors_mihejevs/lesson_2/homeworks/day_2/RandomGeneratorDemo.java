@@ -2,7 +2,7 @@ package student_igors_mihejevs.lesson_2.homeworks.day_2;
 
 import java.util.Random;
 
-public class RandomGeneratorDemo {
+class RandomGeneratorDemo {
 
     public static void main(String[] args) {
 

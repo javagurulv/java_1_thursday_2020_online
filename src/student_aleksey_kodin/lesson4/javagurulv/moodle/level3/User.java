@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.javagurulv.moodle.level3;
 
-public class User {
+class User {
     private final String loginName;
     private final String password;
     private boolean isUserBlock;

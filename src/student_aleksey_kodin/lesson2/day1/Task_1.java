@@ -3,7 +3,7 @@ package student_aleksey_kodin.lesson2.day1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Task_1 {
+class Task_1 {
 
     public static void main(String[] args) {
         try {

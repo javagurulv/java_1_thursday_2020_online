@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson3.day6.task_24;
 
-public class Computer {
+class Computer {
     boolean isOn;
 
     Computer(boolean on) {

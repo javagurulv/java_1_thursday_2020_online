@@ -2,7 +2,7 @@ package student_oleg_ivanov.lesson2.homeWork.day3;
 
 import java.util.Scanner;
 
-public class AreaAndPerimeterOfCircle {
+class AreaAndPerimeterOfCircle {
     public static void main(String[] args) {
 
         //get radius number from user

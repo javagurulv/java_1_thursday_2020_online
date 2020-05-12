@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.javagurulv.moodle.level2;
 
-public class StockDemo {
+class StockDemo {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_3.day_6.task_25;
 
-public class CircleDemo {
+class CircleDemo {
 
     public static void main(String[] args) {
         Circle myRadius = new Circle(10.55);

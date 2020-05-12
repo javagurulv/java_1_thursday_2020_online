@@ -1,6 +1,6 @@
 package student_vladimir_filipov.lesson3_hometasks;
 
-public class WirelesLoudspeaker {
+class WirelesLoudspeaker {
 
     private final String model;
 

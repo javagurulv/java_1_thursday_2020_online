@@ -1,6 +1,6 @@
 package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_x.super_task_1;
 
-public class UserLoginServiceDemo {
+class UserLoginServiceDemo {
 
     public static void main(String[] args) {
 
