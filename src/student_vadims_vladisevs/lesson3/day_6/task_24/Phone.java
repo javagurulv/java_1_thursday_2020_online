@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_6.task_24;
 
-public class Phone {
+class Phone {
 
     private final String model;
     private boolean isOn;

@@ -1,6 +1,6 @@
 package student_vadims_vladisevs.lesson3.day_5.task_22;
 
-public class Dog {
+class Dog {
 
     private final String dogName;
     private final int dogAge;

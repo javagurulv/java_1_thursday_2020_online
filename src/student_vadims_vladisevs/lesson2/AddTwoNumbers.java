@@ -1,7 +1,7 @@
 package student_vadims_vladisevs.lesson2;
 import java.util.*;
 
-public class AddTwoNumbers {
+class AddTwoNumbers {
 
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
