@@ -1,6 +1,6 @@
 package student_alexander_bogachenkov.lesson3_07052020.lesson_code;
 
-public class WirelessSpeakerDemo {
+class WirelessSpeakerDemo {
 
     public static void main(String[] args) {
         WirelessSpeaker wirelessSpeaker1 = new WirelessSpeaker();

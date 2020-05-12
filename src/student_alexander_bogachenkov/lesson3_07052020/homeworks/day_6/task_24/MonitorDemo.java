@@ -1,6 +1,6 @@
 package student_alexander_bogachenkov.lesson3_07052020.homeworks.day_6.task_24;
 
-public class MonitorDemo {
+class MonitorDemo {
     public static void main(String[] args) {
 
         Monitor monitor1 = new Monitor("DELL","IPS",
