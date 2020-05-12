@@ -1,6 +1,6 @@
 package teacher.lesson_3.lessoncode;
 
-public class CalculatorTest {
+class CalculatorTest {
 
     public static void main(String[] args) {
         test1();

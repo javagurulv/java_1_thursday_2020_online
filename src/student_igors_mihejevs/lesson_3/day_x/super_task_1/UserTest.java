@@ -10,6 +10,7 @@ class UserTest {
     public static void test1() {
         User user = new User("User-login", "password");
         int counter;
+        user.cancelNumberOfAttempts();
         for(counter = 1; counter <= 3; counter++) {
             user.decreaseNumberOfAttempts();
         }
