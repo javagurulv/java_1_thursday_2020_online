@@ -1,6 +1,6 @@
 package student_oleg_ivanov.lesson3;
 
-public class WirlesLoudSpeaker {
+class WirlesLoudSpeaker {
 
     private final String model;
 

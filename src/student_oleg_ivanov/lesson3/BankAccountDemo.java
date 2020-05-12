@@ -1,6 +1,6 @@
 package student_oleg_ivanov.lesson3;
 
-public class BankAccountDemo {
+class BankAccountDemo {
     public static void main (String[] args) {
         BankAccount bankAccount = new BankAccount("Olegs");
         double money = bankAccount.addMoney(200);

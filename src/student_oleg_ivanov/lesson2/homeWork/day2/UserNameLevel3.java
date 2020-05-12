@@ -2,7 +2,7 @@ package student_oleg_ivanov.lesson2.homeWork.day2;
 
 import java.util.Scanner;
 
-public class UserNameLevel3 {
+class UserNameLevel3 {
     public static void main(String[] args) {
         //get name from user
         System.out.println("Please enter your name: ");
