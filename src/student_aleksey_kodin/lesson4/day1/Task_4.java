@@ -3,19 +3,17 @@ package student_aleksey_kodin.lesson4.day1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Task_1 {
+public class Task_4 {
     public static void main(String[] args) {
         try {
             System.out.println("Please enter int value: ");
-            int firstValue = new Scanner(System.in).nextInt();
+            int iFirstValue = new Scanner(System.in).nextInt();
 
-             if (firstValue > 0) {
-                System.out.println(firstValue + " is positive value");
+            if (iFirstValue % 2 == 0) {
+                System.out.println("This number is even.");
+            } else {
+                System.out.println("This number is odd.");
             }
-            else {
-                System.out.println(firstValue + " is negative value");
-            }
-
         } catch (InputMismatchException e) {
             System.out.println("Please enter Int value and try again");
             System.exit(-1);

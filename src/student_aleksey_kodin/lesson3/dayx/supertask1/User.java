@@ -12,7 +12,6 @@ public class User {
         isUserBlock = false;
         attemptCount = 3;
     }
-
     public boolean isUserBlock() {
         return isUserBlock;
     }
