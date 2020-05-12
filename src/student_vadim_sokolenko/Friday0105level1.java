@@ -2,61 +2,61 @@ package student_vadim_sokolenko;
 
 import java.util.Scanner;
 
-public class friday0105Level2 {
+public class Friday0105level1 {
 
     public static void main(String[] args) {
-
         //1. get first number from user ''+''
+
         Scanner myInput = new Scanner(System.in);
-        float firstNumber = myInput.nextFloat();
+        int firstNumber = myInput.nextInt();
 
         //2. get second number from user''+''
-        float secondNumber = myInput.nextFloat();
+        int secondNumber = myInput.nextInt();
 
         //3. first number + second number''+''
-        float result = firstNumber + secondNumber;
+        int result = firstNumber + secondNumber;
 
         //4. print result to console''+''
         System.out.println("sum = " + result);
 
         //5. get fifth number from user''-''
         Scanner myInput2 = new Scanner(System.in);
-        float fifthNumber = myInput.nextFloat();
+        int fifthNumber = myInput.nextInt();
 
         //6.get sixth number from user ''-''
-        float sixthNumber = myInput.nextFloat();
+        int sixthNumber = myInput.nextInt();
 
         //.7 fifth number - sixth number ''-''
-        float result2 = fifthNumber - sixthNumber;
+        int result2 = fifthNumber - sixthNumber;
 
         //.8 print result to console''-''
         System.out.println("min = " + result2);
 
         //.9 get seventh number from user ''*''
         Scanner myInput3 = new Scanner(System.in);
-        float seventhNumber = myInput.nextFloat();
+        int seventhNumber = myInput.nextInt();
 
         //.10 get eight number from user ''*''
-        float eightNumber = myInput.nextFloat();
+        int eightNumber = myInput.nextInt();
 
         //.11 seventh * eighth number ''*''
-        float result3 = seventhNumber * eightNumber;
+        int result3 = seventhNumber * eightNumber;
 
         //.12 print result to console ''*''
         System.out.println("* = " + result3);
 
         //.13 get ninth number from user''/''
         Scanner muInput4 = new Scanner(System.in);
-        float ninthNumber = myInput.nextFloat();
+        int ninthNumber = myInput.nextInt();
 
         //.14 get tenth number from user''/''
-        float tenthNumber = myInput.nextFloat();
+        int tenthNumber = myInput.nextInt();
 
         //.15 ninth number / tenth number''/''
-        float result4 = ninthNumber / tenthNumber;
+        int result4 = ninthNumber / tenthNumber;
 
         //.16 print result to console''/''
-        System.out.println(" / =" + result4);
+        System.out.println(" /=" + result4);
 
 
     }

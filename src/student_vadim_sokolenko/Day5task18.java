@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class day5task18 {
+public class Day5task18 {
 
     //Заставьте эту программу работать!
     //

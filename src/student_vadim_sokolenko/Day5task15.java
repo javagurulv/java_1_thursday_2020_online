@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class day5task15 {
+public class Day5task15 {
 
     public static void main(String[] args) {
 

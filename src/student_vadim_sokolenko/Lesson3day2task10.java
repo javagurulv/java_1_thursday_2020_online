@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class lesson3day2task10 {
+public class Lesson3day2task10 {
 
     //1.Memory allotment of String
     //Whenever a String Object is created,

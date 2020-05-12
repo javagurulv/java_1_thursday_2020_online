@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class day5task24 {
+public class Day5task24 {
 
         //public class AttentionPlease {
     //

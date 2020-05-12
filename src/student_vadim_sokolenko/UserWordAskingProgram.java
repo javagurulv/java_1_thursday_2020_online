@@ -3,7 +3,7 @@ package student_vadim_sokolenko;
 
 import java.util.Scanner;
 
-public class userWordAskingProgram {
+public class UserWordAskingProgram {
 
              public static void main(String[] args) {
 

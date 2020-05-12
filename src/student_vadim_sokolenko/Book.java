@@ -1,8 +1,8 @@
 package student_vadim_sokolenko;
 
-class book {
+class Book {
 
-    public class Book {
+
 
         private String title;
 
@@ -15,4 +15,4 @@ class book {
     }
 
 
-}
+

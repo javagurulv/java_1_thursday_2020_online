@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class day4task13 {
+public class Day4task13 {
 
     //1. Независимо от того, какую операционную систему вы используете, Linux, Mac или Windows, если на вашем компьютере установлен JDK (Java Development Kit), вы можете в консоли набрать следующие команды чтобы скомпилировать и запустить программу:
     //

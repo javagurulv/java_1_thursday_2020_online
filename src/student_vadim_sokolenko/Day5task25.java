@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class day5task25 {
+public class Day5task25 {
 
     public static class NoSleepNoFocus {
         public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class wirelesspeaker {
+public class Wirelesspeaker {
 
     private String model;
 
@@ -8,7 +8,7 @@ public class wirelesspeaker {
 
     private boolean isOn;
 
-    public wirelesspeaker(String wirelesModel,
+    public Wirelesspeaker(String wirelesModel,
                           boolean isSwitchedOn){
 
         this.model = wirelesModel;
