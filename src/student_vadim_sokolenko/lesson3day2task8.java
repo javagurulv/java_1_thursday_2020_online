@@ -4,7 +4,7 @@ public class lesson3day2task8 {
 
     public static void main(String[] args) {
         String userName = "Vadim";
-        String greeting = "Hi " + userName + '!';
+        String greeting = "Hi"  + userName + "!";
 
         System.out.println(greeting);
 }}
