@@ -6,13 +6,8 @@ class Dog {
 
     private String dogName;
 
-    public Dog() {
-    }
-
-    public void getDogName() {
-        Scanner getName = new Scanner(System.in);
-        System.out.println("Как будут звать эту собаку? ");
-        dogName = getName.nextLine();
+    public Dog(String dogName) {
+        this.dogName = dogName;
     }
 
     public void voice() {
