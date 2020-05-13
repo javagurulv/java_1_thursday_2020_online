@@ -1,7 +1,5 @@
 package student_oleg_ivanov.lesson3;
 
-import teacher.lesson_3.lessoncode.WirelesLoudspeeker;
-
 class WirlesLoudSpeakerDemo {
 
     public static void main(String[] arg) {
