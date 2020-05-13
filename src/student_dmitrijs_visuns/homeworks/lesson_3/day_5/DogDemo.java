@@ -4,11 +4,10 @@ class DogDemo {
 
     public static void main(String[] args) {
 
-   Dog newDog = new Dog();
-
-        newDog.getDogName();
+        Dog newDog = new Dog("Bruce");
 
         newDog.voice();
+
 
     }
 
