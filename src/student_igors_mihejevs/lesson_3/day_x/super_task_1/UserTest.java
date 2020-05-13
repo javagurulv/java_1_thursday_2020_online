@@ -6,7 +6,7 @@ class UserTest {
         userClassTest();
     }
 
-    // testing methods: cancelNumberOfAttempts() and decreaseNumberOfAttempts().
+    // testing methods: cancelNumberOfAttempts(), decreaseNumberOfAttempts() and userIsBlocked().
     public static void userClassTest() {
         User user = new User("User-login", "password");
         int counter;
