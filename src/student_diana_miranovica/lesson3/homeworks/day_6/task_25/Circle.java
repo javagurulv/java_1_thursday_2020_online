@@ -18,10 +18,10 @@ class Circle {
 
     }
     public double calculateAreaGet(){
-        return catculateArea();
+        return calculateArea();
 
     }
-    private double catculateArea(){
+    private double calculateArea(){
         return Math.PI * radius * radius;
 
     }
