@@ -1,11 +1,9 @@
 package student_vadim_sokolenko;
 
-import student_diana_miranovica.lesson3.homeworks.day_4.Book;
-
-public class BookDemo {
+public class MyBookDemo {
 
     public static void main(String[] args) {
-        Book myBook = new Book("Principles");
+        MyBook myBook = new MyBook("Principles");
         String bookTitle = myBook.getTitle();
         System.out.println("Book title = " + bookTitle);}}
 
