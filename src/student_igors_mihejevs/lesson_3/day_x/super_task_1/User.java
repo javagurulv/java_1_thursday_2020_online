@@ -41,4 +41,5 @@ class User {
     public boolean getIsBlocked() {
         return isBlocked;
     }
+
 }

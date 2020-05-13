@@ -20,6 +20,8 @@ class UserTest {
             System.out.println("Test of cancelNumberOfAttempts() and decreaseNumberOfAttempts() = OK");
             if (user.getIsBlocked()) {
                 System.out.println("Test of userIsBlocked() = OK");
+            } else {
+                System.out.println("Test of userIsBlocked() = FAIL");
             }
         }
         else {

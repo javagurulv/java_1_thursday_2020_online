@@ -19,7 +19,6 @@ class UserLoginServiceDemo {
         } else {
             System.out.println("You are blocked. Waiting for unblocking.");
         }
-
-
     }
+
 }
