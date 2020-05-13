@@ -1,20 +1,16 @@
 package student_vadim_sokolenko;
 
-import java.util.Scanner;
+        public class Dog {
 
-public class Dog {
+        private String name;
 
-    private String name;
-
-    public Dog(String dogName){
+        public Dog(String dogName){
         this.name = dogName;}
 
-
-
-    public void sayName(){
-        System.out.println(this.name);
-        System.out.println(this.name);
-        System.out.println(this.name);
+        public void sayName(){
+            System.out.println(this.name);
+            System.out.println(this.name);
+            System.out.println(this.name);
 
     }
 }
