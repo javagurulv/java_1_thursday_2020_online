@@ -3,22 +3,27 @@ package student_igors_mihejevs.lesson_3.day_x.super_task_1;
 class UserTest {
 
     public static void main(String[] args) {
-        test1();
+        userClassTest();
     }
 
-    // numberOfAttempts test
-    public static void test1() {
+    // testing methods: cancelNumberOfAttempts() and decreaseNumberOfAttempts().
+    public static void userClassTest() {
         User user = new User("User-login", "password");
         int counter;
+
         user.cancelNumberOfAttempts();
         for(counter = 1; counter <= 3; counter++) {
             user.decreaseNumberOfAttempts();
+            user.userIsBlocked();
         }
         if(user.getNumberOfAttempts() == 0) {
-            System.out.println("Test 1 = OK");
+            System.out.println("Test of cancelNumberOfAttempts() and decreaseNumberOfAttempts() = OK");
+            if (user.getIsBlocked()) {
+                System.out.println("Test of userIsBlocked() = OK");
+            }
         }
         else {
-            System.out.println("Test 1 = FAIL");
+            System.out.println("Test of cancelNumberOfAttempts() and decreaseNumberOfAttempts() = FAIL");
         }
     }
 

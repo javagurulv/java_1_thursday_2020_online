@@ -38,7 +38,7 @@ class User {
         return numberOfAttempts;
     }
 
-    public boolean isBlocked() {
+    public boolean getIsBlocked() {
         return isBlocked;
     }
 }
