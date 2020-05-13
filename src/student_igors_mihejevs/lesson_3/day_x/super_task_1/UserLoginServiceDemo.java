@@ -9,7 +9,7 @@ class UserLoginServiceDemo {
         System.out.println("User Login = " + userOne.getLoginName() + "\nUser Password = " + userOne.getPassword()
                            + "\nNumber of attempts = " + userOne.getNumberOfAttempts());
 
-        if(!userOne.isBlocked()) {
+        if(!userOne.getIsBlocked()) {
             if(!service.login(userOne, "user-password-12345")) {
                 System.out.println("Password 'user-password-12345' is not correct"); //Should return false
             }
@@ -19,7 +19,6 @@ class UserLoginServiceDemo {
         } else {
             System.out.println("You are blocked. Waiting for unblocking.");
         }
-
-
     }
+
 }
