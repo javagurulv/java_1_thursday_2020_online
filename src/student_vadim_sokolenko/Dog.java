@@ -3,17 +3,22 @@ package student_vadim_sokolenko;
         public class Dog {
 
         private String name;
+        private int age;
 
-        public Dog(String dogName){
-        this.name = dogName;}
 
-        public void sayName(){
-            System.out.println(this.name);
-            System.out.println(this.name);
-            System.out.println(this.name);
+        public Dog(String dogName, int dogAge){
+        this.name = dogName;
+        this.age = dogAge;}
 
-    }
-}
+        public void voice(){
+            System.out.println("Dogs name is" + this.name);
+            System.out.println("Dogs age is" + this.age);
+             }
+
+
+            }
+
+
 
 
 
