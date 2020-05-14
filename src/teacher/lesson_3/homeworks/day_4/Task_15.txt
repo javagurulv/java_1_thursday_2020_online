@@ -2,7 +2,7 @@
 Исправить и запустить программу.
 Менять можно только класс Phone.
 
-public class Phone {
+class Phone {
 
     private String model;
 
@@ -16,7 +16,7 @@ public class Phone {
 
 }
 
-public class PhoneDemo {
+class PhoneDemo {
 
     public static void main(String[] args) {
         Phone myPhone = new Phone("Huawei");

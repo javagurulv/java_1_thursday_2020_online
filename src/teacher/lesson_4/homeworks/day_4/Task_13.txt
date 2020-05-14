@@ -5,7 +5,7 @@
 
 Подсказка:
 
-public class Calculator {
+class Calculator {
 
     public boolean isEven(int number) {
         // реализуйте этот метод:
