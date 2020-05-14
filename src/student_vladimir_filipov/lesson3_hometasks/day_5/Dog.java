@@ -6,8 +6,7 @@ class Dog {
 
     Dog(String dogName) { this.name = dogName;}
 
-    void Voice() {System.out.println("Voice!"); }
+    void Voice() {System.out.println("Voice!");}
     void dogName() {System.out.println("Kent");}
-
 
 }
