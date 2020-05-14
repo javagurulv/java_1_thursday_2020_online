@@ -9,8 +9,8 @@ class RobotDemo {
         System.out.println();
 
         Robot robot2 = new Robot();
-        robot1.sayHello();
-        robot1.sayYourAge();
+        robot2.sayHello();
+        robot2.sayYourAge();
         System.out.println();
 
         Robot robot3 = new Robot();
