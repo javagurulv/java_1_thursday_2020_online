@@ -11,7 +11,7 @@
 
 Подсказка:
 
-public class Calculator {
+class Calculator {
 
     public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
         // реализуйте этот метод

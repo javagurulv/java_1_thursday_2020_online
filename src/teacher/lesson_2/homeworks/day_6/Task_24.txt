@@ -1,6 +1,6 @@
 Заставьте эту программу работать!
 
-public class AttentionPlease {
+class AttentionPlease {
 
     System.out.println("Code outside the method will not compile!");
 

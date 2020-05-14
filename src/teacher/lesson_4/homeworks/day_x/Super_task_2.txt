@@ -1,6 +1,6 @@
 Написать класс для опреления високосный год или нет.
 
-public class LeapYear {
+class LeapYear {
 
     // return true - если год високосный
     // return false - если год обычный
