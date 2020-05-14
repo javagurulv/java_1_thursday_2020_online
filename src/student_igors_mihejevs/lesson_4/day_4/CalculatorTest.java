@@ -102,10 +102,9 @@ public class CalculatorTest {
     public void maxOfTwoNumbersTest3() {
         // numbers are equals
         int firstNumber = 10;
-        int secondNumber = 10;
         Calculator calculator = new Calculator();
-        int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
-        if (result == firstNumber && result == secondNumber) {
+        int result = calculator.maxOfTwoNumbers(firstNumber, firstNumber);
+        if (result == firstNumber) {
             System.out.println("Numbers are equals. Bigger number test3 = OK");
         } else {
             System.out.println("Numbers are equals. Bigger number test3 = FAIL");
