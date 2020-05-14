@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson4.lesson_code;
 
-class NotOperationExample {
+ class NotOperationExample {
     public static void main(String[] args) {
 
         boolean isPositive = true;

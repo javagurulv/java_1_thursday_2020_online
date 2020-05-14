@@ -30,4 +30,6 @@ class WirelesLoudspeaker {
 
     public void switchedON() {
     }
+
 }
+
