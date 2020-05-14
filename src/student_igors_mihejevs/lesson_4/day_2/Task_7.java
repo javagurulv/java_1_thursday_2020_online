@@ -11,7 +11,7 @@ class Task_7 {
         System.out.print("Input second number : ");
         int secondNumber = myInput.nextInt();
         if(firstNumber == secondNumber) {
-            System.out.println("Number are equal");
+            System.out.println("Numbers are equal");
         }
         else {
             System.out.println("Numbers are different");
