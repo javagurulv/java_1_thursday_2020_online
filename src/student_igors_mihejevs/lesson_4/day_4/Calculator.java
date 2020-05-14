@@ -60,11 +60,11 @@ class Calculator {
             return firstNumber;
         }
         else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
-            System.out.println("The largest number is second and = " + secondNumber);
+            // System.out.println("The largest number is second and = " + secondNumber);
             return secondNumber;
         }
         else {
-            System.out.println("The largest number is third and = " + thirdNumber);
+            // System.out.println("The largest number is third and = " + thirdNumber);
             return thirdNumber;
         }
     }

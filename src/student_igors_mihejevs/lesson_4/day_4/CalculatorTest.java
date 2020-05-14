@@ -82,9 +82,9 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
         if (result == secondNumber) {
-            System.out.println("Second number is bigger. Bigger number test1 = OK");
+            System.out.println("Second number is bigger. Bigger number of two test1 = OK");
         } else {
-            System.out.println("Second number is bigger. Bigger number test2 = FAIL");
+            System.out.println("Second number is bigger. Bigger number of two test2 = FAIL");
         }
     }
 
@@ -95,9 +95,9 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
         if (result == firstNumber) {
-            System.out.println("First number is bigger. Bigger number test2 = OK");
+            System.out.println("First number is bigger. Bigger number of two test2 = OK");
         } else {
-            System.out.println("First number is bigger. Bigger number test2 = FAIL");
+            System.out.println("First number is bigger. Bigger number of two test2 = FAIL");
         }
     }
 
@@ -107,9 +107,9 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, firstNumber);
         if (result == firstNumber) {
-            System.out.println("Numbers are equals. Bigger number test3 = OK");
+            System.out.println("Numbers are equals. Bigger number of two test3 = OK");
         } else {
-            System.out.println("Numbers are equals. Bigger number test3 = FAIL");
+            System.out.println("Numbers are equals. Bigger number of two test3 = FAIL");
         }
     }
 
