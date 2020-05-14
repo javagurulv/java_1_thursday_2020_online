@@ -16,10 +16,10 @@ public class Task_10_1 {
         System.out.print("Input third number : ");
         int thirdNumber = myInput.nextInt();
 
-        if ((firstNumber >= secondNumber) && (firstNumber >= thirdNumber)) {
+        if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
             System.out.println("The largest number is first number and = " + firstNumber);
         }
-        else if ((secondNumber >= firstNumber) && (secondNumber >= thirdNumber)) {
+        else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
             System.out.println("The largest number is second number and = " + secondNumber);
         }
         else System.out.println("The largest number is third number and = " + thirdNumber);

@@ -14,10 +14,10 @@ public class Task_9 {
         System.out.print("Input third number : ");
         int thirdNumber = myInput.nextInt();
 
-        if ((firstNumber < secondNumber) && (secondNumber < thirdNumber)) {
+        if (firstNumber < secondNumber && secondNumber < thirdNumber) {
             System.out.println("increasing");
         }
-        else if ((firstNumber > secondNumber) && (secondNumber > thirdNumber)) {
+        else if (firstNumber > secondNumber && secondNumber > thirdNumber) {
             System.out.println("decreasing");
         }
         else System.out.println("Neither increasing or decreasing order");
