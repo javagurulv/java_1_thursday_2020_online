@@ -2,8 +2,8 @@ package student_vadims_vladisevs.lesson3.day_5.task_22;
 
 class Dog {
 
-    private final String dogName;
-    private final int dogAge;
+    private String dogName;
+    private int dogAge;
     private String dogColor;
 
     public Dog(String dogName, int dogAge, String dogColor){
