@@ -2,9 +2,9 @@ package student_vadims_vladisevs.lesson3.day_6.task_24;
 
 class Phone {
 
-    private final String model;
+    private String model;
     private boolean isOn;
-    private final int price;
+    private int price;
 
     public Phone(String model, boolean isOn, int price){
         this.model = model;

@@ -2,7 +2,7 @@ package student_vadims_vladisevs.lesson3.day_5.task_18;
 
 class Dog {
 
-    private final String dogName;
+    private String dogName;
 
     public Dog(String dogName){
         this.dogName = dogName;
