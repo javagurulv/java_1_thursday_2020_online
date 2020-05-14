@@ -80,9 +80,9 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
         if (result == secondNumber) {
-            System.out.println("Bigger number test1 = OK");
+            System.out.println("Second number is bigger. Bigger number test1 = OK");
         } else {
-            System.out.println("Bigger number test2 = FAIL");
+            System.out.println("Second number is bigger. Bigger number test2 = FAIL");
         }
     }
 
@@ -93,23 +93,22 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
         if (result == firstNumber) {
-            System.out.println("Bigger number test2 = OK");
+            System.out.println("First number is bigger. Bigger number test2 = OK");
         } else {
-            System.out.println("Bigger number test2 = FAIL");
+            System.out.println("First number is bigger. Bigger number test2 = FAIL");
         }
     }
 
     public void maxOfTwoNumbersTest3() {
         // numbers are equals
-        int maxInteger = 2147483647;
         int firstNumber = 10;
         int secondNumber = 10;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
-        if (result == maxInteger) {
-            System.out.println("Bigger number test3 = OK");
+        if (result == firstNumber && result == secondNumber) {
+            System.out.println("Numbers are equals. Bigger number test3 = OK");
         } else {
-            System.out.println("Bigger number test3 = FAIL");
+            System.out.println("Numbers are equals. Bigger number test3 = FAIL");
         }
     }
 

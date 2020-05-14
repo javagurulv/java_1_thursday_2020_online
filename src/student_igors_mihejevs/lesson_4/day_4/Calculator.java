@@ -18,10 +18,7 @@ class Calculator {
         return firstNumber % 2 == 0;
     }
     public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
-        int maxInteger = 2147483647;
-        if (firstNumber > secondNumber) return firstNumber;
-        else if (firstNumber < secondNumber) return secondNumber;
-        else return maxInteger; //equal numbers
+        return Math.max(firstNumber, secondNumber);
     }
 
 }
