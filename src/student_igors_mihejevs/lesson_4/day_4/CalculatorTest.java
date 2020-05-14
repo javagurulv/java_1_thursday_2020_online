@@ -12,6 +12,7 @@ public class CalculatorTest {
         calculatorTest.maxOfTwoNumbersTest1();
         calculatorTest.maxOfTwoNumbersTest2();
         calculatorTest.maxOfTwoNumbersTest3();
+        calculatorTest.maxOfThreeNumbersTest1();
     }
 
     public void sumTest() {
@@ -111,5 +112,18 @@ public class CalculatorTest {
         }
     }
 
+    public void maxOfThreeNumbersTest1() {
+        // first number more then second and third
+        int firstNumber = 30;
+        int secondNumber = 20;
+        int thirdNumber = 10;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == 30) {
+            System.out.println("The largest number is first and = " + firstNumber + " Bigger number of three test1 - OK");
+        } else {
+            System.out.println("Bigger number test1 = FAIL");
+        }
+    }
 
 }
