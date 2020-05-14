@@ -8,11 +8,11 @@ class Task_2 {
         Scanner myInput = new Scanner(System.in);
         System.out.print("Input integer number : ");
         int firstNumber = myInput.nextInt();
-        if(firstNumber > 0) {
+        if (firstNumber > 0) {
             System.out.println("Number " + firstNumber + " is positive");
         }
         else {
-            if(firstNumber < 0) {
+            if (firstNumber < 0) {
                 System.out.println("Number " + firstNumber + " is negative");
             }
             else {

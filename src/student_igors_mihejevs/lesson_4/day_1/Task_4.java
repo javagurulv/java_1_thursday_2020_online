@@ -8,7 +8,7 @@ class Task_4 {
         Scanner myInput = new Scanner(System.in);
         System.out.print("Input integer number between : ");
         int firstNumber = myInput.nextInt();
-        if(firstNumber % 2 == 0) {
+        if (firstNumber % 2 == 0) {
             System.out.println("Number " + firstNumber + " is even");
         }
         else {

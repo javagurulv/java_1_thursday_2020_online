@@ -8,7 +8,7 @@ class Task_1 {
         Scanner myInput = new Scanner(System.in);
         System.out.print( "Enter integer number : " );
         int firstNumber = myInput.nextInt();
-        if(firstNumber >= 0) {
+        if (firstNumber >= 0) {
             System.out.println("Number " + firstNumber + " is positive");
         }
         else {

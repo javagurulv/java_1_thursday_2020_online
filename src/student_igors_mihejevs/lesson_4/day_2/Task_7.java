@@ -10,7 +10,7 @@ class Task_7 {
         int firstNumber = myInput.nextInt();
         System.out.print("Input second number : ");
         int secondNumber = myInput.nextInt();
-        if(firstNumber == secondNumber) {
+        if (firstNumber == secondNumber) {
             System.out.println("Numbers are equal");
         }
         else {
