@@ -12,6 +12,6 @@ public class Dog {
             this.age = dogAge;}
 
         public void voice(){
-            System.out.println("Dogs name is" + this.name);
-            System.out.println("Dogs age is" + this.age);
+            System.out.println("Dogs name is " + this.name);
+            System.out.println("Dogs age is " + this.age);
 }}
