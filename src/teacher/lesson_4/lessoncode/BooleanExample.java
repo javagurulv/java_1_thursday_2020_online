@@ -2,7 +2,7 @@ package teacher.lesson_4.lessoncode;
 
 import java.util.Scanner;
 
-public class BooleanExample {
+class BooleanExample {
 
 	public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson4.lesson_code;
 
-public class LogicalConditions {
+class LogicalConditions {
     public static void main(String[] args) {
         int number = 10;
 

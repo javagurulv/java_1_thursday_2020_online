@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson3.day6.task28;
 /* Дописать код программы, что бы она запускалась
 и выводила на консоль производителя и модель компьютера.
 Менять можно только класс Computer. */
-public class Computer {
+class Computer {
     private final String manufacturer;
     private final String model;
 

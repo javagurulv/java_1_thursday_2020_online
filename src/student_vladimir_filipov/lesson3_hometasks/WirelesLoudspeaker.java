@@ -13,13 +13,16 @@ class WirelesLoudspeaker {
         this.isOn = isSwitchedOn;
     }
 
-    public String getModel () { return this.model;
+    public String getModel () {
+    	return this.model;
     }
-        public void switchedOn () {
+
+    public void switchedOn () {
         this.isOn = true;
         System.out.println("Switched ON!");
     }
-        public void switchOff () {
+
+    public void switchOff () {
         this.isOn = false;
         System.out.println("Switched OFF!");
     }
