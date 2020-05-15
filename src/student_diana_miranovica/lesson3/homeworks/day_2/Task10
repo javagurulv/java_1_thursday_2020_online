@@ -29,7 +29,7 @@
 
 3. Как сравнивать две строки?
 Пример:
-public class Motorcycle {
+class Motorcycle {
     String model;
     int maxSpeed;
 

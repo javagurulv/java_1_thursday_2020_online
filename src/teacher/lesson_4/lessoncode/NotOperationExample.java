@@ -1,6 +1,6 @@
 package teacher.lesson_4.lessoncode;
 
-public class NotOperationExample {
+class NotOperationExample {
 
 	public static void main(String[] args) {
 

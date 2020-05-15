@@ -1,6 +1,6 @@
 package teacher.lesson_4.lessoncode;
 
-public class WirelesLoudspeekerTest {
+class WirelesLoudspeekerTest {
 
 	public static void main(String[] args) {
 		WirelesLoudspeekerTest speekerTest = new WirelesLoudspeekerTest();

@@ -1,6 +1,6 @@
 package teacher.lesson_4.lessoncode;
 
-public class LogicalConditions {
+class LogicalConditions {
 
 	public static void main(String[] args) {
 		int number = 10;

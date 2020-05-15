@@ -6,7 +6,7 @@ String name = "name"; <- будет храниться в String Pool.
 String nextName = new String("name"); <- будет храниться в Java Heap.
 При сравнении name == nextName; результат будет false, так как переменные указывают на разные ссылки объектов.
 Для проверки напишем небольшой тест:
-public class TestForTask10 {
+class TestForTask10 {
     public static void main(String[] args) {
         String name = "Ivan";
         String nextName = "Ivan";
