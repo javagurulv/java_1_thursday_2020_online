@@ -1,9 +1,9 @@
 Найдите ошибку в программе и исправить её:
 
-class ArrayDefinition1 {
+class ArrayDefinition2 {
 
     public static void main(String[] args) {
-        int numbers = new int[];
+        int numbers = new byte[10];
     }
 
 }
