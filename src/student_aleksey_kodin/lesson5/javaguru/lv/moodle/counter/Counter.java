@@ -13,10 +13,10 @@ class Counter {
         this.step = MIN_VALUE_STEP;
     }
     public void increment() {
-        if (value < 100) value = value + step;
+        if (isLessOneHundred()) value = value + step;
     }
     public void decrement() {
-        if (value > 0) value = value - step;
+        if (isMoreZero()) value = value - step;
     }
     public void reset() {
         value = MIN_VALUE_COUNTER;
@@ -38,4 +38,6 @@ class Counter {
     public int getStep() {
         return  step;
     }
+    private boolean isLessOneHundred() { return value < 100; }
+    private boolean isMoreZero() { return value > 0; }
 }
