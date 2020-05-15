@@ -16,6 +16,12 @@ class DoorDemo {
 
        door1.lockDoor();
 
+       door1.closeDoor();
+
+       door1.checkDoor();
+
+       door1.lockDoor();
+
        door1.checkLock();
 
     }
