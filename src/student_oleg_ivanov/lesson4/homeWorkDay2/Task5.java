@@ -15,6 +15,10 @@ class Task5 {
         if ((userNumber1 > userNumber2)) {
             System.out.println("The biggest number is " + userNumber1);
         }
+
+        if ((userNumber1 == userNumber2)) {
+            System.out.println("The number " + userNumber1 + " and " + userNumber2 + " are equals");}
+
         else{
         System.out.println("The biggest number is " + userNumber2); }
 
