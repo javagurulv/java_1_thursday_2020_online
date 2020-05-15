@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_4.day_6;
 
-public class StockDemo {
+class StockDemo {
 
     public static void main(String[] args) {
         Stock google = new Stock("GOOG", 10);

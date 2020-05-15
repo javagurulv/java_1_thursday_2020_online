@@ -1,6 +1,6 @@
 package teacher.lesson_4.lessoncode;
 
-public class Calculator {
+class Calculator {
 
 	public int sum(int firstNumber,
 				   int secondNumber) {

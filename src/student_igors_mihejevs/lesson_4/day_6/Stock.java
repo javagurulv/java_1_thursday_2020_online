@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_4.day_6;
 
-public class Stock {
+class Stock {
 
     private final String companyName;
     private int currentPrice;
