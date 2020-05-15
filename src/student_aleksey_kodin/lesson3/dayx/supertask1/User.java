@@ -1,6 +1,8 @@
 package student_aleksey_kodin.lesson3.dayx.supertask1;
 
 class User {
+    private static final int ATTEMPT_VALUE = 3;
+    private static final int ATTEMPT_BLOCK_VALUE = 0;
     private final String loginName;
     private final String password;
     private boolean isUserBlock;
@@ -30,11 +32,11 @@ class User {
 
     void resetAttemptCount() {
         isUserBlock = false;
-        attemptCount = 3;
+        attemptCount = ATTEMPT_VALUE;
     }
     void UserBlocked() {
         isUserBlock = true;
-        attemptCount = 0;
+        attemptCount = ATTEMPT_BLOCK_VALUE;
         System.out.println(loginName + " blocked. You entered wrong password 3 times.");
     }
 }

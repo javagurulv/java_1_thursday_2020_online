@@ -5,8 +5,10 @@ import java.text.DecimalFormat;
 
 class Product {
     private final String name;
-    private double regularPrice = 0d;
-    private double discount = 0d;
+    private static final double START_REGULAR_PRICE = 0d;
+    private static final double START_DISCOUNT_PRICE = 0d;
+    private double regularPrice = START_REGULAR_PRICE;
+    private double discount = START_DISCOUNT_PRICE;
 
         public Product(String name) {
         this.name = name;
