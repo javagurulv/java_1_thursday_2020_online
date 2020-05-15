@@ -94,7 +94,7 @@ class LightOfColorDetectorTest {
         for (wavelength = 0; wavelength < 380; wavelength++) {
             if (!detector.detect(wavelength).equals("Invisible Light")) isOK = false;
         }
-        for (wavelength = 751; wavelength <= 1000; wavelength++) {
+        for (wavelength = 751; wavelength <= 100000; wavelength++) {
             if (!detector.detect(wavelength).equals("Invisible Light")) isOK = false;
         }
         if (isOK) System.out.println("Invisible Light test - OK");
