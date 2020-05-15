@@ -22,7 +22,7 @@ class Torch {
     }
 
     public void litTorch () {
-        if (torchCondition == 0) {
+        if (torchCondition == TORCH_BURNED_OUT) {
             this.isLit = false;
             System.out.println("Вы использовали факел слишком много раз, и это стало роковой ошибкой. Вы остались наедине с темнотой...");
         } else {
