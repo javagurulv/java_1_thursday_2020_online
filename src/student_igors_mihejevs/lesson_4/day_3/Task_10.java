@@ -4,7 +4,7 @@ package student_igors_mihejevs.lesson_4.day_3;
 
 import java.util.Scanner;
 
-public class Task_10 {
+class Task_10 {
 
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class Task_10 {
         System.out.print("Input third number : ");
         int thirdNumber = myInput.nextInt();
 
-        if (firstNumber == secondNumber && firstNumber == thirdNumber) {
+        if ((firstNumber == secondNumber) && (firstNumber == thirdNumber)) {
             System.out.println("All numbers are equals and = " + firstNumber);
         }
         else if (firstNumber == secondNumber) {
@@ -43,10 +43,10 @@ public class Task_10 {
             else System.out.println("Second number are equal to third number and less than first number\n" +
                     "The largest number is first and = " + firstNumber);
         }
-        else if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+        else if ((firstNumber > secondNumber) && (firstNumber > thirdNumber)) {
             System.out.println("The largest number is first and = " + firstNumber);
         }
-        else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+        else if ((secondNumber > firstNumber) && (secondNumber > thirdNumber)) {
             System.out.println("The largest number is second and = " + secondNumber);
         }
         else System.out.println("The largest number is third and = " + thirdNumber);

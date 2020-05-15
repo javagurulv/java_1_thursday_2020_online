@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_4.day_4;
 
-public class CalculatorTest {
+class CalculatorTest {
 
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();
@@ -15,6 +15,13 @@ public class CalculatorTest {
         calculatorTest.maxOfThreeNumbersTest1();
         calculatorTest.maxOfThreeNumbersTest2();
         calculatorTest.maxOfThreeNumbersTest3();
+        calculatorTest.maxOfThreeNumbersTest4();
+        calculatorTest.maxOfThreeNumbersTest5();
+        calculatorTest.maxOfThreeNumbersTest6();
+        calculatorTest.maxOfThreeNumbersTest7();
+        calculatorTest.maxOfThreeNumbersTest8();
+        calculatorTest.maxOfThreeNumbersTest9();
+        calculatorTest.maxOfThreeNumbersTest10();
     }
 
     public void sumTest() {
@@ -121,8 +128,9 @@ public class CalculatorTest {
         int thirdNumber = 10;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result == 30) {
-            System.out.println("The largest number is first and = " + firstNumber + " Bigger number of three test1 - OK");
+        if (result == firstNumber) {
+            System.out.println("The largest number is first and = " + result +
+                               ". Bigger number of three test1 - OK");
         } else {
             System.out.println("Bigger number of three test1 = FAIL");
         }
@@ -135,9 +143,9 @@ public class CalculatorTest {
         int thirdNumber = 20;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result == 40) {
-            System.out.println("The largest number is second and = " + secondNumber +
-                               " Bigger number of three test2 - OK");
+        if (result == secondNumber) {
+            System.out.println("The largest number is second and = " + result +
+                               ". Bigger number of three test2 - OK");
         } else {
             System.out.println("Bigger number of three test2 = FAIL");
         }
@@ -150,11 +158,114 @@ public class CalculatorTest {
         int thirdNumber = 50;
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result == 50) {
-            System.out.println("The largest number is third and = " + thirdNumber +
-                    " Bigger number of three test3 - OK");
+        if (result == thirdNumber) {
+            System.out.println("The largest number is third and = " + result +
+                    ". Bigger number of three test3 - OK");
         } else {
             System.out.println("Bigger number of three test3 = FAIL");
+        }
+    }
+
+    public void maxOfThreeNumbersTest4() {
+        // first and second numbers are equal and more then third
+        int firstNumber = 50;
+        int secondNumber = 50;
+        int thirdNumber = 20;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == firstNumber) {
+            System.out.println("The largest number is first and second, that are equal and = " + result +
+                    ". Bigger number of three test4 - OK");
+        } else {
+            System.out.println("Bigger number of three test4 = FAIL");
+        }
+    }
+
+    public void maxOfThreeNumbersTest5() {
+        // first and second numbers are equal and less then third
+        int firstNumber = 20;
+        int secondNumber = 20;
+        int thirdNumber = 60;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == thirdNumber) {
+            System.out.println("The first and second numbers are equal, less than third, and third = " + result +
+                    ". Bigger number of three test5 - OK");
+        } else {
+            System.out.println("Bigger number of three test5 = FAIL");
+        }
+    }
+
+    public void maxOfThreeNumbersTest6() {
+        // first and third numbers are equal and more then second
+        int firstNumber = 40;
+        int secondNumber = 10;
+        int thirdNumber = 40;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == firstNumber) {
+            System.out.println("The first and third numbers are equal, more than second and = " + result +
+                    ". Bigger number of three test6 - OK");
+        } else {
+            System.out.println("Bigger number of three test6 = FAIL");
+        }
+    }
+
+    public void maxOfThreeNumbersTest7() {
+        // first and third numbers are equal and less then second
+        int firstNumber = 40;
+        int secondNumber = 70;
+        int thirdNumber = 40;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == secondNumber) {
+            System.out.println("The first and third numbers are equal, less than second,  and second = " + result +
+                    ". Bigger number of three test7 - OK");
+        } else {
+            System.out.println("Bigger number of three test7 = FAIL");
+        }
+    }
+
+    public void maxOfThreeNumbersTest8() {
+        // second and third numbers are equal and more then first
+        int firstNumber = 20;
+        int secondNumber = 40;
+        int thirdNumber = 40;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == secondNumber) {
+            System.out.println("The second and third numbers are equal, more than first and = " + result +
+                    ". Bigger number of three test8 - OK");
+        } else {
+            System.out.println("Bigger number of three test8 = FAIL");
+        }
+    }
+
+    public void maxOfThreeNumbersTest9() {
+        // second and third numbers are equal and less then first
+        int firstNumber = 70;
+        int secondNumber = 40;
+        int thirdNumber = 40;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if (result == firstNumber) {
+            System.out.println("The second and third numbers are equal, less than first, and first = " + result +
+                    ". Bigger number of three test9 - OK");
+        } else {
+            System.out.println("Bigger number of three test9 = FAIL");
+        }
+    }
+
+    public void maxOfThreeNumbersTest10() {
+        // second and third numbers are equal and less then first
+        int firstNumber = 50;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, firstNumber, firstNumber);
+        if (result == firstNumber) {
+            System.out.println("All three numbers are equal and = " + result +
+                    ". Bigger number of three test10 - OK");
+        } else {
+            System.out.println("Bigger number of three test10 = FAIL");
         }
     }
 
