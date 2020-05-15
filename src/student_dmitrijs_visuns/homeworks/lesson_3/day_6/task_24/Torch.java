@@ -4,8 +4,8 @@ class Torch {
 
     private String torchName;
     private boolean isLit;
-    private static final int TORCH_BURNED_OUT = 0;
     int torchCondition;
+    private static final int TORCH_BURNED_OUT = 0;
 
     public Torch (String torchName, boolean isLit, int torchCondition) {
         this.torchName = torchName;
