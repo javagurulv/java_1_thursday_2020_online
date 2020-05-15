@@ -14,10 +14,10 @@ public class Task_8 {
         System.out.print("Input third number : ");
         int thirdNumber = myInput.nextInt();
 
-        if (firstNumber == secondNumber && firstNumber == thirdNumber) {
+        if ((firstNumber == secondNumber) && (firstNumber == thirdNumber)) {
             System.out.println("All numbers are equal");
         }
-        else if (firstNumber != secondNumber && firstNumber != thirdNumber && secondNumber != thirdNumber) {
+        else if ((firstNumber != secondNumber) && (firstNumber != thirdNumber) && (secondNumber != thirdNumber)) {
             System.out.println("All numbers are different");
         }
         else System.out.println("Neither all are equal or different");
