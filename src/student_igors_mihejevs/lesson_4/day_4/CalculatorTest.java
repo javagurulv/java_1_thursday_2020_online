@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_4.day_4;
 
-public class CalculatorTest {
+class CalculatorTest {
 
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();

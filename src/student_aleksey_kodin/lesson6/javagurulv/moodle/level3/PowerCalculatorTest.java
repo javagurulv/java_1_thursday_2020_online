@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson6.javagurulv.moodle.level3;
 
 import java.math.BigInteger;
 
-public class PowerCalculatorTest {
+class PowerCalculatorTest {
     public static void main(String[] args) {
         PowerCalculator powerCalculator = new PowerCalculator();
         PowerCalculatorTest powerCalculatorTest = new PowerCalculatorTest();

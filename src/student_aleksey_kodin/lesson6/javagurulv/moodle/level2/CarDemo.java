@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson6.javagurulv.moodle.level2;
 
-public class CarDemo {
+class CarDemo {
     public static void main(String[] args) {
         Car car = new Car("Volvo S80","black",240);
 

@@ -1,6 +1,6 @@
 package student_dmitrijs_visuns.homeworks.lesson_3.day_6.task_27;
 
-public class BankAccountDemo {
+class BankAccountDemo {
 
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Viktor", 100000);

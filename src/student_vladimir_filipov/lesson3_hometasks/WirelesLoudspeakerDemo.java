@@ -8,6 +8,8 @@ class WirelesLoudspeakerDemo {
 
         WS1.switchOff();
         String model1 = WS1.getModel();
+		model1 = WS1.getModel();
+		model1 = WS1.getModel();
         System.out.println("WS 1 model = " + model1);
 
         WirelesLoudspeaker WS2 = new WirelesLoudspeaker ("Bose",false);

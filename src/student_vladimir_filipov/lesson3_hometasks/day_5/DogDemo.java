@@ -1,6 +1,6 @@
 package student_vladimir_filipov.lesson3_hometasks.day_5;
 
-public class DogDemo {
+class DogDemo {
 
     public static void main(String[] args) {
 
