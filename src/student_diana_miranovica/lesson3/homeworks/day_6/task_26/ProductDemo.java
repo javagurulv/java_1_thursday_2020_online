@@ -1,7 +1,7 @@
 package student_diana_miranovica.lesson3.homeworks.day_6.task_26;
 
 
-public class ProductDemo {
+class ProductDemo {
     public static void main(String[] args) {
 
         Product firstProduct = new Product("Water pack");

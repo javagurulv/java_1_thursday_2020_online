@@ -2,7 +2,7 @@ package student_igors_mihejevs.lesson_4.day_3;
 
 import java.util.Scanner;
 
-public class Task_9 {
+class Task_9 {
 
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
@@ -14,10 +14,10 @@ public class Task_9 {
         System.out.print("Input third number : ");
         int thirdNumber = myInput.nextInt();
 
-        if (firstNumber < secondNumber && secondNumber < thirdNumber) {
+        if ((firstNumber < secondNumber) && (secondNumber < thirdNumber)) {
             System.out.println("increasing");
         }
-        else if (firstNumber > secondNumber && secondNumber > thirdNumber) {
+        else if ((firstNumber > secondNumber) && (secondNumber > thirdNumber)) {
             System.out.println("decreasing");
         }
         else System.out.println("Neither increasing or decreasing order");
