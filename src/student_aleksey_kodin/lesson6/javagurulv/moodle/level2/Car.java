@@ -1,5 +1,7 @@
 package student_aleksey_kodin.lesson6.javagurulv.moodle.level2;
 
+import java.util.Objects;
+
 class Car {
     private final String model;
     private final String color;
@@ -54,5 +56,9 @@ class Car {
                 ", maxSpeed=" + maxSpeed +
                 ", currentSpeed=" + currentSpeed +
                 '}';
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(model, color, maxSpeed, currentSpeed);
     }
 }
