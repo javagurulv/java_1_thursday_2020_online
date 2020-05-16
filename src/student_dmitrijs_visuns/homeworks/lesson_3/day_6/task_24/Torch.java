@@ -22,14 +22,20 @@ class Torch {
     }
 
     public void litTorch () {
+
+        if (this.isLit == true) {
+            System.out.println("Ваш факел уже зажжен!");
+        }
+
         if (torchCondition == TORCH_BURNED_OUT) {
             this.isLit = false;
             System.out.println("Вы использовали факел слишком много раз, и это стало роковой ошибкой. Вы остались наедине с темнотой...");
-        } else {
+        } else if (this.isLit == false) {
             this.isLit = true;
             System.out.println("Вы зажгли факел. Теперь вы можете продолжить путь по подземелью.");
             torchCondition--;
         }
+
     }
 
     public void extinguishTorch () {
