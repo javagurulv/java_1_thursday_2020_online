@@ -13,9 +13,9 @@ class StringPool {
           In this case str3 will be added to the pool (interned) and its reference will be returned.
         */
 
-        String str4 = "String test";
-        String str5 = "String test";
-        String str6 = "String test new";
+        String str4 = new String("String test");
+        String str5 = new String("String test");
+        String str6 = new String("String test new");
         /*
         When we create a String via the new operator, the Java compiler will create a new object
         and store it in the heap space reserved for the JVM.

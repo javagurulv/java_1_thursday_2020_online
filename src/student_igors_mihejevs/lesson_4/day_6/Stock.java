@@ -3,12 +3,14 @@ package student_igors_mihejevs.lesson_4.day_6;
 class Stock {
 
     private final String companyName;
+    private final int initialPrice;
     private int currentPrice;
     private int minimumPrice;
     private int maximumPrice;
 
     public Stock(String companyName, int initialPrice) {
         this.companyName = companyName;
+        this.initialPrice = initialPrice;
         this.currentPrice = initialPrice;
         this.minimumPrice = initialPrice;
         this.maximumPrice = initialPrice;
@@ -28,4 +30,27 @@ class Stock {
                 ", Min price = " + minimumPrice + ", Max price = " + maximumPrice);
     }
 
+    public int getCurrentPrice() {
+        return currentPrice;
+    }
+
+    public int getMinimumPrice() {
+        return minimumPrice;
+    }
+
+    public int getMaximumPrice() {
+        return maximumPrice;
+    }
+
+    public int getInitialPrice() {
+        return initialPrice;
+    }
+
+    public void setMinimumPrice(int minimumPrice) {
+        this.minimumPrice = minimumPrice;
+    }
+
+    public void setMaximumPrice(int maximumPrice) {
+        this.maximumPrice = maximumPrice;
+    }
 }
