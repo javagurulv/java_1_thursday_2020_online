@@ -1,4 +1,4 @@
-package student_oleg_ivanov.lesson4.homeWokr.day1;
+package student_oleg_ivanov.lesson4.homeWokrDay1;
 
 import java.util.Scanner;
 
