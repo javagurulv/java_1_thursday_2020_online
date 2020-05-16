@@ -3,7 +3,7 @@ package student_igors_mihejevs.lesson_4.day_6;
 class Stock {
 
     private final String companyName;
-    private int initialPrice;
+    private final int initialPrice;
     private int currentPrice;
     private int minimumPrice;
     private int maximumPrice;
@@ -46,4 +46,11 @@ class Stock {
         return initialPrice;
     }
 
+    public void setMinimumPrice(int minimumPrice) {
+        this.minimumPrice = minimumPrice;
+    }
+
+    public void setMaximumPrice(int maximumPrice) {
+        this.maximumPrice = maximumPrice;
+    }
 }
