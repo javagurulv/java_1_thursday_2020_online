@@ -4,8 +4,8 @@ class UserLoginServiceDemo {
 
     public static void main(String[] args) {
         UserLoginService service = new UserLoginService();
-        User userOne = new User("user-login", "user-password");
 
+        User userOne = new User("user-login", "user-password");
         System.out.println("User Login = " + userOne.getLoginName() + "\nUser Password = " + userOne.getPassword()
                            + "\nNumber of attempts = " + userOne.getNumberOfAttempts());
 
