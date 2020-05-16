@@ -2,11 +2,6 @@ package student_igors_mihejevs.lesson_4.day_x;
 
 class FizzBuzz {
     int initialNumber;
-    // String returningString;
-
-    // public FizzBuzz() {
-
-    // }
 
     public String detect(int number) {
         this.initialNumber = number;
