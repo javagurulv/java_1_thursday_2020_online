@@ -5,7 +5,7 @@ import java.util.Scanner;
 //Написать программу, которая запрашивает у пользователя
 //целое число и выводит на консоль
 //положительное оно, отрицательное или равно нулю.
- class NumberClassify {
+ class NumberClassifyTask2 {
      public static void main(String [] args){
 
          Scanner scanner = new Scanner(System.in);

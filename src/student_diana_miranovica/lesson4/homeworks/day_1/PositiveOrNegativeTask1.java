@@ -5,7 +5,7 @@ package student_diana_miranovica.lesson4.homeworks.day_1;
 //положительное оно или отрицательное.
 import java.util.Scanner;
 
-class PositiveOrNegative {
+class PositiveOrNegativeTask1 {
      public static void main(String[] args) {
 
          Scanner scanner = new Scanner(System.in);

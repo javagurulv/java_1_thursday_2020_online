@@ -9,7 +9,7 @@ import java.util.Scanner;
 //Подсказка: используйте для определения чётное число или нет
 //операцию остаток от деления (%). Если остаток от деления на 2
 //равен нулю то число чётное, иначе не чётное.
- class EvenOrNotEven {
+ class EvenOrNotEvenTask4 {
     public static void main(String[] args) {
         try {
             Scanner sc = new Scanner(System.in);

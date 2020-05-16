@@ -12,7 +12,7 @@ package student_diana_miranovica.lesson4.homeworks.day_1;
 
 import java.util.Scanner;
 
-class DaysOfTheWeek {
+class DaysOfTheWeekTask3 {
     public static void main(String[] args) {
 
 
