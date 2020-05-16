@@ -11,7 +11,7 @@ class StockTest {
         stockTest.updatePriceTest4(); // Updated price is between minimum and maximum
     }
 
-    void printInformationTest() {
+    public void printInformationTest() {
         Stock test = new Stock("GOOG", 50);
         test.printInformation();
         System.out.println("If all prices the same and = 50, printInformationTest = OK");
