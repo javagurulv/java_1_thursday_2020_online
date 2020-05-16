@@ -1,5 +1,6 @@
 package student_igors_mihejevs.lesson_4.day_6;
 
+
 class StockTest {
 
     public static void main(String[] args) {
