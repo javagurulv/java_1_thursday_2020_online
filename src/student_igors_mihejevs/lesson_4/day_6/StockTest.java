@@ -25,7 +25,7 @@ class StockTest {
         Stock test = new Stock("GOOG", 50);
 
         if (test.getInitialPrice() == test.getCurrentPrice() && test.getInitialPrice() == test.getMinimumPrice() &&
-            test.getInitialPrice() == test.getMaximumPrice()) {
+                test.getInitialPrice() == test.getMaximumPrice()) {
             System.out.println("Test1 = OK");
         } else System.out.println("Test1 = FAIL");
     }
