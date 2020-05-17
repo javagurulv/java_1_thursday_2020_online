@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_4.day_1;
 
 import java.util.Scanner;
 
-public class task_3_daysOfWeek {
+class task_3_daysOfWeek {
 
     public static void main(String[] args) {
 
