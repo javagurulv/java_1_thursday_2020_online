@@ -25,9 +25,11 @@ class Stock {
         currentPrice = updatedPrice;
     }
 
-    public void printInformation() {
+    public String printInformation() {
         System.out.println("Company = " + companyName + ", Current price = " + currentPrice +
                 ", Min price = " + minimumPrice + ", Max price = " + maximumPrice);
+        return "Company = " + companyName + ", Current price = " + "" + currentPrice + ", Min price = " +
+                "" + minimumPrice + ", Max price = " + "" + maximumPrice;
     }
 
     public int getCurrentPrice() {

@@ -5,7 +5,7 @@ class StockTest {
 
     public static void main(String[] args) {
         StockTest stockTest = new StockTest();
-        stockTest.printInformationTest(); // Testing visually. All parameters will be equal initialPrice
+        stockTest.printInformationTest(); // printInformation method test
         stockTest.updatePriceTest1(); // Initialising test
         stockTest.updatePriceTest2(); // Updated price is less then minimum
         stockTest.updatePriceTest3(); // Updated price is more then maximum
@@ -14,8 +14,11 @@ class StockTest {
 
     public void printInformationTest() {
         Stock test = new Stock("GOOG", 50);
-        test.printInformation();
-        System.out.println("If all prices the same and = 50, printInformationTest = OK");
+        String outString = test.printInformation();
+
+        if (outString.equals("Company = GOOG, Current price = 50, Min price = 50, Max price = 50")) {
+            System.out.println("Print information test = OK");
+        } else System.out.println("Print information test = FAIL");
     }
 
     public void updatePriceTest1() {
