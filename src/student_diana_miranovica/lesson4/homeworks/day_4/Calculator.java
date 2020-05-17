@@ -32,5 +32,9 @@ package student_diana_miranovica.lesson4.homeworks.day_4;
     public boolean notEqual(int firstNumber, int secondNumber,int thirdNumber ){
          return  firstNumber != secondNumber&& secondNumber != thirdNumber && firstNumber != thirdNumber;
     }
+     public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
+         return Math.max(firstNumber,secondNumber);
+     }
+
 
  }

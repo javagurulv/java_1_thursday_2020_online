@@ -10,6 +10,9 @@ package student_diana_miranovica.lesson4.homeworks.day_4;
          calculatorTest.evenTest();
          calculatorTest.equalTest();
          calculatorTest.notEqualTest();
+         calculatorTest.maxOfTwoNumbersTest1();
+         calculatorTest.maxOfTwoNumbersTest2();
+         calculatorTest.maxOfTwoNumbersTest3();
      }
 
      public void sumTest() {
@@ -90,5 +93,37 @@ package student_diana_miranovica.lesson4.homeworks.day_4;
              System.out.println("NotEven Test = Fail");
          }
      }
-
+     public void maxOfTwoNumbersTest1(){
+         int firstNumber = 32;
+         int secondNumber = 7;
+         Calculator calculator = new Calculator();
+         int result = calculator.maxOfTwoNumbers(firstNumber,secondNumber);
+         if(result == firstNumber){
+             System.out.println("maxOfTwoNumbers Test1 - OK");
+         }else {
+             System.out.println("maxOfTwoNumbers Test1 - Fail");
+         }
+     }
+     public void maxOfTwoNumbersTest2() {
+         int firstNumber = -3;
+         int secondNumber = 12;
+         Calculator calculator = new Calculator();
+         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
+         if (result == secondNumber) {
+             System.out.println("maxOfTwoNumbers Test2 - OK");
+         } else {
+             System.out.println("maxOfTwoNumbers Test2 - Fail");
+         }
+     }
+     public void maxOfTwoNumbersTest3() {
+         int firstNumber = 95;
+         int secondNumber = 95;
+         Calculator calculator = new Calculator();
+         int result = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
+         if (secondNumber == firstNumber) {
+             System.out.println("maxOfTwoNumbers Test - OK");
+         } else {
+             System.out.println("maxOfTwoNumbers Test - Fail");
+         }
+     }
 }
