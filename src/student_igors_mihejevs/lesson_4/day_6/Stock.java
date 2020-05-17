@@ -7,6 +7,7 @@ class Stock {
     private int currentPrice;
     private int minimumPrice;
     private int maximumPrice;
+    private String informationForPrinting;
 
     public Stock(String companyName, int initialPrice) {
         this.companyName = companyName;
@@ -25,11 +26,14 @@ class Stock {
         currentPrice = updatedPrice;
     }
 
-    public String printInformation() {
-        System.out.println("Company = " + companyName + ", Current price = " + currentPrice +
-                ", Min price = " + minimumPrice + ", Max price = " + maximumPrice);
-        return "Company = " + companyName + ", Current price = " + "" + currentPrice + ", Min price = " +
+    public String getInformation() {
+        this.informationForPrinting = "Company = " + companyName + ", Current price = " + "" + currentPrice + ", Min price = " +
                 "" + minimumPrice + ", Max price = " + "" + maximumPrice;
+        return informationForPrinting;
+    }
+
+    public void printInformation() {
+        System.out.println(informationForPrinting);
     }
 
     public int getCurrentPrice() {
