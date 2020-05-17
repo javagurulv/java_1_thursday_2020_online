@@ -12,7 +12,6 @@ class TorchDemo {
         newTorch.extinguishTorch();
         newTorch.extinguishTorch();
         newTorch.litTorch();
-        newTorch.litTorch();
         newTorch.extinguishTorch();
         newTorch.litTorch();
         newTorch.extinguishTorch();
