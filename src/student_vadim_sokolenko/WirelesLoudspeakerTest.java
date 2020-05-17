@@ -1,6 +1,8 @@
 package student_vadim_sokolenko;
 
- class WirelesLoudspeakerTest {
+
+
+class WirelesLoudspeakerTest {
 
     private static void main(String[] args) {
         WirelesLoudspeakerTest speekerTest = new WirelesLoudspeakerTest();
@@ -9,9 +11,7 @@ package student_vadim_sokolenko;
 
         //Включается ли колонка
 
-        public void test1(){
-            WirelesLoudspeaker speeker =
-                    new WirelesLoudspeaker
+
 
         //Выключается ли колонка
 
@@ -26,4 +26,4 @@ package student_vadim_sokolenko;
     }
 
 
-}
+

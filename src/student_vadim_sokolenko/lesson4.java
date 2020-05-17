@@ -48,14 +48,8 @@ public class lesson4 {
             System.out.println("Number is Positive");
         }else{
             System.out.println("Number is Negative Or Zero");
-        }
+        }}}
 
-        if(condition) {
-            condition == true;
-
-        }else {
-            ()
-        } {condition == false}
 
 
 

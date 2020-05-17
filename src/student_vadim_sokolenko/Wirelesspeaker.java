@@ -7,12 +7,11 @@ public class Wirelesspeaker {
     private int soundVolume;
 
 
-    public Wirelesspeaker(String wirelesModel,
+    public Wirelesspeaker(String wirelessModel,
                           boolean isSwitchedOn){
 
-        this.model = wirelesModel;
+        this.model = wirelessModel;
         this.isOn = isSwitchedOn;
-        this.soundVolume = is
     }
 
     public String getModel() {

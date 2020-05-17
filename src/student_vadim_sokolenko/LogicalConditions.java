@@ -19,10 +19,10 @@ public class LogicalConditions {
 
         inInterval = (number > 10) || (number < 20);
 
-        if((inInterval = (number > 10) && (number < 20)){
+        if((inInterval = (number > 10) && (number < 20))){
             System.out.println("Out of diapazon");
         }
-        if ((inInterval = (number > 10) && (number < 20)){
+        if ((inInterval = (number > 10) && (number < 20))){
             System.out.println("Inside of Diapazon");}
 
 
@@ -30,4 +30,4 @@ public class LogicalConditions {
 
         }
     }
-}
+
