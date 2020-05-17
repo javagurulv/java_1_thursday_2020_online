@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_3.day_6.task_26;
 
 import java.util.Scanner;
 
-public class Product {
+class Product {
     String name;
     double regularPrice;
     double discount;
