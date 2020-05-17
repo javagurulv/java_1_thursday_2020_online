@@ -36,7 +36,6 @@ class TvDemo {
                 case "Next Channel" -> { tv.nextChannel(); printInformation();}
                 case "Volume Down" -> { tv.volumeDown(); printInformation();}
                 case "Volume Up" -> { tv.volumeUp(); printInformation();}
-
             }
         }
     }
