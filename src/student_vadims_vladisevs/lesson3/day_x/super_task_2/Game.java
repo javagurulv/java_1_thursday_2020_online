@@ -9,6 +9,7 @@ class Game {
     private boolean isLastThrowStrike = false;
     private boolean isLastThrowSpare = false;
 
+
     public void roll(){
 
         if (!isLastThrowSpare && !isLastThrowStrike){
@@ -116,6 +117,7 @@ class Game {
         Random randomGenerator = new Random();
         isLastThrowSpare = false;
 
+
         int firstThrow = randomGenerator.nextInt(11);
         if (firstThrow == 10){
             knockedPinsCount = firstThrow * 2;
@@ -140,6 +142,8 @@ class Game {
     public void strike() {
         Random randomGenerator = new Random();
         isLastThrowStrike = false;
+
+
         int firstThrow = randomGenerator.nextInt(11);
         if (firstThrow == 10) {
             knockedPinsCount = firstThrow * 2;
@@ -165,5 +169,7 @@ class Game {
     public int getKnockedPinsCount(){
         return knockedPinsCount;
     }
+
+
 
 }
