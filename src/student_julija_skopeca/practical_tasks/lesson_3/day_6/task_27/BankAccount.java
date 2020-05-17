@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_6.task_27;
 
-public class BankAccount {
+class BankAccount {
 
     private String owner;
     private int money;
