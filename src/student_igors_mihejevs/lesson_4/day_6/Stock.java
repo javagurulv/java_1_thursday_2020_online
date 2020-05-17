@@ -59,4 +59,5 @@ class Stock {
     public void setMaximumPrice(int maximumPrice) {
         this.maximumPrice = maximumPrice;
     }
+
 }
