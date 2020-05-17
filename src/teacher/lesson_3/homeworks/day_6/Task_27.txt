@@ -3,7 +3,7 @@
 на консоль владельца банковского счёта и количество денег.
 Менять можно только класс BankAccount.
 
-public class BankAccount {
+class BankAccount {
 
     private String owner;
     private int money;
@@ -22,7 +22,7 @@ public class BankAccount {
 
 }
 
-public class BankAccountDemo {
+class BankAccountDemo {
 
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount("Viktor", 100000);

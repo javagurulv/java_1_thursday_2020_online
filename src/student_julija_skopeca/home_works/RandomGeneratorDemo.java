@@ -2,7 +2,7 @@ package student_julija_skopeca.home_works;
 
 import java.util.Random;
 
-public class RandomGeneratorDemo {
+class RandomGeneratorDemo {
     public static void main(String[] args) {
 
         Random randomGenerator = new Random();

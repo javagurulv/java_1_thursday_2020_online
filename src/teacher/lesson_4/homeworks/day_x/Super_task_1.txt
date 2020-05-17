@@ -1,7 +1,7 @@
 Создайте класс FizzBuzz.
 В классе FizzBuzz создайте метод со следующей сигнатурой:
 
-public class FizzBuzz {
+class FizzBuzz {
 
     public String detect(int number) {
         // Реализуйте следующие требования:

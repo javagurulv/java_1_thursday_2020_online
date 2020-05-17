@@ -16,7 +16,7 @@
 Логика с определением цвета должна быть реализована
 в отдельном классе LightColorDetector:
 
-public class LightColorDetector {
+class LightColorDetector {
 ​
   public String detect(int wavelength) {
     //TODO

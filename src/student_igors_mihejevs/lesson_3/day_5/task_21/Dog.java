@@ -18,7 +18,7 @@ class Dog {
     }
 
     public void happyBirthday() {
-        age = age + 1;
+        age++;
     }
 
 }

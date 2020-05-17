@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 
 class Product {
 
-    private final String name;
+    private String name;
     private double regularPrice;
     private double discount;
     private double finalPrice;

@@ -1,6 +1,6 @@
 package student_julija_skopeca.home_works;
 
-public class MathOperationsDemo {
+class MathOperationsDemo {
 
     public static void main(String[] args){
 
