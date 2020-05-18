@@ -11,11 +11,12 @@ public class PositiveOrNegativeOrEqalsZero {
         int firstNumber = scanner.nextInt();
 
 
-        if (firstNumber >0) {
+        if (firstNumber > 0) {
             System.out.println("Number is positive");
-        }else if(firstNumber ==0);{
+        } else if (firstNumber == 0) {
+
             System.out.println("Number is Zero");
-        }else if(firstNumber < 0){
+        }else {
             System.out.println("Number is negative");
 
 
@@ -23,15 +24,15 @@ public class PositiveOrNegativeOrEqalsZero {
         System.out.println("Please enter second positive, negative or zero number");
         int secondNumber = scanner.nextInt();
 
-        if (secondNumber >0) {
+        if (secondNumber > 0) {
             System.out.println("Number is positive");
-        }else if(secondNumber ==0);{
+        } else if (secondNumber == 0)
+        {
             System.out.println("Number is Zero");
-        }else if(secondNumber < 0){
+        }else  {
             System.out.println("Number is negative");
-
 
 
         }
     }
-
+}
