@@ -22,7 +22,7 @@ class Task_27 {
             }
         }
         System.out.println("Numbers from array : " + Arrays.toString(myArray));
-        System.out.println("Maximum number from array =  " + maxNumber);
+        System.out.println("Maximum number from array = " + maxNumber);
     }
 
 }
