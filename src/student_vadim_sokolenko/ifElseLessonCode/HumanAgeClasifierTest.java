@@ -1,6 +1,4 @@
-package student_vadim_sokolenko;
-
-import java.util.Scanner;
+package student_vadim_sokolenko.ifElseLessonCode;
 
 public class HumanAgeClasifierTest {
     public static void main(String[] args) {
