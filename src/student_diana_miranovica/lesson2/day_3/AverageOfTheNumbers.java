@@ -4,7 +4,9 @@ import java.util.Scanner;
 
  class AverageOfTheNumbers {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter first number :");
         int firstNum = scanner.nextInt();
 
