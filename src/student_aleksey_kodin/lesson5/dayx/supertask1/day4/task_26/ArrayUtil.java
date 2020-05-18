@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson5.day6;
+package student_aleksey_kodin.lesson5.dayx.supertask1.day4.task_26;
 
 import java.util.Arrays;
 import java.util.OptionalInt;

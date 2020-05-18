@@ -14,7 +14,7 @@ class Task_28 {
             System.out.println(array[count]);
         }
         System.out.println(Arrays.toString(array));
-        int min = Arrays.stream(array).min().getAsInt();
-        System.out.println("Array's max value - " + min);
+        int minNumber = Arrays.stream(array).min().getAsInt();
+        System.out.println("Array's max value - " + minNumber);
     }
 }

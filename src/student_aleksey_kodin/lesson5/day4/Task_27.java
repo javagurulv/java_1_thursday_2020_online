@@ -13,7 +13,7 @@ class Task_27 {
                 System.out.println(array[count]);
             }
             System.out.println(Arrays.toString(array));
-            int max = Arrays.stream(array).max().getAsInt();
-            System.out.println("Array's max value - " + max);
+            int maxNumber = Arrays.stream(array).max().getAsInt();
+            System.out.println("Array's max value - " + maxNumber);
     }
 }
