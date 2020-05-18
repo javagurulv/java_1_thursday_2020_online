@@ -16,9 +16,9 @@ class PositiveAndNegativeNumber {
         else{
          System.out.println("Your number is Negative");}
 
+
          System.out.println("Please enter your positive or negative number");
          int secondNumber = scanner.nextInt();
-
 
      if(secondNumber < 0){
          System.out.println("Your number is Negative");}
