@@ -3,32 +3,32 @@ package student_aleksey_kodin.lesson5.javaguru.lv.moodle.level3;
 class TvController {
 
     private String connectionTvName;
-    private Tv tvController;
+    private Tv tvThroughController;
 
-    public static void main(String[] args) {
-        Tv tv = new Tv("Samsung");
-        TvController tvController = new TvController();
-        tvController.setConnectionWithTv(tv);
-    }
-    private void setConnectionWithTv(Tv tv) {
-        tvController = tv;
+    public void setConnectionWithTv(Tv tv) {
+        tvThroughController = tv;
         connectionTvName = tv.getManufacturer();
     }
+
     public void setOnThroughController(boolean isTvOn) {
-        tvController.setTvOn(isTvOn);
+        tvThroughController.setTvOn(isTvOn);
     }
+
     public void nextChannelThroughController() {
-        tvController.nextChannel();
+        tvThroughController.nextChannel();
     }
+
     public void prevChannelThroughController() {
-        tvController.prevChannel();
+        tvThroughController.prevChannel();
     }
+
     public void volumeUpThroughController() {
-        tvController.volumeUp();
+        tvThroughController.volumeUp();
     }
     public void volumeDownThroughController() {
-        tvController.volumeDown();
+        tvThroughController.volumeDown();
     }
+
     public String getConnectionTvName() {
         return connectionTvName;
     }

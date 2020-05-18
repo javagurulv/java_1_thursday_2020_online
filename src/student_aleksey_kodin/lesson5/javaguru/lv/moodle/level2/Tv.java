@@ -24,21 +24,21 @@ class Tv {
         return  isTvOn;
     }
     void nextChannel() {
-        if (!isTvOn) {
-            currentChannel = TV_FIRST_CHANNEL;
-        }else if (getTvCurrentChannel() == TV_LAST_CHANNEL) {
-            currentChannel = TV_FIRST_CHANNEL;
-        } else {
-            currentChannel += 1;
+        if (isTvOn) {
+            if (getTvCurrentChannel() == TV_LAST_CHANNEL) {
+                currentChannel  = TV_FIRST_CHANNEL;
+            } else {
+                currentChannel += 1;
+            }
         }
     }
     void prevChannel() {
-        if (!isTvOn) {
-            currentChannel = TV_FIRST_CHANNEL;
-        }else if (getTvCurrentChannel() == TV_FIRST_CHANNEL) {
-            currentChannel = TV_LAST_CHANNEL;
-        } else {
-            currentChannel -= 1;
+        if (isTvOn) {
+            if (getTvCurrentChannel() == TV_FIRST_CHANNEL) {
+                currentChannel = TV_LAST_CHANNEL;
+            } else {
+                currentChannel -= 1;
+            }
         }
     }
     String getManufacturer() {
@@ -51,21 +51,21 @@ class Tv {
         return currentVolume;
     }
     void volumeUp() {
-        if (!isTvOn) {
-            currentVolume = TV_MIN_VOLUME;
-        }else if (volumeLessMaxVolume()) {
-            currentVolume += 1;
-        }else {
-            currentVolume = TV_MAX_VOLUME;
+        if (isTvOn) {
+            if (volumeLessMaxVolume()) {
+                currentVolume += 1;
+            } else {
+                currentVolume = TV_MAX_VOLUME;
+            }
         }
     }
     void volumeDown() {
-        if (!isTvOn) {
-            currentVolume = TV_MIN_VOLUME;
-        }else if (volumeGreaterMinVolume()) {
-            currentVolume -= 1;
-        }else {
-            currentVolume = TV_MIN_VOLUME;
+        if (isTvOn) {
+            if (volumeGreaterMinVolume()) {
+                currentVolume -= 1;
+            } else {
+                currentVolume = TV_MIN_VOLUME;
+            }
         }
     }
     private boolean volumeLessMaxVolume() {
