@@ -21,10 +21,11 @@ class Stock {
             currentPrice = newPrice;
         }
     }
-    void printInformation() {
+    // Метод не нужен. Переопределён метод класса toString.
+    /* void printInformation() {
         System.out.println("Company = \"" + company + "\", Current Price = " + currentPrice +
                             ", Min Price = " + minPrice + ", Max Price = " + maxPrice);
-    }
+    } */
     /*
     Метод updatePrice только обновляет значения Current Price,Min Price,Max Price. Если логика
     подразумевает сдвиг значений при изменении, то можно использовать updatePriceNewVersion(int newPrice):
@@ -49,5 +50,13 @@ class Stock {
                 currentPrice = newPrice;
             }
         }
+    }
+    @Override
+    public String toString() {
+        return  "Company = \"" + company + '\'' +
+                ", Current Price = " + currentPrice +
+                ", Min Price = " + minPrice +
+                ", Max Price = " + maxPrice;
+
     }
 }
