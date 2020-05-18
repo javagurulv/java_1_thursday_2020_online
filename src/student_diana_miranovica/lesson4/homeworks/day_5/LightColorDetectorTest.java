@@ -3,7 +3,15 @@ package student_diana_miranovica.lesson4.homeworks.day_5;
 public class LightColorDetectorTest {
 
     public static void main(String[] args) {
-        LightColorDetector detector = new LightColorDetector();
+        LightColorDetectorTest lightColorDetectorTest = new LightColorDetectorTest();
+        lightColorDetectorTest.lightColorDetectorBlueTest();
+        lightColorDetectorTest.lightColorDetectorGreenTest();
+        lightColorDetectorTest.lightColorDetectorInvisibleTest();
+        lightColorDetectorTest.lightColorDetectorOrangeTest();
+        lightColorDetectorTest.lightColorDetectorYellowTest();
+        lightColorDetectorTest.lightColorDetectorRedTest1();
+        lightColorDetectorTest.lightColorDetectorVioletTest();
+
 
 
 
@@ -66,7 +74,7 @@ public class LightColorDetectorTest {
     public void lightColorDetectorInvisibleTest() {
         LightColorDetector lightColorDetector = new LightColorDetector();
         String result = lightColorDetector.detect(250);
-        if(result.equals("Invisible Light wave")) {
+        if(result.equals("Invisible light wave")) {
             System.out.println("LightColorDetector test for Invisible Light wave = OK");
         } else {
             System.out.println("LightColorDetector test for Invisible Light wave = FAIL");

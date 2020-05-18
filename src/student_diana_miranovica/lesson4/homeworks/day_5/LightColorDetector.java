@@ -10,7 +10,7 @@ package student_diana_miranovica.lesson4.homeworks.day_5;
          boolean isGreen = (wavelength >= 495 && wavelength <= 569);
          boolean isBlue = (wavelength >= 450 && wavelength <= 494);
          boolean isViolet = (wavelength >= 380 && wavelength <= 449);
-
+         boolean isInvisible = (wavelength < 380 && wavelength >750);
 
          if (isViolet) {
              return "Violet";
