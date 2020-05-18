@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 
-class Task_27 {
+class Task_28 {
 
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
@@ -14,15 +14,15 @@ class Task_27 {
         int arrayLength = userInput.nextInt();
         int[] myArray = new int[arrayLength];
 
-        int maxNumber = Integer.MIN_VALUE;
+        int minNumber = Integer.MAX_VALUE;
         for (int counter = 0; counter < myArray.length; counter++) {
             myArray[counter] = randomNumber.nextInt(1000);
-            if (myArray[counter] > maxNumber) {
-                maxNumber = myArray[counter];
+            if (myArray[counter] < minNumber) {
+                minNumber = myArray[counter];
             }
         }
         System.out.println("Numbers from array : " + Arrays.toString(myArray));
-        System.out.println("Maximum number from array =  " + maxNumber);
+        System.out.println("Minimum number from array =  " + minNumber);
     }
 
 }
