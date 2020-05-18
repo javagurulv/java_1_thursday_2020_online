@@ -36,5 +36,10 @@ package student_diana_miranovica.lesson4.homeworks.day_4;
          return Math.max(firstNumber,secondNumber);
      }
 
+     public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber){
+        return Math.max(firstNumber, Math.max(secondNumber, thirdNumber));
+
+
+     }
 
  }
