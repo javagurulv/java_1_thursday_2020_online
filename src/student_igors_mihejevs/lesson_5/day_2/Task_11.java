@@ -10,7 +10,7 @@ class Task_11 {
         int[] numbers = new int[3];
         System.out.println("Input " + numbers.length + " integer numbers");
         for (int counter = 0; counter < numbers.length; counter++) {
-            System.out.print("Input " + (counter + 1) + " number : ");
+            System.out.print("Input number " + (counter + 1) + " : ");
             numbers[counter] = myInput.nextInt();
         }
         System.out.println("Numbers from array : " + Arrays.toString(numbers));
