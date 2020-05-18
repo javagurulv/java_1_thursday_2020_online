@@ -26,8 +26,7 @@ public class PositiveOrNegativeOrEqalsZero {
 
         if (secondNumber > 0) {
             System.out.println("Number is positive");
-        } else if (secondNumber == 0)
-        {
+        } else if (secondNumber == 0) {
             System.out.println("Number is Zero");
         }else  {
             System.out.println("Number is negative");
