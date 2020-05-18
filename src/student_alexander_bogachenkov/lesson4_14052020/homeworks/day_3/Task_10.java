@@ -2,7 +2,7 @@ package student_alexander_bogachenkov.lesson4_14052020.homeworks.day_3;
 
 import java.util.Scanner;
 
-public class Task_10 {
+class Task_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

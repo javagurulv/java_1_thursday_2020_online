@@ -18,7 +18,7 @@ import java.util.Scanner;
         int maxVal ;
         if(firstInt>secondInt&&firstInt>thirdInt){
             maxVal=firstInt;
-        }else if (secondInt>thirdInt){
+        }else if (secondInt>thirdInt&&secondInt>firstInt){
             maxVal=secondInt;
         }else {
             maxVal=thirdInt;
