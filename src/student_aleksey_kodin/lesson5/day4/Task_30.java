@@ -3,7 +3,7 @@ package student_aleksey_kodin.lesson5.day4;
 import java.util.Arrays;
 import java.util.Random;
 
-public class Task_30 {
+class Task_30 {
     public static void main(String[] args) {
 
         int[] array = new int [10];
