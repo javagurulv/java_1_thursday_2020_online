@@ -1,0 +1,14 @@
+Упростите метод boolean isEven(int number).
+Код внутри этого метода может быть записан в одну строку.
+
+class Calculator {
+
+    public boolean isEven(int number) {
+         if(number % 2 == 0) {
+             return true;
+         } else {
+             return false;
+         }
+    }
+
+}
