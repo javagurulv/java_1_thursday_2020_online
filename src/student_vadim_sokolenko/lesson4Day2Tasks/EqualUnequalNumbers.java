@@ -10,12 +10,12 @@ class EqualUnequalNumbers {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Please enter first number: ");
-        int firsNumber = scan.nextInt();
+        int firstNumber = scan.nextInt();
 
         System.out.println("Please enter second number: ");
         int secondNumber = scan.nextInt();
 
-        if (firsNumber == secondNumber){
+        if (firstNumber == secondNumber){
         System.out.println("Numbers are equal");
     }   else{
         System.out.println("Numbers are different");
