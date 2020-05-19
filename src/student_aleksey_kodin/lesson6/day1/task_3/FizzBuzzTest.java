@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson4.dayx.supertask1;
+package student_aleksey_kodin.lesson6.day1.task_3;
 
 class FizzBuzzTest {
     private final FizzBuzz fizzBuzz = new FizzBuzz();

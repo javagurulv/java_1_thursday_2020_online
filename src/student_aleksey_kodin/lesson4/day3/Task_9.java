@@ -15,9 +15,9 @@ class Task_9 {
             System.out.println("Please enter third int value: ");
             int thirdValue = new Scanner(System.in).nextInt();
 
-            if (firstValue < secondValue && firstValue < thirdValue && secondValue < thirdValue) {
+            if ((firstValue < secondValue) && (firstValue < thirdValue) && (secondValue < thirdValue)) {
                 System.out.println("increasing");
-            }else if(firstValue > secondValue && firstValue > thirdValue && secondValue > thirdValue) {
+            } else if((firstValue > secondValue) && (firstValue > thirdValue) && (secondValue > thirdValue)) {
                 System.out.println("decreasing");
             } else {
                 System.out.println("Neither increasing or decreasing order");

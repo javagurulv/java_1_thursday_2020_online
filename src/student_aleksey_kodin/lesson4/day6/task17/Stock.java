@@ -12,10 +12,11 @@ class Stock {
         this.maxPrice = currentPrice;
         this.minPrice = currentPrice;
     }
+    // Обновления значений происходят тогда когда новое значение больше существующих
     void updatePrice(int newPrice) {
-        if (newPrice >= maxPrice) {
+        if (newPrice > maxPrice) {
             maxPrice = newPrice;
-        } else if (newPrice < currentPrice) {
+        } else if (newPrice < minPrice) {
                     minPrice = newPrice;
         } else {
             currentPrice = newPrice;
@@ -51,12 +52,20 @@ class Stock {
             }
         }
     }
+    public int getCurrentPrice() {
+        return currentPrice;
+    }
+    public int getMaxPrice() {
+        return maxPrice;
+    }
+    public int getMinPrice() {
+        return minPrice;
+    }
     @Override
     public String toString() {
         return  "Company = \"" + company + '\'' +
                 ", Current Price = " + currentPrice +
                 ", Min Price = " + minPrice +
                 ", Max Price = " + maxPrice;
-
     }
 }
