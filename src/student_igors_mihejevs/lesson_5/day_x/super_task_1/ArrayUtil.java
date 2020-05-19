@@ -71,7 +71,7 @@ public class ArrayUtil {
     public void findOddNumber(int[] array) {
         System.out.print("All odd numbers from array : ");
         for (int i : array) {
-            if (i % 2 == 1) {
+            if (i % 2 != 0) {
                 System.out.print(i + ", ");
             }
         }
