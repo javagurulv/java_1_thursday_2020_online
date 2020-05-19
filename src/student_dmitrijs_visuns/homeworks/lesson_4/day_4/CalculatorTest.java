@@ -19,6 +19,8 @@ class CalculatorTest {
         calculatorTest.maxOfThreeNumbersTest3();
         calculatorTest.maxOfThreeNumbersTest4();
         calculatorTest.maxOfThreeNumbersTest5();
+        calculatorTest.maxOfThreeNumbersTest6();
+        calculatorTest.maxOfThreeNumbersTest7();
     }
 
 
@@ -183,6 +185,33 @@ class CalculatorTest {
             System.out.println("Max Of Three Numbers test, case 5 (2nd & 3rd are equals, bigger than 1st) - OK");
         } else {
             System.out.println("Max Of Three Numbers test, case 5 (2nd & 3rd are equals, bigger than 1st) - FAIL");
+        }
+    }
+
+
+    public void maxOfThreeNumbersTest6() {
+        int firstNumber = 5;
+        int secondNumber = 1;
+        int thirdNumber = 5;
+        Calculator calculator = new Calculator();
+        int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
+        if ((result == firstNumber) && (firstNumber == thirdNumber) && (firstNumber > secondNumber)) {
+            System.out.println("Max Of Three Numbers test, case 6 (1st & 3rd are equals, bigger than 2nd) - OK");
+        } else {
+            System.out.println("Max Of Three Numbers test, case 6 (1st & 3rd are equals, bigger than 2nd) - FAIL");
+        }
+    }
+
+
+    public void maxOfThreeNumbersTest7() {
+        int firstNumber = 5;
+        int secondNumber = 5;
+        int thirdNumber = 5;
+        Calculator calculator = new Calculator();
+        if ((firstNumber == secondNumber) && (secondNumber == thirdNumber)) {
+            System.out.println("Max Of Three Numbers test, case 7 (all three numbers are equals) - OK");
+        } else {
+            System.out.println("Max Of Three Numbers test, case 7 (all three numbers are equals) - FAIL");
         }
     }
 
