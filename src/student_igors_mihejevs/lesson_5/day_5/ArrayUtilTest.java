@@ -31,7 +31,7 @@ class ArrayUtilTest {
         int[] testArray = myArray.createArray(arrayLength);
         myArray.fillArrayWithRandomNumbers(testArray);
         for (int counter = 1; counter < arrayLength; counter++) {
-            if (testArray[counter] < 0 && testArray[counter] > 999) {
+            if ((testArray[counter] < 0) && (testArray[counter] > 999)) {
                 testOK = false;
                 break;
             }
