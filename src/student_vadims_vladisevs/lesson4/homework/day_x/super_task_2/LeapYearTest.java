@@ -1,4 +1,4 @@
-package student_vadims_vladisevs.lesson4.homework.day_x;
+package student_vadims_vladisevs.lesson4.homework.day_x.super_task_2;
 
 class LeapYearTest {
     public static void main(String[] args) {
