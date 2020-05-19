@@ -11,8 +11,7 @@ class Task_1 {
 
         if ((number > 0)){
             System.out.println(number + " is positive number");
-        }
-        else{
+        } else {
             System.out.println(number + " is negative number");
         }
     }
