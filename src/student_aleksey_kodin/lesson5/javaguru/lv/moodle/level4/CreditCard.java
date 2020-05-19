@@ -55,6 +55,8 @@ class CreditCard {
                 int balanceForCredit = withdrawSum - cardBalance;
                 cardLoanDebt += balanceForCredit;
                 cardBalance -= (withdrawSum - balanceForCredit);
+            } else {
+                return false;
             }
         } else {
             return false;
