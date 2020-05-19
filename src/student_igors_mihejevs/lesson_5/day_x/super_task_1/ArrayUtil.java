@@ -57,5 +57,14 @@ public class ArrayUtil {
         return minNumber;
     }
 
+    // print even number from array
+    public void findEvenNumber(int[] array) {
+        System.out.print("All even numbers from array : ");
+        for (int i : array) {
+            if (i % 2 == 0) {
+                System.out.print(i + ", ");
+            }
+        }
+    }
 
 }
