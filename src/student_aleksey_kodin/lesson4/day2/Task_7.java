@@ -19,8 +19,7 @@ class Task_7 {
             System.out.println("If use 'if' operator:");
             if (firstValue != secondValue) {
                 System.out.println("Numbers are different");
-            }
-            else {
+            } else {
                 System.out.println("Numbers are equals");
             }
         } catch (InputMismatchException e) {
