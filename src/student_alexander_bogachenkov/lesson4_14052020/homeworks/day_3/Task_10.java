@@ -13,12 +13,11 @@ class Task_10 {
         System.out.println("Enter third number: ");
         int thirdNum = scanner.nextInt();
 
-        if ((firstNum > secondNum) && (firstNum > thirdNum)) {
-            System.out.println("The bigger number is " + firstNum);
-        } else if ((secondNum > firstNum) && (secondNum > thirdNum)) {
-            System.out.println("The bigger number is " + secondNum);
-        } else {
-            System.out.println("The bigger number is " + thirdNum);
-        }
+        System.out.println("The biggest number is " + maxNum(firstNum, secondNum, thirdNum));
     }
+
+    public static int maxNum(int firstNum, int secondNum, int thirdNum) {
+        return Math.max(Math.max(firstNum, secondNum), thirdNum);
+    }
+
 }
