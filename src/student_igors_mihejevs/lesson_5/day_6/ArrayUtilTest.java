@@ -58,13 +58,11 @@ class ArrayUtilTest {
 
         int arrayLength = 7;
         int[] testArray = myArray.createArray(arrayLength);
-        // myArray.printArrayToConsole(testArray);
         int counter = 0;
         while (counter < arrayLength ) {
             testArray[counter] = counter + 1;
             counter++;
         }
-        // myArray.printArrayToConsole(testArray);
         if (myArray.findMaxNumber(testArray) == 7) System.out.println("Test of maximum number of array - OK");
         else System.out.println("Test of maximum number of array - FAIL");
     }
@@ -74,13 +72,11 @@ class ArrayUtilTest {
 
         int arrayLength = 7;
         int[] testArray = myArray.createArray(arrayLength);
-        // myArray.printArrayToConsole(testArray);
         int counter = 0;
         while (counter < arrayLength ) {
             testArray[counter] = counter + 1;
             counter++;
         }
-        // myArray.printArrayToConsole(testArray);
         if (myArray.findMinNumber(testArray) == 1) System.out.println("Test of minimum number of array - OK");
         else System.out.println("Test of minimum number of array - FAIL");
     }

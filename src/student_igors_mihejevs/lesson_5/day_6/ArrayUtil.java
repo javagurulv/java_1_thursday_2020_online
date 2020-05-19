@@ -26,8 +26,10 @@ public class ArrayUtil {
     // maximum number in array
     public int findMaxNumber(int[] array) {
         int maxNumber = Integer.MIN_VALUE;
-        for (int i : array) {
-            if (i > maxNumber) maxNumber = i;
+        int counter = 0;
+        while (counter < array.length) {
+            if (array[counter] > maxNumber) maxNumber = array[counter];
+            counter++;
         }
         return maxNumber;
     }
@@ -35,8 +37,10 @@ public class ArrayUtil {
     // minimum number in array
     public int findMinNumber(int[] array) {
         int minNumber = Integer.MAX_VALUE;
-        for (int i : array) {
-            if (i < minNumber) minNumber = i;
+        int counter = 0;
+        while (counter < array.length) {
+            if (array[counter] < minNumber) minNumber = array[counter];
+            counter++;
         }
         return minNumber;
     }
