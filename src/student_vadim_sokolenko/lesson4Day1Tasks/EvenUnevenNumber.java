@@ -1,8 +1,8 @@
-package student_vadim_sokolenko.lesson4_1;
+package student_vadim_sokolenko.lesson4Day1Tasks;
 
 import java.util.Scanner;
 
-public class EvenUnevenNumber {
+ class EvenUnevenNumber {
 
     public static void main(String[] args) {
 

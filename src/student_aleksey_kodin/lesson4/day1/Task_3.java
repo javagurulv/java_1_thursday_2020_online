@@ -11,7 +11,7 @@ class Task_3 {
             int day = new Scanner(System.in).nextInt();
 
             System.out.println("If use 'case' operator:");
-            System.out.println(useCaseOperator(day) + "\n");
+            System.out.println( convertNumberToDayOfTheWeek(day) + "\n");
             System.out.println("If use Array:");
             System.out.println(useArray(day) + "\n");
             System.out.println("If use List:");
@@ -24,7 +24,7 @@ class Task_3 {
             System.exit(-1);
         }
     }
-    static String useCaseOperator(int dayOfWeek) {
+    static String  convertNumberToDayOfTheWeek(int dayOfWeek) {
         return switch (dayOfWeek) {
                 case 1 -> "Monday";
                 case 2 -> "Tuesday";
@@ -39,7 +39,7 @@ class Task_3 {
     static String useArray(int dayOfWeek) {
         final String[] dayOfWeekValue = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
 
-        if (dayOfWeek >= 1 && dayOfWeek <= 7) {
+        if ((dayOfWeek >= 1) && (dayOfWeek <= 7)) {
             return dayOfWeekValue[dayOfWeek - 1];
         }
         return "not day of week";
@@ -47,7 +47,7 @@ class Task_3 {
     static String useList(int dayOfWeek) {
         final List<String> dayOfWeekValue = List.of("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday");
 
-        if (dayOfWeek >= 1 && dayOfWeek <= 7) {
+        if ((dayOfWeek >= 1) && (dayOfWeek <= 7)) {
             return dayOfWeekValue.get(dayOfWeek - 1);
         }
         return "not day of week";
