@@ -67,4 +67,14 @@ public class ArrayUtil {
         }
     }
 
+    // print odd number from array
+    public void findOddNumber(int[] array) {
+        System.out.print("All odd numbers from array : ");
+        for (int i : array) {
+            if (i % 2 == 1) {
+                System.out.print(i + ", ");
+            }
+        }
+    }
+
 }
