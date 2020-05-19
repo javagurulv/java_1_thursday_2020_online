@@ -9,8 +9,10 @@ import java.util.Scanner;
  class Task7EqualsOrDifferent {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Press your first int value");
         int firstValue = scanner.nextInt();
+
         System.out.println("Press your second int value");
         int secondValue = scanner.nextInt();
 
