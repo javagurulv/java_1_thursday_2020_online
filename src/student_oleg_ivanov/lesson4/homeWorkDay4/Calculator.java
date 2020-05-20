@@ -1,9 +1,7 @@
 package student_oleg_ivanov.lesson4.homeWorkDay4;
 
 class Calculator {
-    public int sum(int firstNumber, int secondNumber) {
-        return firstNumber + secondNumber;
-    }
+    public int sum(int firstNumber, int secondNumber) { return firstNumber + secondNumber; }
 
     public int difference(int firstNumber, int secondNumber) {
         return firstNumber - secondNumber;

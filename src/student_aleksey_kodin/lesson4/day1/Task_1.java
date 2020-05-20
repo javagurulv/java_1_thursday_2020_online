@@ -11,11 +11,9 @@ class Task_1 {
 
              if (firstValue > 0) {
                 System.out.println(firstValue + " is positive value");
-            }
-            else {
+            }  else {
                 System.out.println(firstValue + " is negative value");
             }
-
         } catch (InputMismatchException e) {
             System.out.println("Please enter Int value and try again");
             System.exit(-1);

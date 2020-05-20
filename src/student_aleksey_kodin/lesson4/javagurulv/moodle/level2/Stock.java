@@ -13,9 +13,9 @@ class Stock {
         this.minPrice = currentPrice;
     }
     void updatePrice(int newPrice) {
-        if (newPrice >= maxPrice) {
+        if (newPrice > maxPrice) {
             maxPrice = newPrice;
-        } else if (newPrice <= currentPrice) {
+        } else if (newPrice < minPrice) {
                     minPrice = newPrice;
         } else {
             currentPrice = newPrice;
