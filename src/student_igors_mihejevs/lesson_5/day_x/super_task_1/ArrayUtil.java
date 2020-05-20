@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ArrayUtil {
+class ArrayUtil {
 
     // create array
     public int[] createArray(int arrayLength) {
