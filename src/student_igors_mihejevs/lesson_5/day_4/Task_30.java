@@ -1,8 +1,8 @@
 package student_igors_mihejevs.lesson_5.day_4;
 
 import java.util.Arrays;
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
 class Task_30 {
 

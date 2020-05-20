@@ -23,8 +23,10 @@ class PositiveOrNegativeTask1 {
 
          if(secondNumber < 0){
              System.out.println("Your value is negative!");
-         }else{
+         }else if (secondNumber > 0){
              System.out.println("Your value is positive!");
+         }else {
+             System.out.println("Zero");
          }
 
 

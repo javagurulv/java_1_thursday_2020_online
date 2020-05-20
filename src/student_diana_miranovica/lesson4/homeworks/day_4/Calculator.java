@@ -6,15 +6,12 @@ package student_diana_miranovica.lesson4.homeworks.day_4;
      public int sum(int firstNumber, int secondNumber) {
          return firstNumber + secondNumber;
      }
-
+     public int sub(int firstNumber, int secondNumber) {
+             return (firstNumber - secondNumber);
+     }
      public int multiplication(int firstNumber, int secondNumber) {
          return firstNumber * secondNumber;
      }
-
-     public int sub(int firstNumber, int secondNumber) {
-         return (firstNumber - secondNumber);
-     }
-
      public int division(int firstNumber, int secondNumber) {
          return (firstNumber / secondNumber);
      }
