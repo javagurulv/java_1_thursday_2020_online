@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ArrayUtil {
+class ArrayUtil {
 
     // create array
     public int[] createArray(int arrayLength) {
@@ -57,5 +57,24 @@ public class ArrayUtil {
         return minNumber;
     }
 
+    // print even number from array
+    public void findEvenNumber(int[] array) {
+        System.out.print("All even numbers from array : ");
+        for (int i : array) {
+            if (i % 2 == 0) {
+                System.out.print(i + ", ");
+            }
+        }
+    }
+
+    // print odd number from array
+    public void findOddNumber(int[] array) {
+        System.out.print("All odd numbers from array : ");
+        for (int i : array) {
+            if (i % 2 != 0) {
+                System.out.print(i + ", ");
+            }
+        }
+    }
 
 }
