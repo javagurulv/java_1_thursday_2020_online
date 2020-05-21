@@ -32,9 +32,9 @@ class ArrayService {
     }
     int[] swap(int[] array) {
         for (int count = 0; count < array.length / 2 ; count++) {
-            int tempSaveArrayElement = array[array.length - 1 - count];
+            int tempSaveLastArrayElement = array[array.length - 1 - count];
             array[array.length- 1 - count] = array[count];
-            array[count] = tempSaveArrayElement;
+            array[count] = tempSaveLastArrayElement;
         }
     return array;
     }
