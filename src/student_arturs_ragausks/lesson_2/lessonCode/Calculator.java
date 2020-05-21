@@ -1,4 +1,4 @@
-package student_arturs_ragausks;
+package student_arturs_ragausks.lesson_2.lessonCode;
 
 class Calculator {
 
