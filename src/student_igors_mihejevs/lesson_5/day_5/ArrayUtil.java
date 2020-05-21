@@ -2,7 +2,7 @@ package student_igors_mihejevs.lesson_5.day_5;
 
 import java.util.Random;
 
-public class ArrayUtil {
+class ArrayUtil {
 
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];

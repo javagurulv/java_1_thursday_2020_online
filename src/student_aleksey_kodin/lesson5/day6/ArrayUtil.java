@@ -21,7 +21,7 @@ class ArrayUtil {
     public int findMaxNumber(int[] array) {
     int maxValue = -1;
         OptionalInt max = Arrays.stream(array).max();
-        if(max.isPresent()) {
+        if (max.isPresent()) {
             maxValue = max.getAsInt();
         }
         return maxValue;
@@ -29,7 +29,7 @@ class ArrayUtil {
     public int findMinNumber(int[] array) {
     int minValue = -1;
     OptionalInt min = Arrays.stream(array).min();
-       if(min.isPresent()) {
+       if (min.isPresent()) {
           minValue = min.getAsInt();
        }
     return minValue;
