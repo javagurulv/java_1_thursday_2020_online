@@ -19,10 +19,7 @@ class ArrayExample {
 		// int -> 4 byte - new int[4] -> 4 * 4 = 16 byte RAM
 
 		// |0|0|0|0|
-		System.out.println(marks[0]);
-		System.out.println(marks[1]);
-		System.out.println(marks[2]);
-		System.out.println(marks[3]);
+		printArrayToConsole(marks);
 
 		// Primitive data type: int, float, boolean
 
@@ -31,10 +28,7 @@ class ArrayExample {
 		marks[2] = 4;
 		marks[3] = 6;
 
-		System.out.println(marks[0]);
-		System.out.println(marks[1]);
-		System.out.println(marks[2]);
-		System.out.println(marks[3]);
+		printArrayToConsole(marks);
 
 		int sum = marks[0] + marks[1] + marks[2] + marks[3];
 		System.out.println(sum);
@@ -49,13 +43,15 @@ class ArrayExample {
 		marks[2] = 40;
 		marks[3] = 99;
 
+		printArrayToConsole(marks);
+
+	}
+
+	private static void printArrayToConsole(int[] marks) {
 		System.out.println(marks[0]);
 		System.out.println(marks[1]);
 		System.out.println(marks[2]);
 		System.out.println(marks[3]);
-
-
 	}
-
 
 }
