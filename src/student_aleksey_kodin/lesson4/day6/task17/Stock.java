@@ -14,13 +14,13 @@ class Stock {
     }
     // Обновления значений происходят тогда когда новое значение больше существующих
     void updatePrice(int newPrice) {
-        if (newPrice > maxPrice) {
-            maxPrice = newPrice;
-        } else if (newPrice < minPrice) {
-                    minPrice = newPrice;
-        } else {
-            currentPrice = newPrice;
-        }
+		if (newPrice > maxPrice) {
+			maxPrice = newPrice;
+		}
+		if (newPrice < minPrice) {
+			minPrice = newPrice;
+		}
+		currentPrice = newPrice;
     }
     // Метод не нужен. Переопределён метод класса toString.
     /* void printInformation() {

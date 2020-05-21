@@ -8,7 +8,18 @@ class StockTest {
         stockTest.testMaxValue(25);
         stockTest.testMinValue(2);
         stockTest.testCurrentValue(15);
+        stockTest.testMaxValueV1();
     }
+
+	public void testMaxValueV1() {
+    	// 999 -> 2 -> 1000
+		stock.updatePrice(999);
+		stock.updatePrice(2);
+		stock.updatePrice(1000);
+		int result = stock.getMaxPrice();
+		printTestResult(result == 1000,"Update Max V1");
+	}
+
     public void testMaxValue(int maxValue) {
         stock.updatePrice(maxValue);
         int result = stock.getMaxPrice();
