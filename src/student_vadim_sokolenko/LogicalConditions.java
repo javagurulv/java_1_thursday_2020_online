@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class LogicalConditions {
+class LogicalConditions {
 
     public static void main(String[] args) {
 

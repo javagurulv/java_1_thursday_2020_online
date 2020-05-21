@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson4.homeworks.day_5;
 
-public class LightColorDetectorTest {
+class LightColorDetectorTest {
 
     public static void main(String[] args) {
         LightColorDetectorTest lightColorDetectorTest = new LightColorDetectorTest();

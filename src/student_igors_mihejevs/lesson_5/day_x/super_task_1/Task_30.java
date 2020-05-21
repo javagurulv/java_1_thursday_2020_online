@@ -2,7 +2,7 @@ package student_igors_mihejevs.lesson_5.day_x.super_task_1;
 
 import java.util.Scanner;
 
-public class Task_30 {
+class Task_30 {
 
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);

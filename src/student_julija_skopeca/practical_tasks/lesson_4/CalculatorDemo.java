@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_4;
 
 import java.util.Scanner;
 
-public class CalculatorDemo {
+class CalculatorDemo {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

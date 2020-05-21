@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_4;
 
-public class CalculatorTest {
+class CalculatorTest {
 
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();

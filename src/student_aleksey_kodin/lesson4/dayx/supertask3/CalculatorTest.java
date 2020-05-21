@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson4.dayx.supertask3;
 
-public class CalculatorTest {
+class CalculatorTest {
     private final Calculator calculator = new Calculator();
 
     public static void main(String[] args) {
