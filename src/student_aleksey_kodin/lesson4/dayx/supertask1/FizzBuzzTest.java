@@ -1,52 +1,37 @@
 package student_aleksey_kodin.lesson4.dayx.supertask1;
 
 class FizzBuzzTest {
+    private final FizzBuzz fizzBuzz = new FizzBuzz();
+
     public static void main(String[] args) {
         FizzBuzzTest fizzBuzzTest = new FizzBuzzTest();
 
-        fizzBuzzTest.testFizzBuzz();
-        fizzBuzzTest.testBuzz();
-        fizzBuzzTest.testFizz();
-        fizzBuzzTest.testVoid();
+        fizzBuzzTest.testFizzBuzz(15);
+        fizzBuzzTest.testBuzz(10);
+        fizzBuzzTest.testFizz(9);
+        fizzBuzzTest.testVoid(38);
     }
-    void testFizzBuzz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        int number = 15;
+    void testFizzBuzz(int number) {
         String result = fizzBuzz.detect(number);
-        if(result.equals("FizzBuzz")) {
-            System.out.println("FizzBuzz test - FizzBuzz value = OK");
-        } else {
-            System.out.println("FizzBuzz test - FizzBuzz value = FAIL");
-        }
+            printTestResult(result.equals("FizzBuzz"),"FizzBuzz");
     }
-    void testBuzz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        int number = 10;
+    void testBuzz(int number) {
         String result = fizzBuzz.detect(number);
-        if(result.equals("Buzz")) {
-            System.out.println("FizzBuzz test - Buzz value = OK");
-        } else {
-            System.out.println("FizzBuzz test - Buzz value = FAIL");
-        }
+            printTestResult(result.equals("Buzz"),"Buzz");
     }
-    void testFizz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        int number = 9;
+    void testFizz(int number) {
         String result = fizzBuzz.detect(number);
-        if(result.equals("Fizz")) {
-            System.out.println("FizzBuzz test - Fizz value = OK");
-        } else {
-            System.out.println("FizzBuzz test - Fizz value = FAIL");
-        }
+            printTestResult(result.equals("Fizz"),"Fizz");
     }
-    void testVoid() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        int number = 38;
+    void testVoid(int number) {
         String result = fizzBuzz.detect(number);
-        if(result.equals(Integer.toString(number))) {
-            System.out.println("FizzBuzz test - Number value = OK");
+            printTestResult(result.equals(Integer.toString(number)),"Number value");
+    }
+    private void printTestResult(boolean isResultOk,String returnNumberName) {
+        if (isResultOk) {
+            System.out.println("FizzBuzz test - " + returnNumberName + " = OK");
         } else {
-            System.out.println("FizzBuzz test - Number value = FAIL");
+            System.out.println("FizzBuzz test - " + returnNumberName + " = FAIL");
         }
     }
 }

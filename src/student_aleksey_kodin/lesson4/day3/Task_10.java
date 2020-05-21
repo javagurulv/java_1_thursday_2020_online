@@ -20,13 +20,9 @@ class Task_10 {
             System.out.println("Max value is - " + maxValueLibMath);
 
             int maxValue;
-            if (firstValue > secondValue && firstValue > thirdValue) {
+            if ((firstValue > secondValue) && (firstValue > thirdValue)) {
                     maxValue = firstValue;
-            }else if(secondValue > thirdValue) {
-                    maxValue = secondValue;
-            } else {
-                    maxValue = thirdValue;
-                    }
+            } else maxValue = Math.max(secondValue, thirdValue);
             System.out.println("If use 'if' operator:");
             System.out.println("Max value is - " + maxValue);
 
