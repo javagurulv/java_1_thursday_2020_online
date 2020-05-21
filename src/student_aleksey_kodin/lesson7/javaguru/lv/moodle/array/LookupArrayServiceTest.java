@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson7.javaguru.lv.array;
+package student_aleksey_kodin.lesson7.javaguru.lv.moodle.array;
 
 class LookupArrayServiceTest {
     private static final int[] array = {1,2,3,4,5};

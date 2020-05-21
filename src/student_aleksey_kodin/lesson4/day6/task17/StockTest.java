@@ -1,7 +1,7 @@
 package student_aleksey_kodin.lesson4.day6.task17;
 
 class StockTest {
-    private Stock stock = new Stock("XXX",10);
+    private final Stock stock = new Stock("XXX",10);
 
     public static void main(String[] args) {
         StockTest stockTest = new StockTest();

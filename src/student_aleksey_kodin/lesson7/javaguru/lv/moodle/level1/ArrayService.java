@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson7.javaguru.lv.level1;
+package student_aleksey_kodin.lesson7.javaguru.lv.moodle.level1;
 
 import java.util.Arrays;
 import java.util.Random;

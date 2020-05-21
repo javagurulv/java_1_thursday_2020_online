@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson7.javaguru.lv.level2;
+package student_aleksey_kodin.lesson7.javaguru.lv.moodle.level2;
 
 import java.util.Arrays;
 

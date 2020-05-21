@@ -1,7 +1,6 @@
-package student_aleksey_kodin.lesson7.javaguru.lv.array;
+package student_aleksey_kodin.lesson7.javaguru.lv.moodle.array;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
