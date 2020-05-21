@@ -2,7 +2,7 @@ package student_vadim_sokolenko.lesson4Day1Tasks;
 
 import java.util.Scanner;
 
-public class PositiveOrNegativeOrEqalsZero {
+class PositiveOrNegativeOrEqalsZero {
 
     public static void main(String[] args) {
 

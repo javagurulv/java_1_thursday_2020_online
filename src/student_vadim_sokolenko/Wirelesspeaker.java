@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class Wirelesspeaker {
+class Wirelesspeaker {
 
     private String model;
     private boolean isOn;

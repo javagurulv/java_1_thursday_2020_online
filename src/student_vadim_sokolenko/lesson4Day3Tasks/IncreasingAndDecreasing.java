@@ -2,7 +2,7 @@ package student_vadim_sokolenko.lesson4Day3Tasks;
 
 import java.util.Scanner;
 
-public class IncreasingAndDecreasing {
+class IncreasingAndDecreasing {
 
     public static void main(String[] args) {
 //        Write a program that accepts three numbers from the user and prints:
