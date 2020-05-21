@@ -2,7 +2,7 @@ package student_vadim_sokolenko;
 
 import java.util.Scanner;
 
-public class Day3task11 {
+class Day3task11 {
 
     public static void main(String[] args) {
 

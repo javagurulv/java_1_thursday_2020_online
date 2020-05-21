@@ -12,14 +12,15 @@ class Stock {
         this.maxPrice = currentPrice;
         this.minPrice = currentPrice;
     }
+    // Обновления значений происходят тогда когда новое значение больше существующих
     void updatePrice(int newPrice) {
-        if (newPrice >= maxPrice) {
-            maxPrice = newPrice;
-        } else if (newPrice < currentPrice) {
-                    minPrice = newPrice;
-        } else {
-            currentPrice = newPrice;
-        }
+		if (newPrice > maxPrice) {
+			maxPrice = newPrice;
+		}
+		if (newPrice < minPrice) {
+			minPrice = newPrice;
+		}
+		currentPrice = newPrice;
     }
     // Метод не нужен. Переопределён метод класса toString.
     /* void printInformation() {
@@ -51,12 +52,20 @@ class Stock {
             }
         }
     }
+    public int getCurrentPrice() {
+        return currentPrice;
+    }
+    public int getMaxPrice() {
+        return maxPrice;
+    }
+    public int getMinPrice() {
+        return minPrice;
+    }
     @Override
     public String toString() {
         return  "Company = \"" + company + '\'' +
                 ", Current Price = " + currentPrice +
                 ", Min Price = " + minPrice +
                 ", Max Price = " + maxPrice;
-
     }
 }
