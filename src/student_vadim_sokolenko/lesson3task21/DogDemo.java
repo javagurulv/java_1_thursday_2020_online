@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.lesson3task21;
 
-public class DogDemo {
+class DogDemo {
 
     public static void main(String[] args) {
 

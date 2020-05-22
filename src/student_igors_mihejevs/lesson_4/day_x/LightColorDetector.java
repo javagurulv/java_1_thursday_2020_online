@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_4.day_x;
 
-public class LightColorDetector {
+class LightColorDetector {
 
     public String detect(int wavelength) {
 

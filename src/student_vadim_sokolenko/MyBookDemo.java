@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class MyBookDemo {
+class MyBookDemo {
 
     public static void main(String[] args) {
         MyBook myBook = new MyBook("Principles");

@@ -2,7 +2,7 @@ package student_vadim_sokolenko.lesson3task24;
 
 
 
-public class AirConditioner {
+class AirConditioner {
 
     public final String name;
     public final String color;

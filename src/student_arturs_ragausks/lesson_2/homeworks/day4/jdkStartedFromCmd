@@ -1,0 +1,6 @@
+https://www.fandroid.info/8-kompilyatsiya-i-vypolnenie-java-programmy-s-komandnoj-stroki/
+Otvet:
+1) V JDK iz papki s proektom nahodim nuzhnij fajl v rasshirenii .java
+2) Otkrivaem console v papke s fajlom zazhimaja shift i nazhimaja pravuju knopku mishi, otkrivajetsa console
+3) Nabiraem kommandu javac i v kachestve parametra peredajem imja nashego fajla. Eta kommanda vizovet kompiljator kotorij sozdast fail s rasshirenijem klass( skompilirovanij kod nashej Java programmi
+4) Shtobi zapustitj programmu nuzhno vvesti v konsolj kommandu java s imenem nashego klassa no ne fajla

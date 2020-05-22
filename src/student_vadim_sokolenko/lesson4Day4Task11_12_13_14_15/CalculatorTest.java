@@ -2,7 +2,7 @@ package student_vadim_sokolenko.lesson4Day4Task11_12_13_14_15;
 
 
 
-public class CalculatorTest {
+class CalculatorTest {
 
 
     public static void main(String[] args) {

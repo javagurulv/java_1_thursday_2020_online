@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class RevertOperation {
+class RevertOperation {
 
     public static void main(String[] args) {
 

@@ -2,7 +2,7 @@ package student_vadim_sokolenko;
 
 import java.util.Scanner;
 
-public class Friday0105level1 {
+class Friday0105level1 {
 
     public static void main(String[] args) {
         //1. get first number from user ''+''

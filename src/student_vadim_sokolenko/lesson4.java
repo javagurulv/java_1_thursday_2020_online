@@ -2,7 +2,7 @@ package student_vadim_sokolenko;
 
 import java.util.Scanner;
 
-public class lesson4 {
+class lesson4 {
 
     public static void main(String[] args) {
         boolean isTrue = 3 < 0;
