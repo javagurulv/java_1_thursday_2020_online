@@ -6,7 +6,7 @@ class FizzBuzzTest {
     public static void main(String[] args) {
         FizzBuzzTest fizzBuzzTest = new FizzBuzzTest();
 
-        fizzBuzzTest.testFizzBuzz(15);
+        fizzBuzzTest.testFizzBuzz(45);
         fizzBuzzTest.testBuzz(10);
         fizzBuzzTest.testFizz(9);
         fizzBuzzTest.testVoid(38);

@@ -2,7 +2,7 @@ package student_vadim_sokolenko.lesson4Day4Task11_12_13_14_15;
 
 
 
-public class CalculatorTest {
+class CalculatorTest {
 
 
     public static void main(String[] args) {
@@ -16,8 +16,12 @@ public class CalculatorTest {
         calculatorTest.maxOfTwoNumbersTest2();
         calculatorTest.maxOfTwoNumbersTest3();
         calculatorTest.maxOfThreeNumbersTest(9, 8, 7);
-
-
+        calculatorTest.maxOfThreeNumbersTest(9, 10,8);
+        calculatorTest.maxOfThreeNumbersTest(9, 8, 10);
+        calculatorTest.maxOfThreeNumbersTest(5, 5, 3);
+        calculatorTest.maxOfThreeNumbersTest(9, 9, 9);
+        calculatorTest.maxOfThreeNumbersTest(8, 9, 9);
+        calculatorTest.maxOfThreeNumbersTest(9, 8, 9);
     }
 
     public void sumTest() {
@@ -119,10 +123,25 @@ public class CalculatorTest {
 
         Calculator calculator = new Calculator();
         int result = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
-        if (result == firstNumber && firstNumber > secondNumber && firstNumber > thirdNumber) {
+        if ((result == firstNumber) && (firstNumber > secondNumber) && (firstNumber > thirdNumber)) {
             System.out.println("maxOfThreeNumbersTest Test first number is most biggest - OK");
-        } else if (result == secondNumber && result > firstNumber && result > thirdNumber) {
+        } else if ((result == secondNumber) && (result > firstNumber) && (result > thirdNumber)) {
             System.out.println("maxOfThreeNumbersTest Test second number is most biggest - OK");
+        } else if ((result == thirdNumber) && (result > firstNumber) && (result > secondNumber)) {
+            System.out.println("maxOfThreeNumbersTest Test third number is most biggest - OK");
+        } else if ((result == firstNumber) && (result == secondNumber) && (result > thirdNumber)) {
+            System.out.println("maxOfThreeNumbersTest Test first number and second numbers are equal" +
+                    " and bigger then third number - OK");
+        } else if ((result == firstNumber) && (result == secondNumber) && (result == thirdNumber)) {
+            System.out.println("maxOfThreeNumbersTest all three numbers are equal - OK");
+        } else if ((result == secondNumber) && (result == thirdNumber) && (result > firstNumber)) {
+            System.out.println("maxOfThreeNumbersTest second and third numbers are equal" +
+                    " and bigger then first number - OK");
+        } else if ((result == thirdNumber) && (result == firstNumber) && (result > secondNumber)) {
+            System.out.println("maxOfThreeNumbersTest third and first numbers are equal" +
+                    " and bigger then second number - OK");
+        } else {
+            System.out.println("maxOfThreeNumbersTest - FAIL!");
         }
     }
 }

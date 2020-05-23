@@ -3,11 +3,8 @@ package student_aleksey_kodin.lesson6.day1.task_2;
 import java.util.Scanner;
 
 class DayOfTheWeekDetector {
-    String detectDayName() {
-
-        System.out.print("Input integer number between 1 and 7 : ");
-        int firstNumber = new Scanner(System.in).nextInt();
-            return switch (firstNumber) {
+    String detectDayName(int dayOfWeek) {
+            return switch (dayOfWeek) {
                 case 1 -> "Monday";
                 case 2 -> "Tuesday";
                 case 3 -> "Wednesday";

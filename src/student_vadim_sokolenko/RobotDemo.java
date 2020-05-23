@@ -2,7 +2,7 @@ package student_vadim_sokolenko;
 
 
 
-public class RobotDemo {
+class RobotDemo {
 
     public static void main(String[] args) {
         Robot robot1 = new Robot("Rider");

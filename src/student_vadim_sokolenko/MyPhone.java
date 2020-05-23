@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class MyPhone {
+class MyPhone {
 
     private String model;
 

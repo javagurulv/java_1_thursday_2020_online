@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.ifElseLessonCode;
 
-public class HumanAgeClassifier {
+class HumanAgeClassifier {
 
     public String classify(int age) {
         if (age >= 0 && age <= 3) {

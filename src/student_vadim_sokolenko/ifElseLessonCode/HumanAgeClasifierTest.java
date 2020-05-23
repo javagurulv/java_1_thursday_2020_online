@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.ifElseLessonCode;
 
-public class HumanAgeClasifierTest {
+class HumanAgeClasifierTest {
     public static void main(String[] args) {
         HumanAgeClasifierTest testRunner = new HumanAgeClasifierTest();
         testRunner.shouldClassifyBaby();

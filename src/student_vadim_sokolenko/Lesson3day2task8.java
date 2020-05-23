@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class Lesson3day2task8 {
+class Lesson3day2task8 {
 
     public static void main(String[] args) {
         String userName = "Vadim";

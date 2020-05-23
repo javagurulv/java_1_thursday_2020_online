@@ -1,6 +1,6 @@
 package student_vadim_sokolenko;
 
-public class WirelessspeakerDemo {
+class WirelessspeakerDemo {
 
     public static void main(String[] args) {
         Wirelesspeaker ws1 = new Wirelesspeaker("Bose", false);
