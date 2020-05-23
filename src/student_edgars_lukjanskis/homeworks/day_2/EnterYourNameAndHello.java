@@ -2,7 +2,7 @@ package student_edgars_lukjanskis.homeworks.day_2;
 
 import java.util.Scanner;
 
-class enterYourNameAndHello {
+class EnterYourNameAndHello {
 
     public static void main(String[] args) {
 

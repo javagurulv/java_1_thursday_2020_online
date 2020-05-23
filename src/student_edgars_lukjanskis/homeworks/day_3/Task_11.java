@@ -2,7 +2,7 @@ package student_edgars_lukjanskis.homeworks.day_3;
 
 import java.util.Scanner;
 
-class task_11 {
+class Task_11 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -14,9 +14,5 @@ class task_11 {
         double number3 = scan.nextDouble();
            double average = ((number1+number2+number3)/3);
            System.out.println("Average number "+ average);
-
-
-        // не оставляйте пустые строки в конце метода!
-
     }
 }

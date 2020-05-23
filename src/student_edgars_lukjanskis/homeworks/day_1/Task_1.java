@@ -2,7 +2,7 @@ package student_edgars_lukjanskis.homeworks.day_1;
 
 import java.util.Scanner;
 
-class task_1 { // название класса с заглавной буквы!
+class Task_1 { // название класса с заглавной буквы!
 
     public static void main(String[] args) {
         Scanner myInput = new Scanner( System.in );

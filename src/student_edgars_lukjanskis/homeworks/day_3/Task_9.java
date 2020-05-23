@@ -2,7 +2,7 @@ package student_edgars_lukjanskis.homeworks.day_3;
 
 import java.util.Scanner;
 
-class task_9 {
+class Task_9 {
 
     // ОТСТУПЫ!!! ОТСТУПЫ!!! ОТСТУПЫ!!! ОТСТУПЫ!!!
     // Соблюдайте отступы, код в котором не соблюдаются отступы читать невозможно!
