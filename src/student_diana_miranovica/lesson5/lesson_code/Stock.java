@@ -1,4 +1,4 @@
-package student_diana_miranovica.lesson4.homeworks.day_6;
+package student_diana_miranovica.lesson5.lesson_code;
 
  class Stock {
      private final String company;
