@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.day_1;
+package student_dmitrijs_visuns.homeworks.lesson_5.day_1;
 
 class ArrayDefinition1 {
 

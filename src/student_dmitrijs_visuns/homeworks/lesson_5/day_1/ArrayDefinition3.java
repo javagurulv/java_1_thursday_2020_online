@@ -1,11 +1,11 @@
-package student_dmitrijs_visuns.homeworks.day_1;
+package student_dmitrijs_visuns.homeworks.lesson_5.day_1;
 
 //Найдите ошибку в программе и исправить её:
 
-class ArrayDefinition4 {
+class ArrayDefinition3 {
 
     public static void main(String[] args) {
-        int[] numbers = new int[] {1, 2, 3};
+        boolean[] numbers = new boolean[10];
     }
 
 }
