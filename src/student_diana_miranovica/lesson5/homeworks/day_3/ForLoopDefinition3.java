@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson5.homeworks.day_3;
 
-public class ForLoopDefinition3 {
+ class ForLoopDefinition3 {
 
     public static void main(String[] args) {
 
