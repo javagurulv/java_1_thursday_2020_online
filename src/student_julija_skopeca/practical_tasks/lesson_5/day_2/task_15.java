@@ -17,11 +17,13 @@ class task_15 {
 
         System.out.println("Array numbers are " + Arrays.toString(numbers));
 
-        int sumToTwo;
+
         for (int i =0; i < numbers.length; i++){
-            sumToTwo = numbers[i]+2;
+          int sumToTwo = numbers[i]+2;
+          numbers[i] = sumToTwo;
         }
 
+        System.out.println("Array numbers increased by 2. Result - " + Arrays.toString(numbers));
 
     }
 }
