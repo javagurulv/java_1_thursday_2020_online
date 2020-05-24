@@ -8,6 +8,7 @@ class ArrayService {
     int[] create(int size) {
         return new int[size];
     }
+
     void fillRandomly(int[] array) {
         for(int count = 0; count < array.length; count++) {
             int randomValue = new Random().nextInt(101);
