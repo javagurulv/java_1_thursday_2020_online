@@ -49,8 +49,10 @@ class Policy {
             case 3 -> {
                 policyObject.nameOfObject = "Movable Property";
                 policyObject.isMovableProperty = true;
-                System.out.print("Please input type of movable property insurance.\n1 - Fire insurance\n2 - Theft insurance\n-> ");
-                firstInput = clientInput.nextInt();
+                do {
+                    System.out.print("Please input type of movable property insurance.\n1 - Fire insurance\n2 - Theft insurance\n-> ");
+                    firstInput = clientInput.nextInt();
+                } while (firstInput != 1 && firstInput !=2);
                 if (firstInput == 1) {
                     policyObject.isFire = true;
                 }
