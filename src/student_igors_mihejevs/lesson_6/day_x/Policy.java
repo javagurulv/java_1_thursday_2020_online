@@ -58,7 +58,7 @@ class Policy {
         }
         System.out.print("Please input insurance object sum : ");
         policyObject.priceOfObject = clientInput.nextInt();
-        System.out.println(policyObject);
+        // System.out.println(policyObject);
         return policyObject;
     }
 
