@@ -2,7 +2,7 @@ package student_vadim_sokolenko;
 
 import java.util.Scanner;
 
-public class Calculator1Demo {
+class Calculator1Demo {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

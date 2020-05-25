@@ -2,7 +2,7 @@ package student_aleksey_kodin.lesson6.day1.task_3;
 
 class FizzBuzz {
     public String detect(int number) {
-        if (divisionsToThree(number) && divisionsToFive(number)) {
+        if (divisionsToFifteen(number)) {
             return "FizzBuzz";
         } else if (divisionsToFive(number)) {
             return "Buzz";
@@ -17,4 +17,5 @@ class FizzBuzz {
     private boolean divisionsToFive(int number) {
         return number % 5 == 0;
     }
+    private boolean divisionsToFifteen(int number) { return number % 15 == 0; }
 }

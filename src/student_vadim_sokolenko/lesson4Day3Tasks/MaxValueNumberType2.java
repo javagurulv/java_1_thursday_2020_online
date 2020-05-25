@@ -2,7 +2,7 @@ package student_vadim_sokolenko.lesson4Day3Tasks;
 
 import java.util.Scanner;
 
-public class MaxValueNumberType2 {
+class MaxValueNumberType2 {
 
     public static void main(String[] args) {
 

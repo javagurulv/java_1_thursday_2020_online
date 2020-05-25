@@ -10,7 +10,7 @@ package student_diana_miranovica.lesson4.homeworks.day_6;
 
 
      public static void main(String[] args) {
-         Stock adidas = new Stock("Adidas", 250);
+         Stock adidas = new Stock("Adidas", 233);
 
          adidas.getInfoForPrint();
          adidas.printInfo();
@@ -25,20 +25,21 @@ package student_diana_miranovica.lesson4.homeworks.day_6;
 
      public Stock(String companyName, int actualPrice){
         this.company = companyName;
-        this.actualPrice = actualPrice;
-        this.currentPrice = actualPrice;
-        this.maxPrice = actualPrice;
-        this.minPrice = actualPrice;
+        this.actualPrice = currentPrice;
+        this.maxPrice = currentPrice;
+        this.minPrice = currentPrice;
 
      }
-     public void updatePrice(int actualPrice){
-         if(actualPrice > maxPrice){
+     public void updatePrice(int newPrice){
+         if(newPrice > maxPrice){
              this.maxPrice = actualPrice;
-         }else if(actualPrice < minPrice){
-             this.minPrice = minPrice;
-         }else {
-             this.currentPrice=actualPrice;
          }
+         if(newPrice < minPrice){
+             this.minPrice = minPrice;
+         }
+
+         this.currentPrice=newPrice;
+
      }
      public String getInfoForPrint(){
          this.infoForPrint = "Company = " + company + ", Current price = " + "" + currentPrice + ", Min price = "

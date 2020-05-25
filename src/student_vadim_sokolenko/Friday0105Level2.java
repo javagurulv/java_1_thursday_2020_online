@@ -2,7 +2,7 @@ package student_vadim_sokolenko;
 
 import java.util.Scanner;
 
-public class Friday0105Level2 {
+class Friday0105Level2 {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.lesson4Day4Task16;
 
-public class LightColorDetectorTest {
+class LightColorDetectorTest {
     public static void main(String[] args) {
 
 

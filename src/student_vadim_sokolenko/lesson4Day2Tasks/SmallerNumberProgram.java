@@ -2,7 +2,7 @@ package student_vadim_sokolenko.lesson4Day2Tasks;
 
 import java.util.Scanner;
 
-public class SmallerNumberProgram {
+class SmallerNumberProgram {
 
     public static void main(String[] args) {
 

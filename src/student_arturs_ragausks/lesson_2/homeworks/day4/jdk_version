@@ -1,0 +1,9 @@
+1. Откройте командную строку в Windows или терминал в unix. + 2. Введите « java -version ** «.
+
+        C:\>java -version
+        java version "1.6.0__18"
+        Java(TM) SE Runtime Environment (build 1.6.0__18-b07)
+        Java HotSpot(TM) Client VM (build 16.0-b13, mixed mode, sharing)
+        В этом случае JDK « 1.6.0__18 » устанавливается на компьютер.
+
+V mojem sluchae eto 14 versija
