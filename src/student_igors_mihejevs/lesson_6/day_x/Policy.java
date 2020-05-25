@@ -8,7 +8,14 @@ class Policy {
     private double priceOfObject;
     private boolean isMovableProperty;
     private boolean isFire;
-
+/*
+    public Policy(String nameOfObject, double priceOfObject, boolean isMovableProperty, boolean isFire) {
+        this.nameOfObject = nameOfObject;
+        this.priceOfObject = priceOfObject;
+        this.isMovableProperty = isMovableProperty;
+        this.isFire = isFire;
+    }
+*/
     @Override
     public String toString() {
         return "Policy{" +
@@ -30,48 +37,29 @@ class Policy {
         } while ((firstInput < 1) || (firstInput > 3));
         switch (firstInput) {
             case 1 -> {
-                policyObject.setNameOfObject("House");
-                policyObject.setMovableProperty(false);
-                policyObject.setFire(true);
+                policyObject.nameOfObject = "House";
+                policyObject.isMovableProperty = false;
+                policyObject.isFire = true;
             }
             case 2 -> {
-                policyObject.setNameOfObject("Apartment");
-                policyObject.setMovableProperty(false);
-                policyObject.setFire(true);
+                policyObject.nameOfObject = "Apartment";
+                policyObject.isMovableProperty = false;
+                policyObject.isFire = true;
             }
             case 3 -> {
-                policyObject.setNameOfObject("Movable Property");
-                policyObject.setMovableProperty(true);
+                policyObject.nameOfObject = "Movable Property";
+                policyObject.isMovableProperty = true;
                 System.out.print("Please input type of movable property insurance.\n1 - Fire insurance\n2 - Theft insurance\n-> ");
                 firstInput = clientInput.nextInt();
                 if (firstInput == 1) {
-                    policyObject.setFire(true);
+                    policyObject.isFire = true;
                 }
             }
         }
         System.out.print("Please input insurance object sum : ");
-        policyObject.setPriceOfObject(clientInput.nextInt());
-        // System.out.println(policyObject);
+        policyObject.priceOfObject = clientInput.nextInt();
+        System.out.println(policyObject);
         return policyObject;
-    }
-
-
-
-
-    public void setNameOfObject(String nameOfObject) {
-        this.nameOfObject = nameOfObject;
-    }
-
-    public void setPriceOfObject(double priceOfObject) {
-        this.priceOfObject = priceOfObject;
-    }
-
-    public void setMovableProperty(boolean movableProperty) {
-        isMovableProperty = movableProperty;
-    }
-
-    public void setFire(boolean fire) {
-        isFire = fire;
     }
 
     public String getNameOfObject() {
