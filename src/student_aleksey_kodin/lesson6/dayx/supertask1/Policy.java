@@ -16,10 +16,10 @@ class Policy {
         this.name = name;
         this.price = price;
     }
-    public void addHouseOrFlat (String name,double price, boolean isHouseOrIsFire) {
+    public void addHouseOrFlat (String name,double price, boolean isHouse) {
         arrayCount++;
         arrayPolicy = Arrays.copyOf(arrayPolicy,arrayCount);
-        if (isHouseOrIsFire) {
+        if (isHouse) {
             price = (double) Math.round((0.05 * price) * 100) / 100;
         } else {
             price = (double) Math.round((0.02 * price) * 100) / 100;
@@ -27,8 +27,8 @@ class Policy {
         this.price = price;
         arrayPolicy[arrayCount - 1] = new Policy(name,price);
     }
-    public void addSubItem(String name,double price, boolean isHouseOrIsFire) {
-        if (isHouseOrIsFire) {
+    public void addSubItem(String name,double price, boolean isFire) {
+        if (isFire) {
             arrayCount++;
             arrayPolicy = Arrays.copyOf(arrayPolicy,arrayCount);
             sumItemFire += price;
