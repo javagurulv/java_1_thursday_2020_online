@@ -17,10 +17,9 @@ class PremiumCalculator {
         while (myInput == 1) {
 
             policyObject = policyObject.policyObjectInput();
-            // System.out.println(policyObject);
             finalPrice += calc.calculate(policyObject);
             // System.out.println(policyObject);
-            // System.out.println(finalPrice);
+
             System.out.print("Please input key 1 to continue, else input any other key : ");
             myInput = clientInput.nextInt();
         }
