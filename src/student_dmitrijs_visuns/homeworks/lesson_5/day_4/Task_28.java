@@ -1,14 +1,8 @@
 package student_dmitrijs_visuns.homeworks.lesson_5.day_4;
 
-/* Напишите программу, в которой:
-- создайте массив произвольной длины
-- заполните массив случайными числами
-- распечатайте на консоль все элементы массива
-- найдите наибольшее число в массиве и выведети его на консоль. */
-
 import java.util.Random;
 
-class Task_27 {
+class Task_28 {
 
     public static void main(String[] args) {
 
@@ -27,15 +21,15 @@ class Task_27 {
         }
 
 
-        int arrayMaxValue = array[0];
+        int arrayMinValue = array[0];
         for (int inputCount = 1; inputCount <= array.length; inputCount++) {
 
-            if (array[inputCount - 1] > arrayMaxValue) {
-                arrayMaxValue = array[inputCount - 1];
+            if (array[inputCount - 1] < arrayMinValue) {
+                arrayMinValue = array[inputCount - 1];
             }
         }
 
-        System.out.println("Array max number is " + arrayMaxValue);
+        System.out.println("Array min number is " + arrayMinValue);
     }
 
 }
