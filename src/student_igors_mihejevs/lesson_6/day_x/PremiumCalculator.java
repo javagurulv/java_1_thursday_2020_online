@@ -9,14 +9,14 @@ class PremiumCalculator {
         int myInput;
 
         PremiumCalculator calc = new PremiumCalculator();
-        Policy policyObject;
+        Policy policyObject = new Policy();
         Scanner clientInput = new Scanner(System.in);
 
         System.out.print("Please input key 1 to continue, else input any other key : ");
         myInput = clientInput.nextInt();
         while (myInput == 1) {
 
-            policyObject = calc.policyObjectInput();
+            policyObject = policyObject.policyObjectInput();
             // System.out.println(policyObject);
             finalPrice += calc.calculate(policyObject);
             // System.out.println(policyObject);
@@ -51,7 +51,7 @@ class PremiumCalculator {
         // System.out.println(policy);
         return currentPrice;
     }
-
+/*
     private Policy policyObjectInput() {
         Scanner clientInput = new Scanner(System.in);
         Policy policyObject = new Policy();
@@ -87,5 +87,5 @@ class PremiumCalculator {
         // System.out.println(policyObject);
         return policyObject;
     }
-
+*/
 }
