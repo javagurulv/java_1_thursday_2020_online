@@ -31,6 +31,11 @@ class PremiumCalculator {
     double calculate(Policy policy) {
 
         double currentPrice = 0;
+        double movPropSumFire = 0;
+        double movPropSumTheft = 0;
+        double movPropPriceFire;
+        double movPropPriceTheft;
+
         if (policy.getNameOfObject().equals("House")) {
             currentPrice = policy.getPriceOfObject() * 0.05;
         }
@@ -38,18 +43,17 @@ class PremiumCalculator {
             currentPrice = policy.getPriceOfObject() * 0.02;
         }
         if (!policy.getNameOfObject().equals("House") && !policy.getNameOfObject().equals("Apartment")) {
-            if (policy.getPriceOfObject() <= 2000) {
-                if (policy.isFire()) {
-                    currentPrice = policy.getPriceOfObject() * 0.03;
-                } else currentPrice = policy.getPriceOfObject() * 0.01;
-            } else if (policy.isFire()) {
-                currentPrice = policy.getPriceOfObject() * 0.04;
-            } else {
-                currentPrice = policy.getPriceOfObject() * 0.02;
-            }
+            if (policy.isFire()) movPropSumFire += policy.getPriceOfObject();
+            else movPropSumTheft += policy.getPriceOfObject();
         }
+
+        if (movPropSumFire <= 2000) movPropPriceFire = movPropSumFire * 0.03;
+        else movPropPriceFire = movPropSumFire * 0.04;
+        if (movPropSumTheft <= 2000) movPropPriceTheft = movPropSumTheft * 0.01;
+        else movPropPriceTheft = movPropSumTheft * 0.02;
+
         // System.out.println(policy);
-        return currentPrice;
+        return currentPrice + movPropPriceFire + movPropPriceTheft;
     }
 
 }
