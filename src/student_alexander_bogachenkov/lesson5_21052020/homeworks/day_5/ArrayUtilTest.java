@@ -1,6 +1,5 @@
 package student_alexander_bogachenkov.lesson5_21052020.homeworks.day_5;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 class ArrayUtilTest {
