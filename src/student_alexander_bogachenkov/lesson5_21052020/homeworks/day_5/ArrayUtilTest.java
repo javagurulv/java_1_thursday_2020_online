@@ -1,5 +1,8 @@
 package student_alexander_bogachenkov.lesson5_21052020.homeworks.day_5;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 class ArrayUtilTest {
 
     public static void main(String[] args) {
@@ -22,6 +25,7 @@ class ArrayUtilTest {
     public void shouldFillArrayWithRandomNumbers() {
         ArrayUtil arrayUtil = new ArrayUtil();
         int[] actualResult = arrayUtil.createArray(5);
+        Arrays.fill(actualResult, -1);
         arrayUtil.fillArrayWithRandomNumbers(actualResult);
 
         int sum = 0;
@@ -29,7 +33,7 @@ class ArrayUtilTest {
             sum += actualResult[i];
         }
 
-        if (sum != 0) {
+        if (sum >= 0) {
             System.out.println("shouldFillArrayWithRandomNumbers PASSED");
         } else {
             System.out.println("shouldFillArrayWithRandomNumbers FAILED");
