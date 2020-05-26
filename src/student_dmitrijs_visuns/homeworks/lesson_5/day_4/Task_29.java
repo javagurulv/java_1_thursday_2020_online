@@ -1,8 +1,15 @@
 package student_dmitrijs_visuns.homeworks.lesson_5.day_4;
 
+/* Напишите программу, в которой:
+- создайте массив произвольной длины
+- заполните массив случайными числами
+- распечатайте на консоль все элементы массива
+- найдите все чётные числа в массиве и выведети их на консоль. */
+
+
 import java.util.Random;
 
-class Task_28 {
+class Task_29 {
 
     public static void main(String[] args) {
 
@@ -21,15 +28,12 @@ class Task_28 {
         }
 
 
-        int arrayMinValue = array[0];
         for (int inputCount = 1; inputCount <= array.length; inputCount++) {
 
-            if (array[inputCount - 1] < arrayMinValue) {
-                arrayMinValue = array[inputCount - 1];
+            if (array[inputCount - 1] % 2 == 0) {
+                System.out.println(array[inputCount - 1] + " is even");
             }
         }
-
-        System.out.println("Array min value is " + arrayMinValue);
     }
 
 }
