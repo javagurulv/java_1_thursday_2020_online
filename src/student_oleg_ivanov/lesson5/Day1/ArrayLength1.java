@@ -1,4 +1,4 @@
-package student_oleg_ivanov.lesson5.homeTaskDay1;
+package student_oleg_ivanov.lesson5.Day1;
 
 class ArrayLength1 {
     public static void main(String[] args) {
