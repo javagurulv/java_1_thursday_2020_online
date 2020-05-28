@@ -1,4 +1,4 @@
-package student_arturs_ragausks.lesson_3.homeworks;
+package student_arturs_ragausks.lesson_3.homeworks.day4;
 
 public class Book {
 

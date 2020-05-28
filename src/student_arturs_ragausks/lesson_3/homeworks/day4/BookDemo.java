@@ -1,4 +1,6 @@
-package student_arturs_ragausks.lesson_3.homeworks;
+package student_arturs_ragausks.lesson_3.homeworks.day4;
+
+import student_arturs_ragausks.lesson_3.homeworks.day4.Book;
 
 public class BookDemo {
 
