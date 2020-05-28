@@ -1,12 +1,10 @@
 package student_diana_miranovica.lesson5.homeworks.day_4;
 
 import java.util.Random;
-import java.util.Scanner;
 
-class ArrayTask27 {
+class ArrayTask28 {
 
      public static void main(String[] args) {
-
          int[] mas = new int[4];
          Random random = new Random();
 
@@ -18,16 +16,16 @@ class ArrayTask27 {
              System.out.println("numbers["+ i +"]"+ "  in an array = "+ mas[i]);
 
          }
-         int maxNumber = mas[0];
+         int minNumber = mas[0];
 
          for (int tempNumber : mas){
-             if (tempNumber > maxNumber){
-                 maxNumber = tempNumber;
+             if (tempNumber < minNumber){
+                 minNumber = tempNumber;
              }
          }
 
-         System.out.println("Max number from array = " + maxNumber);
+         System.out.println("Min number from array = " + minNumber);
 
      }
-}
 
+}
