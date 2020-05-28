@@ -104,7 +104,9 @@ class TicTacToe {
     public void play() {
         int[][] field = createField();
         while(true) {
-            if (isWin(field,0)) {
+            if (isWin(field,1)) {
+                field[getRowWinPosition()][getColumnWinPosition()] = 0;
+            }else if (isWin(field,0)) {
                 field[getRowWinPosition()][getColumnWinPosition()] = 0;
             } else if (checkNextMove(field)) {
                 field[getRowMovePosition()][getColumnMovePosition()] = 0;
