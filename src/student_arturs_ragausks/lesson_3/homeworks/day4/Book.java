@@ -1,6 +1,7 @@
-package student_vladimir_filipov.lesson3_hometasks.day_4;
+package student_arturs_ragausks.lesson_3.homeworks.day4;
 
-class Book {
+public class Book {
+
     private String title;
 
     public Book(String bookTitle) {
@@ -12,4 +13,3 @@ class Book {
     }
 
 }
-

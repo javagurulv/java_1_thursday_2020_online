@@ -1,6 +1,6 @@
-package student_vladimir_filipov.lesson3_hometasks.day_4;
+package student_arturs_ragausks.lesson_3.homeworks.day4;
 
-class PhoneDemo {
+public class PhoneDemo {
 
     public static void main(String[] args) {
         Phone myPhone = new Phone("Huawei");
@@ -9,4 +9,3 @@ class PhoneDemo {
     }
 
 }
-
