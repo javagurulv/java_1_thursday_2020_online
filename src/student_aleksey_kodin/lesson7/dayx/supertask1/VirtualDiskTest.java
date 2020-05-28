@@ -43,9 +43,7 @@ class VirtualDiskTest {
         System.out.println("[ Defrag Virtual Disk ]");
         System.out.println("After:");
         virtualDisk.print();
-        System.out.println(virtualDisk.getVirtualDiskPointer());
         virtualDisk.defrag();
-        System.out.println(virtualDisk.getVirtualDiskPointer());
         System.out.println("Before:");
         virtualDisk.print();
         virtualDisk.printInformation();
