@@ -1,0 +1,5 @@
+Создайте в классе TicTacToe метод:
+
+public void printFieldToConsole(int[][] field) {
+    // распечатайте поле на консоль в читаемом формате
+}
