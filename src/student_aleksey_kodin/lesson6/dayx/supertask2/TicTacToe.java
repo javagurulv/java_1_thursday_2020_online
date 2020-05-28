@@ -106,7 +106,7 @@ class TicTacToe {
         while(true) {
             if (isWin(field,1)) {
                 field[getRowWinPosition()][getColumnWinPosition()] = 0;
-            }else if (isWin(field,0)) {
+            } else if (isWin(field,0)) {
                 field[getRowWinPosition()][getColumnWinPosition()] = 0;
             } else if (checkNextMove(field)) {
                 field[getRowMovePosition()][getColumnMovePosition()] = 0;
