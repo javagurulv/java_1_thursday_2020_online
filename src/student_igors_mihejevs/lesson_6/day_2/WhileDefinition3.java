@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_6.day_2;
 
-public class WhileDefinition3 {
+class WhileDefinition3 {
 
     public static void main(String[] args) {
         int i = 1;

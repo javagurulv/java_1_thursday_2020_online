@@ -3,7 +3,7 @@ package teacher.lesson_6.lessoncode;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task26Example {
+class Task26Example {
 
 	// one line comment
 

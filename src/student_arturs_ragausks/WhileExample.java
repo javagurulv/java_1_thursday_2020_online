@@ -2,7 +2,7 @@ package student_arturs_ragausks;
 
 import java.util.Scanner;
 
-public class WhileExample {
+class WhileExample {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner((System.in));

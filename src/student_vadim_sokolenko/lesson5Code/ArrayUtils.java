@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.lesson5Code;
 
-public class ArrayUtils {
+class ArrayUtils {
 
     static int sum(int[] array) {
         int sum = 0;
