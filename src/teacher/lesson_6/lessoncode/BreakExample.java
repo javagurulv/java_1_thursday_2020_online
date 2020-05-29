@@ -2,7 +2,7 @@ package teacher.lesson_6.lessoncode;
 
 import java.util.Scanner;
 
-public class BreakExample {
+class BreakExample {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

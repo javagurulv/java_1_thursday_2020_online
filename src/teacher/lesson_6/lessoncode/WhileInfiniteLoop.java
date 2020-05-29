@@ -1,6 +1,6 @@
 package teacher.lesson_6.lessoncode;
 
-public class WhileInfiniteLoop {
+class WhileInfiniteLoop {
 
 	public static void main(String[] args) {
 

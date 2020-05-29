@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.lesson5Code;
 
-public class SimpleArrayDemo {
+class SimpleArrayDemo {
     public static void main(String[] args) {
 
 

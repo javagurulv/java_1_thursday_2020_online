@@ -1,8 +1,6 @@
 package student_arturs_ragausks.lesson_3.homeworks.day1;
 
-import student_arturs_ragausks.lesson_3.homeworks.day1.Robot;
-
-public class RobotDemo {
+class RobotDemo {
 
     public static void main(String[] args) {
 

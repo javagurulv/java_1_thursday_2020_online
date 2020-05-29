@@ -1,6 +1,6 @@
 package student_arturs_ragausks;
 
-public class WirlessLoudspeeker {
+class WirlessLoudspeeker {
 
     private  String model;
 

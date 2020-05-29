@@ -11,7 +11,7 @@ class Palindrome {
         return Arrays.equals(referenceString, reverseString);
     }
     private char[] prepareString(String stringForEqual) {
-        stringForEqual = stringForEqual.replaceAll("[^a-zA-Z] [^а-яА-Я]","")
+        stringForEqual = stringForEqual.replaceAll("[^a-zA-Zа-яА-Я]","")
                                        .replaceAll("\\s","")
                                        .toLowerCase();
         return stringForEqual.toCharArray();
