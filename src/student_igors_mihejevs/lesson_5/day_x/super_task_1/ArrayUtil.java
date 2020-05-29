@@ -11,7 +11,7 @@ class ArrayUtil {
         return new int[arrayLength];
     }
 
-    // fill array with integer numbers between 0 and 999
+    // fill array randomly with integer numbers between 0 and 999
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomNumber = new Random();
         for (int counter = 0; counter < array.length; counter++) {
