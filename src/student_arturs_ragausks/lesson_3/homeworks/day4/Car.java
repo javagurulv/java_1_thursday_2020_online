@@ -1,15 +1,17 @@
 package student_arturs_ragausks.lesson_3.homeworks.day4;
 
-class Phone {
+ class Car {
 
     private String model;
 
-    public Phone(String newModel) {
+    public Car(String newModel) {
         this.model = newModel;
     }
 
     public String getModel() {
         return this.model;
     }
+
+
 
 }

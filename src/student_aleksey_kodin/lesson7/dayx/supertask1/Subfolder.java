@@ -31,11 +31,9 @@ class Subfolder extends Folder{
     }
     @Override
     public String toString() {
-        return "Folder{" +
-                "name='" + name + '\'' +
+        return  "name='" + name + '\'' +
                 ", size=" + size +
                 ", index=" + index +
-                ", fileExtension='" + fileExtension + '\'' +
-                '}';
+                ", fileExtension='" + fileExtension + "'";
     }
 }
