@@ -11,7 +11,7 @@ class ArrayUtil {
         return new int[arrayLength];
     }
 
-    // fill array with integer numbers between 0 and 999
+    // fill array with random integer numbers between 0 and 999
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomNumber = new Random();
         for (int counter = 0; counter < array.length; counter++) {
@@ -33,6 +33,13 @@ class ArrayUtil {
     // print array
     public void printArrayToConsole(int[] array) {
         System.out.println("Numbers from array : " + Arrays.toString(array));
+    }
+
+    // sum of all numbers in array
+    public int sumOfAllNumbers(int[] array) {
+        int sum = 0;
+        for (int i : array) sum += i;
+        return sum;
     }
 
     // maximum number in array
