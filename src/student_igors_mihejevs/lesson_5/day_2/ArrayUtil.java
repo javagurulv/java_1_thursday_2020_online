@@ -49,6 +49,14 @@ class ArrayUtil {
         return sum / array.length;
     }
 
+    // increase the value of each cell by 2
+    public void increaseEveryNumberByTwo(int[] array) {
+        int counter = 0;
+        while (counter < array.length) {
+            array[counter] = array[counter] + 2;
+            counter++;
+        }
+    }
 
     // maximum number in array
     public int findMaxNumber(int[] array) {
