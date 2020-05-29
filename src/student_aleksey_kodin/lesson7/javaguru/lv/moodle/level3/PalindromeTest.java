@@ -5,11 +5,11 @@ class PalindromeTest {
 
 
     public static void main(String[] args) {
-        System.out.println(palindrome.isPalindrome("жоож"));
+        System.out.println(palindrome.isPalindrome("cooooc"));
 
-        StringBuilder palindrome = new StringBuilder().append("asdfgg").reverse();
+        StringBuilder palindrome = new StringBuilder().append("cooooc").reverse();
 
-       if (palindrome.toString().equals("asdfgg")) {
+       if (palindrome.toString().equals("cooooc")) {
             System.out.println("Is true");
         } else {
             System.out.println("Is false");

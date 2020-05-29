@@ -18,29 +18,55 @@ class VirtualDisk {
         arrayVirtualDisk = new int[virtualDiskSize];
     }
     public boolean addToVirtualDisk(Folder folder) {
-        if (getVirtualDiskPointer() == arrayVirtualDisk.length && getVirtualDiskFreeSize() > 0) {
+        if (isAmountZeroEqualsOrMoreThanAppendFolderSize(folder)) {
             defrag();
         }
-        if (getVirtualDiskPointer() + folder.getSize() <= getVirtualDiskSize()) {
+        if (isVirtualDiskArrayHaveFreeSpaceToAddAndPointerSetToArrayEnd()) {
+            defrag();
+        }
+        if (isVirtualDiskArrayHaveFreeSpaceToAdd(folder)) {
 
             folder.setIndex(getVirtualDiskIndex());
 
-            folders = Arrays.copyOf(folders,folders.length + 1);
-            folders[folders.length - 1] = folder;
+            addElementToIndexArray(folder);
 
-            for (int count = 0; count < folder.getSize(); count++) {
-                arrayVirtualDisk[getVirtualDiskPointer() + count] = getVirtualDiskIndex();
-            }
-            setVirtualDiskPointer(getVirtualDiskPointer() + folder.getSize());
+            addElementToVirtualDiskArray(folder);
 
-                if (index.length == 1) {
-                    index[getVirtualDiskIndexLength() - 1] += 1;
-                } else {
-                    index = Arrays.copyOfRange(index, 0, getVirtualDiskIndexLength() - 1);
-                }
+            setVirtualDiskPointerToDataEnd(folder);
+
+            increaseIndexForNextElementOrDecreaseIndexArrayAfterUsedFreeIndexValue();
+
         return true;
         }
     return false;
+    }
+    private boolean isAmountZeroEqualsOrMoreThanAppendFolderSize(Folder folder) {
+        return checkAmountZero() >= folder.getSize();
+    }
+    private void increaseIndexForNextElementOrDecreaseIndexArrayAfterUsedFreeIndexValue() {
+        if (index.length == 1) {
+            index[getVirtualDiskIndexLength() - 1] += 1;
+        } else {
+            index = Arrays.copyOfRange(index, 0, getVirtualDiskIndexLength() - 1);
+        }
+    }
+    private boolean isVirtualDiskArrayHaveFreeSpaceToAddAndPointerSetToArrayEnd() {
+        return getVirtualDiskPointer() == arrayVirtualDisk.length && getVirtualDiskFreeSize() > 0;
+    }
+    private boolean isVirtualDiskArrayHaveFreeSpaceToAdd(Folder folder) {
+        return getVirtualDiskPointer() + folder.getSize() <= getVirtualDiskSize();
+    }
+    private void addElementToIndexArray(Folder folder) {
+        folders = Arrays.copyOf(folders,folders.length + 1);
+        folders[folders.length - 1] = folder;
+    }
+    private void addElementToVirtualDiskArray(Folder folder) {
+        for (int count = 0; count < folder.getSize(); count++) {
+            arrayVirtualDisk[getVirtualDiskPointer() + count] = getVirtualDiskIndex();
+        }
+    }
+    private void setVirtualDiskPointerToDataEnd(Folder folder) {
+        setVirtualDiskPointer(getVirtualDiskPointer() + folder.getSize());
     }
     public boolean deleteFromVirtualDisk(int deletedIndex) {
     if (isVirtualDiskHaveIndex(deletedIndex)) {
@@ -60,27 +86,38 @@ class VirtualDisk {
     int defragBegin;
     int defragEnd;
         for (int countBegin = 0; countBegin < arrayVirtualDisk.length; countBegin++) {
-            if (arrayVirtualDisk[countBegin] == 0) {
+            if (isArrayValueIsZero(countBegin)) {
                 defragBegin = countBegin + 1;
                 for (int countEnd = countBegin; countEnd < arrayVirtualDisk.length; countEnd++) {
-                    if (arrayVirtualDisk[countEnd] != 0) {
+                    if (isArrayValueNotZero(countEnd)) {
                         defragEnd = countEnd;
-                        int[] tempVirtualDiskArray = Arrays.copyOfRange(arrayVirtualDisk,defragEnd , arrayVirtualDisk.length);
-
-                        arrayVirtualDisk = Arrays.copyOfRange(arrayVirtualDisk,0,defragBegin - 1);
-
-                        arrayVirtualDisk = Arrays.copyOf(arrayVirtualDisk,arrayVirtualDisk.length
-                                + tempVirtualDiskArray.length + (defragEnd - defragBegin + 1));
-
-                        System.arraycopy(tempVirtualDiskArray, 0, arrayVirtualDisk, defragBegin - 1 ,tempVirtualDiskArray.length);
-
-                         setVirtualDiskPointer(getVirtualDiskPointer() - (defragEnd - defragBegin) - 1);
-
+                        replaceZeroToArrayEnd(defragBegin,defragEnd);
+                        setVirtualDiskPointerNewPosition(defragBegin,defragEnd);
                         break;
                     }
                 }
             }
         }
+    }
+    private boolean isArrayValueIsZero (int countBegin) {
+        return arrayVirtualDisk[countBegin] == 0;
+    }
+    private boolean isArrayValueNotZero(int countEnd) {
+        return arrayVirtualDisk[countEnd] != 0;
+    }
+    private void replaceZeroToArrayEnd(int defragBegin, int defragEnd) {
+        int[] tempVirtualDiskArray = Arrays.copyOfRange(arrayVirtualDisk,defragEnd , arrayVirtualDisk.length);
+
+        arrayVirtualDisk = Arrays.copyOfRange(arrayVirtualDisk,0,defragBegin - 1);
+
+        arrayVirtualDisk = Arrays.copyOf(arrayVirtualDisk,arrayVirtualDisk.length
+                + tempVirtualDiskArray.length + (defragEnd - defragBegin + 1));
+
+        System.arraycopy(tempVirtualDiskArray, 0, arrayVirtualDisk, defragBegin - 1 ,tempVirtualDiskArray.length);
+
+    }
+    private void setVirtualDiskPointerNewPosition(int defragBegin, int defragEnd) {
+        setVirtualDiskPointer(getVirtualDiskPointer() - (defragEnd - defragBegin) - 1);
     }
     public int getVirtualDiskUsedSize() {
         int virtualDiskUsedSize = 0;
@@ -115,8 +152,9 @@ class VirtualDisk {
     }
     public void printInformation() {
         for (Folder element : folders) {
-            System.out.println(element.getName() +"." + element.getFileExtension() + " Index -------> " + element.getIndex() + " "
-                    + "Size: " + element.getSize());
+            System.out.println(element.toString());
+            /*System.out.println(element.getName() +"." + element.getFileExtension() + " Index -------> " + element.getIndex() + " "
+                    + "Size: " + element.getSize()); */
         }
         System.out.println("Total size - " + getVirtualDiskSize());
         System.out.println("Used size - "+ getVirtualDiskUsedSize());
@@ -144,5 +182,14 @@ class VirtualDisk {
                 break;
             }
         }
+    }
+    private int checkAmountZero() {
+       int amountZero = 0;
+        for (int i : arrayVirtualDisk) {
+            if (i == 0) {
+                amountZero += 1;
+            }
+        }
+    return amountZero;
     }
 }
