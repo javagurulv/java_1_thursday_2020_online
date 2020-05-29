@@ -1,4 +1,4 @@
-package student_diana_miranovica;
+package student_diana_miranovica.moodle;
 
 import java.util.Scanner;
 
