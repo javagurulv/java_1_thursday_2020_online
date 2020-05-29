@@ -42,6 +42,14 @@ class ArrayUtil {
         return sum;
     }
 
+    // average number from all numbers in array
+    public int averageNumber(int[] array) {
+        int sum = 0;
+        for (int i : array) sum += i;
+        return sum / array.length;
+    }
+
+
     // maximum number in array
     public int findMaxNumber(int[] array) {
         int maxNumber = Integer.MIN_VALUE;
