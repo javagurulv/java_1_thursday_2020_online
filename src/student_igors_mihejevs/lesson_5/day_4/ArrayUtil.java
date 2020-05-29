@@ -19,6 +19,12 @@ class ArrayUtil {
         return new int[arrayLength];
     }
 
+    // create array of arbitrary length between 1 and 20
+    public int[] createArrayOfArbitraryLength() {
+        Random randomNumber = new Random();
+        return new int[randomNumber.nextInt(20)];
+    }
+
     // fill array with random integer numbers between 0 and 999
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomNumber = new Random();
