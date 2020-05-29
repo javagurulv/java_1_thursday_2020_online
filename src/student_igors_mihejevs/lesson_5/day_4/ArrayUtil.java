@@ -22,7 +22,7 @@ class ArrayUtil {
     // create array of arbitrary length between 1 and 20
     public int[] createArrayOfArbitraryLength() {
         Random randomNumber = new Random();
-        return new int[randomNumber.nextInt(20)];
+        return new int[randomNumber.nextInt(19) + 1];
     }
 
     // fill array with random integer numbers between 0 and 999
