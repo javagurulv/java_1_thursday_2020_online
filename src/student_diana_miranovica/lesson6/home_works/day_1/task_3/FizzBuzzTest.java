@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson6.home_works.day_1.task_3;
 
-public class FizzBuzzTest {
+ class FizzBuzzTest {
     private final FizzBuzz fizzBuzz = new FizzBuzz();
 
     public static void main(String[] args) {
