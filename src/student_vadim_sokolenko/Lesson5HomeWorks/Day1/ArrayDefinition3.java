@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.Lesson5HomeWorks.Day1;
 
-public class ArrayDefinition3 {
+class ArrayDefinition3 {
     public static void main(String[] args) {
 
 

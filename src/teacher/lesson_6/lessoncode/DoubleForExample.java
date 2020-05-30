@@ -1,6 +1,6 @@
 package teacher.lesson_6.lessoncode;
 
-public class DoubleForExample {
+class DoubleForExample {
 
 	public static void main(String[] args) {
 		//int[][] arr = new int[5][5];
