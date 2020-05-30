@@ -56,4 +56,12 @@ class ArrayUtil {
         }
         return sum;
     }
+
+    public void replaceNumberInArray(int[] array, int numberToReplace, int newNumber) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == numberToReplace) {
+                array[i] = newNumber;
+            }
+        }
+    }
 }

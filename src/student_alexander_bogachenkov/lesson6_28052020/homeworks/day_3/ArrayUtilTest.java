@@ -7,6 +7,7 @@ class ArrayUtilTest {
         test.isContainingCertainNumberTest1();
         test.isContainingCertainNumberTest2();
         test.howManyTimesArrayContainsCertainNumberTest();
+        test.replaceNumberInArrayTest();
     }
 
     public void isContainingCertainNumberTest1() {
@@ -56,6 +57,25 @@ class ArrayUtilTest {
             System.out.println("howManyTimesArrayContainsCertainNumberTest PASSED");
         } else {
             System.out.println("howManyTimesArrayContainsCertainNumberTest FAILED");
+        }
+    }
+
+    public void replaceNumberInArrayTest() {
+        int expectedResult = 10;
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] testArray = arrayUtil.createArray(5);
+        testArray[0] = 2;
+        testArray[1] = 6;
+        testArray[2] = 9;
+        testArray[3] = 7;
+        testArray[4] = 8;
+        arrayUtil.replaceNumberInArray(testArray, 9,10);
+        int actualResult = testArray[2];
+
+        if (actualResult == expectedResult) {
+            System.out.println("replaceNumberInArrayTest PASSED");
+        } else {
+            System.out.println("replaceNumberInArrayTest FAILED");
         }
     }
 }
