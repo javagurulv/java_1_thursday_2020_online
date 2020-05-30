@@ -1,6 +1,6 @@
 package student_arturs_ragausks;
 
-public class WhileExample2 {
+class WhileExample2 {
 
     public static void main(String[] args) {
         int number = 1;

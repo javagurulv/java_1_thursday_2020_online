@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.lesson_5.task_3;
+package student_julija_skopeca.practical_tasks.lesson_5.day_3;
 
 class task_22 {
 

@@ -2,7 +2,7 @@ package teacher.lesson_6.lessoncode;
 
 import java.util.Scanner;
 
-public class Task25Example {
+class Task25Example {
 
 	// one line comment
 

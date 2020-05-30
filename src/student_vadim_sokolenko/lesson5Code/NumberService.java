@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.lesson5Code;
 
-public class NumberService {
+class NumberService {
 
 
     int sumOfEvenNumbersInRange(int from, int to){

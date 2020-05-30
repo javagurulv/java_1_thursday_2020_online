@@ -1,6 +1,6 @@
 package teacher.lesson_6.lessoncode;
 
-public class WhileExample2 {
+class WhileExample2 {
 
 	public static void main(String[] args) {
 		int number = 0;
