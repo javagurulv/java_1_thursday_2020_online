@@ -46,4 +46,14 @@ class ArrayUtil {
     public boolean isContainingCertainNumber(int[] array, int number) {
         return IntStream.of(array).anyMatch(x -> x == number);
     }
+
+    public int howManyTimesArrayContainsCertainNumber(int[] array, int number) {
+        int sum = 0;
+        for (int value : array) {
+            if (value == number) {
+                sum += 1;
+            }
+        }
+        return sum;
+    }
 }
