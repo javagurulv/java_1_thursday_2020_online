@@ -61,6 +61,15 @@ class ArrayUtil {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == numberToReplace) {
                 array[i] = newNumber;
+                break;
+            }
+        }
+    }
+
+    public void replaceNumbersInArray(int[] array, int numberToReplace, int newNumber) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == numberToReplace) {
+                array[i] = newNumber;
             }
         }
     }
