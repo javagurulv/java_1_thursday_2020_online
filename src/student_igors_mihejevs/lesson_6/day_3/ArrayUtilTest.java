@@ -15,24 +15,16 @@ class ArrayUtilTest {
         test.shouldFindQuantityOfSpecifiedNumber(); //if array contains the specified number
         test.shouldReplaceSpecifiedNumber(); //if array contains the specified number, replace first
         test.shouldReplaceAllSpecifiedNumber(); //if array contains the specified numbers, replace all of them
-
+        test.shouldFlipArrayOfIntegersNumbers(); //test of method flipping the array
     }
 
     public void shouldReplaceSpecifiedNumber() {
         ArrayUtil myArray = new ArrayUtil();
 
-        int arrayLength = 5;
-        int[] testArray = myArray.createArray(arrayLength);
-        testArray[0] = 3;
-        testArray[1] = 7;
-        testArray[2] = 5;
-        testArray[3] = 9;
-        testArray[4] = 5;
-        // myArray.printArrayToConsole(testArray);
+        int[] testArray = new int[]{3, 7, 5, 9, 5};
         myArray.replace(testArray, 7, 1);
-        // myArray.printArrayToConsole(testArray);
         boolean testOK = true;
-        for (int i : testArray ) {
+        for (int i : testArray) {
             if (i == 7) {
                 testOK = false;
                 break;
@@ -45,18 +37,12 @@ class ArrayUtilTest {
     public void shouldReplaceAllSpecifiedNumber() {
         ArrayUtil myArray = new ArrayUtil();
 
-        int arrayLength = 5;
-        int[] testArray = myArray.createArray(arrayLength);
-        testArray[0] = 3;
-        testArray[1] = 7;
-        testArray[2] = 5;
-        testArray[3] = 9;
-        testArray[4] = 5;
+        int[] testArray = new int[]{3, 7, 5, 9, 5};
         // myArray.printArrayToConsole(testArray);
         myArray.replaceAll(testArray, 5, 1);
         // myArray.printArrayToConsole(testArray);
         boolean testOK = true;
-        for (int i : testArray ) {
+        for (int i : testArray) {
             if (i == 5) {
                 testOK = false;
                 break;
@@ -69,16 +55,29 @@ class ArrayUtilTest {
     public void shouldFindQuantityOfSpecifiedNumber() {
         ArrayUtil myArray = new ArrayUtil();
 
-        int arrayLength = 5;
-        int[] testArray = myArray.createArray(arrayLength);
-        testArray[0] = 3;
-        testArray[1] = 7;
-        testArray[2] = 5;
-        testArray[3] = 9;
-        testArray[4] = 5;
+        int[] testArray = new int[]{3, 7, 5, 9, 5};
         if (myArray.quantityOfSpecifiedNumber(testArray, 5) == 2)
             System.out.println("Test of counting specified number in array - OK");
         else System.out.println("Test of counting specified number in array - FAIL");
+    }
+
+    public void shouldFlipArrayOfIntegersNumbers() {
+        ArrayUtil myArray = new ArrayUtil();
+
+        int[] testArray = new int[]{1, 2, 3, 4, 5};
+        int[] tempArray = new int[]{1, 2, 3, 4, 5};
+        myArray.flipping(testArray);
+        boolean testOK = true;
+        int j = tempArray.length - 1;
+        for (int value : testArray) {
+            if (value != tempArray[j]) {
+                testOK = false;
+                break;
+            }
+            j--;
+        }
+        if (testOK) System.out.println("Test of flipping the array - OK");
+        else System.out.println("Test of flipping the array - FAIL");
     }
 
     public void shouldFindSpecifiedNumber() {
@@ -87,7 +86,7 @@ class ArrayUtilTest {
         int arrayLength = 5;
         int[] testArray = myArray.createArray(arrayLength);
         int counter = 0;
-        while (counter < arrayLength ) {
+        while (counter < arrayLength) {
             testArray[counter] = counter + 1;
             counter++;
         }
@@ -105,7 +104,7 @@ class ArrayUtilTest {
         int arrayLength = 10;
         int[] array = myArray.createArray(arrayLength);
         int counter = 0;
-        while (counter < array.length ) {
+        while (counter < array.length) {
             counter++;
         }
         if (counter == arrayLength) System.out.println("Test of array creation - OK");
@@ -118,7 +117,7 @@ class ArrayUtilTest {
         int arrayLength = 10;
         int[] array = myArray.createArray(arrayLength);
         int counter = 0;
-        while (counter < array.length ) {
+        while (counter < array.length) {
             counter++;
         }
         if (counter == arrayLength) System.out.println("Test of array creation - OK");
@@ -158,7 +157,7 @@ class ArrayUtilTest {
         int arrayLength = 7;
         int[] testArray = myArray.createArray(arrayLength);
         int counter = 0;
-        while (counter < arrayLength ) {
+        while (counter < arrayLength) {
             testArray[counter] = counter + 1;
             counter++;
         }
@@ -172,7 +171,7 @@ class ArrayUtilTest {
         int arrayLength = 7;
         int[] testArray = myArray.createArray(arrayLength);
         int counter = 0;
-        while (counter < arrayLength ) {
+        while (counter < arrayLength) {
             testArray[counter] = counter + 1;
             counter++;
         }
