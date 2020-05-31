@@ -15,8 +15,8 @@ class ArrayUtilTest {
         arrayTest[2] = 3;
 
         int[] newArrayTest = array.replaceOrderInArray(arrayTest);
-        array.printArrayToConsole(newArrayTest);
-        if ((newArrayTest[0]==3) && (newArrayTest[1]==2) && (newArrayTest[3]==1)) {
+        //array.printArrayToConsole(newArrayTest);
+        if ((newArrayTest[0]==3) && (newArrayTest[1]==2) && (newArrayTest[2]==1)) {
                 System.out.println("numberToReplaceTest1 - OK");
             } else {System.out.println("numberToReplaceTest1 - FAIL");
             }
