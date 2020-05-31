@@ -2,7 +2,7 @@ package student_vadim_sokolenko.Lesson5HomeWorks.Day4;
 
 import java.util.Scanner;
 
-public class ArrayLength {
+class ArrayLength {
 
 
     public static void main(String[] args) {
