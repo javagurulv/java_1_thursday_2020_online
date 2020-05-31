@@ -26,78 +26,78 @@ class ArrayUtil {
     }
 
     // fill array with random integer numbers between 0 and 999
-    public void fillArrayWithRandomNumbers(int[] array) {
+    public void fillArrayWithRandomNumbers(int[] arr) {
         Random randomNumber = new Random();
-        for (int counter = 0; counter < array.length; counter++) {
-            array[counter] = randomNumber.nextInt(1000);
+        for (int counter = 0; counter < arr.length; counter++) {
+            arr[counter] = randomNumber.nextInt(1000);
         }
     }
 
     // fill array with user numbers
-    public void fillArrayWithUserNumbers(int[] array) {
+    public void fillArrayWithUserNumbers(int[] arr) {
         Scanner userInput = new Scanner(System.in);
 
-        System.out.println("Input " + array.length + " integer numbers");
-        for (int counter = 0; counter < array.length; counter++) {
+        System.out.println("Input " + arr.length + " integer numbers");
+        for (int counter = 0; counter < arr.length; counter++) {
             System.out.print("Input number " + (counter + 1) + " : ");
-            array[counter] = userInput.nextInt();
+            arr[counter] = userInput.nextInt();
         }
     }
 
     // print array
-    public void printArrayToConsole(int[] array) {
-        System.out.println("Numbers from array : " + Arrays.toString(array));
+    public void printArrayToConsole(int[] arr) {
+        System.out.println("Numbers from array : " + Arrays.toString(arr));
     }
 
     // sum of all numbers in array
-    public int sumOfAllNumbers(int[] array) {
+    public int sumOfAllNumbers(int[] arr) {
         int sum = 0;
-        for (int i : array) sum += i;
+        for (int i : arr) sum += i;
         return sum;
     }
 
     // average number from all numbers in array
-    public int averageNumber(int[] array) {
+    public int averageNumber(int[] arr) {
         int sum = 0;
-        for (int i : array) sum += i;
-        return sum / array.length;
+        for (int i : arr) sum += i;
+        return sum / arr.length;
     }
 
     // increase the value of each cell by 2
-    public void increaseEveryNumberByTwo(int[] array) {
+    public void increaseEveryNumberByTwo(int[] arr) {
         int counter = 0;
-        while (counter < array.length) {
-            array[counter] = array[counter] + 2;
+        while (counter < arr.length) {
+            arr[counter] = arr[counter] + 2;
             counter++;
         }
     }
 
     // maximum number in array
-    public int findMaxNumber(int[] array) {
+    public int findMaxNumber(int[] arr) {
         int maxNumber = Integer.MIN_VALUE;
         int counter = 0;
-        while (counter < array.length) {
-            if (array[counter] > maxNumber) maxNumber = array[counter];
+        while (counter < arr.length) {
+            if (arr[counter] > maxNumber) maxNumber = arr[counter];
             counter++;
         }
         return maxNumber;
     }
 
     // minimum number in array
-    public int findMinNumber(int[] array) {
+    public int findMinNumber(int[] arr) {
         int minNumber = Integer.MAX_VALUE;
         int counter = 0;
-        while (counter < array.length) {
-            if (array[counter] < minNumber) minNumber = array[counter];
+        while (counter < arr.length) {
+            if (arr[counter] < minNumber) minNumber = arr[counter];
             counter++;
         }
         return minNumber;
     }
 
     // print even number from array
-    public void findEvenNumber(int[] array) {
+    public void findEvenNumber(int[] arr) {
         System.out.print("All even numbers from array : ");
-        for (int i : array) {
+        for (int i : arr) {
             if (i % 2 == 0) {
                 System.out.print(i + ", ");
             }
@@ -105,9 +105,9 @@ class ArrayUtil {
     }
 
     // print odd number from array
-    public void findOddNumber(int[] array) {
+    public void findOddNumber(int[] arr) {
         System.out.print("All odd numbers from array : ");
-        for (int i : array) {
+        for (int i : arr) {
             if (i % 2 != 0) {
                 System.out.print(i + ", ");
             }
@@ -115,9 +115,9 @@ class ArrayUtil {
     }
 
     // if array contains the specified number
-    public boolean ifArrayContainsSpecifiedNumber (int[] array, int number) {
+    public boolean ifArrayContainsSpecifiedNumber (int[] arr, int number) {
         boolean isNumber = false;
-        for (int i : array) {
+        for (int i : arr) {
             if (i == number) {
                 isNumber = true;
                 break;
@@ -125,5 +125,24 @@ class ArrayUtil {
         } return isNumber;
     }
 
+    // how many times the array contains the specified number
+    public int quantityOfSpecifiedNumber (int[] arr, int number) {
+        int counterOfNumbers = 0;
+        for (int i : arr) {
+            if (i == number) {
+                counterOfNumbers += 1;
+            }
+        } return counterOfNumbers;
+    }
+
+    // finding the specified number and replacing it with another number
+    void replaceNumber(int[] arr, int numberToReplace, int newNumber) {
+        int counterOfNumbers = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr[i] = newNumber;
+            }
+        }
+    }
 
 }
