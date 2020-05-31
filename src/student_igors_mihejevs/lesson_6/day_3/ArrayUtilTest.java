@@ -13,7 +13,8 @@ class ArrayUtilTest {
         // test.printArray(); // test of method of printing array to console
         test.shouldFindSpecifiedNumber(); //if array contains the specified number
         test.shouldFindQuantityOfSpecifiedNumber(); //if array contains the specified number
-        test.shouldReplaceSpecifiedNumber(); //if array contains the specified numbers, replace them
+        test.shouldReplaceSpecifiedNumber(); //if array contains the specified number, replace first
+        test.shouldReplaceAllSpecifiedNumber(); //if array contains the specified numbers, replace all of them
 
     }
 
@@ -28,7 +29,7 @@ class ArrayUtilTest {
         testArray[3] = 9;
         testArray[4] = 5;
         // myArray.printArrayToConsole(testArray);
-        myArray.replaceNumber(testArray, 7, 1);
+        myArray.replace(testArray, 7, 1);
         // myArray.printArrayToConsole(testArray);
         boolean testOK = true;
         for (int i : testArray ) {
@@ -37,20 +38,32 @@ class ArrayUtilTest {
                 break;
             }
         }
-        if (testOK) System.out.println("Test of replacing specified number in array - OK");
-        else System.out.println("Test of replacing specified number in array - FAIL");
+        if (testOK) System.out.println("Test of replacing the first specified number in array - OK");
+        else System.out.println("Test of replacing the first specified number in array - FAIL");
+    }
 
-        myArray.replaceNumber(testArray, 5, 8);
+    public void shouldReplaceAllSpecifiedNumber() {
+        ArrayUtil myArray = new ArrayUtil();
+
+        int arrayLength = 5;
+        int[] testArray = myArray.createArray(arrayLength);
+        testArray[0] = 3;
+        testArray[1] = 7;
+        testArray[2] = 5;
+        testArray[3] = 9;
+        testArray[4] = 5;
         // myArray.printArrayToConsole(testArray);
-        testOK = true;
+        myArray.replaceAll(testArray, 5, 1);
+        // myArray.printArrayToConsole(testArray);
+        boolean testOK = true;
         for (int i : testArray ) {
             if (i == 5) {
                 testOK = false;
                 break;
             }
         }
-        if (testOK) System.out.println("Test of replacing of more than one specified number in array - OK");
-        else System.out.println("Test of replacing of more than one specified number in array - FAIL");
+        if (testOK) System.out.println("Test of replacing of all specified numbers in array - OK");
+        else System.out.println("Test of replacing of all specified numbers in array - FAIL");
     }
 
     public void shouldFindQuantityOfSpecifiedNumber() {

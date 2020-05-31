@@ -135,8 +135,19 @@ class ArrayUtil {
         } return counterOfNumbers;
     }
 
-    // finding the specified number and replacing it with another number
-    void replaceNumber(int[] arr, int numberToReplace, int newNumber) {
+    // finding the first specified number and replacing it with another number task_10
+    void replace(int[] arr, int numberToReplace, int newNumber) {
+        int counterOfNumbers = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr[i] = newNumber;
+                break;
+            }
+        }
+    }
+
+    // finding the specified numbers and replacing it with another numbers task_10, task_11
+    void replaceAll(int[] arr, int numberToReplace, int newNumber) {
         int counterOfNumbers = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == numberToReplace) {
