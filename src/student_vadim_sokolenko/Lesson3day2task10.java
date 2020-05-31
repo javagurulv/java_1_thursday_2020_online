@@ -17,7 +17,7 @@ class Lesson3day2task10 {
     //Ниже представлен пример метода length(), который поможет определить длину строки.
     //
     //Пример
-    //public class Test {
+    //class Test {
     //
     //   public static void main(String args[]) {
     //      String s = "Я стану отличным программистом!";
@@ -47,7 +47,7 @@ class Lesson3day2task10 {
     // когда аргумент не является нулевым и является строковым объектом,
     // который представляет ту же последовательность символов, что и этот объект.
     //
-    //public class Compare{
+    //class Compare{
     //   public static void main(String []args){
     //      String str1 = "proglang";
     //      String str2 = "proglang";
@@ -65,7 +65,7 @@ class Lesson3day2task10 {
     // 3.2
     // Сравнение строк с помощью оператора ==
     //(сравнивает в памяти)
-    //public class Compare{
+    //class Compare{
     //   public static void main(String []args){
     //      String str1 = "proglang";
     //      String str2 = "proglang";

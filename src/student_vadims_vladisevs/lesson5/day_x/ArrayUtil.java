@@ -1,4 +1,4 @@
-package student_vadims_vladisevs.lesson5.day_6;
+package student_vadims_vladisevs.lesson5.day_x;
 
 import java.util.Random;
 
