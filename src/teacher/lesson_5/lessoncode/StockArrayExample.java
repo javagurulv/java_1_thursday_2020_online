@@ -1,6 +1,6 @@
 package teacher.lesson_5.lessoncode;
 
-public class StockArrayExample {
+class StockArrayExample {
 
 	public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package student_arturs_ragausks.lesson_3.homeworks.day5.Task22;
 
-public class Dog {
+class Dog {
 
     private String name;
 

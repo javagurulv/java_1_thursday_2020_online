@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.Lesson5HomeWorks.Day1;
 
-public class ArrayLength2 {
+class ArrayLength2 {
 
     public static void main(String[] args) {
         int[] numbers = new int[2];

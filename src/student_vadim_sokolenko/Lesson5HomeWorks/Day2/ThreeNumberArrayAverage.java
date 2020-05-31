@@ -2,7 +2,7 @@ package student_vadim_sokolenko.Lesson5HomeWorks.Day2;
 
 import java.util.Random;
 
-public class ThreeNumberArrayAverage {
+class ThreeNumberArrayAverage {
 
     public static void main(String[] args) {
 
