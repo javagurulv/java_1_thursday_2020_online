@@ -115,24 +115,26 @@ class ArrayUtil {
     }
 
     // if array contains the specified number
-    public boolean ifArrayContainsSpecifiedNumber (int[] arr, int number) {
+    public boolean ifArrayContainsSpecifiedNumber(int[] arr, int number) {
         boolean isNumber = false;
         for (int i : arr) {
             if (i == number) {
                 isNumber = true;
                 break;
             }
-        } return isNumber;
+        }
+        return isNumber;
     }
 
     // how many times the array contains the specified number
-    public int quantityOfSpecifiedNumber (int[] arr, int number) {
+    public int quantityOfSpecifiedNumber(int[] arr, int number) {
         int counterOfNumbers = 0;
         for (int i : arr) {
             if (i == number) {
                 counterOfNumbers += 1;
             }
-        } return counterOfNumbers;
+        }
+        return counterOfNumbers;
     }
 
     // finding the first specified number and replacing it with another specified number task_10
@@ -159,6 +161,11 @@ class ArrayUtil {
             arr[i] = arr[arr.length - i - 1];
             arr[arr.length - i - 1] = tempNumber;
         }
+    }
+
+    // sorting an array of integers
+    void sorting(int[] arr) {
+        Arrays.sort(arr);
     }
 
 }
