@@ -3,7 +3,7 @@ package student_vadim_sokolenko.Lesson5HomeWorks.Day4;
 import java.util.Random;
 import java.util.Scanner;
 
-public class RandomArrayLength {
+class RandomArrayLength {
 
     public static void main(String[] args) {
 
