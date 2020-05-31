@@ -83,9 +83,7 @@ class ArrayUtilTest {
         ArrayUtil myArray = new ArrayUtil();
 
         int[] testArray = new int[]{7, 1, 5, 9, 2};
-        myArray.printArrayToConsole(testArray);
         myArray.sorting(testArray);
-        myArray.printArrayToConsole(testArray);
         boolean testOK = true;
         for (int i = 0; i < testArray.length - 1; i++) {
             if (testArray[i] > testArray[i + 1]) {
