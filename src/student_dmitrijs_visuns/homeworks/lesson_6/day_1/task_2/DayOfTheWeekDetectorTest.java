@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_6.Task_2;
+package student_dmitrijs_visuns.homeworks.lesson_6.day_1.task_2;
 
 class DayOfTheWeekDetectorTest {
 
