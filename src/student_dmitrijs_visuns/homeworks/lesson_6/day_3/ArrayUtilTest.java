@@ -8,6 +8,7 @@ class ArrayUtilTest {
         ArrayUtilTest newTest = new ArrayUtilTest();
         newTest.findNumberTest(); // Task_9
         newTest.howManyTimesIsNumberInArrayTest(); // Task_10
+        newTest.replaceNumberInArrayTest(); // Task_11
 
     }
 
@@ -30,5 +31,17 @@ class ArrayUtilTest {
                 System.out.println("How many times is number in array test - FAIL");
         }
 
+    }
+
+    public void replaceNumberInArrayTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] array = new int[] {12, 5, 9, 12, 12};
+        arrayUtil.replaceNumberInArray(array, 12, 3);
+        System.out.println(array[0]);
+        if (array[0] == 3) {
+            System.out.println("Replace number in array test - OK");
+        } else {
+            System.out.println("Replace number in array test - FAIL");
+        }
     }
 }
