@@ -1,5 +1,7 @@
 package student_alexander_bogachenkov.lesson6_28052020.homeworks.day_6;
 
+import java.util.Scanner;
+
 class TicTacToe {
 
     public int[][] createField() {
@@ -10,6 +12,15 @@ class TicTacToe {
             }
         }
         return field;
+    }
+
+    public Move getNextMove() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter X coordinate: ");
+        int userXCoordinate = scanner.nextInt();
+        System.out.println("Enter Y coordinate: ");
+        int userYCoordinate = scanner.nextInt();
+        return new Move(userXCoordinate, userYCoordinate);
     }
 
     public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
