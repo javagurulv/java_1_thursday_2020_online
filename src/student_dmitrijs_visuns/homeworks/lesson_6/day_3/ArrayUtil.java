@@ -40,6 +40,24 @@ class ArrayUtil {
         }
     }
 
+    public void replaceAll (int[] array, int numberToReplace, int newNumber) {
+        for (int i = 0; i < array.length; i++) {
+            if(array [i] == numberToReplace) {
+                array[i] = newNumber;
+            }
+        }
+
+    }
+
+    public void reverseArrayNumbers (int[] array) {
+        for (int i = 0; i < array.length / 2; i++) {
+            int temp = array[i];
+            array[i] = array[array.length -i -1];
+            array[array.length -i -1] = temp;
+        }
+
+    }
+
 
     public void fillArrayWithRandomNumbers(int[] array) {
         Random random = new Random();
