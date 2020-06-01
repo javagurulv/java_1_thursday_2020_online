@@ -18,6 +18,8 @@ class TicTacToeTest {
         test.isWinPositionTest1();
         test.isWinPositionTest2();
         test.isWinPositionTest3();
+        System.out.println();
+        test.isDrawPositionTest();
     }
 
     public void isWinPositionForFirstHorizontal() {
@@ -193,6 +195,28 @@ class TicTacToeTest {
             System.out.println("isWinPositionTest3 PASSED");
         } else {
             System.out.println("isWinPositionTest3 FAILED");
+        }
+    }
+
+    public void isDrawPositionTest() {
+        int[][] field = new int[3][3];
+        field[0][0] = 0;
+        field[0][1] = 0;
+        field[0][2] = 1;
+        field[1][0] = 1;
+        field[1][1] = 0;
+        field[1][2] = 0;
+        field[2][0] = 0;
+        field[2][1] = 1;
+        field[2][2] = 1;
+        TicTacToe ticTacToe = new TicTacToe();
+        boolean expectedResult = true;
+        boolean actualResult = ticTacToe.isDrawPosition(field);
+
+        if (actualResult == expectedResult) {
+            System.out.println("isDrawPositionTest PASSED");
+        } else {
+            System.out.println("isDrawPositionTest FAILED");
         }
     }
 }
