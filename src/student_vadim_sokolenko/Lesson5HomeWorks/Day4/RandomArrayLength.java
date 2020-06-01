@@ -13,12 +13,13 @@ class RandomArrayLength {
         int arreyLengthFromConsole = scanner.nextInt();
         int[] numbers = new int[arreyLengthFromConsole];
 
-
+		// обычно переменные цикла называют: i, j, ...
         for (int count = 0; count < arreyLengthFromConsole; count++) {
             Random random = new Random();
             numbers [count] = random.nextInt(50);
         }
 
+		// обычно переменные цикла называют: i, j, ...
         for (int count = 0; count < arreyLengthFromConsole; count++) {
             System.out.println("[" + count + "]" + " numbers in an array = " + numbers[count]);
 

@@ -13,12 +13,13 @@ class ArrayLength {
         int arreyLengthFromConsole = scanner.nextInt();
         int[] count = new int[arreyLengthFromConsole];
 
-
+		// обычно переменные цикла называют: i, j, ...
         for (int value = 0; value < arreyLengthFromConsole; value++) {
             System.out.println("Enter some count" + "[" + value + "] for array");
             count[value] = scanner.nextInt();
         }
 
+		// обычно переменные цикла называют: i, j, ...
         for (int value = 0; value < arreyLengthFromConsole; value++) {
             System.out.println("[" + value + "]" + " numbers in an array = " + count[value]);
 

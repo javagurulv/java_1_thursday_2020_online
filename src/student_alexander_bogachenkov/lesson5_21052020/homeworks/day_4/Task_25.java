@@ -11,12 +11,12 @@ class Task_25 {
         int arrayLength = scanner.nextInt();
         int[] numbers = new int[arrayLength];
 
-        for (int i = 0; i < arrayLength; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.println("Please enter number for " + i + " array cell: ");
             numbers[i] = scanner.nextInt();
         }
 
-        for (int i = 0; i < arrayLength; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.println(i + " cell number is " + numbers[i]);
         }
     }

@@ -6,6 +6,7 @@ class ArrayUtil {
 
     public int[] createArray(int arrayLength) {
         // Write implementation here !!!
+		// проще в одну строку: return new int [arrayLength];
         int[] tempArray = new int[arrayLength];
         return tempArray;
     }
