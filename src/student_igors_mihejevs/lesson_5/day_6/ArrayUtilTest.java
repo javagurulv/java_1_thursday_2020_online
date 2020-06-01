@@ -18,11 +18,11 @@ class ArrayUtilTest {
 
         int arrayLength = 10;
         int[] array = myArray.createArray(arrayLength);
-        int counter = 0;
-        while (counter < array.length ) {
-            counter++;
+        int i = 0;
+        while (i < array.length ) {
+            i++;
         }
-        if (counter == arrayLength) System.out.println("Test of array creation - OK");
+        if (i == arrayLength) System.out.println("Test of array creation - OK");
         else System.out.println("Test of array creation - FAIL");
     }
 
@@ -33,8 +33,8 @@ class ArrayUtilTest {
         int arrayLength = 10;
         int[] testArray = myArray.createArray(arrayLength);
         myArray.fillArrayWithRandomNumbers(testArray);
-        for (int counter = 1; counter < arrayLength; counter++) {
-            if ((testArray[counter] < 0) && (testArray[counter] > 999)) {
+        for (int i = 1; i < arrayLength; i++) {
+            if ((testArray[i] < 0) && (testArray[i] > 999)) {
                 testOK = false;
                 break;
             }
@@ -58,10 +58,10 @@ class ArrayUtilTest {
 
         int arrayLength = 7;
         int[] testArray = myArray.createArray(arrayLength);
-        int counter = 0;
-        while (counter < arrayLength ) {
-            testArray[counter] = counter + 1;
-            counter++;
+        int i = 0;
+        while (i < arrayLength ) {
+            testArray[i] = i + 1;
+            i++;
         }
         if (myArray.findMaxNumber(testArray) == 7) System.out.println("Test of maximum number of array - OK");
         else System.out.println("Test of maximum number of array - FAIL");
@@ -72,10 +72,10 @@ class ArrayUtilTest {
 
         int arrayLength = 7;
         int[] testArray = myArray.createArray(arrayLength);
-        int counter = 0;
-        while (counter < arrayLength ) {
-            testArray[counter] = counter + 1;
-            counter++;
+        int i = 0;
+        while (i < arrayLength ) {
+            testArray[i] = i + 1;
+            i++;
         }
         if (myArray.findMinNumber(testArray) == 1) System.out.println("Test of minimum number of array - OK");
         else System.out.println("Test of minimum number of array - FAIL");

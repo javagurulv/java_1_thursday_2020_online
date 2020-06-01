@@ -14,11 +14,11 @@ class Task_26 {
 
         Random random = new Random();
 
-        for (int i = 0; i < arrayLength; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             numbers[i] = random.nextInt(100);
         }
 
-        for (int i = 0; i < arrayLength; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.println(i + " cell number is " + numbers[i]);
         }
     }

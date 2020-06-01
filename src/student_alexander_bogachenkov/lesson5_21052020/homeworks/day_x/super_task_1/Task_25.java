@@ -12,7 +12,7 @@ class Task_25 {
         ArrayUtil arrayUtil = new ArrayUtil();
         int[] numbers = arrayUtil.createArray(arrayLength);
 
-        for (int i = 0; i < arrayLength; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.println("Please enter number for " + i + " array cell: ");
             numbers[i] = scanner.nextInt();
         }
