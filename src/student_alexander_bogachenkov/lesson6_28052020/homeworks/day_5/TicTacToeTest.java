@@ -1,5 +1,7 @@
 package student_alexander_bogachenkov.lesson6_28052020.homeworks.day_5;
 
+import java.util.Arrays;
+
 class TicTacToeTest {
 
     public static void main(String[] args) {
@@ -20,6 +22,19 @@ class TicTacToeTest {
         test.isWinPositionTest3();
         System.out.println();
         test.isDrawPositionTest();
+        System.out.println();
+        test.shouldCreateFieldAndFillWithMinusOne();
+    }
+
+    public void shouldCreateFieldAndFillWithMinusOne() {
+        TicTacToe ticTacToe = new TicTacToe();
+        int[][] testArray = ticTacToe.createField();
+        for (int i = 0; i < testArray.length; i++) {
+            for (int j = 0; j < testArray[i].length; j++) {
+                System.out.print(testArray[i][j] + "\t");
+            }
+            System.out.println();
+        }
     }
 
     public void isWinPositionForFirstHorizontal() {

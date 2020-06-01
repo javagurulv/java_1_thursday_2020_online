@@ -2,6 +2,16 @@ package student_alexander_bogachenkov.lesson6_28052020.homeworks.day_5;
 
 class TicTacToe {
 
+    public int[][] createField() {
+        int[][] field = new int[3][3];
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                field[i][j] = -1;
+            }
+        }
+        return field;
+    }
+
     public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
         if (field[0][0] == playerToCheck &&
             field[0][1] == playerToCheck &&
