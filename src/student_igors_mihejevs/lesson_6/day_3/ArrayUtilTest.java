@@ -15,7 +15,8 @@ class ArrayUtilTest {
         test.shouldFindQuantityOfSpecifiedNumber(); //if array contains the specified number
         test.shouldReplaceSpecifiedNumber(); //if array contains the specified number, replace first
         test.shouldReplaceAllSpecifiedNumber(); //if array contains the specified numbers, replace all of them
-        test.shouldFlipArrayOfIntegersNumbers(); //test of method flipping the array
+        test.shouldFlipArrayOfIntegersNumbers(); //test of method of flipping the array
+        test.shouldSortArrayOfIntegersNumbers(); //test of method of sorting the array
     }
 
     public void shouldReplaceSpecifiedNumber() {
@@ -38,9 +39,7 @@ class ArrayUtilTest {
         ArrayUtil myArray = new ArrayUtil();
 
         int[] testArray = new int[]{3, 7, 5, 9, 5};
-        // myArray.printArrayToConsole(testArray);
         myArray.replaceAll(testArray, 5, 1);
-        // myArray.printArrayToConsole(testArray);
         boolean testOK = true;
         for (int i : testArray) {
             if (i == 5) {
@@ -78,6 +77,22 @@ class ArrayUtilTest {
         }
         if (testOK) System.out.println("Test of flipping the array - OK");
         else System.out.println("Test of flipping the array - FAIL");
+    }
+
+    public void shouldSortArrayOfIntegersNumbers() {
+        ArrayUtil myArray = new ArrayUtil();
+
+        int[] testArray = new int[]{7, 1, 5, 9, 2};
+        myArray.sorting(testArray);
+        boolean testOK = true;
+        for (int i = 0; i < testArray.length - 1; i++) {
+            if (testArray[i] > testArray[i + 1]) {
+                testOK = false;
+                break;
+            }
+        }
+        if (testOK) System.out.println("Test of sorting the array - OK");
+        else System.out.println("Test of sorting the array - FAIL");
     }
 
     public void shouldFindSpecifiedNumber() {
