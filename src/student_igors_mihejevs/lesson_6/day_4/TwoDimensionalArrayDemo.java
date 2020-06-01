@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_6.day_4;
 
-public class TwoDimensionalArrayDemo {
+class TwoDimensionalArrayDemo {
 
     public static void main(String[] args) {
         TwoDimensionalArray testArray = new TwoDimensionalArray();
