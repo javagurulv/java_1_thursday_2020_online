@@ -31,6 +31,15 @@ class ArrayUtil {
         return numberCounter;
     }
 
+    public void replaceNumberInArray (int[] array, int numberToReplace, int newNumber) {
+        for (int i = 0; i < array.length; i++) {
+            if(array [i] == numberToReplace) {
+                array[i] = newNumber;
+                break;
+            }
+        }
+    }
+
 
     public void fillArrayWithRandomNumbers(int[] array) {
         Random random = new Random();
