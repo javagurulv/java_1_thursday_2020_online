@@ -1,0 +1,80 @@
+package student_dmitrijs_visuns.homeworks.lesson_6.day_4.task_14;
+
+
+class ArrayUtilTest {
+
+    public static void main(String[] args) {
+
+        ArrayUtilTest newTest = new ArrayUtilTest();
+        newTest.sortArrayTest();
+
+    }
+
+    public void sortArrayTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] array = new int[] {3, 78, 9, 24, 0};
+        arrayUtil.sortArray(array);
+        if ((array[0] == 0) && (array[4] == 78)) {
+            System.out.println("Sort array test - OK");
+        } else {
+            System.out.println("Sort array test - FAIL");
+        }
+
+
+    }
+
+    /*public void findNumberTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] array = new int[] {3, 5, 9, 12, 78};
+        if (arrayUtil.findNumberInArray(array, 5)) {
+            System.out.println("Find number in array test - OK");
+        } else {
+            System.out.println("Find number in array test - FAIL");
+        }
+    }
+
+    public void howManyTimesIsNumberInArrayTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] array = new int[] {12, 5, 9, 12, 12};
+        if (arrayUtil.howManyTimesIsNumberInArray(array, 12) == 3) {
+            System.out.println("How many times is number in array test - OK");
+        } else {
+                System.out.println("How many times is number in array test - FAIL");
+        }
+
+    }
+
+    public void replaceNumberInArrayTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] array = new int[] {12, 5, 9, 12, 12};
+        arrayUtil.replaceNumberInArray(array, 12, 3);
+        if (array[0] == 3) {
+            System.out.println("Replace number in array test - OK");
+        } else {
+            System.out.println("Replace number in array test - FAIL");
+        }
+    }
+
+    public void replaceAllTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] array = new int[] {12, 5, 9, 12, 12};
+        arrayUtil.replaceAll(array, 12, 3);
+        if ((array[0] == 3) && (array[3] == 3) && (array[4] == 3)) {
+            System.out.println("Replace all given numbers in array test - OK");
+        } else {
+            System.out.println("Replace all given numbers in array test - FAIL");
+        }
+    }
+
+    public void reverseArrayNumbersTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] array = new int[] {1, 2, 3};
+        arrayUtil.reverseArrayNumbers(array);
+       if ((array[0] == 3) && (array[1] == 2) && (array[2] == 1)) {
+            System.out.println("Reverse array numbers test - OK");
+        } else {
+            System.out.println("Reverse array numbers test - FAIL");
+        }
+    }*/
+
+}
