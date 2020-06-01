@@ -83,12 +83,12 @@ class ArrayUtil {
     }
 
     public void sort(int[] array) {
-        for (int j = 0; j < array.length; j++) {
-            for (int i = 1; i < array.length; i++) {
-                if (array[i - 1] > array[i]) {
-                    int temp = array[i - 1];
-                    array[i - 1] = array[i];
-                    array[i] = temp;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
                 }
             }
         }
