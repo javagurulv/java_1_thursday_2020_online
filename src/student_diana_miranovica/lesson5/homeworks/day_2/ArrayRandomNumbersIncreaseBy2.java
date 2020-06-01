@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson5.homeworks.day_2;
 
 import java.util.Random;
 
-public class ArrayRandomNumbersIncreaseBy2 {
+class ArrayRandomNumbersIncreaseBy2 {
 
     public static void main(String[] args) {
 

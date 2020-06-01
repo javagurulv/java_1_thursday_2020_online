@@ -1,6 +1,6 @@
 package student_diana_miranovica.lesson5.lesson_code;
 
-public class BankAccount {
+class BankAccount {
 
     private String owner;
 

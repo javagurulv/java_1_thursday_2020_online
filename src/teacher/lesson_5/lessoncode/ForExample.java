@@ -1,6 +1,6 @@
 package teacher.lesson_5.lessoncode;
 
-public class ForExample {
+class ForExample {
 
 	public static void main(String[] args) {
 		int i = 1; // for first part

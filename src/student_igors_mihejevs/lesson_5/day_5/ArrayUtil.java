@@ -4,6 +4,7 @@ import java.util.Random;
 
 class ArrayUtil {
 
+    // create array
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];
     }

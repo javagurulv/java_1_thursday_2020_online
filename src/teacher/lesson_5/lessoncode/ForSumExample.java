@@ -1,6 +1,6 @@
 package teacher.lesson_5.lessoncode;
 
-public class ForSumExample {
+class ForSumExample {
 
 	public static void main(String[] args) {
 

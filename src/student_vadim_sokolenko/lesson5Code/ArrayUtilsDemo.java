@@ -4,7 +4,7 @@ import java.util.Random;
 
 
 
-public class ArrayUtilsDemo {
+class ArrayUtilsDemo {
 
     public static void main(String[] args) {
 

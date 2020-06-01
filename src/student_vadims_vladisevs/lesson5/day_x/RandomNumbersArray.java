@@ -1,9 +1,7 @@
 package student_vadims_vladisevs.lesson5.day_x;
 
-import student_vadims_vladisevs.lesson5.day_6.ArrayUtil;
 
-
-public class RandomNumbersArray {
+class RandomNumbersArray {
     public static void main(String[] args) {
         ArrayUtil array = new ArrayUtil();
 
