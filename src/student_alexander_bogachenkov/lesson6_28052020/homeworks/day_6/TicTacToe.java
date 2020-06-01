@@ -14,6 +14,15 @@ class TicTacToe {
         return field;
     }
 
+    public void printFieldToConsole(int[][] field) {
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                System.out.print(field[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+
     public Move getNextMove() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter X coordinate: ");
