@@ -1,4 +1,4 @@
-package student_oleg_ivanov.lesson6.day1;
+package student_oleg_ivanov.lesson6.day1.Task1;
 
 class CalculatorTest {
     public static void main(String[] args) {

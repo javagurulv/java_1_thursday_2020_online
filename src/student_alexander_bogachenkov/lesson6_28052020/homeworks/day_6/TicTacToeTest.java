@@ -1,6 +1,4 @@
-package student_alexander_bogachenkov.lesson6_28052020.homeworks.day_5;
-
-import java.util.Arrays;
+package student_alexander_bogachenkov.lesson6_28052020.homeworks.day_6;
 
 class TicTacToeTest {
 
