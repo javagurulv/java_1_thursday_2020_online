@@ -7,11 +7,17 @@ class TicTacToeTest {
         test.isWinPositionForFirstHorizontal();
         test.isWinPositionForSecondHorizontal();
         test.isWinPositionForThirdHorizontal();
+        System.out.println();
         test.isWinPositionForFirstVertical();
         test.isWinPositionForSecondVertical();
         test.isWinPositionForThirdVertical();
+        System.out.println();
         test.isWinPositionForFirstDiagonal();
         test.isWinPositionForSecondDiagonal();
+        System.out.println();
+        test.isWinPositionTest1();
+        test.isWinPositionTest2();
+        test.isWinPositionTest3();
     }
 
     public void isWinPositionForFirstHorizontal() {
@@ -139,6 +145,54 @@ class TicTacToeTest {
             System.out.println("isWinPositionForSecondDiagonal PASSED");
         } else {
             System.out.println("isWinPositionForSecondDiagonal FAILED");
+        }
+    }
+
+    public void isWinPositionTest1() {
+        int[][] field = new int[3][3];
+        TicTacToe ticTacToe = new TicTacToe();
+        field[1][0] = 1;
+        field[1][1] = 1;
+        field[1][2] = 1;
+        boolean expectedResult = true;
+        boolean actualResult = ticTacToe.isWinPosition(field,1);
+
+        if (actualResult == expectedResult) {
+            System.out.println("isWinPositionTest1 PASSED");
+        } else {
+            System.out.println("isWinPositionTest1 FAILED");
+        }
+    }
+
+    public void isWinPositionTest2() {
+        int[][] field = new int[3][3];
+        TicTacToe ticTacToe = new TicTacToe();
+        field[0][0] = 1;
+        field[1][0] = 1;
+        field[2][0] = 1;
+        boolean expectedResult = true;
+        boolean actualResult = ticTacToe.isWinPosition(field,1);
+
+        if (actualResult == expectedResult) {
+            System.out.println("isWinPositionTest2 PASSED");
+        } else {
+            System.out.println("isWinPositionTest2 FAILED");
+        }
+    }
+
+    public void isWinPositionTest3() {
+        int[][] field = new int[3][3];
+        TicTacToe ticTacToe = new TicTacToe();
+        field[0][2] = 1;
+        field[1][1] = 1;
+        field[2][0] = 1;
+        boolean expectedResult = true;
+        boolean actualResult = ticTacToe.isWinPosition(field,1);
+
+        if (actualResult == expectedResult) {
+            System.out.println("isWinPositionTest3 PASSED");
+        } else {
+            System.out.println("isWinPositionTest3 FAILED");
         }
     }
 }
