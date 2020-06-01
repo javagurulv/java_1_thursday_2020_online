@@ -18,13 +18,13 @@ class TicTacToe {
     }
 
     // print double array
-    public void printDoubleArrayToConsole(int[][] arr) {
+    void printDoubleArrayToConsole(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("Row " + (i + 1) + " : " + Arrays.toString(arr[i]));
         }
     }
 
-    public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
+    boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
         boolean isWin = false;
         for (int[] ints : field) {
             int counter = 0;

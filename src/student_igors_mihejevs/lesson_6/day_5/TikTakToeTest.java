@@ -28,14 +28,14 @@ class TikTakToeTest {
         tTTTest.shouldReturnIsWinPositionForHorizontalsFalseSituation(arr7, 1);
     }
 
-    public void shouldReturnIsWinPositionForHorizontalsTrueSituation(int[][] testArray, int player) {
+    void shouldReturnIsWinPositionForHorizontalsTrueSituation(int[][] testArray, int player) {
         TicTacToe myArray = new TicTacToe();
         if (myArray.isWinPositionForHorizontals(testArray, player))
             System.out.println("Test of win position of player " + player + " in the field - OK");
         else System.out.println("Test of win position in the field - FAIL");
     }
 
-    public void shouldReturnIsWinPositionForHorizontalsFalseSituation(int[][] testArray, int player) {
+    void shouldReturnIsWinPositionForHorizontalsFalseSituation(int[][] testArray, int player) {
         TicTacToe myArray = new TicTacToe();
         if (!myArray.isWinPositionForHorizontals(testArray, player))
             System.out.println("Test of lost position of player " + player + " in the field - OK");
