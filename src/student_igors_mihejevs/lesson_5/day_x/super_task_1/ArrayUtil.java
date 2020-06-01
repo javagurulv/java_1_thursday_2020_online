@@ -6,12 +6,26 @@ import java.util.Scanner;
 
 class ArrayUtil {
 
+    // enter length of array with user input
+    public int enterArrayLength() {
+        Scanner userInput = new Scanner(System.in);
+
+        System.out.print("Input the length of array : ");
+        return userInput.nextInt();
+    }
+
     // create array
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];
     }
 
-    // fill array with integer numbers between 0 and 999
+    // create array of arbitrary length between 1 and 20
+    public int[] createArrayOfArbitraryLength() {
+        Random randomNumber = new Random();
+        return new int[randomNumber.nextInt(19) + 1];
+    }
+
+    // fill array with random integer numbers between 0 and 999
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomNumber = new Random();
         for (int counter = 0; counter < array.length; counter++) {
@@ -33,6 +47,29 @@ class ArrayUtil {
     // print array
     public void printArrayToConsole(int[] array) {
         System.out.println("Numbers from array : " + Arrays.toString(array));
+    }
+
+    // sum of all numbers in array
+    public int sumOfAllNumbers(int[] array) {
+        int sum = 0;
+        for (int i : array) sum += i;
+        return sum;
+    }
+
+    // average number from all numbers in array
+    public int averageNumber(int[] array) {
+        int sum = 0;
+        for (int i : array) sum += i;
+        return sum / array.length;
+    }
+
+    // increase the value of each cell by 2
+    public void increaseEveryNumberByTwo(int[] array) {
+        int counter = 0;
+        while (counter < array.length) {
+            array[counter] = array[counter] + 2;
+            counter++;
+        }
     }
 
     // maximum number in array

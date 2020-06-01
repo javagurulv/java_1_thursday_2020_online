@@ -1,6 +1,6 @@
 package student_arturs_ragausks.lesson_3.homeworks.day3;
 
- public class Robot {
+class Robot {
     private String name;
 
     public Robot(String robotName){

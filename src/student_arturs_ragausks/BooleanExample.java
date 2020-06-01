@@ -3,7 +3,7 @@ package student_arturs_ragausks;
 import java.awt.*;
 import java.util.Scanner;
 
-public class BooleanExample {
+class BooleanExample {
 
     public static void main(String[] args){
 

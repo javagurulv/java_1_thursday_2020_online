@@ -22,17 +22,22 @@ class ArrayUtilTest {
             }
         }
 
-        public void shouldFillArrayWithRandomNumbers() {
-            ArrayUtil testArray = new ArrayUtil();
-            int[] result = testArray.createArray(5);
-            testArray.fillArrayWithRandomNumbers(result);
+    public void shouldFillArrayWithRandomNumbers() {
+        ArrayUtil testArray = new ArrayUtil();
+        int[] result = testArray.createArray(5);
+        testArray.fillArrayWithRandomNumbers(result);
 
-            if (result.length !=0) {
-                System.out.println("Fill array with random numbers test - OK");
-            } else {
-                System.out.println("Fill array with random numbers test - FAIL");
-            }
+        int arraySum = 0;
+        for (int arrayCount = 0; arrayCount < result.length; arrayCount++) {
+            arraySum += result[arrayCount];
         }
+
+        if (arraySum > 0) {
+            System.out.println("Fill array with random numbers test - OK");
+        } else {
+            System.out.println("Fill array with random numbers test - FAIL");
+        }
+    }
 
         public void shouldFindMaxNumber() {
             ArrayUtil testArray = new ArrayUtil();

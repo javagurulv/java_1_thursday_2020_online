@@ -1,6 +1,6 @@
 package student_arturs_ragausks;
 
-public class WirelessLoudspeekerDemo {   //pokoditj, shtobi firma bila vidna u vseh kolonok
+class WirelessLoudspeekerDemo {   //pokoditj, shtobi firma bila vidna u vseh kolonok
 
     public static void main(String[] args) {
         WirlessLoudspeeker ws1 = new WirlessLoudspeeker("Xiaomi" , false);

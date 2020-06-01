@@ -12,7 +12,7 @@ class ArrayUtil {
     public void fillArrayWithRandomNumbers(int[] array) {
         Random random = new Random();
 
-        for (int i:array) {
+        for (int i = 0; i < array.length; i++) {
             int randomNumber = random.nextInt(100);
             array[i] = randomNumber;
         }
@@ -35,7 +35,6 @@ class ArrayUtil {
                 arrayMaxValue = i;
             }
         }
-
         return arrayMaxValue;
     }
 
@@ -48,7 +47,6 @@ class ArrayUtil {
                 arrayMinValue = i;
             }
         }
-
         return arrayMinValue;
     }
 
