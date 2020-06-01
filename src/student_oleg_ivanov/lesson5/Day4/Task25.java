@@ -8,6 +8,7 @@ class Task25 {
         System.out.println("Enter array length :");
         int arrayLength = scr.nextInt();
 
+        // не используйте русские названия даже транслитом написанные в коде: userMassive -> userArray
         int [] userMassive = new int[arrayLength];
 
         for (int i = 0; i < userMassive.length; i++) {

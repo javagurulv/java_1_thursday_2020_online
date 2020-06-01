@@ -6,7 +6,8 @@ import java.util.Random;
 class ArrayUtil {
 
     public int[] createArray(int arrayLength) {
-        int [] array = new int [arrayLength];
+        // проще в одну строку: return new int [arrayLength];
+    	int [] array = new int [arrayLength];
         return array;
     }
 
