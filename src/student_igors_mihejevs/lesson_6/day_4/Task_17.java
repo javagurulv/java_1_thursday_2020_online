@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_6.day_4;
 
-public class Task_17 {
+class Task_17 {
 
     public static void main(String[] args) {
 

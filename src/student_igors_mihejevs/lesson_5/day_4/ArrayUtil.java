@@ -28,8 +28,8 @@ class ArrayUtil {
     // fill array with random integer numbers between 0 and 999
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomNumber = new Random();
-        for (int counter = 0; counter < array.length; counter++) {
-            array[counter] = randomNumber.nextInt(1000);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = randomNumber.nextInt(1000);
         }
     }
 
@@ -38,9 +38,9 @@ class ArrayUtil {
         Scanner userInput = new Scanner(System.in);
 
         System.out.println("Input " + array.length + " integer numbers");
-        for (int counter = 0; counter < array.length; counter++) {
-            System.out.print("Input number " + (counter + 1) + " : ");
-            array[counter] = userInput.nextInt();
+        for (int i = 0; i < array.length; i++) {
+            System.out.print("Input number " + (i + 1) + " : ");
+            array[i] = userInput.nextInt();
         }
     }
 
@@ -65,20 +65,20 @@ class ArrayUtil {
 
     // increase the value of each cell by 2
     public void increaseEveryNumberByTwo(int[] array) {
-        int counter = 0;
-        while (counter < array.length) {
-            array[counter] = array[counter] + 2;
-            counter++;
+        int i = 0;
+        while (i < array.length) {
+            array[i] = array[i] + 2;
+            i++;
         }
     }
 
     // maximum number in array
     public int findMaxNumber(int[] array) {
         int maxNumber = Integer.MIN_VALUE;
-        int counter = 0;
-        while (counter < array.length) {
-            if (array[counter] > maxNumber) maxNumber = array[counter];
-            counter++;
+        int i = 0;
+        while (i < array.length) {
+            if (array[i] > maxNumber) maxNumber = array[i];
+            i++;
         }
         return maxNumber;
     }
@@ -86,10 +86,10 @@ class ArrayUtil {
     // minimum number in array
     public int findMinNumber(int[] array) {
         int minNumber = Integer.MAX_VALUE;
-        int counter = 0;
-        while (counter < array.length) {
-            if (array[counter] < minNumber) minNumber = array[counter];
-            counter++;
+        int i = 0;
+        while (i < array.length) {
+            if (array[i] < minNumber) minNumber = array[i];
+            i++;
         }
         return minNumber;
     }
