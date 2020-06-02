@@ -10,8 +10,26 @@ class ArrayUtilTest {
          test.shouldFindMinNumber();
          test.isContainingCertainNumberTest();
          test.repeatedNumberInArrayTest();
+         test.replaceTest();
 
      }
+
+    public void replaceTest() {
+        ArrayUtil myArray = new ArrayUtil();
+
+        int[] testArray = new int[]{2, 7, 45, 53, 0};
+        myArray.replace(testArray, 45, 13);
+        boolean testOK = true;
+        for (int i : testArray) {
+            if (i == 45) {
+                testOK = false;
+                break;
+            }
+        }
+        if (testOK) System.out.println("Test of replacing the first specified number in array - OK");
+        else System.out.println("Test of replacing the first specified number in array - FAIL");
+    }
+
 
     public void repeatedNumberInArrayTest() {
         ArrayUtil array = new ArrayUtil();

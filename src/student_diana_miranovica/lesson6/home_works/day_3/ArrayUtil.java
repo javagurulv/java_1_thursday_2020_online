@@ -57,4 +57,13 @@ class ArrayUtil {
         return result;
     }
 
+    public void replace(int[] arr, int numberToReplace, int newNumber){
+         for(int i = 0 ; i <arr.length; i++){
+             if (arr[i] == numberToReplace){
+                 arr[i] = newNumber;
+                 break;
+             }
+         }
+    }
+
 }
