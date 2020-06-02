@@ -9,8 +9,28 @@ class ArrayUtilTest {
          test.shouldFindMaxNumber();
          test.shouldFindMinNumber();
          test.isContainingCertainNumberTest();
+         test.repeatedNumberInArrayTest();
 
      }
+
+    public void repeatedNumberInArrayTest() {
+        ArrayUtil array = new ArrayUtil();
+        int[] arrayTest9 = array.createArray(6);
+        arrayTest9[0] = 7;
+        arrayTest9[1] = 7;
+        arrayTest9[2] = 1;
+        arrayTest9[3] = 7;
+        arrayTest9[4] = 4;
+        arrayTest9[5] = 7;
+
+
+        long checkNumber = array.repeatedNumberInArray(arrayTest9, 7);
+        long result = 4;
+        if (checkNumber == result) {
+            System.out.println("repeatedNumberInArray Test - OK");
+        } else {System.out.println("repeatedNumberInArray Test - FAIL");}
+    }
+
      public void isContainingCertainNumberTest(){
          boolean expResult = true;
          ArrayUtil arrayUtil = new ArrayUtil();

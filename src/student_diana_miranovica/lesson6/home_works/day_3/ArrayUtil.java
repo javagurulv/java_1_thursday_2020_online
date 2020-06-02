@@ -1,5 +1,7 @@
 package student_diana_miranovica.lesson6.home_works.day_3;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 import java.util.stream.IntStream;
 
@@ -48,8 +50,11 @@ class ArrayUtil {
          return IntStream.of(array).anyMatch(x -> x == elem);
     }
 
-    public long howManyTimesArrayContainingCertainElement(int[] array, int elem){
-        return IntStream.of(array).filter(x-> x == elem).count();
+
+
+            public long repeatedNumberInArray(int[] array, int elem) {
+        long result = IntStream.of(array).filter(x -> x == elem).count();
+        return result;
     }
 
 }
