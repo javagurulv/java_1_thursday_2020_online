@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.lesson_6.day_4.task_18_TwoDimensionalArray;
+package student_julija_skopeca.practical_tasks.lesson_6.day_4.task_18_TwoDimensionalArray_sum_random;
 
 import java.util.Random;
 
@@ -25,5 +25,4 @@ class TwoDimensionalArray {
        return summ;
     }
 }
-
 //System.out.println(Arrays.deepToString(array));

@@ -1,6 +1,4 @@
-package student_julija_skopeca.practical_tasks.lesson_6.day_4.task_18_TwoDimensionalArray;
-
-import java.util.Arrays;
+package student_julija_skopeca.practical_tasks.lesson_6.day_4.task_18_TwoDimensionalArray_sum_random;
 
 class TwoDimensionalArrayTest {
 
@@ -20,7 +18,8 @@ class TwoDimensionalArrayTest {
         int sumTest = twoDim.sumOfTwoDimArray(array);
         if (sumTest == 4){
             System.out.println("sumtest1 - OK");
-        } else {System.out.println("sumtest1 - FAIL");}
+        } else {System.out.println("sumtest1 - FAIL");
+        }
 
     }
 
