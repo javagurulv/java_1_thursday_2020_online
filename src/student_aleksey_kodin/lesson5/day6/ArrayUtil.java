@@ -18,14 +18,20 @@ class ArrayUtil {
     public void printArrayToConsole(int[] array) {
         System.out.println(Arrays.toString(array));
     }
+
+    // как на счёт Optional<Integer> в качестве результата
+	// раз уж мы используем Stream API?
     public int findMaxNumber(int[] array) {
-    int maxValue = -1;
+    int maxValue = -1;  // при пустом массиве max = -1?  Это верно?
         OptionalInt max = Arrays.stream(array).max();
         if (max.isPresent()) {
             maxValue = max.getAsInt();
         }
         return maxValue;
     }
+
+	// как на счёт Optional<Integer> в качестве результата
+	// раз уж мы используем Stream API?
     public int findMinNumber(int[] array) {
     int minValue = -1;
     OptionalInt min = Arrays.stream(array).min();
