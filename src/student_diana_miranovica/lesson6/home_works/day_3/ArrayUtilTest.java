@@ -12,8 +12,21 @@ class ArrayUtilTest {
          test.repeatedNumberInArrayTest();
          test.replaceTest();
          test.replaceAllTest();
+         test.rotateArrayTest();
 
      }
+     public void rotateArrayTest(){
+         ArrayUtil arrayUtil = new ArrayUtil();
+         int[] array = new int[] {7, 12, 9};
+         arrayUtil.rotateArray(array);
+         if ((array[0] == 9) && (array[1] == 12) && (array[2] == 7)) {
+             System.out.println("Reverse array numbers test - OK");
+         } else {
+             System.out.println("Reverse array numbers test - FAIL");
+         }
+
+     }
+
      public void replaceAllTest() {
          ArrayUtil arrayUtil = new ArrayUtil();
 
