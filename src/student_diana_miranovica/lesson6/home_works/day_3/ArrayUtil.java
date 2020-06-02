@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.stream.IntStream;
 
 class ArrayUtil {
+
      public int[] createArray(int arrayLength) {
          int[] array = new int[arrayLength];
          return array;
@@ -52,7 +53,7 @@ class ArrayUtil {
 
 
 
-            public long repeatedNumberInArray(int[] array, int elem) {
+    public long repeatedNumberInArray(int[] array, int elem) {
         long result = IntStream.of(array).filter(x -> x == elem).count();
         return result;
     }
@@ -64,6 +65,13 @@ class ArrayUtil {
                  break;
              }
          }
+    }
+    public void replaceAll(int[] arr, int numberToReplace, int newNumber){
+        for(int i = 0 ; i <arr.length; i++){
+            if (arr[i] == numberToReplace){
+                arr[i] = newNumber;
+            }
+        }
     }
 
 }

@@ -11,6 +11,24 @@ class ArrayUtilTest {
          test.isContainingCertainNumberTest();
          test.repeatedNumberInArrayTest();
          test.replaceTest();
+         test.replaceAllTest();
+
+     }
+     public void replaceAllTest() {
+         ArrayUtil arrayUtil = new ArrayUtil();
+
+         int[] testArray13 = new int[]{2, 7, 2, 2, 0};
+         arrayUtil.replaceAll(testArray13, 2,7);
+
+             if (testArray13[0]==7 &&
+                     testArray13[2]==7 &&
+                     testArray13[3]==7) {
+                 System.out.println("Replace number in array test - OK");
+             } else {
+                 System.out.println("Replace number in array test - FAIL");
+             }
+
+
 
      }
 
