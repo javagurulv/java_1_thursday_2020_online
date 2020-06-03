@@ -2,7 +2,7 @@ package student_vadims_vladisevs.lesson5.day_6;
 
 import java.util.Random;
 
-public class ArrayUtil {
+class ArrayUtil {
 
     public void printArrayToConsole(int[] array) {
         // Write implementation here !!!

@@ -174,14 +174,14 @@ class TicTacToeTest {
         field[0][1] = field[0][2] = field[1][0] = field[2][1] = 1;
         printGameBoard(field);
         boolean resultDraw = ticTacToe.isDraw(field,0);
-        printTestResult(resultDraw,"no draw position ");
+        printTestResult(!resultDraw,"no draw position ");
 
         createPlayBoard(field);
         field[1][1] = field[2][0] = field[0][0] =  field[1][2] =0;
         field[0][1] = field[0][2] = field[1][0] = field[2][1] = field[2][2] = 1;
         printGameBoard(field);
         boolean resultDrawSecond = ticTacToe.isDraw(field,0);
-        printTestResult(!resultDrawSecond,"draw position ");
+        printTestResult(resultDrawSecond,"draw position ");
     }
     public void testCreateField() {
         int [][] tempArray = ticTacToe.createField();

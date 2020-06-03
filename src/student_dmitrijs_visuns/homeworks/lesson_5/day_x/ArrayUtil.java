@@ -12,16 +12,14 @@ class ArrayUtil {
     public void fillArrayWithRandomNumbers(int[] array) {
         Random random = new Random();
 
-        for (int i:array) {
-            int randomNumber = random.nextInt(100);
-            array[i] = randomNumber;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(100);
         }
     }
 
 
-
     public void printArrayToConsole(int[] array) {
-        for (int i:array) {
+        for (int i : array) {
             System.out.println(i);
         }
     }
@@ -30,12 +28,11 @@ class ArrayUtil {
     public int findMaxNumber(int[] array) {
         int arrayMaxValue = array[0];
 
-        for (int i:array) {
+        for (int i : array) {
             if (i > arrayMaxValue) {
                 arrayMaxValue = i;
             }
         }
-
         return arrayMaxValue;
     }
 
@@ -43,15 +40,33 @@ class ArrayUtil {
     public int findMinNumber(int[] array) {
         int arrayMinValue = array[0];
 
-        for (int i:array) {
+        for (int i : array) {
             if (i < arrayMinValue) {
                 arrayMinValue = i;
             }
         }
-
         return arrayMinValue;
     }
 
+    public void ArrayEvenNumbers(int[] array) {
 
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                System.out.println("Array number " + array[i] + " is even");
+            }
+        }
+
+    }
+
+
+    public void ArrayOddNumbers(int[] array) {
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                System.out.println("Array number " + array[i] + " is odd");
+            }
+        }
+
+    }
 
 }

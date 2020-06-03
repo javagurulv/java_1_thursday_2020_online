@@ -18,6 +18,7 @@ class Task_25 {
 
         int[] array = new int[arrayLength];
 
+		// обычно переменные цикла называют: i, j, ...
         for (int inputCount = 1; inputCount <= arrayLength; inputCount++) {
             System.out.println("Enter array integer # " + inputCount);
             int arrayNumber = sc.nextInt();

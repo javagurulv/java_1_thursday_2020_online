@@ -4,6 +4,7 @@ import java.util.Random;
 
 class ArrayUtil {
 
+    // create array
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];
     }
@@ -11,8 +12,8 @@ class ArrayUtil {
     // fill array with integer numbers between 0 and 999
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomNumber = new Random();
-        for (int counter = 0; counter < array.length; counter++) {
-            array[counter] = randomNumber.nextInt(1000);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = randomNumber.nextInt(1000);
         }
     }
 

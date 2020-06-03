@@ -7,9 +7,11 @@ class Task_14 {
     public static void main(String[] args) {
         int[] array = new int[3];
         int arraySum = 0;
+
+		// объявляйте переменные там где вы их первый раз используете! Заранее объявлять переменные не стоит.
         double arrayAverage;
 
-        for(int count = 0; count < array.length; count++) {
+		for(int count = 0; count < array.length; count++) {
             int rndValue = new Random().nextInt(11);
             array[count] = rndValue;
             arraySum += rndValue;

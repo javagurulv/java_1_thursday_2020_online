@@ -1,6 +1,6 @@
 package student_arturs_ragausks.lesson_3.homeworks.day2;
 
-public class StringMyName {
+class StringMyName {
 
     public static void main(String[] args){
         String myName = "Arturas";

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 class Task_26 {
     public static void main(String[] args) {
-        int[] array;
+        int[] array;  // объявляйте переменные там где вы их первый раз используете!
         ArrayUtil myArray = new ArrayUtil();
 
         try {

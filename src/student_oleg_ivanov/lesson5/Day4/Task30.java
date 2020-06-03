@@ -12,7 +12,7 @@ class Task30 {
             System.out.println("Array number " + i + " is random number " + arrayNumbers[i]);
         }
 
-        int oddNumber = arrayNumbers [0];
+        int oddNumber;
         for (int i = 1; i < arrayNumbers.length; i++) {
             if (arrayNumbers[i] % 2 != 0) {
                 oddNumber = arrayNumbers [i];

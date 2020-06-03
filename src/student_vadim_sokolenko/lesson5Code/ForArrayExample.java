@@ -2,7 +2,7 @@ package student_vadim_sokolenko.lesson5Code;
 
 import java.util.Random;
 
-public class ForArrayExample {
+class ForArrayExample {
 
     public static void main(String[] args) {
 

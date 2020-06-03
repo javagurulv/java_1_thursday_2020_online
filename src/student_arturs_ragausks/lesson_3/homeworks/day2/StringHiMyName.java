@@ -1,6 +1,6 @@
 package student_arturs_ragausks.lesson_3.homeworks.day2;
 
-public class StringHiMyName {
+class StringHiMyName {
     public static void main(String[] args){
         String myName = "Arturas";
         String greetings = "Hi " + myName + "!";
