@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson6.dayx.supertask2;
+package student_aleksey_kodin.lesson7.day4;
 
 import java.util.Scanner;
 
@@ -62,7 +62,6 @@ class TicTacToe {
                           && findWinRowAndColumn(field, column, false)) {
                 return true;
                 }
-
             }
         if (isTwoInRow(field[0][0],field[1][1],field[2][2])) {
             return  findWinDiagonals(field,true);
@@ -79,11 +78,14 @@ class TicTacToe {
     return !isFreePlace(field);
     }
     public Move getNextMove() {
-        System.out.println("Input row: ");
-            int row = new Scanner(System.in).nextInt();
-                System.out.println("Input column: ");
-                    int column = new Scanner(System.in).nextInt();
+        System.out.println("Input row:");
+            int row = getPlayerMove();
+                System.out.println("Input column:");
+                    int column = getPlayerMove();
     return new Move(row,column);
+    }
+    private int getPlayerMove() {
+        return new Scanner(System.in).nextInt();
     }
     public void printFieldToConsole(int[][] field) {
         for (int[] row : field) {
@@ -120,27 +122,42 @@ class TicTacToe {
     private boolean movePlayer0(int[][] field) {
 
             if (isWin(field,0)) {
-                setRowMovePosition(getRowWinPosition());
-                setColumnMovePosition(getColumnWinPosition());
+                setWinMovePosition();
                 return true;
             }
             if (isWin(field,1)) {
-                setRowMovePosition(getRowWinPosition());
-                setColumnMovePosition(getColumnWinPosition());
+                setWinMovePosition();
                 return true;
             }
     return checkNextMove(field);
     }
+    private void setWinMovePosition() {
+        setRowMovePosition(getRowWinPosition());
+        setColumnMovePosition(getColumnWinPosition());
+    }
     private void movePlayer1(int[][] field) {
         while (true) {
             Move move1 = getNextMove();
-            if (field[move1.getRow()][move1.getColumn()] == -1) {
+            if (isPlayerMoveOutOfField(move1)) {
+                printErrorMessage();
+                continue;
+            }
+            if (isPlayerMoveToFreeCell(field,move1)) {
                 field[move1.getRow()][move1.getColumn()] = 1;
                 break;
             } else {
-                System.out.println("Illegal move. Try again");
+                printErrorMessage();
             }
         }
+    }
+    private void printErrorMessage() {
+        System.out.println("Illegal move. Try again");
+    }
+    private boolean isPlayerMoveToFreeCell(int[][] field,Move playerMove) {
+        return field[playerMove.getRow()][playerMove.getColumn()] == -1;
+    }
+    private boolean isPlayerMoveOutOfField(Move playerMove) {
+        return playerMove.getRow() == -1 || playerMove.getColumn() == -1;
     }
     private boolean checkToDraw(int[][] field,int playerToCheck) {
         if (isDraw(field, playerToCheck)) {
@@ -180,10 +197,9 @@ class TicTacToe {
     public void setColumnMovePosition(int columnMovePosition) {
         this.columnMovePosition = columnMovePosition;
     }
-
     private boolean isTwoInRow(int firstValue, int secondValue, int thirdValue){
         if (firstValue == -1 && secondValue == -1 && thirdValue == -1) return false;
-        if (!isEmptyPlace(firstValue,secondValue,thirdValue)) return false;
+        if (!isEmptyCell(firstValue,secondValue,thirdValue)) return false;
         return firstValue == secondValue || secondValue == thirdValue || firstValue == thirdValue;
     }
     private boolean findWinRowAndColumn(int[][] field,int position,boolean isRow) {
@@ -226,7 +242,7 @@ class TicTacToe {
         }
     return false;
     }
-    private boolean isEmptyPlace(int firstValue, int secondValue, int thirdValue) {
+    private boolean isEmptyCell(int firstValue, int secondValue, int thirdValue) {
         if (firstValue == secondValue) {
             if (firstValue == -1) return false;
         }
