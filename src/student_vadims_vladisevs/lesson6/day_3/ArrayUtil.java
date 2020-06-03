@@ -37,8 +37,8 @@ class ArrayUtil {
         }
     }
 
-    public void fillArrayFromOneToTen(int[] arr){
-        for (int i =0; i < arr.length; i++){
+    public void fillArrayFromOne(int[] arr){
+        for (int i = 0; i < arr.length; i++){
             arr[i] = i + 1;
         }
     }
