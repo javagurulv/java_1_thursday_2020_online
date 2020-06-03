@@ -1,8 +1,68 @@
-package student_vadims_vladisevs.lesson6.day_5;
+package student_vadims_vladisevs.lesson6.day_6;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 class TicTacToe {
+
+
+    public void play() {
+        int[][] field = createField();
+        while(true) {
+            printFieldToConsole(field);
+            while (true) {
+                Move move0 = getNextMove();
+                if ((field[move0.getX()][move0.getY()] == -1)) {
+                    field[move0.getX()][move0.getY()] = 0;
+                    break;
+                } else {
+                    System.out.println("Game field cell not empty. Try again! ");
+                }
+            }
+            printFieldToConsole(field);
+            if (isWinPosition(field, 0)) {
+                System.out.println("Player 0 WIN!");
+                break;
+            }
+            if (isDrawPosition(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+            System.out.println("----------");
+            System.out.println("Next player move!");
+
+            printFieldToConsole(field);
+            while (true) {
+                Move move1 = getNextMove();
+                if ((field[move1.getX()][move1.getY()] == -1)) {
+                    field[move1.getX()][move1.getY()] = 1;
+                    break;
+                } else {
+                    System.out.println("Game field cell not empty. Try again! ");
+                }
+            }
+            if (isWinPosition(field, 1)) {
+                System.out.println("Player 1 WIN!");
+                break;
+            }
+            if (isDrawPosition(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+            System.out.println("----------");
+            System.out.println("Next player move!");
+        }
+    }
+
+
+    public Move getNextMove(){
+        Scanner scr = new Scanner(System.in);
+        System.out.println("Enter X coordinate: ");
+        int x = scr.nextInt();
+        System.out.println("Enter Y coordinate: ");
+        int y = scr.nextInt();
+        return new Move(x,y);
+    }
 
 
     public boolean isDrawPosition(int[][] field){
@@ -115,7 +175,7 @@ class TicTacToe {
         return gameField;
     }
 
-    public void printGameField(int[][] array){
+    public void printFieldToConsole(int[][] array){
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 System.out.print(array[i][j] + " ");
@@ -124,7 +184,19 @@ class TicTacToe {
         }
     }
 
+    public boolean isFieldEmpty(int[][] field){
+        int count = 0;
+        for (int i = 0; i < field.length; i++) {
+            int[] tempArray = getRow(field, i);
+            for (int tempValue : tempArray) {
+                if (tempValue != -1) {
+                    count++;
+                }
+            }
+        }
+        return count == 0;
 
+    }
 
 
 }
