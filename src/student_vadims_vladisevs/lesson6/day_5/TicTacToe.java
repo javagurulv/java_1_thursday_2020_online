@@ -5,6 +5,39 @@ import java.util.Arrays;
 class TicTacToe {
 
 
+    public boolean isDrawPosition(int[][] field){
+
+        if ((!isWinPosition(field, 0)) && (!isWinPosition(field, 1))) {
+            int count = 0;
+            for (int i = 0; i < field.length; i++) {
+                int[] tempArray = getRow(field, i);
+                for (int tempValue : tempArray) {
+                    if (tempValue == -1) {
+                        count++;
+                    }
+                }
+            }
+            return count == 0;
+        }
+
+        return false;
+    }
+
+    public boolean isWinPosition(int[][] field, int playerToCheck){
+        if (isWinPositionForVerticals(field,playerToCheck)){
+            return true;
+        }
+
+        if (isWinPositionForHorizontals(field, playerToCheck)){
+            return true;
+        }
+
+        if (isWinPositionForDiagonals(field, playerToCheck)){
+            return true;
+        }
+
+        return false;
+    }
 
     public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck){
         int[] tempArray = getFirstDiagonal(field);
