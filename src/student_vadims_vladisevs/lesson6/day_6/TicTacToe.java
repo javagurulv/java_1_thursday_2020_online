@@ -10,8 +10,15 @@ class TicTacToe {
         int[][] field = createField();
         while(true) {
             printFieldToConsole(field);
-            Move move0 = getNextMove();
-            field[move0.getX()][move0.getY()] = 0;
+            while (true) {
+                Move move0 = getNextMove();
+                if ((field[move0.getX()][move0.getY()] == -1)) {
+                    field[move0.getX()][move0.getY()] = 0;
+                    break;
+                } else {
+                    System.out.println("Game field cell not empty. Try again! ");
+                }
+            }
             printFieldToConsole(field);
             if (isWinPosition(field, 0)) {
                 System.out.println("Player 0 WIN!");
@@ -25,9 +32,15 @@ class TicTacToe {
             System.out.println("Next player move!");
 
             printFieldToConsole(field);
-            Move move1 = getNextMove();
-            field[move1.getX()][move1.getY()] = 1;
-            printFieldToConsole(field);
+            while (true) {
+                Move move1 = getNextMove();
+                if ((field[move1.getX()][move1.getY()] == -1)) {
+                    field[move1.getX()][move1.getY()] = 1;
+                    break;
+                } else {
+                    System.out.println("Game field cell not empty. Try again! ");
+                }
+            }
             if (isWinPosition(field, 1)) {
                 System.out.println("Player 1 WIN!");
                 break;
