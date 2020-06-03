@@ -14,6 +14,9 @@ class TicTacToeDemo {
         int[][] tttDemo3 = {{0, 0, 1}, {-1, 0, 0}, {1, 0, 0}};
         tikTakToe.printDoubleArrayToConsole(tttDemo3);
         System.out.println(tikTakToe.isWinPositionForVerticals(tttDemo3, 0));
+        int[][] tttDemo4 = {{1, 0, 1}, {0, 0, 1}, {1, 0, 0}};
+        tikTakToe.printDoubleArrayToConsole(tttDemo4);
+        System.out.println(tikTakToe.isWinPosition(tttDemo4, 1));
     }
 
 }

@@ -67,6 +67,29 @@ class TikTakToeTest {
         System.out.println("--------------------------------------------------------------------------");
         tTTTest.shouldReturnIsWinPositionForDiagonalsFalseSituation(arr12, 0);
         tTTTest.shouldReturnIsWinPositionForDiagonalsFalseSituation(arr12, 1);
+
+        System.out.println("\nTest of win positions for the field for different situations");
+        System.out.println("--------------------------------------------------------------------------");
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr1, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr2, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr3, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr1, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr2, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr3, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr8, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr9, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr4, 1);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr5, 1);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr6, 1);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr4, 1);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr5, 1);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr6, 1);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr10, 1);
+        tTTTest.shouldReturnIsWinPositionForAllFieldTrueSituation(arr11, 1);
+        System.out.println("\nTest not win positions for the field for different situations");
+        System.out.println("--------------------------------------------------------------------------");
+        tTTTest.shouldReturnIsWinPositionForAllFieldFalseSituation(arr7, 0);
+        tTTTest.shouldReturnIsWinPositionForAllFieldFalseSituation(arr8, 1);
     }
 
     void shouldReturnIsWinPositionForHorizontalsTrueSituation(int[][] testArray, int player) {
@@ -102,6 +125,18 @@ class TikTakToeTest {
     void shouldReturnIsWinPositionForDiagonalsFalseSituation(int[][] testArray, int player) {
         TicTacToe myArray = new TicTacToe();
         boolean result = myArray.isWinPositionForDiagonals(testArray, player);
+        printWinTestResult(!result, player);
+    }
+
+    void shouldReturnIsWinPositionForAllFieldTrueSituation(int[][] testArray, int player) {
+        TicTacToe myArray = new TicTacToe();
+        boolean result = myArray.isWinPosition(testArray, player);
+        printWinTestResult(result, player);
+    }
+
+    void shouldReturnIsWinPositionForAllFieldFalseSituation(int[][] testArray, int player) {
+        TicTacToe myArray = new TicTacToe();
+        boolean result = myArray.isWinPosition(testArray, player);
         printWinTestResult(!result, player);
     }
 
