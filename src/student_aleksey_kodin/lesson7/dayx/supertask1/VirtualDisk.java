@@ -153,13 +153,10 @@ class VirtualDisk {
     public void printInformation() {
         for (Folder element : folders) {
             System.out.println(element.toString());
-            /*System.out.println(element.getName() +"." + element.getFileExtension() + " Index -------> " + element.getIndex() + " "
-                    + "Size: " + element.getSize()); */
         }
         System.out.println("Total size - " + getVirtualDiskSize());
         System.out.println("Used size - "+ getVirtualDiskUsedSize());
         System.out.println("Free size - "+ getVirtualDiskFreeSize());
-
     }
     private boolean isVirtualDiskHaveIndex(int index) {
         for (Folder element: folders) {

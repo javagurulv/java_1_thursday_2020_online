@@ -1,6 +1,6 @@
 package student_vadim_sokolenko.Lesson5HomeWorks.Day2;
 
-public class ThreeNumberArray {
+class ThreeNumberArray {
 
     public static void main(String[] args) {
 

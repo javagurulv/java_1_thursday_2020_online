@@ -22,11 +22,13 @@ class Task_26 {
 
         int[] array = new int[arrayLength];
 
+		// обычно переменные цикла называют: i, j, ...
         for (int inputCount = 1; inputCount <= arrayLength; inputCount++) {
             int arrayNumber = random.nextInt(100);
             array[inputCount - 1] = arrayNumber;
         }
 
+		// обычно переменные цикла называют: i, j, ...
         for (int inputCount = 1; inputCount <= arrayLength; inputCount++) {
             System.out.println("Array integer # " + inputCount + " is " + array[inputCount - 1]);
         }

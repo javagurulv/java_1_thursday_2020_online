@@ -3,7 +3,7 @@ package student_aleksey_kodin.lesson5.dayx.supertask1.day4.task_29;
 class Task_29 {
 
     public static void main(String[] args) {
-        int[] array;
+        int[] array;  // объявляйте переменные там где вы их первый раз используете!
 
         ArrayUtil myArray = new ArrayUtil();
         array =myArray.createArray(10);

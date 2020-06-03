@@ -2,7 +2,7 @@ package student_vadim_sokolenko;
 
 class Day5task24 {
 
-        //public class AttentionPlease {
+        //class AttentionPlease {
     //
     //    System.out.println("Code outside the method will not compile!");
     //

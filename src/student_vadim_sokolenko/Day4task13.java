@@ -10,7 +10,7 @@ class Day4task13 {
     //
     //Рассмотрим на примере. Вспомним код из первого урока — создадим файл с названием Main.java.
     //
-    //public class Main {
+    //class Main {
     //    public static void main(String[] args) {
     //        System.out.println("Hello, World!");
     //    }
@@ -20,7 +20,7 @@ class Day4task13 {
     //3
     //4
     //5
-    //public class Main {
+    //class Main {
     //    public static void main(String[] args) {
     //        System.out.println("Hello, World!");
     //    }

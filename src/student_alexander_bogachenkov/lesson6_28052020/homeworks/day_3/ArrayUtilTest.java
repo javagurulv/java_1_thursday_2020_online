@@ -9,6 +9,7 @@ class ArrayUtilTest {
         test.howManyTimesArrayContainsCertainNumberTest();
         test.replaceNumberInArrayTest();
         test.replaceNumbersInArrayTest();
+        test.reverseNumberOrderTest();
     }
 
     public void isContainingCertainNumberTest1() {
@@ -95,6 +96,27 @@ class ArrayUtilTest {
             System.out.println("replaceNumbersInArrayTest PASSED");
         } else {
             System.out.println("replaceNumbersInArrayTest FAILED");
+        }
+    }
+
+    public void reverseNumberOrderTest() {
+        ArrayUtil arrayUtil = new ArrayUtil();
+        int[] testArray = arrayUtil.createArray(5);
+        testArray[0] = 1;
+        testArray[1] = 2;
+        testArray[2] = 3;
+        testArray[3] = 4;
+        testArray[4] = 5;
+        arrayUtil.reverseNumberOrder(testArray);
+
+        if ((testArray[0] == 5) &&
+            (testArray[1] == 4) &&
+            (testArray[2] == 3) &&
+            (testArray[3] == 2) &&
+            (testArray[4] == 1)) {
+            System.out.println("reverseNumberOrderTest PASSED");
+        } else {
+            System.out.println("reverseNumberOrderTest FAILED");
         }
     }
 }

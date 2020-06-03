@@ -8,7 +8,9 @@ class Task_13 {
         int[] array = new int[3];
         int arraySum = 0;
 
-        for(int count = 0; count < array.length; count++) {
+		// обычно переменные цикла называют: i, j, ...
+		// count - это не совсем привычное название переменной для цикла for
+		for(int count = 0; count < array.length; count++) {
             int rndValue = new Random().nextInt(11);
             array[count] = rndValue;
             arraySum += rndValue;
