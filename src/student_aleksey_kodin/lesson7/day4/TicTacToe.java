@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson6.dayx.supertask2;
+package student_aleksey_kodin.lesson7.day4;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -146,7 +146,7 @@ class TicTacToe {
             }
         }
     }
-    public Move getNextMove() {
+    private Move getNextMove() {
         int row = -1;
         int column = -1;
         try {
@@ -280,29 +280,29 @@ class TicTacToe {
     return false;
     }
     private boolean checkNextMove(int[][] field) {
-        if (isHaveFreeCell(field[0][0])) {
+        if (isFreeCell(field[0][0])) {
             setNextMove(0,0);
             return true;
         }
-        if (isHaveFreeCell(field[2][0])) {
+        if (isFreeCell(field[2][0])) {
             setNextMove(2,0);
             return true;
         }
-        if (isHaveFreeCell(field[2][2])) {
+        if (isFreeCell(field[2][2])) {
             setNextMove(2,2);
             return true;
         }
-        if (isHaveFreeCell(field[0][2])) {
+        if (isFreeCell(field[0][2])) {
             setNextMove(0,2);
             return true;
         }
-        if (isHaveFreeCell(field[1][1])) {
+        if (isFreeCell(field[1][1])) {
             setNextMove(1,1);
             return true;
         }
         return isFreeCell(field);
     }
-    private boolean isHaveFreeCell(int cell) {
+    private boolean isFreeCell(int cell) {
         final int FREE_CELL = -1;
         return cell == FREE_CELL;
     }

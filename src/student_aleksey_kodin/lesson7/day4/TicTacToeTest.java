@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson6.dayx.supertask2;
+package student_aleksey_kodin.lesson7.day4;
 
 class TicTacToeTest {
     private final TicTacToe ticTacToe = new TicTacToe();
