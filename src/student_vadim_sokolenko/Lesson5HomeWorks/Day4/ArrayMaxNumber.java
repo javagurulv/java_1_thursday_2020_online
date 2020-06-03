@@ -3,7 +3,7 @@ package student_vadim_sokolenko.Lesson5HomeWorks.Day4;
 import java.util.Arrays;
 import java.util.Random;
 
-class ArreyMaxNumber {
+class ArrayMaxNumber {
 
     public static void main(String[] args) {
 
