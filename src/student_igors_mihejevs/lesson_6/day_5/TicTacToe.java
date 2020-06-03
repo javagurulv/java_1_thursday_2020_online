@@ -39,4 +39,19 @@ class TicTacToe {
         return isWin;
     }
 
+    boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
+        boolean isWin = false;
+        for (int i = 0; i < field.length; i++) {
+            int counter = 0;
+            for (int j = 0; j < field[i].length; j++) {
+                if (field[j][i] == playerToCheck) counter++;
+            }
+            if (counter == 3) {
+                isWin = true;
+                break;
+            }
+
+        }
+        return isWin;
+    }
 }
