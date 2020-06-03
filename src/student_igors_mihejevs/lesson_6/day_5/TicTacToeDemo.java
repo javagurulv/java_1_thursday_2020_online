@@ -5,10 +5,15 @@ class TicTacToeDemo {
     public static void main(String[] args) {
         TicTacToe tikTakToe = new TicTacToe();
 
-        int[][] tttDemo = {{1, 0, 1}, {-1, 0, 0}, {1, 0, 0}};
-        tikTakToe.printDoubleArrayToConsole(tttDemo);
-        System.out.println(tikTakToe.isWinPositionForHorizontals(tttDemo, 0));
-        System.out.println(tikTakToe.isWinPositionForVerticals(tttDemo, 0));
+        int[][] tttDemo1 = {{1, 0, 1}, {-1, 1, 0}, {0, 0, 0}};
+        tikTakToe.printDoubleArrayToConsole(tttDemo1);
+        System.out.println(tikTakToe.isWinPositionForHorizontals(tttDemo1, 0));
+        int[][] tttDemo2 = {{1, 0, 1}, {-1, 0, 0}, {1, 0, 0}};
+        tikTakToe.printDoubleArrayToConsole(tttDemo2);
+        System.out.println(tikTakToe.isWinPositionForVerticals(tttDemo2, 0));
+        int[][] tttDemo3 = {{0, 0, 1}, {-1, 0, 0}, {1, 0, 0}};
+        tikTakToe.printDoubleArrayToConsole(tttDemo3);
+        System.out.println(tikTakToe.isWinPositionForVerticals(tttDemo3, 0));
     }
 
 }
