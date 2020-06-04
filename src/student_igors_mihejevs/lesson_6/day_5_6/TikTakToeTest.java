@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_6.day_5;
+package student_igors_mihejevs.lesson_6.day_5_6;
 
 class TikTakToeTest {
 
@@ -101,67 +101,89 @@ class TikTakToeTest {
         tTTTest.shouldReturnIsDrawPositionForFieldFalseSituation(arr1);
         tTTTest.shouldReturnIsDrawPositionForFieldFalseSituation(arr4);
         tTTTest.shouldReturnIsDrawPositionForFieldFalseSituation(arr14);
+
+        tTTTest.shouldReturnNewInitializedField();
     }
 
     void shouldReturnIsWinPositionForHorizontalsTrueSituation(int[][] testArray, int player) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isWinPositionForHorizontals(testArray, player);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isWinPositionForHorizontals(testArray, player);
         printWinTestResult(result, player);
     }
 
     void shouldReturnIsWinPositionForHorizontalsFalseSituation(int[][] testArray, int player) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isWinPositionForHorizontals(testArray, player);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isWinPositionForHorizontals(testArray, player);
         printWinTestResult(!result, player);
     }
 
     void shouldReturnIsWinPositionForVerticalsTrueSituation(int[][] testArray, int player) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isWinPositionForVerticals(testArray, player);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isWinPositionForVerticals(testArray, player);
         printWinTestResult(result, player);
     }
 
     void shouldReturnIsWinPositionForVerticalsFalseSituation(int[][] testArray, int player) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isWinPositionForVerticals(testArray, player);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isWinPositionForVerticals(testArray, player);
         printWinTestResult(!result, player);
     }
 
     void shouldReturnIsWinPositionForDiagonalsTrueSituation(int[][] testArray, int player) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isWinPositionForDiagonals(testArray, player);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isWinPositionForDiagonals(testArray, player);
         printWinTestResult(result, player);
     }
 
     void shouldReturnIsWinPositionForDiagonalsFalseSituation(int[][] testArray, int player) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isWinPositionForDiagonals(testArray, player);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isWinPositionForDiagonals(testArray, player);
         printWinTestResult(!result, player);
     }
 
     void shouldReturnIsWinPositionForFieldTrueSituation(int[][] testArray, int player) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isWinPosition(testArray, player);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isWinPosition(testArray, player);
         printWinTestResult(result, player);
     }
 
     void shouldReturnIsWinPositionForFieldFalseSituation(int[][] testArray, int player) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isWinPosition(testArray, player);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isWinPosition(testArray, player);
         printWinTestResult(!result, player);
     }
 
     void shouldReturnIsDrawPositionForFieldTrueSituation(int[][] testArray) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isDrawPosition(testArray);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isDrawPosition(testArray);
         if (result) System.out.println("Test - OK");
         else System.out.println("Test - FAIL");
     }
 
     void shouldReturnIsDrawPositionForFieldFalseSituation(int[][] testArray) {
-        TicTacToe myArray = new TicTacToe();
-        boolean result = myArray.isDrawPosition(testArray);
+        TicTacToe tTT = new TicTacToe();
+        boolean result = tTT.isDrawPosition(testArray);
         if (!result) System.out.println("Test - OK");
+        else System.out.println("Test - FAIL");
+    }
+
+    void shouldReturnNewInitializedField() {
+        TicTacToe tTT = new TicTacToe();
+        int[][] result = tTT.createField();
+        // tTT.printFieldToConsole(result);
+        boolean isInitialize = true;
+        for (int[] ints : result) {
+            for (int anInt : ints) {
+                if (anInt != -1) {
+                    isInitialize = false;
+                    break;
+                }
+            }
+            if (!isInitialize) break;
+        }
+        System.out.println("\nMethod createField");
+        System.out.println("------------------");
+        if (result.length == 3 && result[0].length == 3 && isInitialize) System.out.println("Test - OK");
         else System.out.println("Test - FAIL");
     }
 

@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_6.day_5;
+package student_igors_mihejevs.lesson_6.day_5_6;
 
 class TicTacToeDemo {
 
@@ -6,20 +6,29 @@ class TicTacToeDemo {
         TicTacToe tikTakToe = new TicTacToe();
 
         int[][] tttDemo1 = {{1, 0, 1}, {-1, 1, 0}, {0, 0, 0}};
-        tikTakToe.printDoubleArrayToConsole(tttDemo1);
+        tikTakToe.printFieldToConsole(tttDemo1);
         System.out.println(tikTakToe.isWinPositionForHorizontals(tttDemo1, 0));
+
         int[][] tttDemo2 = {{1, 0, 1}, {-1, 0, 0}, {1, 0, 0}};
-        tikTakToe.printDoubleArrayToConsole(tttDemo2);
+        tikTakToe.printFieldToConsole(tttDemo2);
         System.out.println(tikTakToe.isWinPositionForVerticals(tttDemo2, 0));
+
         int[][] tttDemo3 = {{0, 0, 1}, {-1, 0, 0}, {1, 0, 0}};
-        tikTakToe.printDoubleArrayToConsole(tttDemo3);
+        tikTakToe.printFieldToConsole(tttDemo3);
         System.out.println(tikTakToe.isWinPositionForVerticals(tttDemo3, 0));
+
         int[][] tttDemo4 = {{1, 0, 1}, {0, 0, 1}, {1, 0, 0}};
-        tikTakToe.printDoubleArrayToConsole(tttDemo4);
+        tikTakToe.printFieldToConsole(tttDemo4);
         System.out.println(tikTakToe.isWinPosition(tttDemo4, 1));
+
         int[][] tttDemo5 = {{1, 0, 1}, {1, 0, 0}, {0, 1, 1}};
-        tikTakToe.printDoubleArrayToConsole(tttDemo4);
+        tikTakToe.printFieldToConsole(tttDemo4);
         System.out.println(tikTakToe.isDrawPosition(tttDemo5));
+
+        //tikTakToe.createField();
+        tikTakToe.printFieldToConsole(tikTakToe.createField());
+
+        tikTakToe.getNextMove();
     }
 
 }
