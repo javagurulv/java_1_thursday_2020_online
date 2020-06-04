@@ -16,8 +16,8 @@ class TicTacToe {
     }
 
     void printFieldToConsole(int[][] field) {
-        for (int i = 0; i < field.length; i++) {
-            System.out.println("Row " + (i + 1) + " : " + Arrays.toString(field[i]));
+        for (int[] ints : field) {
+            System.out.println(Arrays.toString(ints));
         }
     }
 
@@ -84,7 +84,7 @@ class TicTacToe {
         return isDraw;
     }
 
-    public Move getNextMove() {
+    Move getNextMove() {
         Scanner sc = new Scanner(System.in);
 
         int firstCoordinate;
@@ -98,6 +98,37 @@ class TicTacToe {
         }
         while (firstCoordinate < 0 || firstCoordinate > 2 || secondCoordinate < 0 || secondCoordinate > 2);
         return new Move(firstCoordinate, secondCoordinate);
+    }
+
+    void play() {
+        int[][] field = createField();
+        while(true) {
+            printFieldToConsole(field);
+            Move move0 = getNextMove();
+            field[move0.getX()][move0.getY()] = 0;
+            printFieldToConsole(field);
+            if (isWinPosition(field, 0)) {
+                System.out.println("Player 0 WIN!");
+                break;
+            }
+            if (isDrawPosition(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+
+            printFieldToConsole(field);
+            Move move1 = getNextMove();
+            field[move1.getX()][move1.getY()] = 1;
+            printFieldToConsole(field);
+            if (isWinPosition(field, 1)) {
+                System.out.println("Player 1 WIN!");
+                break;
+            }
+            if (isDrawPosition(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+        }
     }
 
 }
