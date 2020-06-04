@@ -99,15 +99,23 @@ class TicTacToe {
             }
             printFieldToConsole(field);
 
-            if (checkToWin(field,0)) { break; }
-            if (checkToDraw(field, 0)) { break; }
+            if (checkToWin(field,0)) {
+                break;
+            }
+            if (checkToDraw(field, 0)) {
+                break;
+            }
 
             movePlayer1(field);
 
             printFieldToConsole(field);
 
-            if (checkToWin(field, 1)) { break; }
-            if (checkToDraw(field, 1)) { break; }
+            if (checkToWin(field, 1)) {
+                break;
+            }
+            if (checkToDraw(field, 1)) {
+                break;
+            }
         }
     }
     private boolean movePlayer0(int[][] field) {

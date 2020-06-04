@@ -35,35 +35,66 @@ class ArrayUtil {
             System.out.println("Arr element = " + arr[i]);
         }
     }
+
     public void findNumberInArrays(int[] arr) {
-        for (int i = 0; i <arr.length; i++) {
-            arr [i] = 9;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = 9;
         }
     }
-    public boolean isNumberInArray(int number, int [] array) {
-        for (int temp : array){
-            if (temp == number){
+
+    public boolean isNumberInArray(int number, int[] array) {
+        for (int temp : array) {
+            if (temp == number) {
                 return true;
             }
         }
         return false;
     }
-    public  int numberCountInArray(int number, int[] array) {
+
+    public int numberCountInArray(int number, int[] array) {
         int count = 0;
-        for (int temp : array){
-            if (temp == number){
+        for (int temp : array) {
+            if (temp == number) {
                 count++;
             }
         }
         return count;
     }
+
     public void fillArray(int[] arr) {
-        for (int i = 0; i <arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = 9;
         }
     }
 
-}
+    public void replaceNumber(int[] arr, int numberToReplace, int newNumber) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr[i] = newNumber;
+                break;
+            }
+        }
+    }
 
+    public void fillArrayWithNumber(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i + 1;
+        }
+    }
+    public  void replaceAllNumbers(int[] arr, int numberToReplace, int newNumber) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr [i] = newNumber;
+            }
+        }
+    }
+    public void rotationAllNumberInArray(int[] arr) {
+        for (int i = 0; i < arr.length /2; i++) {
+            int temporaryNumber = arr[arr.length -1 -i];
+            arr[arr.length -1 -i] = arr[i];
+            arr[i] = temporaryNumber;
+        }
+    }
+}
 
 
