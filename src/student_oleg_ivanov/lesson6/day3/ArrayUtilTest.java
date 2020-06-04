@@ -6,8 +6,8 @@ class ArrayUtilTest {
         arrayUtilTest.testFindNumber();
         arrayUtilTest.testNumberCountInArray();
         arrayUtilTest.testReplaceNumberInArray();
-
-
+        arrayUtilTest.testReplaceAllNumbers();
+        arrayUtilTest.testRotationNumbers();
     }
 
     public void testFindNumber() {
@@ -30,8 +30,24 @@ class ArrayUtilTest {
         ArrayUtil test = new ArrayUtil();
         int[] testArray = test.createArray(15);
         test.fillArrayWithNumber(testArray);
-        test.replaceNumber(testArray, 2, 7);
-        printTestResult(7, testArray[1], "Replace number");
+        test.replaceNumber(testArray, 1, 7);
+        printTestResult(7, testArray[0], "Replace number");
+
+    }
+    public void testReplaceAllNumbers() {
+        ArrayUtil test = new ArrayUtil();
+        int[] testArray = test.createArray(15);
+        test.fillArray(testArray);
+        test.replaceAllNumbers(testArray, 9, 11);
+        printTestResult(11, testArray[0],"Replace all numbers");
+    }
+    public void testRotationNumbers() {
+        ArrayUtil test = new ArrayUtil();
+        int[] testArray = test.createArray(15);
+        test.fillArrayWithNumber(testArray);
+        test.rotationAllNumberInArray(testArray);
+        printTestResult(1, testArray[14], "Rotation all numbers");
+
 
     }
     public void printTestResult(boolean expectedResult, boolean result, String testName) {
