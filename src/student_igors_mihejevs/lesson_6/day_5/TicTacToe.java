@@ -82,7 +82,7 @@ class TicTacToe {
             }
             if (isEmpty) break;
         }
-        if (!isEmpty || !isWinPosition(field, 0) || !isWinPosition(field, 1))
+        if (!isEmpty && !isWinPosition(field, 0) && !isWinPosition(field, 1))
             isDraw = true;
         return isDraw;
     }

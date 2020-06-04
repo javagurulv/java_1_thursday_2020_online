@@ -17,7 +17,7 @@ class TicTacToeDemo {
         int[][] tttDemo4 = {{1, 0, 1}, {0, 0, 1}, {1, 0, 0}};
         tikTakToe.printDoubleArrayToConsole(tttDemo4);
         System.out.println(tikTakToe.isWinPosition(tttDemo4, 1));
-        int[][] tttDemo5 = {{1, 0, 1}, {0, 0, 0}, {1, 1, 0}};
+        int[][] tttDemo5 = {{1, 0, 1}, {1, 0, 0}, {0, 1, 1}};
         tikTakToe.printDoubleArrayToConsole(tttDemo4);
         System.out.println(tikTakToe.isDrawPosition(tttDemo5));
     }
