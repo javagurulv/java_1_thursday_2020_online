@@ -15,9 +15,9 @@ class TicTacToe {
         return field;
     }
 
-    void printFieldToConsole(int[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Row " + (i + 1) + " : " + Arrays.toString(arr[i]));
+    void printFieldToConsole(int[][] field) {
+        for (int i = 0; i < field.length; i++) {
+            System.out.println("Row " + (i + 1) + " : " + Arrays.toString(field[i]));
         }
     }
 
