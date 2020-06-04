@@ -14,7 +14,7 @@ class ArrayUtilTest {
     public void testArrayRotation(){
         ArrayUtil test = new ArrayUtil();
         int[] testArray = test.createArray(10);
-        test.fillArrayFromOneToTen(testArray);
+        test.fillArrayFromOne(testArray);
         test.arrayRotation(testArray);
         boolean result = ((testArray[0] == 10) && testArray[9] == 1);
         printTestResult(true, result);
@@ -23,17 +23,17 @@ class ArrayUtilTest {
     public void testReplaceAllNumbers() {
         ArrayUtil test = new ArrayUtil();
         int[] testArray = test.createArray(10);
-        test.fillArrayFromOneToTen(testArray);
-        test.replaceNumber(testArray, 1, 2);
+        test.fillArrayFromOne(testArray);
+        test.replaceNumber(testArray, 1, 100);
         test.replaceAll(testArray, 2, 100);
         boolean result = ((testArray[0] == 100) && (testArray[1] == 100));
-        printTestResult(true, true);
+        printTestResult(true, result);
     }
 
     public void testReplaceNumber() {
         ArrayUtil test = new ArrayUtil();
         int[] testArray = test.createArray(10);
-        test.fillArrayFromOneToTen(testArray);
+        test.fillArrayFromOne(testArray);
         test.replaceNumber(testArray, 1, 100);
         printTestResult(100, testArray[0]);
     }
@@ -51,9 +51,9 @@ class ArrayUtilTest {
     public void testFindNumber(){
         ArrayUtil test = new ArrayUtil();
         int[] testArray = test.createArray(10);
-        test.fillArrayFromOneToTen(testArray);
+        test.fillArrayFromOne(testArray);
         boolean result = test.isNumberInArray(5, testArray);
-        printTestResult(true, true);
+        printTestResult(true, result);
     }
 
     public void printTestResult(boolean expectedResult, boolean result){

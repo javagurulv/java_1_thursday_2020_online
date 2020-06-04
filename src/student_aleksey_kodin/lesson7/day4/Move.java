@@ -4,20 +4,25 @@ class Move {
     private final int row;
     private final int column;
 
-    public Move(int row,int column) {
+    public Move(int row, int column) {
         this.row = row;
         this.column = column;
     }
+
     public int getRow() {
-        if (row < 0 || row > 2) {
+        if (isNumberOutOfRangeField(row)) {
             return -1;
         }
-    return row;
+        return row;
     }
+
     public int getColumn() {
-        if (column < 0 || column > 2) {
+        if (isNumberOutOfRangeField(column)) {
             return -1;
         }
-    return column;
+        return column;
+    }
+    private boolean isNumberOutOfRangeField(int playerInput) {
+        return playerInput < 0 || playerInput > 2;
     }
 }

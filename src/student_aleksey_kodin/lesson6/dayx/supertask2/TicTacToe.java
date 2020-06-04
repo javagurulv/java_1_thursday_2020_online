@@ -1,5 +1,6 @@
 package student_aleksey_kodin.lesson6.dayx.supertask2;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class TicTacToe {
@@ -62,7 +63,6 @@ class TicTacToe {
                           && findWinRowAndColumn(field, column, false)) {
                 return true;
                 }
-
             }
         if (isTwoInRow(field[0][0],field[1][1],field[2][2])) {
             return  findWinDiagonals(field,true);
@@ -76,14 +76,7 @@ class TicTacToe {
     public boolean isDraw(int[][] field,int playerToCheck) {
         if (isWinPositionForHorizontals(field,playerToCheck) && isWinPositionForVerticals(field,playerToCheck) &&
                 isWinPositionForDiagonals(field,playerToCheck)) return true;
-    return !isFreePlace(field);
-    }
-    public Move getNextMove() {
-        System.out.println("Input row: ");
-            int row = new Scanner(System.in).nextInt();
-                System.out.println("Input column: ");
-                    int column = new Scanner(System.in).nextInt();
-    return new Move(row,column);
+    return !isFreeCell(field);
     }
     public void printFieldToConsole(int[][] field) {
         for (int[] row : field) {
@@ -118,29 +111,67 @@ class TicTacToe {
         }
     }
     private boolean movePlayer0(int[][] field) {
-
-            if (isWin(field,0)) {
-                setRowMovePosition(getRowWinPosition());
-                setColumnMovePosition(getColumnWinPosition());
+            if (isComputerCanWin(field,0)) {
+                setWinMovePosition();
                 return true;
             }
-            if (isWin(field,1)) {
-                setRowMovePosition(getRowWinPosition());
-                setColumnMovePosition(getColumnWinPosition());
+            if (isPlayerCanWin(field,1)) {
+                setWinMovePosition();
                 return true;
             }
     return checkNextMove(field);
     }
+    private boolean isComputerCanWin(int[][] field,int playerToCheck) {
+        return isWin(field,playerToCheck);
+    }
+    private boolean isPlayerCanWin(int[][] field,int playerToCheck) {
+        return isWin(field,playerToCheck);
+    }
+    private void setWinMovePosition() {
+        setRowMovePosition(getRowWinPosition());
+        setColumnMovePosition(getColumnWinPosition());
+    }
     private void movePlayer1(int[][] field) {
         while (true) {
             Move move1 = getNextMove();
-            if (field[move1.getRow()][move1.getColumn()] == -1) {
+            if (isPlayerDoIllegalMove(move1)) {
+                printErrorMessage();
+                continue;
+            }
+            if (isPlayerMoveToFreeCell(field,move1)) {
                 field[move1.getRow()][move1.getColumn()] = 1;
                 break;
             } else {
-                System.out.println("Illegal move. Try again");
+                printErrorMessage();
             }
         }
+    }
+    public Move getNextMove() {
+        int row = -1;
+        int column = -1;
+        try {
+
+            System.out.println("Input row:");
+            row = getPlayerMove();
+            System.out.println("Input column:");
+            column = getPlayerMove();
+
+        } catch (InputMismatchException e) {
+            System.out.println("Please enter numbers from 0 to 2");
+        }
+        return new Move(row, column);
+    }
+    private int getPlayerMove() {
+        return new Scanner(System.in).nextInt();
+    }
+    private boolean isPlayerDoIllegalMove(Move playerMove) {
+        return playerMove.getRow() == -1 || playerMove.getColumn() == -1;
+    }
+    private boolean isPlayerMoveToFreeCell(int[][] field,Move playerMove) {
+        return field[playerMove.getRow()][playerMove.getColumn()] == -1;
+    }
+    private void printErrorMessage() {
+        System.out.println("Illegal move. Try again");
     }
     private boolean checkToDraw(int[][] field,int playerToCheck) {
         if (isDraw(field, playerToCheck)) {
@@ -180,10 +211,9 @@ class TicTacToe {
     public void setColumnMovePosition(int columnMovePosition) {
         this.columnMovePosition = columnMovePosition;
     }
-
     private boolean isTwoInRow(int firstValue, int secondValue, int thirdValue){
         if (firstValue == -1 && secondValue == -1 && thirdValue == -1) return false;
-        if (!isEmptyPlace(firstValue,secondValue,thirdValue)) return false;
+        if (!isEmptyCell(firstValue,secondValue,thirdValue)) return false;
         return firstValue == secondValue || secondValue == thirdValue || firstValue == thirdValue;
     }
     private boolean findWinRowAndColumn(int[][] field,int position,boolean isRow) {
@@ -226,7 +256,7 @@ class TicTacToe {
         }
     return false;
     }
-    private boolean isEmptyPlace(int firstValue, int secondValue, int thirdValue) {
+    private boolean isEmptyCell(int firstValue, int secondValue, int thirdValue) {
         if (firstValue == secondValue) {
             if (firstValue == -1) return false;
         }
@@ -238,12 +268,11 @@ class TicTacToe {
         }
     return true;
     }
-    private boolean isFreePlace(int[][] field) {
+    private boolean isFreeCell(int[][] field) {
         for (int row = 0; row < field.length; row++) {
             for (int column = 0; column < field[0].length; column++) {
                 if (field[row][column] == -1) {
-                    setRowMovePosition(row);
-                    setColumnMovePosition(column);
+                    setNextMove(row,column);
                     return true;
                 }
             }
@@ -251,32 +280,35 @@ class TicTacToe {
     return false;
     }
     private boolean checkNextMove(int[][] field) {
-        if (field[0][0] == -1) {
-            setRowMovePosition(0);
-            setColumnMovePosition(0);
+        if (isHaveFreeCell(field[0][0])) {
+            setNextMove(0,0);
             return true;
         }
-        if (field[2][0] == -1) {
-            setRowMovePosition(2);
-            setColumnMovePosition(0);
+        if (isHaveFreeCell(field[2][0])) {
+            setNextMove(2,0);
             return true;
         }
-        if (field[2][2] == -1) {
-            setRowMovePosition(2);
-            setColumnMovePosition(2);
+        if (isHaveFreeCell(field[2][2])) {
+            setNextMove(2,2);
             return true;
         }
-        if (field[0][2] == -1) {
-            setRowMovePosition(0);
-            setColumnMovePosition(2);
+        if (isHaveFreeCell(field[0][2])) {
+            setNextMove(0,2);
             return true;
         }
-        if (field[1][1] == -1) {
-            setRowMovePosition(1);
-            setColumnMovePosition(1);
+        if (isHaveFreeCell(field[1][1])) {
+            setNextMove(1,1);
             return true;
         }
-        return isFreePlace(field);
+        return isFreeCell(field);
+    }
+    private boolean isHaveFreeCell(int cell) {
+        final int FREE_CELL = -1;
+        return cell == FREE_CELL;
+    }
+    private void  setNextMove(int row, int column) {
+        setRowMovePosition(row);
+        setColumnMovePosition(column);
     }
     private boolean isPlayerWinCombination(int firstValue, int secondValue, int thirdValue,int playerToCheck) {
         return firstValue == playerToCheck || secondValue == playerToCheck || thirdValue == playerToCheck;

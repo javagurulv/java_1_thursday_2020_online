@@ -22,8 +22,82 @@ class TicTacToeTest {
     temp.testWinPositionForDiagonalsV3();
     temp.testWinPositionForDiagonalsV4();
     temp.testWinPositionForDiagonalsFalse();
+    temp.testWinPositionFalse();
+    temp.testWinPositionV1();
+    temp.testWinPositionV2();
+    temp.testWinPositionV3();
+    temp.testWinPositionV4();
+    temp.testWinPositionV5();
+    temp.testWinPositionV6();
+    temp.testDrawPosition();
+    temp.testDrawPositionFalse();
 
 
+
+    }
+
+    public void testDrawPositionFalse(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{0,1,0}, {0,1,-1}, {0,-1,1}};
+        boolean result = test.isDrawPosition(testGameField);
+        printTestResult(false, result, "Draw position is false");
+    }
+
+    public void testDrawPosition(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{0,0,1}, {1,1,0}, {0,1,1}};
+        boolean result = test.isDrawPosition(testGameField);
+        printTestResult(true, result, "Draw position");
+    }
+
+    public void testWinPositionV6(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{1,-1,-1}, {1,-1,-1}, {1,-1,-1}};
+        boolean result = test.isWinPosition(testGameField, 1);
+        printTestResult(true, result, "Win position V6");
+    }
+
+    public void testWinPositionV5(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{1,-1,-1}, {-1,1,-1}, {-1,-1,1}};
+        boolean result = test.isWinPosition(testGameField, 1);
+        printTestResult(true, result, "Win position V5");
+    }
+
+    public void testWinPositionV4(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{0,-1,-1}, {0,-1,-1}, {0,-1,-1}};
+        boolean result = test.isWinPosition(testGameField, 0);
+        printTestResult(true, result, "Win position V4");
+    }
+
+    public void testWinPositionV3(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{0,-1,-1}, {-1,0,-1}, {-1,-1,0}};
+        boolean result = test.isWinPosition(testGameField, 0);
+        printTestResult(true, result, "Win position V3");
+    }
+
+    public void testWinPositionV2(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{1,1,1}, {-1,1,-1}, {1,-1,-1}};
+        boolean result = test.isWinPosition(testGameField, 1);
+        printTestResult(true, result, "Win position V2");
+    }
+
+    public void testWinPositionV1(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{0,0,0}, {-1,1,-1}, {1,-1,-1}};
+        boolean result = test.isWinPosition(testGameField, 0);
+        printTestResult(true, result, "Win position V1");
+    }
+
+
+    public void testWinPositionFalse(){
+        TicTacToe test = new TicTacToe();
+        int[][] testGameField = {{-1,-1,1}, {-1,1,-1}, {1,-1,-1}};
+        boolean result = test.isWinPosition(testGameField, 0);
+        printTestResult(false, result, "Win position is false");
     }
 
     public void testWinPositionForDiagonalsV4(){

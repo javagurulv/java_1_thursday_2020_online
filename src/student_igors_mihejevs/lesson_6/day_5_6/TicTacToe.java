@@ -1,0 +1,85 @@
+package student_igors_mihejevs.lesson_6.day_5_6;
+
+import java.util.Arrays;
+
+class TicTacToe {
+
+    // create field and initialise it (fill in with -1)
+    int[][] createField() {
+        int[][] field = new int[3][3];
+        int initNumber = -1;
+        for (int[] ints : field) {
+            Arrays.fill(ints, initNumber);
+        }
+        return field;
+    }
+
+    void printFieldToConsole(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Row " + (i + 1) + " : " + Arrays.toString(arr[i]));
+        }
+    }
+
+    boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
+        boolean isWin = false;
+        for (int[] ints : field) {
+            int counter = 0;
+            for (int anInt : ints) {
+                if (anInt == playerToCheck) counter++;
+            }
+            if (counter == 3) {
+                isWin = true;
+                break;
+            }
+        }
+        return isWin;
+    }
+
+    boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
+        boolean isWin = false;
+        for (int i = 0; i < field.length; i++) {
+            int counter = 0;
+            for (int j = 0; j < field[i].length; j++) {
+                if (field[j][i] == playerToCheck) counter++;
+            }
+            if (counter == 3) {
+                isWin = true;
+                break;
+            }
+
+        }
+        return isWin;
+    }
+
+    boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
+        boolean isWin = false;
+
+        if ((field[0][0] == field[1][1]) && (field[0][0] == field[2][2]) && (field[0][0] == playerToCheck))
+            isWin = true;
+        else if ((field[0][2] == field[1][1]) && (field[0][2] == field[2][0]) && (field[0][2] == playerToCheck))
+            isWin = true;
+        return isWin;
+    }
+
+    boolean isWinPosition(int[][] field, int playerToCheck) {
+        return (isWinPositionForHorizontals(field, playerToCheck) || isWinPositionForVerticals(field, playerToCheck)
+                || isWinPositionForDiagonals(field, playerToCheck));
+    }
+
+    boolean isDrawPosition(int[][] field) {
+        boolean isDraw = false;
+        boolean isEmpty = false;
+        for (int[] ints : field) {
+            for (int anInt : ints) {
+                if (anInt == -1) {
+                    isEmpty = true;
+                    break;
+                }
+            }
+            if (isEmpty) break;
+        }
+        if (!isEmpty && !isWinPosition(field, 0) && !isWinPosition(field, 1))
+            isDraw = true;
+        return isDraw;
+    }
+}
