@@ -27,6 +27,8 @@ class TicTacToeDemo {
 
         //tikTakToe.createField();
         tikTakToe.printFieldToConsole(tikTakToe.createField());
+
+        tikTakToe.getNextMove();
     }
 
 }

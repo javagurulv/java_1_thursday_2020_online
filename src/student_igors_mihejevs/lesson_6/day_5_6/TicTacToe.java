@@ -1,6 +1,7 @@
 package student_igors_mihejevs.lesson_6.day_5_6;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 class TicTacToe {
 
@@ -82,4 +83,21 @@ class TicTacToe {
             isDraw = true;
         return isDraw;
     }
+
+    public Move getNextMove() {
+        Scanner sc = new Scanner(System.in);
+
+        int firstCoordinate;
+        int secondCoordinate;
+        System.out.println("You need to enter coordinates of place, where do you want to go");
+        do {
+            System.out.print("Input first coordinate X (row) - number between 1 and 3 : ");
+            firstCoordinate = sc.nextInt() - 1;
+            System.out.print("Input second coordinate Y (column) - number between 1 and 3 : ");
+            secondCoordinate = sc.nextInt() - 1;
+        }
+        while (firstCoordinate < 0 || firstCoordinate > 2 || secondCoordinate < 0 || secondCoordinate > 2);
+        return new Move(firstCoordinate, secondCoordinate);
+    }
+
 }
