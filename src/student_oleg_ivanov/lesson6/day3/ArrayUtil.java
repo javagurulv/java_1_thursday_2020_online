@@ -72,8 +72,6 @@ class ArrayUtil {
             if (arr[i] == numberToReplace) {
                 arr[i] = newNumber;
                 break;
-
-
             }
         }
     }
@@ -81,6 +79,20 @@ class ArrayUtil {
     public void fillArrayWithNumber(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
+        }
+    }
+    public  void replaceAllNumbers(int[] arr, int numberToReplace, int newNumber) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr [i] = newNumber;
+            }
+        }
+    }
+    public void rotationAllNumberInArray(int[] arr) {
+        for (int i = 0; i < arr.length /2; i++) {
+            int temporaryNumber = arr[arr.length -1 -i];
+            arr[arr.length -1 -i] = arr[i];
+            arr[i] = temporaryNumber;
         }
     }
 }

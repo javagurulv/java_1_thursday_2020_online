@@ -1,6 +1,7 @@
 package student_igors_mihejevs.lesson_6.day_5_6;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 class TicTacToe {
 
@@ -14,9 +15,9 @@ class TicTacToe {
         return field;
     }
 
-    void printFieldToConsole(int[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Row " + (i + 1) + " : " + Arrays.toString(arr[i]));
+    void printFieldToConsole(int[][] field) {
+        for (int[] ints : field) {
+            System.out.println(Arrays.toString(ints));
         }
     }
 
@@ -82,4 +83,52 @@ class TicTacToe {
             isDraw = true;
         return isDraw;
     }
+
+    Move getNextMove() {
+        Scanner sc = new Scanner(System.in);
+
+        int firstCoordinate;
+        int secondCoordinate;
+        System.out.println("You need to enter coordinates of place, where do you want to go");
+        do {
+            System.out.print("Input first coordinate X (row) - number between 1 and 3 : ");
+            firstCoordinate = sc.nextInt() - 1;
+            System.out.print("Input second coordinate Y (column) - number between 1 and 3 : ");
+            secondCoordinate = sc.nextInt() - 1;
+        }
+        while (firstCoordinate < 0 || firstCoordinate > 2 || secondCoordinate < 0 || secondCoordinate > 2);
+        return new Move(firstCoordinate, secondCoordinate);
+    }
+
+    void play() {
+        int[][] field = createField();
+        while(true) {
+            printFieldToConsole(field);
+            Move move0 = getNextMove();
+            field[move0.getX()][move0.getY()] = 0;
+            printFieldToConsole(field);
+            if (isWinPosition(field, 0)) {
+                System.out.println("Player 0 WIN!");
+                break;
+            }
+            if (isDrawPosition(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+
+            printFieldToConsole(field);
+            Move move1 = getNextMove();
+            field[move1.getX()][move1.getY()] = 1;
+            printFieldToConsole(field);
+            if (isWinPosition(field, 1)) {
+                System.out.println("Player 1 WIN!");
+                break;
+            }
+            if (isDrawPosition(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+        }
+    }
+
 }
