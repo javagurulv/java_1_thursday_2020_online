@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_6.day_5;
+package student_igors_mihejevs.lesson_6.day_5_6;
 
 class TikTakToeTest {
 
