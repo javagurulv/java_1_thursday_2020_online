@@ -5,6 +5,8 @@ class ArrayUtilTest {
         ArrayUtilTest arrayUtilTest = new ArrayUtilTest();
         arrayUtilTest.testFindNumber();
         arrayUtilTest.testNumberCountInArray();
+        arrayUtilTest.testReplaceNumberInArray();
+
 
     }
 
@@ -22,6 +24,14 @@ class ArrayUtilTest {
         test.fillArray(testArray);
         int result = test.numberCountInArray(9, testArray);
         printTestResult(15, result,  "Number count in array: ");
+
+    }
+    public void testReplaceNumberInArray()  {
+        ArrayUtil test = new ArrayUtil();
+        int[] testArray = test.createArray(15);
+        test.fillArrayWithNumber(testArray);
+        test.replaceNumber(testArray, 2, 7);
+        printTestResult(7, testArray[1], "Replace number");
 
     }
     public void printTestResult(boolean expectedResult, boolean result, String testName) {
