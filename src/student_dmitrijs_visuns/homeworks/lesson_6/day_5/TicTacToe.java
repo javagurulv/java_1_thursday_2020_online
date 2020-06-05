@@ -1,85 +1,228 @@
 package student_dmitrijs_visuns.homeworks.lesson_6.day_5;
 
+import java.util.Scanner;
+
 class TicTacToe {
 
-    public static void main(String[] args) {
+    final int NUMBER_OF_HORIZONTALS = 3;
+    final int NUMBER_OF_VERTICALS = 3;
+    final int EMPTY_SPACE = -1;
+    final int PLAYER_ONE = 0;
+    final int PLAYER_TWO = 1;
 
+    public static void main(String[] args) {
+        TicTacToe game = new TicTacToe();
+        game.play();
     }
 
-    public int[][] createField() {
-        int[][] field = new int[3][3];
-        for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < field[i].length; j++) {
-                field[i][j] = -1;
+    public void play() {
+        int[][] gameField = createEmptyGameField();
+
+        while(true) {
+            printGameFieldToConsole(gameField);
+            Move playerOneMove = getNextMove();
+            gameField[playerOneMove.getX()][playerOneMove.getY()] = PLAYER_ONE;
+            if (isWinPosition(gameField, PLAYER_ONE)) {
+                System.out.println("Player 1 WIN!");
+                break;
+            }
+            if (isDrawPosition(gameField)) {
+                System.out.println("DRAW!");
+                break;
+            }
+
+            printGameFieldToConsole(gameField);
+            Move playerTwoMove = getNextMove();
+            gameField[playerTwoMove.getX()][playerTwoMove.getY()] = PLAYER_TWO;
+            if (isWinPosition(gameField, PLAYER_TWO)) {
+                System.out.println("Player 2 WIN!");
+                break;
+            }
+            if (isDrawPosition(gameField)) {
+                System.out.println("DRAW!");
+                break;
             }
         }
-        return field;
     }
 
-    public void printFieldToConsole(int[][] field) {
-        for (int i = 0; i < field.length; i++) {
-            for (int j = 0; j < field[i].length; j++) {
-                System.out.print(field[i][j] + " ");
+    public int[][] createEmptyGameField() {
+        int[][] gameField = new int[NUMBER_OF_VERTICALS][NUMBER_OF_HORIZONTALS];
+        for (int i = 0; i < NUMBER_OF_VERTICALS; i++) {
+            for (int j = 0; j < NUMBER_OF_HORIZONTALS; j++) {
+                gameField[i][j] = EMPTY_SPACE;
+            }
+        }
+        return gameField;
+    }
+
+
+    public void printGameFieldToConsole(int[][] gameField) {
+        for (int i = 0; i < NUMBER_OF_VERTICALS; i++) {
+            for (int j = 0; j < NUMBER_OF_HORIZONTALS; j++) {
+                System.out.print(gameField[i][j] + " ");
             }
             System.out.println("");
         }
 
     }
 
-    public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
-        if (field [0][0] == playerToCheck &&
-            field [0][1] == playerToCheck &&
-            field [0][2] == playerToCheck) {
+
+    public int inputCoordinateX () {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("New turn. Enter X coordinate (0-" +(NUMBER_OF_HORIZONTALS -1) + "): ");
+        int inputX = sc.nextInt();
+        while (inputX < 0 || inputX > (NUMBER_OF_HORIZONTALS -1)) {
+            inputX = sc.nextInt();
+        }
+        return inputX;
+    }
+
+
+    public int inputCoordinateY () {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Y coordinate (0-" +(NUMBER_OF_VERTICALS -1) + "): ");
+        int inputY = sc.nextInt();
+        while (inputY < 0 || inputY > (NUMBER_OF_VERTICALS -1)) {
+            inputY = sc.nextInt();
+        }
+        return inputY;
+    }
+
+
+    public Move getNextMove() {
+        return new Move(inputCoordinateX(), inputCoordinateY());
+    }
+
+
+    public boolean horizontalsWinPosition1 (int[][] gameField, int playerToCheck) {
+        return (gameField [0][0] == playerToCheck &&
+                gameField [0][1] == playerToCheck &&
+                gameField [0][2] == playerToCheck);
+    }
+
+
+    public boolean horizontalsWinPosition2 (int[][] gameField, int playerToCheck) {
+        return (gameField [1][0] == playerToCheck &&
+                gameField [1][1] == playerToCheck &&
+                gameField [1][2] == playerToCheck);
+    }
+
+
+    public boolean horizontalsWinPosition3 (int[][] gameField, int playerToCheck) {
+        return (gameField [2][0] == playerToCheck &&
+                gameField [2][1] == playerToCheck &&
+                gameField [2][2] == playerToCheck);
+    }
+
+
+    public boolean isWinPositionForHorizontals(int[][] gameField, int playerToCheck) {
+        if (horizontalsWinPosition1(gameField, playerToCheck) ||
+                horizontalsWinPosition2(gameField, playerToCheck) ||
+                horizontalsWinPosition3(gameField, playerToCheck)) {
             return true;
-        } else if (field [1][0] == playerToCheck &&
-                   field [1][1] == playerToCheck &&
-                   field [1][2] == playerToCheck) {
+        } else return false;
+    }
+
+
+    public boolean verticalsWinPosition1 (int[][] gameField, int playerToCheck) {
+        return (gameField [0][0] == playerToCheck &&
+                gameField [1][0] == playerToCheck &&
+                gameField [2][0] == playerToCheck);
+    }
+
+
+    public boolean verticalsWinPosition2 (int[][] gameField, int playerToCheck) {
+        return (gameField [0][1] == playerToCheck &&
+                gameField [1][1] == playerToCheck &&
+                gameField [2][1] == playerToCheck);
+    }
+
+
+    public boolean verticalsWinPosition3 (int[][] gameField, int playerToCheck) {
+        return (gameField [0][2] == playerToCheck &&
+                gameField [1][2] == playerToCheck &&
+                gameField [2][2] == playerToCheck);
+    }
+
+
+    public boolean isWinPositionForVerticals(int[][] gameField, int playerToCheck) {
+        if (verticalsWinPosition1(gameField, playerToCheck) ||
+                verticalsWinPosition2(gameField, playerToCheck) ||
+                verticalsWinPosition3(gameField, playerToCheck)) {
             return true;
-        } else if (field [2][0] == playerToCheck &&
-                   field [2][1] == playerToCheck &&
-                   field [2][2] == playerToCheck) {
+        } else return false;
+    }
+
+
+    public boolean diagonalsWinPosition1 (int[][] gameField, int playerToCheck) {
+        return (gameField [0][0] == playerToCheck &&
+                gameField [1][1] == playerToCheck &&
+                gameField [2][2] == playerToCheck);
+    }
+
+
+    public boolean diagonalsWinPosition2 (int[][] gameField, int playerToCheck) {
+        return (gameField [2][0] == playerToCheck &&
+                gameField [1][1] == playerToCheck &&
+                gameField [0][2] == playerToCheck);
+    }
+
+
+    public boolean isWinPositionForDiagonals(int[][] gameField, int playerToCheck) {
+        if (diagonalsWinPosition1(gameField, playerToCheck) ||
+                diagonalsWinPosition2(gameField, playerToCheck)) {
             return true;
         }
         else return false;
     }
 
-    public boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
-        if (field [0][0] == playerToCheck &&
-            field [1][0] == playerToCheck &&
-            field [2][0] == playerToCheck) {
-            return true;
-        } else if (field [0][1] == playerToCheck &&
-                   field [1][1] == playerToCheck &&
-                   field [2][1] == playerToCheck) {
-            return true;
-        } else if (field [0][2] == playerToCheck &&
-                   field [1][2] == playerToCheck &&
-                   field [2][2] == playerToCheck) {
-            return true;
-        }
-        else return false;
-    }
-
-    public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck) {
-        if (field [0][0] == playerToCheck &&
-            field [1][1] == playerToCheck &&
-            field [2][2] == playerToCheck) {
-            return true;
-        } else if ((field [2][0] == playerToCheck) && (field [1][1] == playerToCheck) && (field [0][2] == playerToCheck)) {
-            return true;
-        }
-        else return false;
-    }
 
     public boolean isWinPosition(int[][] field, int playerToCheck) {
         if (isWinPositionForHorizontals(field, playerToCheck) ||
-            isWinPositionForVerticals(field, playerToCheck) ||
-            isWinPositionForDiagonals(field, playerToCheck)) {
+                isWinPositionForVerticals(field, playerToCheck) ||
+                isWinPositionForDiagonals(field, playerToCheck)) {
             return true;
-        } else { return false; }
+        } else return false;
     }
 
 
+    public boolean isEmptySpaces (int[][] gameField) {
+        boolean isEmpty = false;
+        for (int i = 0; i < NUMBER_OF_VERTICALS; i++) {
+            for (int j = 0; j < NUMBER_OF_HORIZONTALS; j++) {
+                if (gameField[i][j] == EMPTY_SPACE) {
+                    isEmpty = true;
+                    break;
+                }
+            }
+        } return isEmpty;
+    }
+
+
+    public boolean isWinPositionForFirstPlayer(int[][] gameField) {
+        if (isWinPositionForHorizontals(gameField, PLAYER_ONE) ||
+                isWinPositionForVerticals(gameField, PLAYER_ONE) ||
+                isWinPositionForDiagonals(gameField, PLAYER_ONE)) {
+            return true;
+        } else return false;
+
+    }
+
+
+    public boolean isWinPositionForSecondPlayer(int[][] gameField) {
+        if (isWinPositionForHorizontals(gameField, PLAYER_TWO) ||
+                isWinPositionForVerticals(gameField, PLAYER_TWO) ||
+                isWinPositionForDiagonals(gameField, PLAYER_TWO)) {
+            return true;
+        } else return false;
+    }
+
+
+    public boolean isDrawPosition(int[][] gameField) {
+        return (!isWinPositionForFirstPlayer(gameField) &&
+                !isWinPositionForSecondPlayer(gameField) &&
+                !isEmptySpaces(gameField));
+    }
 
 
 }

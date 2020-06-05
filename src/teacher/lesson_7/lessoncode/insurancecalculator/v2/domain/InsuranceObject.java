@@ -1,16 +1,19 @@
-package teacher.lesson_7.lessoncode.insurancecalculator.domain;
+package teacher.lesson_7.lessoncode.insurancecalculator.v2.domain;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class InsuranceObject {
+public class InsuranceObject {
 
-	private List<SubInsuranceObject> subInsuranceObjects;
+	private InsuranceObjectType insuranceObjectType;
 	private BigDecimal cadastralValue;
 	private List<InsuranceRisk> insuranceRisks;
+	private List<SubInsuranceObject> subInsuranceObjects;
 
-	public InsuranceObject(BigDecimal cadastralValue) {
+	public InsuranceObject(InsuranceObjectType insuranceObjectType,
+			               BigDecimal cadastralValue) {
+		this.insuranceObjectType = insuranceObjectType;
 		this.cadastralValue = cadastralValue;
 		this.subInsuranceObjects = new ArrayList<>();
 		this.insuranceRisks = new ArrayList<>();
@@ -24,6 +27,10 @@ public abstract class InsuranceObject {
 		this.insuranceRisks.add(insuranceRisk);
 	}
 
+	public InsuranceObjectType getInsuranceObjectType() {
+		return insuranceObjectType;
+	}
+
 	public List<SubInsuranceObject> getSubInsuranceObjects() {
 		return subInsuranceObjects;
 	}
@@ -31,8 +38,6 @@ public abstract class InsuranceObject {
 	public List<InsuranceRisk> getInsuranceRisks() {
 		return insuranceRisks;
 	}
-
-	public abstract BigDecimal getRiskCoeficient(InsuranceRisk insuranceRisk);
 
 	public BigDecimal getCadastralValue() {
 		return cadastralValue;

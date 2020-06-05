@@ -1,4 +1,4 @@
-package teacher.lesson_7.lessoncode.insurancecalculator.domain;
+package teacher.lesson_7.lessoncode.insurancecalculator.v2.domain;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -24,6 +24,10 @@ public class SubInsuranceObject {
 
 	public BigDecimal getPrice() {
 		return price;
+	}
+
+	public boolean isInsuredFrom(InsuranceRisk insuranceRisk) {
+		return this.getInsuranceRisks().contains(insuranceRisk);
 	}
 
 }

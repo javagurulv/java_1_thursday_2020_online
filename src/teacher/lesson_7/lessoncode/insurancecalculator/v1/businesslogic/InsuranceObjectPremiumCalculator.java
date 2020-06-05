@@ -1,9 +1,9 @@
-package teacher.lesson_7.lessoncode.insurancecalculator.businesslogic;
+package teacher.lesson_7.lessoncode.insurancecalculator.v1.businesslogic;
 
 import java.math.BigDecimal;
 
-import teacher.lesson_7.lessoncode.insurancecalculator.domain.InsuranceObject;
-import teacher.lesson_7.lessoncode.insurancecalculator.domain.InsuranceRisk;
+import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.InsuranceObject;
+import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.InsuranceRisk;
 
 public class InsuranceObjectPremiumCalculator {
 
