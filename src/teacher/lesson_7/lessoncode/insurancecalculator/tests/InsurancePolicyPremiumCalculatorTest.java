@@ -2,18 +2,18 @@ package teacher.lesson_7.lessoncode.insurancecalculator.tests;
 
 import java.math.BigDecimal;
 
-import teacher.lesson_7.lessoncode.insurancecalculator.businesslogic.PolicyPremiumCalculator;
+import teacher.lesson_7.lessoncode.insurancecalculator.businesslogic.InsurancePolicyPremiumCalculator;
 import teacher.lesson_7.lessoncode.insurancecalculator.domain.House;
 import teacher.lesson_7.lessoncode.insurancecalculator.domain.InsuranceObject;
 import teacher.lesson_7.lessoncode.insurancecalculator.domain.InsuranceRisk;
 import teacher.lesson_7.lessoncode.insurancecalculator.domain.Policy;
 
-public class PremiumCalculatorTest {
+public class InsurancePolicyPremiumCalculatorTest {
 
-	private PolicyPremiumCalculator policyPremiumCalculator = new PolicyPremiumCalculator();
+	private InsurancePolicyPremiumCalculator insurancePolicyPremiumCalculator = new InsurancePolicyPremiumCalculator();
 
 	public static void main(String[] args) {
-		PremiumCalculatorTest test = new PremiumCalculatorTest();
+		InsurancePolicyPremiumCalculatorTest test = new InsurancePolicyPremiumCalculatorTest();
 		test.testPolicyForOneInsuranceObject();
 	}
 
@@ -24,7 +24,7 @@ public class PremiumCalculatorTest {
 		Policy policy = new Policy();
 		policy.addInsuranceObject(house);
 
-		BigDecimal premium = policyPremiumCalculator.calculate(policy);
+		BigDecimal premium = insurancePolicyPremiumCalculator.calculate(policy);
 		if (premium.compareTo(new BigDecimal("5000.00")) == 0) {
 			System.out.println("OK!");
 		} else {

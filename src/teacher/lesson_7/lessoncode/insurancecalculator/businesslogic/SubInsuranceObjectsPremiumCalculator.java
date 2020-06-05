@@ -10,10 +10,10 @@ import teacher.lesson_7.lessoncode.insurancecalculator.domain.SubInsuranceObject
 
 public class SubInsuranceObjectsPremiumCalculator {
 
-	private static final BigDecimal STANDART_FIRE_RISK_COEF = new BigDecimal("0.03");
+	private static final BigDecimal STANDARD_FIRE_RISK_COEF = new BigDecimal("0.03");
 	private static final BigDecimal OVERPRICED_FIRE_RISK_COEF = new BigDecimal("0.04");
 
-	private static final BigDecimal STANDART_THEFT_RISK_COEF = new BigDecimal("0.01");
+	private static final BigDecimal STANDARD_THEFT_RISK_COEF = new BigDecimal("0.01");
 	private static final BigDecimal OVERPRICED_THEFT_RISK_COEF = new BigDecimal("0.02");
 
 	private static final BigDecimal PRICE_BORDER = new BigDecimal("2000.00");
@@ -54,14 +54,14 @@ public class SubInsuranceObjectsPremiumCalculator {
 			BigDecimal sum) {
 		if (InsuranceRisk.FIRE == insuranceRisk) {
 			if (sum.compareTo(PRICE_BORDER) < 0) {
-				return STANDART_FIRE_RISK_COEF;
+				return STANDARD_FIRE_RISK_COEF;
 			} else {
 				return OVERPRICED_FIRE_RISK_COEF;
 			}
 		}
 		if (InsuranceRisk.THEFT == insuranceRisk) {
 			if (sum.compareTo(PRICE_BORDER) < 0) {
-				return STANDART_THEFT_RISK_COEF;
+				return STANDARD_THEFT_RISK_COEF;
 			} else {
 				return OVERPRICED_THEFT_RISK_COEF;
 			}

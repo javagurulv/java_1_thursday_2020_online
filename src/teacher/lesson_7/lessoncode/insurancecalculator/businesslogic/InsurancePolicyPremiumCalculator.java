@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import teacher.lesson_7.lessoncode.insurancecalculator.domain.InsuranceObject;
 import teacher.lesson_7.lessoncode.insurancecalculator.domain.Policy;
 
-public class PolicyPremiumCalculator {
+public class InsurancePolicyPremiumCalculator {
 
 	private InsuranceObjectPremiumCalculator insuranceObjectPremiumCalculator
 			= new InsuranceObjectPremiumCalculator();
