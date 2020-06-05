@@ -1,4 +1,4 @@
-package teacher.lesson_7.lessoncode.insurancecalculator.domain;
+package teacher.lesson_7.lessoncode.insurancecalculator.v1.domain;
 
 import java.math.BigDecimal;
 

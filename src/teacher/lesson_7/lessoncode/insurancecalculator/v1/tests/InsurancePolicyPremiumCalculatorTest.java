@@ -1,12 +1,12 @@
-package teacher.lesson_7.lessoncode.insurancecalculator.tests;
+package teacher.lesson_7.lessoncode.insurancecalculator.v1.tests;
 
 import java.math.BigDecimal;
 
-import teacher.lesson_7.lessoncode.insurancecalculator.businesslogic.InsurancePolicyPremiumCalculator;
-import teacher.lesson_7.lessoncode.insurancecalculator.domain.House;
-import teacher.lesson_7.lessoncode.insurancecalculator.domain.InsuranceObject;
-import teacher.lesson_7.lessoncode.insurancecalculator.domain.InsuranceRisk;
-import teacher.lesson_7.lessoncode.insurancecalculator.domain.Policy;
+import teacher.lesson_7.lessoncode.insurancecalculator.v1.businesslogic.InsurancePolicyPremiumCalculator;
+import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.House;
+import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.InsuranceObject;
+import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.InsuranceRisk;
+import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.Policy;
 
 public class InsurancePolicyPremiumCalculatorTest {
 
