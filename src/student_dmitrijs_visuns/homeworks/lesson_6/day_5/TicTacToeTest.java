@@ -5,15 +5,18 @@ class TicTacToeTest {
     public static void main(String[] args) {
 
         TicTacToeTest newTest = new TicTacToeTest();
+
         newTest.createEmptyGameFieldTest();
-        newTest.checkForEmptySpacesTest1();
-        newTest.checkForEmptySpacesTest2();
         newTest.isWinPositionForHorizontalsTest1();
         newTest.isWinPositionForHorizontalsTest2();
         newTest.isWinPositionForHorizontalsTest3();
         newTest.isWinPositionForVerticalsTest1();
         newTest.isWinPositionForVerticalsTest2();
         newTest.isWinPositionForVerticalsTest3();
+        newTest.isWinPositionForDiagonalsTest1();
+        newTest.isWinPositionForDiagonalsTest2();
+        newTest.checkForEmptySpacesTest1();
+        newTest.checkForEmptySpacesTest2();
         newTest.isDrawPositionTest();
         newTest.isWinPositionForFirstPlayerTest();
         newTest.isWinPositionForSecondPlayerTest();
@@ -97,6 +100,26 @@ class TicTacToeTest {
             System.out.println("Vertical winning position test #3 - OK");
         } else {
             System.out.println("Vertical winning position test #3 - FAIL");
+        }
+    }
+
+    public void isWinPositionForDiagonalsTest1 () {
+        TicTacToe testTacToe = new TicTacToe();
+        int[][] newField = new int[][] { {0, -1, -1}, {-1, 0, -1}, {-1, -1, 0} };
+        if (testTacToe.isWinPositionForDiagonals(newField, 0)) {
+            System.out.println("Diagonal winning position test #1 - OK");
+        } else {
+            System.out.println("Diagonal winning position test #1 - FAIL");
+        }
+    }
+
+    public void isWinPositionForDiagonalsTest2 () {
+        TicTacToe testTacToe = new TicTacToe();
+        int[][] newField = new int[][] { {-1, -1, 0}, {-1, 0, -1}, {0, -1, -1} };
+        if (testTacToe.isWinPositionForDiagonals(newField, 0)) {
+            System.out.println("Diagonal winning position test #2 - OK");
+        } else {
+            System.out.println("Diagonal winning position test #2 - FAIL");
         }
     }
 
