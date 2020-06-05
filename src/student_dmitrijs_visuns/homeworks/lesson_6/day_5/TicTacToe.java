@@ -71,7 +71,7 @@ class TicTacToe {
         Scanner sc = new Scanner(System.in);
         System.out.println("New turn. Enter X coordinate (0-" +(NUMBER_OF_HORIZONTALS -1) + "): ");
         int inputX = sc.nextInt();
-        while (inputX < 0 || inputX > NUMBER_OF_HORIZONTALS -1) {
+        while (inputX < 0 || inputX > (NUMBER_OF_HORIZONTALS -1)) {
             inputX = sc.nextInt();
         }
         return inputX;
@@ -82,7 +82,7 @@ class TicTacToe {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Y coordinate (0-" +(NUMBER_OF_VERTICALS -1) + "): ");
         int inputY = sc.nextInt();
-        while (inputY < 0 || inputY > NUMBER_OF_VERTICALS -1) {
+        while (inputY < 0 || inputY > (NUMBER_OF_VERTICALS -1)) {
             inputY = sc.nextInt();
         }
         return inputY;
