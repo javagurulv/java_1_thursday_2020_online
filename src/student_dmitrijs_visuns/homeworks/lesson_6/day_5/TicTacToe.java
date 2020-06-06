@@ -20,8 +20,11 @@ class TicTacToe {
 
         while(true) {
             printGameFieldToConsole(gameField);
-            Move playerOneMove = getNextMove();
+
+            System.out.println("PLAYER 1 MOVE");
+            Move playerOneMove = getMoveAndCheckIsItValid(gameField);
             gameField[playerOneMove.getX()][playerOneMove.getY()] = PLAYER_ONE;
+
             if (isWinPosition(gameField, PLAYER_ONE)) {
                 System.out.println("Player 1 WIN!");
                 break;
@@ -32,8 +35,10 @@ class TicTacToe {
             }
 
             printGameFieldToConsole(gameField);
-            Move playerTwoMove = getNextMove();
+            System.out.println("PLAYER 2 MOVE");
+            Move playerTwoMove = getMoveAndCheckIsItValid(gameField);
             gameField[playerTwoMove.getX()][playerTwoMove.getY()] = PLAYER_TWO;
+
             if (isWinPosition(gameField, PLAYER_TWO)) {
                 System.out.println("Player 2 WIN!");
                 break;
@@ -59,7 +64,7 @@ class TicTacToe {
     public void printGameFieldToConsole(int[][] gameField) {
         for (int i = 0; i < NUMBER_OF_VERTICALS; i++) {
             for (int j = 0; j < NUMBER_OF_HORIZONTALS; j++) {
-                System.out.print(gameField[i][j] + " ");
+                System.out.print("  " + gameField[i][j] + "  ");
             }
             System.out.println("");
         }
@@ -69,9 +74,9 @@ class TicTacToe {
 
     public int inputCoordinateX () {
         Scanner sc = new Scanner(System.in);
-        System.out.println("New turn. Enter X coordinate (0-" +(NUMBER_OF_HORIZONTALS -1) + "): ");
+        System.out.println("Enter X coordinate (0-" +(NUMBER_OF_HORIZONTALS -1) + "): ");
         int inputX = sc.nextInt();
-        while (inputX < 0 || inputX > (NUMBER_OF_HORIZONTALS -1)) {
+        while (inputX < 0 || inputX > NUMBER_OF_HORIZONTALS -1) {
             inputX = sc.nextInt();
         }
         return inputX;
@@ -82,7 +87,7 @@ class TicTacToe {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Y coordinate (0-" +(NUMBER_OF_VERTICALS -1) + "): ");
         int inputY = sc.nextInt();
-        while (inputY < 0 || inputY > (NUMBER_OF_VERTICALS -1)) {
+        while (inputY < 0 || inputY > NUMBER_OF_VERTICALS -1) {
             inputY = sc.nextInt();
         }
         return inputY;
@@ -91,6 +96,16 @@ class TicTacToe {
 
     public Move getNextMove() {
         return new Move(inputCoordinateX(), inputCoordinateY());
+    }
+
+    public Move getMoveAndCheckIsItValid (int[][] gameField) {
+        Move playerMove = getNextMove();
+        while (gameField[playerMove.getX()][playerMove.getY()] != EMPTY_SPACE) {
+            System.out.println("This field is already marked!");
+            printGameFieldToConsole(gameField);
+            playerMove = getNextMove();
+
+        } return playerMove;
     }
 
 
@@ -116,10 +131,10 @@ class TicTacToe {
 
 
     public boolean isWinPositionForHorizontals(int[][] gameField, int playerToCheck) {
-        if (horizontalsWinPosition1(gameField, playerToCheck) ||
-                horizontalsWinPosition2(gameField, playerToCheck) ||
-                horizontalsWinPosition3(gameField, playerToCheck)) {
-            return true;
+       if (horizontalsWinPosition1(gameField, playerToCheck) ||
+           horizontalsWinPosition2(gameField, playerToCheck) ||
+           horizontalsWinPosition3(gameField, playerToCheck)) {
+               return true;
         } else return false;
     }
 
@@ -147,8 +162,8 @@ class TicTacToe {
 
     public boolean isWinPositionForVerticals(int[][] gameField, int playerToCheck) {
         if (verticalsWinPosition1(gameField, playerToCheck) ||
-                verticalsWinPosition2(gameField, playerToCheck) ||
-                verticalsWinPosition3(gameField, playerToCheck)) {
+            verticalsWinPosition2(gameField, playerToCheck) ||
+            verticalsWinPosition3(gameField, playerToCheck)) {
             return true;
         } else return false;
     }
@@ -170,7 +185,7 @@ class TicTacToe {
 
     public boolean isWinPositionForDiagonals(int[][] gameField, int playerToCheck) {
         if (diagonalsWinPosition1(gameField, playerToCheck) ||
-                diagonalsWinPosition2(gameField, playerToCheck)) {
+            diagonalsWinPosition2(gameField, playerToCheck)) {
             return true;
         }
         else return false;
@@ -179,8 +194,8 @@ class TicTacToe {
 
     public boolean isWinPosition(int[][] field, int playerToCheck) {
         if (isWinPositionForHorizontals(field, playerToCheck) ||
-                isWinPositionForVerticals(field, playerToCheck) ||
-                isWinPositionForDiagonals(field, playerToCheck)) {
+            isWinPositionForVerticals(field, playerToCheck) ||
+            isWinPositionForDiagonals(field, playerToCheck)) {
             return true;
         } else return false;
     }
