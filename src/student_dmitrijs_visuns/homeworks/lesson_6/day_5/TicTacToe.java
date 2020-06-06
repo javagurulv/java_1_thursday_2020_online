@@ -6,9 +6,9 @@ class TicTacToe {
 
     final int NUMBER_OF_HORIZONTALS = 3;
     final int NUMBER_OF_VERTICALS = 3;
-    final int EMPTY_SPACE = -1;
-    final int PLAYER_ONE = 0;
-    final int PLAYER_TWO = 1;
+    final int EMPTY_SPACE = 0;
+    final int PLAYER_ONE = 1;
+    final int PLAYER_TWO = 2;
 
     public static void main(String[] args) {
         TicTacToe game = new TicTacToe();
