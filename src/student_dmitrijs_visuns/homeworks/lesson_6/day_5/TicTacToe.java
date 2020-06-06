@@ -17,14 +17,9 @@ class TicTacToe {
 
     public void play() {
         int[][] gameField = createEmptyGameField();
-
         while(true) {
-            printGameFieldToConsole(gameField);
-
-            System.out.println("PLAYER 1 MOVE");
-            Move playerOneMove = getMoveAndCheckIsItValid(gameField);
-            gameField[playerOneMove.getX()][playerOneMove.getY()] = PLAYER_ONE;
-
+            
+            playerOneMove(gameField);
             if (isWinPosition(gameField, PLAYER_ONE)) {
                 System.out.println("Player 1 WIN!");
                 break;
@@ -34,11 +29,7 @@ class TicTacToe {
                 break;
             }
 
-            printGameFieldToConsole(gameField);
-            System.out.println("PLAYER 2 MOVE");
-            Move playerTwoMove = getMoveAndCheckIsItValid(gameField);
-            gameField[playerTwoMove.getX()][playerTwoMove.getY()] = PLAYER_TWO;
-
+            playerTwoMove(gameField);
             if (isWinPosition(gameField, PLAYER_TWO)) {
                 System.out.println("Player 2 WIN!");
                 break;
@@ -71,6 +62,19 @@ class TicTacToe {
 
     }
 
+    public void playerOneMove (int[][]gameField) {
+        printGameFieldToConsole(gameField);
+        System.out.println("PLAYER 1 MOVE");
+        Move playerOneMove = getMoveAndCheckIsItValid(gameField);
+        gameField[playerOneMove.getX()][playerOneMove.getY()] = PLAYER_ONE;
+    }
+
+    public void playerTwoMove (int[][] gameField) {
+        printGameFieldToConsole(gameField);
+        System.out.println("PLAYER 2 MOVE");
+        Move playerTwoMove = getMoveAndCheckIsItValid(gameField);
+        gameField[playerTwoMove.getX()][playerTwoMove.getY()] = PLAYER_TWO;
+    }
 
     public int inputCoordinateX () {
         Scanner sc = new Scanner(System.in);
@@ -97,6 +101,7 @@ class TicTacToe {
     public Move getNextMove() {
         return new Move(inputCoordinateX(), inputCoordinateY());
     }
+
 
     public Move getMoveAndCheckIsItValid (int[][] gameField) {
         Move playerMove = getNextMove();
