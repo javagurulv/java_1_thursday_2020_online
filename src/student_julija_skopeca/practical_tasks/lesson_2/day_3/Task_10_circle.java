@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_2.day_3;
 
 import java.util.Scanner;
 
- class task_10_circle {
+ class Task_10_circle {
 
     public static void main(String[] args) {
 
