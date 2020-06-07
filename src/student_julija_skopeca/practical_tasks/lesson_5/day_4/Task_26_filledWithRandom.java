@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-class task_26_filledWithRandom {
+class Task_26_filledWithRandom {
 
     public static void main(String[] args) {
 

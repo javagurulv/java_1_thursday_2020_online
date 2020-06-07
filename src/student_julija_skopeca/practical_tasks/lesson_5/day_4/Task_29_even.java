@@ -3,7 +3,7 @@ package student_julija_skopeca.practical_tasks.lesson_5.day_4;
 import java.util.Arrays;
 import java.util.Random;
 
-class task_30_odd {
+class Task_29_even {
 
     public static void main(String[] args) {
 
@@ -17,9 +17,9 @@ class task_30_odd {
 
         System.out.println("The array is " + Arrays.toString(numbers));
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i]%2!=0) {
-                System.out.println("The odd number/s - " + numbers[i]);
+         for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i]%2==0) {
+                System.out.println("The even number/s - " + numbers[i]);
             }
         }
 

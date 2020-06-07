@@ -3,7 +3,7 @@ package student_julija_skopeca.practical_tasks.lesson_5.day_4;
 import java.util.Arrays;
 import java.util.Scanner;
 
-class task_25_fillArrayFromConsole {
+class Task_25_fillArrayFromConsole {
 
     public static void main(String[] args) {
 

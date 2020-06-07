@@ -3,7 +3,7 @@ package student_julija_skopeca.practical_tasks.lesson_5.day_2;
 import java.util.Arrays;
 import java.util.Random;
 
-class task_12 {
+class Task_12 {
     public static void main(String[] args) {
 
         int[] randomNumbers = new int[3];

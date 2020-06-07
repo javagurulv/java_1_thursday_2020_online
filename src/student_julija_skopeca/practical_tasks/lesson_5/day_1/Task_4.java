@@ -1,8 +1,8 @@
 package student_julija_skopeca.practical_tasks.lesson_5.day_1;
 
-class task_9 {
+class Task_4 {
+
     public static void main(String[] args) {
-        int[] numbers = new int[2];
-        System.out.println(numbers.length);
+        int[] numbers = {1, 2, 3};
     }
 }

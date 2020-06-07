@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_5.day_2;
 
 import java.util.Random;
 
-class task_14 {
+class Task_14 {
 
     public static void main(String[] args) {
 

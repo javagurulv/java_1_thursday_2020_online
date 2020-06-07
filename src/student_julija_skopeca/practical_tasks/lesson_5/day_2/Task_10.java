@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_5.day_2;
 
 import java.util.Arrays;
 
-class task_10 {
+class Task_10 {
 
     public static void main(String[] args) {
 
