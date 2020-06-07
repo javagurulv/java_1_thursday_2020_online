@@ -1,13 +1,13 @@
-package student_alexander_bogachenkov.lesson7_04062020.homeworks.day_2;
+package student_alexander_bogachenkov.lesson7_04062020.homeworks.day_3;
 
 class WordService {
 
     public String findMostFrequentWord(String text) {
-        String[] words = splitTextByWord(text);
+        String[] words = splitByWord(text);
         String resultWord = null;
         int max = 0;
         for (String word : words) {
-            int repetitions = countWordRepetitions(words, word);
+            int repetitions = countRepetitions(words, word);
             if (repetitions > max) {
                 max = repetitions;
                 resultWord = word;
@@ -16,7 +16,7 @@ class WordService {
         return resultWord;
     }
 
-    private int countWordRepetitions(String[] words, String wordToCount) {
+    private int countRepetitions(String[] words, String wordToCount) {
         int sum = 0;
         for (String word : words) {
             if (word.equals(wordToCount)) {
@@ -26,7 +26,7 @@ class WordService {
         return sum;
     }
 
-    private String[] splitTextByWord(String text) {
+    private String[] splitByWord(String text) {
         return text.split(" ");
     }
 
