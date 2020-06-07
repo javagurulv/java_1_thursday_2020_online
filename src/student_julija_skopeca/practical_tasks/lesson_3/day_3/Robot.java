@@ -1,10 +1,10 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_3;
 
- class robot {
+ class Robot {
 
     private final String name;
 
-    public robot(String robotName){
+    public Robot(String robotName){
         this.name = robotName;
     }
 

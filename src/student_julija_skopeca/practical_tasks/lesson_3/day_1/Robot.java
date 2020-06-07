@@ -1,8 +1,8 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_1;
 
- class robot {
+ class Robot {
 
-    public robot() {
+    public Robot() {
     }
 
     public void sayHello() {

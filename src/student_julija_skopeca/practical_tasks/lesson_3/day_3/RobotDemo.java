@@ -1,15 +1,15 @@
 package student_julija_skopeca.practical_tasks.lesson_3.day_3;
 
- class robotDemo {
+ class RobotDemo {
 
     public static void main(String[] args) {
 
-        robot robot1 = new robot("Rider");
+        Robot robot1 = new Robot("Rider");
         String name1 = robot1.getName();
         robot1.sayHello();
         robot1.sayYourName();
 
-        robot robot2 = new robot("John");
+        Robot robot2 = new Robot("John");
         robot2.sayHello();
         robot2.sayYourName();
     }
