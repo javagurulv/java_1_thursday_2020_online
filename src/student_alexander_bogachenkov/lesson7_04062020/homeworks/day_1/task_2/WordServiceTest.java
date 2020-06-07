@@ -6,33 +6,33 @@ class WordServiceTest {
 
     public static void main(String[] args) {
         WordServiceTest wordServiceTest = new WordServiceTest();
-        wordServiceTest.shouldSplitTextInArray();
-        wordServiceTest.shouldFindMostFrequentWordInSplittedText();
+        wordServiceTest.shouldCountRepetitions();
+        wordServiceTest.shouldSplitByWord();
     }
 
-    public void shouldSplitTextInArray() {
-        String[] expectedResult = {"lorem", "ipsum", "dolor", "sit", "amet"};
+    public void shouldCountRepetitions() {
         WordService wordService = new WordService();
-        String[] actualResult = wordService.splitTextInArray("lorem ipsum dolor sit amet");
+        int expectedResult = 3;
+        String[] words = {"me", "me", "you", "I", "me"};
+        int actualResult = wordService.countRepetitions(words, "me");
 
-        if (Arrays.equals(actualResult, expectedResult)) {
-            System.out.println("shouldSplitTextInArray PASSED");
+        if (actualResult == expectedResult) {
+            System.out.println("shouldCountRepetitions PASSED");
         } else {
-            System.out.println("shouldSplitTextInArray FAILED");
+            System.out.println("shouldCountRepetitions FAILED");
         }
     }
 
-    public void shouldFindMostFrequentWordInSplittedText() {
-        String text = "lorem lorem ipsum ipsum ipsum dolor sit sit sit amet";
-        String[] splittedText = text.split(" ");
+    public void shouldSplitByWord() {
         WordService wordService = new WordService();
-        String actualResult = wordService.findMostFrequentWordInSplittedText(splittedText);
-        String expectedResult = "ipsum";
+        String text = "I am coding";
+        String[] actualResult = wordService.splitByWord(text);
+        String[] expectedResult = {"I", "am", "coding"};
 
-        if (actualResult.equals(expectedResult)) {
-            System.out.println("shouldFindMostFrequentWordInSplittedText PASSED");
+        if (Arrays.equals(actualResult, expectedResult)) {
+            System.out.println("shouldSplitByWord PASSED");
         } else {
-            System.out.println("shouldFindMostFrequentWordInSplittedText FAILED");
+            System.out.println("shouldSplitByWord FAILED");
         }
     }
 }

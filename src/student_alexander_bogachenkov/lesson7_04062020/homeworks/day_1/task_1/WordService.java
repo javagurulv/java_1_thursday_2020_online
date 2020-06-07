@@ -10,24 +10,27 @@ class WordService {
     }
 
     public String findMostFrequentWord(String text) {
-        String[] splitted = text.split(" ");
+        String[] words = text.split(" ");
+        String resultWord = null;
         int max = 0;
-        int count = 1;
-        String word = splitted[0];
-        String curr = splitted[0];
-        for (int i = 1; i < splitted.length; i++) {
-            if (splitted[i].equals(curr)) {
-                count++;
-            } else {
-                count = 1;
-                curr = splitted[i];
-            }
-            if (max < count) {
-                max = count;
-                word = splitted[i];
+        for (String word : words) {
+            int repetitions = countRepetitions(words, word);
+            if (repetitions > max) {
+                max = repetitions;
+                resultWord = word;
             }
         }
-        return word;
+        return resultWord;
+    }
+
+    private int countRepetitions(String[] words, String wordToCount) {
+        int sum = 0;
+        for (String word : words) {
+            if (word.equals(wordToCount)) {
+                sum++;
+            }
+        }
+        return sum;
     }
 
 }
