@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_4.day_3;
 
 import java.util.Scanner;
 
-class task_8_compareThreeNumbers {
+class Task_8_compareThreeNumbers {
 
     public static void main(String[] args) {
 

@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_4.day_2;
 
 import java.util.Scanner;
 
-class task_5_twoNumberCompare {
+class Task_5_twoNumberCompare {
 
     public static void main(String[] args) {
 

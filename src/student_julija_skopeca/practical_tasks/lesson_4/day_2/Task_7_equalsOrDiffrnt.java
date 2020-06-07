@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_4.day_2;
 
 import java.util.Scanner;
 
-class task_6_twoNumbersCompareV2 {
+class Task_7_equalsOrDiffrnt {
 
     public static void main(String[] args) {
 
@@ -13,12 +13,11 @@ class task_6_twoNumbersCompareV2 {
         System.out.println("Enter the second number");
         int number2 = sc.nextInt();
 
-        if (number1 < number2) {
-            System.out.println("The lower number is " + number1);
+        if (number1 == number2) {
+            System.out.println("Numbers are equals");
         }
-        else if (number1 > number2) {
-            System.out.println("The lower number is " + number2);
+        else {
+            System.out.println("Numbers are different");
         }
-        else {System.out.println("The numbers are similar");}
     }
 }

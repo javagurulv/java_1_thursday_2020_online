@@ -2,7 +2,7 @@ package student_julija_skopeca.practical_tasks.lesson_4.day_3;
 
 import java.util.Scanner;
 
-class task_10_theGreaterNumber {
+class Task_10_theGreaterNumber {
 
     public static void main(String[] args) {
 
