@@ -17,8 +17,9 @@ class TicTacToe {
 
     public void play() {
         int[][] gameField = createEmptyGameField();
+
         while(true) {
-            
+
             playerOneMove(gameField);
             if (isWinPosition(gameField, PLAYER_ONE)) {
                 System.out.println("Player 1 WIN!");
