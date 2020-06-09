@@ -4,7 +4,7 @@ class WordService {
 
     public static void main(String[] args) {
         WordService wordService = new WordService();
-        String text = "word word word text text book book book book";
+        String text = "word word word text text book book book";
         String result = wordService.findMostFrequentWord(text);
         System.out.println(result);
     }
