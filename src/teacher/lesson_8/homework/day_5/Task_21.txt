@@ -1,0 +1,5 @@
+В класе ShapeUtil реализуйте метод:
+
+    Circle createRandomSquare();
+
+Этот метод создаёт случайный квадрат.

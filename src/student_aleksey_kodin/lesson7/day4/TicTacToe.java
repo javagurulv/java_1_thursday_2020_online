@@ -4,6 +4,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class TicTacToe {
+    private final int FREE_CELL = -1;
+
     private int rowWinPosition;
     private int columnWinPosition;
     private int rowMovePosition;
@@ -17,7 +19,7 @@ class TicTacToe {
         int[][] field = new int[3][3];
         for (int row = 0; row < field.length; row++) {
             for (int column = 0; column < field[0].length; column++) {
-                field[row][column] = -1;
+                field[row][column] = FREE_CELL;
             }
         }
     return field;
@@ -73,10 +75,8 @@ class TicTacToe {
         }
     return false;
     }
-    public boolean isDraw(int[][] field,int playerToCheck) {
-        if (isWinPositionForHorizontals(field,playerToCheck) && isWinPositionForVerticals(field,playerToCheck) &&
-                isWinPositionForDiagonals(field,playerToCheck)) return true;
-    return !isFreeCell(field);
+    public boolean isDraw(int[][] field) {
+        return !isFreeCell(field);
     }
     public void printFieldToConsole(int[][] field) {
         for (int[] row : field) {
@@ -102,7 +102,7 @@ class TicTacToe {
             if (checkToWin(field,0)) {
                 break;
             }
-            if (checkToDraw(field, 0)) {
+            if (checkToDraw(field)) {
                 break;
             }
 
@@ -113,7 +113,7 @@ class TicTacToe {
             if (checkToWin(field, 1)) {
                 break;
             }
-            if (checkToDraw(field, 1)) {
+            if (checkToDraw(field)) {
                 break;
             }
         }
@@ -155,8 +155,8 @@ class TicTacToe {
         }
     }
     private Move getNextMove() {
-        int row = -1;
-        int column = -1;
+        int row = FREE_CELL;
+        int column = FREE_CELL;
         try {
 
             System.out.println("Input row:");
@@ -173,16 +173,16 @@ class TicTacToe {
         return new Scanner(System.in).nextInt();
     }
     private boolean isPlayerDoIllegalMove(Move playerMove) {
-        return playerMove.getRow() == -1 || playerMove.getColumn() == -1;
+        return playerMove.getRow() == FREE_CELL || playerMove.getColumn() == FREE_CELL;
     }
     private boolean isPlayerMoveToFreeCell(int[][] field,Move playerMove) {
-        return field[playerMove.getRow()][playerMove.getColumn()] == -1;
+        return field[playerMove.getRow()][playerMove.getColumn()] == FREE_CELL;
     }
     private void printErrorMessage() {
         System.out.println("Illegal move. Try again");
     }
-    private boolean checkToDraw(int[][] field,int playerToCheck) {
-        if (isDraw(field, playerToCheck)) {
+    private boolean checkToDraw(int[][] field) {
+        if (isDraw(field)) {
             System.out.println("DRAW!");
             return true;
         }
@@ -220,20 +220,20 @@ class TicTacToe {
         this.columnMovePosition = columnMovePosition;
     }
     private boolean isTwoInRow(int firstValue, int secondValue, int thirdValue){
-        if (firstValue == -1 && secondValue == -1 && thirdValue == -1) return false;
+        if (firstValue == FREE_CELL && secondValue == FREE_CELL && thirdValue == FREE_CELL) return false;
         if (!isEmptyCell(firstValue,secondValue,thirdValue)) return false;
         return firstValue == secondValue || secondValue == thirdValue || firstValue == thirdValue;
     }
     private boolean findWinRowAndColumn(int[][] field,int position,boolean isRow) {
         for (int count = 0; count < 3; count++) {
             if(isRow) {
-                if (field[position][count] == -1) {
+                if (field[position][count] == FREE_CELL) {
                     setRowWinPosition(position);
                     setColumnWinPosition(count);
                     return true;
                 }
             } else {
-                if (field[count][position] == -1) {
+                if (field[count][position] == FREE_CELL) {
                     setRowWinPosition(count);
                     setColumnWinPosition(position);
                     return true;
@@ -245,7 +245,7 @@ class TicTacToe {
     private boolean findWinDiagonals(int[][] field,boolean isLeftToRight) {
         if (isLeftToRight) {
             for (int count = 0; count < 3; count++) {
-                if (field[count][count] == -1) {
+                if (field[count][count] == FREE_CELL) {
                     setRowWinPosition(count);
                     setColumnWinPosition(count);
                     return true;
@@ -254,7 +254,7 @@ class TicTacToe {
         } else {
             int shift = 0;
             for (int count = 2; count >= 0; count--) {
-                if (field[shift][count] == -1) {
+                if (field[shift][count] == FREE_CELL) {
                     setRowWinPosition(shift);
                     setColumnWinPosition(count);
                     return true;
@@ -266,20 +266,20 @@ class TicTacToe {
     }
     private boolean isEmptyCell(int firstValue, int secondValue, int thirdValue) {
         if (firstValue == secondValue) {
-            if (firstValue == -1) return false;
+            if (firstValue == FREE_CELL) return false;
         }
         if (secondValue == thirdValue) {
-            if (secondValue == -1) return false;
+            if (secondValue == FREE_CELL) return false;
         }
         if (firstValue == thirdValue) {
-            return firstValue != -1;
+            return firstValue != FREE_CELL;
         }
     return true;
     }
     private boolean isFreeCell(int[][] field) {
         for (int row = 0; row < field.length; row++) {
             for (int column = 0; column < field[0].length; column++) {
-                if (field[row][column] == -1) {
+                if (field[row][column] == FREE_CELL) {
                     setNextMove(row,column);
                     return true;
                 }
@@ -311,7 +311,6 @@ class TicTacToe {
         return isFreeCell(field);
     }
     private boolean isFreeCell(int cell) {
-        final int FREE_CELL = -1;
         return cell == FREE_CELL;
     }
     private void  setNextMove(int row, int column) {
