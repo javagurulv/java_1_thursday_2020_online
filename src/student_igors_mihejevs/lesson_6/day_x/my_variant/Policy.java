@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_6.day_x;
+package student_igors_mihejevs.lesson_6.day_x.my_variant;
 
 import java.util.Scanner;
 
