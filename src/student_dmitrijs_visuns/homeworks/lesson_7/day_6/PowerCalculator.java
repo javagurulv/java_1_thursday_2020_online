@@ -11,16 +11,13 @@ class PowerCalculator {
 
     public double mainCalculator (double baseNumber, int power) {
         if (power > 0) {
-            System.out.println(calculatePositivePower(baseNumber, power));
             return calculatePositivePower(baseNumber, power);
 
         }
         if (power < 0) {
-            System.out.println(calculateNegativePower(baseNumber, power));
             return calculateNegativePower(baseNumber, power);
         }
         else {
-            System.out.println(calculateZeroPower());
             return calculateZeroPower();
         }
 
