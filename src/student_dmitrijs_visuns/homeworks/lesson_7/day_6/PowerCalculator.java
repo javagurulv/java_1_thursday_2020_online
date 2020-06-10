@@ -12,7 +12,6 @@ class PowerCalculator {
     public double mainCalculator (double baseNumber, int power) {
         if (power > 0) {
             return calculatePositivePower(baseNumber, power);
-
         }
         if (power < 0) {
             return calculateNegativePower(baseNumber, power);
