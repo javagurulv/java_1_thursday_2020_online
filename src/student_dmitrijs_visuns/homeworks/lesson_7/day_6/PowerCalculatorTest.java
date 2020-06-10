@@ -8,8 +8,6 @@ class PowerCalculatorTest {
         newTest.calculatePositivePowerTest();
         newTest.calculateNegativePowerTest();
         newTest.calculateZeroPowerTest();
-
-
     }
 
 
@@ -20,7 +18,6 @@ class PowerCalculatorTest {
         } else {
             System.out.println("Calculate positive power test - FAIL");
         }
-
     }
 
 
@@ -41,5 +38,7 @@ class PowerCalculatorTest {
             System.out.println("Calculate zero power test - FAIL");
         }
     }
+
+
 
 }

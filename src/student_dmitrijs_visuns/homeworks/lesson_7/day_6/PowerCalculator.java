@@ -24,7 +24,7 @@ class PowerCalculator {
 
     public double calculatePositivePower(double baseNumber, int power) {
         double resultNumber = 1;
-        for (int cycle = 1; cycle <= power; cycle++) {
+        for (int i = 1; i <= power; i++) {
             resultNumber = (resultNumber * baseNumber);
         }
         return resultNumber;
@@ -32,7 +32,7 @@ class PowerCalculator {
 
     public double calculateNegativePower(double baseNumber, double power) {
         double resultNumber = 1;
-        for (int cycle = 1; cycle <= -power; cycle++) {
+        for (int i = 1; i <= -power; i++) {
             resultNumber = (resultNumber * baseNumber);
         }
         return (1 / resultNumber);
