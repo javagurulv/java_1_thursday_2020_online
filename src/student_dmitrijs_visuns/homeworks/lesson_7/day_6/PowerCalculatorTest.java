@@ -8,6 +8,8 @@ class PowerCalculatorTest {
         newTest.calculatePositivePowerTest();
         newTest.calculateNegativePowerTest();
         newTest.calculateZeroPowerTest();
+        newTest.calculateNegativeBaseTest();
+        newTest.calculateZeroBaseTest();
     }
 
 
@@ -33,9 +35,27 @@ class PowerCalculatorTest {
     public void calculateZeroPowerTest() {
         PowerCalculator powerCalculator = new PowerCalculator();
         if (powerCalculator.mainCalculator(10, 0) == 1) {
-            System.out.println("Calculate zero power test - OK");
+            System.out.println("Calculate 0 power test - OK");
         } else {
-            System.out.println("Calculate zero power test - FAIL");
+            System.out.println("Calculate 0 power test - FAIL");
+        }
+    }
+
+    public void calculateNegativeBaseTest () {
+        PowerCalculator powerCalculator = new PowerCalculator();
+        if (powerCalculator.mainCalculator(-2,3) == -8) {
+            System.out.println("Calculate negative base number test - OK");
+        } else {
+            System.out.println("Calculate negative base number test - FAIL");
+        }
+    }
+
+    public void calculateZeroBaseTest () {
+        PowerCalculator powerCalculator = new PowerCalculator();
+        if (powerCalculator.mainCalculator(0,3) == 0) {
+            System.out.println("Calculate 0 base number test - OK");
+        } else {
+            System.out.println("Calculate 0 base number test - FAIL");
         }
     }
 

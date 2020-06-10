@@ -2,13 +2,6 @@ package student_dmitrijs_visuns.homeworks.lesson_7.day_6;
 
 class PowerCalculator {
 
-    public static void main(String[] args) {
-        PowerCalculator kal = new PowerCalculator();
-        kal.mainCalculator(2, 3);
-        kal.mainCalculator(3, 0);
-        kal.mainCalculator(10, -1);
-    }
-
     public double mainCalculator (double baseNumber, int power) {
         if (power > 0) {
             return calculatePositivePower(baseNumber, power);
