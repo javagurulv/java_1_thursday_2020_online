@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.lesson_7.day_1.task_1_3;
+package student_julija_skopeca.practical_tasks.lesson_7.day_1.task_1_3_WordsCounter;
 
 class WordService {
 
