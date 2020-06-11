@@ -46,10 +46,10 @@ class ArrayUtilTest {
      }
 
     public void replaceTest() {
-        ArrayUtil myArray = new ArrayUtil();
+        ArrayUtil arrayUtil = new ArrayUtil();
 
         int[] testArray = new int[]{2, 7, 45, 53, 0};
-        myArray.replace(testArray, 45, 13);
+        arrayUtil.replace(testArray, 45, 13);
         boolean testOK = true;
         for (int i : testArray) {
             if (i == 45) {

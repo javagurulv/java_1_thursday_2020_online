@@ -1,0 +1,4 @@
+class SubInsuranceObject
+to constructor need append :
+
+this.insuranceRisks = new ArrayList<>();
