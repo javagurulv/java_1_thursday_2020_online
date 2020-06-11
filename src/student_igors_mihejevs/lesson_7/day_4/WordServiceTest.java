@@ -29,8 +29,8 @@ public class WordServiceTest {
                 "Test of finding the most frequent word");
     }
 
-    public void printingTestResult(boolean isOK, String nameOfTest) {
-        if (isOK) System.out.println(nameOfTest + " - OK");
+    public void printingTestResult(boolean testIsOK, String nameOfTest) {
+        if (testIsOK) System.out.println(nameOfTest + " - OK");
         else System.out.println(nameOfTest + " - FAIL");
     }
 
