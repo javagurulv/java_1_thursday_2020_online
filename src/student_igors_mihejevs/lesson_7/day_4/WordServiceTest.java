@@ -13,23 +13,23 @@ public class WordServiceTest {
 
     public void shouldReturnArrayOfWords(String testString) {
         WordService wordService = new WordService();
-        printingTestResults(wordService.getArrayOfWordsFromString(testString).length == 10,
+        printingTestResult(wordService.getArrayOfWordsFromString(testString).length == 10,
                 "Test of creating of array of words");
     }
 
     public void shouldReturnCountOfOneWordFromString(String testString) {
         WordService wordService = new WordService();
-        printingTestResults(wordService.countingSpecificWordInArray(wordService.getArrayOfWordsFromString(testString), "five") == 4,
+        printingTestResult(wordService.countingSpecificWordInArray(wordService.getArrayOfWordsFromString(testString), "five") == 4,
                 "Test of returning count of word");
     }
 
     public void shouldFindMostFrequentWord(String testString) {
         WordService wordService = new WordService();
-        printingTestResults(wordService.findMostFrequentWord(testString).equals("five"),
+        printingTestResult(wordService.findMostFrequentWord(testString).equals("five"),
                 "Test of finding the most frequent word");
     }
 
-    public void printingTestResults(boolean isOK, String nameOfTest) {
+    public void printingTestResult(boolean isOK, String nameOfTest) {
         if (isOK) System.out.println(nameOfTest + " - OK");
         else System.out.println(nameOfTest + " - FAIL");
     }
