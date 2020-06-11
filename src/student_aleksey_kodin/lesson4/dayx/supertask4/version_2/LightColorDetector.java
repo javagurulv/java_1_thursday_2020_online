@@ -21,7 +21,7 @@ enum LightColorDetector {
                 return light.name();
             }
         }
-        return "Invisible Light";
+    return "Invisible Light";
     }
 }
 
