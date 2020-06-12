@@ -1,4 +1,4 @@
-package student_vadims_vladisevs.lesson7.day_2;
+package student_vadims_vladisevs.lesson7.day_2_3;
 
 
 
