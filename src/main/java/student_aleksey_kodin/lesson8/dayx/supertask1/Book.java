@@ -1,10 +1,13 @@
 package student_aleksey_kodin.lesson8.dayx.supertask1;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 class Book {
     private final String author;
     private final String bookName;
+    List<DatesUsingBook> datesUsingBooks = new ArrayList<>();
 
     public Book(String author,String bookName) {
         this.author = author;

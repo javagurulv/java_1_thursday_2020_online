@@ -1,11 +1,14 @@
 package student_aleksey_kodin.lesson8.dayx.supertask1;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 class Reader {
     private int clientNumber;
     private String clientName;
     private String clientSurname;
+    List<Book> readerBook = new ArrayList<>();
 
     public Reader (int clientNumber, String clientName, String clientSurname) {
         this.clientNumber = clientNumber;
@@ -30,7 +33,11 @@ class Reader {
     public void setClientSurname(String clientSurname) {
         this.clientSurname = clientSurname;
     }
-    @Override
+
+    public void takeBook(Book book,DatesUsingBook datesUsingBook) {
+        book.datesUsingBooks.add(datesUsingBook);
+        readerBook.add(book);
+    }    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
