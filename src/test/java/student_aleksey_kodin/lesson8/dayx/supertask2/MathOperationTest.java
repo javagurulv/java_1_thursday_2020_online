@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class AdditionTest {
+public class MathOperationTest {
 
     @Test
     public void testAddition() {
@@ -30,5 +30,12 @@ public class AdditionTest {
         double result = division.calculate();
         assertEquals(20,result,0);
     }
-
+    @Test
+    public void testSubtraction() {
+        Argument arg1 = new Argument(25);
+        Argument arg2 = new Argument(15);
+        MathOperation subtraction = new Subtraction(arg1, arg2);
+        double result = subtraction.calculate();
+        assertEquals(10,result,0);
+    }
 }
