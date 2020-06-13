@@ -1,6 +1,8 @@
 package student_aleksey_kodin.lesson7.day1.task_1;
 
  class WordService {
+
+ 	// Такие методы надо разбивать на более мелкие методы!
      public String findMostFrequentWord(String text) {
      String[] textArray;
      int[] wordCountArray;
