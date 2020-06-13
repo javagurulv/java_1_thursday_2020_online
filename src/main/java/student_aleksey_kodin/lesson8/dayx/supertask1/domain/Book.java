@@ -1,13 +1,10 @@
-package student_aleksey_kodin.lesson8.dayx.supertask1;
+package student_aleksey_kodin.lesson8.dayx.supertask1.domain;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
-class Book {
+public class Book {
     private final String author;
     private final String bookName;
-    List<DatesUsingBook> datesUsingBooks = new ArrayList<>();
 
     public Book(String author,String bookName) {
         this.author = author;
@@ -19,6 +16,7 @@ class Book {
     public String getAuthor() {
         return author;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

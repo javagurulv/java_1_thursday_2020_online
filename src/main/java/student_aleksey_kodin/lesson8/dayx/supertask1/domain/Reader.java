@@ -1,25 +1,16 @@
-package student_aleksey_kodin.lesson8.dayx.supertask1;
+package student_aleksey_kodin.lesson8.dayx.supertask1.domain;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
-class Reader {
-    private int clientNumber;
+public class Reader {
     private String clientName;
     private String clientSurname;
     List<Book> readerBook = new ArrayList<>();
 
-    public Reader (int clientNumber, String clientName, String clientSurname) {
-        this.clientNumber = clientNumber;
+
+    public Reader (String clientName, String clientSurname) {
         this.clientName = clientName;
         this.clientSurname = clientSurname;
-    }
-    public int getClientNumber() {
-        return clientNumber;
-    }
-    public void setClientNumber(int clientNumber) {
-        this.clientNumber = clientNumber;
     }
     public String getClientName() {
         return clientName;
@@ -34,20 +25,16 @@ class Reader {
         this.clientSurname = clientSurname;
     }
 
-    public void takeBook(Book book,DatesUsingBook datesUsingBook) {
-        book.datesUsingBooks.add(datesUsingBook);
-        readerBook.add(book);
-    }    @Override
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Reader reader = (Reader) o;
-        return clientNumber == reader.clientNumber &&
-                clientName.equals(reader.clientName) &&
+        return  clientName.equals(reader.clientName) &&
                 clientSurname.equals(reader.clientSurname);
     }
     @Override
     public int hashCode() {
-        return Objects.hash(clientNumber, clientName, clientSurname);
+        return Objects.hash(clientName, clientSurname);
     }
 }

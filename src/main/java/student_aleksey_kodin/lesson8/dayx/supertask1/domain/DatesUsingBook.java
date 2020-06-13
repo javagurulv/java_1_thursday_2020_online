@@ -1,9 +1,9 @@
-package student_aleksey_kodin.lesson8.dayx.supertask1;
+package student_aleksey_kodin.lesson8.dayx.supertask1.domain;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
-class DatesUsingBook {
+public class DatesUsingBook {
     private LocalDate firstDateReadBook;
     private LocalDate lastDateReadBook;
 
@@ -16,10 +16,26 @@ class DatesUsingBook {
     public LocalDate getFirstDateReadBook() {
         return firstDateReadBook;
     }
-    public LocalDate getLastDateReadBook() {
-
-        return lastDateReadBook;
+    public LocalDate getLastDateReadBook() { return lastDateReadBook; }
+    public int getCurrentYearFromFirstDateReadBook() {
+       return getFirstDateReadBook().getYear();
     }
+    public int getCurrentMonthFromFirstDateReadBook() {
+        return getFirstDateReadBook().getMonthValue();
+    }
+    public int getCurrentDateFromFirstDateReadBook() {
+        return getFirstDateReadBook().getDayOfMonth();
+    }
+    public int getCurrentYearFromLastDateReadBook() {
+        return getLastDateReadBook().getYear();
+    }
+    public int getCurrentMonthFromLastDateReadBook() {
+        return getLastDateReadBook().getMonthValue();
+    }
+    public int getCurrentDateFromLastDateReadBook() {
+        return getLastDateReadBook().getDayOfMonth();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
