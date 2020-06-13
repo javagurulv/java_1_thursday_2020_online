@@ -63,6 +63,8 @@ class ArrayUtil {
             arr[count] = tempSaveLastArrayElement;
         }
     }
+
+    // Что за алгоритм лежит в основе метода Arrays.sort(arr); ??
     public void arraySort(int[] arr) {
         Arrays.sort(arr);
     }
