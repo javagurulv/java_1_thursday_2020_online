@@ -1,4 +1,4 @@
-package student_alexander_bogachenkov.lesson8_11062020.homeworks.day_2;
+package student_alexander_bogachenkov.lesson8_11062020.homeworks.day_2.task_5;
 
 class Task_5 {
 
