@@ -1,14 +1,14 @@
 package student_igors_mihejevs.lesson_7.day_4;
 
-public class WordServiceTest {
+public class WordServiceTestUsual {
 
     public static void main(String[] args) {
-        WordServiceTest wordServiceTest = new WordServiceTest();
+        WordServiceTestUsual wordServiceTestUsual = new WordServiceTestUsual();
         String testString = "one five two three five one five two two five";
 
-        wordServiceTest.shouldReturnArrayOfWords(testString);
-        wordServiceTest.shouldReturnCountOfOneWordFromString(testString);
-        wordServiceTest.shouldFindMostFrequentWord(testString);
+        wordServiceTestUsual.shouldReturnArrayOfWords(testString);
+        wordServiceTestUsual.shouldReturnCountOfOneWordFromString(testString);
+        wordServiceTestUsual.shouldFindMostFrequentWord(testString);
     }
 
     public void shouldReturnArrayOfWords(String testString) {
