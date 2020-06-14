@@ -4,6 +4,8 @@ class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();
         calculatorTest.isEven();
+
+        // а где негативный тест?
     }
     public void isEven() {
         Calculator number = new Calculator();
