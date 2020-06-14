@@ -4,6 +4,7 @@ import java.util.Random;
 
 // lesson3.day_x.super_task_2.Game refactoring;
 
+// А где тесты для этого класса?
 class BowlingGame {
 
     private int knockedPinsCount = 0;
