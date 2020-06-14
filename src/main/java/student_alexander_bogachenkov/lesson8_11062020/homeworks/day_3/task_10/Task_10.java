@@ -1,4 +1,4 @@
-package student_alexander_bogachenkov.lesson8_11062020.homeworks.day_3;
+package student_alexander_bogachenkov.lesson8_11062020.homeworks.day_3.task_10;
 
 class Task_10 {
     //Абстрактный класс похож на обычный класс.
