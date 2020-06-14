@@ -7,31 +7,44 @@ public class DatesUsingBook {
     private LocalDate firstDateReadBook;
     private LocalDate lastDateReadBook;
 
+    public LocalDate createDatePatter(int year, int month, int dayOfMonth) {
+        return LocalDate.of(year,month,dayOfMonth);
+    }
+
     public void setDateWhenTakeBook(int year, int month, int dayOfMonth) {
         firstDateReadBook = LocalDate.of(year,month,dayOfMonth);
     }
+
     public void setDateWhenReturnBook(int dayOffset) {
         lastDateReadBook = getFirstDateReadBook().plusDays(dayOffset);
     }
+
     public LocalDate getFirstDateReadBook() {
         return firstDateReadBook;
     }
+
     public LocalDate getLastDateReadBook() { return lastDateReadBook; }
+
     public int getCurrentYearFromFirstDateReadBook() {
        return getFirstDateReadBook().getYear();
     }
+
     public int getCurrentMonthFromFirstDateReadBook() {
         return getFirstDateReadBook().getMonthValue();
     }
+
     public int getCurrentDateFromFirstDateReadBook() {
         return getFirstDateReadBook().getDayOfMonth();
     }
+
     public int getCurrentYearFromLastDateReadBook() {
         return getLastDateReadBook().getYear();
     }
+
     public int getCurrentMonthFromLastDateReadBook() {
         return getLastDateReadBook().getMonthValue();
     }
+
     public int getCurrentDateFromLastDateReadBook() {
         return getLastDateReadBook().getDayOfMonth();
     }

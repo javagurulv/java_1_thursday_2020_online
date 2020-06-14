@@ -19,7 +19,7 @@ public class PrintInformation {
             System.out.println("Book: " + book.getAuthor() + " " + book.getBookName());
         }
     }
-    public static void printAllBookReaderTake(Library library, Reader reader) {
+    public static void printAllBookReaderTaken(Library library, Reader reader) {
         try {
             for (Book book : library.readersWhoTakeBooks.get(reader)) {
                 System.out.println("Book: " + book.getAuthor() + " " + book.getBookName());

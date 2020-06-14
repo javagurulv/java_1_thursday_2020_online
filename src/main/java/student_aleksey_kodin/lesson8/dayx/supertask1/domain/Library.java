@@ -6,13 +6,13 @@ import java.util.*;
 
 public class Library {
 
-    //public Map <Reader, Map <Book, BookReservation> > temp = new HashMap<>();
-
-    public Map <Reader, BookReservation> readerReserveBook = new HashMap<>();
+    public Map <Reader, Book> reservationsBooks = new HashMap<>();
     public Map <Book, BookReservation> booksInLibrary = new HashMap<>();
+
     public Map <Reader, TakeBook> readersInLibrary = new HashMap<>();
     public Map <Reader, List<? extends Book>> readersWhoTakeBooks = new HashMap<>();
     public Map <Book, DatesUsingBook> dateUsingBook = new HashMap<>();
+    public Map <Reader, Book> noReturnBooks= new HashMap<>();
 
     public void addBook(Book book) {
         booksInLibrary.put(book,BookReservation.NO);
@@ -24,26 +24,26 @@ public class Library {
         readersInLibrary.remove(reader);
     }
     public void setBookReservation(Reader reader, Book book) {
-
         booksInLibrary.put(book,BookReservation.YES);
-
-        //temp.put(reader,booksInLibrary);
-        readerReserveBook.put(reader,BookReservation.YES);
+        reservationsBooks.put(reader,book);
     }
+
     public void cancelBookReservation(Reader reader, Book book) {
         booksInLibrary.put(book,BookReservation.NO);
-        readerReserveBook.remove(reader);
+        reservationsBooks.remove(reader);
     }
+
     public void addReader(Reader reader) {
         readersInLibrary.put(reader,TakeBook.NO);
     }
-    public void readerTakeBook(Library library, Reader reader, Book book, DatesUsingBook datesUsingBook) {
-        if (Finder.isBookReserve(library,book) || Finder.isBookTaken(library,reader)) {
+
+    public void readerTakeBook(Library library, Reader reader, Book book, DatesUsingBook newDatesUsingBook) {
+        if (Finder.isBookReserve(library,book)) {
             return;
         }
         reader.readerBook.add(book);
         readersWhoTakeBooks.put(reader, reader.readerBook);
-        dateUsingBook.put(book,datesUsingBook);
+        dateUsingBook.put(book,newDatesUsingBook);
         readersInLibrary.put(reader,TakeBook.YES);
     }
 }
