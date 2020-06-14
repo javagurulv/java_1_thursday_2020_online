@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 class CreditCard {
 
 
-    private int creditCardSerialNumber;
+    private int creditCardSerialNumber;  // зачем это свойство?
     private int creditCardPinCode;
     private BigDecimal creditCardDepositBalance;
     private BigDecimal creditLimit;
