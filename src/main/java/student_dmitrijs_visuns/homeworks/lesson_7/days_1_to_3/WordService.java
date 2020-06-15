@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_7.day_3;
+package student_dmitrijs_visuns.homeworks.lesson_7.days_1_to_3;
 
 class WordService {
 
