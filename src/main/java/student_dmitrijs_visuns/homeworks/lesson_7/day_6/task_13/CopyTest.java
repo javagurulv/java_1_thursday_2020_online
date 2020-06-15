@@ -10,12 +10,13 @@ class CopyTest {
         newTest.leftBoundTest();
         newTest.rightBoundTest();
         newTest.outOfBoundsTest();
+        newTest.arrayLengthTest();
     }
 
     public void copyArrayInRangeTest () {
         Copy copy = new Copy();
         int[] in = {10, 20, 30, 40, 50, 60};
-        int[] out = copy.copyInRange(in, 15, 45);
+        int[] out = copy.copyInRange(in, 20, 40);
         int[] expected = {20, 30, 40};
 
        if (Arrays.equals(expected, out)) {
@@ -61,6 +62,19 @@ class CopyTest {
             System.out.println("Out of bounds value test - OK");
         } else {
             System.out.println("Out of bounds value test - FAIL");
+        }
+    }
+
+    public void arrayLengthTest () {
+        Copy copy = new Copy();
+        int[] in = {10, 20, 30, 40, 50, 60};
+        int[] out = copy.copyInRange(in, 40, 100);
+        int expectedArrayLength = 3;
+
+        if (out.length == expectedArrayLength) {
+            System.out.println("Array length test - OK");
+        } else {
+            System.out.println("Array length test - FAIL");
         }
     }
 
