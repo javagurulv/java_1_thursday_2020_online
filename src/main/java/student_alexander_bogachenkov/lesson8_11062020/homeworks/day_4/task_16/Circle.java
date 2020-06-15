@@ -3,7 +3,6 @@ package student_alexander_bogachenkov.lesson8_11062020.homeworks.day_4.task_16;
 class Circle extends Shape {
 
     private final double radius;
-    private String title;
 
     Circle(String title, double radius) {
         super(title);

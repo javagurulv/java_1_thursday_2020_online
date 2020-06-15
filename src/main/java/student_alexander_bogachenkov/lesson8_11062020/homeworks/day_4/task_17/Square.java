@@ -2,7 +2,6 @@ package student_alexander_bogachenkov.lesson8_11062020.homeworks.day_4.task_17;
 
 class Square extends Shape {
 
-    private String title;
     private double sideLength;
 
     Square(String title, double sideLength) {
