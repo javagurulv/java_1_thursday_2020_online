@@ -1,9 +1,13 @@
 package student_aleksey_kodin.lesson6.day5.task_22;
 
 class TicTacToe {
-    private int rowWinPosition;
-    private int columnWinPosition;
-    private int winPlayer;
+
+	// Не объявляйте в классе не нужные свойства!
+	// эти свойства используются только в get и set методах.
+
+    private int rowWinPosition;  // зачем это свойство!
+    private int columnWinPosition; // зачем это свойство!
+    private int winPlayer;  // зачем это свойство!
 
     public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck) {
         for (int[] row : field) {

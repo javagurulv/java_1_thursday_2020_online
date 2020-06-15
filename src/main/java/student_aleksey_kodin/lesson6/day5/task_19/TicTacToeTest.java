@@ -11,6 +11,16 @@ class TicTacToeTest {
         System.out.println("Tic Tac Toe test - create Game Board = OK");
         ticTacToeTest.testWinPositionForHorizontals();
     }
+
+	//Не используйте в автоматических тестах
+	// никакого вывода на консоль!
+	// Если вы что то выводите на консоль
+	// в автоматическом тесте - вы хотите,
+	// что бы пользователь это увидел,
+	// а раз так вы убиваете саму суть
+	// автоматического теста - это тестирование кода
+	// без участия человека!
+
     public void testWinPositionForHorizontals() {
         field[1][0] = field[1][1] = field[1][2] = 0;
         boolean result = ticTacToe.isWinPositionForHorizontals(field,0);

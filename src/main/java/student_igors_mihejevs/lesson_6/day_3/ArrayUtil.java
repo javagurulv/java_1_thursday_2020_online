@@ -104,6 +104,9 @@ class ArrayUtil {
         }
     }
 
+
+	//Print or Find????   - лучше убрать такой комментарий и переименовать метод
+
     // print odd number from array
     public void findOddNumber(int[] arr) {
         System.out.print("All odd numbers from array : ");

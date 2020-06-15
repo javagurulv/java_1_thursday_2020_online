@@ -24,6 +24,7 @@ package student_diana_miranovica.lesson6.home_works.day_1.task_3;
          return number % 5 == 0;
      }
      public boolean divisionToThreeAndFive(int number){
-         return number % 3 == 0 && number % 5 ==0;
+        // для более лёгкого чтения кода нужны скобки!
+     	return number % 3 == 0 && number % 5 ==0;
      }
 }

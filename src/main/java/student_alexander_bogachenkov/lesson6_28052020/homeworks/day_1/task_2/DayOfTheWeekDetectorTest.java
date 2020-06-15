@@ -21,6 +21,7 @@ class DayOfTheWeekDetectorTest {
         DayOfTheWeekDetector victim = new DayOfTheWeekDetector();
         String actualResult = victim.detectDayName(1);
 
+        // Try to extract this common part to separate method!
         if (actualResult.equals(expectedResult)) {
             System.out.println("shouldReturnMonday PASSED");
         } else {

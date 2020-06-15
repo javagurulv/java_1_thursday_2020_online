@@ -6,8 +6,8 @@ class Policy {
     private final int EMPTY_ARRAY = 0;
     private double price;
     private String name;
-    private double sumItemFire;
-    private double sumItemTheft;
+    private double sumItemFire;  // а надо ли хранить это значение если его можно посчитать?
+    private double sumItemTheft; // а надо ли хранить это значение если его можно посчитать?
     private Policy[] arrayPolicy = new Policy[EMPTY_ARRAY];
     private int arrayCount = EMPTY_ARRAY;
     Policy() {

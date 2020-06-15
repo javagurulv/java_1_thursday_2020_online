@@ -19,6 +19,9 @@ class ArrayUtil {
     public void printArrayToConsole(int[] array) {
         System.out.println(Arrays.toString(array));
     }
+
+	//Если используется Stream API то тогда и возвращать надо Optional<Integer>. Иначе -1 как то не корректно.
+	// Если этот метод вернёт -1 - то это что означает? Минимальное значение или его отсутсвие?
     public int findMaxNumber(int[] array) {
     int maxValue = -1;
         OptionalInt max = Arrays.stream(array).max();
