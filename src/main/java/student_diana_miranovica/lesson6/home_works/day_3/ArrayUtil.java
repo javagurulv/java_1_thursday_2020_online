@@ -8,7 +8,9 @@ import java.util.stream.IntStream;
 class ArrayUtil {
 
      public int[] createArray(int arrayLength) {
-         int[] array = new int[arrayLength];
+        // в одну стороку! return new int[arrayLength];
+		// переменную создавать не стоит
+     	int[] array = new int[arrayLength];
          return array;
      }
 
@@ -54,6 +56,8 @@ class ArrayUtil {
 
 
     public long repeatedNumberInArray(int[] array, int elem) {
+		// в одну стороку! IntStream.of(array).filter(x -> x == elem).count();
+		// переменную создавать не стоит
         long result = IntStream.of(array).filter(x -> x == elem).count();
         return result;
     }

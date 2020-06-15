@@ -2,8 +2,8 @@ package student_aleksey_kodin.lesson7.day1.task_3;
 
  class WordService {
      public String findMostFrequentWord(String text) {
-     String[] textArray;
-     int[] wordCountArray;
+     	String[] textArray;  // Объявляйте переменные там где вы их первый раз используете!
+     	int[] wordCountArray; // Объявляйте переменные там где вы их первый раз используете!
          textArray = convertStringToWordArray(text);
 
          wordCountArray = new int[textArray.length];

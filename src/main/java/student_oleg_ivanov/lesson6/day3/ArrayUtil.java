@@ -36,6 +36,8 @@ class ArrayUtil {
         }
     }
 
+    // что делает этот метод?
+	// И как это соотносится с названием метода?
     public void findNumberInArrays(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = 9;

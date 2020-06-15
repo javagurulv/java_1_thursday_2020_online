@@ -8,7 +8,7 @@ class TicTacToe {
             }
         }
     return false;
-    }
+    }    // оставляйте пустую строку между методами в классе! Это улучшает читабельность кода
     public boolean isWinPositionForVerticals(int[][] field, int playerToCheck) {
             for (int column = 0; column < field[0].length; column++) {
                 if ((field[0][column] == playerToCheck) && (field[1][column] == playerToCheck) &&

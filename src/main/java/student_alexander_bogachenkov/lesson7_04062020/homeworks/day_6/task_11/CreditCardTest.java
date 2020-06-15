@@ -2,6 +2,14 @@ package student_alexander_bogachenkov.lesson7_04062020.homeworks.day_6.task_11;
 
 import java.math.BigDecimal;
 
+/*
+Слишком мало тестов!
+Нужно придумать больше тестов, так как кейсов намного больше.
+
+Deposit() - что если у нас есть долг, а что если у нас нет долга ....
+Withdraw() - что если у нас есть долг, а что если у нас нет долга ....
+*/
+
 class CreditCardTest {
 
     public static void main(String[] args) {

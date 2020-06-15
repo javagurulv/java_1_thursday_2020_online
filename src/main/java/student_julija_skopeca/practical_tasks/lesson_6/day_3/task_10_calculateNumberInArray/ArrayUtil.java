@@ -7,6 +7,8 @@ import java.util.stream.IntStream;
 class ArrayUtil {
 
     public int[] createArray(int arrayLength) {
+		// в одну стороку! return new int[arrayLength];
+		// переменную создавать не стоит
         int [] array = new int [arrayLength];
         return array;
     }

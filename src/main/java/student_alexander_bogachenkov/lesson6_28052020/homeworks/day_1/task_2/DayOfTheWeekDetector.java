@@ -1,7 +1,9 @@
 package student_alexander_bogachenkov.lesson6_28052020.homeworks.day_1.task_2;
 
 class DayOfTheWeekDetector {
-    public String detectDayName(int number) {
+
+	// Try to use switch here!!
+	public String detectDayName(int number) {
         if (number == 1) {
             return "Monday";
         } else if (number == 2) {

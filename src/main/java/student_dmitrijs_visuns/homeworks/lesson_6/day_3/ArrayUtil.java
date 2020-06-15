@@ -98,7 +98,7 @@ class ArrayUtil {
         return arrayMinValue;
     }
 
-    public void ArrayEvenNumbers(int[] array) {
+   /* public void ArrayEvenNumbers(int[] array) {
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
@@ -117,6 +117,6 @@ class ArrayUtil {
             }
         }
 
-    }
+    }*/
 
 }

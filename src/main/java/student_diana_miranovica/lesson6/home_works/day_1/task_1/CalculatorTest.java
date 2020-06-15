@@ -7,6 +7,8 @@ package student_diana_miranovica.lesson6.home_works.day_1.task_1;
         CalculatorTest calculatorTest = new CalculatorTest();
         calculatorTest.isEvenTest();
 
+        // как минимум тут должно быть два теста!
+		// положительный и отрицательный.
 
     }
     public void isEvenTest(){

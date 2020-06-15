@@ -4,6 +4,7 @@ class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calc = new CalculatorTest();
         calc.test();
+        // а где негативный тест?
     }
 
 
