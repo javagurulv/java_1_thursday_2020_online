@@ -1,4 +1,4 @@
-package teacher.lesson_8.homework.day_x.super_task_2;
+package teacher.lesson_8.homework.level_x.super_task_2;
 
 class MAthOperationDemo {
 
