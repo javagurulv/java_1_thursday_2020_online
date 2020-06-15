@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_7.day_6;
+package student_dmitrijs_visuns.homeworks.lesson_7.day_6.task_13;
 
 import java.util.ArrayList;
 import java.util.List;
