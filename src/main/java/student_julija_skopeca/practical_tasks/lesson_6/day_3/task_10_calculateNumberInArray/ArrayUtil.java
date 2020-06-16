@@ -9,8 +9,8 @@ class ArrayUtil {
     public int[] createArray(int arrayLength) {
 		// в одну стороку! return new int[arrayLength];
 		// переменную создавать не стоит
-        int [] array = new int [arrayLength];
-        return array;
+        //int [] array = new int [arrayLength];
+        return new int[arrayLength];
     }
 
     public void fillArrayWithRandomNumbers(int[] array) {
