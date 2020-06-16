@@ -4,7 +4,7 @@ package student_dmitrijs_visuns.homeworks.lesson_8.level_2;
         Изменения можно вносить только в класс HumanPlayer.*/
 
 
-class Task_8 {
+class   Task_8 {
 
     class Player {
 
