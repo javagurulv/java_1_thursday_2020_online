@@ -1,17 +1,17 @@
 package student_aleksey_kodin.lesson8.levelx.supertask1.domain;
 
 import student_aleksey_kodin.lesson8.levelx.supertask1.logic.Finder;
-
+import student_aleksey_kodin.lesson8.levelx.supertask1.logic.Penalty;
 import java.util.*;
 
 public class Library {
 
     public Map <Reader, Book> reservationsBooks = new HashMap<>();
     public Map <Book, BookReservation> booksInLibrary = new HashMap<>();
-
     public Map <Reader, TakeBook> readersInLibrary = new HashMap<>();
     public Map <Reader, List<? extends Book>> readersWhoTakeBooks = new HashMap<>();
     public Map <Book, DatesUsingBook> dateUsingBook = new HashMap<>();
+    public Penalty penalty = new Penalty();
 
     public boolean addBook(Book book) {
         booksInLibrary.put(book, BookReservation.NO);
@@ -41,7 +41,7 @@ public class Library {
     }
 
     public boolean readerTakeBook(Library library, Reader reader, Book book, DatesUsingBook newDatesUsingBook) {
-        if (isBookReserved(library,book)) {
+        if (rulesForbidTakingBook(library,reader,book)) {
             return false;
         }
         reader.readerBook.add(book);
@@ -88,7 +88,9 @@ public class Library {
         return deletedIndex == INCORRECT_LIST_INDEX;
     }
 
-    private boolean isBookReserved(Library library,Book book) {
-        return Finder.isBookReserve(library,book);
+    private boolean rulesForbidTakingBook(Library library, Reader reader, Book book) {
+        return Finder.isBookReserve(library,book) || Finder.isReaderTakenCurrentBook(library,reader,book)
+                || Finder.isBookTaken(library,book);
+
     }
 }

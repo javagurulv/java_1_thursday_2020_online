@@ -1,7 +1,0 @@
-Найти в интернете (javadoc) иерархию наследования
-для класса java.util.ArrayList.
-
-java.lang.Object
-    java.util.AbstractCollection
-        java.util.AbstractList
-            java.util.ArrayList

@@ -6,6 +6,7 @@ import java.util.*;
 public class Reader {
     private String clientName;
     private String clientSurname;
+    private BigDecimal penalty = new BigDecimal("0");
     List<Book> readerBook = new ArrayList<>();
 
     public Reader() {}
@@ -29,6 +30,10 @@ public class Reader {
     public void setClientSurname(String clientSurname) {
         this.clientSurname = clientSurname;
     }
+
+    public BigDecimal getPenalty() { return penalty; }
+
+    public void setPenalty(BigDecimal penalty) { this.penalty = penalty; }
 
     @Override
     public boolean equals(Object o) {

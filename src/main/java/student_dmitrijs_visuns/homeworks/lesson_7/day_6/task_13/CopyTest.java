@@ -57,8 +57,9 @@ class CopyTest {
         Copy copy = new Copy();
         int[] in = {10, 20, 30, 40, 50, 60};
         int[] out = copy.copyInRange(in, 3, 8);
+        int emptyArrayLength = 0;
 
-        if (out.length == 0) {
+        if (out.length == emptyArrayLength) {
             System.out.println("Out of bounds value test - OK");
         } else {
             System.out.println("Out of bounds value test - FAIL");
