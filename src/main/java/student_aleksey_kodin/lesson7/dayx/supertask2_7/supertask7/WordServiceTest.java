@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson7.day1.task_3;
+package student_aleksey_kodin.lesson7.dayx.supertask2_7.supertask7;
 
 class WordServiceTest {
 

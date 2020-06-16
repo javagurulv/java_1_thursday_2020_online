@@ -42,44 +42,9 @@ class Demo {
         LocalDate date = LocalDate.of(2020, 7,7 );
         library.penalty.setPenaltySize(new BigDecimal("5"));
 
-        PrintInformation.printBookReservation(library);
-
         library.readerTakeBook(library, reader, book_1, dates1);
         library.readerTakeBook(library, reader, book_2, dates1);
         library.readerTakeBook(library, reader1, book_3, dates3);
-
-        System.out.println(Finder.isBookTaken(library,book_3));
-
-        library.penalty.setReaderPenalty(library,reader,date);
-
-        library.readerReturnBook(library,reader,book_1);
-
-        library.penalty.setReaderPenalty(library,reader,date);
-
-        library.readerTakeBook(library, reader, book_1, dates1);
-
-        library.penalty.setReaderPenalty(library,reader,date);
-
-
-
-
-
-
-
-
-        System.out.println("Reader penalty: " + reader.getPenalty());
-        System.out.println("-----------------------------------");
-
-        library.readerReturnBook(library,reader,book_2);
-
-
-
-        System.out.println("Reader penalty: " + reader.getPenalty());
-        library.readerTakeBook(library, reader, book_3, dates3);
-
-
-        System.out.println("Reader penalty: " + reader.getPenalty());
-
 
 
     }
