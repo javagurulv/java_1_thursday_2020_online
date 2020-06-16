@@ -15,13 +15,14 @@ import static org.junit.Assert.*;
 public class FinderTest {
         Library library = new Library();
         Reader reader_1 = new Reader("UserName 1","UserSurname 1");
+        Reader reader_2 = new Reader("UserName 1","UserSurname 1");
         Book book_1 = new Book("Book Author 1","Book Name 1");
+        Book book_2 = new Book("Book Author 1","Book Name 1");
         DatesUsingBook datesUsingBook = new DatesUsingBook();
     @Before
     public void setUp() {
         library.addBook(book_1);
         library.addReader(reader_1);
-        library.setBookReservation(reader_1, book_1);
 
         datesUsingBook.setDateWhenTakeBook(2020,6,20);
         datesUsingBook.setDateCountUntilReturnBook(15);
@@ -35,7 +36,23 @@ public class FinderTest {
 
     @Test
     public void isBookReserve() {
+        library.setBookReservation(reader_1, book_1);
         boolean result = Finder.isBookReserve(library, book_1);
+        assertTrue(result);
+    }
+
+    @Test
+    public void isBookTaken() {
+        library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
+        boolean result = Finder.isBookTaken(library,book_1);
+        assertTrue(result);
+    }
+
+    @Test
+    public void isBookTaken_SecondReaders() {
+        library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
+        library.readerTakeBook(library,reader_2,book_2,datesUsingBook);
+        boolean result = Finder.isBookTaken(library,book_2);
         assertTrue(result);
     }
 
@@ -47,13 +64,13 @@ public class FinderTest {
 
     @Test
     public void isReaderReserveBook() {
+        library.setBookReservation(reader_1, book_1);
         boolean result = Finder.isReaderReserveBook(library, reader_1);
         assertTrue(result);
     }
 
     @Test
-    public void isBookTaken() {
-        library.cancelBookReservation(reader_1, book_1);
+    public void isReaderBookTaken() {
         library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
         boolean result = Finder.isReaderBookTaken(library, reader_1);
         assertTrue(result);
@@ -76,16 +93,7 @@ public class FinderTest {
     }
 
     @Test
-    public void isReaderBookTaken() {
-        library.cancelBookReservation(reader_1,book_1);
-        library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
-        boolean result = Finder.isReaderBookTaken(library, reader_1);
-        assertTrue(result);
-    }
-
-    @Test
     public void getAllBooksForReader() {
-        library.cancelBookReservation(reader_1,book_1);
         library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
         List<Book> bookList = Finder.getAllBooksForReader(library, reader_1);
         assertEquals(1,bookList.size());
@@ -93,7 +101,6 @@ public class FinderTest {
 
     @Test
     public void getStartDateForBook() {
-        library.cancelBookReservation(reader_1,book_1);
         library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
         LocalDate result = Finder.getStartDateForBook(library,book_1);
         LocalDate waitingResult = LocalDate.of(2020,6,20);
@@ -102,7 +109,6 @@ public class FinderTest {
 
     @Test
     public void getFinishDateForBook() {
-        library.cancelBookReservation(reader_1,book_1);
         library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
         LocalDate result = Finder.getFinishDateForBook(library,book_1);
         LocalDate waitingResult = LocalDate.of(2020,7,5);

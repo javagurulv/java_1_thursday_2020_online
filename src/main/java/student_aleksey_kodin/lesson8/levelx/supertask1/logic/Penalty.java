@@ -5,6 +5,7 @@ import student_aleksey_kodin.lesson8.levelx.supertask1.domain.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 public class Penalty {
     NotReturnedBooks notReturnedBooks = new NotReturnedBooks();
@@ -15,41 +16,37 @@ public class Penalty {
 
     public void setPenaltySize(BigDecimal penaltySize) { this.penaltySize = penaltySize; }
 
-    public BigDecimal getReaderPenalty(Reader reader) {
-        //return //reader.getPenalty();
-        return new BigDecimal("0");
-
-    }
-    public void setReaderPenalty(Library library, Reader reader, LocalDate datePattern) {
+    public boolean setReaderPenalty(Library library, Reader reader, LocalDate datePattern) {
         List<Book> readerBooks = notReturnedBooks.createListBookNotReturnReader(library,reader,datePattern);
-        if (readerBooks.size() == 0) {
-            return;
+        if (isNotReturnedBookListEmpty(readerBooks)) {
+            resetReaderPenalty(reader);
+            return false;
         }
 
-        BigDecimal penaltySum = new BigDecimal("0");
-        for (int index = 0; index < readerBooks.size(); index++) {
-            penaltySum = penaltySum.add(getPenaltySize());
+            BigDecimal penaltySum = new BigDecimal("0");
+                for (int index = 0; index < readerBooks.size(); index++) {
+                    penaltySum = penaltySum.add(getPenaltySize());
+                }
+
+        resetReaderPenalty(reader);
+        reader.setPenalty(penaltySum);
+    return true;
+    }
+
+    public void setAllReadersPenalty(Library library, LocalDate datePattern) {
+        Set<Reader> allReaders = library.readersWhoTakeBooks.keySet();
+
+        for (Reader checkReaderToPenalty : allReaders) {
+            setReaderPenalty(library,checkReaderToPenalty,datePattern);
         }
+     }
 
-        //TakeBook oldValue = library.readersInLibrary.get(reader);
-        //List<Book> old = library.readersWhoTakeBooks.get(reader);
-
-        //reader.setPenalty(reader.getPenalty().add(penaltySum));
-
-       // library.readersInLibrary.replace(reader,oldValue);
-        //library.readersWhoTakeBooks.replace(reader,old);
-
-
-
-
-
-    }
-    public void resetReaderPenalty(Reader reader) {
-
-    }
-    public void setAllReadersPenalty() {
-
+    private void resetReaderPenalty(Reader reader) {
+        reader.setPenalty(new BigDecimal("0"));
     }
 
-
+    private boolean isNotReturnedBookListEmpty(List<Book> readerBooks) {
+        final int EMPTY_LIST = 0;
+        return readerBooks.size() == EMPTY_LIST;
+    }
 }

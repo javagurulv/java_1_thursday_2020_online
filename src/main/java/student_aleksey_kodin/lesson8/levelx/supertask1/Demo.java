@@ -13,7 +13,6 @@ class Demo {
         Library library = new Library();
         NotReturnedBooks notReturnedBooks = new NotReturnedBooks();
         Notification notification = new Notification();
-        Penalty penalty = new Penalty();
 
         Reader reader = new Reader("User1", "User Surname1");
         Reader reader1 = new Reader("User2", "Surname2");
@@ -27,46 +26,25 @@ class Demo {
         library.addBook(book_3);
 
         library.addReader(reader);
-        //library.addReader(reader1);
-
-        DatesUsingBook dates1 = new DatesUsingBook();
-        dates1.setDateWhenTakeBook(2020, 6, 20);
-        dates1.setDateCountUntilReturnBook(15);
-        library.readerTakeBook(library, reader, book_1, dates1);
+        library.addReader(reader1);
 
         DatesUsingBook dates2 = new DatesUsingBook();
         dates2.setDateWhenTakeBook(2020, 6, 20);
         dates2.setDateCountUntilReturnBook(15);
-        library.readerTakeBook(library, reader, book_2, dates2);
 
         DatesUsingBook dates3 = new DatesUsingBook();
-        dates2.setDateWhenTakeBook(2020, 6, 30);
-        dates2.setDateCountUntilReturnBook(20);
-        //library.readerTakeBook(library, reader1, book_3, dates2);
+        dates3.setDateWhenTakeBook(2020, 6, 20);
+        dates3.setDateCountUntilReturnBook(15);
 
+        DatesUsingBook dates1 = new DatesUsingBook();
+        dates1.setDateWhenTakeBook(2020, 6, 20);
+        dates1.setDateCountUntilReturnBook(15);
         LocalDate date = LocalDate.of(2020, 7,7 );
-        penalty.setPenaltySize(new BigDecimal("5"));
+        library.penalty.setPenaltySize(new BigDecimal("5"));
 
-        System.out.println("Map before: " + library.readersInLibrary.toString());
-        System.out.println("Hash code" + reader.hashCode());
-        System.out.println("Reader penalty ");
-        System.out.println("-----------------------------------");
-
-        penalty.setReaderPenalty(library,reader,date);
-
-        System.out.println("Map after: " + library.readersInLibrary.toString());
-        System.out.println("Hash code" + reader.hashCode());
-        System.out.println("Reader penalty ");
-
-        library.readerReturnBook(library,reader,book_2);
-
-        System.out.println("Map after: " + library.readersInLibrary.toString());
-
-        library.readerReturnBook(library,reader,book_1);
-
-        System.out.println("Map after: " + library.readersInLibrary.toString());
-        System.out.println(Finder.isReaderBookTaken(library,reader));
-
+        library.readerTakeBook(library, reader, book_1, dates1);
+        library.readerTakeBook(library, reader, book_2, dates1);
+        library.readerTakeBook(library, reader1, book_3, dates3);
 
 
     }
