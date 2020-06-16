@@ -1,4 +1,4 @@
-package student_vadim_sokolenko;
+package student_vadim_sokolenko.Lesson2;
 
 class Day5task24 {
 

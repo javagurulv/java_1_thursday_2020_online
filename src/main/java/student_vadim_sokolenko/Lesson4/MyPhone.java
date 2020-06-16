@@ -1,4 +1,4 @@
-package student_vadim_sokolenko;
+package student_vadim_sokolenko.Lesson4;
 
 class MyPhone {
 
