@@ -4,7 +4,19 @@ class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calc = new CalculatorTest();
         calc.test();
+        calc.testV2();
         // а где негативный тест?
+    }
+
+
+    public void testV2(){
+        Calculator calculator = new Calculator();
+        boolean result = calculator.isEven(1);
+        if (result) {
+            System.out.println("Calculator isEven test = FAIL");
+        } else {
+            System.out.println("Calculator isEven test = OK");
+        }
     }
 
 

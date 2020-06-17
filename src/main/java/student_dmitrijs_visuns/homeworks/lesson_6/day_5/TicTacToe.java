@@ -82,6 +82,7 @@ class TicTacToe {
         System.out.println("Enter X coordinate (0-" +(NUMBER_OF_HORIZONTALS -1) + "): ");
         int inputX = sc.nextInt();
         while (inputX < 0 || inputX > NUMBER_OF_HORIZONTALS -1) {
+            System.out.println("Wrong coordinate, try again");
             inputX = sc.nextInt();
         }
         return inputX;
@@ -93,6 +94,7 @@ class TicTacToe {
         System.out.println("Enter Y coordinate (0-" +(NUMBER_OF_VERTICALS -1) + "): ");
         int inputY = sc.nextInt();
         while (inputY < 0 || inputY > NUMBER_OF_VERTICALS -1) {
+            System.out.println("Wrong coordinate, try again");
             inputY = sc.nextInt();
         }
         return inputY;

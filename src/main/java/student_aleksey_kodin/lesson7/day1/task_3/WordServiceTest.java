@@ -9,11 +9,11 @@ class WordServiceTest {
 
         wordServiceTest.printWord();
     }
+
     private void printWord() {
 
         printTestResult(wordService.findMostFrequentWord("Это текст просто текст просто просто").equals("просто"),"print word");
     }
-
 
     private void printTestResult(boolean isResultOk,String wordServiceTest) {
         if (isResultOk) {
