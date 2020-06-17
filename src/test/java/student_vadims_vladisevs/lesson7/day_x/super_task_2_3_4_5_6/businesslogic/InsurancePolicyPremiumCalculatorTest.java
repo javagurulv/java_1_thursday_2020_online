@@ -7,6 +7,10 @@ import java.math.BigDecimal;
 
 import static org.junit.Assert.*;
 
+/*
+Risk type - FLOOD
+ */
+
 public class InsurancePolicyPremiumCalculatorTest {
     InsurancePolicyPremiumCalculator testCalc = new InsurancePolicyPremiumCalculator();
 
