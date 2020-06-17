@@ -20,6 +20,7 @@ public  class Finder {
     public static boolean isBookReserve(Library library, Book book) {
         return library.booksInLibrary.get(book).equals(BookReservation.YES);
     }
+
     public static boolean isBookTaken(Library library,Book book) {
         List<Book> readerTakenBooks;
         Set<Reader> setReadersKeys = library.readersWhoTakeBooks.keySet();

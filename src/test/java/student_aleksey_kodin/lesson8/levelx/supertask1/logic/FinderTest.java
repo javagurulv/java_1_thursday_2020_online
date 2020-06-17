@@ -114,4 +114,15 @@ public class FinderTest {
         LocalDate waitingResult = LocalDate.of(2020,7,5);
         assertEquals(waitingResult,result);
     }
+    @Test()
+    public void findReaderReservedBook_waitingEmptyList() {
+        Reader finderReader = Finder.findReaderReservedBook(library,book_1);
+        assertNull(finderReader);
+
+    }
+    @Test
+    public void findBookReservedReader_waitingEmptyList() {
+        Book finderBook = Finder.findBookReservedReader(library,reader_1);
+        assertNull(finderBook);
+    }
 }
