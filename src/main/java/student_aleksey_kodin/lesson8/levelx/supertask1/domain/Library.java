@@ -17,14 +17,17 @@ public class Library {
         booksInLibrary.put(book, BookReservation.NO);
     return booksInLibrary.containsKey(book);
     }
+
     public boolean deleteBook(Book book) {
         booksInLibrary.remove(book);
     return !(booksInLibrary.containsKey(book));
     }
+
     public boolean deleteReader(Reader reader) {
         readersInLibrary.remove(reader);
     return !(readersInLibrary.containsKey(reader));
     }
+
     public void setBookReservation(Reader reader, Book book) {
         booksInLibrary.put(book,BookReservation.YES);
         reservationsBooks.put(reader,book);

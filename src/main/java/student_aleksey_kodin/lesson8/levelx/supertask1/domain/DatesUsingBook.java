@@ -53,6 +53,7 @@ public class DatesUsingBook {
         return firstDateReadBook.equals(that.firstDateReadBook) &&
                 lastDateReadBook.equals(that.lastDateReadBook);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(firstDateReadBook, lastDateReadBook);
