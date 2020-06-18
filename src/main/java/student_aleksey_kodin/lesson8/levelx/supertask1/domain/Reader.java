@@ -9,9 +9,10 @@ public class Reader {
     private BigDecimal penalty = new BigDecimal("0");
     List<Book> readerBook = new ArrayList<>();
 
-    public Reader() {}
+    public Reader() {
+    }
 
-    public Reader (String clientName, String clientSurname) {
+    public Reader(String clientName, String clientSurname) {
         this.clientName = clientName;
         this.clientSurname = clientSurname;
     }
@@ -32,16 +33,20 @@ public class Reader {
         this.clientSurname = clientSurname;
     }
 
-    public BigDecimal getPenalty() { return penalty; }
+    public BigDecimal getPenalty() {
+        return penalty;
+    }
 
-    public void setPenalty(BigDecimal penalty) { this.penalty = penalty; }
+    public void setPenalty(BigDecimal penalty) {
+        this.penalty = penalty;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Reader reader = (Reader) o;
-        return  clientName.equals(reader.clientName) &&
+        return clientName.equals(reader.clientName) &&
                 clientSurname.equals(reader.clientSurname);
     }
 

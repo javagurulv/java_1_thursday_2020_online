@@ -11,9 +11,9 @@ public class Notification implements SendMessage {
     public String createMessage(Library library, Reader reader) {
 
         StringBuilder message = new StringBuilder("User: " + reader.getClientName() + " " +
-                                                                 reader.getClientSurname() + "\n");
+                reader.getClientSurname() + "\n");
 
-        List<Book> readerBooks = Finder.getAllBooksForReader(library,reader);
+        List<Book> readerBooks = Finder.getAllBooksForReader(library, reader);
 
         if (isNotBooks(readerBooks)) {
             return message.append("No books").toString();
@@ -24,9 +24,9 @@ public class Notification implements SendMessage {
         for (Book book : readerBooks) {
             message.append("Book's author: ").append(book.getAuthor()).append(" Book's name: ").
                     append(book.getBookName()).append(" Returned date: ").
-                              append(Finder.getFinishDateForBook(library, book)).append("\n");
+                    append(Finder.getFinishDateForBook(library, book)).append("\n");
         }
-    return message.toString();
+        return message.toString();
     }
 
     @Override

@@ -6,7 +6,7 @@ public class Book {
     private final String author;
     private final String bookName;
 
-    public Book(String author,String bookName) {
+    public Book(String author, String bookName) {
         this.author = author;
         this.bookName = bookName;
     }
@@ -15,7 +15,9 @@ public class Book {
         return bookName;
     }
 
-    public String getAuthor() { return author; }
+    public String getAuthor() {
+        return author;
+    }
 
     @Override
     public boolean equals(Object o) {
