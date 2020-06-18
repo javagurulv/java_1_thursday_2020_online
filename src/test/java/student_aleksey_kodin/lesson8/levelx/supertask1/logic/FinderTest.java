@@ -42,10 +42,16 @@ public class FinderTest {
     }
 
     @Test
-    public void isBookTaken() {
+    public void isBookTaken_waitingTrue() {
         library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
         boolean result = Finder.isBookTaken(library,book_1);
         assertTrue(result);
+    }
+
+    @Test
+    public void isBookTaken_waitingFalse() {
+        boolean result = Finder.isBookTaken(library,book_1);
+        assertFalse(result);
     }
 
     @Test
@@ -124,5 +130,11 @@ public class FinderTest {
     public void findBookReservedReader_waitingEmptyList() {
         Book finderBook = Finder.findBookReservedReader(library,reader_1);
         assertNull(finderBook);
+    }
+    @Test
+    public void isReaderTakenCurrentBook() {
+        library.readerTakeBook(library,reader_1,book_1,datesUsingBook);
+        boolean result = Finder.isReaderTakenCurrentBook(library,reader_1,book_1);
+        assertTrue(result);
     }
 }

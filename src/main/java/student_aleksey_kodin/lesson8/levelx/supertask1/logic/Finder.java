@@ -27,8 +27,7 @@ public  class Finder {
 
           for (Reader searchReader : setReadersKeys) {
                 readerTakenBooks = getAllBooksForReader(library,searchReader);
-
-                    for (Book readerTakenBook : readerTakenBooks) {
+                   for (Book readerTakenBook : readerTakenBooks) {
                         if (readerTakenBook.equals(book)) {
                             return true;
                         }
@@ -73,12 +72,7 @@ public  class Finder {
 
     public static boolean isReaderTakenCurrentBook(Library library, Reader reader, Book book) {
         List<Book> readerBooks = getAllBooksForReader(library,reader);
-        for (Book searchBook : readerBooks) {
-            if (searchBook.equals(book)) {
-                return true;
-            }
-        }
-    return false;
+        return readerBooks.contains(book);
     }
 
     public static List<Book> getAllBooksForReader(Library library,Reader reader) {
