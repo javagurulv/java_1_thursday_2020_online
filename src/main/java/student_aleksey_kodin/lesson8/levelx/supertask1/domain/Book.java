@@ -10,6 +10,7 @@ public class Book {
         this.author = author;
         this.bookName = bookName;
     }
+
     public String getBookName() {
         return bookName;
     }
@@ -24,6 +25,7 @@ public class Book {
         return author.equals(book.author) &&
                 bookName.equals(book.bookName);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(author, bookName);

@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_6.day_x.from_viktor.v2.domain;
+package student_vadims_vladisevs.lesson7.day_x.super_task_2_3_4_5_6.domain;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

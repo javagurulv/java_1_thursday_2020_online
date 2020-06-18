@@ -15,6 +15,7 @@ public class Reader {
         this.clientName = clientName;
         this.clientSurname = clientSurname;
     }
+
     public String getClientName() {
         return clientName;
     }
@@ -43,6 +44,7 @@ public class Reader {
         return  clientName.equals(reader.clientName) &&
                 clientSurname.equals(reader.clientSurname);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(clientName, clientSurname);
