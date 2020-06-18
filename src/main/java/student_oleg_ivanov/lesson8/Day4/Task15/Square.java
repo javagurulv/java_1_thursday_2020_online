@@ -19,4 +19,5 @@ class Square extends Shape {
     double calculatePerimeter() {
         return (4 * length);
     }
+
 }
