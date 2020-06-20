@@ -8,7 +8,7 @@ import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.InsuranceObject
 import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.InsuranceRisk;
 import teacher.lesson_7.lessoncode.insurancecalculator.v1.domain.SubInsuranceObject;
 
-public class SubInsuranceObjectsPremiumCalculator {
+class SubInsuranceObjectsPremiumCalculator {
 
 	private static final BigDecimal STANDARD_FIRE_RISK_COEF = new BigDecimal("0.03");
 	private static final BigDecimal OVERPRICED_FIRE_RISK_COEF = new BigDecimal("0.04");

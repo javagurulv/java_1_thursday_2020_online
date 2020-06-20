@@ -1,6 +1,7 @@
 package teacher.lesson_7.lessoncode.insurancecalculator.v2.domain;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SubInsuranceObject {
@@ -12,6 +13,7 @@ public class SubInsuranceObject {
 	public SubInsuranceObject(String name, BigDecimal price) {
 		this.name = name;
 		this.price = price;
+		this.insuranceRisks = new ArrayList<>();           //added
 	}
 
 	public void addInsuranceRisk(InsuranceRisk insuranceRisk) {

@@ -8,17 +8,19 @@ import student_aleksey_kodin.lesson8.levelx.supertask1.domain.Reader;
 public class PrintInformation {
 
     public static void printBookReservation(Library library) {
-        for (Book book: library.booksInLibrary.keySet()) {
+        for (Book book : library.booksInLibrary.keySet()) {
             if (library.booksInLibrary.get(book).equals(BookReservation.YES)) {
                 System.out.println("Book: " + book.getAuthor() + " " + book.getBookName());
             }
         }
     }
-    public static void printAllBooks(Library library)  {
-        for (Book book: library.booksInLibrary.keySet()) {
+
+    public static void printAllBooks(Library library) {
+        for (Book book : library.booksInLibrary.keySet()) {
             System.out.println("Book: " + book.getAuthor() + " " + book.getBookName());
         }
     }
+
     public static void printAllBookReaderTaken(Library library, Reader reader) {
         try {
             for (Book book : library.readersWhoTakeBooks.get(reader)) {

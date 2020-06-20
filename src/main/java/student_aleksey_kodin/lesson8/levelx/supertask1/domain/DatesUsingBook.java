@@ -7,8 +7,8 @@ public class DatesUsingBook {
     private LocalDate firstDateReadBook = LocalDate.now();
     private LocalDate lastDateReadBook = LocalDate.now();
 
-     public void setDateWhenTakeBook(int year, int month, int dayOfMonth) {
-        firstDateReadBook = LocalDate.of(year,month,dayOfMonth);
+    public void setDateWhenTakeBook(int year, int month, int dayOfMonth) {
+        firstDateReadBook = LocalDate.of(year, month, dayOfMonth);
     }
 
     public void setDateCountUntilReturnBook(int dayOffset) {
@@ -19,10 +19,12 @@ public class DatesUsingBook {
         return firstDateReadBook;
     }
 
-    public LocalDate getLastDateReadBook() { return lastDateReadBook; }
+    public LocalDate getLastDateReadBook() {
+        return lastDateReadBook;
+    }
 
     public int getCurrentYearFromFirstDateReadBook() {
-       return getFirstDateReadBook().getYear();
+        return getFirstDateReadBook().getYear();
     }
 
     public int getCurrentMonthFromFirstDateReadBook() {
@@ -53,6 +55,7 @@ public class DatesUsingBook {
         return firstDateReadBook.equals(that.firstDateReadBook) &&
                 lastDateReadBook.equals(that.lastDateReadBook);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(firstDateReadBook, lastDateReadBook);
