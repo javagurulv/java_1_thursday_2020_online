@@ -7,8 +7,8 @@ class ClassX {
 }
 
 class ClassY extends ClassX {
-    public ClassY() {
-        super(1);
+    public ClassY(int i) {
+        super(i);
         System.out.println(2);
     }
 }
