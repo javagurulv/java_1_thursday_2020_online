@@ -1,0 +1,5 @@
+На консоль будет выведен текст:
+
+Class A Constructor
+Class B Constructor
+Class C Constructor
