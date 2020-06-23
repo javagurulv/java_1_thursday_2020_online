@@ -1,7 +1,5 @@
 package student_diana_miranovica.lesson_8.lesone_code;
 
-import java.util.concurrent.Callable;
-
 public class DemoCar {
 
      public static void main(String[] args) {
