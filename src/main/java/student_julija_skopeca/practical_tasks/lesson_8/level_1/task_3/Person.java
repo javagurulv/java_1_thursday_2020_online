@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.lesson_8.level_3;
+package student_julija_skopeca.practical_tasks.lesson_8.level_1.task_3;
 
 class Person {
 
