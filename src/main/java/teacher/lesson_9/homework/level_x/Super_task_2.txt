@@ -1,8 +1,8 @@
 Знакомимся с дизайн паттернами.
 
 Найти в интернете информацию о дизайн паттерне Builder.
-Примеры:
 
+Примеры:
 https://dzone.com/articles/design-patterns-the-builder-pattern
 https://howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/
 
