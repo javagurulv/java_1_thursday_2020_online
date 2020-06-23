@@ -8,3 +8,5 @@
 таких как С++ в Java запрещено множественное наследование от классов. 
 Java не поддерживает множественное наследование классов потому, что 
 это может привести к ромбовидной проблеме.
+
+https://javarush.ru/groups/posts/731-mnozhestvennoe-nasledovanie-v-java-kompozicija-v-sravnenii-s-nasledovaniem
