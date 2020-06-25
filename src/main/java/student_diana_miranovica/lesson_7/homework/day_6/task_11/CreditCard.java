@@ -44,8 +44,15 @@ class CreditCard {
    return creditCardBalance;
   }
 
+    public int getCreditCardPin() {
+        return creditCardPin;
+    }
 
-  public void setCreditCardLimit(int creditCardLimit){
+    public void setCreditCardPin(int creditCardPin) {
+        this.creditCardPin = creditCardPin;
+    }
+
+    public void setCreditCardLimit(int creditCardLimit){
    this.creditCardLimit = creditCardLimit;
   }
  }

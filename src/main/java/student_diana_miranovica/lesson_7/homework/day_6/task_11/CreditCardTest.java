@@ -17,7 +17,7 @@ public class CreditCardTest {
     public void correctCreditCardPinTest(){
         CreditCard creditCard = new CreditCard();
         creditCard.creditCardCreate("1234 4501 1121 8754",1990);
-        int result = creditCard.creditCardPin;
+        int result = creditCard.getCreditCardPin();
         if (result == 1990){
             System.out.println("correct CreditCard Pin - OK");
         }else {
@@ -30,7 +30,7 @@ public class CreditCardTest {
         creditCard.creditCardCreate("9882 1682 9987 2634", 1980);
         creditCard.deposit(1980, 35);
         creditCard.withdraw(1980, 30);
-        int result = creditCard.creditCardBalance;
+        int result = creditCard.getCreditCardBalance();
         if (result == 5 ){
             System.out.println("depositing Money With Debt Without Balance Test - OK");
         }else {
@@ -43,7 +43,7 @@ public class CreditCardTest {
         creditCard.creditCardCreate("9855 4839 3209 3829",1890);
         creditCard.deposit(1890, 20);
         creditCard.deposit(1890,55);
-        int result = creditCard.creditCardBalance;
+        int result = creditCard.getCreditCardBalance();
         if (result == 75){
             System.out.println("depositing Money Without Debt With Balance Test  - Ok");
         }else {
@@ -56,7 +56,7 @@ public class CreditCardTest {
         creditCard.creditCardCreate("9844 4372 7734 4329",2003);
         creditCard.deposit(2003, 200);
         creditCard.withdraw(2003, 350);
-        int result = creditCard.creditCardBalance;
+        int result = creditCard.getCreditCardBalance();
         if (result == -150){
             System.out.println("withdrawal Money With Balance On Debt Test - OK");
         }else {
@@ -69,7 +69,7 @@ public class CreditCardTest {
         creditCard.creditCardCreate("9844 4372 7734 4329",2003);
         creditCard.deposit(2003, 200);
         creditCard.withdraw(2003, 200);
-        int result = creditCard.creditCardBalance;
+        int result = creditCard.getCreditCardBalance();
         if (result == 0){
             System.out.println("withdrawal Money With Balance On No Debt Test - OK");
         }else {
@@ -81,7 +81,7 @@ public class CreditCardTest {
         creditCard.creditCardCreate("9844 4372 7734 4329",2003);
         creditCard.deposit(2003, 0);
         creditCard.withdraw(2003, 200);
-        int result = creditCard.creditCardBalance;
+        int result = creditCard.getCreditCardBalance();
         if (result == -200){
             System.out.println("withdrawal Money Without Balance On No Debt Test - OK");
         }else {
@@ -94,7 +94,7 @@ public class CreditCardTest {
         creditCard.deposit(2003, 0);
         creditCard.withdraw(2003, 200);
         creditCard.withdraw(2003,150);
-        int result = creditCard.creditCardBalance;
+        int result = creditCard.getCreditCardBalance();
         if (result == -350){
             System.out.println("withdrawal Money Without Balance On No Debt Test - Ok");
         }else {
