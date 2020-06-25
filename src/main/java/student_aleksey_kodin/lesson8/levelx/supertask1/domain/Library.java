@@ -7,6 +7,13 @@ import java.util.*;
 
 public class Library {
 
+	// В этой модели данных разработанной для
+	// библиотеки не видно связей, тут есть мапы,
+	// которые как то связаны между собой бизнес
+	// логикой но в самой модели связи не отображены.
+
+	// Попробуйте внедрить в эту модель понятие читательского билета и всего что с ним связано.
+
     public Map<Reader, Book> reservationsBooks = new HashMap<>();
     public Map<Book, BookReservation> booksInLibrary = new HashMap<>();
     public Map<Reader, TakeBook> readersInLibrary = new HashMap<>();
