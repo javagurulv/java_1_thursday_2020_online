@@ -7,6 +7,9 @@ abstract class AbstractShape implements Shape {
         this.title = title;
     }
 
+	// название метода и название переменной - лучше чтобы
+	// они совпадали, даже такое небольшое различие
+	// напрягает читателя, он начинает думать что это разные вещи
     @Override
     public String getName() {
         return title;
