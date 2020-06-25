@@ -45,9 +45,9 @@ class ShapeUtilTest {
 
     private static void printTestResult(boolean isResultOk,String testName) {
         if (isResultOk) {
-            System.out.println("Virtual Disk test - " + testName + " = OK");
+            System.out.println("test - " + testName + " = OK");
         } else {
-            System.out.println("Virtual Disk test - " + testName + " = FAIL");
+            System.out.println("test - " + testName + " = FAIL");
         }
     }
 }

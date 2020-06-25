@@ -40,6 +40,8 @@ class ShapeUtil {
             return createRandomTriangle();
         }
     }
+
+    // Если знаешь Stream API то такие методы лучше писать на нём
     double calculateArea(Shape[] shapes) {
         double sumArea = 0;
         for (Shape shape : shapes) {
@@ -47,6 +49,8 @@ class ShapeUtil {
         }
     return sumArea;
     }
+
+	// Если знаешь Stream API то такие методы лучше писать на нём
     double calculatePerimeter(Shape[] shapes) {
         double sumPerimeter = 0;
         for (Shape shape : shapes) {
