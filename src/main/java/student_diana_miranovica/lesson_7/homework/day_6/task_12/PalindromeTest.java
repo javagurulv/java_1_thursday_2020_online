@@ -10,9 +10,9 @@ public class PalindromeTest {
 
     public void isPalindromeTest(){
         Palindrome palindrome = new Palindrome();
-        boolean result = palindrome.isPalindrome("Able was I ere I saw Elba");
+        boolean result = palindrome.isPalindromeReverseTheString("Able was I ere I saw Elba");
         printResult(result);
-        boolean result2 = palindrome.isPalindrome("Just a text");
+        boolean result2 = palindrome.isPalindromeReverseTheString("Just a text");
         printResult(result2);
     }
 
