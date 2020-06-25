@@ -1,36 +1,41 @@
-package student_igors_mihejevs.lesson_7.day_3;
+package student_igors_mihejevs.lesson_7.level_2;
 
 public class WordServiceTest {
 
     public static void main(String[] args) {
-        WordServiceTest wordServiceTest = new WordServiceTest();
+        WordServiceTest wst = new WordServiceTest();
 
-        wordServiceTest.shouldReturnArrayOfWords();
-        wordServiceTest.shouldReturnCountOfOneWordFromString();
-        wordServiceTest.shouldFindMostFrequentWord();
+        wst.shouldReturnArrayOfWords();
+        wst.shouldReturnCountOfOneWordFromString();
+        wst.shouldFindMostFrequentWord();
     }
 
     public void shouldReturnArrayOfWords() {
-        WordService wordService = new WordService();
+        WordService ws = new WordService();
         String testString = "one five two three five one five two two five";
-        if (wordService.getArrayOfWordsFromString(testString).length == 10)
+        //System.out.println(Arrays.toString(ws.getArrayOfWords(testString)));
+        if (ws.getArrayOfWordsFromString(testString).length == 10)
             System.out.println("Test of creating of array of words - OK");
         else System.out.println("Test of creating off array of words - FAIL");
     }
 
     public void shouldReturnCountOfOneWordFromString() {
-        WordService wordService = new WordService();
+        WordService ws = new WordService();
         String testString = "one five two three five one five two two five";
-        if (wordService.countingSpecificWordInArray(wordService.getArrayOfWordsFromString(testString),
-                "five") == 4)
+
+        if (ws.countingSpecificWordInArray(ws.getArrayOfWordsFromString(testString), "five") == 4)
             System.out.println("Test of returning count of word - OK");
         else System.out.println("Test of returning count of word - FAIL");
     }
 
     public void shouldFindMostFrequentWord() {
-        WordService wordService = new WordService();
+        WordService ws = new WordService();
         String testString = "one five two three five one five two two five";
-        if (wordService.findMostFrequentWord(testString).equals("five"))
+
+        //String testWord = ws.findMostFrequentWord(testString);
+
+        //System.out.println(testWord);
+        if (ws.findMostFrequentWord(testString).equals("five"))
             System.out.println("Test of finding the most frequent word - OK");
         else System.out.println("Test of finding the most frequent word - FAIL");
     }

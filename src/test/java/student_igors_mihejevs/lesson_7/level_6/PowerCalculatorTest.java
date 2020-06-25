@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_7.day_6;
+package student_igors_mihejevs.lesson_7.level_6;
 
 import org.junit.Test;
 

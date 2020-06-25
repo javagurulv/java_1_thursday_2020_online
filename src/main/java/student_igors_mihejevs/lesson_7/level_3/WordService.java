@@ -1,17 +1,9 @@
-package student_igors_mihejevs.lesson_7.day_4;
+package student_igors_mihejevs.lesson_7.level_3;
 
 class WordService {
 
     public String findMostFrequentWord(String text) {
         String[] arrayOfWords = getArrayOfWordsFromString(text);
-        return getCountedWordFromComparing(arrayOfWords);
-    }
-
-    public String[] getArrayOfWordsFromString(String text) {
-        return text.split(" ");
-    }
-
-    public String getCountedWordFromComparing(String[] arrayOfWords) {
         String mostFrequentWord = null;
         int maxNumberOfRepetitions = 0;
         for (String wordOfArray : arrayOfWords) {
@@ -20,12 +12,17 @@ class WordService {
                 maxNumberOfRepetitions = tempNumberOfRepetitions;
                 mostFrequentWord = wordOfArray;
             }
-        } return mostFrequentWord;
+        }
+        return mostFrequentWord;
     }
 
-    public int countingSpecificWordInArray(String[] arrayOfWords, String wordForCounting) {
+    public String[] getArrayOfWordsFromString(String text) {
+        return text.split(" ");
+    }
+
+    public int countingSpecificWordInArray(String[] arrOfWords, String wordForCounting) {
         int numberOfRepetitions = 0;
-        for (String word : arrayOfWords) {
+        for (String word : arrOfWords) {
             if (word.equals(wordForCounting)) numberOfRepetitions++;
         }
         return numberOfRepetitions;

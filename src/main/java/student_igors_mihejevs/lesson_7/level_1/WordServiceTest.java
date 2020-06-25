@@ -1,6 +1,4 @@
-package student_igors_mihejevs.lesson_7.day_1;
-
-import java.util.Arrays;
+package student_igors_mihejevs.lesson_7.level_1;
 
 public class WordServiceTest {
 

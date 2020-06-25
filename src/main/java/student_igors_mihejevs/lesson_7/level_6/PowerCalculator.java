@@ -1,6 +1,4 @@
-package student_igors_mihejevs.lesson_7.day_6;
-
-import java.math.BigDecimal;
+package student_igors_mihejevs.lesson_7.level_6;
 
 import static java.lang.Math.abs;
 

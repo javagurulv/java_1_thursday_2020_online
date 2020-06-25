@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_7.day_1;
+package student_igors_mihejevs.lesson_7.level_2;
 
 public class WordServiceDemo {
 
