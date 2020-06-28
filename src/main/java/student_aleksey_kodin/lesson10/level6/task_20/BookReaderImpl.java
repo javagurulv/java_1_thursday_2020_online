@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson10.level6.task_20;
 
-import logic.LogicChecks;
+import student_aleksey_kodin.lesson10.level6.task_20.logic.LogicChecks;
 
 import java.util.ArrayList;
 import java.util.List;
