@@ -6,17 +6,32 @@ class Demo {
         Check check = new Check();
         check.checker(10);
         check.checker(105);
+
+        check.checker_2(10);
+        check.checker_2(105);
+
+
+
     }
 }
 
 class Check {
 
     public void checker(int x) {
-        //Функциональный интерфейс должен содержать ровно один абстрактный метод.
+
         Functional pattern = p -> p > 100;
 
-        boolean result = pattern.checkSum(x);
+        boolean result = pattern.checkValue(x);
 
-        System.out.println(result);
+        System.out.println("Check:" + x + " Result:" + result);
+    }
+
+    public void checker_2(int x) {
+
+        Functional pattern = p -> p < 100;
+
+        boolean result = pattern.checkValue(x);
+
+        System.out.println("Check:" + x + " Result:" + result);
     }
 }
