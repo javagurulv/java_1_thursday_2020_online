@@ -1,0 +1,9 @@
+interface Database {
+
+    void save(Product product);
+
+    Product findByTitle(String productTitle);
+
+}
+
+Этот интерфейс не является функциональным, так как функциональный интерфейс содержит только 1 абстрактный метод.

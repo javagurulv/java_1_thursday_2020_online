@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson3.day6.task28;
+package student_aleksey_kodin.lesson3.day6.task_28;
 /* Дописать код программы, что бы она запускалась
 и выводила на консоль производителя и модель компьютера.
 Менять можно только класс Computer. */
