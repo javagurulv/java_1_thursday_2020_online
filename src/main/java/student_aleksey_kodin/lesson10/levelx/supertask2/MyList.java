@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson10.leve1.task_3;
+package student_aleksey_kodin.lesson10.levelx.supertask2;
 
 interface MyList {
     // Метод возвращает созданный массив
