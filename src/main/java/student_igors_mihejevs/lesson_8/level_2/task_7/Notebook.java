@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_8.level_2.task_7;
 
-public class Notebook extends Computer {
+class Notebook extends Computer {
 
     private String batteryModel;
 
