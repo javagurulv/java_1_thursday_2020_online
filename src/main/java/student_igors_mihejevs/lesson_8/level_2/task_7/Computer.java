@@ -1,6 +1,6 @@
 package student_igors_mihejevs.lesson_8.level_2.task_7;
 
-abstract class Computer {
+class Computer {
 
     private String model;
     private String manufacturer;
