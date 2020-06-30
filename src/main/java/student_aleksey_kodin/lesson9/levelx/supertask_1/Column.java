@@ -27,7 +27,7 @@ public class Column {
     public void addChip(int playerChip) {
         chipsInColumn.add(playerChip);
     }
-
+    // Этот метод используется только для тестов
     public void addChip(int index, int playerChip) {
         chipsInColumn.add(index, playerChip);
     }

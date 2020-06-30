@@ -2,7 +2,7 @@ package student_diana_miranovica.lesson6.home_works.day_5.task_19;
 
 
 
-public class TicTacToeTest {
+ class TicTacToeTest {
 
     private static final int[][]field = new int[3][3];
     private final TicTacToe ticTacToe = new TicTacToe();
