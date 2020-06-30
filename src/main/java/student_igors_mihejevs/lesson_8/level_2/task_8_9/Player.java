@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_8.level_2.task_8;
+package student_igors_mihejevs.lesson_8.level_2.task_8_9;
 
 class Player {
 
