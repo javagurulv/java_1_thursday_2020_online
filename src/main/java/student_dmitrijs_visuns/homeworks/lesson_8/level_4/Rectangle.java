@@ -13,14 +13,10 @@ class Rectangle extends Shape {
     }
 
     @Override
-    double calculateArea() {
-        return 2*(width + height);
-    }
+    double calculateArea() { return width * height; }
 
     @Override
-    double calculatePerimeter() {
-        return width * height;
-    }
+    double calculatePerimeter() { return 2*(width + height); }
 
 
 }

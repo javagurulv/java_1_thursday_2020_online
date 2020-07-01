@@ -1,30 +1,31 @@
-package student_aleksey_kodin.lesson10.leve1.task_3;
+package student_aleksey_kodin.lesson10.levelx.supertask3;
 
 interface MyList {
-    // Метод возвращает созданный массив
-    int[] create();
 
     // Добовление значения в массив
-    int[] add(int[] array, int value);
+    void add(int value);
 
     // Добовление значения в массив с указанием индекса
-    int[] add(int[] array, int index, int value);
+    boolean add(int index, int value);
 
     // Получить значение массива по индексу
-    int get(int[] array, int index);
+    int get(int index);
 
     // Поменять два значения между собой по индексам
-    int[] replace(int[] array, int indexA, int indexB);
+    boolean replace(int indexA, int indexB);
+
+    // Проверить нахождение значения в листе
+    boolean contains(int value);
 
     // Распечатать массив
-    void print(int[] array);
+    void print();
 
     // Удалить элемент из массива
-    int[] remove(int[] array, int index);
+    boolean remove(int index);
 
     // Удалить все элементы массива
-    int[] removeAll();
+    void removeAll();
 
-    // Возвращает размер массива
-    int size(int[] array);
+    // Получить количество элементов
+    int size();
 }
