@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_9.level_2.Task_13;
+package student_dmitrijs_visuns.homeworks.lesson_9.level_2.task_13;
 
 class Task_13 {
 

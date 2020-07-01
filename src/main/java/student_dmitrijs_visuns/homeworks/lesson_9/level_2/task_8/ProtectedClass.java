@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_9.level_2.Task_8;
+package student_dmitrijs_visuns.homeworks.lesson_9.level_2.task_8;
 
 // Среда разработки не дает сделать класс protected, потому что его использование
 // нарушило бы принцип инкапсуляции,

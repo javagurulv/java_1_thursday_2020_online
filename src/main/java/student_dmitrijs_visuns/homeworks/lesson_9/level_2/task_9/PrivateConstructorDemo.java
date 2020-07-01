@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_9.level_2.Task_9;
+package student_dmitrijs_visuns.homeworks.lesson_9.level_2.task_9;
 
 class PrivateConstructorDemo {
 

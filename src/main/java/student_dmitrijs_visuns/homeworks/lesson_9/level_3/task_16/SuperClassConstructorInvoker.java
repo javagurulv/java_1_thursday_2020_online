@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_9.level_3.Task_16;
+package student_dmitrijs_visuns.homeworks.lesson_9.level_3.task_16;
 
 class SuperClassConstructorInvoker {
 
