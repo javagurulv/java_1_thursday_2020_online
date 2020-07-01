@@ -1,25 +1,25 @@
 package student_igors_mihejevs.lesson_8.level_4;
 
 class Square extends Shape{
-    private double side;
+    private double lengthOfSide;
 
-    Square(double side) {
+    Square(double lengthOfSide) {
         super("Square");
-        this.side = side;
+        this.lengthOfSide = lengthOfSide;
     }
 
     public double getSide() {
-        return this.side;
+        return this.lengthOfSide;
     }
 
     @Override
     double calculateArea() {
-        return this.side * this.side;
+        return this.lengthOfSide * this.lengthOfSide;
     }
 
     @Override
     double calculatePerimeter() {
-        return 4 * this.side;
+        return 4 * this.lengthOfSide;
     }
 
 }
