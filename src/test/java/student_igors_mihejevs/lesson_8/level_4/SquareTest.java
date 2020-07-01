@@ -9,13 +9,13 @@ public class SquareTest {
     @Test
     public void testOfSquareAreaCalculating() {
         Shape square = new Square(5);
-        assertEquals(25, square.calculateArea(), 2);
+        assertEquals(25, square.calculateArea(), 0.009);
     }
 
     @Test
     public void testOfSquarePerimeterCalculating() {
         Shape square = new Square(5);
-        assertEquals(20, square.calculatePerimeter(), 2);
+        assertEquals(20, square.calculatePerimeter(), 0.009);
     }
 
 }

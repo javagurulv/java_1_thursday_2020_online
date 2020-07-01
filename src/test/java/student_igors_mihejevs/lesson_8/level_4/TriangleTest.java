@@ -9,13 +9,13 @@ public class TriangleTest {
     @Test
     public void testOfTriangleAreaCalculating() {
         Shape triangle = new Triangle(10, 10, 10);
-        assertEquals(43.30, triangle.calculateArea(), 2);
+        assertEquals(43.30, triangle.calculateArea(), 0.009);
     }
 
     @Test
     public void testOfTrianglePerimeterCalculating() {
         Shape triangle = new Triangle(10, 10, 10);
-        assertEquals(30, triangle.calculatePerimeter(), 2);
+        assertEquals(30, triangle.calculatePerimeter(), 0.009);
     }
 
 }
