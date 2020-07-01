@@ -1,17 +1,22 @@
 package student_igors_mihejevs.lesson_8.level_4;
 
-import java.text.DecimalFormat;
-
 class ShapeDemo {
 
     public static void main(String[] args) {
-        final DecimalFormat df = new DecimalFormat("0.00");
         Shape circle = new Circle(5);
+        Shape square = new Square(5);
 
         System.out.println("Shape = " + circle.getTitle());
         System.out.println("Radius = " + ((Circle) circle).getRadius());
-        System.out.println("Area = " + df.format(circle.calculateArea()));
-        System.out.println("Perimeter = " + df.format(circle.calculatePerimeter()));
+        System.out.println("Area = " + circle.calculateArea());
+        System.out.println("Perimeter = " + circle.calculatePerimeter() + "\n");
+
+        System.out.println("Shape = " + square.getTitle());
+        System.out.println("Side = " + ((Square) square).getSide());
+        System.out.println("Area = " + square.calculateArea());
+        System.out.println("Perimeter = " + square.calculatePerimeter());
+
+
     }
 
 }
