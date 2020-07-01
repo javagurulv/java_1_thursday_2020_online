@@ -6,6 +6,7 @@ class ShapeDemo {
         Shape circle = new Circle(5);
         Shape square = new Square(5);
         Shape rectangle = new Rectangle(8, 5);
+        Shape triangle = new Triangle(10, 10, 10);
 
         System.out.println("Shape = " + circle.getTitle());
         System.out.println("Radius = " + ((Circle) circle).getRadius());
@@ -21,8 +22,14 @@ class ShapeDemo {
         System.out.print("Width = " + ((Rectangle) rectangle).getWidth() + ", ");
         System.out.println("Height = " + ((Rectangle) rectangle).getHeight());
         System.out.println("Area = " + rectangle.calculateArea());
-        System.out.println("Perimeter = " + rectangle.calculatePerimeter());
+        System.out.println("Perimeter = " + rectangle.calculatePerimeter() + "\n");
 
+        System.out.println("Shape = " + triangle.getTitle());
+        System.out.print("Side A = " + ((Triangle) triangle).getSideA() + ", ");
+        System.out.print("Side B = " + ((Triangle) triangle).getSideB() + ", ");
+        System.out.println("Side C = " + ((Triangle) triangle).getSideC());
+        System.out.println("Area = " + triangle.calculateArea());
+        System.out.println("Perimeter = " + triangle.calculatePerimeter());
 
     }
 
