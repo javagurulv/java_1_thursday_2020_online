@@ -7,13 +7,13 @@ import static org.junit.Assert.assertEquals;
 public class SquareTest {
 
     @Test
-    public void testOfCircleAreaCalculating() {
+    public void testOfSquareAreaCalculating() {
         Shape square = new Square(5);
         assertEquals(25, square.calculateArea(), 2);
     }
 
     @Test
-    public void testOfCirclePerimeterCalculating() {
+    public void testOfSquarePerimeterCalculating() {
         Shape square = new Square(5);
         assertEquals(20, square.calculatePerimeter(), 2);
     }
