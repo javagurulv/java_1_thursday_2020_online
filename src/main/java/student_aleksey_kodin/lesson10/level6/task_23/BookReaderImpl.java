@@ -71,8 +71,8 @@ class BookReaderImpl implements BookReader {
             return false;
         }
 
-        findBook(book).ifPresent(currentBook -> currentBook.setUnreadBook(true));
-        return book.getFinishedBook();
+        findBook(book).ifPresent(currentBook -> currentBook.setFinishedBook(true));
+        return true;
     }
 
     @Override
@@ -84,7 +84,7 @@ class BookReaderImpl implements BookReader {
         }
 
         findBook(book).ifPresent(currentBook -> currentBook.setUnreadBook(true));
-        return book.getUnreadBook();
+        return true;
     }
 
     private Optional<Book> findBook(Book book) {
