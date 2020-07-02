@@ -71,8 +71,7 @@ class BookReaderImpl implements BookReader {
             return false;
         }
 
-        Optional<Book> finishedBook = books.stream().filter(b -> b.equals(book)).findFirst();
-        finishedBook.ifPresent(currentBook -> currentBook.setFinishedBook(true));
+        findBook(book).ifPresent(currentBook -> currentBook.setUnreadBook(true));
         return book.getFinishedBook();
     }
 
@@ -84,8 +83,11 @@ class BookReaderImpl implements BookReader {
             return false;
         }
 
-        Optional<Book> finishedBook = books.stream().filter(b -> b.equals(book)).findFirst();
-        finishedBook.ifPresent(currentBook -> currentBook.setUnreadBook(true));
+        findBook(book).ifPresent(currentBook -> currentBook.setUnreadBook(true));
         return book.getUnreadBook();
+    }
+
+    private Optional<Book> findBook(Book book) {
+        return books.stream().filter(b -> b.equals(book)).findFirst();
     }
 }
