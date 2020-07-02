@@ -7,27 +7,26 @@ public class SafeDemo {
 
         System.out.println("Money in safe = " + safe.money + "\n");
 
-        safe.putMoney("qwerti", 500); //incorrect password
+        safe.putMoney("incorrect password", 500);
         System.out.println("Money in safe after transaction = " + safe.money + "\n");
 
-        safe.putMoney("qwerty", 500); //correct password
+        safe.putMoney("qwerty", 500);
         System.out.println("Money in safe after transaction = " + safe.money + "\n");
 
-        System.out.println("Returned money = " + safe.getAllMoney("qwerti"));
+        System.out.println("Returned money = " + safe.getAllMoney("incorrect password"));
         System.out.println("Money in safe after transaction = " + safe.money + "\n");
 
         System.out.println("Returned money = " + safe.getAllMoney("qwerty"));
         System.out.println("Money in safe after transaction = " + safe.money + "\n");
 
-        safe.putMoney("qwerty", 1500); //correct password
+        safe.putMoney("qwerty", 1500);
         System.out.println("Money in safe after transaction = " + safe.money + "\n");
 
-        System.out.println("Returned money = " + safe.getMoney("qwerti", 500));
+        System.out.println("Returned money = " + safe.getMoney("incorrect password", 500));
         System.out.println("Money in safe after transaction = " + safe.money + "\n");
 
         System.out.println("Returned money = " + safe.getMoney("qwerty", 500));
         System.out.println("Money in safe after transaction = " + safe.money);
-
     }
 
 }
