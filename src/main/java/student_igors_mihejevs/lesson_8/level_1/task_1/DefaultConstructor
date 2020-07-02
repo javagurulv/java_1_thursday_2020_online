@@ -1,0 +1,4 @@
+A constructor that has no parameter is known as default constructor.
+If we don’t define a constructor in a class,
+then compiler creates default constructor(with no arguments) for the class.
+Default constructor provides the default values to the object like 0, null, etc. depending on the type.

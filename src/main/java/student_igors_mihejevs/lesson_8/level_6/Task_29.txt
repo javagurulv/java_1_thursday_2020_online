@@ -1,0 +1,16 @@
+Найти в интернете (javadoc) иерархию наследования
+для класса java.util.ArrayList.
+
+Done.
+
+https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/ArrayList.html
+
+Module java.base
+Package java.util
+
+Class ArrayList<E>
+
+java.lang.Object
+java.util.AbstractCollection<E>
+java.util.AbstractList<E>
+java.util.ArrayList<E>
