@@ -41,4 +41,5 @@ public class Safe {
         if (password.equals(this.password)) this.money = this.money + money;
         else System.out.println("Incorrect password");
     }
+
 }
