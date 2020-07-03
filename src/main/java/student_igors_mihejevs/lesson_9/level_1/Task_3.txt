@@ -1,0 +1,8 @@
+Возможно ли в Java объявить класс и сделать его приватным,
+не видимым для всего другого кода? Подумайте почему?
+Ответ на этот вопрос закомитьте в текстовом файле.
+
+Answer:
+A Java private keyword is an access modifier. It can be assigned to variables, methods, and inner classes.
+We can't assign private to outer class.
+A top-level (outer) class as private would be completely useless because nothing would have access to it.
