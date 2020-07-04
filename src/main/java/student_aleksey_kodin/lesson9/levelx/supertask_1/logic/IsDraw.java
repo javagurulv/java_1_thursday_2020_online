@@ -4,7 +4,7 @@ import student_aleksey_kodin.lesson9.levelx.supertask_1.Column;
 
 import java.util.List;
 
-public class IsDraw {
+public class IsDraw {  // IsDrawDetector??
 
     public boolean checkDraw(List<Column> gameArea) {
 
