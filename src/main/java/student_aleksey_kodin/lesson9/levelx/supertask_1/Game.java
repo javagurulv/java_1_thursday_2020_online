@@ -27,7 +27,9 @@ public class Game {
     }
 
     public void startGame(Player player_1, Player player_2) {
-        IsDraw isDraw = new IsDraw();
+        IsDraw isDraw = new IsDraw();  // это не то место где надо создавать инстанцию таких классов
+		// IsDraw - это класс который не содержит данные, а содержит алгоритм обработки данных
+		// такие классы надо создавать в момент инициализации программы, а не в момент выполнения
 
         while (true) {
             List<Column> gameAreaAfterMovePlayer1 = player_1.makeMove(gameArea);
