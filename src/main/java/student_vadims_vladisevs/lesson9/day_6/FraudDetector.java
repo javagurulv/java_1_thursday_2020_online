@@ -18,6 +18,10 @@ class FraudDetector {
                 result = true;
                 ruleName = fraudRule.getRuleName();
                 System.out.println(t.toString());
+
+                // почему тут нет return?
+				// нашли первое правило по fraud и можно сразу возвращать результат
+				// иначе получается, что мы продолжаем поиск и вернём последнее сработавшее правило
             }
         }
 
