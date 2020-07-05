@@ -39,11 +39,11 @@ class FraudDetector {
     boolean isFraud(Transaction t) {
         boolean result;
 
-        // а тут ведь логическая ошибка! Тестов нет!!
+
         result = banTraderNames.checkBanNames(t); // true
         result = banTraderAmounts.checkBanAmounts(t);  // true
-        result = banTraderCity.checkBanCity(t);  // false
-        result = banTraderCountry.checkBanCountry(t); // result ??? :)
+        result = banTraderCity.checkBanCity(t);  // true
+        result = banTraderCountry.checkBanCountry(t); // result true
 
         if ((banTraderCountry.checkBanCountry(t)) && (banTraderAmounts.checkBanAmounts(t))) {
             System.out.println("Transaction from " + t.getTrader().getCountry() + " and sum more " +
