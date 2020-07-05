@@ -2,7 +2,7 @@
 
 Добавьте в интерфейc BookDatabase следующий метод:
 
-    Optional<Book> getById(Long bookId);
+    Optional<Book> findById(Long bookId);
 
 Данный метод предназначен для поиска книги с указанным id в качестве параметра
 метода в базе данных. Медот возвращает Optional.of(book) если книга была найдена
