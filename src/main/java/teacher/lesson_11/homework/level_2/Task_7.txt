@@ -1,6 +1,6 @@
 Продолжаем разработку интерфейса BookDatabase.
 
-Добавьте в интерфей BookDatabase следующий метод:
+Добавьте в интерфейc BookDatabase следующий метод:
 
     boolean delete(Long bookId);
 
