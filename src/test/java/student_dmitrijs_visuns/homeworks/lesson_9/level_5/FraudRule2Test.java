@@ -8,7 +8,7 @@ public class FraudRule2Test {
 
     @Test
     public void testForTransferAmount1 () {
-        Trader trader = new Trader("E", "J", "F");
+        Trader trader = new Trader("A", "B", "C");
         Transaction t = new Transaction (trader, 2000000);
         FraudRule2 fraudRule2 = new FraudRule2("moneyAmountCheck");
         boolean isFraudResult = fraudRule2.isFraud(t);
@@ -17,7 +17,7 @@ public class FraudRule2Test {
 
     @Test
     public void testForTransferAmount2 () {
-        Trader trader = new Trader("E", "J", "F");
+        Trader trader = new Trader("A", "B", "C");
         Transaction t = new Transaction (trader, 100);
         FraudRule2 fraudRule2 = new FraudRule2("moneyAmountCheck");
         boolean isFraudResult = fraudRule2.isFraud(t);

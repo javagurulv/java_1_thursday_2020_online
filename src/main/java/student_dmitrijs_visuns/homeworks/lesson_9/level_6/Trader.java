@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_9.level_4;
+package student_dmitrijs_visuns.homeworks.lesson_9.level_6;
 
 class Trader {
 
@@ -22,5 +22,12 @@ class Trader {
 
     public String getCountry() {
         return country;
+    }
+
+    @Override
+    public String toString() {
+        return "TRADER NAME: " + getFullName() + "; "
+                + "TRADER CITY: " + getCity() + "; "
+                + "TRADER COUNTRY: " + getCountry() + "; ";
     }
 }
