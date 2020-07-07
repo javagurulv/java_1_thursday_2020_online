@@ -8,7 +8,7 @@ public class FraudRule1Test {
 
     @Test
     public void testForName1 () {
-        Trader trader = new Trader("Pokemon", "Paris", "France");
+        Trader trader = new Trader("Pokemon", "B", "C");
         Transaction t = new Transaction (trader, 100);
         FraudRule1 fraudRule1 = new FraudRule1("traderNameCheck");
         boolean isFraudResult = fraudRule1.isFraud(t);
@@ -17,7 +17,7 @@ public class FraudRule1Test {
 
     @Test
     public void testForName2 () {
-        Trader trader = new Trader("Pikachu", "Paris", "France");
+        Trader trader = new Trader("Pikachu", "B", "C");
         Transaction t = new Transaction (trader, 100);
         FraudRule1 fraudRule1 = new FraudRule1("traderNameCheck");
         boolean isFraudResult = fraudRule1.isFraud(t);

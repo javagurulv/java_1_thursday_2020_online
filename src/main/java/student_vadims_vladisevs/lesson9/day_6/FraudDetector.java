@@ -11,17 +11,20 @@ class FraudDetector {
     }
 
     FraudDetectionResult isFraud(Transaction t) {
-        boolean result = false;
-        String ruleName = null;
+
         for (FraudRule fraudRule : fraudRules){
             if (fraudRule.isFraud(t)){
-                result = true;
-                ruleName = fraudRule.getRuleName();
+                String ruleName = fraudRule.getRuleName();
                 System.out.println(t.toString());
+                return new FraudDetectionResult(true, ruleName);
+
+                // почему тут нет return?
+				// нашли первое правило по fraud и можно сразу возвращать результат
+				// иначе получается, что мы продолжаем поиск и вернём последнее сработавшее правило
             }
         }
 
-        return new FraudDetectionResult(result, ruleName);
+        return new FraudDetectionResult(false, null);
     }
 
 }

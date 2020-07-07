@@ -8,7 +8,7 @@ public class FraudRule3Test {
 
     @Test
     public void testForTraderCity1 () {
-        Trader trader = new Trader("Elephant", "Сидней", "Aussie");
+        Trader trader = new Trader("A", "Сидней", "C");
         Transaction t = new Transaction (trader, 100);
         FraudRule3 fraudRule3 = new FraudRule3("traderCityCheck");
         boolean isFraudResult = fraudRule3.isFraud(t);
@@ -17,7 +17,7 @@ public class FraudRule3Test {
 
     @Test
     public void testForTraderCity2 () {
-        Trader trader = new Trader("RussianElephant", "Novgorod", "Russia");
+        Trader trader = new Trader("A", "B", "C");
         Transaction t = new Transaction (trader, 100);
         FraudRule3 fraudRule3 = new FraudRule3("traderCityCheck");
         boolean isFraudResult = fraudRule3.isFraud(t);

@@ -6,7 +6,7 @@ class JavaStarLoginServiceImpl {
         return notNull(login)
                 && login.equals("javastar")
                 && notNull(password)
-                && password.equals("pass")
+                && password.equals("pass");
     }
 
     private boolean notNull(String text) {
