@@ -10,6 +10,7 @@ public class BanTraderCountry {
             if (transaction.getTrader().getCountry().equals(fraudCountry.name())) {
                 banCountryTransaction(transaction);
                 result = true;
+                break;
             }
         }
         return result;
