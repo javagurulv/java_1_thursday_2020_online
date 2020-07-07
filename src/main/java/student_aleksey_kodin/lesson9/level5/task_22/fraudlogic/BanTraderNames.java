@@ -10,6 +10,7 @@ public class BanTraderNames {
             if (transaction.getTrader().getFullName().equals(fraudNames.name())) {
                 banTraderTransaction(transaction);
                 result = true;
+                break;
             }
         }
         return result;

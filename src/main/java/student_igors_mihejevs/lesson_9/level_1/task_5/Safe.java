@@ -28,8 +28,13 @@ public class Safe {
 
     public double getMoney(String password, double money) {
         if (password.equals(this.password)) {
-            this.money = this.money - money;
-            return money;
+            if (this.money - money >= 0) {
+                this.money = this.money - money;
+                return money;
+            } else {
+                System.out.println("Incorrect amount of money");
+                return 0;
+            }
         }
         else {
             System.out.println("Incorrect password");
@@ -41,4 +46,5 @@ public class Safe {
         if (password.equals(this.password)) this.money = this.money + money;
         else System.out.println("Incorrect password");
     }
+
 }

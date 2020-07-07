@@ -26,6 +26,9 @@ public class SafeDemo {
         System.out.println("Money in safe after transaction = " + safe.money + "\n");
 
         System.out.println("Returned money = " + safe.getMoney("qwerty", 500));
+        System.out.println("Money in safe after transaction = " + safe.money + "\n");
+
+        System.out.println("Returned money = " + safe.getMoney("qwerty", 2500));
         System.out.println("Money in safe after transaction = " + safe.money);
     }
 

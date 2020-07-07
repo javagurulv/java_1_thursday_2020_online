@@ -44,11 +44,10 @@ public class IsColumnHaveWinPosition extends SearcherWinPosition {
                 } else {
                     chipsCounter = START_COUNT_CHIPS;
                 }
-                if (chipsCounter >= FOUR_IN_ROW) {
+                if (chipsCounter == FOUR_IN_ROW) {
                     return true;
                 }
             }
-
         }
         return false;
     }
