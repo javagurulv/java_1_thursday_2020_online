@@ -10,6 +10,7 @@ public class BanTraderCity {
             if (transaction.getTrader().getCity().equals(fraudAmount.name())) {
                 banCityTransaction(transaction);
                 result = true;
+                break;
             }
         }
         return result;

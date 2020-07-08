@@ -10,6 +10,7 @@ public class BanTraderAmounts {
             if (transaction.getAmount() > fraudAmount.getValue()) {
                 banAmountTransaction(transaction);
                 result = true;
+                break;
             }
         }
         return result;
