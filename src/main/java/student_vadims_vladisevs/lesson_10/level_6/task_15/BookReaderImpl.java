@@ -9,6 +9,10 @@ class BookReaderImpl implements BookReader {
             return false;
         }
 
+        if (isTitleOrAuthorEmpty(book)){
+            return false;
+        }
+
         if (isBookInLibrary(book, library)){
             return false;
         }
@@ -16,6 +20,10 @@ class BookReaderImpl implements BookReader {
 
         library.addBook(book);
         return true;
+    }
+
+    private boolean isTitleOrAuthorEmpty(Book book){
+        return book.getTitle().isEmpty() || book.getAuthor().isEmpty();
     }
 
 

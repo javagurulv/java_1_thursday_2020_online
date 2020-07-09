@@ -6,7 +6,7 @@ class BookReaderDemo {
         Book firstBook = new Book("Ray Bradbury", "Fahrenheit 451");
         Book secondBook = new Book("Yevgeny Zamyatin", "We");
         Book thirdBook = new Book("George Orwell", "1984");
-        Book fourthBook = new Book(null, "Brave New World");
+        Book fourthBook = new Book("", "Brave New World");
         Book fifthBook = new Book("William Golding", null);
 
         Library library = new Library();
