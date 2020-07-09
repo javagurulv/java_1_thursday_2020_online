@@ -1,0 +1,10 @@
+package student_igors_mihejevs.lesson_9.level_2;
+
+// if class will be protected, it will not be visible from subclasses that can be located in another package.
+
+class ProtectedClass {
+
+    private String title;
+    private String author;
+
+}
