@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 class BookReaderImpl implements BookReader {
 
+	// List<Book> ...
     ArrayList<Book> books = new ArrayList<>();
 
     @Override
