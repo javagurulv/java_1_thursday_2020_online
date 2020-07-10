@@ -9,6 +9,7 @@ interface Database {
 
     Optional<Product> findByTitle(String productTitle);
 
+    // List<Product>
     ArrayList<Product> getProducts();
 
 }
