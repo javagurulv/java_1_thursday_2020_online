@@ -17,6 +17,8 @@ class InMemoryDatabase implements Database {
     }
 
     @Override
+	// это не правильное применение Optional
+	// нужно, что бы этот метод возвращал Optional<Product>
     public Product findByTitle(String productTitle) {
      Optional<Product> optionalProduct;
 
