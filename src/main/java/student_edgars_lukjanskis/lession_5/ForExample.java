@@ -4,13 +4,14 @@ class ForExample {
 
     public static void main(String[] args) {
 
-        int i = 1;
+        int i = 1; //for first part
+
         System.out.println(i);
         i++; // i = i + 1;
 
-        if (i < 100) {
+        if (i < 100) { //for second part
             System.out.println(i);
-            i++;
+            i++; // for third part
         }
 
         if (i < 100) {
