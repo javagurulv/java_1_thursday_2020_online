@@ -1,0 +1,36 @@
+Продолжаем создание класса Transaction, который будет представлять из себя
+транзакцию которая совершается с банковским счётом.
+
+class Transaction {
+
+    private String owner;
+    private int amount;
+    private TransactionType transactionType;
+
+    public Transaction(String owner, int amount, TransactionType transactionType) {
+        this.owner = owner;
+        this.amount = amount;
+        this.transactionType = transactionType;
+    }
+
+    public String getOwner() {
+        return this.owner;
+    }
+
+    public int getAmount() {
+        return this.amount;
+    }
+
+    // Маленький хак как сделать ваши доменные объекты более удобными в использовании.
+    // Со стандартными методами get() и set() не всегда удобно работать.
+    // Иногда мы можем добавить полезное поведение в наши доменные объекты
+    // просто реализовав внутри доменных объектов простые методы.
+
+    // создайте метод isDeposit(), данный метод должен возвращать boolean:
+    // - true если транзакция является депозитом
+    // - false если транзакция не является депозитом
+
+    // создайте метод isWithdrawal(), данный метод должен возвращать boolean:
+    // - true если транзакция является снятием денег со счёта
+    // - false если транзакция не является снятием денег со счёта
+}
