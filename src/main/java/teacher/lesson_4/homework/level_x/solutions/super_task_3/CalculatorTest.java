@@ -1,4 +1,4 @@
-package teacher.lesson_4.homework.level_x.super_task_3;
+package teacher.lesson_4.homework.level_x.solutions.super_task_3;
 
 public class CalculatorTest {
 
