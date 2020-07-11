@@ -7,6 +7,7 @@ public class ArrayUtil {
 
     public int getArrayLengthFromUser() {
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("Please enter array length: ");
 		return scanner.nextInt();
 	}
 
