@@ -48,6 +48,8 @@ class FraudDetector {
             return true;
         } else if(t.getTarderState().equals("Jamaica")){
             return true;
+        } else if((t.getTarderState().equals("Germany")) && (t.getTardeAmount()>1000)){
+            return true;
         } else {
             return false;
         }
@@ -64,6 +66,9 @@ class Test {
         test.tarderNameandTradeAmountIsOKTest();
         test.isFraudbyCityTest();
         test.isFraudbyStateTest();
+        test.isFraudbyStateGermanyAndAmountTest();
+        test.stateGermanyAndAmountTestisOkTest();
+        test.stateOKAndAmountTest();
 
     }
         public void isFraudbyNameTest() {
@@ -129,6 +134,39 @@ class Test {
             System.out.println("isFraudbyStateTest - OK");
         } else {
             System.out.println("isFraudbyStateTest - Fail");
+        }
+    }
+
+    public void isFraudbyStateGermanyAndAmountTest() {
+        Trader trader = new Trader("Trader1", "Riga", "Germany" );
+        Transaction transaction = new Transaction(trader, 1001);
+        FraudDetector fraudDetector = new FraudDetector();
+        if (fraudDetector.isFraud(transaction)) {
+            System.out.println("isFraudbyStateGermanyAndAmoutTest - OK");
+        } else {
+            System.out.println("isFraudbyStateGermanyAndAmoutTest - Fail");
+        }
+    }
+
+    public void stateGermanyAndAmountTestisOkTest() {
+        Trader trader = new Trader("Trader1", "Riga", "Germany");
+        Transaction transaction = new Transaction(trader, 10);
+        FraudDetector fraudDetector = new FraudDetector();
+        if (fraudDetector.isFraud(transaction)) {
+            System.out.println("stateGermanyAndAmountTestisOkTest - Fail");
+        } else {
+            System.out.println("stateGermanyAndAmountTestisOkTest - OK");
+        }
+    }
+
+    public void stateOKAndAmountTest() {
+        Trader trader = new Trader("Trader1", "Riga", "Latvia" );
+        Transaction transaction = new Transaction(trader, 1001);
+        FraudDetector fraudDetector = new FraudDetector();
+        if (fraudDetector.isFraud(transaction)) {
+            System.out.println("stateOKAndAmountTest - fail");
+        } else {
+            System.out.println("stateOKAndAmountTest - OK");
         }
     }
 
