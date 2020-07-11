@@ -1,17 +1,20 @@
-package student_julija_skopeca.practical_tasks.lesson_9.task_4;
+package student_julija_skopeca.practical_tasks.lesson_9.level_4;
 
 class Trader {
 
     private String fullName;
     private String city;
+    private String state;
 
-    public Trader(String fullName, String city) {
+    public Trader(String fullName, String city, String state) {
         this.fullName = fullName;
         this.city = city;
+        this.state = state;
     }
 
     public String getFullName() {return fullName;}
     public String getCity() {return city;}
+    public String getState() {return state;}
 
 }
 
@@ -30,6 +33,7 @@ class Transaction {
     }
     public int getTardeAmount() {return amount;}
     public String getTarderCity() {return trader.getCity();}
+    public String getTarderState() {return trader.getState();}
 }
 
 
@@ -41,6 +45,8 @@ class FraudDetector {
         } else if(t.getTardeAmount()>1000000){
             return true;
         } else if(t.getTarderCity().equals("Sydney")){
+            return true;
+        } else if(t.getTarderState().equals("Jamaica")){
             return true;
         } else {
             return false;
@@ -57,10 +63,11 @@ class Test {
         test.isFraudbyNameTestandTradeAmountTest();
         test.tarderNameandTradeAmountIsOKTest();
         test.isFraudbyCityTest();
+        test.isFraudbyStateTest();
 
     }
         public void isFraudbyNameTest() {
-            Trader trader = new Trader("Pokemon", "Riga");
+            Trader trader = new Trader("Pokemon", "Riga", "Latvia");
             Transaction transaction = new Transaction(trader, 10);
             FraudDetector fraudDetector = new FraudDetector();
             if (fraudDetector.isFraud(transaction)) {
@@ -71,7 +78,7 @@ class Test {
         }
 
     public void isFraudbyTradeAmountTest() {
-        Trader trader = new Trader("Trader1", "Riga");
+        Trader trader = new Trader("Trader1", "Riga", "Latvia");
         Transaction transaction = new Transaction(trader, 1000001);
         FraudDetector fraudDetector = new FraudDetector();
         if (fraudDetector.isFraud(transaction)) {
@@ -82,7 +89,7 @@ class Test {
     }
 
     public void isFraudbyNameTestandTradeAmountTest() {
-        Trader trader = new Trader("Pokemon", "Riga");
+        Trader trader = new Trader("Pokemon", "Riga", "Latvia");
         Transaction transaction = new Transaction(trader, 1000001);
         FraudDetector fraudDetector = new FraudDetector();
         if (fraudDetector.isFraud(transaction)) {
@@ -93,7 +100,7 @@ class Test {
     }
 
     public void tarderNameandTradeAmountIsOKTest() {
-        Trader trader = new Trader("Trader1", "Riga");
+        Trader trader = new Trader("Trader1", "Riga", "Latvia");
         Transaction transaction = new Transaction(trader, 10);
         FraudDetector fraudDetector = new FraudDetector();
         if (fraudDetector.isFraud(transaction)) {
@@ -104,13 +111,24 @@ class Test {
     }
 
     public void isFraudbyCityTest() {
-        Trader trader = new Trader("Trader1", "Sydney");
+        Trader trader = new Trader("Trader1", "Sydney", "Latvia");
         Transaction transaction = new Transaction(trader, 10);
         FraudDetector fraudDetector = new FraudDetector();
         if (fraudDetector.isFraud(transaction)) {
             System.out.println("isFraudbyCityTest - OK");
         } else {
             System.out.println("isFraudbyCityTest - Fail");
+        }
+    }
+
+    public void isFraudbyStateTest() {
+        Trader trader = new Trader("Trader1", "Riga", "Jamaica" );
+        Transaction transaction = new Transaction(trader, 10);
+        FraudDetector fraudDetector = new FraudDetector();
+        if (fraudDetector.isFraud(transaction)) {
+            System.out.println("isFraudbyStateTest - OK");
+        } else {
+            System.out.println("isFraudbyStateTest - Fail");
         }
     }
 
