@@ -2,6 +2,7 @@ package student_aleksey_kodin.lesson10.levelx.supertask2;
 
 import java.util.Arrays;
 
+// список должен сам хранить массив внутри себя и не показывать его пользователю
 class MyArray implements MyList {
     @Override
     public int[] create() {

@@ -3,7 +3,14 @@ package student_aleksey_kodin.lesson10.levelx.supertask3;
 import java.util.LinkedList;
 
 class MyLinkedList implements MyList {
-    private final LinkedList<Integer> list = new LinkedList<>();
+
+/*
+	Найдите в интернете информацию как устроена структура данных связный список,
+	разберитесь и попробуйте реализовать её самостоятельно.
+
+	а вы взяли и внутри использовали LinkedList - это читинг!  Попробуйте реализовать связный список без коллекций - самостоятельно
+*/
+	private final LinkedList<Integer> list = new LinkedList<>();
 
     @Override
     public void add(int value) {
