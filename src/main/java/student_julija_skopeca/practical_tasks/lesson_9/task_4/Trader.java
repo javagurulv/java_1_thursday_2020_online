@@ -11,6 +11,7 @@ class Trader {
     }
 
     public String getFullName() {return fullName;}
+    public String getCity() {return city;}
 
 }
 
@@ -28,6 +29,7 @@ class Transaction {
         return trader.getFullName();
     }
     public int getTardeAmount() {return amount;}
+    public String getTarderCity() {return trader.getCity();}
 }
 
 
@@ -37,6 +39,8 @@ class FraudDetector {
         if (t.getTraderName().equals("Pokemon")) {
             return true;
         } else if(t.getTardeAmount()>1000000){
+            return true;
+        } else if(t.getTarderCity().equals("Sydney")){
             return true;
         } else {
             return false;
@@ -52,6 +56,7 @@ class Test {
         test.isFraudbyTradeAmountTest();
         test.isFraudbyNameTestandTradeAmountTest();
         test.tarderNameandTradeAmountIsOKTest();
+        test.isFraudbyCityTest();
 
     }
         public void isFraudbyNameTest() {
@@ -95,6 +100,17 @@ class Test {
             System.out.println("tarderNameandTradeAmountIsOKTest - Fail");
         } else {
             System.out.println("tarderNameandTradeAmountIsOKTest - OK");
+        }
+    }
+
+    public void isFraudbyCityTest() {
+        Trader trader = new Trader("Trader1", "Sydney");
+        Transaction transaction = new Transaction(trader, 10);
+        FraudDetector fraudDetector = new FraudDetector();
+        if (fraudDetector.isFraud(transaction)) {
+            System.out.println("isFraudbyCityTest - OK");
+        } else {
+            System.out.println("isFraudbyCityTest - Fail");
         }
     }
 
