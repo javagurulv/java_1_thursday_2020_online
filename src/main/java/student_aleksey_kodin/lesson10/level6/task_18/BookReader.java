@@ -10,5 +10,6 @@ interface BookReader {
 
     String[] createBookList();
 
+    // findByAuthor(...)
     List<Book> searchForBooksByAuthor(String authorName);
 }

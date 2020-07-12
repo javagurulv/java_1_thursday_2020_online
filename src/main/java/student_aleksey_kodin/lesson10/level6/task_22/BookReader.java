@@ -14,5 +14,7 @@ interface BookReader {
 
     List<Book> searchForBooksByTitle(String bookTitle);
 
-    boolean finishedBooks(Book book);
+
+    // better isBookFinished()
+    boolean finishedBooks(Book book);  //  - WTF???? why books? but method use only one parameter
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 class InMemoryDatabase implements Database {
 
+	// List<Product> ....
     ArrayList<Product> products = new ArrayList<>();
 
     @Override

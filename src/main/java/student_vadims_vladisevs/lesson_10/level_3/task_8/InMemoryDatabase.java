@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 class InMemoryDatabase implements Database{
 
+	// List<Product> ...
     private ArrayList<Product> database;
 
     public InMemoryDatabase(){
