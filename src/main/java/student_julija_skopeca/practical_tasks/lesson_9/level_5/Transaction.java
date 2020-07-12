@@ -1,7 +1,5 @@
 package student_julija_skopeca.practical_tasks.lesson_9.level_5;
 
-import student_julija_skopeca.practical_tasks.lesson_9.level_4.Trader;
-
 class Transaction {
 
     private Trader trader;
