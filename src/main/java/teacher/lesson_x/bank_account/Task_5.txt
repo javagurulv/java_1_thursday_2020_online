@@ -1,0 +1,38 @@
+Продолжаем создание класса Transaction, который будет представлять из себя
+транзакцию которая совершается с банковским счётом.
+
+class Transaction {
+
+    private String owner;
+    private int amount;
+    private TransactionType transactionType;
+
+    public Transaction(String owner,
+                       int amount,
+                       TransactionType transactionType) {
+        this.owner = owner;
+        this.amount = amount;
+        this.transactionType = transactionType;
+    }
+
+    public String getOwner() {
+        return this.owner;
+    }
+
+    public int getAmount() {
+        return this.amount;
+    }
+
+    public boolean isDeposit() {
+        return TransactionType.DEPOSIT == this.transactionType;
+    }
+
+    public boolean isWithdrawal() {
+        return TransactionType.WITHDRAWAL == this.transactionType;
+    }
+
+}
+
+Создайте класс TransactionTest и протестируйте методы isDeposit() и isWithdrawal().
+Для каждого метода напишите два тест кейса, один на позитивный результат,
+другой на негативный.
