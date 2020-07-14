@@ -8,8 +8,7 @@ class UniqueWordFinder {
 
     Set<String> find(String text){
         Set<String> list = new HashSet<>();
-        String[] wordArray = transformTextToWordArray(modifyText(text));
-        Collections.addAll(list, wordArray);
+        Collections.addAll(list, transformTextToWordArray(modifyText(text)));
         return list;
     }
 
