@@ -1,0 +1,15 @@
+Время пришло создавать интерфейс для нашего API.
+
+Создайте интерфейс BankApi:
+
+interface BankApi {
+
+    Optional<BankClient> findByUid(UserCredentials credentials, String uid);
+
+}
+
+Метод findByUid() должен возвращать (кидать) ошибку
+если в переданных credentials нет роли Role.CAN_SEARCH_CLIENTS.
+
+Сделайте необходимые изменения в интерфейсе BankApi, что бы реализовать
+требование описанное выше.
