@@ -78,4 +78,41 @@ public class FraudDetectorTest {
         assertTrue(fraudDetector.isFraudJamaica(transaction));
     }
 
+    @Test // Not Germany and less than 1000
+    public void fraudDetectorTestNegative1GermanyMoreThan1000() {
+        Trader trader = new Trader("Trader", "Riga", "Latvia");
+        Transaction transaction = new Transaction(trader, 900);
+        FraudDetector fraudDetector = new FraudDetector();
+
+        assertFalse(fraudDetector.isFraudGermanyMoreThan1000(transaction));
+    }
+
+    @Test // Germany and less than 1000
+    public void fraudDetectorTestNegative2GermanyMoreThan1000() {
+        Trader trader = new Trader("Trader", "Berlin", "Germany");
+        Transaction transaction = new Transaction(trader, 900);
+        FraudDetector fraudDetector = new FraudDetector();
+
+        assertFalse(fraudDetector.isFraudGermanyMoreThan1000(transaction));
+    }
+
+    @Test // Not Germany and more than 1000
+    public void fraudDetectorTestNegative3GermanyMoreThan1000() {
+        Trader trader = new Trader("Trader", "Riga", "Latvia");
+        Transaction transaction = new Transaction(trader, 1001);
+        FraudDetector fraudDetector = new FraudDetector();
+
+        assertFalse(fraudDetector.isFraudGermanyMoreThan1000(transaction));
+    }
+
+    @Test
+    public void fraudDetectorTestPositiveGermanyMoreThan1000() {
+        Trader trader = new Trader("Trader", "Berlin", "Germany");
+        Transaction transaction = new Transaction(trader, 1001);
+        FraudDetector fraudDetector = new FraudDetector();
+
+        assertTrue(fraudDetector.isFraudGermanyMoreThan1000(transaction));
+    }
+
+
 }
