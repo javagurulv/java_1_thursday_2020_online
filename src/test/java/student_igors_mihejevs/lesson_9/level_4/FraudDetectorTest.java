@@ -12,7 +12,7 @@ public class FraudDetectorTest {
         Transaction transaction = new Transaction(trader, 100);
         FraudDetector fraudDetector = new FraudDetector();
 
-        assertFalse(fraudDetector.isFraud(transaction));
+        assertFalse(fraudDetector.isFraudPokemon(transaction));
     }
 
     @Test
@@ -21,7 +21,7 @@ public class FraudDetectorTest {
         Transaction transaction = new Transaction(trader, 100000);
         FraudDetector fraudDetector = new FraudDetector();
 
-        assertTrue(fraudDetector.isFraud(transaction));
+        assertTrue(fraudDetector.isFraudPokemon(transaction));
     }
 
     @Test
@@ -30,7 +30,7 @@ public class FraudDetectorTest {
         Transaction transaction = new Transaction(trader, 100000);
         FraudDetector fraudDetector = new FraudDetector();
 
-        assertFalse(fraudDetector.isBigAmount(transaction));
+        assertFalse(fraudDetector.isFraudBigAmount(transaction));
     }
 
     @Test
@@ -39,7 +39,25 @@ public class FraudDetectorTest {
         Transaction transaction = new Transaction(trader, 1000001);
         FraudDetector fraudDetector = new FraudDetector();
 
-        assertTrue(fraudDetector.isBigAmount(transaction));
+        assertTrue(fraudDetector.isFraudBigAmount(transaction));
+    }
+
+    @Test
+    public void fraudDetectorTestNegativeSidney() {
+        Trader trader = new Trader("Trader", "Riga");
+        Transaction transaction = new Transaction(trader, 100);
+        FraudDetector fraudDetector = new FraudDetector();
+
+        assertFalse(fraudDetector.isFraudSidney(transaction));
+    }
+
+    @Test
+    public void fraudDetectorTestPositiveSidney() {
+        Trader trader = new Trader("Trader", "Sidney");
+        Transaction transaction = new Transaction(trader, 100000);
+        FraudDetector fraudDetector = new FraudDetector();
+
+        assertTrue(fraudDetector.isFraudSidney(transaction));
     }
 
 }
