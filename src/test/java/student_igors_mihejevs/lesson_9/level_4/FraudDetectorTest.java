@@ -53,7 +53,7 @@ public class FraudDetectorTest {
 
     @Test
     public void fraudDetectorTestPositiveSidney() {
-        Trader trader = new Trader("Trader", "Sidney", "Australia");
+        Trader trader = new Trader("Trader", "Sydney", "Australia");
         Transaction transaction = new Transaction(trader, 1000);
         FraudDetector fraudDetector = new FraudDetector();
 
