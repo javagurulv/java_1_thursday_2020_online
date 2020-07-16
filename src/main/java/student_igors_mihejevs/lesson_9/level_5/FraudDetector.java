@@ -1,5 +1,21 @@
 package student_igors_mihejevs.lesson_9.level_5;
 
 class FraudDetector {
+    private final FraudRule[] fraudRules;
+
+    FraudDetector(FraudRule[] fraudRules) {
+        this.fraudRules = fraudRules;
+    }
+
+    boolean isFraud(Transaction t) {
+        boolean result = false;
+        for (FraudRule fraudRule : fraudRules) {
+            if (fraudRule.isFraud(t)) {
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
 
 }
