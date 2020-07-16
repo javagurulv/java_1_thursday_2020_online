@@ -14,4 +14,12 @@ class FraudDetector {
         return t.getTrader().getCity().equals("Sidney");
     }
 
+    boolean isFraudJamaica(Transaction t) {
+        return t.getTrader().getCountry().equals("Jamaica");
+    }
+
+    boolean isFraudGermanyMoreThan1000(Transaction t) {
+        return (t.getTrader().getCountry().equals("Germany")) && (t.getAmount() > 1000);
+    }
+
 }
