@@ -28,11 +28,11 @@ class BookReaderImpl implements BookReader {
        } return false;
     }
 
-    boolean bookHasAuthor (Book book) {
+    private boolean bookHasAuthor (Book book) {
         return (!book.getBookAuthor().isBlank());
     }
 
-    boolean bookHasTitle (Book book) {
+    private boolean bookHasTitle (Book book) {
         return (!book.getBookTitle().isBlank());
     }
 
