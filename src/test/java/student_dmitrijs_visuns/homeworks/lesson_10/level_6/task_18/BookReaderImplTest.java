@@ -16,8 +16,8 @@ public class BookReaderImplTest {
         prototype.addBookToLibrary(book1);
         prototype.addBookToLibrary(book2);
         List<Book> searchTestList = prototype.findBookByExactAuthorName("Heinlein");
-        assertEquals(searchTestList.get(0), book1);
-        assertEquals(searchTestList.get(1), book2);
+        assertTrue(searchTestList.contains(book1));
+        assertTrue(searchTestList.contains(book2));
 
     }
 
@@ -29,7 +29,8 @@ public class BookReaderImplTest {
         prototype.addBookToLibrary(book1);
         prototype.addBookToLibrary(book2);
         List<Book> searchTestList = prototype.findBookByExactAuthorName("heinle");
-        assertTrue(searchTestList.isEmpty());
+        assertFalse(searchTestList.contains(book1));
+        assertFalse(searchTestList.contains(book2));
 
     }
 
