@@ -1,10 +1,13 @@
-package student_dmitrijs_visuns.homeworks.lesson_10.task_21;
+package student_dmitrijs_visuns.homeworks.lesson_10.level_6.task_21;
 
 import org.junit.Test;
+import student_dmitrijs_visuns.homeworks.lesson_10.level_6.task_21.Book;
+import student_dmitrijs_visuns.homeworks.lesson_10.level_6.task_21.BookReaderImpl;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class BookReaderImplTest {
 

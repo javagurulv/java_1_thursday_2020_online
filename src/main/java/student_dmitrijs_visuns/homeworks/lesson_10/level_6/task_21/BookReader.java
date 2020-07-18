@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_10.task_21;
+package student_dmitrijs_visuns.homeworks.lesson_10.level_6.task_21;
 
 import java.util.List;
 
