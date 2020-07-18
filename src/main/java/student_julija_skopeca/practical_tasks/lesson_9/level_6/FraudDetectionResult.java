@@ -1,6 +1,6 @@
 package student_julija_skopeca.practical_tasks.lesson_9.level_6;
 
-public class FraudDetectionResult {
+class FraudDetectionResult {
 
     private boolean fraud;
     private String ruleName;
