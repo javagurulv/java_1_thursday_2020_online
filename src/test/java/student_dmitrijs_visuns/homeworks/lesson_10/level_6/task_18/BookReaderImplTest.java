@@ -28,7 +28,7 @@ public class BookReaderImplTest {
         Book book2 = new Book ("Heinlein", "Citizen of Galaxy");
         prototype.addBookToLibrary(book1);
         prototype.addBookToLibrary(book2);
-        List<Book> searchTestList = prototype.findBookByExactAuthorName("heinle");
+        List<Book> searchTestList = prototype.findBookByExactAuthorName("Heinle");
         assertFalse(searchTestList.contains(book1));
         assertFalse(searchTestList.contains(book2));
 
