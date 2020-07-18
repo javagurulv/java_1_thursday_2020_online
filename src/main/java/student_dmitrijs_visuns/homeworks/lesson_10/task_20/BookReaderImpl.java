@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_10.level_6.task_18;
+package student_dmitrijs_visuns.homeworks.lesson_10.task_20;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,13 +19,23 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
-    public List <Book> findBookByExactAuthorName (String exactAuthorName) {
-        List <Book> booksBySameAuthor = new ArrayList<>();
+    public List <Book> findBooksByAuthorName (String authorName) {
+        List <Book> booksByAuthor = new ArrayList<>();
         for (Book eachBook : readerLibrary) {
-            if (eachBook.getBookAuthor().equals(exactAuthorName)) {
-                booksBySameAuthor.add(eachBook);
+            if (eachBook.getBookAuthor().toLowerCase().startsWith(authorName.toLowerCase())) {
+                booksByAuthor.add(eachBook);
             }
-        } return booksBySameAuthor;
+        } return booksByAuthor;
+    }
+
+    @Override
+    public List <Book> findBookByExactTitle (String exactBookTitle) {
+        List <Book> booksWithSameTitle = new ArrayList<>();
+        for (Book eachBook : readerLibrary) {
+            if (eachBook.getBookTitle().equals(exactBookTitle)) {
+                booksWithSameTitle.add(eachBook);
+            }
+        } return booksWithSameTitle;
     }
 
     @Override
