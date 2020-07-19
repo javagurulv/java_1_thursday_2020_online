@@ -2,6 +2,8 @@ package student_vadims_vladisevs.lesson_10.level_3.task_10;
 
 import org.junit.Test;
 
+import java.util.Optional;
+
 import static org.junit.Assert.*;
 
 public class InMemoryDatabaseTest {
@@ -18,8 +20,8 @@ public class InMemoryDatabaseTest {
         inMemoryDatabase.save(product2);
         inMemoryDatabase.save(product3);
 
-        Product result = inMemoryDatabase.findByTitle("First Product");
-        String actual = result.getTitle();
+        Optional<Product> result = inMemoryDatabase.findByTitle("First Product");
+        String actual = result.get().getTitle();
         assertEquals("First Product", actual);
     }
 
@@ -35,9 +37,9 @@ public class InMemoryDatabaseTest {
         inMemoryDatabase.save(product2);
         inMemoryDatabase.save(product3);
 
-        Product result = inMemoryDatabase.findByTitle("null test");
+        Optional<Product> result = inMemoryDatabase.findByTitle("null test");
 
-        assertNull(result);
+        assertEquals(Optional.empty(), result);
     }
 
     @Test
@@ -52,8 +54,8 @@ public class InMemoryDatabaseTest {
         inMemoryDatabase.save(product2);
         inMemoryDatabase.save(product3);
 
-        Product result = inMemoryDatabase.findByTitle("Second Product");
-        String actual = result.getTitle();
+        Optional<Product> result = inMemoryDatabase.findByTitle("Second Product");
+        String actual = result.get().getTitle();
         assertEquals("Second Product", actual);
     }
 
@@ -69,8 +71,8 @@ public class InMemoryDatabaseTest {
         inMemoryDatabase.save(product2);
         inMemoryDatabase.save(product3);
 
-        Product result = inMemoryDatabase.findByTitle("Third Product");
-        String actual = result.getTitle();
+        Optional<Product> result = inMemoryDatabase.findByTitle("Third Product");
+        String actual = result.get().getTitle();
         assertEquals("Third Product", actual);
     }
 }

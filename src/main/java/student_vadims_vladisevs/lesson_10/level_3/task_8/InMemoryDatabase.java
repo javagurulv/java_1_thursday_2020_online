@@ -1,11 +1,12 @@
 package student_vadims_vladisevs.lesson_10.level_3.task_8;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class InMemoryDatabase implements Database{
 
 	// List<Product> ...
-    private ArrayList<Product> database;
+    private List<Product> database;
 
     public InMemoryDatabase(){
         this.database = new ArrayList<>();
@@ -26,7 +27,7 @@ class InMemoryDatabase implements Database{
         return null;
     }
 
-    public ArrayList<Product> getDatabase() {
+    public List<Product> getDatabase() {
         return database;
     }
 }
