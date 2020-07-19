@@ -25,5 +25,12 @@ class ProductValidatorImpl implements ProductValidator
     List<ValidationException> validate(Product product)
     // может вызывать все правила валидации, собирать ошибки в список и возвращать его
 
+Этот дизайн разделяет правила валидации по свойствам объекта Product.
+Это хорошо, потому что все правила уже не будут лежать в одном классе
+сваленные в кучу, а будут разделены по трём классам:
+- ProductTitleValidationRule
+- ProductPriceValidationRule
+- ProductDescriptionValidationRule
 
-
+Такое решение позволит сделать код более читабельным
+и расширяемым в будущем, в него будет легче добавлять новые правила валидации.
