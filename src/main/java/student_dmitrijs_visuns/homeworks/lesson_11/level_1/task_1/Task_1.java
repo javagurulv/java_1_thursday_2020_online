@@ -8,6 +8,8 @@ import java.util.List;
 class Task_1 {
 
     List<Integer> arrListExample = new ArrayList<>();
+//
+
 
 
     List<Integer> linkListExample = new LinkedList<>();

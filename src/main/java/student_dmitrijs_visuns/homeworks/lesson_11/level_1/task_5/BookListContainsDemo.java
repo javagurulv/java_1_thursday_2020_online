@@ -5,20 +5,16 @@ import java.util.List;
 
 public class BookListContainsDemo {
 
-    List<Book> bookList = new ArrayList<>();
-
-    boolean isInTheList (Book book) {
-        return (bookList.contains(book));
-    }
-
-
     public static void main(String[] args) {
 
-        BookListContainsDemo demo = new BookListContainsDemo();
-        Book book1 = new Book ("Jack", "White Fang");
-        demo.bookList.add(book1);
-        System.out.println("Does list contain book " + book1.getTitle() + " by "
-                + book1.getAuthor() + " : " + demo.isInTheList(book1));
+       List<Book> bookList = new ArrayList<>();
+
+       Book book1 = new Book ("Jack", "White Fang");
+       Book book2 = new Book ("Fack", "White Tang");
+       bookList.add(book1);
+
+       System.out.println("Does bookList contain book1: " + bookList.contains(book1));
+       System.out.println("Does bookList contain book2: " + bookList.contains(book2));
 
 
     }
