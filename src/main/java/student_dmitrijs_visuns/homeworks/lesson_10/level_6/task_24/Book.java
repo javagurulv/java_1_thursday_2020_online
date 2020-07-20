@@ -23,11 +23,7 @@ class Book {
         return isRead;
     }
 
-    public void setRead() {
-        isRead = true;
-    }
-
-    public void setNotRead() {
-        isRead = false;
+    public void setRead(boolean read) {
+        isRead = read;
     }
 }

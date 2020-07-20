@@ -73,7 +73,7 @@ class BookReaderImpl implements BookReader {
     @Override
     public boolean markBookAsRead (Book book) {
         if (readerLibrary.contains(book)) {
-            book.setRead();
+            book.setRead(true);
             return true;
         } else return false;
     }
