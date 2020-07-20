@@ -65,6 +65,16 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
+    public List <Book> findBooksByTitle (String bookTitle) {
+        List <Book> booksByTitle = new ArrayList<>();
+        for (Book eachBook : readerLibrary) {
+            if (eachBook.getBookTitle().toLowerCase().startsWith(bookTitle.toLowerCase())) {
+                booksByTitle.add(eachBook);
+            }
+        } return booksByTitle;
+    }
+
+    @Override
     public List <Book> findBookByExactTitle (String exactBookTitle) {
         List <Book> booksWithSameTitle = new ArrayList<>();
         for (Book eachBook : readerLibrary) {
@@ -74,15 +84,6 @@ class BookReaderImpl implements BookReader {
         } return booksWithSameTitle;
     }
 
-    @Override
-    public List <Book> findBooksByTitle (String bookTitle) {
-        List <Book> booksByTitle = new ArrayList<>();
-        for (Book eachBook : readerLibrary) {
-            if (eachBook.getBookTitle().toLowerCase().startsWith(bookTitle.toLowerCase())) {
-                booksByTitle.add(eachBook);
-            }
-        } return booksByTitle;
-    }
 
     @Override
     public boolean addBookToLibrary (Book book) {
