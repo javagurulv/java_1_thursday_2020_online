@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson12.level6.task_46;
+package student_aleksey_kodin.lesson12.level6.task_37;
 
 interface FieldValidationRule {
 

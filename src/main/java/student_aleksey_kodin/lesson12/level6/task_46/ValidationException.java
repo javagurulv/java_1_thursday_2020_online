@@ -1,7 +1,5 @@
 package student_aleksey_kodin.lesson12.level6.task_46;
 
-import java.util.Objects;
-
 class ValidationException extends Exception {
     private final String ruleTitle;
     private final String errorMessage;
