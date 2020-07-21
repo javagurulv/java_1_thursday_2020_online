@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson12.level6.task_40;
+package student_aleksey_kodin.lesson12.level6.task_39;
 
 class ProductTitleValidationRule implements FieldValidationRule {
 

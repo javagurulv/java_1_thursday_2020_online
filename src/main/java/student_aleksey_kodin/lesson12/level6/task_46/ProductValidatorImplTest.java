@@ -108,9 +108,6 @@ class ProductValidatorImplTest {
         Product product = new Product("Test", 1, "Hi%");
         List<ValidationException> exceptions = validator.validate(product);
         checkResult(exceptions.size() == 1, "rule9_v2");
-
-        exceptions.stream().filter(e->e.getRuleTitle().equals("RULE-9")).findFirst();
-
         checkResult(exceptions.get(0).getRuleTitle().equals("RULE-9"), "rule9_v2");
         checkResult(exceptions.get(0).getFieldName().equals("title"), "rule9_v2");
         checkResult(exceptions.get(0).getErrorMessage().equals("Title must be only Latin symbols and digits"), "rule9_v2");

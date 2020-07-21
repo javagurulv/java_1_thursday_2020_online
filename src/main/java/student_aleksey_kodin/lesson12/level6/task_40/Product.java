@@ -1,5 +1,7 @@
 package student_aleksey_kodin.lesson12.level6.task_40;
 
+import java.util.Objects;
+
 class Product {
     private String productTitle;
     private int productPrice;
@@ -33,5 +35,20 @@ class Product {
 
     public void setProductDescription(String productDescription) {
         this.productDescription = productDescription;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return productPrice == product.productPrice &&
+                Objects.equals(productTitle, product.productTitle) &&
+                Objects.equals(productDescription, product.productDescription);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(productTitle, productPrice, productDescription);
     }
 }
