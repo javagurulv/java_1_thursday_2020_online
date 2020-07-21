@@ -8,6 +8,7 @@ class BookDataBaseImpl  implements BookDataBase {
     List<Book> booksList = new ArrayList<>();
     private Long startId = 1L;
 
+    @Override
     public Long save(Book book) {
         book.setId(startId);
         booksList.add(book);
