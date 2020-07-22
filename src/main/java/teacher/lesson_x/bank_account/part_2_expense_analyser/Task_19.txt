@@ -5,23 +5,16 @@
 
 class Transaction {
 
-    private String owner;
     private int amount;
     private TransactionType transactionType;
     private ExpenseCategory expenseCategory;
 
-    public Transaction(String owner,
-                       int amount,
+    public Transaction(int amount,
                        TransactionType transactionType,
                        ExpenseCategory expenseCategory) {
-        this.owner = owner;
         this.amount = amount;
         this.transactionType = transactionType;
         this.expenseCategory = expenseCategory;
-    }
-
-    public String getOwner() {
-        return this.owner;
     }
 
     public int getAmount() {

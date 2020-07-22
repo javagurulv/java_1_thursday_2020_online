@@ -7,13 +7,10 @@
 
 class Transaction {
 
-    private String owner;
     private int amount;
     private TransactionType transactionType;
 
-    // создайте конструктор класса с тремя параметрами: owner, moneyAmount, transactionType.
-
-    // создайте геттер метод для свойства owner
+    // создайте конструктор класса с двумя параметрами: аmount, transactionType.
 
     // создайте геттер метод для свойства amount
 

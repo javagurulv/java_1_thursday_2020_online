@@ -3,10 +3,16 @@
 
 class BankAccount {
 
+    private String owner;
     private Transaction[] transactions;
 
-    public BankAccount(Transaction[] transactions) {
+    public BankAccount(String owner, Transaction[] transactions) {
+        this.owner = owner;
         this.transactions = transactions;
+    }
+
+    public String getOwner() {
+        return this.owner;
     }
 
     public Transaction[] getTransactions() {
