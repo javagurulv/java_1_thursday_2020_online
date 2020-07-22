@@ -3,18 +3,12 @@
 
 class Transaction {
 
-    private String owner;
     private int amount;
     private TransactionType transactionType;
 
-    public Transaction(String owner, int amount, TransactionType transactionType) {
-        this.owner = owner;
+    public Transaction(int amount, TransactionType transactionType) {
         this.amount = amount;
         this.transactionType = transactionType;
-    }
-
-    public String getOwner() {
-        return this.owner;
     }
 
     public int getAmount() {
