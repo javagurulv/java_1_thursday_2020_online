@@ -27,7 +27,7 @@ class FoodExpensesCalculator {
 
     private List<Transaction> filterFoodTransactions(List<Transaction> transactions) {
         List<Transaction> withdrawalFoodTransactions = new ArrayList<>();
-        for (Transaction transaction : withdrawalTransactions) {
+        for (Transaction transaction : transactions) {
             if (transaction.getExpenseCategory() == ExpenseCategory.FOOD) {
                 withdrawalFoodTransactions.add(transaction);
             }
@@ -37,7 +37,7 @@ class FoodExpensesCalculator {
 
     private int sumTransactionAmount(List<Transaction> transactions) {
         int foodExpensesAmount = 0;
-        for (Transaction transaction : withdrawalFoodTransactions) {
+        for (Transaction transaction : transactions) {
             foodExpensesAmount = foodExpensesAmount + transaction.getAmount();
         }
         return foodExpensesAmount;
