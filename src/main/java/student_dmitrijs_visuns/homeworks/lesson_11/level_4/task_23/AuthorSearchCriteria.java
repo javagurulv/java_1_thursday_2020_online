@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_11.level_3.task_18;
+package student_dmitrijs_visuns.homeworks.lesson_11.level_4.task_23;
 
 class AuthorSearchCriteria implements SearchCriteria {
 
@@ -8,7 +8,6 @@ class AuthorSearchCriteria implements SearchCriteria {
         this.authorToSearch = authorToSearch;
     }
 
-    @Override
     public boolean match(Book book) {
         return book.getAuthor().equals(this.authorToSearch);
     }

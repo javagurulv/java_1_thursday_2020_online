@@ -11,6 +11,7 @@ class OrSearchCriteria implements SearchCriteria {
         this.rightCondition = rightCondition;
     }
 
+    @Override
     public boolean match(Book book) {
         return this.leftCondition.match(book) || this.rightCondition.match(book);
     }
