@@ -8,14 +8,13 @@ class FraudDetector {
     }
 
     boolean isFraud(Transaction t) {
-        boolean result = false;
+
         for (FraudRule fraudRule : fraudRules) {
             if (fraudRule.isFraud(t)) {
-                result = true;
-                break;
+                return true;
             }
         }
-        return result;
+        return false;
     }
 
 }
