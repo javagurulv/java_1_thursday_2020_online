@@ -3,7 +3,6 @@
 После изменения классы FoodExpensesCalculator и EntertainmentExpensesCalculator
 должны выглядеть так:
 
-
 class FoodExpensesCalculator extends ExpensesCalculator {
 
     public int calculateExpensesAmount(BankAccount bankAccount) {
