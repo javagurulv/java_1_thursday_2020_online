@@ -1,27 +1,26 @@
-package student_dmitrijs_visuns.homeworks.lesson_11.level_6.task_33;
+package student_dmitrijs_visuns.homeworks.lesson_11.level_6.task_34;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.Scanner;
 
-class FindByAuthorUIAction implements UIAction {
+class FindByTitleUIAction implements UIAction {
 
     private BookDataBase bookDatabase;
 
-    public FindByAuthorUIAction(BookDataBase bookDatabase) {
+    public FindByTitleUIAction(BookDataBase bookDatabase) {
         this.bookDatabase = bookDatabase;
     }
 
     public void execute() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter book author: ");
-        String authorToFind = sc.nextLine();
-        List<Book> foundBooksList = bookDatabase.findByAuthor(authorToFind);
+        System.out.println("Enter book title: ");
+        String titleToFind = sc.nextLine();
+        List<Book> foundBooksList = bookDatabase.findByTitle(titleToFind);
         System.out.println("Search result: ");
         if (foundBooksList.isEmpty()) {
-            System.out.println("Found no books by this author");
+            System.out.println("Found no books with this title");
         } else {
-            System.out.println("Found " + foundBooksList.size() + " books by this author:");
+            System.out.println("Found " + foundBooksList.size() + " books with this title:");
             System.out.println("");
             for (Book book : foundBooksList) {
                 System.out.println("Book title: " + book.getTitle());
@@ -32,5 +31,4 @@ class FindByAuthorUIAction implements UIAction {
 
         }
     }
-
 }

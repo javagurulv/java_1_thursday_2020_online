@@ -1,7 +1,6 @@
-package student_dmitrijs_visuns.homeworks.lesson_11.level_6.task_33;
+package student_dmitrijs_visuns.homeworks.lesson_11.level_6.task_34;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.Scanner;
 
 class FindByAuthorUIAction implements UIAction {
@@ -22,7 +21,6 @@ class FindByAuthorUIAction implements UIAction {
             System.out.println("Found no books by this author");
         } else {
             System.out.println("Found " + foundBooksList.size() + " books by this author:");
-            System.out.println("");
             for (Book book : foundBooksList) {
                 System.out.println("Book title: " + book.getTitle());
                 System.out.println("Book author: " + book.getAuthor());
