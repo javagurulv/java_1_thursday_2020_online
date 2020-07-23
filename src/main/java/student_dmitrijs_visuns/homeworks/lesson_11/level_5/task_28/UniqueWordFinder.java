@@ -1,6 +1,7 @@
-package student_dmitrijs_visuns.homeworks.lesson_11.level_4.task_27;
+package student_dmitrijs_visuns.homeworks.lesson_11.level_5.task_28;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class UniqueWordFinder {
 
