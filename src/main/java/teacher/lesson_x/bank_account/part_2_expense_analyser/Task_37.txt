@@ -1,0 +1,7 @@
+Вводим новую функциональность: анализ расходов.
+
+В действительности в этих классах методы calculateExpensesAmount()
+отличаются только тем, что в одном указано ExpenseCategory.FOOD,
+а в другом ExpenseCategory.ENTERTAINMENT.
+
+Давайте вынесем
