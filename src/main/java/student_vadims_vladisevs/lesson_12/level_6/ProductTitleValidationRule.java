@@ -9,15 +9,15 @@ class ProductTitleValidationRule implements FieldValidationRule {
             throw new ValidationException("RULE-1", "Title can not be empty", "title");
         }
 
-        if (isTitleShortThanThreeSymbols(product)){
-            throw new ValidationException("RULE-2", "Title is short than 3 symbols", "title");
+        if (isTitleShorterThanThreeSymbols(product)){
+            throw new ValidationException("RULE-2", "Title is shorter than 3 symbols", "title");
         }
 
         if(isTitleLongerThanHundredSymbols(product)){
             throw new ValidationException("RULE-3", "Title is longer then 100 symbols", "title");
         }
 
-        if(isTitleContainsOnlyEnglishSymbolsAndNumbers(product)){
+        if(!isTitleContainsOnlyEnglishSymbolsAndNumbers(product)){
             throw new ValidationException("RULE-4", "Title must contain only English alphabet symbols and numbers", "title");
         }
     }
@@ -30,7 +30,7 @@ class ProductTitleValidationRule implements FieldValidationRule {
         return product.getTitle().isEmpty();
     }
 
-    private boolean isTitleShortThanThreeSymbols(Product product){
+    private boolean isTitleShorterThanThreeSymbols(Product product){
         return product.getTitle().length() < 3;
     }
 
@@ -38,5 +38,6 @@ class ProductTitleValidationRule implements FieldValidationRule {
         return product.getTitle().length() > 100;
     }
 
-    private boolean isTitleContainsOnlyEnglishSymbolsAndNumbers(Product product){ return product.getTitle().matches("^[A-Za-z]");}
+    private boolean isTitleContainsOnlyEnglishSymbolsAndNumbers(Product product){ return product.getTitle().matches("^[a-zA-Z0-9 ]*$");}
+
 }
