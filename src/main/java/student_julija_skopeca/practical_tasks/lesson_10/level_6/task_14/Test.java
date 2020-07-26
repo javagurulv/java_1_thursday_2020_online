@@ -1,5 +1,7 @@
 package student_julija_skopeca.practical_tasks.lesson_10.level_6.task_14;
 
+import java.util.ArrayList;
+
 class Test {
     Database database = new Database();
 
@@ -10,6 +12,8 @@ class Test {
         test.IncompleteInfoAboutBook();
         test.DeleteExistingBook();
         test.DeleteNotExistingBook();
+        test.PrintAllDatabase();
+        test.SearchByAuthor();
     }
 
     public void AddExistingBook() {
@@ -75,6 +79,35 @@ class Test {
             System.out.println("DeleteExistingBook test - ok");
         } else {
             System.out.println("DeleteExistingBook test - fail");
+        }
+    }
+
+    public void PrintAllDatabase(){
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("Title","John Smith");
+        bookreader.Add(book1);
+
+        Book book2 = new Book("Title2","John Smith");
+        bookreader.Add(book2);
+        System.out.println(bookreader.PrintBookDatabase());
+    }
+
+    public void SearchByAuthor() {
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("Title","John Smith");
+        bookreader.Add(book1);
+
+        Book book2 = new Book("Title2","John Smith");
+        bookreader.Add(book2);
+
+        Book book3 = new Book("Title2","John Lenon");
+        bookreader.Add(book3);
+
+        ArrayList<Book> result = bookreader.getByAuthor("John Smith");
+        if (result.size() == 2) {
+            System.out.println("SearchByAuthor test - ok");
+        } else {
+            System.out.println("SearchByAuthor test - fail");
         }
     }
 

@@ -1,6 +1,7 @@
 package student_julija_skopeca.practical_tasks.lesson_10.level_6.task_14;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 class Database {
 
@@ -19,5 +20,12 @@ class Database {
         return !list.stream().filter(b -> b.equals(book)).findFirst().isEmpty();
     }
 
+    public ArrayList<Book> GetAll(){
+        return list;
+    }
 
+    public ArrayList<Book> getByAuthor(String author){
+        return list.stream().filter(b -> b.getAuthor().equals(author))
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
 }
