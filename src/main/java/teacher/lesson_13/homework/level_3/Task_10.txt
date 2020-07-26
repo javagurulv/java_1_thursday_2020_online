@@ -5,11 +5,11 @@
 - false - мертвую или пустую клетку,
 - true - означает живую клетку.
 
-Создайте класс ConwayGameOfLife:
+Создайте класс GameOfLifeNextGenerationCalculator:
 
-class ConwayGameOfLife {
+class GameOfLifeNextGenerationCalculator {
 
-    public boolean[][] calculateNextGeneration(boolean[][] currentGeneration) {
+    public boolean[][] calculate(boolean[][] currentGeneration) {
         return null; // реализацию напишем тут чуть позже
     }
 

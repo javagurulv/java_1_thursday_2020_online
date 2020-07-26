@@ -1,9 +1,9 @@
 Генерация следующего поколения в игре Conway's Game of Life
 (https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
-В тестовой директории создайте класс ConwayGameOfLifeTest:
+В тестовой директории создайте класс GameOfLifeNextGenerationCalculatorTest:
 
-class ConwayGameOfLifeTest {
+class GameOfLifeNextGenerationCalculatorTest {
 
 
 
