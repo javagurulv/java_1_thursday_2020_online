@@ -21,8 +21,17 @@ class GameOfLife {
         boolean[][] field = generator.generate();
         while(true) {
             ui.show(filed);
-            // sleep for 1-2 seconds
+            sleepForSeconds(5);
             field = calculator.calculate(field);
+        }
+    }
+
+    private void sleepForSeconds(int seconds) {
+        try {
+            TimeUnit.SECONDS.sleep(seconds);
+        } catch (InterruptedException e) {
+            System.out.println("Exception occurred!");
+            System.exit(1);
         }
     }
 
