@@ -7,6 +7,7 @@ class Test {
         Test test = new Test();
         test.AddExistingBook();
         test.AddandCheck();
+        test.IncompleteInfoAboutBook();
     }
 
     public void AddExistingBook() {
@@ -34,6 +35,18 @@ class Test {
             System.out.println("AddandCheck test - ok");
         } else {
             System.out.println("AddandCheck test - fail");
+        }
+    }
+
+    public void IncompleteInfoAboutBook() {
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("","");
+        bookreader.Add(book1);
+
+        if (!database.CheckIfExists(book1)) {
+            System.out.println("IncompleteInfoAboutBook test - ok");
+        } else {
+            System.out.println("IncompleteInfoAboutBook test - fail");
         }
     }
 

@@ -10,6 +10,9 @@ class BookReaderImpl implements BookReader {
 
     @Override
     public boolean Add(Book book) {
+        if (book.getAuthor().isEmpty() || book.getTitle().isEmpty()){
+            return false;
+        }
         if (!database.CheckIfExists(book)) {
             database.Add(book);
 
@@ -18,4 +21,6 @@ class BookReaderImpl implements BookReader {
 
         return false;
     }
+
+
 }
