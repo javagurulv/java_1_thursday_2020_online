@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson13.level3;
+package student_aleksey_kodin.lesson13.level4;
 
 class GameOfLifeNextGenerationCalculator {
     public boolean[][] calculateNextGeneration(boolean[][] currentGeneration) {
@@ -28,7 +28,7 @@ class GameOfLifeNextGenerationCalculator {
         return nextGeneration;
     }
 
-    public int countAliveCell(boolean[][] currentGeneration, int currentColumn, int currentRow) {
+    private int countAliveCell(boolean[][] currentGeneration, int currentColumn, int currentRow) {
         int totalAliveCell = 0;
 
         totalAliveCell += checkCellLeftSide(currentGeneration, currentColumn, currentRow);
