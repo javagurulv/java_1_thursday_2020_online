@@ -8,6 +8,8 @@ class Test {
         test.AddExistingBook();
         test.AddandCheck();
         test.IncompleteInfoAboutBook();
+        test.DeleteExistingBook();
+        test.DeleteNotExistingBook();
     }
 
     public void AddExistingBook() {
@@ -47,6 +49,32 @@ class Test {
             System.out.println("IncompleteInfoAboutBook test - ok");
         } else {
             System.out.println("IncompleteInfoAboutBook test - fail");
+        }
+    }
+
+    public void DeleteExistingBook() {
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("Title","John Smith");
+        bookreader.Add(book1);
+        bookreader.Delete(book1);
+
+        if (!database.CheckIfExists(book1)) {
+            System.out.println("DeleteExistingBook test - ok");
+        } else {
+            System.out.println("DeleteExistingBook test - fail");
+        }
+    }
+
+    public void DeleteNotExistingBook() {
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("Title","John Smith");
+        //bookreader.Add(book1);
+
+
+        if (!bookreader.Delete(book1)) {
+            System.out.println("DeleteExistingBook test - ok");
+        } else {
+            System.out.println("DeleteExistingBook test - fail");
         }
     }
 

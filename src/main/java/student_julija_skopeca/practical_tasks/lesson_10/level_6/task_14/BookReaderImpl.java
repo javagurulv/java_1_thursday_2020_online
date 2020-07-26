@@ -22,5 +22,14 @@ class BookReaderImpl implements BookReader {
         return false;
     }
 
+    @Override
+    public boolean Delete(Book book) {
+        if (database.CheckIfExists(book)) {
+            database.Delete(book);
 
+            return true;
+        }
+
+        return false;
+    }
 }

@@ -8,6 +8,11 @@ class Database {
 
     public void Add (Book book){
         list.add(book);
+
+    }
+
+    public void Delete (Book book){
+        list.remove(book);
     }
 
     public boolean CheckIfExists(Book book){
