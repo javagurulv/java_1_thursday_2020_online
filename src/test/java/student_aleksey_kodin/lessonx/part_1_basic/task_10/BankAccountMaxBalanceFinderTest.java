@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lessonx.bank_account.task_10;
+package student_aleksey_kodin.lessonx.part_1_basic.task_10;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
