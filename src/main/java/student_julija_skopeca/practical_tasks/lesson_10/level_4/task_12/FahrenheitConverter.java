@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.lesson_10.level_3.task_12;
+package student_julija_skopeca.practical_tasks.lesson_10.level_4.task_12;
 
 class FahrenheitConverter implements TemperatureConverter {
 
