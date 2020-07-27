@@ -14,7 +14,7 @@ class BankApiImpl implements BankApi {
     public Optional<BankClient> findByUid(UserCredentials credentials,
                                           String uid) throws AccessDeniedException {
         if (!credentials.hasRole(Role.CAN_SEARCH_CLIENTS)) {
-            throw new AccessDeniedException();
+            throw new AccessDeniedException("Can't initialize search, no valid user role provided");
         }
 
         for (BankClient client : clients) {
