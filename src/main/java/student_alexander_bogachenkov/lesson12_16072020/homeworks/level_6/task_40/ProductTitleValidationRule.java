@@ -28,6 +28,7 @@ class ProductTitleValidationRule implements FieldValidationRule {
 
     boolean containsOnlyAllowedSymbols(String text) {
         text = text.toLowerCase();
+        text = text.replaceAll("\\s", "");
         char[] charArray = text.toCharArray();
         for (char ch : charArray) {
             if (!(ch >= 'a' && ch <= 'z') || !(text.matches("[0-9]+"))) {
