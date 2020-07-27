@@ -6,8 +6,8 @@ import java.util.Scanner;
 class WrongUserInputHandlingDemo {
 
     public static void main(String[] args) {
+        System.out.println("Enter whole number:");
 
-        System.out.println("Enter whole number: ");
         while (true) {
             try {
                 Scanner sc = new Scanner(System.in);
