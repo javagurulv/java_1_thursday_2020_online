@@ -1,17 +1,12 @@
-Вводим новую функциональность: анализ расходов.
+На данный момент создать банковский аккаунт с транзакциями можно следующим образом:
 
-Напишите код, который на основе разработанных классов
-расчитывает сумму расходов для всех категорий сразу.
+Transaction transaction1 = createDepositTransaction(10);
+Transaction transaction2 = createDepositTransaction(10, ExpenseCategory.FOOD);
+Transaction[] transactions = new Transaction[2];
+transactions[0] = transaction1;
+transactions[1] = transaction2;
+BankAccount bankAccount = new BankAccount("John", transactions);
 
-class ExpenseCategoryAmountCalculator {
+Писать такой большой код в каждом тест кейсе довольно не удобно.
 
-    public Map<ExpenseCategory, Integer> calculate(BankAccount bankAccount) {
-        // Мап пример:
-        //  ExpenseCategory.FOOD, 400
-        //  ExpenseCategory.OTHER, 500
-        // etc.
-    }
-
-}
-
-Напишите тесты для класса ExpenseCategoryAmountCalculator.
+Поэтому придумайте способ как можно упростить этот код.

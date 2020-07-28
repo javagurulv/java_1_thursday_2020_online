@@ -5,11 +5,11 @@ class ProductDescriptionValidationRule implements FieldValidationRule {
     public void validate(Product product) throws ValidationException {
 
         if (isDescriptionLongerThan2000Symbols(product)){
-            throw new ValidationException("RULE-8", "Description is longer than 2000 symbols", "Description");
+            throw new ValidationException("RULE-8", "Description is longer than 2000 symbols", "description");
         }
 
-        if(isDescriptionContainOnlyEngSymbolsAndNumbers(product)){
-            throw new ValidationException("RULE-9", "Descriptions must contain only ENG symbols and numbers", "Description");
+        if(!isDescriptionContainOnlyEngSymbolsAndNumbers(product)){
+            throw new ValidationException("RULE-9", "Descriptions must contain only ENG symbols and numbers", "description");
         }
 
     }
@@ -20,6 +20,6 @@ class ProductDescriptionValidationRule implements FieldValidationRule {
     }
 
     private boolean isDescriptionContainOnlyEngSymbolsAndNumbers(Product product){
-        return product.getDescription().matches("^[A-Za-z]");
+        return product.getDescription().matches("^[a-zA-Z0-9 ]*$");
     }
 }
