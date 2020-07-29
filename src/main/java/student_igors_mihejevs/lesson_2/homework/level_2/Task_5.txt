@@ -1,0 +1,7 @@
+Дан код, нужно исправить ошибку компиляции.
+
+class BankAccount {
+
+	public static void main(String[] args) {
+
+}
