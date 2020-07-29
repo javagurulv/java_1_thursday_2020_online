@@ -1,4 +1,4 @@
-package student_igors_mihejevs.lesson_10.level_2;
+package student_igors_mihejevs.lesson_10.level_2.task_4;
 
 class DayOfTheWeekDetectorSwitchVersion implements DayOfTheWeekDetector {
 
