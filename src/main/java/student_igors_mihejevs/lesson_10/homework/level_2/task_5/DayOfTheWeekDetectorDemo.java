@@ -17,20 +17,17 @@ class DayOfTheWeekDetectorDemo {
     }
 
     public static void main(String[] args) {
-        DayOfTheWeekDetectorDemo dayOfTheWeekDetectorIf =
-                new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorIfVersion());
+        DayOfTheWeekDetectorDemo detectorIf = new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorIfVersion());
         System.out.println("If Version");
-        dayOfTheWeekDetectorIf.run();
+        detectorIf.run();
 
-        DayOfTheWeekDetectorDemo dayOfTheWeekDetectorSwitch =
-                new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorSwitchVersion());
+        DayOfTheWeekDetectorDemo detectorSwitch = new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorSwitchVersion());
         System.out.println("Switch Version");
-        dayOfTheWeekDetectorSwitch.run();
+        detectorSwitch.run();
 
-        DayOfTheWeekDetectorDemo dayOfTheWeekDetectorArray =
-                new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorArrayVersion());
+        DayOfTheWeekDetectorDemo detectorArray = new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorArrayVersion());
         System.out.println("Array Version");
-        dayOfTheWeekDetectorArray.run();
+        detectorArray.run();
     }
 
 }
