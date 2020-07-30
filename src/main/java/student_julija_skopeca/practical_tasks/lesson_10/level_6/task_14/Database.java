@@ -38,4 +38,9 @@ class Database {
         return list.stream().filter(b -> b.getTitle().equals(title))
                 .collect(Collectors.toCollection(ArrayList::new));
     }
+
+    public ArrayList<Book> getByBookTitleByParts(String title){
+        return list.stream().filter(b -> b.getTitle().contains(title))
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
 }

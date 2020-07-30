@@ -16,6 +16,8 @@ interface BookReader {
 
     ArrayList<Book> getByBookTitle(String title);
 
+    ArrayList<Book> getByBookTitleByParts(String title);
+
 
 
 
