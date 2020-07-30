@@ -2,6 +2,10 @@ package teacher.lesson_14.lessoncode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FruitStreamApi {
 
@@ -19,7 +23,45 @@ public class FruitStreamApi {
 		return fruits;
 	}
 
+	public List<Fruit> findAllApples() {
+		Stream<Fruit> fruitStream = fruits.stream();
 
+		return fruits.stream()
+				.filter(fruit -> "apple".equals(fruit.getTitle()))
+				.collect(Collectors.toList());
+	}
 
+	public List<Fruit> findRedApplesWithWeightBiggerThen100() {
+		return fruits.stream()
+				.filter(fruit -> "apple".equals(fruit.getTitle()))
+				.filter(fruit -> "red".equals(fruit.getColor()))
+				.filter(fruit -> fruit.getWeight() > 100)
+				.collect(Collectors.toList());
+	}
 
+	public Set<String> findAllFruitUniqNames() {
+		return fruits.stream()
+					 .map(fruit -> fruit.getTitle())
+					 .collect(Collectors.toSet());
+	}
+
+	public List<String> findAllFruitUniqueNames() {
+		return fruits.stream()
+				.map(Fruit::getTitle)
+				//.map(fruit -> fruit.getTitle())
+				.distinct()
+				.collect(Collectors.toList());
+	}
+
+	public Optional<Fruit> findAnyApple() {
+		return fruits.stream()
+					 .filter(fruit -> "apple".equals(fruit.getTitle()))
+					 .findAny();
+	}
+
+	public Optional<Fruit> findFirstApple() {
+		return fruits.stream()
+				.filter(fruit -> "apple".equals(fruit.getTitle()))
+				.findFirst();
+	}
 }
