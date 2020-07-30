@@ -52,4 +52,9 @@ class BookReaderImpl implements BookReader {
     public ArrayList<Book> getByAuthor(String author) {
         return database.getByAuthor(author);
     }
+
+    @Override
+    public ArrayList<Book> getByAuthorName(String author) {
+        return database.getByAuthorName(author);
+    }
 }
