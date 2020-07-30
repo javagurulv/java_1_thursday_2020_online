@@ -1,38 +1,31 @@
-Конечно создавать для каждого года новый метод это не вариант.
-Слишком много годов, слишком много похожих методов.
+А что если фермер захочет найти яблоки других цветов:
+желтый, оранжевый, тёмно красный и так далее?
 
-public List<Transaction> findTransactionsIn2011(List<Transaction> transactions) {
-    return transactions.stream()
-                       .filter(t -> t.getYear() == 2011)
-                       .collect(toList());
+Каждый раз копировать один и тот же код - это очень плохой
+стиль разработки программного обеспечения.
+
+Есть ли более лучшее решение?
+
+Да есть! Параметризация цвета яблока. Вместо копирования методов,
+вынесите в параметр цвет яблок, который нужно найти.
+
+class FruitStorage {
+
+    public List<Apple> findApplesByColor(List<Apple> inventory, String color) {
+        List<Apple> result = new ArrayList<>();
+        for(Apple apple : inventory) {
+            if(apple.getColor().equals(color)) {
+                result.add(apple);
+            }
+        }
+        return result;
+    }
+
 }
 
-public List<Transaction> findTransactionsIn2012(List<Transaction> transactions) {
-    return transactions.stream()
-                       .filter(t -> t.getYear() == 2012)
-                       .collect(toList());
-}
+Теперь с помощью этого метода вы можете искать яблоки разных цветов:
+List<Apple> greenApples = filterApplesByColor(inventory, "green");
+List<Apple> redApples = filterApplesByColor(inventory, "red");
 
-public List<Transaction> findTransactionsIn2013(List<Transaction> transactions) {
-    return transactions.stream()
-                       .filter(t -> t.getYear() == 2013)
-                       .collect(toList());
-}
-
-Что бы сделать этот метод более универсальным можно вынести в параметр метода
-год по которому надо искать и поменять немного название метода:
-
-public List<Transaction> findTransactionsByYear(List<Transaction> transactions, int year) {
-    return transactions.stream()
-                       .filter(t -> t.getYear() == year)
-                       .collect(toList());
-}
-
-Теперь этот метод можно вызывать следующими способами:
-
-List<Transaction> transactions = TransactionTestData.getTransactions();
-List<Transaction> transactions2011 = findTransactionsByYear(transactions, 2011);
-List<Transaction> transactions2012 = findTransactionsByYear(transactions, 2012);
-List<Transaction> transactions2013 = findTransactionsByYear(transactions, 2013);
-
-С помощью юнит тестов докажите, что наш новый метод работает правильно.
+С помощью юнит тестов убедитесь, что метод filterApplesByColor()
+работает правильно.

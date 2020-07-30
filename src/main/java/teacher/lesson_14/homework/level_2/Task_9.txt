@@ -1,10 +1,33 @@
-В классе TransactionAnalysisService
-напишите метод, который принимает на вход список транзакций
-и находит все уникальные года в которых были совершены транзакции,
-(года не должны повторяться).
+Создайте реализацию интерфейса ApplePredicate для выбора:
 
-Реализацию этого метода напишите с использованием Stream API.
+- зелёных яблок
 
-В классе TransactionAnalysisServiceTest напишите юнит тест для созданного вами метода.
+class AppleGreenColorPredicate implements ApplePredicate {
+    public boolean test (Apple apple) {
+        return "green".equals(apple.getColor));
+    }
+}
 
-Для тестирования используйте тестовые данные из класса TransactionTestData.
+- красных яблок
+
+class AppleRedColorPredicate implements ApplePredicate {
+    public boolean test (Apple apple) {
+        return "red".equals(apple.getColor));
+    }
+}
+
+- тяжелых яблок ( > 150 г.)
+
+class AppleHeavyWeightPredicate implements ApplePredicate {
+    public boolean test (Apple apple) {
+        return apple.getWeight() > 150;
+    }
+}
+
+- лёгких яблок ( < 150 г.)
+
+class AppleLightWeightPredicate implements ApplePredicate {
+    public boolean test (Apple apple) {
+        return apple.getWeight() < 150;
+    }
+}
