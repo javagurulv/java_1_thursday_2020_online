@@ -18,7 +18,7 @@ class Test {
         test.SearchByTitle();
         test.SearchByBookTitleByParts();
         test.SetBookAsFinished();
-        test.NewBookIsnotFinished();
+        //test.NewBookIsnotFinished();
     }
 
     public void AddExistingBook() {

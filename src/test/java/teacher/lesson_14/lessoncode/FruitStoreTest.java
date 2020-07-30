@@ -8,16 +8,16 @@ import org.junit.Test;
 
 public class FruitStoreTest {
 
+	private FruitStore fruitStore = new FruitStore();
+
 	@Test
 	public void getAllApples() {
-		FruitStore fruitStore = new FruitStore();
 		List<Fruit> apples = fruitStore.getAllApples();
 		assertEquals(apples.size(), 2);
 	}
 
 	@Test
 	public void getAllApplesV1() {
-		FruitStore fruitStore = new FruitStore();
 		List<Fruit> apples = fruitStore.findFruitsBySearchCriteria(
 				(Fruit fruit) -> "apple".equals(fruit.getTitle())
 		);
@@ -27,28 +27,24 @@ public class FruitStoreTest {
 
 	@Test
 	public void getAllPears() {
-		FruitStore fruitStore = new FruitStore();
 		List<Fruit> pears = fruitStore.getAllPears();
 		assertEquals(pears.size(), 2);
 	}
 
 	@Test
 	public void findAllPearsByTitle() {
-		FruitStore fruitStore = new FruitStore();
 		List<Fruit> pears = fruitStore.findAllFruitsByTitle("pear");
 		assertEquals(pears.size(), 2);
 	}
 
 	@Test
 	public void findAllApplesByTitle() {
-		FruitStore fruitStore = new FruitStore();
 		List<Fruit> apples = fruitStore.findAllFruitsByTitle("apple");
 		assertEquals(apples.size(), 2);
 	}
 
 	@Test
 	public void findFruitsBySearchCriteria_RedTomatos() {
-		FruitStore fruitStore = new FruitStore();
 		List<Fruit> redTomatos = fruitStore.findFruitsBySearchCriteria(
 				new RedTomatosSearchCriteria()
 		);
@@ -57,7 +53,6 @@ public class FruitStoreTest {
 
 	@Test
 	public void findFruitsBySearchCriteria_Apples() {
-		FruitStore fruitStore = new FruitStore();
 		List<Fruit> apples = fruitStore.findFruitsBySearchCriteria(
 				new ApplesSearchCriteria()
 		);
@@ -66,7 +61,6 @@ public class FruitStoreTest {
 
 	@Test
 	public void findFruitsBySearchCriteria_RedTomatosBiggerThen100G() {
-		FruitStore fruitStore = new FruitStore();
 		List<Fruit> apples = fruitStore.findFruitsBySearchCriteria(
 				new FruitSearchCriteria() {
 					@Override
