@@ -33,4 +33,9 @@ class Database {
         return list.stream().filter(b -> b.getAuthor().contains(author))
                 .collect(Collectors.toCollection(ArrayList::new));
     }
+
+    public ArrayList<Book> getByBookTitle(String title){
+        return list.stream().filter(b -> b.getTitle().equals(title))
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
 }

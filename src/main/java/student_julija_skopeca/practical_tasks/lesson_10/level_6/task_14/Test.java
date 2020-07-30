@@ -15,6 +15,7 @@ class Test {
         test.PrintAllDatabase();
         test.SearchByAuthor();
         test.SearchByAuthorName();
+        test.SearchByTitle();
     }
 
     public void AddExistingBook() {
@@ -128,6 +129,25 @@ class Test {
             System.out.println("SearchByAuthorName test - ok");
         } else {
             System.out.println("SearchByAuthorName test - fail");
+        }
+    }
+
+    public void SearchByTitle() {
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("Title","John Smith");
+        bookreader.Add(book1);
+
+        Book book2 = new Book("Title2","John Smith");
+        bookreader.Add(book2);
+
+        Book book3 = new Book("Title2","John Lenon");
+        bookreader.Add(book3);
+
+        ArrayList<Book> result = bookreader.getByBookTitle("Title2");
+        if (result.size() == 2) {
+            System.out.println("SearchByTitle test - ok");
+        } else {
+            System.out.println("SearchByTitle test - fail");
         }
     }
 
