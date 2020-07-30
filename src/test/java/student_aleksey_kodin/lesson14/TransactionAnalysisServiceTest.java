@@ -4,9 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 import java.util.List;
 import static org.junit.Assert.*;
-import student_aleksey_kodin.lesson14.level_1.Transaction;
-import student_aleksey_kodin.lesson14.level_1.TransactionAnalysisService;
-import student_aleksey_kodin.lesson14.level_1.TransactionTestData;
+import student_aleksey_kodin.lesson14.level_3.Transaction;
+import student_aleksey_kodin.lesson14.level_3.TransactionAnalysisService;
+import student_aleksey_kodin.lesson14.level_3.TransactionTestData;
 
 public class TransactionAnalysisServiceTest {
     TransactionAnalysisService transactionAnalysisService = new TransactionAnalysisService();

@@ -11,7 +11,7 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
-    public boolean Add(Book book) {
+    public boolean add(Book book) {
         if (book.getAuthor().isEmpty() || book.getTitle().isEmpty()){
             return false;
         }
@@ -25,7 +25,7 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
-    public boolean Delete(Book book) {
+    public boolean delete(Book book) {
         if (database.CheckIfExists(book)) {
             database.Delete(book);
 
@@ -33,6 +33,17 @@ class BookReaderImpl implements BookReader {
         }
 
         return false;
+    }
+
+    @Override
+    public boolean markAsFinished(Book book) {
+        if (database.CheckIfExists(book)) {
+            book.markAsFinished();
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     @Override
@@ -67,4 +78,6 @@ class BookReaderImpl implements BookReader {
     public ArrayList<Book> getByBookTitleByParts(String title) {
         return database.getByBookTitleByParts(title);
     }
+
+
 }

@@ -17,16 +17,18 @@ class Test {
         test.SearchByAuthorName();
         test.SearchByTitle();
         test.SearchByBookTitleByParts();
+        test.SetBookAsFinished();
+        //test.NewBookIsnotFinished();
     }
 
     public void AddExistingBook() {
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("Title","John Smith");
-        bookreader.Add(book1);
+        bookreader.add(book1);
 
         Book book2 = new Book("Title","John Smith");
 
-        boolean result = bookreader.Add(book2);
+        boolean result = bookreader.add(book2);
 
         if (result == true) {
             System.out.println("AddExistingBook test - fail");
@@ -38,7 +40,7 @@ class Test {
     public void AddandCheck() {
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("Title","John Smith");
-        bookreader.Add(book1);
+        bookreader.add(book1);
 
         if (database.CheckIfExists(book1)) {
             System.out.println("AddandCheck test - ok");
@@ -50,7 +52,7 @@ class Test {
     public void IncompleteInfoAboutBook() {
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("","");
-        bookreader.Add(book1);
+        bookreader.add(book1);
 
         if (!database.CheckIfExists(book1)) {
             System.out.println("IncompleteInfoAboutBook test - ok");
@@ -62,8 +64,8 @@ class Test {
     public void DeleteExistingBook() {
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("Title","John Smith");
-        bookreader.Add(book1);
-        bookreader.Delete(book1);
+        bookreader.add(book1);
+        bookreader.delete(book1);
 
         if (!database.CheckIfExists(book1)) {
             System.out.println("DeleteExistingBook test - ok");
@@ -78,7 +80,7 @@ class Test {
         //bookreader.Add(book1);
 
 
-        if (!bookreader.Delete(book1)) {
+        if (!bookreader.delete(book1)) {
             System.out.println("DeleteExistingBook test - ok");
         } else {
             System.out.println("DeleteExistingBook test - fail");
@@ -88,23 +90,23 @@ class Test {
     public void PrintAllDatabase(){
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("Title","John Smith");
-        bookreader.Add(book1);
+        bookreader.add(book1);
 
         Book book2 = new Book("Title2","John Smith");
-        bookreader.Add(book2);
+        bookreader.add(book2);
         System.out.println(bookreader.PrintBookDatabase());
     }
 
     public void SearchByAuthor() {
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("Title","John Smith");
-        bookreader.Add(book1);
+        bookreader.add(book1);
 
         Book book2 = new Book("Title2","John Smith");
-        bookreader.Add(book2);
+        bookreader.add(book2);
 
         Book book3 = new Book("Title2","John Lenon");
-        bookreader.Add(book3);
+        bookreader.add(book3);
 
         ArrayList<Book> result = bookreader.getByAuthor("John Smith");
         if (result.size() == 2) {
@@ -117,13 +119,13 @@ class Test {
     public void SearchByAuthorName() {
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("Title","John Smith");
-        bookreader.Add(book1);
+        bookreader.add(book1);
 
         Book book2 = new Book("Title2","John Smith");
-        bookreader.Add(book2);
+        bookreader.add(book2);
 
         Book book3 = new Book("Title2","John Lenon");
-        bookreader.Add(book3);
+        bookreader.add(book3);
 
         ArrayList<Book> result = bookreader.getByAuthorName("John");
         if (result.size() == 3) {
@@ -136,13 +138,13 @@ class Test {
     public void SearchByTitle() {
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("Title","John Smith");
-        bookreader.Add(book1);
+        bookreader.add(book1);
 
         Book book2 = new Book("Title2","John Smith");
-        bookreader.Add(book2);
+        bookreader.add(book2);
 
         Book book3 = new Book("Title2","John Lenon");
-        bookreader.Add(book3);
+        bookreader.add(book3);
 
         ArrayList<Book> result = bookreader.getByBookTitle("Title2");
         if (result.size() == 2) {
@@ -156,13 +158,13 @@ class Test {
     public void SearchByBookTitleByParts() {
         BookReader bookreader = new BookReaderImpl(database);
         Book book1 = new Book("Title","John Smith");
-        bookreader.Add(book1);
+        bookreader.add(book1);
 
         Book book2 = new Book("Title2","John Smith");
-        bookreader.Add(book2);
+        bookreader.add(book2);
 
         Book book3 = new Book("Title2","John Lenon");
-        bookreader.Add(book3);
+        bookreader.add(book3);
 
         ArrayList<Book> result = bookreader.getByBookTitleByParts("Title");
         if (result.size() == 3) {
@@ -172,4 +174,21 @@ class Test {
         }
     }
 
-}
+    public void SetBookAsFinished() {
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("Title","John Smith");
+        bookreader.add(book1);
+
+        Book book2 = new Book("Title","John Smith");
+
+        bookreader.add(book2);
+        boolean result = bookreader.markAsFinished(book2);
+
+        if (result == true) {
+            System.out.println("SetBookAsFinished test - ok");
+        } else {
+            System.out.println("SetBookAsFinished test - fail");
+        }
+    }
+
+  }

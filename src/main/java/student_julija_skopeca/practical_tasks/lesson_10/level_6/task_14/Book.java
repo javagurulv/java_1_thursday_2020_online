@@ -3,10 +3,12 @@ package student_julija_skopeca.practical_tasks.lesson_10.level_6.task_14;
 public class Book {
     private String title;
     private String author;
+    private boolean isSetAsFinished;
 
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
+        this.isSetAsFinished = false;
     }
 
     public String getTitle() {
@@ -17,9 +19,13 @@ public class Book {
         return author;
     }
 
-    @Override
+    public void markAsFinished() {this.isSetAsFinished = true;}
+
+        @Override
     public boolean equals(Object obj) {
         Book book = (Book)obj;
         return this.author == book.getAuthor() && this.title == book.getTitle();
     }
+
+
 }
