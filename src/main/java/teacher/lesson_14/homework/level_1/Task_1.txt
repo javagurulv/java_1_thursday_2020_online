@@ -1,58 +1,52 @@
-Вам поручили задачу по анализу данных в домене трейдеров и транзакций.
+Хорошо известная проблема в разработке программного обеспечения
+состоит в том, что независимо от того, что вы делаете,
+требования пользователя меняются.
 
-Класс Trader:
+Например, представьте приложение, которое поможет фермеру
+исследовать его запасы.
 
-class Trader {
-    private String name;
-    private String city;
+class Apple {
 
-    public Trader(String name, String city) {
-        this.name = name;
-        this.city = city;
+    private String color;
+    private int weight;
+
+    public Apple (String color, int weight) {
+        this.color = color;
+        this.weight = weight;
     }
 
-    public String getName() {
-        return this.name;
+    public String getColor() {
+        return color;
     }
 
-    public String getCity() {
-        return this.city;
+    public String getWeight() {
+        return weight;
     }
 
-    public String toString() {
-        return "Trader:"+this.name + " in " + this.city;
-    }
 }
 
-Класс Transaction:
+class FruitStorage {
 
-class Transaction {
-
-    private Trader trader;
-    private int year;
-    private int value;
-
-    public Transaction(Trader trader, int year, int value) {
-        this.trader = trader;
-        this.year = year;
-        this.value = value;
+    public List<Apple> getAllApples() {
+        List<Apple> apples = new ArrayList<>();
+        apples.add(new Apple("red", 100));
+        apples.add(new Apple("red", 160));
+        apples.add(new Apple("red", 200));
+        apples.add(new Apple("green", 200));
+        apples.add(new Apple("green", 90));
+        apples.add(new Apple("green", 50));
+        apples.add(new Apple("yellow", 50));
+        apples.add(new Apple("yellow", 170));
+        return apples;
     }
 
-    public Trader getTrader() {
-        return this.trader;
-    }
 
-    public int getYear() {
-        return this.year;
-    }
-
-    public int getValue() {
-        return this.value;
-    }
-
-    public String toString() {
-        return "{" + this.trader + ", " +
-               "year: "+this.year+", " +
-               "value:" + this.value +"}";
-    }
 }
+
+Первое требование фермера:
+найти все зеленые яблоки в своем складе.
+
+В классе FruitStorage создайте метод для реализации этого требования.
+
+Создайте класс FruitStorageTest и напишите юнит тест
+опираясь на данные из FruitStorage.getAllApples().

@@ -1,14 +1,41 @@
-При реализации задачи из предыдущего задания у вас получился такой метод:
+Метод findGreenApples() очень понравился фермеру.
+Его следующее требование:
+найти все красные яблоки в своем складе.
 
-public List<Transaction> findTransactionsIn2011(List<Transaction> transactions) {
-    return transactions.stream()
-                       .filter(t -> t.getYear() == 2011)
-                       .collect(toList());
+Наивный подход - это создание копии метода findGreenApples()
+только для поиска красных яблок findRedApples():
+
+class FruitStorage {
+
+    public List<Apple> findGreenApples(List<Apple> inventory) {
+        List<Apple> result = new ArrayList<>();
+        for(Apple apple : inventory) {
+            if("green".equals(apple.getColor())) {
+                result.add(apple);
+            }
+        }
+        return result;
+    }
+
+    public List<Apple> findRedApples(List<Apple> inventory) {
+        List<Apple> result = new ArrayList<>();
+        for(Apple apple : inventory) {
+            if("red".equals(apple.getColor())) {
+                result.add(apple);
+            }
+        }
+        return result;
+    }
+
 }
 
-Как сделать этот метод более универсальным?
+А что если фермер захочет найти яблоки других цветов:
+желтый, оранжевый, тёмно красный и так далее?
 
-Подсказка: на данный момент этот метод умеет находить только транзакции
-совершённые в 2011 году. Представьте себе, что вас попросили найти все
-транзакции совершённые в 2010, 2012, 2013, и т.д. Для каждого года вы
-будете писать свой метод? Или есть более простой способ это сделать?
+Каждый раз копировать один и тот же код - это очень плохой
+стиль разработки программного обеспечения.
+
+Есть ли более лучшее решение?
+
+Да есть! Параметризация цвета. Вместо копирования методов,
+вынесите в параметр цвет яблок, который нужно найти.
