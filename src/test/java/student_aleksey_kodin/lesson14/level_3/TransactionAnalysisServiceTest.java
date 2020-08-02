@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson14;
+package student_aleksey_kodin.lesson14.level_3;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -9,9 +9,9 @@ import student_aleksey_kodin.lesson14.level_3.TransactionAnalysisService;
 import student_aleksey_kodin.lesson14.level_3.TransactionTestData;
 
 public class TransactionAnalysisServiceTest {
-    TransactionAnalysisService transactionAnalysisService = new TransactionAnalysisService();
-    TransactionTestData transactionTestData = new TransactionTestData();
-    List<Transaction> testTransactions;
+    private final TransactionAnalysisService transactionAnalysisService = new TransactionAnalysisService();
+    private final TransactionTestData transactionTestData = new TransactionTestData();
+    private List<Transaction> testTransactions;
 
     @Before
     public void startUp() {
