@@ -63,6 +63,5 @@ public class TransactionAnalysisServiceTest {
         assertEquals(searchResult.size(),2);
         assertEquals(searchResult.get(0).getValue(), 300);
         assertEquals(searchResult.get(1).getValue(), 400);
-
     }
 }
