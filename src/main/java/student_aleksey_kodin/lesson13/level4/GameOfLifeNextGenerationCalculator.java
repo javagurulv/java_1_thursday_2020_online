@@ -29,15 +29,16 @@ class GameOfLifeNextGenerationCalculator {
     }
 
     private int countAliveCell(boolean[][] currentGeneration, int currentColumn, int currentRow) {
+        final int rowPosition = 1;
         int totalAliveCell = 0;
 
         totalAliveCell += checkCellLeftSide(currentGeneration, currentColumn, currentRow);
 
         totalAliveCell += checkCellRightSide(currentGeneration, currentColumn, currentRow);
 
-        totalAliveCell += checkCellUpperSide(currentGeneration, currentColumn, currentRow);
+        totalAliveCell += checkCellSide(currentGeneration, currentColumn, currentRow - rowPosition);
 
-        totalAliveCell += checkCellLowerSide(currentGeneration, currentColumn, currentRow);
+        totalAliveCell += checkCellSide(currentGeneration, currentColumn, currentRow + rowPosition);
 
         return totalAliveCell;
     }
@@ -64,24 +65,11 @@ class GameOfLifeNextGenerationCalculator {
         return aliveCell;
     }
 
-    private int checkCellUpperSide(boolean[][] currentGeneration, int currentColumn, int currentRow) {
+    private int checkCellSide(boolean[][] currentGeneration, int currentColumn, int currentRow) {
         int aliveCell = 0;
         for (int i = currentColumn - 1; i < currentColumn + 2; i++) {
             try {
-                if (currentGeneration[i][currentRow - 1]) {
-                    aliveCell++;
-                }
-            } catch (IndexOutOfBoundsException ignored) {
-            }
-        }
-        return aliveCell;
-    }
-
-    private int checkCellLowerSide(boolean[][] currentGeneration, int currentColumn, int currentRow) {
-        int aliveCell = 0;
-        for (int i = currentColumn - 1; i < currentColumn + 2; i++) {
-            try {
-                if (currentGeneration[i][currentRow + 1]) {
+                if (currentGeneration[i][currentRow]) {
                     aliveCell++;
                 }
             } catch (IndexOutOfBoundsException ignored) {
