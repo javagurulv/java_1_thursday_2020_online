@@ -9,3 +9,6 @@ https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X
 
 Clean Code: A Handbook of Agile Software Craftsmanship
 https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882
+
+Java 8 in Action: Lambdas, Streams, and Functional-Style Programming
+https://www.amazon.com/Java-8-in-Action-audiobook/dp/B07MBBX3DT
