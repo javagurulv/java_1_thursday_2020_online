@@ -1,4 +1,6 @@
-Write a Java program to print the area and perimeter of a circle.
+Напишите программу, которая запрашивает у пользователя
+радиус круга (вещественное число) и печатает на консоль
+периметр и площадь круга.
 
 Test Data:
 Radius = 7.5

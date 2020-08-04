@@ -1,50 +1,34 @@
-Конечно создавать для каждого города новый метод это не вариант.
-Слишком много городов, слишком много похожих методов.
+Анонимные классы похожи на нормальные классы, о которых вы уже знаете в Java.
+Но у анонимных классов нет имени. Они позволяют вам объявить и
+создать экземпляр класса в одно и то же время. Другими словами,
+они позволяют вам создавать специальные реализации.
 
-public List<String> findTraderNamesFromCambridge(List<Transaction> transactions) {
-    return transactions.stream()
-                       .map(transaction -> transaction.getTrader())
-                       .map(trader -> trader.getCity())
-                       .filter(city -> city.equals("Cambridge"))
-                       .unique()
-                       .collect(toList());
+List<Apple> redApples = filterApples(..., new ApplePredicate() {
+    public boolean test(Apple apple) {
+        return "red".equals(apple.getColor());
+    }
+});
+
+При создании анонимного класса вы создаёте новый объект
+(new ApplePredicate()) и объявляете его реализацию
+
+{
+    public boolean test(Apple apple) {
+        return "red".equals(apple.getColor());
+    }
 }
 
-public List<String> findTraderNamesFromLondon(List<Transaction> transactions) {
-    return transactions.stream()
-                       .map(transaction -> transaction.getTrader())
-                       .map(trader -> trader.getCity())
-                       .filter(city -> city.equals("London"))
-                       .unique()
-                       .collect(toList());
-}
+в одно и то же время. Так как вы предоставили полную реализацию
+(реализацию всех методов объявленных в этом интерфейсе, в нашем
+случае это один метод test())
+интерфейса ApplePredicate, то Java позволяет вам создать
+экземпляр реального класса, который реализует иетерфейс ApplePredicate.
+Этот класс будет анонимным (Java сама даст ему название) так как
+вы сами этого не сделали (но это и не было нужно в вашем случае).
 
-public List<String> findTraderNamesFromMilan(List<Transaction> transactions) {
-    return transactions.stream()
-                       .map(transaction -> transaction.getTrader())
-                       .map(trader -> trader.getCity())
-                       .filter(city -> city.equals("Milan"))
-                       .unique()
-                       .collect(toList());
-}
-
-Что бы сделать этот метод более универсальным можно вынести в параметр метода
-название города по которому надо искать и поменять немного название самого метода:
-
-public List<String> findTraderNamesFromCity(List<Transaction> transactions, String cityToFind) {
-    return transactions.stream()
-                       .map(transaction -> transaction.getTrader())
-                       .map(trader -> trader.getCity())
-                       .filter(city -> city.equals(cityToFind))
-                       .unique()
-                       .collect(toList());
-}
-
-Теперь этот метод можно вызывать следующими способами:
-
-List<Transaction> transactions = TransactionTestData.getTransactions();
-List<String> traderNamesFromCambridge = findTraderNamesFromCity(transactions, "Cambridge");
-List<String> traderNamesFromLondon = findTraderNamesFromCity(transactions, "London");
-List<String> traderNamesFromMilan = findTraderNamesFromCity(transactions, "Milan");
-
-С помощью юнит тестов докажите, что наш новый метод работает правильно.
+В юнит тестах попробуйте написать тесты в которых вы создадите
+анонимные классы для поиска:
+- зелёных яблок,
+- красных яблок,
+- тяжелых яблок ( > 150 г.),
+- лёгких яблок ( < 150 г.).

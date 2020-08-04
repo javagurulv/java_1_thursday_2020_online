@@ -1,13 +1,7 @@
 Посмотреть видео:
 
-Git, GitHub - класс! А что это?
+Tech Talk: Linus Torvalds on git (профессиональный спич от создателя Git):
 
-Поделимся несколькими видео, которые помогут вам разобраться и получить начальное представление об этих инструментах.
+Linus Torvalds visits Google to share his thoughts on git, the source control management system he created two years ago (2007).
 
-Git для новичков:
-https://www.youtube.com/watch?v=PEKN8NtBDQ0
-https://www.youtube.com/watch?v=9d5bJc8o7MA
-https://www.youtube.com/watch?v=vFj2-bKGwkw
-
-GitHub для новичков:
-https://www.youtube.com/watch?v=JfpCicDUMKc
+https://www.youtube.com/watch?v=4XpnKHJAok8

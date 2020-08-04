@@ -4,13 +4,21 @@ import java.util.ArrayList;
 
 interface BookReader {
 
-    boolean Add(Book book);
+    boolean add(Book book);
 
-    boolean Delete(Book book);
+    boolean delete(Book book);
 
     String PrintBookDatabase();
 
     ArrayList<Book> getByAuthor(String author);
+
+    ArrayList<Book> getByAuthorName(String author);
+
+    ArrayList<Book> getByBookTitle(String title);
+
+    ArrayList<Book> getByBookTitleByParts(String title);
+
+    boolean markAsFinished(Book book);
 
 
 
