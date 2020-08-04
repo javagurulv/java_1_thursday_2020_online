@@ -1,4 +1,13 @@
-Скачайте на свой локальный компьютер проект из GitHub.
+Посмотреть видео:
 
-PS: если не знаете как это сделать посмотрите лекцию
-или поищите видео на YouTube.
+Git, GitHub - класс! А что это?
+
+Поделимся несколькими видео, которые помогут вам разобраться и получить начальное представление об этих инструментах.
+
+Git для новичков:
+https://www.youtube.com/watch?v=PEKN8NtBDQ0
+https://www.youtube.com/watch?v=9d5bJc8o7MA
+https://www.youtube.com/watch?v=vFj2-bKGwkw
+
+GitHub для новичков:
+https://www.youtube.com/watch?v=JfpCicDUMKc
