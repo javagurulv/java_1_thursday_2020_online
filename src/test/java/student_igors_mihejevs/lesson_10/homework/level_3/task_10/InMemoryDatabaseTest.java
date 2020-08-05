@@ -13,7 +13,6 @@ public class InMemoryDatabaseTest {
     public void ShouldReturnProductName() {
         Product product = new Product("Product Nr.1");
         products.save(product);
-        //System.out.println("Product = " + products.findByTitle("Product Nr.1"));
         assertEquals(Optional.of(product), products.findByTitle("Product Nr.1"));
     }
 
