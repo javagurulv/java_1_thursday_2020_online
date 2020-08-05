@@ -1,6 +1,7 @@
 package student_julija_skopeca.practical_tasks.lesson_10.level_6.task_14;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 class Test {
     Database database = new Database();
@@ -18,7 +19,7 @@ class Test {
         test.SearchByTitle();
         test.SearchByBookTitleByParts();
         test.SetBookAsFinished();
-        //test.NewBookIsnotFinished();
+        test.PrintAllFinishedDatabase();
     }
 
     public void AddExistingBook() {
@@ -188,6 +189,23 @@ class Test {
             System.out.println("SetBookAsFinished test - ok");
         } else {
             System.out.println("SetBookAsFinished test - fail");
+        }
+    }
+
+    public void PrintAllFinishedDatabase(){
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("Title","John Smith");
+        bookreader.add(book1);
+
+        Book book2 = new Book("Title2","John Smith");
+        bookreader.add(book2);
+        bookreader.markAsFinished(book2);
+
+        String[] result = bookreader.PrintFinishedBookDatabase();
+        if (result.equals("Title2 [John Smith]")) {
+            System.out.println("PrintAllFinishedDatabase test - ok");
+        } else {
+            System.out.println("PrintAllFinishedDatabase test - fail");
         }
     }
 

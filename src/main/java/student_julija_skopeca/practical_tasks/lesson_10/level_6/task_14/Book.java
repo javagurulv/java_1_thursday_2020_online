@@ -19,7 +19,9 @@ public class Book {
         return author;
     }
 
-    public void markAsFinished() {this.isSetAsFinished = true;}
+    public boolean markAsFinished() {this.isSetAsFinished = true;
+        return false;
+    }
 
         @Override
     public boolean equals(Object obj) {
