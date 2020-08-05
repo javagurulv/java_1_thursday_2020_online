@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_12.level_6;
+package student_dmitrijs_visuns.homeworks.lesson_12.level_6.task_41;
 
 class ValidationException extends Exception {
 
