@@ -1,0 +1,30 @@
+В классе ArrayUtilTest напишите автоматический тест
+для метода int findMinNumber(int[] array)
+из предыдущего задания.
+
+class ArrayUtilTest {
+
+    public static void main(String[] args) {
+        ArrayUtilTest test = new ArrayUtilTest();
+        test.shouldCreateArray();
+        test.shouldFillArrayWithRandomNumbers();
+        test.shouldFindMaxNumber();
+        test.shouldFindMinNumber();
+    }
+
+    public void shouldCreateArray() {
+        // Write test implementation here !!!
+    }
+
+    public void shouldFillArrayWithRandomNumbers() {
+        // Write test implementation here !!!
+    }
+
+    public void shouldFindMaxNumber() {
+        // Write test implementation here !!!
+    }
+
+    public void shouldFindMinNumber() {
+        // Write test implementation here !!!
+    }
+}

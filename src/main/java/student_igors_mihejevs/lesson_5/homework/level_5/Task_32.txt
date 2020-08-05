@@ -1,0 +1,17 @@
+Создайте класс ArrayUtilTest.
+В этом классе напишите автоматический тест
+метода int[] createArray(int arrayLength)
+из предыдущего задания.
+
+class ArrayUtilTest {
+
+    public static void main(String[] args) {
+        ArrayUtilTest test = new ArrayUtilTest();
+        test.shouldCreateArray();
+    }
+
+    public void shouldCreateArray() {
+        // Write test implementation here !!!
+    }
+
+}
