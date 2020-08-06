@@ -21,4 +21,11 @@ class TransactionTypeDemo {
             System.out.println("This transaction is deposit transaction!");
         }
     }
+
+    public static void main(String[] args) {
+
+        Transaction withdrawal = TransactionFactory.createWithdrawalTransaction(10, ExpenseCategory.FOOD);
+        Transaction depositWithoutExpenseCategory = TransactionFactory.createDepositTransaction(10);
+//        Transaction depositWithExpenseCategory = TransactionFactory(10, ExpenseCategory.FOOD);
+    }
 }
