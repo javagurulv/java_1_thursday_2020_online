@@ -13,24 +13,21 @@ public class BankAccountCurrentBalanceCalculatorTest {
 
     @Test
     public void calculate_deposit() {
-        Transaction[] allTransactions = {depositTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions, 0);
+        BankAccount bankAccount = new BankAccount("Vadim", 0, depositTransaction);
         int actual = bankAccountCurrentBalanceCalculator.calculate(bankAccount);
         assertEquals(1000, actual);
     }
 
     @Test
     public void calculate_withdrawal() {
-        Transaction[] allTransactions = {withdrawalTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim",0, withdrawalTransaction);
         int actual = bankAccountCurrentBalanceCalculator.calculate(bankAccount);
         assertEquals(-500, actual);
     }
 
     @Test
     public void calculate_depositAndWithdrawal() {
-        Transaction[] allTransactions = {depositTransaction, withdrawalTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim",0, depositTransaction, withdrawalTransaction);
         int actual = bankAccountCurrentBalanceCalculator.calculate(bankAccount);
         assertEquals(500, actual);
     }

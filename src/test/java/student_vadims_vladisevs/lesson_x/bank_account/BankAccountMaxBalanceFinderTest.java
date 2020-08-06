@@ -12,24 +12,21 @@ public class BankAccountMaxBalanceFinderTest {
 
     @Test
     public void find_v1() {
-        Transaction[] allTransactions = {depositTransaction,withdrawalTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim",0, depositTransaction,withdrawalTransaction);
         int actual = bankAccountMaxBalanceFinder.find(bankAccount);
         assertEquals(1000, actual);
     }
 
     @Test
     public void find_v2() {
-        Transaction[] allTransactions = {depositTransaction,depositTransaction,withdrawalTransaction,withdrawalTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim", 0, depositTransaction,depositTransaction,withdrawalTransaction,withdrawalTransaction);
         int actual = bankAccountMaxBalanceFinder.find(bankAccount);
         assertEquals(2000, actual);
     }
 
     @Test
     public void find_v3() {
-        Transaction[] allTransactions = {withdrawalTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim", 0,withdrawalTransaction);
         int actual = bankAccountMaxBalanceFinder.find(bankAccount);
         assertEquals(0, actual);
     }

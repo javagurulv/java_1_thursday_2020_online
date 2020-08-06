@@ -5,10 +5,10 @@ class BankAccount {
     private Transaction[] transactions;
     private int creditLimit;
 
-    public BankAccount(String owner, Transaction[] transactions, int creditLimit){
+    public BankAccount(String owner, int creditLimit, Transaction... transactions){
         this.owner = owner;
-        this.transactions = transactions;
         this.creditLimit = creditLimit;
+        this.transactions = transactions;
     }
 
     public String getOwner() {

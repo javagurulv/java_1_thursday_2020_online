@@ -14,24 +14,21 @@ public class GamblingExpensesCalculatorTest {
 
     @Test
     public void calculateExpensesAmount_v1() {
-        Transaction[] allTransactions = {deposit, withdrawal_GAMBLING_1, withdrawal_GAMBLING_2, withdrawal_OTHERS};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions, 500);
+        BankAccount bankAccount = new BankAccount("Vadim", 500, deposit, withdrawal_GAMBLING_1, withdrawal_GAMBLING_2, withdrawal_OTHERS);
         int actual = gamblingExpensesCalculator.calculateExpensesAmount(bankAccount);
         assertEquals(30, actual);
     }
 
     @Test
     public void calculateExpensesAmount_v2() {
-        Transaction[] allTransactions = {deposit, withdrawal_GAMBLING_1, withdrawal_OTHERS};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions, 500);
+        BankAccount bankAccount = new BankAccount("Vadim", 500, deposit, withdrawal_GAMBLING_1, withdrawal_OTHERS);
         int actual = gamblingExpensesCalculator.calculateExpensesAmount(bankAccount);
         assertEquals(10, actual);
     }
 
     @Test
     public void calculateExpensesAmount_v3() {
-        Transaction[] allTransactions = {deposit, withdrawal_GAMBLING_2};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions, 500);
+        BankAccount bankAccount = new BankAccount("Vadim", 500, deposit, withdrawal_GAMBLING_2);
         int actual = gamblingExpensesCalculator.calculateExpensesAmount(bankAccount);
         assertEquals(20, actual);
     }

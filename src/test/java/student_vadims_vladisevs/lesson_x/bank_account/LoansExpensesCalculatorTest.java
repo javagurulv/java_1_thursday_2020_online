@@ -14,24 +14,21 @@ public class LoansExpensesCalculatorTest {
 
     @Test
     public void calculateExpensesAmount_v1() {
-        Transaction[] allTransactions = {deposit, withdrawal_LOANS_1, withdrawal_LOANS_2, withdrawal_OTHERS};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions, 500);
+        BankAccount bankAccount = new BankAccount("Vadim", 500, deposit, withdrawal_LOANS_1, withdrawal_LOANS_2, withdrawal_OTHERS);
         int actual = loansExpensesCalculator.calculateExpensesAmount(bankAccount);
         assertEquals(30, actual);
     }
 
     @Test
     public void calculateExpensesAmount_v2() {
-        Transaction[] allTransactions = {deposit, withdrawal_LOANS_1, withdrawal_OTHERS};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions, 500);
+        BankAccount bankAccount = new BankAccount("Vadim", 500, deposit, withdrawal_LOANS_1, withdrawal_OTHERS);
         int actual = loansExpensesCalculator.calculateExpensesAmount(bankAccount);
         assertEquals(10, actual);
     }
 
     @Test
     public void calculateExpensesAmount_v3() {
-        Transaction[] allTransactions = {deposit, withdrawal_LOANS_2};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions, 500);
+        BankAccount bankAccount = new BankAccount("Vadim", 500, deposit, withdrawal_LOANS_2);
         int actual = loansExpensesCalculator.calculateExpensesAmount(bankAccount);
         assertEquals(20, actual);
     }

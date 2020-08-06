@@ -12,24 +12,21 @@ public class BankAccountMinBalanceFinderTest {
 
     @Test
     public void find_v1() {
-        Transaction[] allTransactions = {depositTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim", 0, depositTransaction);
         int actual = bankAccountMinBalanceFinder.find(bankAccount);
         assertEquals(0, actual);
     }
 
     @Test
     public void find_v2() {
-        Transaction[] allTransactions = {depositTransaction, withdrawalTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim", 0, depositTransaction, withdrawalTransaction);
         int actual = bankAccountMinBalanceFinder.find(bankAccount);
         assertEquals(0, actual);
     }
 
     @Test
     public void find_v3() {
-        Transaction[] allTransactions = { withdrawalTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim",0, withdrawalTransaction);
         int actual = bankAccountMinBalanceFinder.find(bankAccount);
         assertEquals(-500, actual);
     }

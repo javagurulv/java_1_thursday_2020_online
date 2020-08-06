@@ -15,32 +15,28 @@ public class BankAccountTransactionApproverTest {
 
     @Test
     public void approve_withdrawalTrue_v1() {
-        Transaction[] allTransactions = {depositTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim",0, depositTransaction);
         boolean actual = bankAccountTransactionApprover.approve(bankAccount, withdrawalTransaction);
         assertTrue(actual);
     }
 
     @Test
     public void approve_withdrawalFalse() {
-        Transaction[] allTransactions = {depositTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim", 0, depositTransaction);
         boolean actual = bankAccountTransactionApprover.approve(bankAccount, withdrawalTransaction_2);
         assertFalse(actual);
     }
 
     @Test
     public void approve_withdrawalTrue_V2() {
-        Transaction[] allTransactions = {depositTransaction_2};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,600);
+        BankAccount bankAccount = new BankAccount("Vadim",600, depositTransaction_2);
         boolean actual = bankAccountTransactionApprover.approve(bankAccount, withdrawalTransaction);
         assertTrue(actual);
     }
 
     @Test
     public void approve_deposit() {
-        Transaction[] allTransactions = {depositTransaction};
-        BankAccount bankAccount = new BankAccount("Vadim", allTransactions,0);
+        BankAccount bankAccount = new BankAccount("Vadim", 0, depositTransaction);
         boolean actual = bankAccountTransactionApprover.approve(bankAccount, depositTransaction_2);
         assertTrue(actual);
     }
