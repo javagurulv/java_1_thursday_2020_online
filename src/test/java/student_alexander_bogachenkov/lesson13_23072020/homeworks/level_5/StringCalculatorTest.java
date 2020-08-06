@@ -38,4 +38,20 @@ public class StringCalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldAdd_whenStringContainsThreeNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        int actual = calculator.add("3,5,9");
+        int expected = 17;
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldAdd_whenStringContainsFiveNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        int actual = calculator.add("3,5,9,2,3");
+        int expected = 22;
+        assertEquals(expected, actual);
+    }
+
 }
