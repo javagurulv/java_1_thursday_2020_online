@@ -15,6 +15,14 @@ public class StringCalculatorTest {
     }
 
     @Test
+    public void shouldAdd_whenStringIsNull() {
+        StringCalculator calculator = new StringCalculator();
+        int actual = calculator.add(null);
+        int expected = 0;
+        assertEquals(expected, actual);
+    }
+
+    @Test
     public void shouldAdd_whenStringContainsOneNumber() {
         StringCalculator calculator = new StringCalculator();
         int actual = calculator.add("3");
