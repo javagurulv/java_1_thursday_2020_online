@@ -54,4 +54,12 @@ public class StringCalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldAdd_whenStringHasNewLineSymbol() {
+        StringCalculator calculator = new StringCalculator();
+        int actual = calculator.add("1\\n23,4");
+        int expected = 10;
+        assertEquals(expected, actual);
+    }
+
 }
