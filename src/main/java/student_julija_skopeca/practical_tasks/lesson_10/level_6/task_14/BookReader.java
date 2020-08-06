@@ -22,6 +22,8 @@ interface BookReader {
 
     String[] PrintFinishedBookDatabase();
 
+    String[] PrintUnFinishedBookDatabase();
+
 
 
 

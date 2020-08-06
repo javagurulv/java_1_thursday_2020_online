@@ -20,6 +20,7 @@ class Test {
         test.SearchByBookTitleByParts();
         test.SetBookAsFinished();
         test.PrintAllFinishedDatabase();
+        test.PrintAllUnFinishedDatabase();
     }
 
     public void AddExistingBook() {
@@ -206,6 +207,23 @@ class Test {
             System.out.println("PrintAllFinishedDatabase test - ok");
         } else {
             System.out.println("PrintAllFinishedDatabase test - fail");
+        }
+    }
+
+    public void PrintAllUnFinishedDatabase(){
+        BookReader bookreader = new BookReaderImpl(database);
+        Book book1 = new Book("Title","John Smith");
+        bookreader.add(book1);
+
+        Book book2 = new Book("Title2","John Smith");
+        bookreader.add(book2);
+        bookreader.markAsFinished(book2);
+
+        String[] result = bookreader.PrintUnFinishedBookDatabase();
+        if (result.equals("Title [John Smith]")) {
+            System.out.println("PrintAllUnFinishedDatabase test - ok");
+        } else {
+            System.out.println("PrintAllUnFinishedDatabase test - fail");
         }
     }
 

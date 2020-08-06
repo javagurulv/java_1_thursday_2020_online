@@ -74,6 +74,19 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
+    public String[] PrintUnFinishedBookDatabase() {
+        List<String> finishedBooks = new ArrayList<>();
+        for (Book book: database.GetAll()){
+            if (!book.markAsFinished()){
+                finishedBooks.add(book.getTitle()
+                        +" [" + book.getAuthor()
+                        +"]");
+            }
+        }
+        return finishedBooks.toArray(new String[] {});
+    }
+
+    @Override
     public ArrayList<Book> getByAuthor(String author) {
         return database.getByAuthor(author);
     }
