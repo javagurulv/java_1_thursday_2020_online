@@ -70,4 +70,12 @@ public class StringCalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldAdd_whenStringContainsSomeSeparators() {
+        StringCalculator calculator = new StringCalculator();
+        int actual = calculator.add("//[;][&]\\n1;2&3");
+        int expected = 6;
+        assertEquals(expected, actual);
+    }
+
 }
