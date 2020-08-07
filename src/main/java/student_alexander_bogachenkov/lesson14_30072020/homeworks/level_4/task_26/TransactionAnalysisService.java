@@ -34,13 +34,13 @@ class TransactionAnalysisService {
 
     List<Integer> getAllYearsWhenTransactionsWerePassed(List<Transaction> transactions) {
         return transactions.stream()
-                .map(transaction -> transaction.getYear())
+                .map(Transaction::getYear)
                 .collect(Collectors.toList());
     }
 
     Set<Integer> getAllUniqueYearsWhenTransactionsWerePassed(List<Transaction> transactions) {
         return transactions.stream()
-                .map(transaction -> transaction.getYear())
+                .map(Transaction::getYear)
                 .collect(Collectors.toSet());
     }
 
