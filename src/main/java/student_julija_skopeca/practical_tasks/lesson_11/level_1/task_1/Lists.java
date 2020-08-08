@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Lists {
+class Lists {
     public static void main(String[] args) {
 
         ArrayList numbers = new ArrayList();
