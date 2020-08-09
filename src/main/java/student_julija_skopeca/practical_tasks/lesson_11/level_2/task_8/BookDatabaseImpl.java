@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.lesson_11.level_2.task_7;
+package student_julija_skopeca.practical_tasks.lesson_11.level_2.task_8;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,5 +18,10 @@ class BookDatabaseImpl implements BookDatabase {
     @Override
     public boolean delete(Long bookId) {
         return booksList.removeIf(b -> b.getId().equals(bookId));
+    }
+
+    @Override
+    public boolean delete(Book book) {
+        return booksList.remove(book);
     }
 }

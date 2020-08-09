@@ -1,4 +1,4 @@
-package student_julija_skopeca.practical_tasks.lesson_11.level_2.task_7;
+package student_julija_skopeca.practical_tasks.lesson_11.level_2.task_8;
 
 import java.util.Objects;
 
