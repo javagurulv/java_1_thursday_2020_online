@@ -10,6 +10,7 @@ class DrawPosition {
         }
         return false;
     }
+
     private boolean isDraw(int[][] field) {
         final int FREE_CELL = -1;
 

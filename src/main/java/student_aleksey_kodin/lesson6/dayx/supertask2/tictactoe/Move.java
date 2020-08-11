@@ -24,6 +24,7 @@ class Move {
         }
         return column;
     }
+
     private boolean isNumberOutOfRangeField(int playerInput) {
         return playerInput < 0 || playerInput > 2;
     }

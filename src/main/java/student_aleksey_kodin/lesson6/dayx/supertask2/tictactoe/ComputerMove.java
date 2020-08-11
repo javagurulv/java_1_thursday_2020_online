@@ -11,27 +11,31 @@ public class ComputerMove {
 
     private final MoveLogic moveLogic = new MoveLogic();
 
-    public boolean isComputerCanWin(int[][] field,Player player) {
-        if (moveLogic.isWin(field,player)) {
-            setWinMovePosition(field,player);
+    public boolean isComputerCanWin(int[][] field, Player player) {
+        if (moveLogic.isWin(field, player)) {
+            setWinMovePosition(field, player);
             return true;
         }
         return false;
     }
-    public boolean isCanWinOpponent(int[][] field,Player player) {
-        if (moveLogic.isWin(field,player)) {
+
+    public boolean isCanWinOpponent(int[][] field, Player player) {
+        if (moveLogic.isWin(field, player)) {
             setDefenseMovePosition();
             return true;
         }
         return false;
     }
-    public void simpleNextMove(int[][] field,Player player) {
+
+    public void simpleNextMove(int[][] field, Player player) {
         checkNextMove(field, player);
     }
-    private void setWinMovePosition(int[][] field,Player player) {
+
+    private void setWinMovePosition(int[][] field, Player player) {
         setRowWinPosition(moveLogic.getRowWinPosition());
         setColumnWinPosition(moveLogic.getColumnWinPosition());
     }
+
     private void setDefenseMovePosition() {
         setRowDefencePosition(moveLogic.getRowWinPosition());
         setColumnDefencePosition(moveLogic.getColumnWinPosition());
@@ -71,32 +75,34 @@ public class ComputerMove {
 
     private void checkNextMove(int[][] field, Player player) {
 
-            if (isFreeCell(field[0][0])) {
-                field[0][0] = player.getPlayerFigure();
-                return;
-            }
-            if (isFreeCell(field[2][0])) {
-                field[2][0] = player.getPlayerFigure();
-                return;
-            }
-            if (isFreeCell(field[2][2])) {
-                field[2][2] = player.getPlayerFigure();
-                return;
-            }
-            if (isFreeCell(field[0][2])) {
-                field[0][2] = player.getPlayerFigure();
-                return;
-            }
-            if (isFreeCell(field[1][1])) {
-                field[1][1] = player.getPlayerFigure();
-                return;
-            }
+        if (isFreeCell(field[0][0])) {
+            field[0][0] = player.getPlayerFigure();
+            return;
+        }
+        if (isFreeCell(field[2][0])) {
+            field[2][0] = player.getPlayerFigure();
+            return;
+        }
+        if (isFreeCell(field[2][2])) {
+            field[2][2] = player.getPlayerFigure();
+            return;
+        }
+        if (isFreeCell(field[0][2])) {
+            field[0][2] = player.getPlayerFigure();
+            return;
+        }
+        if (isFreeCell(field[1][1])) {
+            field[1][1] = player.getPlayerFigure();
+            return;
+        }
         findFreeCellForMove(field, player);
     }
+
     private boolean isFreeCell(int cell) {
         return cell == FREE_CELL;
     }
-    private void findFreeCellForMove(int[][] field,Player player) {
+
+    private void findFreeCellForMove(int[][] field, Player player) {
         for (int row = 0; row < field.length; row++) {
             for (int column = 0; column < field[0].length; column++) {
                 if (field[row][column] == FREE_CELL) {

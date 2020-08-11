@@ -15,6 +15,7 @@ public class GameBoard {
         }
         return field;
     }
+
     public void printGameBoardToConsole(int[][] field) {
         final int PLAYER_ONE = 0;
         final int PLAYER_TWO = 1;

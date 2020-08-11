@@ -8,11 +8,13 @@ public class WinPosition {
         }
         return false;
     }
+
     private boolean isWinPosition(int[][] field, Player player) {
         if (isWinPositionForHorizontals(field, player)) return true;
-        if (isWinPositionForVerticals(field,player)) return true;
+        if (isWinPositionForVerticals(field, player)) return true;
         return isWinPositionForDiagonals(field, player);
     }
+
     private boolean isWinPositionForHorizontals(int[][] field, Player player) {
         for (int[] row : field) {
             if ((row[0] == player.getPlayerFigure()) && (row[1] == player.getPlayerFigure()) && (row[2] == player.getPlayerFigure())) {
@@ -21,6 +23,7 @@ public class WinPosition {
         }
         return false;
     }
+
     private boolean isWinPositionForVerticals(int[][] field, Player player) {
         for (int column = 0; column < field[0].length; column++) {
             if ((field[0][column] == player.getPlayerFigure()) && (field[1][column] == player.getPlayerFigure()) &&
@@ -30,6 +33,7 @@ public class WinPosition {
         }
         return false;
     }
+
     private boolean isWinPositionForDiagonals(int[][] field, Player player) {
         if (field[1][1] != player.getPlayerFigure()) {
             return false;

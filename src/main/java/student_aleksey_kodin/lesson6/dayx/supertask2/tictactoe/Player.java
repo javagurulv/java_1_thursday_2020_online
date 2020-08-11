@@ -6,7 +6,7 @@ class Player {
     private final boolean isPlayerHuman;
     private final int playerFigure;
 
-    public Player(String playerName, boolean isPlayerMoveFirst, boolean isPlayerHuman,int playerFigure) {
+    public Player(String playerName, boolean isPlayerMoveFirst, boolean isPlayerHuman, int playerFigure) {
         this.playerName = playerName;
         this.isPlayerMoveFirst = isPlayerMoveFirst;
         this.isPlayerHuman = isPlayerHuman;
@@ -24,6 +24,7 @@ class Player {
     public boolean isPlayerHuman() {
         return isPlayerHuman;
     }
+
     public int getPlayerFigure() {
         return playerFigure;
     }
