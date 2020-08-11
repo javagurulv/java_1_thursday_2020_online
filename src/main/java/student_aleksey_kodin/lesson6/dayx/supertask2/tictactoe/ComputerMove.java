@@ -13,7 +13,7 @@ public class ComputerMove {
 
     public boolean isComputerCanWin(int[][] field, Player player) {
         if (moveLogic.isWin(field, player)) {
-            setWinMovePosition(field, player);
+            setWinMovePosition();
             return true;
         }
         return false;
@@ -31,7 +31,7 @@ public class ComputerMove {
         checkNextMove(field, player);
     }
 
-    private void setWinMovePosition(int[][] field, Player player) {
+    private void setWinMovePosition() {
         setRowWinPosition(moveLogic.getRowWinPosition());
         setColumnWinPosition(moveLogic.getColumnWinPosition());
     }
