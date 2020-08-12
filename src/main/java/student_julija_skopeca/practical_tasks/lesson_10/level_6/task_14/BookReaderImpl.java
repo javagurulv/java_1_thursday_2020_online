@@ -1,6 +1,7 @@
 package student_julija_skopeca.practical_tasks.lesson_10.level_6.task_14;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class BookReaderImpl implements BookReader {
 
@@ -57,6 +58,32 @@ class BookReaderImpl implements BookReader {
                     .append("\n");
         }
         return b.toString();
+    }
+
+    @Override
+    public String[] PrintFinishedBookDatabase() {
+        List<String> finishedBooks = new ArrayList<>();
+        for (Book book: database.GetAll()){
+            if (book.markAsFinished()){
+                finishedBooks.add(book.getTitle()
+                +" [" + book.getAuthor()
+                +"]");
+            }
+        }
+        return finishedBooks.toArray(new String[] {});
+    }
+
+    @Override
+    public String[] PrintUnFinishedBookDatabase() {
+        List<String> finishedBooks = new ArrayList<>();
+        for (Book book: database.GetAll()){
+            if (!book.markAsFinished()){
+                finishedBooks.add(book.getTitle()
+                        +" [" + book.getAuthor()
+                        +"]");
+            }
+        }
+        return finishedBooks.toArray(new String[] {});
     }
 
     @Override

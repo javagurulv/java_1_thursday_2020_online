@@ -5,18 +5,24 @@ class Transaction {
     private String owner;
     private int amount;
     private TransactionType transactionType;
+    private ExpenseCategory expenseCategory;
 
 
-    public Transaction(String owner, int amount, TransactionType transactionType){
-        this.owner = owner;
+
+    public Transaction(int amount) {
+        this.transactionType = TransactionType.DEPOSIT;
         this.amount = amount;
-        this.transactionType = transactionType;
+        this.expenseCategory = null;
     }
 
-    public Transaction(int amount, TransactionType transactionType){
+    public Transaction(int amount, ExpenseCategory expenseCategory) {
+        this.transactionType = TransactionType.WITHDRAWAL;
         this.amount = amount;
-        this.transactionType = transactionType;
+        this.expenseCategory = expenseCategory;
     }
+
+
+
 
     public int getAmount() {
         return amount;
@@ -34,4 +40,7 @@ class Transaction {
         return transactionType.equals(TransactionType.WITHDRAWAL);
     }
 
+    public ExpenseCategory getExpenseCategory() {
+        return expenseCategory;
+    }
 }

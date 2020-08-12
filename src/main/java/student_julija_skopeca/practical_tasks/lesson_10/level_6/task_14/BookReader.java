@@ -20,6 +20,10 @@ interface BookReader {
 
     boolean markAsFinished(Book book);
 
+    String[] PrintFinishedBookDatabase();
+
+    String[] PrintUnFinishedBookDatabase();
+
 
 
 

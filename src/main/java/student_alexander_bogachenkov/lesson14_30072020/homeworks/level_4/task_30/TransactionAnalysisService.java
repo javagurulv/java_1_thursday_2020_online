@@ -34,32 +34,32 @@ class TransactionAnalysisService {
 
     List<Integer> getAllYearsWhenTransactionsWerePassed(List<Transaction> transactions) {
         return transactions.stream()
-                .map(transaction -> transaction.getYear())
+                .map(Transaction::getYear)
                 .collect(Collectors.toList());
     }
 
     Set<Integer> getAllUniqueYearsWhenTransactionsWerePassed(List<Transaction> transactions) {
         return transactions.stream()
-                .map(transaction -> transaction.getYear())
+                .map(Transaction::getYear)
                 .collect(Collectors.toSet());
     }
 
     Set<String> getAllUniqueTraderNames(List<Transaction> transactions) {
         return transactions.stream()
-                .map(transaction -> transaction.getTraderName())
+                .map(Transaction::getTraderName)
                 .collect(Collectors.toSet());
     }
 
     Set<String> getAllUniqueTraderCities(List<Transaction> transactions) {
         return transactions.stream()
-                .map(transaction -> transaction.getTraderCity())
+                .map(Transaction::getTraderCity)
                 .collect(Collectors.toSet());
     }
 
     List<String> getAllTraderNamesFromCity(List<Transaction> transactions, String city) {
         return transactions.stream()
                 .filter(transaction -> transaction.getTraderCity().equals(city))
-                .map(transaction -> transaction.getTraderName())
+                .map(Transaction::getTraderName)
                 .distinct()
                 .collect(Collectors.toList());
     }
