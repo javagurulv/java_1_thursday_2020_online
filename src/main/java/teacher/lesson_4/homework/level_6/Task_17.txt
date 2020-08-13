@@ -13,7 +13,7 @@
 
 Методы:
 - Обновить текущую стоимость акции updatePrice()
-- Распечатать информацию об акции printInformation()
+- Получить информацию об акции getPriceInformation()
 
 Имя компании и начальную стоимость необходимо
 задавать в момент создания акции.
@@ -27,30 +27,26 @@
 
 Test case max:
 
-999  = 999
-
-999 -> 1  = 999
-
-999 -> 2 -> 1000 = 1000
-
-999 -> 2 -> 1000 -> 8 = 1000
-
-
-
-9 -> 27
+Изменение цены акции: 999  = Максимальная цена за указанный переуд: 999
+Изменение цены акции: 999 -> 1  = Максимальная цена за указанный переуд: 999
+Изменение цены акции: 999 -> 2 -> 1000 = Максимальная цена за указанный переуд: 1000
+Изменение цены акции: 999 -> 2 -> 1000 -> 8 = Максимальная цена за указанный переуд: 1000
+Изменение цены акции: 9 -> 27 = Максимальная цена за указанный переуд: 27
 
 
 Пример работы с классом Stock:
 
 Stock google = new Stock("GOOG", 10);
-google.printInformation();
+String priceInformation = google.getPriceInformation();
+System.out.println(priceInformation);
 ​
 google.updatePrice(15);
 google.updatePrice(7);
 google.updatePrice(14);
 ​
-google.printInformation();
+priceInformation = google.getPriceInformation();
+System.out.println(priceInformation);
 
-Вывод в консоль:
+После выполнения кода вывод в консоли должет быть следующим:
 Company = "GOOG", Current Price = 10, Min Price = 10, Max Price = 10
 Company = "GOOG", Current Price = 14, Min Price = 7, Max Price = 15

@@ -4,5 +4,18 @@ public class FraudDetector {
 
     private FraudRule[] fraudRules;
 
+    FraudDetector(FraudRule[] fraudRules) {
+        this.fraudRules = fraudRules;
+    }
+
+    boolean isFraud(Transaction t) {
+        boolean result = false;
+        for(FraudRule fraudRule: fraudRules){
+            if (fraudRule.isFraud(t)) {
+                result = true;
+            }
+        }
+        return result;
+    }
 
 }

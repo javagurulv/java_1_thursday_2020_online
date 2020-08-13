@@ -19,15 +19,15 @@ class InMemoryDatabase implements Database {
     @Override
 	// это не правильное применение Optional
 	// нужно, что бы этот метод возвращал Optional<Product>
-    public Product findByTitle(String productTitle) {
+    public Optional<Product> findByTitle(String productTitle) {
      Optional<Product> optionalProduct;
 
      for (Product product : database){
           optionalProduct = Optional.of(product).filter(product1 -> product.getTitle().equals(productTitle));
          if (optionalProduct.isPresent()){
-             return product;
+             return optionalProduct;
          }
      }
-    return null;
+    return Optional.empty();
     }
 }

@@ -1,1 +1,3 @@
-Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+Напишите программу, которая запрашивает у пользователя
+три целых числа и выводит их среднее арифметическое
+(складывает все числа и делит на их количество).

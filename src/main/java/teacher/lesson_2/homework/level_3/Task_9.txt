@@ -1,5 +1,5 @@
-Write a Java program that takes a number as input and prints its
-multiplication table up to 10.
+Напишите программу, которая запрашивает у пользователя целое число
+и печатает на консоль таблицу умножения для этого числа до 10.
 
 Test Data:
 Input a number: 8

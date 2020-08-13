@@ -1,0 +1,140 @@
+@startuml
+
+title __TICTACTOE's Class Diagram__\n
+
+  namespace tictactoe {
+    class tictactoe.ComputerMove {
+        - FREE_CELL : int
+        + isCanWinOpponent()
+        + isComputerCanWin()
+        + simpleNextMove()
+        - checkNextMove()
+        - findFreeCellForMove()
+        - isFreeCell()
+        - setDefenseMovePosition()
+        - setWinMovePosition()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.DrawPosition {
+        + checkToDraw()
+        - isDraw()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.Game {
+        ~ game()
+        - findPlayerWhoMoveFirst()
+        - findPlayerWhoMoveSecond()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.GameBoard {
+        + createGameBoard()
+        + printGameBoardToConsole()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.HumanMove {
+        - FREE_CELL : int
+        + humanMove()
+        - getNextMove()
+        - getPlayerMove()
+        - isPlayerDoIllegalMove()
+        - isPlayerMoveToFreeCell()
+        - printErrorMessage()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.Move {
+        - FREE_CELL : int
+        - column : int
+        - row : int
+        + Move()
+        + getColumn()
+        + getRow()
+        - isNumberOutOfRangeField()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.MoveLogic {
+        - FREE_CELL : int
+        - columnWinPosition : int
+        - rowWinPosition : int
+        + getColumnWinPosition()
+        + getRowWinPosition()
+        + isWin()
+        + setColumnWinPosition()
+        + setRowWinPosition()
+        - findWinDiagonals()
+        - findWinRowAndColumn()
+        - isEmptyCell()
+        - isPlayerWinCombination()
+        - isTwoInRow()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.Player {
+        - isPlayerHuman : boolean
+        - isPlayerMoveFirst : boolean
+        - playerFigure : int
+        - playerName : String
+        + Player()
+        + getPlayerFigure()
+        + getPlayerName()
+        + isPlayerHuman()
+        + isPlayerMoveFirst()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.WinPosition {
+        + checkToWin()
+        - isWinPosition()
+        - isWinPositionForDiagonals()
+        - isWinPositionForHorizontals()
+        - isWinPositionForVerticals()
+    }
+  }
+  
+
+  namespace tictactoe {
+    class tictactoe.start {
+        {static} + main()
+    }
+  }
+  
+
+  tictactoe.ComputerMove o-- tictactoe.MoveLogic : moveLogic
+  tictactoe.start o-- tictactoe.Game : Game
+  tictactoe.GameBoard o-- tictactoe.Game : Game
+  tictactoe.Player o-- tictactoe.Game : Game
+  tictactoe.WinPosition o-- tictactoe.Game : Game
+  tictactoe.DrawPosition o-- tictactoe.Game : Game
+  tictactoe.ComputerMove o-- tictactoe.Game : Game
+  tictactoe.HumanMove o-- tictactoe.Game : Game
+  tictactoe.Move o-- tictactoe.HumanMove : HumanMove
+
+
+
+
+right footer
+
+endfooter
+
+@enduml

@@ -1,17 +1,19 @@
 package student_vadims_vladisevs.lesson_10.level_6.task_25;
 
+
 import java.util.ArrayList;
+import java.util.List;
 
 class Library {
 
 	// List<Book> ...
-	private ArrayList<Book> books;
+	private List<Book> books;
 
     public Library(){
         this.books = new ArrayList<>();
     }
 
-    public ArrayList<Book> getBooks() {
+    public List<Book> getBooks() {
         return books;
     }
 
