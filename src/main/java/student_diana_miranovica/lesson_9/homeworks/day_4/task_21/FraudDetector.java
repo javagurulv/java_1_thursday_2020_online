@@ -6,11 +6,11 @@ public class FraudDetector {
     boolean isFraud(Transaction transaction) {
         if (transaction.getFullNameFromTrader().equals("Pokemon")) {
             return true;
-        } else if (transaction.getAmount() >1000) {
+        } else if (transaction.getAmount() >1000000) {
             return true;
         }else if (transaction.getTraderCity().equals("Sydney")) {
             return true;
-        }else if (transaction.getTraderCountry().equals("Germany"))   {
+        }else if (transaction.getTraderCountry().equals("Germany")&& transaction.getAmount() >1000)   {
             return true;
         }else {
             return false;
