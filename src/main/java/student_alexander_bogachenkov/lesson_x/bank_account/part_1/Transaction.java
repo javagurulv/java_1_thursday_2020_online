@@ -2,7 +2,6 @@ package student_alexander_bogachenkov.lesson_x.bank_account.part_1;
 
 class Transaction {
 
-    private String fullName;
     private int amount;
     private TransactionType transactionType;
 
@@ -12,6 +11,14 @@ class Transaction {
     }
 
     public int getAmount() {
-        return amount;
+        return this.amount;
+    }
+
+    public boolean isDeposit() {
+        return this.transactionType == TransactionType.DEPOSIT;
+    }
+
+    public boolean isWithdrawal() {
+        return this.transactionType == TransactionType.WITHDRAWAL;
     }
 }
