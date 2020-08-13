@@ -9,7 +9,7 @@ class BookReaderImpl implements BookReader {
 
     @Override
     public boolean addBook(Book book) {
-        if (bookAlreadyInELibrary(book))
+        if (bookAlreadyInELibrary(book) || bookTitleNullOrBlank(book) || bookAuthorNullOrBlank(book))
             return false;
         else {
             eLibrary.add(book);
@@ -24,6 +24,14 @@ class BookReaderImpl implements BookReader {
                 return true;
         }
         return false;
+    }
+
+    private boolean bookTitleNullOrBlank(Book book) {
+        return (book.getBookTitle().isBlank());
+    }
+
+    private boolean bookAuthorNullOrBlank(Book book) {
+        return (book.getBookAuthor().isBlank());
     }
 
 }
