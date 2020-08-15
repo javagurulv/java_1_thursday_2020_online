@@ -26,7 +26,7 @@ public class BankAccountTransactionApproverTest {
     public void shouldApprove_whenTransactionIsDeposit() {
         BankAccountTransactionApprover approver = new BankAccountTransactionApprover(new BankAccountCurrentBalanceCalculator());
         Transaction[] transactions = {};
-        boolean actual = approver.approve(new BankAccount("John", transactions), deposit150);
+        boolean actual = approver.approve(new BankAccount("John", transactions, 0), deposit150);
         assertTrue(actual);
     }
 
@@ -34,7 +34,7 @@ public class BankAccountTransactionApproverTest {
     public void shouldApprove_whenTransactionIsWithdrawal_andBalanceIsOverRequired() {
         BankAccountTransactionApprover approver = new BankAccountTransactionApprover(new BankAccountCurrentBalanceCalculator());
         Transaction[] transactions = {deposit220};
-        boolean actual = approver.approve(new BankAccount("John", transactions), withdrawal150);
+        boolean actual = approver.approve(new BankAccount("John", transactions, 0), withdrawal150);
         assertTrue(actual);
     }
 
@@ -42,7 +42,7 @@ public class BankAccountTransactionApproverTest {
     public void shouldApprove_whenTransactionIsWithdrawal_andBalanceEqualsRequired() {
         BankAccountTransactionApprover approver = new BankAccountTransactionApprover(new BankAccountCurrentBalanceCalculator());
         Transaction[] transactions = {deposit220};
-        boolean actual = approver.approve(new BankAccount("John", transactions), withdrawal220);
+        boolean actual = approver.approve(new BankAccount("John", transactions, 0), withdrawal220);
         assertTrue(actual);
     }
 
@@ -50,7 +50,23 @@ public class BankAccountTransactionApproverTest {
     public void shouldNotApprove_whenTransactionIsWithdrawal_andBalanceIsLessThanRequired() {
         BankAccountTransactionApprover approver = new BankAccountTransactionApprover(new BankAccountCurrentBalanceCalculator());
         Transaction[] transactions = {deposit150};
-        boolean actual = approver.approve(new BankAccount("John", transactions), withdrawal220);
+        boolean actual = approver.approve(new BankAccount("John", transactions, 0), withdrawal220);
         assertFalse(actual);
+    }
+
+    @Test
+    public void shouldNotApprove_whenTransactionIsWithdrawal_andIsOverCreditLimit() {
+        BankAccountTransactionApprover approver = new BankAccountTransactionApprover(new BankAccountCurrentBalanceCalculator());
+        Transaction[] transactions = {};
+        boolean actual = approver.approve(new BankAccount("John", transactions, 100), withdrawal150);
+        assertFalse(actual);
+    }
+
+    @Test
+    public void shouldApprove_whenTransactionIsWithdrawal_andEqualsCreditLimit() {
+        BankAccountTransactionApprover approver = new BankAccountTransactionApprover(new BankAccountCurrentBalanceCalculator());
+        Transaction[] transactions = {};
+        boolean actual = approver.approve(new BankAccount("John", transactions, 150), withdrawal150);
+        assertTrue(actual);
     }
 }

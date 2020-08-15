@@ -25,7 +25,7 @@ public class BankAccountMaxBalanceFinderTest {
     @Test
     public void shouldFindMaxBalance_whenMaxBalanceIsPositive() {
         Transaction[] transactions = {transaction1, transaction2, transaction4, transaction3};
-        int actual = calculator.find(new BankAccount("John", transactions));
+        int actual = calculator.find(new BankAccount("John", transactions, 10000));
         int expected = 850;
         assertEquals(expected, actual);
     }
@@ -33,7 +33,7 @@ public class BankAccountMaxBalanceFinderTest {
     @Test
     public void shouldFindMaxBalance_whenMaxBalanceIsZero() {
         Transaction[] transactions = {transaction3, transaction2, transaction3};
-        int actual = calculator.find(new BankAccount("John", transactions));
+        int actual = calculator.find(new BankAccount("John", transactions,10000));
         int expected = 0;
         assertEquals(expected, actual);
     }
