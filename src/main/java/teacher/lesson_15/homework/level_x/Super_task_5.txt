@@ -1,4 +1,5 @@
 Hi and welcome to team Gilded Rose.
+
 As you know, we are a small inn with a prime location
 in a prominent city ran by a friendly innkeeper named Allison.
 We also buy and sell only the finest goods.
@@ -42,3 +43,5 @@ However, do not alter the Item class or Items property
 as those belong to the goblin in the corner who will
 insta-rage and one-shot you as he doesn’t believe in
 shared code ownership.
+
+For current code please check /teacher/lesson_15/level_x/gildedrose package.
