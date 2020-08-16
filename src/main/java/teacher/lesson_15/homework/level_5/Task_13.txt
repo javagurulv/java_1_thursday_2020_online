@@ -44,4 +44,4 @@ as those belong to the goblin in the corner who will
 insta-rage and one-shot you as he doesn’t believe in
 shared code ownership.
 
-For current code please check /teacher/lesson_15/level_x/gildedrose package.
+For current code please check /teacher/lesson_15/level_5/gildedrose package.

@@ -1,4 +1,4 @@
-package teacher.lesson_15.homework.level_x.gildedrose;
+package teacher.lesson_15.homework.level_5.gildedrose;
 
 import java.util.ArrayList;
 import java.util.List;
