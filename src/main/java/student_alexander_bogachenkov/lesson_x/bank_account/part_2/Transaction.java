@@ -4,6 +4,7 @@ class Transaction {
 
     private int amount;
     private TransactionType transactionType;
+    private ExpenseCategory expenseCategory;
 
     public Transaction(int amount, TransactionType transactionType) {
         this.amount = amount;
