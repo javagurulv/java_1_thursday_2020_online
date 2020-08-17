@@ -7,6 +7,15 @@ import static org.junit.Assert.*;
 public class BookReaderImplTest {
 
     @Test
+    public void shouldListBooks() {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
+        bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
+        String[] books = {"Clean Code [Robert C. Martin]", "Head First Java [Kathy Sierra, Bert Bates]"};
+        assertArrayEquals(books, bookReader.listOfAllBooks());
+    }
+
+    @Test
     public void shouldReturnTrueIfBookIsInELibraryAndItCorrectlyDeleted() {
         BookReaderImpl bookReader = new BookReaderImpl();
         Book book1 = new Book("Clean Code", "Robert C. Martin");
