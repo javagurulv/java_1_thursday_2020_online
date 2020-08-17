@@ -8,7 +8,7 @@ class BookReaderImpl implements BookReader {
     List<Book> eLibrary = new ArrayList<>();
 
     @Override
-    public boolean addBook (Book book) {
+    public boolean addBook(Book book) {
         if (bookAlreadyInELibrary(book) || bookTitleIsBlank(book) || bookAuthorIsBlank(book))
             return false;
         else {
@@ -18,7 +18,7 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
-    public boolean removeBook (Book book) {
+    public boolean removeBook(Book book) {
         if (bookAlreadyInELibrary(book)) {
             eLibrary.remove(book);
             return true;
@@ -30,8 +30,20 @@ class BookReaderImpl implements BookReader {
     public String[] listOfAllBooks() {
         String[] allBooks = new String[eLibrary.size()];
         for (int i = 0; i < eLibrary.size(); i++) {
-            allBooks[i] = eLibrary.get(i).getBookTitle() + " [" + eLibrary.get(i).getBookAuthor() +  "]";
-        } return allBooks;
+            allBooks[i] = eLibrary.get(i).getBookTitle() + " [" + eLibrary.get(i).getBookAuthor() + "]";
+        }
+        return allBooks;
+    }
+
+    @Override
+    public List<Book> listByAuthor(String author) {
+        List<Book> byAuthorBooks = new ArrayList<>();
+        for (Book books : eLibrary) {
+            if (books.getBookAuthor().equals(author)) {
+                byAuthorBooks.add(books);
+            }
+        }
+        return byAuthorBooks;
     }
 
     private boolean bookAlreadyInELibrary(Book book) {

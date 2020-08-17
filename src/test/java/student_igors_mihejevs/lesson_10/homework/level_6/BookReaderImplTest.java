@@ -2,9 +2,20 @@ package student_igors_mihejevs.lesson_10.homework.level_6;
 
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class BookReaderImplTest {
+
+    @Test
+    public void shouldFindBooksByAuthor() {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
+        bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
+        List<Book> actualBooks = bookReader.listByAuthor("Kathy Sierra, Bert Bates");
+        assertEquals("Kathy Sierra, Bert Bates", actualBooks.get(0).getBookAuthor());
+    }
 
     @Test
     public void shouldListBooks() {
