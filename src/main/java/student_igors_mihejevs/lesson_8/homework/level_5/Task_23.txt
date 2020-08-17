@@ -1,0 +1,5 @@
+В класе ShapeUtil реализуйте метод:
+
+    Circle createRandomTriangle();
+
+Этот метод создаёт случайный треугольник.
