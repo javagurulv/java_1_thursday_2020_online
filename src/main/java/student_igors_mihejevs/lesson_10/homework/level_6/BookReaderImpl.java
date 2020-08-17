@@ -8,13 +8,22 @@ class BookReaderImpl implements BookReader {
     List<Book> eLibrary = new ArrayList<>();
 
     @Override
-    public boolean addBook(Book book) {
-        if (bookAlreadyInELibrary(book) || bookTitleNullOrBlank(book) || bookAuthorNullOrBlank(book))
+    public boolean addBook (Book book) {
+        if (bookAlreadyInELibrary(book) || bookTitleIsBlank(book) || bookAuthorIsBlank(book))
             return false;
         else {
             eLibrary.add(book);
             return true;
         }
+    }
+
+    @Override
+    public boolean removeBook (Book book) {
+        if (bookAlreadyInELibrary(book)) {
+            eLibrary.remove(book);
+            return true;
+        }
+        return false;
     }
 
     private boolean bookAlreadyInELibrary(Book book) {
@@ -26,11 +35,11 @@ class BookReaderImpl implements BookReader {
         return false;
     }
 
-    private boolean bookTitleNullOrBlank(Book book) {
+    private boolean bookTitleIsBlank(Book book) {
         return (book.getBookTitle().isBlank());
     }
 
-    private boolean bookAuthorNullOrBlank(Book book) {
+    private boolean bookAuthorIsBlank(Book book) {
         return (book.getBookAuthor().isBlank());
     }
 

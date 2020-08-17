@@ -7,7 +7,24 @@ import static org.junit.Assert.*;
 public class BookReaderImplTest {
 
     @Test
-    public void shouldReturnTrueIfBookIsNotInELibraryOrAuthorIsNotBlankOrTitleIsNotBlankAndAddedCorrectly() {
+    public void shouldReturnTrueIfBookIsInELibraryAndItCorrectlyDeleted() {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        Book book1 = new Book("Clean Code", "Robert C. Martin");
+        bookReader.addBook(book1);
+        assertTrue(bookReader.removeBook(book1));
+    }
+
+    @Test
+    public void shouldReturnFalseIfBookIsNotInELibraryAndNotDeleted() {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        Book book1 = new Book("Clean Code", "Robert C. Martin");
+        bookReader.addBook(book1);
+        assertFalse(bookReader.removeBook(new Book("Head First Java", "Kathy Sierra, Bert Bates")));
+        assertEquals(book1, bookReader.eLibrary.get(0));
+    }
+
+    @Test
+    public void shouldReturnTrueIfBookIsNotInELibraryOrAuthorIsNotBlankOrTitleIsNotBlankAndItAddedCorrectly() {
         BookReaderImpl bookReader = new BookReaderImpl();
         Book book1 = new Book("Clean Code", "Robert C. Martin");
         Book book2 = new Book("Head First Java", "Kathy Sierra, Bert Bates");
