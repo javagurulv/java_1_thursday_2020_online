@@ -35,6 +35,8 @@ class BookReaderImpl implements BookReader {
         return allBooks;
     }
 
+
+
     @Override
     public List<Book> listByAuthorOrContainsPartOfAuthorName(String author) {
         List<Book> byAuthorBooks = new ArrayList<>();
@@ -44,6 +46,17 @@ class BookReaderImpl implements BookReader {
             }
         }
         return byAuthorBooks;
+    }
+
+    @Override
+    public List<Book> listByTitleOrContainsPartOfTitle(String title) {
+        List<Book> byTitleBooks = new ArrayList<>();
+        for (Book books : eLibrary) {
+            if ((books.getBookTitle().equals(title)) || (books.getBookTitle().contains(title))) {
+                byTitleBooks.add(books);
+            }
+        }
+        return byTitleBooks;
     }
 
     private boolean bookAlreadyInELibrary(Book book) {

@@ -9,6 +9,24 @@ import static org.junit.Assert.*;
 public class BookReaderImplTest {
 
     @Test
+    public void shouldFindBooksByPartOfTitle() {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
+        bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
+        List<Book> actualBooks = bookReader.listByTitleOrContainsPartOfTitle("Head");
+        assertEquals("Head First Java", actualBooks.get(0).getBookTitle());
+    }
+
+    @Test
+    public void shouldFindBooksByTitle() {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
+        bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
+        List<Book> actualBooks = bookReader.listByTitleOrContainsPartOfTitle("Head First Java");
+        assertEquals("Head First Java", actualBooks.get(0).getBookTitle());
+    }
+
+    @Test
     public void shouldFindBooksByPartOfAuthorName() {
         BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));

@@ -12,4 +12,6 @@ interface BookReader {
 
     List<Book> listByAuthorOrContainsPartOfAuthorName (String author);
 
+    List<Book> listByTitleOrContainsPartOfTitle (String title);
+
 }
