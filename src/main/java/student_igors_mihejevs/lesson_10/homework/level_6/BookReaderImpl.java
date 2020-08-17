@@ -36,10 +36,10 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
-    public List<Book> listByAuthor(String author) {
+    public List<Book> listByAuthorOrContainsPartOfAuthorName(String author) {
         List<Book> byAuthorBooks = new ArrayList<>();
         for (Book books : eLibrary) {
-            if (books.getBookAuthor().equals(author)) {
+            if ((books.getBookAuthor().equals(author)) || (books.getBookAuthor().contains(author))) {
                 byAuthorBooks.add(books);
             }
         }

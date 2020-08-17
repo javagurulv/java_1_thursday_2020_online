@@ -10,6 +10,6 @@ interface BookReader {
 
     String[] listOfAllBooks ();
 
-    List<Book> listByAuthor (String author);
+    List<Book> listByAuthorOrContainsPartOfAuthorName (String author);
 
 }
