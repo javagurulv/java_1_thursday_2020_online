@@ -9,6 +9,24 @@ import static org.junit.Assert.*;
 public class BookReaderImplTest {
 
     @Test
+    public void shouldReturnTrueIfBookIsInELibraryAndMarkedAsRead () {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        Book book = new Book("Clean Code", "Robert C. Martin");
+        bookReader.addBook(book);
+        assertTrue(bookReader.MarkBookAsAlreadyRead(new Book("Clean Code", "Robert C. Martin")));
+        assertTrue(bookReader.eLibrary.get(0).isAlreadyRead());
+    }
+
+    @Test
+    public void shouldReturnFalseIfBookIsNotInELibrary () {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        Book book = new Book("Clean Code", "Robert C. Martin");
+        bookReader.addBook(book);
+        assertFalse(bookReader.MarkBookAsAlreadyRead(new Book("Head First Java", "Kathy Sierra, Bert Bates")));
+    }
+
+
+    @Test
     public void shouldFindBooksByPartOfTitle() {
         BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));

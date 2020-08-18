@@ -27,6 +27,15 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
+    public boolean MarkBookAsAlreadyRead(Book book) {
+        if (bookAlreadyInELibrary(book)) {
+            eLibrary.get(0).setAlreadyRead(true);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
     public String[] listOfAllBooks() {
         String[] allBooks = new String[eLibrary.size()];
         for (int i = 0; i < eLibrary.size(); i++) {
@@ -34,8 +43,6 @@ class BookReaderImpl implements BookReader {
         }
         return allBooks;
     }
-
-
 
     @Override
     public List<Book> listByAuthorOrContainsPartOfAuthorName(String author) {
