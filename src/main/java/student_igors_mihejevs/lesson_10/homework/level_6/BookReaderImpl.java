@@ -36,6 +36,15 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
+    public boolean MarkBookAsNotRead(Book book) {
+        if (bookAlreadyInELibrary(book)) {
+            eLibrary.get(0).setAlreadyRead(false);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
     public String[] listOfAllBooks() {
         String[] allBooks = new String[eLibrary.size()];
         for (int i = 0; i < eLibrary.size(); i++) {

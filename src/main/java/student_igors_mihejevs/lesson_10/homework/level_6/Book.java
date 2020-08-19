@@ -4,7 +4,7 @@ class Book {
 
     private String bookTitle;
     private String bookAuthor;
-    private boolean alreadyRead;
+    private boolean alreadyRead; // true - already read, false - not read
 
     public Book(String bookTitle, String bookAuthor) {
         this.bookTitle = bookTitle;

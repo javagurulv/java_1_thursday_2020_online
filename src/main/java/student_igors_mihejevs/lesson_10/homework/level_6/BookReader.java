@@ -10,6 +10,8 @@ interface BookReader {
 
     boolean MarkBookAsAlreadyRead (Book book);
 
+    boolean MarkBookAsNotRead (Book book);
+
     String[] listOfAllBooks ();
 
     List<Book> listByAuthorOrContainsPartOfAuthorName (String author);
