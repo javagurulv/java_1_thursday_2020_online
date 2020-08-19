@@ -72,7 +72,16 @@ public class BookReaderImplTest {
     }
 
     @Test
-    public void shouldListBooks() {
+    public void shouldListAllReadBooks() {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
+        bookReader.eLibrary.get(0).setAlreadyRead(true);
+        String[] books = {"Clean Code [Robert C. Martin]"};
+        assertArrayEquals(books, bookReader.listOfAllReadBooks());
+    }
+
+    @Test
+    public void shouldListAllBooks() {
         BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
         bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));

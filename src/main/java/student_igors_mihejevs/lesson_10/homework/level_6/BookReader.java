@@ -14,6 +14,8 @@ interface BookReader {
 
     String[] listOfAllBooks ();
 
+    String[] listOfAllReadBooks ();
+
     List<Book> listByAuthorOrContainsPartOfAuthorName (String author);
 
     List<Book> listByTitleOrContainsPartOfTitle (String title);
