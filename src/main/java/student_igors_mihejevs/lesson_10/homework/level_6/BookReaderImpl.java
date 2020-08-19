@@ -65,6 +65,17 @@ class BookReaderImpl implements BookReader {
     }
 
     @Override
+    public String[] listOfAllNotReadBooks() {
+        String[] allNotReadBooks = new String[eLibrary.size()];
+        for (int i = 0; i < eLibrary.size(); i++) {
+            if (!eLibrary.get(i).isAlreadyRead()) {
+                allNotReadBooks[i] = eLibrary.get(i).getBookTitle() + " [" + eLibrary.get(i).getBookAuthor() + "]";
+            }
+        }
+        return allNotReadBooks;
+    }
+
+    @Override
     public List<Book> listByAuthorOrContainsPartOfAuthorName(String author) {
         List<Book> byAuthorBooks = new ArrayList<>();
         for (Book books : eLibrary) {

@@ -81,6 +81,15 @@ public class BookReaderImplTest {
     }
 
     @Test
+    public void shouldListAllNotReadBooks() {
+        BookReaderImpl bookReader = new BookReaderImpl();
+        bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
+        bookReader.eLibrary.get(0).setAlreadyRead(false);
+        String[] books = {"Clean Code [Robert C. Martin]"};
+        assertArrayEquals(books, bookReader.listOfAllNotReadBooks());
+    }
+
+    @Test
     public void shouldListAllBooks() {
         BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
