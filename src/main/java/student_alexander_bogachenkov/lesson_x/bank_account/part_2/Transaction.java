@@ -1,5 +1,7 @@
 package student_alexander_bogachenkov.lesson_x.bank_account.part_2;
 
+import java.util.Objects;
+
 class Transaction {
 
     private int amount;
@@ -32,5 +34,20 @@ class Transaction {
 
     public ExpenseCategory getExpenseCategory() {
         return expenseCategory;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Transaction that = (Transaction) o;
+        return amount == that.amount &&
+                transactionType == that.transactionType &&
+                expenseCategory == that.expenseCategory;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(amount, transactionType, expenseCategory);
     }
 }
