@@ -6,9 +6,15 @@ class Transaction {
     private TransactionType transactionType;
     private ExpenseCategory expenseCategory;
 
-    public Transaction(int amount, TransactionType transactionType, ExpenseCategory expenseCategory) {
+    public Transaction(int amount) {
         this.amount = amount;
-        this.transactionType = transactionType;
+        this.transactionType = TransactionType.DEPOSIT;
+        this.expenseCategory = null;
+    }
+
+    public Transaction(int amount, ExpenseCategory expenseCategory) {
+        this.amount = amount;
+        this.transactionType = TransactionType.WITHDRAWAL;
         this.expenseCategory = expenseCategory;
     }
 
