@@ -34,7 +34,7 @@ class IntegerListDemo {
         }
         System.out.println();
 
-        numbersAL.remove(Integer.valueOf(7)); // removing elements 7
+        numbersAL.remove(Integer.valueOf(7)); // removing element 7
         for (Integer number : numbersAL) {
             System.out.print(number + " ");
         }

@@ -20,6 +20,15 @@ class DuplicateListDemo {
         numbersAL.add(0, Integer.parseInt("3"));
 
         numbersAL.forEach(System.out::println);
+
+        List<Integer> numbersToRemove = new ArrayList<>();
+        numbersToRemove.add(Integer.parseInt("15"));
+        numbersToRemove.add(Integer.parseInt("7"));
+        numbersAL.removeAll(numbersToRemove);
+
+        System.out.println("After removing numbers 15 and 7");
+        numbersAL.forEach(System.out::println);
+
     }
 
 }
