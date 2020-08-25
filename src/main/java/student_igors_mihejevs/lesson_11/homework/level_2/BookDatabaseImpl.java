@@ -24,4 +24,13 @@ class BookDatabaseImpl implements BookDatabase {
         } return false;
     }
 
+    @Override
+    public boolean delete(Book book) {
+        for (Book books : booksList) {
+            if ((books.getAuthor().equals(book.getAuthor())) && (books.getTitle().equals(book.getTitle()))) {
+                booksList.remove(book);
+                return true;
+            }
+        } return false;
+    }
 }
