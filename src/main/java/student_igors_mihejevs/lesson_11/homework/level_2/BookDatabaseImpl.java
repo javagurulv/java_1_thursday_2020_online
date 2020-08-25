@@ -5,13 +5,23 @@ import java.util.List;
 
 class BookDatabaseImpl implements BookDatabase {
     Long id = Long.parseLong("1");
+    List<Book> booksList = new ArrayList<>();
 
     @Override
     public Long save(Book book) {
-        List<Book> booksList = new ArrayList<>();
         book.setId(id);
         booksList.add(book);
         return ++id;
+    }
+
+    @Override
+    public boolean delete(Long bookId) {
+        for (Book book : booksList) {
+            if (book.getId().equals(bookId)) {
+                booksList.remove(book);
+                return true;
+            }
+        } return false;
     }
 
 }
