@@ -3,7 +3,7 @@ package student_igors_mihejevs.lesson_11.homework.level_1.task_2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task_2 {
+class Task_2 {
 
     /*
     An ArrayList can hold only references to the location of objects in the Heap.

@@ -3,7 +3,7 @@ package student_igors_mihejevs.lesson_11.homework.level_1.task_1;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class ListImpl {
+class ListImpl {
 
     /* ArrayList
     Java ArrayList class uses a dynamic array for storing the elements.
