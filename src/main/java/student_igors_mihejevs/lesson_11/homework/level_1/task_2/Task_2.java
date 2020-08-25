@@ -19,19 +19,14 @@ public class Task_2 {
      */
 
     public static void main(String[] args) {
-
         Integer numberI = Integer.parseInt("6");
-
         List<Integer> numberAL = new ArrayList<>();
+
         numberAL.add(5);
         numberAL.add(7);
         numberAL.add(9);
         numberAL.add(0, numberI);
         numberAL.add(Integer.parseInt("3"));
-
-
-
-
     }
 
 }
