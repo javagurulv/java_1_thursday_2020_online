@@ -73,7 +73,7 @@ public class BookDatabaseImplTest {
         BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java"));
         Book book2 = (new Book("Joshua Bloch", "Effective Java"));
-        Book book3 = (new Book("Joshua    Bloch", "Effective Java"));
+        Book book3 = (new Book("Robert C. Martin", "Clean Code"));
         bookDatabase.save(book1);
         bookDatabase.save(book2);
         bookDatabase.save(book3);
@@ -82,6 +82,22 @@ public class BookDatabaseImplTest {
         assertEquals(2, bookDatabase.countAllBooks());
         bookDatabase.delete(book2);
         assertEquals(1, bookDatabase.countAllBooks());
+    }
+
+    @Test
+    public void shouldReturnTrueIfBookCorrectlyDeletedByAuthor() {
+        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java"));
+        Book book2 = (new Book("Joshua Bloch", "Effective Java"));
+        Book book3 = (new Book("Robert C. Martin", "Clean Code"));
+        bookDatabase.save(book1);
+        bookDatabase.save(book2);
+        bookDatabase.save(book3);
+        assertEquals(3, bookDatabase.countAllBooks());
+        assertNotEquals(Optional.empty(), bookDatabase.findById(Long.parseLong("2")));
+        bookDatabase.deleteByAuthor("Joshua Bloch");
+        assertEquals(Optional.empty(), bookDatabase.findById(Long.parseLong("2")));
+        assertEquals(2, bookDatabase.countAllBooks());
     }
 
 }

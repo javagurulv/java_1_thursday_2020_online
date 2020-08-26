@@ -41,7 +41,6 @@ class BookDatabaseImpl implements BookDatabase {
     public Optional<Book> findById(Long bookId) {
         for (Book book : booksList) {
             if (book.getId().equals(bookId)) {
-                booksList.remove(book);
                 return Optional.of(book);
             }
         }
@@ -73,4 +72,10 @@ class BookDatabaseImpl implements BookDatabase {
     public int countAllBooks() {
         return booksList.size();
     }
+
+    @Override
+    public void deleteByAuthor(String author) {
+        booksList.removeIf(books -> (books.getAuthor().equals(author)));
+    }
+
 }
