@@ -2,6 +2,8 @@ package student_igors_mihejevs.lesson_11.homework.level_2;
 
 import org.junit.Test;
 
+import java.util.Optional;
+
 import static org.junit.Assert.*;
 
 public class BookDatabaseImplTest {
@@ -37,6 +39,19 @@ public class BookDatabaseImplTest {
         assertTrue(bookDatabase.delete(book1));
         assertTrue(bookDatabase.delete(book2));
         assertFalse(bookDatabase.delete(book3));
+    }
+
+    @Test
+    public void shouldReturnOptionalOfIfBookCorrectlyDeletedByID() {
+        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        Long id1 = Long.parseLong("1");
+        Long id2 = Long.parseLong("2");
+        Long id3 = Long.parseLong("3");
+        bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java"));
+        bookDatabase.save(new Book("Joshua Bloch", "Effective Java"));
+        assertEquals(Optional.empty(), bookDatabase.findById(id3));
+        assertNotEquals(null, bookDatabase.findById(id1));
+        assertNotEquals(null, bookDatabase.findById(id2));
     }
 
 }
