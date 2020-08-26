@@ -21,12 +21,10 @@ public class BookDatabaseImplTest {
     @Test
     public void shouldReturnTrueIfBookCorrectlyDeletedByID() {
         BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
-        Long id1 = Long.parseLong("1");
-        Long id2 = Long.parseLong("2");
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java"));
-        assertTrue(bookDatabase.delete(id1));
-        assertTrue(bookDatabase.delete(id2));
+        assertTrue(bookDatabase.delete(Long.parseLong("1")));
+        assertTrue(bookDatabase.delete(Long.parseLong("2")));
     }
 
     @Test
@@ -45,23 +43,18 @@ public class BookDatabaseImplTest {
     @Test
     public void shouldReturnOptionalOfOrEmptyByBookID() {
         BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
-        Long id1 = Long.parseLong("1");
-        Long id2 = Long.parseLong("2");
-        Long id3 = Long.parseLong("3");
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java"));
-        assertEquals(Optional.empty(), bookDatabase.findById(id3));
-        assertNotEquals(Optional.empty(), bookDatabase.findById(id1));
-        assertNotEquals(null, bookDatabase.findById(id2));
+        assertEquals(Optional.empty(), bookDatabase.findById(Long.parseLong("3")));
+        assertNotEquals(Optional.empty(), bookDatabase.findById(Long.parseLong("1")));
+        assertNotEquals(null, bookDatabase.findById(Long.parseLong("2")));
     }
 
     @Test
     public void shouldReturnListOfBookByAuthor() {
         BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
-        Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java"));
-        Book book2 = (new Book("Joshua Bloch", "Effective Java"));
-        bookDatabase.save(book1);
-        bookDatabase.save(book2);
+        bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java"));
+        bookDatabase.save(new Book("Joshua Bloch", "Effective Java"));
         List<Book> listOfBookByAuthors = bookDatabase.findByAuthor("Joshua Bloch");
         assertEquals("Joshua Bloch", listOfBookByAuthors.get(0).getAuthor());
     }
@@ -69,12 +62,26 @@ public class BookDatabaseImplTest {
     @Test
     public void shouldReturnListOfBookByTitle() {
         BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
-        Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java"));
-        Book book2 = (new Book("Joshua Bloch", "Effective Java"));
-        bookDatabase.save(book1);
-        bookDatabase.save(book2);
+        bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java"));
+        bookDatabase.save(new Book("Joshua Bloch", "Effective Java"));
         List<Book> listOfBookByTitle = bookDatabase.findByTitle("Effective Java");
         assertEquals("Effective Java", listOfBookByTitle.get(0).getTitle());
+    }
+
+    @Test
+    public void shouldReturnNumberOfBooks() {
+        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java"));
+        Book book2 = (new Book("Joshua Bloch", "Effective Java"));
+        Book book3 = (new Book("Joshua    Bloch", "Effective Java"));
+        bookDatabase.save(book1);
+        bookDatabase.save(book2);
+        bookDatabase.save(book3);
+        assertEquals(3, bookDatabase.countAllBooks());
+        bookDatabase.delete(book1);
+        assertEquals(2, bookDatabase.countAllBooks());
+        bookDatabase.delete(book2);
+        assertEquals(1, bookDatabase.countAllBooks());
     }
 
 }
