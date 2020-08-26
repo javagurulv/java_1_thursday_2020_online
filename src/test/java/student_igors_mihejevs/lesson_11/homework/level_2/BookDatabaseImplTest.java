@@ -56,7 +56,7 @@ public class BookDatabaseImplTest {
     }
 
     @Test
-    public void shouldReturnListOfBookByAuthors() {
+    public void shouldReturnListOfBookByAuthor() {
         BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java"));
         Book book2 = (new Book("Joshua Bloch", "Effective Java"));
@@ -64,6 +64,17 @@ public class BookDatabaseImplTest {
         bookDatabase.save(book2);
         List<Book> listOfBookByAuthors = bookDatabase.findByAuthor("Joshua Bloch");
         assertEquals("Joshua Bloch", listOfBookByAuthors.get(0).getAuthor());
+    }
+
+    @Test
+    public void shouldReturnListOfBookByTitle() {
+        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java"));
+        Book book2 = (new Book("Joshua Bloch", "Effective Java"));
+        bookDatabase.save(book1);
+        bookDatabase.save(book2);
+        List<Book> listOfBookByTitle = bookDatabase.findByTitle("Effective Java");
+        assertEquals("Effective Java", listOfBookByTitle.get(0).getTitle());
     }
 
 }
