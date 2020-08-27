@@ -54,7 +54,8 @@ class BookDatabaseImpl implements BookDatabase {
             if (book.getAuthor().equals(author)) {
                 booksFoundByAuthor.add(book);
             }
-        } return booksFoundByAuthor;
+        }
+        return booksFoundByAuthor;
     }
 
     @Override
@@ -81,6 +82,16 @@ class BookDatabaseImpl implements BookDatabase {
     @Override
     public void deleteByTitle(String title) {
         booksList.removeIf(books -> (books.getTitle().equals(title)));
+    }
 
+    @Override
+    public List<Book> find(SearchCriteria searchCriteria) {
+        List<Book> booksFoundBySearchCriteria = new ArrayList<>();
+        for (Book book : booksList) {
+            if (searchCriteria.match(book)) {
+                booksFoundBySearchCriteria.add(book);
+            }
+        }
+        return booksFoundBySearchCriteria;
     }
 }
