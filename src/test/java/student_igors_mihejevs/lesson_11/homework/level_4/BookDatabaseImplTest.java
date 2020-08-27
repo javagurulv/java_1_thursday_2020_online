@@ -179,7 +179,7 @@ public class BookDatabaseImplTest {
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         bookDatabase.save(new Book("Robert C. Martin", "Clean Code", "2008"));
 
-        // Добавляю еще 2 повторяющиеся книги, после чего они добавляются в Set<Book> ???
+        // Добавляю еще 2 повторяющиеся книги, и они также добавляются в Set<Book> ???
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
 
