@@ -3,8 +3,8 @@ package student_igors_mihejevs.lesson_11.homework.level_4;
 import java.util.*;
 
 class BookDatabaseImpl implements BookDatabase {
-    Long id = Long.parseLong("1");
-    List<Book> booksList = new ArrayList<>();
+    private Long id = 1L;
+    private final List<Book> booksList = new ArrayList<>();
 
     @Override
     public Long save(Book book) {

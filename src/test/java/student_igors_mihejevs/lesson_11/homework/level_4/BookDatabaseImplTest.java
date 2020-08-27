@@ -1,8 +1,9 @@
 package student_igors_mihejevs.lesson_11.homework.level_4;
 
 import org.junit.Test;
-import java.util.List;
-import java.util.Optional;
+
+import java.util.*;
+
 import static org.junit.Assert.*;
 
 public class BookDatabaseImplTest {
@@ -147,7 +148,7 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnSetOfUniqueTitles() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        BookDatabase bookDatabase = new BookDatabaseImpl();
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
@@ -155,9 +156,40 @@ public class BookDatabaseImplTest {
 
         int counter = 0;
         for (String title : bookDatabase.findUniqueTitles()) {
-            if ((title.equals("Head First Java")) || (title.equals("Effective Java"))) counter++;
+            if ((title.equals("Head First Java")) || (title.equals("Effective Java"))) {
+                System.out.println(title);
+                counter++;
+            }
         }
         assertEquals(2, counter);
+    }
+
+    @Test
+    public void shouldNotReturnUniqueBooksBecauseSetIsEmpty() {
+        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        Set<Book> actual = bookDatabase.findUniqueBooks();
+        Set<Book> expected = new HashSet<>();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldReturnSetOfUniqueBooks() {
+        BookDatabase bookDatabase = new BookDatabaseImpl();
+        bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
+        bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
+        bookDatabase.save(new Book("Robert C. Martin", "Clean Code", "2008"));
+
+        //bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
+        //bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
+
+        int counter = 0;
+        Set<Book> foundBooks = bookDatabase.findUniqueBooks();
+        for (Book book : foundBooks) {
+            System.out.println(book.getTitle());
+            counter++;
+        }
+        assertEquals(3, counter);
+        assertEquals(3, foundBooks.size());
     }
 
 }
