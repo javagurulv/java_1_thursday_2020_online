@@ -179,17 +179,17 @@ public class BookDatabaseImplTest {
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         bookDatabase.save(new Book("Robert C. Martin", "Clean Code", "2008"));
 
-        //bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
+        bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         //bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
 
         int counter = 0;
         Set<Book> foundBooks = bookDatabase.findUniqueBooks();
         for (Book book : foundBooks) {
-            System.out.println(book.getTitle());
+            System.out.println(book.getId() + " " + book.getAuthor() + " " + book.getTitle() + " " + book.getYearOfIssue());
             counter++;
         }
-        assertEquals(3, counter);
-        assertEquals(3, foundBooks.size());
+        assertEquals(4, counter);
+        assertEquals(4, foundBooks.size());
     }
 
 }
