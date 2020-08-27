@@ -4,12 +4,14 @@ import java.util.Objects;
 
 class Book {
     private Long id;
-    private String title;
-    private String author;
+    private final String title;
+    private final String author;
+    private String yearOfIssue;
 
-    Book(String author, String title) {
+    Book(String author, String title, String yearOfIssue) {
         this.author = author;
         this.title = title;
+        this.yearOfIssue = yearOfIssue;
     }
 
     public void setId(Long id) {
@@ -26,6 +28,10 @@ class Book {
 
     public String getAuthor() {
         return this.author;
+    }
+
+    public String getYearOfIssue() {
+        return yearOfIssue;
     }
 
     @Override
