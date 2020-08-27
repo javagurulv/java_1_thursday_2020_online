@@ -157,7 +157,6 @@ public class BookDatabaseImplTest {
         int counter = 0;
         for (String title : bookDatabase.findUniqueTitles()) {
             if ((title.equals("Head First Java")) || (title.equals("Effective Java"))) {
-                System.out.println(title);
                 counter++;
             }
         }
@@ -175,22 +174,27 @@ public class BookDatabaseImplTest {
     @Test
     public void shouldReturnSetOfUniqueBooks() {
         BookDatabase bookDatabase = new BookDatabaseImpl();
+        Book book1 = new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003");
+        Book book2 = new Book("Joshua Bloch", "Effective Java", "2001");
+        Book book3 = new Book("Robert C. Martin", "Clean Code", "2008");
+        bookDatabase.save(book1);
+        bookDatabase.save(book2);
+        bookDatabase.save(book2);
+        bookDatabase.save(book3);
+        bookDatabase.save(book2);
+        bookDatabase.save(book1);
+        Set<Book> foundBooks = bookDatabase.findUniqueBooks();
+        assertEquals(3, foundBooks.size());
+    }
+
+    @Test
+    public void shouldReturnTrueIfBookAlreadyInDatabase() {
+        BookDatabase bookDatabase = new BookDatabaseImpl();
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         bookDatabase.save(new Book("Robert C. Martin", "Clean Code", "2008"));
-
-        // Добавляю еще 2 повторяющиеся книги, и они также добавляются в Set<Book> ???
-        bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
-        bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
-
-        int counter = 0;
-        Set<Book> foundBooks = bookDatabase.findUniqueBooks();
-        for (Book book : foundBooks) {
-            System.out.println(book.getId() + " " + book.getAuthor() + " " + book.getTitle() + " " + book.getYearOfIssue());
-            counter++;
-        }
-        assertEquals(5, counter);
-        assertEquals(5, foundBooks.size());
+        Book bookForTest = new Book("Joshua Bloch", "Effective Java", "2001");
+        assertTrue(bookDatabase.contains(bookForTest));
     }
 
 }

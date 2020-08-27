@@ -116,4 +116,14 @@ class BookDatabaseImpl implements BookDatabase {
         return new HashSet<>(booksList);
     }
 
+    @Override
+    public boolean contains(Book book) {
+        for (Book books : booksList) {
+            if ((books.getAuthor().equals(book.getAuthor()))
+                    && (books.getTitle().equals(book.getTitle())) && (books.getYearOfIssue().equals(book.getYearOfIssue()))) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
