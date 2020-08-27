@@ -28,4 +28,6 @@ public interface BookDatabase {
 
     Set<String> findUniqueAuthors();
 
+    Set<String> findUniqueTitles();
+
 }

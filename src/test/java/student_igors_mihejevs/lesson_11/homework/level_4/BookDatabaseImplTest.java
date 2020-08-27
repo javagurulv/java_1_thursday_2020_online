@@ -145,4 +145,19 @@ public class BookDatabaseImplTest {
         assertEquals(2, counter);
     }
 
+    @Test
+    public void shouldReturnSetOfUniqueTitles() {
+        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
+        bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
+        bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
+        bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
+
+        int counter = 0;
+        for (String title : bookDatabase.findUniqueTitles()) {
+            if ((title.equals("Head First Java")) || (title.equals("Effective Java"))) counter++;
+        }
+        assertEquals(2, counter);
+    }
+
 }
