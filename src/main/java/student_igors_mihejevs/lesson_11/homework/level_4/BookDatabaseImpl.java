@@ -1,8 +1,6 @@
 package student_igors_mihejevs.lesson_11.homework.level_4;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 class BookDatabaseImpl implements BookDatabase {
     Long id = Long.parseLong("1");
@@ -93,5 +91,14 @@ class BookDatabaseImpl implements BookDatabase {
             }
         }
         return booksFoundBySearchCriteria;
+    }
+
+    @Override
+    public Set<String> findUniqueAuthors() {
+        Set<String> uniqueAuthors = new HashSet<>();
+        for (Book book : booksList) {
+            uniqueAuthors.add(book.getAuthor());
+        }
+        return uniqueAuthors;
     }
 }
