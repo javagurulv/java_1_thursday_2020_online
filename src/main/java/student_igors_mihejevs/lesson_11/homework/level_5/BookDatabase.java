@@ -1,6 +1,7 @@
 package student_igors_mihejevs.lesson_11.homework.level_5;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
@@ -34,6 +35,6 @@ public interface BookDatabase {
 
     boolean contains(Book book);
 
-    Set<String> find(String text);
+    Map<String, List<Book>> getAuthorToBooksMap();
 
 }

@@ -128,8 +128,7 @@ class BookDatabaseImpl implements BookDatabase {
     }
 
     @Override
-    public Set<String> find(String text) {
-
+    public Map<String, List<Book>> getAuthorToBooksMap() {
 
         return null;
     }
