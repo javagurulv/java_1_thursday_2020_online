@@ -7,6 +7,7 @@ import teacher.codereview.CodeReviewComment;
 
 @CodeReview(approved = false)
 @CodeReviewComment(teacher = "А где тесты?")
+@CodeReviewComment(student = "Тесты в JUnit")
 public class PowerCalculator {
 
     double exponentiation(double baseNumber, int exponent) {

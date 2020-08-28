@@ -9,6 +9,7 @@ import teacher.codereview.CodeReviewComment;
 
 @CodeReview(approved = false)
 @CodeReviewComment(teacher = "А где тесты?")
+@CodeReviewComment(student = "Тесты в JUnit")
 class CreditCard {
 
     private String cardNumber;

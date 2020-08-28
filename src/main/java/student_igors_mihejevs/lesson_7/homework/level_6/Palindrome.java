@@ -7,6 +7,7 @@ import teacher.codereview.CodeReviewComment;
 
 @CodeReview(approved = false)
 @CodeReviewComment(teacher = "А где тесты?")
+@CodeReviewComment(student = "Тесты в JUnit")
 class Palindrome {
 
     boolean isPalindrome(String text) {

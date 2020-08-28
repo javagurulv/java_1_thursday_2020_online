@@ -5,6 +5,7 @@ import teacher.codereview.CodeReviewComment;
 
 @CodeReview(approved = false)
 @CodeReviewComment(teacher = "А где тесты?")
+@CodeReviewComment(student = "Тесты в JUnit")
 public class Copy {
 
     int[] copyInRange(int[] in, int numberFrom, int numberTo) {

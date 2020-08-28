@@ -21,12 +21,14 @@ class WordService {
     }
 
     @CodeReviewComment(teacher = "Must be private, not visible for other classes. This is internal method.")
-    public String[] getArrayOfWords(String text) {
+    @CodeReviewComment(student = "If it will be private, how I'll test it ?")
+    String[] getArrayOfWords(String text) {
         return text.split(" ");
     }
 
 	@CodeReviewComment(teacher = "Must be private, not visible for other classes. This is internal method.")
-    public int countOfEqualWord(String[] arrOfWords, String wordForCheck) {
+    @CodeReviewComment(student = "If it will be private, how I'll test it ?")
+    int countOfEqualWord(String[] arrOfWords, String wordForCheck) {
         int sum = 0;
         for (String word : arrOfWords) {
             if (word.equals(wordForCheck))
