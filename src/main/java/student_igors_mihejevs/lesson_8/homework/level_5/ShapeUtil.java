@@ -2,6 +2,9 @@ package student_igors_mihejevs.lesson_8.homework.level_5;
 
 import java.util.Random;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ShapeUtil {
 
     Circle createRandomCircle() {

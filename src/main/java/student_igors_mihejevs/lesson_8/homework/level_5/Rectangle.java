@@ -1,5 +1,8 @@
 package student_igors_mihejevs.lesson_8.homework.level_5;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Rectangle extends Shape {
     private double width;
     private double height;

@@ -2,6 +2,9 @@ package student_igors_mihejevs.lesson_8.homework.level_4;
 
 import static java.lang.StrictMath.PI;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Circle extends Shape{
 
     private double radius;
