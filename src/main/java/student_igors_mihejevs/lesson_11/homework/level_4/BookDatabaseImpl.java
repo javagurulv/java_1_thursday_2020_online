@@ -126,4 +126,11 @@ class BookDatabaseImpl implements BookDatabase {
         }
         return false;
     }
+
+    @Override
+    public Set<String> find(String text) {
+
+
+        return null;
+    }
 }
