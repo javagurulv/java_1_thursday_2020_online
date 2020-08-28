@@ -3,8 +3,13 @@ package student_igors_mihejevs.lesson_10.homework.level_6;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 class BookReaderImpl implements BookReader {
 
+	@CodeReviewComment(teacher = "May be private field instead of default level access?")
     List<Book> eLibrary = new ArrayList<>();
 
     @Override
