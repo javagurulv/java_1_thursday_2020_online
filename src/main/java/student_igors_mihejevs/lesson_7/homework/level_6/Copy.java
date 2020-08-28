@@ -1,5 +1,10 @@
 package student_igors_mihejevs.lesson_7.homework.level_6;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "А где тесты?")
 public class Copy {
 
     int[] copyInRange(int[] in, int numberFrom, int numberTo) {
