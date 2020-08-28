@@ -8,8 +8,7 @@ class UniqueWordFinder {
 
     Set<String> find(String text) {
         Set<String> finalSet = new HashSet<>();
-        String[] arraySubString = text.split("\\s+");
-        Collections.addAll(finalSet, arraySubString);
+        Collections.addAll(finalSet, text.split("\\s+"));
         return finalSet;
     }
 
