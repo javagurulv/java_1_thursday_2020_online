@@ -129,7 +129,10 @@ class BookDatabaseImpl implements BookDatabase {
 
     @Override
     public Map<String, List<Book>> getAuthorToBooksMap() {
-
-        return null;
+        Map<String, List<Book>> authorToBooksMap = new HashMap<>();
+        for (Book book : booksList) {
+            authorToBooksMap.put(book.getAuthor(), findByAuthor(book.getAuthor()));
+        }
+        return authorToBooksMap;
     }
 }
