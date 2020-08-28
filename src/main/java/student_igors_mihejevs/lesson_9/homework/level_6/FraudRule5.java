@@ -1,5 +1,8 @@
 package student_igors_mihejevs.lesson_9.homework.level_6;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class FraudRule5 extends FraudRule {
     // The city is Germany and amount of transaction is more than 1000
 

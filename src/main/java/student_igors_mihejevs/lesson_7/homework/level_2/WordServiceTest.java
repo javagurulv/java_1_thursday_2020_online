@@ -1,5 +1,8 @@
 package student_igors_mihejevs.lesson_7.homework.level_2;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class WordServiceTest {
 
     public static void main(String[] args) {

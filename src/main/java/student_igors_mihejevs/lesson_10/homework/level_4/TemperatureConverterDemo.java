@@ -1,5 +1,8 @@
 package student_igors_mihejevs.lesson_10.homework.level_4;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class TemperatureConverterDemo {
 
     public static void main(String[] args) {

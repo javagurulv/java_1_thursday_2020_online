@@ -2,6 +2,11 @@ package student_igors_mihejevs.lesson_7.homework.level_6;
 
 import java.util.Arrays;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "А где тесты?")
 class Palindrome {
 
     boolean isPalindrome(String text) {

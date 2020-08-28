@@ -4,6 +4,11 @@ import java.math.BigDecimal;
 
 import static java.math.BigDecimal.ZERO;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "А где тесты?")
 class CreditCard {
 
     private String cardNumber;
