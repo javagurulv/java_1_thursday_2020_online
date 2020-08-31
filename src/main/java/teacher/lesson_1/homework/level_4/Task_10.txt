@@ -1,6 +1,6 @@
-Write a Java program to print 'Hello'
-on screen and then print your name on a separate line.
+Напишите Java программу, которая напечатает 'Hello'
+на консоли и потом на следующей строке выведет ваше имя и фамилию.
 
-Expected Output :
+Пример ожидаемого вывода на консоль:
 Hello
 Alexandra Abramov

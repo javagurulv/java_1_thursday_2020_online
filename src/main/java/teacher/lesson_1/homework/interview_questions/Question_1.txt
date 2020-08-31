@@ -1,12 +1,6 @@
-What is meant by Java being platform independent?
+What is algorithm?
 
-Java works on the principle of write once and run anywhere.
-Once a Java program is written, it is compiled into what is known as byte code,
-which can then be run on any Java Virtual Machine or JVM for short.
-
-Compilation to bytecode is the magic behind Java’s interoperability.
-Different operating systems and hardware architectures have JVMs
-custom designed for themselves and all JVMs can run the same bytecode.
-Therefore, if you write a Java program on Linux, it will run seamlessly
-on a JVM designed for Windows operating system, making code agnostic to
-the underlying hardware and OS.
+In mathematics and computer science, an algorithm is a finite sequence of well-defined,
+computer-implementable instructions, typically to solve a class of problems or to perform
+a computation. Algorithms are always unambiguous and are used as specifications for
+performing calculations, data processing, automated reasoning, and other tasks.
