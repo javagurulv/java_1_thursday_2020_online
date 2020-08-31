@@ -1,6 +1,6 @@
 Дана программа:
 
-class Task_3 {
+class DayOfTheWeekDetectorDemo {
 
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
@@ -27,8 +27,11 @@ class Task_3 {
 
 Создайте класс DayOfTheWeekDetector.
 В классе DayOfTheWeekDetector создайте метод:
-String detectDayName(int number).
-Этот метод будет по введённому числу определять день недели.
-Реализуйте этот метод (можно взять код приведённый выше).
+
+    String detectDayName(int number).
+
+Этот метод должен по переданному в качестве параметра числу определять день недели.
+Реализуйте этот метод (можно взять часть приведённого выше кода).
+
 Создайте класс DayOfTheWeekDetectorTest и напишите
 автоматические тесты для всех сценариев.
