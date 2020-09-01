@@ -8,7 +8,7 @@
 
 PS: создайте в классе Dog метод:
 
-    public void changeColor(String newColor) {
+    void changeColor(String newColor) {
         // напишите тут команду сохранения нового цвета в свойство класса
     }
 

@@ -3,27 +3,27 @@
 
 class BankAccount {
 
-    private String ownerFirstName;
-    private String ownerLastName;
-    private int moneyAmount;
+    String ownerFirstName;
+    String ownerLastName;
+    int moneyAmount;
 
-    public BankAccount(String ownerFirstName,
-                       String ownerLastName
-                       int moneyAmount) {
+    BankAccount(String ownerFirstName,
+                String ownerLastName
+                int moneyAmount) {
         this.ownerFirstName = ownerFirstName;
         this.ownerLastName = ownerLastName;
         this.money = money;
     }
 
-    public String getOwnerFirstName( {
+    String getOwnerFirstName( {
         return this.ownerFirstName
     }
 
-    public String getOwnerLastName) {
+    String getOwnerLastName) {
         return this.ownerFirstName
     }
 
-    public void getMoneyAmount() {
+    void getMoneyAmount() {
         return this.moneyAmount;
     }
 

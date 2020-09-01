@@ -4,13 +4,13 @@
 
 class Car {
 
-    private String model;
+    String model;
 
-    public Car(String newModel) {
+    Car(String newModel) {
         this.model = newModel;
     }
 
-    public String getModel {
+    String getModel {
         return this.model
     }
 
