@@ -1,4 +1,4 @@
-package student_alexander_bogachenkov.lesson15_11082020.homeworks.level_1.task_3;
+package student_alexander_bogachenkov.lesson15_11082020.homeworks.level_1;
 
 class WordsService {
 
