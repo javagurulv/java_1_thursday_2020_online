@@ -1,6 +1,6 @@
 package teacher.lesson_15.homework.level_5.gildedrose;
 
-class Item {
+public class Item {
 
 	private String name;
 	private int sellIn;
