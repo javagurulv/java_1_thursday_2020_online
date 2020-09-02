@@ -198,7 +198,7 @@ public class BookDatabaseImplTest {
     }
 
     @Test
-    public void shouldGetAuthorToBooksMap() {
+    public void shouldCheckGetAuthorToBooksMapMethod() {
         BookDatabase bookDatabase = new BookDatabaseImpl();
         Book book1 = new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003");
         Book book2 = new Book("Kathy Sierra, Bert Bates", "Head First Java v.2", "2005");
@@ -213,9 +213,31 @@ public class BookDatabaseImplTest {
         bookDatabase.save(book5);
         bookDatabase.save(book6);
 
-        bookDatabase.getAuthorToBooksMap();
         assertFalse(bookDatabase.getAuthorToBooksMap().isEmpty());
         assertEquals(3, bookDatabase.getAuthorToBooksMap().size());
+    }
+
+    @Test
+    public void shouldCheckGetEachAuthorBookCountMethod() {
+        BookDatabase bookDatabase = new BookDatabaseImpl();
+        Book book1 = new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003");
+        Book book2 = new Book("Kathy Sierra, Bert Bates", "Head First Java v.2", "2005");
+        Book book3 = new Book("Joshua Bloch", "Effective Java", "2001");
+        Book book4 = new Book("Joshua Bloch", "Effective Java v.2", "2001");
+        Book book5 = new Book("Robert C. Martin", "Clean Code", "2008");
+        Book book6 = new Book("Robert C. Martin", "Clean Code v.2", "2010");
+        bookDatabase.save(book1);
+        bookDatabase.save(book2);
+        bookDatabase.save(book3);
+        bookDatabase.save(book4);
+        bookDatabase.save(book5);
+        bookDatabase.save(book6);
+
+        assertFalse(bookDatabase.getEachAuthorBookCount().isEmpty());
+        assertEquals(3, bookDatabase.getEachAuthorBookCount().size());
+        assertEquals(Integer.valueOf(2), bookDatabase.getEachAuthorBookCount().get("Kathy Sierra, Bert Bates"));
+        assertEquals(Integer.valueOf(2), bookDatabase.getEachAuthorBookCount().get("Joshua Bloch"));
+        assertEquals(Integer.valueOf(2), bookDatabase.getEachAuthorBookCount().get("Robert C. Martin"));
     }
 
 }
