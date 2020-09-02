@@ -4,13 +4,13 @@
 
 class Phone {
 
-    private String model;{
+    String model;{
 
-    public Book(String newModel) {
+    Book(String newModel) {
         this.model = newModel;
     }
 
-    public String getModel() {
+    String getModel() {
         return this.model;
     }
 

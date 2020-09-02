@@ -5,18 +5,18 @@
 
 class BankAccount {
 
-    private String owner;
-    private int money;
+    String owner;
+    int money;
 
-    public BankAccount(int moneyAmount) {
+    BankAccount(int moneyAmount) {
         this.owner = owner;
     }
 
-    public String getOwner() {
+    String getOwner() {
         return this.owner;
     }
 
-    public void getMoney() {
+    void getMoney() {
         return this.money;
     }
 

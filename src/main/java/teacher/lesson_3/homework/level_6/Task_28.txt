@@ -4,10 +4,10 @@
 
 class Computer {
 
-    private String manufacturer;
-    private String model;
+    String manufacturer;
+    String model;
 
-    public Computer(String manufacturer, String model) {
+    Computer(String manufacturer, String model) {
         this.manufacturer = manufacturer;
         this.model = model;
     }

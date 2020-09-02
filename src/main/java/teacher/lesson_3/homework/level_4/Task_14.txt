@@ -4,13 +4,13 @@
 
 class Book {
 
-    private String title
+    String title
 
     Book(String bookTitle) {
         this.title = newTitle
     }
 
-    public String getTitle() {
+    String getTitle() {
         return this.title;
     }
 
