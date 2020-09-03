@@ -11,11 +11,10 @@ class SaveBookUIAction implements UIAction {
     }
 
     public void execute() {
-
         Scanner myInput = new Scanner(System.in);
         System.out.print("Enter book author : ");
         String bookAuthor = myInput.nextLine();
-        System.out.print("Enter book name : ");
+        System.out.print("Enter book title : ");
         String bookTitle = myInput.nextLine();
         System.out.print("Enter the year of issue : ");
         String bookYearOfIssue = myInput.nextLine();
