@@ -16,7 +16,7 @@ class FindByTitleUIAction implements UIAction {
 
     public void execute() {
         Scanner myInput = new Scanner(System.in);
-        System.out.print("Enter book title : ");
+        System.out.print("Enter book title for searching: ");
         String bookTitle = myInput.nextLine();
 
         List<Book> bookFound = bookDatabase.findByTitle(bookTitle);

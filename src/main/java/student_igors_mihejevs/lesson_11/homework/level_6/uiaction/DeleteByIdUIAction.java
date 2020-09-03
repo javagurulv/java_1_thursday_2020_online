@@ -1,9 +1,6 @@
 package student_igors_mihejevs.lesson_11.homework.level_6.uiaction;
 
-import student_igors_mihejevs.lesson_11.homework.level_6.Book;
 import student_igors_mihejevs.lesson_11.homework.level_6.BookDatabase;
-
-import java.util.Optional;
 import java.util.Scanner;
 
 class DeleteByIdUIAction implements UIAction {
@@ -16,7 +13,7 @@ class DeleteByIdUIAction implements UIAction {
 
     public void execute() {
         Scanner myInput = new Scanner(System.in);
-        System.out.print("Enter book ID : ");
+        System.out.print("Enter book ID for deleting: ");
         Long id = myInput.nextLong();
         boolean bookDeleted = bookDatabase.delete(id);
 

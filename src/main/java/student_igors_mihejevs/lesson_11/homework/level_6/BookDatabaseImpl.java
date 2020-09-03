@@ -2,7 +2,7 @@ package student_igors_mihejevs.lesson_11.homework.level_6;
 
 import java.util.*;
 
-class BookDatabaseImpl implements BookDatabase {
+public class BookDatabaseImpl implements BookDatabase {
     private Long id = 1L;
     private final List<Book> booksList = new ArrayList<>();
 

@@ -15,6 +15,7 @@ class SaveBookUIAction implements UIAction {
 
     public void execute() {
         Scanner myInput = new Scanner(System.in);
+        System.out.print("Adding book to database : ");
         System.out.print("Enter book author : ");
         String bookAuthor = myInput.nextLine();
         System.out.print("Enter book title : ");
