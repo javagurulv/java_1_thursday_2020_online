@@ -1,6 +1,6 @@
-package student_aleksey_kodin.lesson15.level_6;
+package student_aleksey_kodin.lesson15.level_6.domain;
 
-class Movie {
+public class Movie {
 
     private final String title;
     private final MovieCategory priceCode;
