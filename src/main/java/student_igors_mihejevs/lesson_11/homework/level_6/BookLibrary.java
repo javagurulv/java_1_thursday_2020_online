@@ -1,6 +1,6 @@
-package student_igors_mihejevs.lesson_11.homework.level_6.uiaction;
+package student_igors_mihejevs.lesson_11.homework.level_6;
 
-import student_igors_mihejevs.lesson_11.homework.level_6.*;
+import student_igors_mihejevs.lesson_11.homework.level_6.uiaction.*;
 
 import java.util.HashMap;
 import java.util.Map;

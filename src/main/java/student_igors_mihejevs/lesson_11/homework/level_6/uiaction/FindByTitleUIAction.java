@@ -6,7 +6,7 @@ import student_igors_mihejevs.lesson_11.homework.level_6.BookDatabase;
 import java.util.List;
 import java.util.Scanner;
 
-class FindByTitleUIAction implements UIAction {
+public class FindByTitleUIAction implements UIAction {
 
     private final BookDatabase bookDatabase;
 

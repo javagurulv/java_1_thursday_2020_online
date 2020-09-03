@@ -3,7 +3,7 @@ package student_igors_mihejevs.lesson_11.homework.level_6.uiaction;
 import student_igors_mihejevs.lesson_11.homework.level_6.BookDatabase;
 import java.util.Scanner;
 
-class DeleteByIdUIAction implements UIAction {
+public class DeleteByIdUIAction implements UIAction {
 
     private final BookDatabase bookDatabase;
 
