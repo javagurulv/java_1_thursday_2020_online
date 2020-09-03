@@ -1,6 +1,6 @@
-package student_aleksey_kodin.lesson15.level_6;
+package student_aleksey_kodin.lesson15.level_6.domain;
 
-class Rental {
+public class Rental {
 
 	private final Movie movie;
 	private final int daysRented;

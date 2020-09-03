@@ -1,11 +1,11 @@
-package student_aleksey_kodin.lesson15.level_6;
+package student_aleksey_kodin.lesson15.level_6.domain;
 
 // This file is the original program.  It has been left here so you can compare it with the refactored version.
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Customer {
+public class Customer {
     private final String name;
     private double totalAmount = 0;
     private int frequentRenterPoints = 0;

@@ -1,16 +1,22 @@
 package student_aleksey_kodin.lesson15.level_6;
 
 import org.junit.Test;
+import student_aleksey_kodin.lesson15.level_6.domain.Customer;
+import student_aleksey_kodin.lesson15.level_6.domain.Movie;
+import student_aleksey_kodin.lesson15.level_6.domain.MovieCategory;
+import student_aleksey_kodin.lesson15.level_6.domain.Rental;
+import student_aleksey_kodin.lesson15.level_6.logic.Report;
 
 import static org.junit.Assert.*;
 
 public class RentCalculatorImplTest {
     Movie movie = new Movie("Movie", MovieCategory.REGULAR);
     Movie movie1 = new Movie("Movie1", MovieCategory.NEW_RELEASE);
-    Movie movie2 = new Movie("Movie1", MovieCategory.CHILDREN);
+    Movie movie2 = new Movie("Movie2", MovieCategory.CHILDREN);
     Rental rental1 = new Rental(movie, 1);
     Customer customer1 = new Customer("User1");
-    RentCalculatorImpl rentCalculator = new RentCalculatorImpl();
+    Report report = new Report();
+    RentCalculatorImpl rentCalculator = new RentCalculatorImpl(report);
 
     @Test
     public void oneRegularMovieLessTwoDays() {
@@ -165,6 +171,8 @@ public class RentCalculatorImplTest {
         customer1.addRental(rental2);
         customer1.addRental(rental3);
         Customer result = rentCalculator.calculate(customer1);
+
+        report.showReport();
 
         assertEquals(result.getTotalAmount(), 38.0, 0);
         assertEquals(result.getFrequentRenterPoints(), 4);
