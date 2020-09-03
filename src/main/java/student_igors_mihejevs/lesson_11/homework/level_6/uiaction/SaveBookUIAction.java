@@ -1,4 +1,7 @@
-package student_igors_mihejevs.lesson_11.homework.level_6;
+package student_igors_mihejevs.lesson_11.homework.level_6.uiaction;
+
+import student_igors_mihejevs.lesson_11.homework.level_6.Book;
+import student_igors_mihejevs.lesson_11.homework.level_6.BookDatabase;
 
 import java.util.Scanner;
 

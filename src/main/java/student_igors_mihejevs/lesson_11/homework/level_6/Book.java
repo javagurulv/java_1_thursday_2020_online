@@ -2,13 +2,13 @@ package student_igors_mihejevs.lesson_11.homework.level_6;
 
 import java.util.Objects;
 
-class Book {
+public class Book {
     private Long id;
     private final String title;
     private final String author;
     private final String yearOfIssue;
 
-    Book(String author, String title, String yearOfIssue) {
+    public Book(String author, String title, String yearOfIssue) {
         this.author = author;
         this.title = title;
         this.yearOfIssue = yearOfIssue;
