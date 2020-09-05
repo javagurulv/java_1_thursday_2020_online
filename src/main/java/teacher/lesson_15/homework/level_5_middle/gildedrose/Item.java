@@ -1,4 +1,4 @@
-package teacher.lesson_15.homework.level_5.gildedrose;
+package teacher.lesson_15.homework.level_5_middle.gildedrose;
 
 public class Item {
 

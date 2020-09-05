@@ -1,4 +1,4 @@
-package teacher.lesson_15.homework.level_6.videostore;
+package teacher.lesson_15.homework.level_6_middle.videostore;
 
 // This file is the original program.  It has been left here so you can compare it with the refactored version.
 import java.util.Vector;

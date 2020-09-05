@@ -1,4 +1,4 @@
-package teacher.lesson_15.homework.level_6.videostore;
+package teacher.lesson_15.homework.level_6_middle.videostore;
 
 class Rental {
 
