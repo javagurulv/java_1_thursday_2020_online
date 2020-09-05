@@ -6,10 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
+    public List<Rental> rentals = new ArrayList<>();
+
     private final String name;
     private double totalAmount = 0;
     private int frequentRenterPoints = 0;
-    public List<Rental> rentals = new ArrayList<>();
+
 
     public Customer(String name) {
         this.name = name;
