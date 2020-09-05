@@ -78,20 +78,20 @@ class TennisGame2 implements TennisGame {
 
     private String getAdvantage(String score, int P1point, int P2point) {
         if (P1point > P2point && P2point >= 3) {
-            return "Advantage" + player1Name;
+            return "Advantage " + player1Name;
         }
         if (P2point > P1point && P1point >= 3) {
-            return "Advantage" + player2Name;
+            return "Advantage " + player2Name;
         }
         return score;
     }
 
     private String getWin(String score, int P1point, int P2point) {
         if (P1point >= 4 && P2point >= 0 && (P1point - P2point) >= 2) {
-            score = "Win" + player1Name;
+            score = "Win for " + player1Name;
         }
         if (P2point >= 4 && P1point >= 0 && (P2point - P1point) >= 2) {
-            score = "Win" + player2Name;
+            score = "Win for " + player2Name;
         }
         return score;
     }
