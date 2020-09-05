@@ -1,47 +1,47 @@
 package student_aleksey_kodin.lesson15.level_4;
 
-class TennisGame1 implements TennisGame{
+class TennisGame1 implements TennisGame {
 
-    private int m_score1 = 0;
-    private int m_score2 = 0;
-    private String player1Name;
-    private String player2Name;
+    private int player1Points = 0;
+    private int player2Points = 0;
+    private final String player1Name;
+    private final String player2Name;
 
     public TennisGame1(String player1Name, String player2Name) {
         this.player1Name = player1Name;
         this.player2Name = player2Name;
     }
-   @Override
+
+    @Override
     public void wonPoint(String playerName) {
-        if (playerName.equals("player1"))
-            m_score1 += 1;
+        if (playerName.equals(player1Name))
+            player1Points += 1;
         else
-            m_score2 += 1;
+            player2Points += 1;
     }
 
     @Override
     public String score() {
         StringBuilder score = new StringBuilder();
         int tempScore;
-        if (m_score1 == m_score2) {
-            score = switch (m_score1) {
+        if (player1Points == player2Points) {
+            score = switch (player1Points) {
                 case 0 -> new StringBuilder("Love-All");
                 case 1 -> new StringBuilder("Fifteen-All");
                 case 2 -> new StringBuilder("Thirty-All");
                 default -> new StringBuilder("Deuce");
             };
-        } else if (m_score1 >= 4 || m_score2 >= 4) {
-            int minusResult = m_score1 - m_score2;
-            if (minusResult == 1) score = new StringBuilder("Advantage player1");
-            else if (minusResult == -1) score = new StringBuilder("Advantage player2");
-            else if (minusResult >= 2) score = new StringBuilder("Win for player1");
-            else score = new StringBuilder("Win for player2");
+        } else if (player1Points >= 4 || player2Points >= 4) {
+            int pointsDifference = player1Points - player2Points;
+            score = getAdvantagePlayer(pointsDifference);
+            score = getWinPlayer(pointsDifference, score);
         } else {
             for (int i = 1; i < 3; i++) {
-                if (i == 1) tempScore = m_score1;
-                else {
+                if (i == 1) {
+                    tempScore = player1Points;
+                } else {
                     score.append("-");
-                    tempScore = m_score2;
+                    tempScore = player2Points;
                 }
                 switch (tempScore) {
                     case 0 -> score.append("Love");
@@ -52,5 +52,25 @@ class TennisGame1 implements TennisGame{
             }
         }
         return score.toString();
+    }
+
+    private StringBuilder getAdvantagePlayer(int difference) {
+        if (difference == 1) {
+            return new StringBuilder("Advantage ").append(player1Name);
+        }
+        if (difference == -1) {
+            return new StringBuilder("Advantage ").append(player2Name);
+        }
+        return new StringBuilder();
+    }
+
+    private StringBuilder getWinPlayer(int difference, StringBuilder score) {
+        if (difference >= 2) {
+            return new StringBuilder("Win for ").append(player1Name);
+        }
+        if (difference <= -2) {
+            return new StringBuilder("Win for ").append(player2Name);
+        }
+        return score;
     }
 }
