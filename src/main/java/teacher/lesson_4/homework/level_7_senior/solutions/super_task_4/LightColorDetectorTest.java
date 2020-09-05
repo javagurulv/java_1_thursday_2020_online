@@ -1,4 +1,4 @@
-package teacher.lesson_4.homework.level_x.solutions.super_task_4;
+package teacher.lesson_4.homework.level_7_senior.solutions.super_task_4;
 
 public class LightColorDetectorTest {
 
