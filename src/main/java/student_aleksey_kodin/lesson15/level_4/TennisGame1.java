@@ -23,35 +23,41 @@ class TennisGame1 implements TennisGame {
     @Override
     public String score() {
         StringBuilder score = new StringBuilder();
-        int tempScore;
-        if (player1Points == player2Points) {
-            score = switch (player1Points) {
-                case 0 -> new StringBuilder("Love-All");
-                case 1 -> new StringBuilder("Fifteen-All");
-                case 2 -> new StringBuilder("Thirty-All");
-                default -> new StringBuilder("Deuce");
-            };
-        } else if (player1Points >= 4 || player2Points >= 4) {
+
+        if (isDeuce(player1Points, player2Points)) {
+            return getDeuceScore(player1Points).toString();
+        }
+        if (isMorePoints(player1Points, player2Points)) {
             int pointsDifference = player1Points - player2Points;
             score = getAdvantagePlayer(pointsDifference);
-            score = getWinPlayer(pointsDifference, score);
-        } else {
-            for (int i = 1; i < 3; i++) {
-                if (i == 1) {
-                    tempScore = player1Points;
-                } else {
-                    score.append("-");
-                    tempScore = player2Points;
-                }
-                switch (tempScore) {
-                    case 0 -> score.append("Love");
-                    case 1 -> score.append("Fifteen");
-                    case 2 -> score.append("Thirty");
-                    case 3 -> score.append("Forty");
-                }
+
+            if (isAdvantage(score)) {
+                return score.toString();
             }
+            return getWinPlayer(pointsDifference).toString();
         }
-        return score.toString();
+        return getScore(score).toString();
+    }
+
+    private Boolean isDeuce(int player1Points, int player2Points) {
+        return player1Points == player2Points;
+    }
+
+    private StringBuilder getDeuceScore(int player1Points) {
+        return switch (player1Points) {
+            case 0 -> new StringBuilder("Love-All");
+            case 1 -> new StringBuilder("Fifteen-All");
+            case 2 -> new StringBuilder("Thirty-All");
+            default -> new StringBuilder("Deuce");
+        };
+    }
+
+    private Boolean isAdvantage(StringBuilder score) {
+        return score.length() != 0;
+    }
+
+    private Boolean isMorePoints(int player1Points, int player2Points) {
+        return player1Points >= 4 || player2Points >= 4;
     }
 
     private StringBuilder getAdvantagePlayer(int difference) {
@@ -64,12 +70,32 @@ class TennisGame1 implements TennisGame {
         return new StringBuilder();
     }
 
-    private StringBuilder getWinPlayer(int difference, StringBuilder score) {
+    private StringBuilder getWinPlayer(int difference) {
         if (difference >= 2) {
             return new StringBuilder("Win for ").append(player1Name);
         }
         if (difference <= -2) {
             return new StringBuilder("Win for ").append(player2Name);
+        }
+        return new StringBuilder();
+    }
+
+    private StringBuilder getScore(StringBuilder score) {
+        int tempScore;
+
+        for (int i = 1; i < 3; i++) {
+            if (i == 1) {
+                tempScore = player1Points;
+            } else {
+                score.append("-");
+                tempScore = player2Points;
+            }
+            switch (tempScore) {
+                case 0 -> score.append("Love");
+                case 1 -> score.append("Fifteen");
+                case 2 -> score.append("Thirty");
+                case 3 -> score.append("Forty");
+            }
         }
         return score;
     }
