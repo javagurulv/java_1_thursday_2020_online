@@ -1,4 +1,4 @@
-package teacher.lesson_3.homework.level_x.solutions.super_task_1;
+package teacher.lesson_3.homework.level_7_senior.solutions.super_task_1;
 
 public class User {
 
