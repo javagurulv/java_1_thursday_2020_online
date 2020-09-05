@@ -1,9 +1,9 @@
-package teacher.lesson_6.homework.level_x.solutions.super_task_1.test;
+package teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.test;
 
 import java.math.BigDecimal;
 
-import teacher.lesson_6.homework.level_x.solutions.super_task_1.businesslogic.InsuranceRiskCoefficientDetector;
-import teacher.lesson_6.homework.level_x.solutions.super_task_1.domain.InsuranceRisk;
+import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.businesslogic.InsuranceRiskCoefficientDetector;
+import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.InsuranceRisk;
 
 public class InsuranceRiskCoefficientDetectorTest {
 

@@ -1,4 +1,4 @@
-package teacher.lesson_6.homework.level_x.solutions.super_task_1.domain;
+package teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain;
 
 import java.util.ArrayList;
 import java.util.List;

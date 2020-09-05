@@ -1,12 +1,12 @@
-package teacher.lesson_6.homework.level_x.solutions.super_task_1.businesslogic;
+package teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.businesslogic;
 
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 
-import teacher.lesson_6.homework.level_x.solutions.super_task_1.domain.InsuranceObject;
-import teacher.lesson_6.homework.level_x.solutions.super_task_1.domain.InsuranceRisk;
-import teacher.lesson_6.homework.level_x.solutions.super_task_1.domain.SubInsuranceObject;
+import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.InsuranceObject;
+import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.InsuranceRisk;
+import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.SubInsuranceObject;
 
 public class InsuranceObjectPremiumCalculator {
 
