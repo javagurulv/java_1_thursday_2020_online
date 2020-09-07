@@ -2,10 +2,12 @@ package student_aleksey_kodin.lesson15.level_6;
 
 import student_aleksey_kodin.lesson15.level_6.domain.Customer;
 import student_aleksey_kodin.lesson15.level_6.logic.*;
+import teacher.codereview.CodeReview;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@CodeReview(approved = true)
 class RentCalculatorImpl implements RentCalculator {
     private final Report report;
 

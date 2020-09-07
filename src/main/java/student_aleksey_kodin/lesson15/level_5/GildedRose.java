@@ -2,6 +2,11 @@ package student_aleksey_kodin.lesson15.level_5;
 
 import java.util.List;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = false)
+@CodeReviewComment(teacher = "Надо больше поработать над кодом, рефакторинг явно не доведён до конца.")
 class GildedRose {
 
     public void updateQuality(List<Item> items) {

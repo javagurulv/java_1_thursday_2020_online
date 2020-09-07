@@ -6,9 +6,11 @@ import student_aleksey_kodin.lesson15.level_6.domain.Movie;
 import student_aleksey_kodin.lesson15.level_6.domain.MovieCategory;
 import student_aleksey_kodin.lesson15.level_6.domain.Rental;
 import student_aleksey_kodin.lesson15.level_6.logic.Report;
+import teacher.codereview.CodeReview;
 
 import static org.junit.Assert.*;
 
+@CodeReview(approved = true)
 public class RentCalculatorImplTest {
     Movie movie = new Movie("Movie", MovieCategory.REGULAR);
     Movie movie1 = new Movie("Movie1", MovieCategory.NEW_RELEASE);

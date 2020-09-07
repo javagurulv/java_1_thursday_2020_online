@@ -2,9 +2,11 @@ package student_aleksey_kodin.lesson15.level_6.logic;
 
 import student_aleksey_kodin.lesson15.level_6.domain.Customer;
 import student_aleksey_kodin.lesson15.level_6.domain.MovieCategory;
+import teacher.codereview.CodeReview;
 
 import java.util.concurrent.atomic.AtomicReference;
 
+@CodeReview(approved = true)
 public class ChildrenCategory implements CalculateCategories {
     @Override
     public double calculateCategory(Customer customer, Report report) {

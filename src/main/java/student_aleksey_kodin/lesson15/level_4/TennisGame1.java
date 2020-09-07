@@ -1,5 +1,8 @@
 package student_aleksey_kodin.lesson15.level_4;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class TennisGame1 implements TennisGame {
 
     private int player1Points = 0;

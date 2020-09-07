@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class TennisGameImplTest {
     TennisGameImpl tennisGame = new TennisGameImpl();
     Player player1 = new Player("player1");

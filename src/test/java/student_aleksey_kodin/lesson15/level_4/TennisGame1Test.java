@@ -8,6 +8,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class TennisGame1Test {
 
 

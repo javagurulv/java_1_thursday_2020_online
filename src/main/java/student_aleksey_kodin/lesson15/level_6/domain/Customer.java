@@ -5,6 +5,9 @@ package student_aleksey_kodin.lesson15.level_6.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class Customer {
     public List<Rental> rentals = new ArrayList<>();
 

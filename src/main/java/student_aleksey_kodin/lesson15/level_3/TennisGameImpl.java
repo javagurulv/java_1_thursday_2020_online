@@ -1,5 +1,8 @@
 package student_aleksey_kodin.lesson15.level_3;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class TennisGameImpl implements TennisGame {
     @Override
     public void wonPoint(Player player) {
