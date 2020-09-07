@@ -2,6 +2,9 @@ package student_igors_mihejevs.lesson_11.homework.level_4;
 
 import java.util.*;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class BookDatabaseImpl implements BookDatabase {
     private Long id = 1L;
     private final List<Book> booksList = new ArrayList<>();

@@ -3,6 +3,9 @@ package student_igors_mihejevs.lesson_11.homework.level_1.task_1;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class ListImpl {
 
     /* ArrayList

@@ -1,11 +1,13 @@
 package student_igors_mihejevs.lesson_11.homework.level_6;
 
 import student_igors_mihejevs.lesson_11.homework.level_6.uiaction.*;
+import teacher.codereview.CodeReview;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+@CodeReview(approved = true)
 class BookLibrary {
 
     private final Map<Integer, UIAction> menuNumberToActionMap;

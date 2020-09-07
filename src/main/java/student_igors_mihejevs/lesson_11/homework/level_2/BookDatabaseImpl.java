@@ -4,8 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 class BookDatabaseImpl implements BookDatabase {
-    Long id = Long.parseLong("1");
+    @CodeReviewComment(teacher = "Must be private field!")
+	Long id = Long.parseLong("1");
+
+	@CodeReviewComment(teacher = "Must be private field!")
     List<Book> booksList = new ArrayList<>();
 
     @Override

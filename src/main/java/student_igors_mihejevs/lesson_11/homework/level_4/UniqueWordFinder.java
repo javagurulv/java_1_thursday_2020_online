@@ -4,6 +4,9 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class UniqueWordFinder {
 
     Set<String> find(String text) {

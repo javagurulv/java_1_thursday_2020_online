@@ -4,9 +4,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 public class AndSearchCriteriaTest {
 
     @Test
+	@CodeReviewComment(teacher = "Write separate test for true and false cases.")
     public void shouldReturnTrueIfBookIsCorrectlyFoundByAndSearchCriteria() {
         SearchCriteria authorSearchCriteria = new AuthorSearchCriteria("Joshua Bloch");
         SearchCriteria titleSearchCriteria = new TitleSearchCriteria("Effective Java");

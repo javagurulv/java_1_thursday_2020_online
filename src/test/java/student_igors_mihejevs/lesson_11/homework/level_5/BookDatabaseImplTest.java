@@ -6,6 +6,9 @@ import java.util.*;
 
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class BookDatabaseImplTest {
 
     @Test

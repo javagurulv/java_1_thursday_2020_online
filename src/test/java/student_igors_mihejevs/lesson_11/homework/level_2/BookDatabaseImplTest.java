@@ -5,11 +5,16 @@ import java.util.List;
 import java.util.Optional;
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnCorrectIdAndAddBookToDatabase() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        @CodeReviewComment(teacher = "BookDatabase bookDatabase = new BookDatabaseImpl();")
+    	BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         Long id1 = Long.parseLong("2");
         Long id2 = Long.parseLong("3");
         assertEquals(id1, bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java")));

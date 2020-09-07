@@ -3,6 +3,9 @@ package student_igors_mihejevs.lesson_11.homework.level_3;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class AuthorSearchCriteriaTest {
 
     @Test

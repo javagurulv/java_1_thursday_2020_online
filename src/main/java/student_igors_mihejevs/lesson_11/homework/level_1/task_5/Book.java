@@ -2,6 +2,9 @@ package student_igors_mihejevs.lesson_11.homework.level_1.task_5;
 
 import java.util.Objects;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Book {
     private final String title;
     private final String author;

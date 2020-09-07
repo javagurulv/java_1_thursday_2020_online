@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class BookDatabaseImpl implements BookDatabase {
     Long id = Long.parseLong("1");
     List<Book> booksList = new ArrayList<>();

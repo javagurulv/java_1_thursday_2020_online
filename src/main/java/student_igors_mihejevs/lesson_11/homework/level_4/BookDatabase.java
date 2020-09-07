@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public interface BookDatabase {
 
     Long save(Book book);

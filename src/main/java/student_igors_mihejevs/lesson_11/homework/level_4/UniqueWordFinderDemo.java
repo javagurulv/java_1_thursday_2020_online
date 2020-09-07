@@ -2,6 +2,9 @@ package student_igors_mihejevs.lesson_11.homework.level_4;
 
 import java.util.Set;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class UniqueWordFinderDemo {
 
     public static void main(String[] args) {

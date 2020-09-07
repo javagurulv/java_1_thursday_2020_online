@@ -7,6 +7,9 @@ import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class UniqueWordFinderTest {
 
     @Test

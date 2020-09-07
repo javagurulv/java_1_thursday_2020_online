@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Optional;
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class BookDatabaseImplTest {
 
     @Test

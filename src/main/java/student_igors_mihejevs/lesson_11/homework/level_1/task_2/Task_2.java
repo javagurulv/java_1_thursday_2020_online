@@ -3,6 +3,9 @@ package student_igors_mihejevs.lesson_11.homework.level_1.task_2;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Task_2 {
 
     /*

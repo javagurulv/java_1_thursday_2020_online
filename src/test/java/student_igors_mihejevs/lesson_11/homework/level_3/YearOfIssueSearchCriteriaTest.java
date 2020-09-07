@@ -4,9 +4,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 public class YearOfIssueSearchCriteriaTest {
 
     @Test
+	@CodeReviewComment(teacher = "Write separate test for true and false cases.")
     public void shouldReturnTrueIfBookByYearOfIssueIsCorrectlyFound() {
         YearOfIssueSearchCriteria yearOfIssueSearchCriteria = new YearOfIssueSearchCriteria("2001");
         Book book1 = new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003");
