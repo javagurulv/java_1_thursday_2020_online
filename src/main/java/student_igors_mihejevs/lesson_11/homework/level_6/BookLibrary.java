@@ -15,17 +15,26 @@ class BookLibrary {
 
         menuNumberToActionMap = new HashMap<>();
         menuNumberToActionMap.put(1, new SaveBookUIAction(bookDatabase));
-        menuNumberToActionMap.put(2, new FindByIdUIAction(bookDatabase));
-        menuNumberToActionMap.put(3, new FindByAuthorUIAction(bookDatabase));
-        menuNumberToActionMap.put(4, new FindByTitleUIAction(bookDatabase));
-        menuNumberToActionMap.put(5, new DeleteByIdUIAction(bookDatabase));
+        menuNumberToActionMap.put(2, new DeleteByIdUIAction(bookDatabase));
+        menuNumberToActionMap.put(3, new DeleteBokUIAction(bookDatabase));
+        menuNumberToActionMap.put(4, new DeleteByAuthorUIAction(bookDatabase));
+        menuNumberToActionMap.put(5, new DeleteByTitleUIAction(bookDatabase));
+        menuNumberToActionMap.put(6, new FindByIdUIAction(bookDatabase));
+        menuNumberToActionMap.put(7, new FindByAuthorUIAction(bookDatabase));
+        menuNumberToActionMap.put(8, new FindByTitleUIAction(bookDatabase));
+        menuNumberToActionMap.put(9, new FindUniqueAuthorsUIAction(bookDatabase));
+        menuNumberToActionMap.put(10, new FindUniqueTitlesUIAction(bookDatabase));
+        menuNumberToActionMap.put(11, new FindUniqueBooksUIAction(bookDatabase));
+        menuNumberToActionMap.put(12, new CountAllBooksUIAction(bookDatabase));
+
+
     }
 
     public void run() {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Please enter menu number: ");
+            System.out.print("Please enter menu number: ");
             int userSelectedMenuNumber = Integer.parseInt(sc.nextLine());
             if (userSelectedMenuNumber == 0) {
                 System.out.println("Thank you! Good by!");

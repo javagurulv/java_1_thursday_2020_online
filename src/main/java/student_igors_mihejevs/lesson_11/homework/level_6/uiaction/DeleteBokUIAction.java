@@ -5,17 +5,17 @@ import student_igors_mihejevs.lesson_11.homework.level_6.BookDatabase;
 
 import java.util.Scanner;
 
-public class SaveBookUIAction implements UIAction {
+public class DeleteBokUIAction implements UIAction {
 
     private final BookDatabase bookDatabase;
 
-    public SaveBookUIAction(BookDatabase bookDatabase) {
+    public DeleteBokUIAction(BookDatabase bookDatabase) {
         this.bookDatabase = bookDatabase;
     }
 
     public void execute() {
         Scanner myInput = new Scanner(System.in);
-        System.out.println("Adding book to database : ");
+        System.out.println("Deleting book by author and title : ");
         System.out.print("Enter book author : ");
         String bookAuthor = myInput.nextLine();
         System.out.print("Enter book title : ");
@@ -23,7 +23,7 @@ public class SaveBookUIAction implements UIAction {
         System.out.print("Enter the year of issue : ");
         String bookYearOfIssue = myInput.nextLine();
 
-        bookDatabase.save(new Book(bookAuthor, bookTitle, bookYearOfIssue));
+        bookDatabase.delete(new Book(bookAuthor, bookTitle, bookYearOfIssue));
     }
 
 }
