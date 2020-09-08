@@ -6,10 +6,10 @@ import teacher.codereview.CodeReviewComment;
 @CodeReview(approved = false)
 @CodeReviewComment(teacher = "For enum values please use UPPER case letters: LOVE, DEUCE, ...")
 enum Points {
-    Love,
-    Fifteen,
-    Thirty,
-    Forty,
-    Deuce,
-    Advantage
+    LOVE,
+    FIFTEEN,
+    THIRTY,
+    FORTY,
+    DEUCE,
+    ADVANTAGE
 }

@@ -23,10 +23,10 @@ class TennisGameImpl implements TennisGame {
             return "Win - " + winPlayer.getPlayerName();
         }
         if (isDeuce(player1, player2)) {
-            return Points.Deuce.toString();
+            return Points.DEUCE.toString();
         }
         if (advantagePlayer != null) {
-            return Points.Advantage.toString() + " - " + advantagePlayer.getPlayerName();
+            return Points.ADVANTAGE.toString() + " - " + advantagePlayer.getPlayerName();
         }
 
         return returnPlayerPoint(player1) + " - " + returnPlayerPoint(player2);
@@ -34,10 +34,10 @@ class TennisGameImpl implements TennisGame {
 
     private String returnPlayerPoint(Player player) {
         return switch (player.getPlayerPoint()) {
-            case 1 -> Points.Fifteen.toString();
-            case 2 -> Points.Thirty.toString();
-            case 3 -> Points.Forty.toString();
-            default -> Points.Love.toString();
+            case 1 -> Points.FIFTEEN.toString();
+            case 2 -> Points.THIRTY.toString();
+            case 3 -> Points.FORTY.toString();
+            default -> Points.LOVE.toString();
         };
     }
 
