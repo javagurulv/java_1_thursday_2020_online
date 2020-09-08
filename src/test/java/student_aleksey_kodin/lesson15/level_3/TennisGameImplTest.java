@@ -15,14 +15,14 @@ public class TennisGameImplTest {
     @Test
     public void noPoints() {
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Love - Love");
+        assertEquals(result, "LOVE - LOVE");
     }
 
     @Test
     public void player1_OnePoint() {
         tennisGame.wonPoint(player1);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Fifteen - Love");
+        assertEquals(result, "FIFTEEN - LOVE");
     }
 
     @Test
@@ -30,7 +30,7 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Thirty - Love");
+        assertEquals(result, "THIRTY - LOVE");
     }
 
     @Test
@@ -39,7 +39,7 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Forty - Love");
+        assertEquals(result, "FORTY - LOVE");
     }
 
     @Test
@@ -56,7 +56,7 @@ public class TennisGameImplTest {
     public void player2_OnePoint() {
         tennisGame.wonPoint(player2);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Love - Fifteen");
+        assertEquals(result, "LOVE - FIFTEEN");
     }
 
     @Test
@@ -64,7 +64,7 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player2);
         tennisGame.wonPoint(player2);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Love - Thirty");
+        assertEquals(result, "LOVE - THIRTY");
     }
 
     @Test
@@ -73,7 +73,7 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player2);
         tennisGame.wonPoint(player2);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Love - Forty");
+        assertEquals(result, "LOVE - FORTY");
     }
 
     @Test
@@ -91,7 +91,7 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player2);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Fifteen - Fifteen");
+        assertEquals(result, "FIFTEEN - FIFTEEN");
     }
 
     @Test
@@ -101,7 +101,7 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player2);
         tennisGame.wonPoint(player2);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Thirty - Thirty");
+        assertEquals(result, "THIRTY - THIRTY");
     }
 
     @Test
@@ -113,11 +113,11 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player2);
         tennisGame.wonPoint(player2);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Deuce");
+        assertEquals(result, "DEUCE");
     }
 
     @Test
-    public void player1_Advantage() {
+    public void player1_ADVANTAGE() {
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
@@ -126,11 +126,11 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player2);
         tennisGame.wonPoint(player2);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Advantage - player1");
+        assertEquals(result, "ADVANTAGE - player1");
     }
 
     @Test
-    public void player2_Advantage() {
+    public void player2_ADVANTAGE() {
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
@@ -139,11 +139,11 @@ public class TennisGameImplTest {
         tennisGame.wonPoint(player2);
         tennisGame.wonPoint(player2);
         String result = tennisGame.score(player1, player2);
-        assertEquals(result, "Advantage - player2");
+        assertEquals(result, "ADVANTAGE - player2");
     }
 
     @Test
-    public void player1_winAfterAdvantage() {
+    public void player1_winAfterADVANTAGE() {
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
@@ -157,7 +157,7 @@ public class TennisGameImplTest {
     }
 
     @Test
-    public void player2_winAfterAdvantage() {
+    public void player2_winAfterADVANTAGE() {
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
         tennisGame.wonPoint(player1);
