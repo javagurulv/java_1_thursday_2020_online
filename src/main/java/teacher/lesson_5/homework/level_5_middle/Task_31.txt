@@ -5,7 +5,7 @@
 class ArrayUtil {
 
     public int[] createArray(int arrayLength) {
-        // Write implementation here !!!
+        // Напишите реализацию тут !!!
     }
 
 }
