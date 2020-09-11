@@ -1,10 +1,20 @@
-Создайте в классе ArrayUtil метод для
-нахождения максимального числа в массиве целых чисел.
+В классе ArrayUtilTest напишите автоматический тест
+для метода int findMaxNumber(int[] array)
+из предыдущего задания.
 
-class ArrayUtil {
+class ArrayUtilTest {
 
-    public int findMaxNumber(int[] array) {
-        // Write implementation here !!!
+    public static void main(String[] args) {
+        ArrayUtilTest test = new ArrayUtilTest();
+        test.shouldCreateArray();
+        test.shouldFindMaxNumber();
     }
 
+    public void shouldCreateArray() {
+        // Напишите реализацию !!!
+    }
+
+    public void shouldFindMaxNumber() {
+        // Напишите реализацию !!!
+    }
 }

@@ -1,10 +1,10 @@
 Создайте в классе ArrayUtil метод для
-распечатки массива целых чисел на консоль.
+нахождения максимального числа в массиве целых чисел.
 
 class ArrayUtil {
 
-    public void printArrayToConsole(int[] array) {
-        // Write implementation here !!!
+    public int findMaxNumber(int[] array) {
+        // Напишите реализацию !!!
     }
 
 }

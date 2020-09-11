@@ -1,10 +1,25 @@
-Создайте в классе ArrayUtil метод для
-нахождения минимального числа в массиве целых чисел.
+В классе ArrayUtilTest напишите автоматический тест
+для метода int findMinNumber(int[] array)
+из предыдущего задания.
 
-class ArrayUtil {
+class ArrayUtilTest {
 
-    public int findMinNumber(int[] array) {
-        // Write implementation here !!!
+    public static void main(String[] args) {
+        ArrayUtilTest test = new ArrayUtilTest();
+        test.shouldCreateArray();
+        test.shouldFindMaxNumber();
+        test.shouldFindMinNumber();
     }
 
+    public void shouldCreateArray() {
+        // Напишите реализацию !!!
+    }
+
+    public void shouldFindMaxNumber() {
+        // Напишите реализацию !!!
+    }
+
+    public void shouldFindMinNumber() {
+        // Напишите реализацию !!!
+    }
 }

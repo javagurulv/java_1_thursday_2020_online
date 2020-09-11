@@ -1,9 +1,9 @@
 Создайте в классе ArrayUtil метод для
-нахождения минимального числа в массиве целых чисел.
+распечатки массива целых чисел на консоль.
 
 class ArrayUtil {
 
-    public int findMinNumber(int[] array) {
+    public void printArrayToConsole(int[] array) {
         // Напишите реализацию !!!
     }
 
