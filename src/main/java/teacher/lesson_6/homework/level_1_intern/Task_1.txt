@@ -1,16 +1,13 @@
-Упростите метод boolean isEven(int number).
-Код внутри этого метода может быть записан в одну строку.
-Перед изменением кода убедитесь, что у вас есть автоматические тесты для проверки этого кода.
-Если автоматических тестов нет то напишите их, убедитесь, что они проходят и только тогда меняйте код.
+Найдите ошибку в программе и исправить её:
 
-class Calculator {
+class WhileDefinition1 {
 
-    public boolean isEven(int number) {
-         if(number % 2 == 0) {
-             return true;
-         } else {
-             return false;
-         }
+    public static void main(String[] args) {
+        int i = 1;
+        while i <= 100) {
+            System.out.println(i);
+            i++;
+        }
     }
 
 }

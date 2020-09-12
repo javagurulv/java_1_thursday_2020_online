@@ -1,22 +1,13 @@
-Разберитесь, что делает класс указанный ниже.
-Это реализация одного из супер тасков предыдущего урока.
-Создайте класс FizzBuzzTest и напишите автоматические тесты
-на все сценарии. Упростите FizzBuzz класс!
-Убедитесь, что после упрощения все автоматические тесты проходят.
+Найдите ошибку в программе и исправить её:
 
-Подсказка: а нужно ли свойство класса initialNumber?
-Или метод detect можно реализовать без него?
+class WhileDefinition3 {
 
-class FizzBuzz {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i <= 100) {
+            System.out.println(i);
+            i++;
 
-    private int initialNumber;
-
-    public String detect(int number) {
-        this.initialNumber = number;
-        if ((initialNumber % 3 == 0) && (initialNumber % 5 == 0)) return "FizzBuzz";
-        else if (initialNumber % 3 == 0) return "Fizz";
-        else if (initialNumber % 5 == 0) return "Buzz";
-        else return "" + initialNumber; // Integer.toString(initialNumber);
     }
 
 }
