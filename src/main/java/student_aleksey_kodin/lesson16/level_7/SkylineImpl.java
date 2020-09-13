@@ -8,7 +8,7 @@ class SkylineImpl implements SkyLine {
     @Override
     public List<Integer> checkSkyline(List<Rectangle> entryRectangles) {
 
-        sortRectangleCoordinateX(entryRectangles);
+        sortRectangleUseCoordinateX(entryRectangles);
 
         List<Integer> arrayOfHeights = createCoordinateLine(entryRectangles);
 
@@ -30,7 +30,7 @@ class SkylineImpl implements SkyLine {
         return skyLineCoordinatesResult.toString();
     }
 
-    private void sortRectangleCoordinateX(List<Rectangle> entryRectangles) {
+    private void sortRectangleUseCoordinateX(List<Rectangle> entryRectangles) {
         entryRectangles.sort(Comparator.comparingInt(Rectangle::getStartCoordinateX));
     }
 
@@ -66,6 +66,7 @@ class SkylineImpl implements SkyLine {
                 skyLineCoordinates.add(currentLevel);
 
                 previousLevel = arrayOfHeights.get(i);
+                continue;
             }
             if (currentLevel != previousLevel) {
                 skyLineCoordinates.add(i);
