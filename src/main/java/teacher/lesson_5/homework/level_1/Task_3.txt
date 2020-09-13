@@ -1,9 +1,0 @@
-Найдите ошибку в программе и исправить её:
-
-class ArrayDefinition3 {
-
-    public static void main(String[] args) {
-        boolean numbers = new int[10];
-    }
-
-}

@@ -1,5 +1,8 @@
 package student_igors_mihejevs.lesson_10.homework.level_2.task_5;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorArrayVersion implements DayOfTheWeekDetector {
 
     String[] dayNames = {"Please input a valid number between 1 and 7", "Monday", "Tuesday",

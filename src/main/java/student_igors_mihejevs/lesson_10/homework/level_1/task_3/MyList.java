@@ -1,5 +1,8 @@
 package student_igors_mihejevs.lesson_10.homework.level_1.task_3;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 interface MyList {
 
     int[] createList(); // создать список

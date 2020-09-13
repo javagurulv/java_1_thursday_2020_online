@@ -1,0 +1,8 @@
+Что такое абстрактный класс?
+Можно ли создать экземпляр абстрактного класса
+в момент выполнения программы?
+
+Abstract class: is a restricted class that cannot be used to create objects
+(to access it, it must be inherited from another class).
+You can also define fields and methods in an abstract class,
+while at the same time, you cannot create an object or an instance of an abstract class.

@@ -4,10 +4,12 @@ class BankAccount {
 
     private String owner;
     private Transaction[] transactions;
+    private int creditLimit;
 
-    public BankAccount(String owner, Transaction[] transactions) {
+    public BankAccount(String owner, Transaction[] transactions, int creditLimit) {
         this.owner = owner;
         this.transactions = transactions;
+        this.creditLimit = creditLimit;
     }
 
     public String getOwner() {
@@ -18,4 +20,7 @@ class BankAccount {
         return transactions;
     }
 
+    public int getCreditLimit() {
+        return creditLimit;
+    }
 }

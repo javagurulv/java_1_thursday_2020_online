@@ -6,6 +6,9 @@ package student_igors_mihejevs.lesson_10.homework.level_3.task_6;
 таким образом функциональный интерфейс может содержать так же default и static методы.
 */
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 @FunctionalInterface
 public interface FunctionalInterfaceDemo {
 
