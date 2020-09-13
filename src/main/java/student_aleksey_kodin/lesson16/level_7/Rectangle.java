@@ -15,7 +15,7 @@ class Rectangle {
         return startCoordinateX;
     }
 
-    public int getFinishCoordinate() {
+    public int getFinishCoordinateX() {
         return startCoordinateX + width;
     }
 

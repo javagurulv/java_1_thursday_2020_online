@@ -37,15 +37,14 @@ class SkylineImpl implements SkyLine {
     private List<Integer> createCoordinateLine(List<Rectangle> entry) {
         final int FREE_PLACE_AFTER_LAST_RECTANGLE = 1;
 
-        int lineLength = entry.stream().map(Rectangle::getFinishCoordinate).max(Integer::compareTo).orElse(0);
+        int lineLength = entry.stream().map(Rectangle::getFinishCoordinateX).max(Integer::compareTo).orElse(0);
 
         return new ArrayList<>(Collections.nCopies(lineLength + FREE_PLACE_AFTER_LAST_RECTANGLE, 0));
     }
 
     private void createHeightMap(List<Rectangle> entryRectangles, List<Integer> arrayOfHeights) {
         for (Rectangle rectangle : entryRectangles) {
-
-            for (int i = rectangle.getStartCoordinateX(); i < rectangle.getFinishCoordinate(); i++) {
+            for (int i = rectangle.getStartCoordinateX(); i < rectangle.getFinishCoordinateX(); i++) {
                 if (rectangle.height > arrayOfHeights.get(i)) {
                     arrayOfHeights.set(i, rectangle.height);
                 }
