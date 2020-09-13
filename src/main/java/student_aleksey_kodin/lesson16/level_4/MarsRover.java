@@ -5,37 +5,62 @@ class MarsRover {
         if (!instructions.isEmpty()) {
             char instruction = instructions.charAt(0);
             if (instruction == 'L') {
+                return move(x, y, getDirectionLeft(direction), getNextInstructions(instructions));
+            }
+            if (instruction == 'R') {
+                return move(x, y, getDirectionRight(direction), getNextInstructions(instructions));
+            }
+            if (instruction == 'M') {
+                int newCoordinateX = 0;
+                int newCoordinateY = 0;
+                char newDirection = ' ';
                 if (direction == 'N') {
-                    return move(x, y, 'W', instructions.substring(1));
-                } else if (direction == 'W') {
-                    return move(x, y, 'S', instructions.substring(1));
-                } else if (direction == 'S') {
-                    return move(x, y, 'E', instructions.substring(1));
-                } else if (direction == 'E') {
-                    return move(x, y, 'N', instructions.substring(1));
+                    newCoordinateX = x;
+                    newCoordinateY = y + 1;
+                    newDirection = 'N';
                 }
-            } else if (instruction == 'R') {
-                if (direction == 'N') {
-                    return move(x, y, 'E', instructions.substring(1));
-                } else if (direction == 'W') {
-                    return move(x, y, 'N', instructions.substring(1));
-                } else if (direction == 'S') {
-                    return move(x, y, 'W', instructions.substring(1));
-                } else if (direction == 'E') {
-                    return move(x, y, 'S', instructions.substring(1));
+                if (direction == 'S') {
+                    newCoordinateX = x;
+                    newCoordinateY = y - 1;
+                    newDirection = 'S';
                 }
-            } else if (instruction == 'M') {
-                if (direction == 'N') {
-                    return move(x, y + 1, 'N', instructions.substring(1));
-                } else if (direction == 'S') {
-                    return move(x, y - 1, 'S', instructions.substring(1));
-                } else if (direction == 'W') {
-                    return move(x - 1, y, 'W', instructions.substring(1));
-                } else if (direction == 'E') {
-                    return move(x + 1, y, 'E', instructions.substring(1));
+                if (direction == 'W') {
+                    newCoordinateX = x - 1;
+                    newCoordinateY = y;
+                    newDirection = 'W';
                 }
+                if (direction == 'E') {
+                    newCoordinateX = x + 1;
+                    newCoordinateY = y;
+                    newDirection = 'E';
+                }
+                return move(newCoordinateX, newCoordinateY, newDirection, getNextInstructions(instructions));
             }
         }
         return x + " " + y + " " + direction;
+    }
+
+    private static char getDirectionLeft(char direction) {
+        return switch (direction) {
+            case 'N' -> 'W';
+            case 'W' -> 'S';
+            case 'S' -> 'E';
+            case 'E' -> 'N';
+            default -> throw new IllegalStateException("Unexpected value: " + direction);
+        };
+    }
+
+    private static char getDirectionRight(char direction) {
+        return switch (direction) {
+            case 'N' -> 'E';
+            case 'E' -> 'S';
+            case 'S' -> 'W';
+            case 'W' -> 'N';
+            default -> throw new IllegalStateException("Unexpected value: " + direction);
+        };
+    }
+
+    private static String getNextInstructions(String instructions) {
+        return instructions.substring(1);
     }
 }
