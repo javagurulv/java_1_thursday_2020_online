@@ -63,20 +63,10 @@ public class RoverMoveImpl implements RoverMove {
     }
 
     private Boolean isAreaFreeForMoveCoordinateX(int roverNewCoordinate) {
-        for (Rover rover : plateau.getAllRovers()) {
-            if (rover.getCoordinateX() == roverNewCoordinate) {
-                return false;
-            }
-        }
-        return true;
+        return plateau.getAllRovers().stream().map(Rover::getCoordinateX).noneMatch(r -> r == roverNewCoordinate);
     }
 
     private Boolean isAreaFreeForMoveCoordinateY(int roverNewCoordinate) {
-        for (Rover rover : plateau.getAllRovers()) {
-            if (rover.getCoordinateY() == roverNewCoordinate) {
-                return false;
-            }
-        }
-        return true;
+        return plateau.getAllRovers().stream().map(Rover::getCoordinateY).noneMatch(r -> r == roverNewCoordinate);
     }
 }
