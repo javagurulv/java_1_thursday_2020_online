@@ -1,6 +1,6 @@
 Является ли следующий интерфейс функциональным?
 
-interface Database {
+interface ProductDatabase {
 
     void save(Product product);
 

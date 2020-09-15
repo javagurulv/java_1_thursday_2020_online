@@ -1,10 +1,10 @@
 В предыдущем задании вы познакомились с классом Optional и узнали для чего он применяется.
 
-Примените Optional для возвращаемого значения метода findByTitle() интерфейса Database.
+Примените Optional для возвращаемого значения метода findByTitle() интерфейса ProductDatabase.
 Сделайте в коде интерфейса необходимые изменения, а так же реализуйте
 новую версию этого интерфейса и протестируйте её.
 
-interface Database {
+interface ProductDatabase {
 
     void save(Product product);
 
