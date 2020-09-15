@@ -1,16 +1,16 @@
-package teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.test;
+package teacher.lesson_x.insurance_policy.solutions.super_task_1.test;
 
-import static teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.test.InsuranceObjectBuilder.createInsuranceObject;
-import static teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.test.PolicyBuilder.createPolicy;
-import static teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.test.SubInsuranceObjectBuilder.createSubInsuranceObject;
+import static teacher.lesson_x.insurance_policy.solutions.super_task_1.test.InsuranceObjectBuilder.createInsuranceObject;
+import static teacher.lesson_x.insurance_policy.solutions.super_task_1.test.PolicyBuilder.createPolicy;
+import static teacher.lesson_x.insurance_policy.solutions.super_task_1.test.SubInsuranceObjectBuilder.createSubInsuranceObject;
 
 import java.math.BigDecimal;
 
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.businesslogic.InsuranceObjectPremiumCalculator;
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.businesslogic.InsurancePolicyPremiumCalculator;
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.businesslogic.InsuranceRiskCoefficientDetector;
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.InsuranceRisk;
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.Policy;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.businesslogic.InsuranceObjectPremiumCalculator;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.businesslogic.InsurancePolicyPremiumCalculator;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.businesslogic.InsuranceRiskCoefficientDetector;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.domain.InsuranceRisk;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.domain.Policy;
 
 public class InsurancePolicyPremiumCalculatorTest {
 

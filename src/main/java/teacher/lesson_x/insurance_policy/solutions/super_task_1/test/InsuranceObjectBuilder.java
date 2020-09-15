@@ -1,10 +1,10 @@
-package teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.test;
+package teacher.lesson_x.insurance_policy.solutions.super_task_1.test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.InsuranceObject;
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.SubInsuranceObject;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.domain.InsuranceObject;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.domain.SubInsuranceObject;
 
 public class InsuranceObjectBuilder {
 

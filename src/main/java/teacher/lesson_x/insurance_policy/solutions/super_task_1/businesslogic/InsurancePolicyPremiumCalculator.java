@@ -1,9 +1,9 @@
-package teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.businesslogic;
+package teacher.lesson_x.insurance_policy.solutions.super_task_1.businesslogic;
 
 import java.math.BigDecimal;
 
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.InsuranceObject;
-import teacher.lesson_6.homework.level_7_senior.solutions.super_task_1.domain.Policy;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.domain.InsuranceObject;
+import teacher.lesson_x.insurance_policy.solutions.super_task_1.domain.Policy;
 
 public class InsurancePolicyPremiumCalculator {
 

@@ -1,3 +1,5 @@
+Пошагово создаём игру крестики нолики.
+
 Создайте в классе TicTacToe метод:
 
 public void printFieldToConsole(int[][] field) {
