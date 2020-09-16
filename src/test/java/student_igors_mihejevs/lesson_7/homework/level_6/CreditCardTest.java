@@ -6,6 +6,9 @@ import java.math.BigDecimal;
 
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class CreditCardTest {
 
     @Test

@@ -1,5 +1,8 @@
 package student_aleksey_kodin.lesson16.level_7;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class Rectangle {
     final int startCoordinateX;
     final int height;

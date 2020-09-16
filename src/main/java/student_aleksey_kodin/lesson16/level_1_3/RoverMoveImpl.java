@@ -4,7 +4,10 @@ import student_aleksey_kodin.lesson16.level_1_3.Domain.Plateau;
 import student_aleksey_kodin.lesson16.level_1_3.Domain.Rover;
 import student_aleksey_kodin.lesson16.level_1_3.Logic.Direction;
 import student_aleksey_kodin.lesson16.level_1_3.Logic.Instructions;
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
 
+@CodeReview(approved = false)
 public class RoverMoveImpl implements RoverMove {
     private final Plateau plateau;
     private final Rover rover;
@@ -17,6 +20,8 @@ public class RoverMoveImpl implements RoverMove {
     }
 
     @Override
+	@CodeReviewComment(teacher = "Too big method ... find a way to split it to small ones.")
+	@CodeReviewComment(teacher = "May be separate method for each switch case?")
     public void move(Instructions instruction) {
         while (instruction.isInstructions()) {
             switch (instruction.getInstruction()) {

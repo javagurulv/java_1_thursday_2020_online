@@ -1,7 +1,9 @@
 package student_aleksey_kodin.lesson16.level_1_3.Domain;
 
 import student_aleksey_kodin.lesson16.level_1_3.Logic.Directions;
+import teacher.codereview.CodeReview;
 
+@CodeReview(approved = true)
 public class Rover {
     private int coordinateX;
     private int coordinateY;

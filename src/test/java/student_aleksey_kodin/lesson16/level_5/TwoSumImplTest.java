@@ -6,7 +6,13 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 public class TwoSumImplTest {
+
+	@CodeReviewComment(teacher = "Should be a private field!")
     TwoSum twoSum = new TwoSumImpl();
 
     @Test

@@ -1,5 +1,9 @@
 package student_aleksey_kodin.lesson16.level_1_3.Logic;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
 public class Instructions {
     private String instructions = "";
     private final int EMPTY_STRING = 0;
@@ -25,6 +29,7 @@ public class Instructions {
         }
     }
 
+    @CodeReviewComment(teacher = "Why use big Boolean here? May be just boolean will be enough?")
     public Boolean isInstructions() {
         return instructions.length() > EMPTY_STRING;
     }

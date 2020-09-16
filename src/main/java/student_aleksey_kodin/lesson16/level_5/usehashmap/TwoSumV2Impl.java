@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class TwoSumV2Impl implements student_aleksey_kodin.lesson16.level_5.TwoSum {
 
     @Override

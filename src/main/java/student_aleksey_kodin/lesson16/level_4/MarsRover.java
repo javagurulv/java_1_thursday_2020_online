@@ -1,6 +1,13 @@
 package student_aleksey_kodin.lesson16.level_4;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = false)
 class MarsRover {
+
+	@CodeReviewComment(teacher = "Split this method to small ones!")
+	@CodeReviewComment(teacher = "I want to see clear method names and not a bunch of if statements.")
     public static String move(int x, int y, char direction, String instructions) {
         if (!instructions.isEmpty()) {
             char instruction = instructions.charAt(0);

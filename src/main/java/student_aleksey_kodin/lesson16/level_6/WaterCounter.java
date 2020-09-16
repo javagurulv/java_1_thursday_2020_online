@@ -1,5 +1,8 @@
 package student_aleksey_kodin.lesson16.level_6;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class WaterCounter {
 
     public int countWaterQuantity(int[] entry) {

@@ -3,6 +3,11 @@ package student_aleksey_kodin.lesson16.level_1_3.Domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.codereview.CodeReview;
+import teacher.codereview.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(teacher = "for package name use only small letters! (Domain -> domain)")
 public class Plateau {
     private final int coordinateX;
     private final int coordinateY;

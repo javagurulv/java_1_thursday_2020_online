@@ -2,6 +2,9 @@ package student_aleksey_kodin.lesson16.level_7;
 
 import java.util.*;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 class SkylineImpl implements SkyLine {
     private final List<Integer> skyLineCoordinates = new ArrayList<>();
 

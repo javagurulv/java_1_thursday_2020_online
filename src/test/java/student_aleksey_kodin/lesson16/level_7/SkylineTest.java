@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class SkylineTest {
     SkylineImpl skylineImpl = new SkylineImpl();
 

@@ -3,6 +3,9 @@ package student_igors_mihejevs.lesson_7.homework.level_6;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import teacher.codereview.CodeReview;
+
+@CodeReview(approved = true)
 public class PalindromeTest {
 
     @Test
