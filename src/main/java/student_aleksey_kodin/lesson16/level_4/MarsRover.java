@@ -6,45 +6,30 @@ import teacher.codereview.CodeReviewComment;
 @CodeReview(approved = false)
 class MarsRover {
 
-	@CodeReviewComment(teacher = "Split this method to small ones!")
-	@CodeReviewComment(teacher = "I want to see clear method names and not a bunch of if statements.")
+    @CodeReviewComment(teacher = "Split this method to small ones!")
+    @CodeReviewComment(teacher = "I want to see clear method names and not a bunch of if statements.")
     public static String move(int x, int y, char direction, String instructions) {
-        if (!instructions.isEmpty()) {
-            char instruction = instructions.charAt(0);
-            if (instruction == 'L') {
-                return move(x, y, getDirectionLeft(direction), getNextInstructions(instructions));
-            }
-            if (instruction == 'R') {
-                return move(x, y, getDirectionRight(direction), getNextInstructions(instructions));
-            }
-            if (instruction == 'M') {
-                int newCoordinateX = 0;
-                int newCoordinateY = 0;
-                char newDirection = ' ';
-                if (direction == 'N') {
-                    newCoordinateX = x;
-                    newCoordinateY = y + 1;
-                    newDirection = 'N';
+        char newDirection = direction;
+        int newCoordinateX = x;
+        int newCoordinateY = y;
+
+        if (instructions.isEmpty()) {
+            return x + " " + y + " " + direction;
+        }
+
+        switch (getInstruction(instructions)) {
+            case 'L' -> newDirection = getDirectionLeft(direction);
+            case 'R' -> newDirection = getDirectionRight(direction);
+            case 'M' -> {
+                switch (newDirection) {
+                    case 'N' -> newCoordinateY = makeMove(newCoordinateY, 1);
+                    case 'S' -> newCoordinateY = makeMove(newCoordinateY, -1);
+                    case 'W' -> newCoordinateX = makeMove(newCoordinateX, -1);
+                    case 'E' -> newCoordinateX = makeMove(newCoordinateX, 1);
                 }
-                if (direction == 'S') {
-                    newCoordinateX = x;
-                    newCoordinateY = y - 1;
-                    newDirection = 'S';
-                }
-                if (direction == 'W') {
-                    newCoordinateX = x - 1;
-                    newCoordinateY = y;
-                    newDirection = 'W';
-                }
-                if (direction == 'E') {
-                    newCoordinateX = x + 1;
-                    newCoordinateY = y;
-                    newDirection = 'E';
-                }
-                return move(newCoordinateX, newCoordinateY, newDirection, getNextInstructions(instructions));
             }
         }
-        return x + " " + y + " " + direction;
+        return move(newCoordinateX, newCoordinateY, newDirection, getNextInstructions(instructions));
     }
 
     private static char getDirectionLeft(char direction) {
@@ -65,6 +50,14 @@ class MarsRover {
             case 'W' -> 'N';
             default -> throw new IllegalStateException("Unexpected value: " + direction);
         };
+    }
+
+    private static char getInstruction(String instructions) {
+        return instructions.charAt(0);
+    }
+
+    private static int makeMove(int coordinate, int value) {
+        return coordinate + value;
     }
 
     private static String getNextInstructions(String instructions) {

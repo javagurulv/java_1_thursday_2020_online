@@ -1,10 +1,10 @@
 package student_aleksey_kodin.lesson16.level_1_3;
 
 import org.junit.Test;
-import student_aleksey_kodin.lesson16.level_1_3.Domain.Plateau;
-import student_aleksey_kodin.lesson16.level_1_3.Domain.Rover;
-import student_aleksey_kodin.lesson16.level_1_3.Logic.Directions;
-import student_aleksey_kodin.lesson16.level_1_3.Logic.Instructions;
+import student_aleksey_kodin.lesson16.level_1_3.domain.Plateau;
+import student_aleksey_kodin.lesson16.level_1_3.domain.Rover;
+import student_aleksey_kodin.lesson16.level_1_3.logic.Directions;
+import student_aleksey_kodin.lesson16.level_1_3.logic.Instructions;
 import static org.junit.Assert.*;
 
 public class RoverMoveImplTest {

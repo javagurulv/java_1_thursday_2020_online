@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson16.level_1_3.Logic;
+package student_aleksey_kodin.lesson16.level_1_3.logic;
 
 import teacher.codereview.CodeReview;
 import teacher.codereview.CodeReviewComment;
@@ -30,7 +30,8 @@ public class Instructions {
     }
 
     @CodeReviewComment(teacher = "Why use big Boolean here? May be just boolean will be enough?")
-    public Boolean isInstructions() {
+    @CodeReviewComment(student = "Change")
+    public boolean isInstructions() {
         return instructions.length() > EMPTY_STRING;
     }
 }

@@ -1,4 +1,4 @@
-package student_aleksey_kodin.lesson16.level_1_3.Logic;
+package student_aleksey_kodin.lesson16.level_1_3.logic;
 
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ public class InstructionsTest {
 
     @Test
     public void testNoInstructions() {
-        Boolean result = instruction.isInstructions();
+        boolean result = instruction.isInstructions();
 
         assertFalse(result);
     }
