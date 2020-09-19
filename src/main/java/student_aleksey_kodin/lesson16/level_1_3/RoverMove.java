@@ -1,6 +1,6 @@
 package student_aleksey_kodin.lesson16.level_1_3;
 
-import student_aleksey_kodin.lesson16.level_1_3.Logic.Instructions;
+import student_aleksey_kodin.lesson16.level_1_3.logic.Instructions;
 import teacher.codereview.CodeReview;
 
 @CodeReview(approved = true)
