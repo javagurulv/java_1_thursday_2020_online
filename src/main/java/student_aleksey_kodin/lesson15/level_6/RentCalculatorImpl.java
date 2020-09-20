@@ -28,18 +28,14 @@ class RentCalculatorImpl implements RentCalculator {
 
         report.addStringToReport("Rental Record for " + customer.getName() + "\n");
 
-        double thisAmount = 0;
-        for (CalculateCategories calc : calculateCategories) {
-
-            thisAmount = thisAmount + calc.calculateCategory(customer, report);
-
-        }
+        double thisAmount = calculateCategories.stream().map(calc -> calc.calculateCategory(customer, report))
+                .reduce(Double::sum).orElse(0.00);
 
         customer.setTotalAmount(customer.getTotalAmount() + thisAmount);
 
         int frequentRenterPoints = customer.getFrequentRenterPoints();
 
-        frequentRenterPoints = frequentRenterPoints + newReleaseCategory.calculateFrequentRenterPoints(customer);
+        frequentRenterPoints += newReleaseCategory.calculateFrequentRenterPoints(customer);
 
         customer.setFrequentRenterPoints(frequentRenterPoints);
 
