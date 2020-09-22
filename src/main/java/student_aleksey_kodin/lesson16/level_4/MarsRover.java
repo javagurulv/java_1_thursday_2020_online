@@ -2,8 +2,10 @@ package student_aleksey_kodin.lesson16.level_4;
 
 import teacher.codereview.CodeReview;
 import teacher.codereview.CodeReviewComment;
+import teacher.codereview.CodeReviewStudentAnswer;
 
 @CodeReview(approved = false)
+@CodeReviewStudentAnswer(approved = true)
 class MarsRover {
 
     @CodeReviewComment(teacher = "Split this method to small ones!")

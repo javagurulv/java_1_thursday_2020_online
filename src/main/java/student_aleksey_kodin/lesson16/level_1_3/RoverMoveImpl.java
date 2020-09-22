@@ -6,8 +6,10 @@ import student_aleksey_kodin.lesson16.level_1_3.logic.Direction;
 import student_aleksey_kodin.lesson16.level_1_3.logic.Instructions;
 import teacher.codereview.CodeReview;
 import teacher.codereview.CodeReviewComment;
+import teacher.codereview.CodeReviewStudentAnswer;
 
 @CodeReview(approved = false)
+@CodeReviewStudentAnswer(approved = true)
 public class RoverMoveImpl implements RoverMove {
     private final Plateau plateau;
     private final Rover rover;

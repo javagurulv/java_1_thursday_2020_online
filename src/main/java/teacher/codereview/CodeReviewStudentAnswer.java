@@ -7,8 +7,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface CodeReview {
-
-	boolean approved();
-
+public @interface CodeReviewStudentAnswer {
+    boolean approved();
 }
