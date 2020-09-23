@@ -12,7 +12,7 @@ public class CodeReviewImpl implements CodeReview {
     @Override
     public Report codeReview(String scannedPackage) throws IOException, ClassNotFoundException {
         final String BAD_PACKAGE_ERROR = "Unable to get resources from path " + scannedPackage +
-                "."+ "\nAre you sure the package " + scannedPackage + " exists?" + "\n";
+                "." + "\nAre you sure the package " + scannedPackage + " exists?" + "\n";
 
         ClassFinder classFinder = new ClassFinder();
         Report report = new Report();
@@ -27,9 +27,6 @@ public class CodeReviewImpl implements CodeReview {
             report = teacherCodeReviewAnalysis.getAnalysis(classesForAnalyzer, scannedPackage, report);
             return studentCodeReviewAnalysis.getAnalysis(classesForAnalyzer, scannedPackage, report);
         }
-
-        Report errorReport = new Report();
-        errorReport.addStringToReport(BAD_PACKAGE_ERROR);
-        return errorReport;
+        return new Report(BAD_PACKAGE_ERROR);
     }
 }

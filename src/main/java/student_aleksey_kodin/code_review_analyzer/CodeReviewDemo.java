@@ -1,6 +1,7 @@
 package student_aleksey_kodin.code_review_analyzer;
 
 import student_aleksey_kodin.code_review_analyzer.logic.Report;
+
 import java.io.IOException;
 
 
@@ -35,9 +36,5 @@ public class CodeReviewDemo {
         Report report6 = codeReview.codeReview("student_igors_mihejevs.lesson_11");
 
         report6.showReport();
-
-
-
-
     }
 }
