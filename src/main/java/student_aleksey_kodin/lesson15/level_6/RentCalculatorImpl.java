@@ -9,6 +9,9 @@ import java.util.List;
 
 @CodeReview(approved = true)
 class RentCalculatorImpl implements RentCalculator {
+    private final RegularCategory regularCategory = new RegularCategory();
+    private final NewReleaseCategory newReleaseCategory = new NewReleaseCategory();
+    private final ChildrenCategory childrenCategory = new ChildrenCategory();
     private final Report report;
 
     RentCalculatorImpl(Report report) {
@@ -17,9 +20,6 @@ class RentCalculatorImpl implements RentCalculator {
 
     @Override
     public Customer calculate(Customer customer) {
-        RegularCategory regularCategory = new RegularCategory();
-        NewReleaseCategory newReleaseCategory = new NewReleaseCategory();
-        ChildrenCategory childrenCategory = new ChildrenCategory();
 
         List<CalculateCategories> calculateCategories = createCategories(regularCategory, newReleaseCategory,
                 childrenCategory);
