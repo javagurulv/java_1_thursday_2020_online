@@ -4,7 +4,7 @@ import student_aleksey_kodin.lesson15.level_6.domain.Customer;
 import student_aleksey_kodin.lesson15.level_6.logic.*;
 import teacher.codereview.CodeReview;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @CodeReview(approved = true)
@@ -21,10 +21,8 @@ class RentCalculatorImpl implements RentCalculator {
         NewReleaseCategory newReleaseCategory = new NewReleaseCategory();
         ChildrenCategory childrenCategory = new ChildrenCategory();
 
-        List<CalculateCategories> calculateCategories = new ArrayList<>();
-        calculateCategories.add(regularCategory);
-        calculateCategories.add(newReleaseCategory);
-        calculateCategories.add(childrenCategory);
+        List<CalculateCategories> calculateCategories = createCategories(regularCategory, newReleaseCategory,
+                childrenCategory);
 
         report.addStringToReport("Rental Record for " + customer.getName() + "\n");
 
@@ -44,5 +42,9 @@ class RentCalculatorImpl implements RentCalculator {
         report.addStringToReport("You earned " + frequentRenterPoints + " frequent renter points\n");
 
         return customer;
+    }
+
+    private List<CalculateCategories> createCategories(CalculateCategories... classes) {
+        return Arrays.asList(classes);
     }
 }
