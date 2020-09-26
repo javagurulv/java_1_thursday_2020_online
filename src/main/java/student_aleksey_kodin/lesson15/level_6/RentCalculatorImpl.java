@@ -9,31 +9,23 @@ import java.util.List;
 
 @CodeReview(approved = true)
 class RentCalculatorImpl implements RentCalculator {
-    private final RegularCategory regularCategory = new RegularCategory();
-    private final NewReleaseCategory newReleaseCategory = new NewReleaseCategory();
-    private final ChildrenCategory childrenCategory = new ChildrenCategory();
+    private final List<CalculateCategories> calculateCategories;
     private final Report report;
 
     RentCalculatorImpl(Report report) {
         this.report = report;
+        calculateCategories = createCategories(new RegularCategory(), new NewReleaseCategory(),
+                new ChildrenCategory());
     }
 
     @Override
     public Customer calculate(Customer customer) {
 
-        List<CalculateCategories> calculateCategories = createCategories(regularCategory, newReleaseCategory,
-                childrenCategory);
-
         report.addStringToReport("Rental Record for " + customer.getName() + "\n");
 
-        double thisAmount = calculateCategories.stream().map(calc -> calc.calculateCategory(customer, report))
-                .reduce(Double::sum).orElse(0.00);
+        calculationAmount(customer);
 
-        customer.setTotalAmount(customer.getTotalAmount() + thisAmount);
-
-        int frequentRenterPoints = customer.getFrequentRenterPoints();
-
-        frequentRenterPoints += newReleaseCategory.calculateFrequentRenterPoints(customer);
+        int frequentRenterPoints = calculationFrequentRenterPointsNewReleaseCategory(customer);
 
         customer.setFrequentRenterPoints(frequentRenterPoints);
 
@@ -46,5 +38,22 @@ class RentCalculatorImpl implements RentCalculator {
 
     private List<CalculateCategories> createCategories(CalculateCategories... classes) {
         return Arrays.asList(classes);
+    }
+
+    private void calculationAmount(Customer customer) {
+        double thisAmount = calculateCategories.stream().map(calc -> calc.calculateCategory(customer, report))
+                .reduce(Double::sum).orElse(0.00);
+
+        customer.setTotalAmount(customer.getTotalAmount() + thisAmount);
+    }
+
+    private int calculationFrequentRenterPointsNewReleaseCategory(Customer customer) {
+        int frequentRenterPoints = customer.getFrequentRenterPoints();
+
+        frequentRenterPoints += calculateCategories.stream()
+                .filter(cl -> cl.getClass().getSimpleName().equals("NewReleaseCategory"))
+                .mapToInt(p -> p.calculateFrequentRenterPoints(customer)).sum();
+
+        return frequentRenterPoints;
     }
 }

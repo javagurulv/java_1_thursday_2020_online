@@ -23,16 +23,4 @@ public class NewReleaseCategory implements CalculateCategories {
         });
         return thisAmount.get();
     }
-
-    public int calculateFrequentRenterPoints(Customer customer) {
-        AtomicReference<Integer> pointsAmount = new AtomicReference<>(0);
-
-        customer.rentals.stream().filter(reg -> reg.getMovie().getPriceCode() == MovieCategory.NEW_RELEASE).forEach(reg ->
-        {
-            if (reg.getDaysRented() > 1) {
-                pointsAmount.updateAndGet(v -> v + 1);
-            }
-        });
-        return pointsAmount.get();
-    }
 }
