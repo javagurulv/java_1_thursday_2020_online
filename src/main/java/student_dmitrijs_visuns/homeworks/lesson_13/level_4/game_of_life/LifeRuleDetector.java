@@ -14,7 +14,7 @@ class LifeRuleDetector {
         lifeRulesList.add(lifeRule1);
         lifeRulesList.add(lifeRule2);
         lifeRulesList.add(lifeRule3);
-        //lifeRulesList.add(lifeRule4);
+        lifeRulesList.add(lifeRule4);
 
         boolean isAlive = currentGeneration[row][column];
         for (LifeRule lifeRule : lifeRulesList) {
