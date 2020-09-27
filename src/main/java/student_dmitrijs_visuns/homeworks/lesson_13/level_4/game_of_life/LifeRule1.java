@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_13.level_4;
+package student_dmitrijs_visuns.homeworks.lesson_13.level_4.game_of_life;
 
 class LifeRule1 extends LifeRule {
 

@@ -1,6 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_13.level_4;
-
-import java.util.ArrayList;
+package student_dmitrijs_visuns.homeworks.lesson_13.level_4.game_of_life;
 
 class GameOfLifeNextGenerationCalculator {
 

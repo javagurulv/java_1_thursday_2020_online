@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_13.level_4;
+package student_dmitrijs_visuns.homeworks.lesson_13.level_4.game_of_life;
 
 import java.util.ArrayList;
 
@@ -9,19 +9,19 @@ class LifeRuleDetector {
         LifeRule2 lifeRule2 = new LifeRule2();
         LifeRule3 lifeRule3 = new LifeRule3();
         LifeRule4 lifeRule4 = new LifeRule4();
+
         ArrayList<LifeRule> lifeRulesList = new ArrayList<>();
         lifeRulesList.add(lifeRule1);
         lifeRulesList.add(lifeRule2);
         lifeRulesList.add(lifeRule3);
-        lifeRulesList.add(lifeRule4);
+        //lifeRulesList.add(lifeRule4);
 
-
-        boolean result = currentGeneration[row][column];
+        boolean isAlive = currentGeneration[row][column];
         for (LifeRule lifeRule : lifeRulesList) {
-            boolean res = lifeRule.isActivated(currentGeneration, row, column);
-            result = res;
+            boolean result = lifeRule.isActivated(currentGeneration, row, column);
+            isAlive = result;
         }
-        return result;
+        return isAlive;
 
     }
 }
