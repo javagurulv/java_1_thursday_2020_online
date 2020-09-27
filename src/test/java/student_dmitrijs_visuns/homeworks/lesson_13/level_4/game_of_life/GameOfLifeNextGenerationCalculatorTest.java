@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class GameOfLifeNextGenerationCalculatorTest {
 
     @Test
-    public void calculateNextGeneration_v2() {
+    public void NextGenCalculatorAssertionTest() {
         GameOfLifeNextGenerationCalculator testCalculator = new GameOfLifeNextGenerationCalculator();
 
         boolean [][] testField = new boolean[][]{
