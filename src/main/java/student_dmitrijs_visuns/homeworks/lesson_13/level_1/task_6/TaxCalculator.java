@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_13.lesson_1.task_1;
+package student_dmitrijs_visuns.homeworks.lesson_13.level_1.task_6;
 
 import java.math.BigDecimal;
 
