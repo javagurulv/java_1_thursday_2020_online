@@ -4,8 +4,10 @@ import java.util.List;
 
 import teacher.codereview.CodeReview;
 import teacher.codereview.CodeReviewComment;
+import teacher.codereview.CodeReviewStudentAnswer;
 
 @CodeReview(approved = false)
+@CodeReviewStudentAnswer(approved = true)
 @CodeReviewComment(teacher = "Надо больше поработать над кодом, рефакторинг явно не доведён до конца.")
 class GildedRose {
     final int QUALITY_ZERO = 0;

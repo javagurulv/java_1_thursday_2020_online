@@ -71,7 +71,7 @@ class TennisGameImpl implements TennisGame {
         return null;
     }
 
-    private Boolean isPointsEnoughForWin(Player player) {
+    private boolean isPointsEnoughForWin(Player player) {
         final int HAVE_POINTS_FOR_WIN = 3;
         return player.getPlayerPoint() > HAVE_POINTS_FOR_WIN;
     }
