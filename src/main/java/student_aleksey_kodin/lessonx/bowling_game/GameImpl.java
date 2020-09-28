@@ -1,6 +1,7 @@
 package student_aleksey_kodin.lessonx.bowling_game;
 
 import student_aleksey_kodin.lessonx.bowling_game.domain.Ball;
+import student_aleksey_kodin.lessonx.bowling_game.logic.Report;
 import student_aleksey_kodin.lessonx.bowling_game.logic.Roll;
 
 import java.util.ArrayList;
@@ -9,29 +10,46 @@ import java.util.List;
 class GameImpl implements Game {
     private final List<Ball> allBallsInGame = new ArrayList<>();
     private final Roll roll;
+    private final Report report;
     private boolean isGameFinished = false;
-    private int numberOfFrame = 0;
+    private int numberOfFrame = 1;
     private int frameNumberOfPins = 10;
+    private int extraBalls;
+    private boolean isUseExtraBalls = false;
 
-    GameImpl(Roll roll) {
+    GameImpl(Roll roll, Report report) {
         this.roll = roll;
+        this.report = report;
+        roll.setAttemptInFrame(true);
     }
 
     @Override
     public void roll(int numberOfPins) {
 
+        report.addStringToReport("Frame " + numberOfFrame + ": " + numberOfPins + "\n");
+
         frameNumberOfPins -= numberOfPins;
 
-        allBallsInGame.add(new Ball(numberOfPins));
+        if (extraBalls > 1) {
+            allBallsInGame.add(new Ball(numberOfPins));
+            extraBalls--;
+            isUseExtraBalls = true;
+            return;
+        } else {
+            extraBalls = 0;
+            allBallsInGame.add(new Ball(numberOfPins));
+        }
 
         if (isStrike(numberOfPins) && roll.isFirstAttemptInFrame()) {
             frameNumberOfPins = 10;
-            roll.setAttemptInFrame(true);
+            extraBalls = 2;
+            roll.setAttemptInFrame(false);
             return;
         }
 
-        if (isSpare(numberOfPins)) {
+        if (isSpare(numberOfPins) && !(isUseExtraBalls)) {
             frameNumberOfPins = 10;
+            extraBalls = 1;
             roll.setAttemptInFrame(false);
             return;
         }
@@ -42,7 +60,7 @@ class GameImpl implements Game {
         }
 
         roll.setAttemptInFrame(true);
-        numberOfFrame++;
+        setFirstAttempt();
         checkIsGameFinished();
     }
 
@@ -55,7 +73,7 @@ class GameImpl implements Game {
         return isGameFinished;
     }
 
-    public int getNumberOfFrame() {
+    public int getNextNumberOfFrame() {
         return numberOfFrame;
     }
 
@@ -70,17 +88,23 @@ class GameImpl implements Game {
 
     private boolean isSpare(int numberOfPins) {
         final int SPARE = 10;
-        return numberOfPins + getLastBallScoreInFrame() == SPARE;
+        return numberOfPins + getTwoLastBallScoreInFrame() == SPARE;
     }
 
     private void checkIsGameFinished() {
-        final int END_GAME = 10;
+        final int END_GAME = 11;
         if (numberOfFrame == END_GAME) {
             isGameFinished = true;
         }
     }
 
-    private int getLastBallScoreInFrame() {
+    private void setFirstAttempt() {
+        isUseExtraBalls = false;
+        frameNumberOfPins = 10;
+        numberOfFrame++;
+    }
+
+    private int getTwoLastBallScoreInFrame() {
         int score;
         try {
             score = allBallsInGame.get(allBallsInGame.size() - 2).getScore();
