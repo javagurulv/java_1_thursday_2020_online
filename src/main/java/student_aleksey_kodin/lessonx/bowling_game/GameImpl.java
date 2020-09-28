@@ -25,41 +25,31 @@ class GameImpl implements Game {
 
     @Override
     public void roll(int numberOfPins) {
+        final int SPARE_ONE_EXTRA_BALL = 1;
+        final int STRIKE_TWO_EXTRA_BALL = 2;
 
         report.addStringToReport("Frame " + numberOfFrame + ": " + numberOfPins + "\n");
 
         frameNumberOfPins -= numberOfPins;
 
         if (extraBalls > 1) {
-            allBallsInGame.add(new Ball(numberOfPins));
-            extraBalls--;
-            isUseExtraBalls = true;
+            useExtraBall(numberOfPins);
             return;
         } else {
-            extraBalls = 0;
-            allBallsInGame.add(new Ball(numberOfPins));
+            simpleRoll(numberOfPins);
         }
-
         if (isStrike(numberOfPins) && roll.isFirstAttemptInFrame()) {
-            frameNumberOfPins = 10;
-            extraBalls = 2;
-            roll.setAttemptInFrame(false);
+            prepareExtraBalls(STRIKE_TWO_EXTRA_BALL);
             return;
         }
-
         if (isSpare(numberOfPins) && !(isUseExtraBalls)) {
-            frameNumberOfPins = 10;
-            extraBalls = 1;
-            roll.setAttemptInFrame(false);
+            prepareExtraBalls(SPARE_ONE_EXTRA_BALL);
             return;
         }
-
         if (roll.isFirstAttemptInFrame()) {
             roll.setAttemptInFrame(false);
             return;
         }
-
-        roll.setAttemptInFrame(true);
         setFirstAttempt();
         checkIsGameFinished();
     }
@@ -81,6 +71,23 @@ class GameImpl implements Game {
         return frameNumberOfPins;
     }
 
+    private void prepareExtraBalls(int extraBalls) {
+        frameNumberOfPins = 10;
+        this.extraBalls = extraBalls;
+        roll.setAttemptInFrame(false);
+    }
+
+    private void useExtraBall(int numberOfPins) {
+        allBallsInGame.add(new Ball(numberOfPins));
+        extraBalls--;
+        isUseExtraBalls = true;
+    }
+
+    private void simpleRoll(int numberOfPins) {
+        extraBalls = 0;
+        allBallsInGame.add(new Ball(numberOfPins));
+    }
+
     private boolean isStrike(int numberOfPins) {
         final int STRIKE = 10;
         return numberOfPins == STRIKE;
@@ -99,6 +106,7 @@ class GameImpl implements Game {
     }
 
     private void setFirstAttempt() {
+        roll.setAttemptInFrame(true);
         isUseExtraBalls = false;
         frameNumberOfPins = 10;
         numberOfFrame++;
