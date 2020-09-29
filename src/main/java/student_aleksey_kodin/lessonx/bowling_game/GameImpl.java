@@ -25,6 +25,7 @@ class GameImpl implements Game {
 
     @Override
     public void roll(int numberOfPins) {
+        final int EXTRA_BALL_SPARE_OR_STRIKE = 1;
         final int SPARE_ONE_EXTRA_BALL = 1;
         final int STRIKE_TWO_EXTRA_BALL = 2;
 
@@ -32,7 +33,7 @@ class GameImpl implements Game {
 
         frameNumberOfPins -= numberOfPins;
 
-        if (extraBalls > 1) {
+        if (extraBalls > EXTRA_BALL_SPARE_OR_STRIKE) {
             useExtraBall(numberOfPins);
             return;
         } else {
