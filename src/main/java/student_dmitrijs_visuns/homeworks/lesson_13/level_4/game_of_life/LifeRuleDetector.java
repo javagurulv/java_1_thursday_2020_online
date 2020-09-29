@@ -1,6 +1,7 @@
 package student_dmitrijs_visuns.homeworks.lesson_13.level_4.game_of_life;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class LifeRuleDetector {
 
@@ -10,7 +11,7 @@ class LifeRuleDetector {
         LifeRule3 lifeRule3 = new LifeRule3();
         LifeRule4 lifeRule4 = new LifeRule4();
 
-        ArrayList<LifeRule> lifeRulesList = new ArrayList<>();
+        List<LifeRule> lifeRulesList = new ArrayList<>();
         lifeRulesList.add(lifeRule1);
         lifeRulesList.add(lifeRule2);
         lifeRulesList.add(lifeRule3);

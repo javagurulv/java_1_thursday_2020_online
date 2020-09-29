@@ -18,7 +18,7 @@ class GameOfLifeRandomFieldGenerator {
             return field;
         }
 
-        private static boolean getRandomBoolean() {
+        private boolean getRandomBoolean() {
             Random r = new Random();
             boolean random = r.nextBoolean();
             return random;
