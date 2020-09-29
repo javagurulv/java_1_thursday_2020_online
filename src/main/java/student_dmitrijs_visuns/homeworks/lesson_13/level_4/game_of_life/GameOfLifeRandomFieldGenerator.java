@@ -12,16 +12,10 @@ class GameOfLifeRandomFieldGenerator {
         private boolean[][] fillFieldWithRandomBoolean(boolean[][] field){
             for (int i = 1; i < field.length -1; i++){
                 for (int j = 1; j < field[1].length -1; j++){
-                    field[i][j] = getRandomBoolean();
+                    field[i][j] = new Random().nextBoolean();
                 }
             }
             return field;
-        }
-
-        private boolean getRandomBoolean() {
-            Random r = new Random();
-            boolean random = r.nextBoolean();
-            return random;
         }
     }
 
