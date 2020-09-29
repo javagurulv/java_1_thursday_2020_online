@@ -12,8 +12,4 @@ public class Product {
         return this.title;
     }
 
-
-    public void add(Product product) {
-
-    }
 }

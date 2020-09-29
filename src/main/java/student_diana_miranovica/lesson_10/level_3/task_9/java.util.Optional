@@ -1,0 +1,17 @@
+The purpose of the java.util.Optional class is to improve null-safety and code readability when working with references that can be null.
+Replacing null value which makes the code easier to read and increases the safety of the code
+
+(Optional.of) is to create from non-null values. Passing Null as an argument will throw a NullPointerException
+
+(Optional.ofNullable) is to create a generic new value that can be null. If the value is Not null, then an Optional will be created
+with a value , otherwise an empty Optional will be created
+
+(Optional.empty) is to create empty value Optional
+
+/cannot be null
+Optional<Employee>optional = Optional.of(new Employee);
+
+/can be null
+Optional<Employee>nullableOptional = Optional.ofNullable(employee);
+
+Optional<Employee>emptyOptional = Optional.empty();
