@@ -1,12 +1,13 @@
 package student_aleksey_kodin.lessonx.bowling_game;
 
 import org.junit.Test;
+import student_aleksey_kodin.lessonx.bowling_game.logic.Report;
 import student_aleksey_kodin.lessonx.bowling_game.logic.Roll;
 
 import static org.junit.Assert.*;
 
 public class GameImplTest {
-    GameImpl game = new GameImpl(new Roll());
+    GameImpl game = new GameImpl(new Roll(), new Report());
 
     @Test
     public void checkGame_1() {
@@ -32,7 +33,7 @@ public class GameImplTest {
         game.roll(3);
 
         assertTrue(game.isGameFinished());
-        assertEquals(10, game.getNumberOfFrame());
+        assertEquals(11, game.getNextNumberOfFrame());
         assertEquals(80, game.score());
     }
 
@@ -43,7 +44,7 @@ public class GameImplTest {
         game.roll(1);
         game.roll(1);
 
-        assertEquals(2, game.getNumberOfFrame());
+        assertEquals(3, game.getNextNumberOfFrame());
         assertEquals(10, game.score());
     }
 
@@ -53,7 +54,7 @@ public class GameImplTest {
         game.roll(5);
         game.roll(7);
 
-        assertEquals(1, game.getNumberOfFrame());
+        assertEquals(2, game.getNextNumberOfFrame());
         assertEquals(17, game.score());
     }
 
@@ -63,7 +64,7 @@ public class GameImplTest {
         game.roll(5);
         game.roll(10);
 
-        assertEquals(1, game.getNumberOfFrame());
+        assertEquals(2, game.getNextNumberOfFrame());
         assertEquals(20, game.score());
     }
 
@@ -73,7 +74,7 @@ public class GameImplTest {
         game.roll(10);
         game.roll(1);
 
-        assertEquals(1, game.getNumberOfFrame());
+        assertEquals(2, game.getNextNumberOfFrame());
         assertEquals(11, game.score());
     }
 
@@ -81,10 +82,20 @@ public class GameImplTest {
     public void checkStrike_1() {
         game.roll(10);
         game.roll(5);
+        game.roll(1);
+
+        assertEquals(2, game.getNextNumberOfFrame());
+        assertEquals(16, game.score());
+    }
+
+    @Test
+    public void checkStrike_2() {
+        game.roll(10);
+        game.roll(0);
         game.roll(10);
 
-        assertEquals(1, game.getNumberOfFrame());
-        assertEquals(25, game.score());
+        assertEquals(2, game.getNextNumberOfFrame());
+        assertEquals(20, game.score());
     }
 
     @Test
