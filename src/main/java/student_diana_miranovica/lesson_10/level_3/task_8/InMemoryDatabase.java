@@ -7,8 +7,8 @@ public class InMemoryDatabase implements Database {
     ArrayList<Product> product = new ArrayList<>();
 
     @Override
-    public void save(Product product){
-        product.add(product);
+    public void save(Product products){
+        product.add(products);
     }
 
     @Override
@@ -21,5 +21,9 @@ public class InMemoryDatabase implements Database {
         return null;
     }
 
+    @Override
+    public ArrayList<Product>getProduct(){
+        return this.product;
+    }
 
 }
