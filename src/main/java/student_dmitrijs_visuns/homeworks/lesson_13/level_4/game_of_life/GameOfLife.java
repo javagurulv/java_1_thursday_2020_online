@@ -8,7 +8,7 @@ class GameOfLife {
     private GameOfLifeNextGenerationCalculator calculator = new GameOfLifeNextGenerationCalculator();
 
     public void run() {
-        boolean[][] field = generator.generate(20, 20);
+        boolean[][] field = generator.generate(10, 10);
         while(true) {
             ui.show(field);
             sleepForSeconds(2);
