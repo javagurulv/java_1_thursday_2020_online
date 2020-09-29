@@ -1,4 +1,4 @@
-package student_dmitrijs_visuns.homeworks.lesson_14.level_1.task_1;
+package student_dmitrijs_visuns.homeworks.lesson_14.level_1.task_4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,15 +18,13 @@ class FruitStorage {
         return apples;
     }
 
-    public List<Apple> findGreenApples(List<Apple> inventory) {
+    public List<Apple> findApplesByColor(List<Apple> inventory, String color) {
         List<Apple> result = new ArrayList<>();
-        for(Apple apple : inventory) {
-            if("green".equals(apple.getColor())) {
-                result.add(apple);
+            for(Apple apple : inventory) {
+                if(apple.getColor().equals(color)) {
+                    result.add(apple);
+                }
             }
+            return result;
         }
-        return result;
-    }
-
-
 }
