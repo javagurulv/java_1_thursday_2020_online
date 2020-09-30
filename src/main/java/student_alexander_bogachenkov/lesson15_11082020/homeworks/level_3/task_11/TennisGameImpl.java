@@ -81,9 +81,9 @@ class TennisGameImpl implements TennisGame {
     }
 
     private void assignNameToFreePosition(String playerName) {
-        if (firstPlayerName.isEmpty()) {
+        if (firstPlayerName == null) {
             firstPlayerName = playerName;
-        } else if (secondPlayerName.isEmpty()) {
+        } else if (secondPlayerName == null) {
             secondPlayerName = playerName;
         }
     }
@@ -94,5 +94,13 @@ class TennisGameImpl implements TennisGame {
 
     private boolean isSecondPlayerName(String name) {
         return name.equals(secondPlayerName);
+    }
+
+    public int getFirstPlayerScore() {
+        return firstPlayerScore;
+    }
+
+    public int getSecondPlayerScore() {
+        return secondPlayerScore;
     }
 }
