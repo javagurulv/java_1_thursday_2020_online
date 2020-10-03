@@ -1,4 +1,4 @@
-package teacher.lesson_8.homework.level_7_senior.super_task_2;
+package teacher.lesson_8.homework.level_7_senior.task_32;
 
 class Argument extends MathOperation {
 

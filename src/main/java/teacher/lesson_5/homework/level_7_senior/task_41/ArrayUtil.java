@@ -1,4 +1,4 @@
-package teacher.lesson_5.homework.level_7_senior.super_task_1;
+package teacher.lesson_5.homework.level_7_senior.task_41;
 
 import java.util.Random;
 import java.util.Scanner;

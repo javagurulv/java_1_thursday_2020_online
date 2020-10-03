@@ -1,13 +1,13 @@
-package teacher.lesson_5.homework.level_7_senior.super_task_1;
+package teacher.lesson_5.homework.level_7_senior.task_41;
 
-public class Task29 {
+public class Task30 {
 
 	public static void main(String[] args) {
 		ArrayUtil arrayUtil = new ArrayUtil();
 		int[] array = arrayUtil.newArrayWithRandomLength();
 		arrayUtil.fillArrayWithRandomNumbers(array);
 		arrayUtil.printArray(array);
-		arrayUtil.printEvenNumbersOfArray(array);
+		arrayUtil.printOddNumbersOfArray(array);
 	}
 
 }
