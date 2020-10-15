@@ -1,4 +1,4 @@
-package teacher.lesson_9.lessoncode;
+package teacher.lesson_9_objects_equality.lessoncode;
 
 public class ElectricCar extends Car {
 

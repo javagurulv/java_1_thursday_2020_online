@@ -1,4 +1,4 @@
-package teacher.lesson_8.lessoncode;
+package teacher.lesson_8_inheritance.lessoncode;
 
 public class ElectricCar extends Car {
 
