@@ -1,4 +1,4 @@
-package teacher.lesson_2.lessoncode;
+package teacher.lesson_2_variables.lessoncode;
 
 import java.util.Scanner;
 
