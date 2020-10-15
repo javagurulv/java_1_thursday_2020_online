@@ -29,4 +29,28 @@ public class GameOfLifeNextGenerationCalculatorTest {
         assertArrayEquals(expected, actual);
     }
 
+
+    @Test
+    public void NextGenCalculatorAssertionTest2() {
+        GameOfLifeNextGenerationCalculator testCalculator = new GameOfLifeNextGenerationCalculator();
+
+        boolean [][] testField =  new boolean [][]{
+                {false, false, false, false, false},
+                {false, false, false, false, false},
+                {false, true, true, true, false},
+                {false, false, false, false, false},
+                {false, false, false, false, false}};
+
+        boolean [][] actual = testCalculator.calculate(testField);
+
+        boolean [][] expected = new boolean[][]{
+                {false, false, false, false, false},
+                {false, false, true, false, false},
+                {false, false, true, false, false},
+                {false, false, true, false, false},
+                {false, false, false, false, false}};
+
+        assertArrayEquals(expected, actual);
+    }
+
 }
