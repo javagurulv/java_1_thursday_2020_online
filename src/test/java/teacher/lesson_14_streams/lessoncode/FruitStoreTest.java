@@ -1,4 +1,4 @@
-package teacher.lesson_14.lessoncode;
+package teacher.lesson_14_streams.lessoncode;
 
 import static org.junit.Assert.*;
 
