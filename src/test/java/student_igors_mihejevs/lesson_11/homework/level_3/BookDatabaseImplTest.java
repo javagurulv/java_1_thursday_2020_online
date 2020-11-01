@@ -10,9 +10,10 @@ import teacher.codereview.CodeReview;
 @CodeReview(approved = true)
 public class BookDatabaseImplTest {
 
+    BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+
     @Test
     public void shouldReturnCorrectIdAndAddBookToDatabase() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         Long id1 = Long.parseLong("2");
         Long id2 = Long.parseLong("3");
         assertEquals(id1, bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003")));
@@ -21,7 +22,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnTrueIfBookCorrectlyDeletedByID() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         assertTrue(bookDatabase.delete(Long.parseLong("1")));
@@ -30,7 +30,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnTrueIfBookCorrectlyDeletedByBookNameAndAuthor() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         Book book2 = (new Book("Joshua Bloch", "Effective Java", "2001"));
         Book book3 = (new Book("Not Joshua Bloch", "Effective Java", "2001"));
@@ -43,7 +42,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnOptionalOfOrEmptyByBookID() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         assertEquals(Optional.empty(), bookDatabase.findById(Long.parseLong("3")));
@@ -53,7 +51,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnListOfBookByAuthor() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         List<Book> listOfBookByAuthors = bookDatabase.findByAuthor("Joshua Bloch");
@@ -62,7 +59,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnListOfBookByTitle() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
         List<Book> listOfBookByTitle = bookDatabase.findByTitle("Effective Java");
@@ -71,7 +67,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnNumberOfBooks() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         Book book2 = (new Book("Joshua Bloch", "Effective Java", "2001"));
         Book book3 = (new Book("Robert C. Martin", "Clean Code", "2008"));
@@ -87,7 +82,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnTrueIfBookCorrectlyDeletedByAuthor() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         Book book2 = (new Book("Joshua Bloch", "Effective Java", "2001"));
         Book book3 = (new Book("Robert C. Martin", "Clean Code", "2008"));
@@ -103,7 +97,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnTrueIfBookCorrectlyDeletedByTitle() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         Book book1 = (new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         Book book2 = (new Book("Joshua Bloch", "Effective Java", "2001"));
         Book book3 = (new Book("Robert C. Martin", "Clean Code", "2008"));
@@ -119,7 +112,6 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldReturnListOfBookBySearchCriteria() {
-        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
         bookDatabase.save(new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003"));
         bookDatabase.save(new Book("Joshua Bloch", "Effective Java", "2001"));
 

@@ -8,13 +8,18 @@ import teacher.codereview.CodeReview;
 @CodeReview(approved = true)
 public class AuthorSearchCriteriaTest {
 
+    AuthorSearchCriteria authorSearchCriteria = new AuthorSearchCriteria("Joshua Bloch");
+
     @Test
     public void shouldReturnTrueIfBookByAuthorIsCorrectlyFound() {
-        AuthorSearchCriteria authorSearchCriteria = new AuthorSearchCriteria("Joshua Bloch");
-        Book book1 = new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003");
-        Book book2 = new Book("Joshua Bloch", "Effective Java", "2001");
-        assertFalse(authorSearchCriteria.match(book1));
-        assertTrue(authorSearchCriteria.match(book2));
+        Book book = new Book("Joshua Bloch", "Effective Java", "2001");
+        assertTrue(authorSearchCriteria.match(book));
+    }
+
+    @Test
+    public void shouldReturnTrueIfBookByAuthorIsNotFound() {
+        Book book = new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003");
+        assertFalse(authorSearchCriteria.match(book));
     }
 
 }

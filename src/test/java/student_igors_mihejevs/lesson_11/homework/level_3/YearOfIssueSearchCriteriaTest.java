@@ -10,15 +10,19 @@ import teacher.codereview.CodeReviewComment;
 @CodeReview(approved = true)
 public class YearOfIssueSearchCriteriaTest {
 
+    YearOfIssueSearchCriteria yearOfIssueSearchCriteria = new YearOfIssueSearchCriteria("2001");
+
     @Test
-	@CodeReviewComment(teacher = "Write separate test for true and false cases.")
+	@CodeReviewComment(teacher = "Write separate test for true and false cases.") // Done
     public void shouldReturnTrueIfBookByYearOfIssueIsCorrectlyFound() {
-        YearOfIssueSearchCriteria yearOfIssueSearchCriteria = new YearOfIssueSearchCriteria("2001");
-        Book book1 = new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003");
-        Book book2 = new Book("Joshua Bloch", "Effective Java", "2001");
-        assertFalse(yearOfIssueSearchCriteria.match(book1));
-        assertTrue(yearOfIssueSearchCriteria.match(book2));
+        Book book = new Book("Joshua Bloch", "Effective Java", "2001");
+        assertTrue(yearOfIssueSearchCriteria.match(book));
     }
 
+    @Test
+    public void shouldReturnFalseIfBookByYearOfIssueIsNotFound() {
+        Book book = new Book("Kathy Sierra, Bert Bates", "Head First Java", "2003");
+        assertFalse(yearOfIssueSearchCriteria.match(book));
+    }
 
 }
