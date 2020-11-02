@@ -9,15 +9,15 @@ import teacher.codereview.CodeReview;
 @CodeReview(approved = true)
 public class KelvinConverterTest {
 
+    TemperatureConverter temperatureConverterKelvin = new KelvinConverter();
+
     @Test
     public void ShouldReturnCorrectTemperatureInKelvin() {
-        TemperatureConverter temperatureConverterKelvin = new KelvinConverter();
         assertEquals(temperatureConverterKelvin.convert(20), 293.15, 0.001 );
     }
 
     @Test
     public void ShouldReturnCorrectTemperatureInKelvinNegative() {
-        TemperatureConverter temperatureConverterKelvin = new KelvinConverter();
         assertNotEquals(temperatureConverterKelvin.convert(21), 293.15, 0.001 );
     }
 

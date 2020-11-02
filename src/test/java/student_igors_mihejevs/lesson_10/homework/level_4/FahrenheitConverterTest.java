@@ -9,15 +9,15 @@ import teacher.codereview.CodeReview;
 @CodeReview(approved = true)
 public class FahrenheitConverterTest {
 
+    TemperatureConverter temperatureConverterFahrenheit = new FahrenheitConverter();
+
     @Test
     public void ShouldReturnCorrectTemperatureInFahrenheit() {
-        TemperatureConverter temperatureConverterFahrenheit = new FahrenheitConverter();
         assertEquals(temperatureConverterFahrenheit.convert(20), 68.0, 0.001 );
     }
 
     @Test
     public void ShouldReturnCorrectTemperatureInFahrenheitNegative() {
-        TemperatureConverter temperatureConverterFahrenheit = new FahrenheitConverter();
         assertNotEquals(temperatureConverterFahrenheit.convert(21), 68.0, 0.001 );
     }
 
