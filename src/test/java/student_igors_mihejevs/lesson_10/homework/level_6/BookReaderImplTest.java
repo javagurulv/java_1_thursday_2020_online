@@ -11,9 +11,10 @@ import teacher.codereview.CodeReview;
 @CodeReview(approved = true)
 public class BookReaderImplTest {
 
+    BookReaderImpl bookReader = new BookReaderImpl();
+
     @Test
     public void shouldReturnTrueIfBookIsInELibraryAndMarkedAsNotRead () {
-        BookReaderImpl bookReader = new BookReaderImpl();
         Book book = new Book("Clean Code", "Robert C. Martin");
         bookReader.addBook(book);
         assertTrue(bookReader.MarkBookAsNotRead(new Book("Clean Code", "Robert C. Martin")));
@@ -22,7 +23,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldReturnTrueIfBookIsInELibraryAndMarkedAsRead () {
-        BookReaderImpl bookReader = new BookReaderImpl();
         Book book = new Book("Clean Code", "Robert C. Martin");
         bookReader.addBook(book);
         assertTrue(bookReader.MarkBookAsAlreadyRead(new Book("Clean Code", "Robert C. Martin")));
@@ -31,7 +31,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldReturnFalseIfBookIsNotInELibrary () {
-        BookReaderImpl bookReader = new BookReaderImpl();
         Book book = new Book("Clean Code", "Robert C. Martin");
         bookReader.addBook(book);
         assertFalse(bookReader.MarkBookAsAlreadyRead(new Book("Head First Java", "Kathy Sierra, Bert Bates")));
@@ -40,7 +39,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldFindBooksByPartOfTitle() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
         bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
         List<Book> actualBooks = bookReader.listByTitleOrContainsPartOfTitle("Head");
@@ -49,7 +47,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldFindBooksByTitle() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
         bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
         List<Book> actualBooks = bookReader.listByTitleOrContainsPartOfTitle("Head First Java");
@@ -58,7 +55,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldFindBooksByPartOfAuthorName() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
         bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
         List<Book> actualBooks = bookReader.listByAuthorOrContainsPartOfAuthorName("Sierra");
@@ -67,7 +63,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldFindBooksByAuthor() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
         bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
         List<Book> actualBooks = bookReader.listByAuthorOrContainsPartOfAuthorName("Kathy Sierra, Bert Bates");
@@ -76,7 +71,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldListAllReadBooks() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
         bookReader.eLibrary.get(0).setAlreadyRead(true);
         String[] books = {"Clean Code [Robert C. Martin]"};
@@ -85,7 +79,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldListAllNotReadBooks() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
         bookReader.eLibrary.get(0).setAlreadyRead(false);
         String[] books = {"Clean Code [Robert C. Martin]"};
@@ -94,7 +87,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldListAllBooks() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         bookReader.addBook(new Book("Clean Code", "Robert C. Martin"));
         bookReader.addBook(new Book("Head First Java", "Kathy Sierra, Bert Bates"));
         String[] books = {"Clean Code [Robert C. Martin]", "Head First Java [Kathy Sierra, Bert Bates]"};
@@ -103,7 +95,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldReturnTrueIfBookIsInELibraryAndItCorrectlyDeleted() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         Book book1 = new Book("Clean Code", "Robert C. Martin");
         bookReader.addBook(book1);
         assertTrue(bookReader.removeBook(book1));
@@ -111,7 +102,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldReturnFalseIfBookIsNotInELibraryAndNotDeleted() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         Book book1 = new Book("Clean Code", "Robert C. Martin");
         bookReader.addBook(book1);
         assertFalse(bookReader.removeBook(new Book("Head First Java", "Kathy Sierra, Bert Bates")));
@@ -120,7 +110,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldReturnTrueIfBookIsNotInELibraryOrAuthorIsNotBlankOrTitleIsNotBlankAndItAddedCorrectly() {
-        BookReaderImpl bookReader = new BookReaderImpl();
         Book book1 = new Book("Clean Code", "Robert C. Martin");
         Book book2 = new Book("Head First Java", "Kathy Sierra, Bert Bates");
         assertTrue(bookReader.addBook(book1));
@@ -131,7 +120,6 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldReturnFalseIfBookAlreadyIsInELibrary () {
-        BookReaderImpl bookReader = new BookReaderImpl();
         Book book = new Book("Clean Code", "Robert C. Martin");
         bookReader.addBook(book);
         assertFalse(bookReader.addBook(new Book("Clean Code", "Robert C. Martin")));
@@ -139,13 +127,11 @@ public class BookReaderImplTest {
 
     @Test
     public void shouldReturnFalseIfBookTitleIsBlank () {
-        BookReaderImpl bookReader = new BookReaderImpl();
         assertFalse(bookReader.addBook(new Book("", "Robert C. Martin")));
     }
 
     @Test
     public void shouldReturnFalseIfBookAuthorIsBlank () {
-        BookReaderImpl bookReader = new BookReaderImpl();
         assertFalse(bookReader.addBook(new Book("Clean Code", "")));
     }
 
