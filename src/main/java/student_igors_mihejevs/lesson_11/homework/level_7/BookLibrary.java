@@ -30,10 +30,9 @@ class BookLibrary {
         menuNumberToActionMap.put(11, new FindUniqueBooksUIAction(bookDatabase));
         menuNumberToActionMap.put(12, new CountAllBooksUIAction(bookDatabase));
         menuNumberToActionMap.put(0, new ExitProgramUIAction());
-
-
     }
 
+    @SuppressWarnings("InfiniteLoopStatement")
     public void run() {
         Scanner sc = new Scanner(System.in);
 
