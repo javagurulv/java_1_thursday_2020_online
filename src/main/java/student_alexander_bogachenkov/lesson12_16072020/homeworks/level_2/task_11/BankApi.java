@@ -1,6 +1,6 @@
 package student_alexander_bogachenkov.lesson12_16072020.homeworks.level_2.task_11;
 
-import teacher.lesson_12.lessoncode.AccessDeniedException;
+import teacher.lesson_12_exceptions.lessoncode.AccessDeniedException;
 
 import java.util.Optional;
 

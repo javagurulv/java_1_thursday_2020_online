@@ -1,6 +1,4 @@
-package teacher.lesson_13.lessoncode;
-
-import static org.junit.Assert.*;
+package teacher.lesson_13_junit.lessoncode;
 
 import org.junit.Rule;
 import org.junit.Test;
