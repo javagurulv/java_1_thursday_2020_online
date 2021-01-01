@@ -1,3 +1,12 @@
+Возможности приходят к тем, кто перестает ждать и начинает искать.
+Успех приходит к тем, кто перестает думать и начинает делать.
+Поздравляем с поиском и делом.
+
+Opportunity comes to those who quit Waiting and start Looking.
+Success comes to those who quit Thinking and start Doing.
+Congratulations for Looking and Doing.
+
+
 Если вы читаете эти строки то вы выполнили все задания текущего урока.
 
 Мы вас поздравляем! Вы достоины похвалы за своё упорство и мужество!
@@ -22,8 +31,3 @@
 - прочитайте главы из книги "Thinking in Java" или "Head First Java"
   по теме урока и выполните задания приведённые в качестве примеров
   в этих главах.
-
-- попробуйте порешать задачи на сайтах:
-  https://www.codingame.com
-  https://www.codewars.com
-  https://www.hackerrank.com
