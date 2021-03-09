@@ -1,7 +1,6 @@
 Исправьте код программы так, что бы он компилировался.
-Класс Car менять нельзя.
-Классы ElectricCar и PetrolCar должны наследоваться
-от класса Car.
+Класс Car менять нельзя. Классы ElectricCar и PetrolCar менять можно.
+Классы ElectricCar и PetrolCar должны наследоваться от класса Car.
 
 
 abstract class Car {
