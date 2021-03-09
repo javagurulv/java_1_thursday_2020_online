@@ -3,4 +3,5 @@
 Создайте наследника класс Shape - класс Rectangle.
 Реализуйте в нём абстрактные методы из класса
 Shape: calculateArea() и calculatePerimeter().
-Напишите тесты для класса Rectangle.
+
+Создайте класс RectangleTest и в нём напишите тесты для класса Rectangle.

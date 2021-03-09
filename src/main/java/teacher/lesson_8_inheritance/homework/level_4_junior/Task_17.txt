@@ -3,4 +3,5 @@
 Создайте наследника класс Shape - класс Square.
 Реализуйте в нём абстрактные методы из класса
 Shape: calculateArea() и calculatePerimeter().
-Напишите тесты для класса Square.
+
+Создайте класс SquareTest и в нём напишите тесты для класса Square.

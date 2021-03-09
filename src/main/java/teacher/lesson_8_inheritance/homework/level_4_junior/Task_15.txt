@@ -1,18 +1,23 @@
 Создание иерархии класса Shape (геометрическая фигура).
 
-Дан класс Shape:
+Создайте наследника класс Shape - класс Circle.
+Реализуйте в нём абстрактные методы из класса
+Shape: calculateArea() и calculatePerimeter().
 
-abstract class Shape {
+PS: подсказка - необходимые значения для
+расчёта площади и периметра подавайте в
+класс через конструктор.
 
-    private String title;
+class Circle extends Shape {
 
-    Shape(String title) {
-        this.title = title;
+    private double radius;
+
+    Circle(double radius) {
+        this.radius = radius;
     }
 
-    abstract double calculateArea();
+    // реализуйте метод calculateArea()
+
+    // реализуйте метод calculatePerimeter()
 
 }
-
-Объявите в классе Shape абстрактный метод
-для подсчёта периметра.
