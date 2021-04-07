@@ -1,4 +1,4 @@
-Исправьте код класса ProtectedClass так, что бы он компилировался.
+Исправьте код класса ProtectedClass так, чтобы он компилировался.
 
 protected class ProtectedClass {
 
