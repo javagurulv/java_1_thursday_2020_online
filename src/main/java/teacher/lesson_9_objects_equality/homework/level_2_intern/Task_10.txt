@@ -14,6 +14,9 @@ class ConstructorChaining {
 }
 
 Создайте в этом классе публичный конструктор с двумя параметрами.
-Внутри этого конструктора первой строкой вызовите приватный конструктор с одним параметром.
+Внутри этого конструктора первой строкой вызовите приватный
+конструктор с одним параметром.
 
-Более подробно про этот подход можно прочитать: constructor chaining in Java.
+Более подробно про этот подход можно прочитать:
+https://data-flair.training/blogs/constructor-chaining-in-java/
+https://www.geeksforgeeks.org/constructor-chaining-java-examples/
