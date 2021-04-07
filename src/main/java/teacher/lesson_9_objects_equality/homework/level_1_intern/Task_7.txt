@@ -1,4 +1,4 @@
-Исправьте код класса PrivateClass так, что бы он компилировался.
+Исправьте код класса PrivateClass так, чтобы он компилировался.
 
 private class PrivateClass {
 
@@ -7,3 +7,5 @@ private class PrivateClass {
 
 
 }
+
+PS: можно ли применять идентификатор доступа private на уровне класса?
