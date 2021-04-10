@@ -6,7 +6,8 @@
 https://dzone.com/articles/design-patterns-the-builder-pattern
 https://howtodoinjava.com/design-patterns/creational/builder-pattern-in-java/
 
-Создайте Builder класс для одной из моделей данных из нашего курса и продемонстрируйте его использование.
+Создайте Builder класс для одной из моделей данных из нашего курса
+и продемонстрируйте его использование.
 
 Протестируйте созданный вами Builder! :)
 
