@@ -28,8 +28,8 @@ class BankAccountDemo {
         BankAccount bankAccount = new BankAccount("Viktor", 100000);
         String ownerFirstName = bankAccount.getOwner();
         String moneyAmount = bankAccount.getMoney();
-        System.out.println("Owner = " + owner);
-        System.out.println("Money = " + money);
+        System.out.println("Owner = " + ownerFirstName);
+        System.out.println("Money = " + moneyAmount);
     }
 
 }
