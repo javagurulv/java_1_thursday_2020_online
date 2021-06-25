@@ -15,7 +15,7 @@ class LogicalConditions {
 
 		inInterval = number > 10 && number < 20;
 
-		// && - or
+		// || - or
 		inInterval = (number < 10) || (number > 20);
 
 		if ((number < 10) || (number > 20)) {
