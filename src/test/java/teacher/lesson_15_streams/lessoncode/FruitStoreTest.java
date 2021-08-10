@@ -75,7 +75,7 @@ public class FruitStoreTest {
 	}
 
 	@Test
-	public void ljamda() {
+	public void lambda() {
 		FruitSearchCriteria searchCriteria =
 				(Fruit fruit) -> "tomato".equals(fruit.getTitle())
 						&& "red".equals(fruit.getColor())
